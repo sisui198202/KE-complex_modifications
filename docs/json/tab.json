@@ -1,8 +1,8 @@
 {
-  "title": "Personal rules (@rcmdnk)",
+  "title": "tab",
   "rules": [
     {
-      "description": "Change Control-e  to Command-f",
+      "description": "LeftControl + f_Tab",
       "manipulators": [
         {
           "type": "basic",
