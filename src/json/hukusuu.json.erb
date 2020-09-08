@@ -2,30 +2,23 @@
   "title": "Personal rules (@sisui)",
   "rules": [
     {
-      "description": "Change Control-a  to Command-_tesuto-sisui",
-      "manipulators": [
-        {
-          <%# Control-A to Command-B %>
-          "type": "basic",
-          "from": <%= from("a", ["control"], ["caps_lock"]) %>,
-          "to": <%= to([["b", ["command"]]]) %>
-        },
-        {
-          <%# Control-C to D %>
-          "type": "basic",
-          "from": <%= from("c", ["control"], ["any"]) %>,
-          "to": <%= to([["d"]]) %>
-        }
-      ]
-    },
-    {
-      "description": "Change Control-e  to Command-f",
+      "description": "LeftControl + f_Tab",
       "manipulators": [
         {
           <%# Control-E to F %>
           "type": "basic",
-          "from": <%= from("e", ["control"], []) %>,
-          "to": <%= to([["f"]]) %>
+          "from": <%= from("f", ["left_control"], []) %>,
+          "to": <%= to([["tab"]]) %>
+        }
+      ]
+    },
+   {
+      "description": "kana + spacebar_Escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], []) %>,
+          "to": <%= to([["right_gui"]]) %>
         }
       ]
     }

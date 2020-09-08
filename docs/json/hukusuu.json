@@ -2,67 +2,42 @@
   "title": "Personal rules (@sisui)",
   "rules": [
     {
-      "description": "Change Control-a  to Command-_tesuto-sisui",
+      "description": "LeftControl + f_Tab",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "control"
-              ],
-              "optional": [
-                "caps_lock"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "b",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d"
+              "key_code": "tab"
             }
           ]
         }
       ]
     },
     {
-      "description": "Change Control-e  to Command-f",
+      "description": "kana + spacebar_Escape",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "control"
+                "right_gui"
               ]
             }
           },
           "to": [
             {
-              "key_code": "f"
+              "key_code": "right_gui"
             }
           ]
         }
