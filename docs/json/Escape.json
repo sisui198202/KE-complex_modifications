@@ -1,0 +1,26 @@
+{
+  "title": "Escape",
+  "rules": [
+    {
+      "description": "kana + spacebar_Escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_gui"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
