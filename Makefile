@@ -1,11 +1,8 @@
 all:
-	bash scripts/update-json.sh
-	ruby scripts/lint-groups.rb
-	bash scripts/update-public-build.sh
+	scripts/update-json.sh
+	scripts/erb2html.rb < src/index.html.erb > docs/index.html
+	scripts/apply-lint.sh
 
 rebuild:
 	touch src/json/*
 	$(MAKE) all
-
-server:
-	ruby scripts/dev-server.rb

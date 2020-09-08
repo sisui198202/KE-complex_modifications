@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karabiner-Elements complex_modifications rules by rcmdnk</title>
+    <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="//rcmdnk.com/KE-complex_modifications/">Karabiner-Elements complex_modifications rules by rcmdnk</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-bottom: 100px">
+      <div class="text-right" style="margin-bottom: 30px">
+        <a href="//github.com/rcmdnk/KE-complex_modifications/">GitHub</a>
+      </div>
+
+      <%
+          $toc = []
+          $groups = ""
+
+          # id must be different from file name
+          add_group("Vim emulation","vim_emulation",[
+              "vim_emu.json"
+          ])
+
+          add_group("Sticky Example","sticky_example",[
+              "sticky.json"
+          ])
+
+          add_group("Fn Lock","fn_lock",[
+              "fn_lock.json"
+          ])
+
+          add_group("Personal Settings","personal_settings",[
+              "personal_rcmdnk.json"
+          ])
+
+      %>
+
+      <%= render_toc() %>
+      <div class="text-left" style="margin-bottom: 30px">
+        <a href="javascript:$('.collapse').collapse('show')">Expand All</a> |
+        <a href="javascript:$('.collapse').collapse('hide')">Collapse All</a>
+      </div>
+
+      <%= $groups %>
+
+      <hr />
+    </div>
+
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
