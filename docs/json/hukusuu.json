@@ -44,7 +44,7 @@
       ]
     },
     {
-      "description": "numbers_0-9",
+      "description": "numbers_0-9_1",
       "manipulators": [
         {
           "type": "basic",
