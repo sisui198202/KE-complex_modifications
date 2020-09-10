@@ -1226,6 +1226,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "LeftCommand + RightCommand_=",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign"
+            }
+          ],
+          "to_if_alone": [
+            "left_command"
+          ]
+        }
+      ]
     }
   ]
 }

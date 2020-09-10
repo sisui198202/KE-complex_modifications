@@ -525,6 +525,19 @@
                  as_json: true
                )
        %>
-    }
+    },
+    {
+      "description": "LeftCommand + RightCommand_=",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["left_command"],
+                 from_mandatory_modifiers: ["right_command"],
+                 dest_keys_list: ["equal_sign"],
+                 to_if_alone: ["left_command"],
+                 as_json: true
+               )
+       %>
+    }    
   ]
 }
