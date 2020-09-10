@@ -53,6 +53,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -72,6 +75,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -91,6 +97,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -110,6 +119,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -129,6 +141,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -148,6 +163,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -167,6 +185,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -186,6 +207,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -205,6 +229,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -224,6 +251,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
