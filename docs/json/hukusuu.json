@@ -1242,11 +1242,11 @@
           },
           "to": [
             {
-              "key_code": "equal_sign"
+              "key_code": "left_command"
             }
           ],
           "to_if_alone": [
-            "left_command"
+            "equal_sign"
           ]
         }
       ]
