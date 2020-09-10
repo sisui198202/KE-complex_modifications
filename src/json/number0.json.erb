@@ -1,0 +1,19 @@
+{
+  "title": "number0_sisui",
+  "rules": [
+			    {
+			      "description": "number0_sisui",
+			      "manipulators":
+			      <%=
+			               each_key(
+			                 source_keys_list: ["z"],
+			                 dest_keys_list: ["0"],
+			                 from_mandatory_modifiers: ["right_gui"],
+			                 from_optional_modifiers: ["any"],
+			                 to_if_alone: ["key_code: right_gui"],
+			                 as_json: true
+			               )
+			       %>
+			    }	
+  			]
+}
