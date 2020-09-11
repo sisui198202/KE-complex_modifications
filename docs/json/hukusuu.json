@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-34",
+  "title": "Personal rules (@sisui)",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "description": "numbers_0-9_5",
+      "description": "numbers_0-9",
       "manipulators": [
         {
           "type": "basic",
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "description": "RightCommand + Space_Escape1",
+      "description": "RightCommand + Space_Escape",
       "manipulators": [
         {
           "type": "basic",
@@ -339,7 +339,7 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_BackSpace2",
+      "description": "RightCommand + LeftCommand_BackSpace",
       "manipulators": [
         {
           "type": "basic",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_equalsign1",
+      "description": "LeftCommand + RightCommand_equalsign",
       "manipulators": [
         {
           "type": "basic",
@@ -426,7 +426,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma__AppsSelect-Previous1",
+      "description": "LeftCommand + ,comma__AppsSelect-Previous",
       "manipulators": [
         {
           "type": "basic",
@@ -456,7 +456,7 @@
       ]
     },
     {
-      "description": "LeftCommand + .__AppsSelect-next1",
+      "description": "LeftCommand + .__AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
@@ -485,7 +485,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I/J/K/L _Arrows1",
+      "description": "LeftCommand + I/J/K/L _Arrows",
       "manipulators": [
         {
           "type": "basic",
@@ -566,7 +566,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowCut1",
+      "description": "LeftCommand + W_CurrentCursol-EndRowCut",
       "manipulators": [
         {
           "type": "basic",
@@ -714,7 +714,7 @@
       ]
     },
     {
-      "description": "RightCommand_Copy4",
+      "description": "RightCommand_Copy",
       "manipulators": [
         {
           "type": "basic",
@@ -738,7 +738,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste5",
+      "description": "RightOption_Paste",
       "manipulators": [
         {
           "type": "basic",
@@ -762,7 +762,7 @@
       ]
     },
     {
-      "description": "RightCommand + T_Search3",
+      "description": "RightCommand + T_Search",
       "manipulators": [
         {
           "type": "basic",
@@ -791,7 +791,7 @@
       ]
     },
     {
-      "description": "LeftCommand + c_DesktopExist2",
+      "description": "LeftCommand + c_DesktopExist",
       "manipulators": [
         {
           "type": "basic",
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "description": "LeftCommand + e_Expand Selection Word1",
+      "description": "LeftCommand + e_Expand Selection Word",
       "manipulators": [
         {
           "type": "basic",
@@ -877,7 +877,7 @@
       ]
     },
     {
-      "description": "RightCommand + o_SameWordExpandSelection1",
+      "description": "RightCommand + o_SameWordExpandSelection",
       "manipulators": [
         {
           "type": "basic",
@@ -907,7 +907,7 @@
       ]
     },
     {
-      "description": "RCommand + ._MaxWindow1",
+      "description": "RCommand + ._MaxWindow",
       "manipulators": [
         {
           "type": "basic",
@@ -937,7 +937,7 @@
       ]
     },
     {
-      "description": "LeftOption + Q_Set Mark1",
+      "description": "LeftOption + Q_Set Mark",
       "manipulators": [
         {
           "type": "basic",
@@ -967,7 +967,7 @@
       ]
     },
     {
-      "description": "LeftOption + Z_Current Row to Set Mark Row Selection1",
+      "description": "LeftOption + Z_Current Row to Set Mark Row Selection",
       "manipulators": [
         {
           "type": "basic",
