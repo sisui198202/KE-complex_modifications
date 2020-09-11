@@ -44,7 +44,7 @@
       ]
     },
     {
-      "description": "numbers_0-9_3",
+      "description": "numbers_0-9_4",
       "manipulators": [
         {
           "type": "basic",
@@ -65,7 +65,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -87,7 +89,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -109,7 +113,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -131,7 +137,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -153,7 +161,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -175,7 +185,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -197,7 +209,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -219,7 +233,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -241,7 +257,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         },
         {
@@ -263,7 +281,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
