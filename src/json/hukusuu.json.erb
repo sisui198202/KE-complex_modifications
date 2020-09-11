@@ -229,27 +229,25 @@
        %>
     },
     {
-      "description": "RightCommand_Copy3",
+      "description": "RightCommand_Copy4",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_command"],
                  dest_keys_list: ["right_command"],
-                 to_modifiers: ["right_command"],
                  to_if_alone: ["key_code": "c","modifiers": ["right_command"]],
                  as_json: true
                )
        %>
     },
     {
-      "description": "RightOption_Paste3",
+      "description": "RightOption_Paste4",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_alt"],
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["right_alt"],
-                 to_modifiers: ["right_alt"],
                  to_if_alone: ["key_code": "v","modifiers": ["left_gui"]],
                  as_json: true
                )

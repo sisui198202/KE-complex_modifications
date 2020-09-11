@@ -714,7 +714,7 @@
       ]
     },
     {
-      "description": "RightCommand_Copy3",
+      "description": "RightCommand_Copy4",
       "manipulators": [
         {
           "type": "basic",
@@ -723,10 +723,7 @@
           },
           "to": [
             {
-              "key_code": "right_command",
-              "modifiers": [
-                "right_command"
-              ]
+              "key_code": "right_command"
             }
           ],
           "to_if_alone": [
@@ -741,7 +738,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste3",
+      "description": "RightOption_Paste4",
       "manipulators": [
         {
           "type": "basic",
@@ -755,10 +752,7 @@
           },
           "to": [
             {
-              "key_code": "right_alt",
-              "modifiers": [
-                "right_alt"
-              ]
+              "key_code": "right_alt"
             }
           ],
           "to_if_alone": [
