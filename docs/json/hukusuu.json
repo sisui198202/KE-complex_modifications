@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-14",
+  "title": "Personal rules (@sisui)-15",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -440,6 +440,7 @@
           },
           "to": [
             {
+              "halt": true,
               "key_code": "tab",
               "modifiers": [
                 "right_gui",
@@ -470,6 +471,7 @@
           },
           "to": [
             {
+              "halt": true,
               "key_code": "tab",
               "modifiers": [
                 "right_gui"

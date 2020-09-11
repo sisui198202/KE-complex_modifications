@@ -133,7 +133,7 @@ def each_key(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_lis
     data << d
   end
 
-  make_data(data, as_json)
+  make_data(data,as_json)
 end
 
 def frontmost_application(type, app_aliases, as_json=true)
