@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-23",
+  "title": "Personal rules (@sisui)-24",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -741,7 +741,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste2",
+      "description": "RightOption_Paste3",
       "manipulators": [
         {
           "type": "basic",
@@ -773,7 +773,7 @@
       ]
     },
     {
-      "description": "RightCommand + T_Search",
+      "description": "RightCommand + T_Search1",
       "manipulators": [
         {
           "type": "basic",
@@ -794,7 +794,9 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "keycode": "right_gui"
+            }
           ]
         }
       ]
