@@ -210,20 +210,7 @@
                  from_mandatory_modifiers: ["left_control"],
                  dest_keys_list: ["z"],
                  to_modifiers: ["left_gui"],
-                 to_if_alone: ["left_control"],                 
-                 as_json: true
-               )
-       %>
-    },
-    {
-      "description": "LeftCommand + M_End",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["m"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["right_arrow"],
-                 to_modifiers: ["fn"],
+                 to_if_alone: [{"key_code": "left_control"}],                 
                  as_json: true
                )
        %>
