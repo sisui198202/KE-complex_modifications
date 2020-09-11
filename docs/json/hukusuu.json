@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-20",
+  "title": "Personal rules (@sisui)-21",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -731,8 +731,10 @@
           ],
           "to_if_alone": [
             {
-              "key_code": [
-                "c",
+              "key_code": "c"
+            },
+            {
+              "modifiers": [
                 "right_command"
               ]
             }
