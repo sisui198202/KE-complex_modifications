@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-22",
+  "title": "Personal rules (@sisui)-23",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -714,7 +714,7 @@
       ]
     },
     {
-      "description": "RightCommand_Copy2",
+      "description": "RightCommand_Copy3",
       "manipulators": [
         {
           "type": "basic",
@@ -768,33 +768,6 @@
                 "left_gui"
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + W_CurrentCursol-EndRowCut",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "k",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            "left_control"
           ]
         }
       ]
