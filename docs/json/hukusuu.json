@@ -368,7 +368,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand__=",
+      "description": "LeftCommand + RightCommand___=",
       "manipulators": [
         {
           "type": "basic",
@@ -376,7 +376,7 @@
             "key_code": "right_gui",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_command"
               ],
               "optional": [
                 "any"
@@ -390,7 +390,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "left_control"
+              "key_code": "left_command"
             }
           ]
         }

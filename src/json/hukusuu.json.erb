@@ -81,15 +81,15 @@
        %>
     },
     {
-      "description": "LeftCommand + RightCommand__=",
+      "description": "LeftCommand + RightCommand___=",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_gui"],
-                 from_mandatory_modifiers: ["left_control"],
+                 from_mandatory_modifiers: ["left_command"],
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["qual_sign"],
-                 to_if_alone: [{"key_code": "left_control"}],                 
+                 to_if_alone: [{"key_code": "left_command"}],                 
                  as_json: true
                )
        %>
