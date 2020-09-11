@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-31",
+  "title": "Personal rules (@sisui)-32",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -937,7 +937,7 @@
       ]
     },
     {
-      "description": "LeftOption + Q_Set Mark",
+      "description": "LeftOption + Q_Set Mark1",
       "manipulators": [
         {
           "type": "basic",
@@ -959,13 +959,15 @@
             }
           ],
           "to_if_alone": [
-            "left_alt"
+            {
+              "key_code": "left_alt"
+            }
           ]
         }
       ]
     },
     {
-      "description": "LeftOption + Z_Current Row to Set Mark Row Selection",
+      "description": "LeftOption + Z_Current Row to Set Mark Row Selection1",
       "manipulators": [
         {
           "type": "basic",
@@ -987,7 +989,9 @@
             }
           ],
           "to_if_alone": [
-            "left_alt"
+            {
+              "key_code": "left_alt"
+            }
           ]
         }
       ]

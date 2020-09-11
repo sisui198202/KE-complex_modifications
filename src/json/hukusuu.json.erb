@@ -1,6 +1,6 @@
 <%# 1:"repeat": false or trueは、実装できていない。　2:Double LeftShift_+実装できていない、3:Double RightShift_Backshash 実装できていない。4:halt実装できていない。5:lazy実装できていない。5:右コマンドキーを、英数・かなのトグルに変更する 実装できていない。　 %>
 {
-  "title": "Personal rules (@sisui)-31",
+  "title": "Personal rules (@sisui)-32",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -337,7 +337,7 @@
        %>
     },
     {
-      "description": "LeftOption + Q_Set Mark",
+      "description": "LeftOption + Q_Set Mark1",
       "manipulators":
       <%=
                each_key(
@@ -345,13 +345,13 @@
                  from_mandatory_modifiers: ["left_alt"],
                  dest_keys_list: ["q"],
                  to_modifiers: ["left_alt","left_shift"],
-                 to_if_alone: ["left_alt"],
+                 to_if_alone: ["key_code": "left_alt"],
                  as_json: true
                )
        %>
     },
     {
-      "description": "LeftOption + Z_Current Row to Set Mark Row Selection",
+      "description": "LeftOption + Z_Current Row to Set Mark Row Selection1",
       "manipulators":
       <%=
                each_key(
@@ -359,7 +359,7 @@
                  from_mandatory_modifiers: ["left_alt"],
                  dest_keys_list: ["z"],
                  to_modifiers: ["left_alt","left_shift"],
-                 to_if_alone: ["left_alt"],
+                 to_if_alone: ["key_code": "left_alt"],
                  as_json: true
                )
        %>
