@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-26",
+  "title": "Personal rules (@sisui)-28",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -738,17 +738,12 @@
       ]
     },
     {
-      "description": "RightOption_Paste4",
+      "description": "RightOption_Paste5",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
+            "key_code": "right_alt"
           },
           "to": [
             {
@@ -767,7 +762,7 @@
       ]
     },
     {
-      "description": "RightCommand + T_Search1",
+      "description": "RightCommand + T_Search2",
       "manipulators": [
         {
           "type": "basic",
@@ -1198,30 +1193,6 @@
           ],
           "to_if_alone": [
             "right_gui"
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + RightCommand_=",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_command",
-            "modifiers": {
-              "mandatory": [
-                "right_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_command"
-            }
-          ],
-          "to_if_alone": [
-            "equal_sign"
           ]
         }
       ]
