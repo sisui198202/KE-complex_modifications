@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-17",
+  "title": "Personal rules (@sisui)-18",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -566,7 +566,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowCut",
+      "description": "LeftCommand + W_CurrentCursol-EndRowCut1",
       "manipulators": [
         {
           "type": "basic",
@@ -587,7 +587,9 @@
             }
           ],
           "to_if_alone": [
-            "left_control"
+            {
+              "key_code": "left_control"
+            }
           ]
         }
       ]
