@@ -1,7 +1,7 @@
 <%# 1:"repeat": false or trueは、実装できていない。　2:Double LeftShift_+実装できていない、3:Double RightShift_Backshash 実装できていない。4:halt実装できていない。5:lazy実装できていない。5:右コマンドキーを、英数・かなのトグルに変更する 実装できていない。　 %>
 
 {
-  "title": "Personal rules (@sisui)-5",
+  "title": "Personal rules (@sisui)-7",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -66,20 +66,6 @@
        %>        
     },
     {
-      "description": "Use Return as Open",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 dest_keys_list: ["o"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 to_modifiers: ["right_command"],
-                 as_json: true
-               )
-       %>        
-    },
-    {
       "description": "Use F2 as Rename",
       "manipulators":
       <%=
@@ -99,7 +85,7 @@
                  from_mandatory_modifiers: ["right_gui"],
                  dest_keys_list: ["n"],
                  to_modifiers: ["right_gui"],
-                 to_if_alone: ["right_gui"],                 
+                 to_if_alone: [{"key_code": "right_gui"}],                 
                  as_json: true
                )
        %>

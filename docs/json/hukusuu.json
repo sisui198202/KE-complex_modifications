@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-5",
+  "title": "Personal rules (@sisui)-7",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -344,33 +344,6 @@
       ]
     },
     {
-      "description": "Use Return as Open",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Use F2 as Rename",
       "manipulators": [
         {
@@ -408,7 +381,9 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
