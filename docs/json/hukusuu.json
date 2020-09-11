@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-30",
+  "title": "Personal rules (@sisui)-31",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "description": "LeftCommand + e_Expand Selection Word",
+      "description": "LeftCommand + e_Expand Selection Word1",
       "manipulators": [
         {
           "type": "basic",
@@ -869,13 +869,15 @@
             }
           ],
           "to_if_alone": [
-            "left_control"
+            {
+              "key_code": "left_control"
+            }
           ]
         }
       ]
     },
     {
-      "description": "RightCommand + o_SameWordExpandSelection",
+      "description": "RightCommand + o_SameWordExpandSelection1",
       "manipulators": [
         {
           "type": "basic",
@@ -897,13 +899,15 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
     },
     {
-      "description": "RCommand + ._MaxWindow",
+      "description": "RCommand + ._MaxWindow1",
       "manipulators": [
         {
           "type": "basic",
@@ -925,7 +929,9 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
