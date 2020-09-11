@@ -289,7 +289,7 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_BackSpace",
+      "description": "RightCommand + LeftCommand_BackSpace1",
       "manipulators": [
         {
           "type": "basic",
