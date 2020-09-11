@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-4",
+  "title": "Personal rules (@sisui)-5",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -318,7 +318,7 @@
       ]
     },
     {
-      "description": "RightCommand + Space_Escape",
+      "description": "RightCommand + Space_Escape1",
       "manipulators": [
         {
           "type": "basic",
