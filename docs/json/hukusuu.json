@@ -268,35 +268,6 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_BackSpace1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_control",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + Space_Escape1",
       "manipulators": [
         {
@@ -368,7 +339,36 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand___=",
+      "description": "RightCommand + LeftCommand_BackSpace1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "right_gui"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + RightCommand_=",
       "manipulators": [
         {
           "type": "basic",
@@ -376,7 +376,7 @@
             "key_code": "right_gui",
             "modifiers": {
               "mandatory": [
-                "left_command"
+                "left_control"
               ],
               "optional": [
                 "any"
@@ -390,7 +390,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "left_command"
+              "key_code": "left_control"
             }
           ]
         }

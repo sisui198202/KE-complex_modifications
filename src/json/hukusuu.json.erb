@@ -29,20 +29,6 @@
        %>
     },
     {
-      "description": "RightCommand + LeftCommand_BackSpace1",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_control"],
-                 dest_keys_list: ["delete_or_backspace"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 from_optional_modifiers: ["any"],
-                 to_if_alone: [{"key_code": "right_gui"}],
-                 as_json: true
-               )
-       %>        
-    },
-    {
       "description": "RightCommand + Space_Escape1",
       "manipulators":
       <%=
@@ -81,15 +67,29 @@
        %>
     },
     {
-      "description": "LeftCommand + RightCommand___=",
+      "description": "RightCommand + LeftCommand_BackSpace1",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["left_control"],
+                 dest_keys_list: ["delete_or_backspace"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 from_optional_modifiers: ["any"],
+                 to_if_alone: [{"key_code": "right_gui"}],
+                 as_json: true
+               )
+       %>        
+    },    
+    {
+      "description": "LeftCommand + RightCommand_=",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_gui"],
-                 from_mandatory_modifiers: ["left_command"],
+                 dest_keys_list: ["qual_sign"],                 
+                 from_mandatory_modifiers: ["left_control"],
                  from_optional_modifiers: ["any"],
-                 dest_keys_list: ["qual_sign"],
-                 to_if_alone: [{"key_code": "left_command"}],                 
+                 to_if_alone: [{"key_code": "left_control"}],                 
                  as_json: true
                )
        %>
