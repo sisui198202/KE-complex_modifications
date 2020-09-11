@@ -1161,7 +1161,7 @@
       ]
     },
     {
-      "description": "RightCommand + ;_LatestTab",
+      "description": "RightCommand + ;_LatestTabToggle",
       "manipulators": [
         {
           "type": "basic",
