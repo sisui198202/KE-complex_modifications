@@ -1,5 +1,5 @@
 {
-  "title": "number0_sisui",
+  "title": "number0_sisui99",
   "rules": [
     {
       "description": "number0_sisui",
@@ -23,7 +23,9 @@
             }
           ],
           "to_if_alone": [
-            "key_code: right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
