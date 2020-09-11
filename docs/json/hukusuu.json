@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-8",
+  "title": "Personal rules (@sisui)-9",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "description": "LeftOption + Space_=",
+      "description": "LeftOption + Space__=",
       "manipulators": [
         {
           "type": "basic",
@@ -397,7 +397,7 @@
       ]
     },
     {
-      "description": "LeftCommand + V_AppClose",
+      "description": "LeftCommand + V__AppClose",
       "manipulators": [
         {
           "type": "basic",
@@ -426,7 +426,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma_AppsSelect-Previous",
+      "description": "LeftCommand + ,comma__AppsSelect-Previous",
       "manipulators": [
         {
           "type": "basic",
@@ -456,7 +456,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ._AppsSelect-next",
+      "description": "LeftCommand + .__AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
