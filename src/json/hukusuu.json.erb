@@ -229,14 +229,14 @@
        %>
     },
     {
-      "description": "RightCommand_Copy1",
+      "description": "RightCommand_Copy2",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_command"],
                  dest_keys_list: ["right_command"],
                  to_modifiers: ["right_command"],
-                 to_if_alone: [{"key_code": "c"},"modifiers": ["right_command"],],
+                 to_if_alone: ["key_code": "c","modifiers": ["right_command"],],
                  as_json: true
                )
        %>
