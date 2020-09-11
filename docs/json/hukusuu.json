@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-33",
+  "title": "Personal rules (@sisui)-34",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -1161,7 +1161,7 @@
       ]
     },
     {
-      "description": "RightCommand + ;_NextTab",
+      "description": "RightCommand + ;_LatestTab",
       "manipulators": [
         {
           "type": "basic",
@@ -1190,7 +1190,7 @@
       ]
     },
     {
-      "description": "RightCommand + L_PreviousTab",
+      "description": "RightCommand + L_NextTab",
       "manipulators": [
         {
           "type": "basic",
