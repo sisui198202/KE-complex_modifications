@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-32",
+  "title": "Personal rules (@sisui)-33",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -1018,7 +1018,9 @@
             }
           ],
           "to_if_alone": [
-            "left_control"
+            {
+              "key_code": "left_control"
+            }
           ]
         }
       ]
@@ -1093,7 +1095,9 @@
             }
           ],
           "to_if_alone": [
-            "left_alt"
+            {
+              "key_code": "left_alt"
+            }
           ]
         }
       ]
@@ -1120,7 +1124,9 @@
             }
           ],
           "to_if_alone": [
-            "left_control"
+            {
+              "key_code": "left_control"
+            }
           ]
         }
       ]
@@ -1147,7 +1153,9 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
@@ -1174,7 +1182,9 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
@@ -1202,7 +1212,9 @@
             }
           ],
           "to_if_alone": [
-            "right_gui"
+            {
+              "key_code": "right_gui"
+            }
           ]
         }
       ]
