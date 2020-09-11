@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-24",
+  "title": "Personal rules (@sisui)-25",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -802,7 +802,7 @@
       ]
     },
     {
-      "description": "LeftCommand + c_DesktopExist",
+      "description": "LeftCommand + c_DesktopExist1",
       "manipulators": [
         {
           "type": "basic",
@@ -823,7 +823,9 @@
             }
           ],
           "to_if_alone": [
-            "left_control"
+            {
+              "keycode": "left_control"
+            }
           ]
         }
       ]
