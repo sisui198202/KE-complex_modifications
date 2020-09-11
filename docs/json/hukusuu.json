@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules (@sisui)-16",
+  "title": "Personal rules (@sisui)-17",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -485,7 +485,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I/J/K/L _Arrows",
+      "description": "LeftCommand + I/J/K/L _Arrows1",
       "manipulators": [
         {
           "type": "basic",
