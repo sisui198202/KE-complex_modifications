@@ -17,6 +17,7 @@
           "to": [
             {
               "key_code": "tab",
+              "halt": true,
               "modifiers": [
                 "right_gui",
                 "left_shift"
@@ -47,6 +48,7 @@
           "to": [
             {
               "key_code": "tab",
+              "halt": true,
               "modifiers": [
                 "right_gui"
               ]
