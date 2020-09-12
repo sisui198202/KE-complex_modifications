@@ -252,13 +252,14 @@
        %>
     },
     {
-      "description": "LeftCommand + M_End",
+      "description": "LeftCommand + M_End(!vscode)",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["m"],
                  from_mandatory_modifiers: ["left_control"],
                  dest_keys_list: ["right_arrow"],
+                 conditions: [frontmost_application_unless("vscode", false)],                 
                  to_modifiers: ["fn"],
                  as_json: true
                )
