@@ -1,5 +1,5 @@
 {
-  "title": "frontmost-unless1",
+  "title": "frontmost-less-vscode",
   "rules": [
     {
       "description": "LeftCommand + N_Home",
@@ -16,15 +16,15 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
+              "key_code": "up_arrow",
               "modifiers": [
-                "fn"
+                "right_command"
               ]
             }
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$"
               ]

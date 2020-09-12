@@ -1008,7 +1008,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_Home",
+      "description": "LeftCommand + N_Home(!vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -1025,6 +1025,14 @@
               "key_code": "left_arrow",
               "modifiers": [
                 "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
