@@ -94,6 +94,21 @@
        %>
     },
     {
+      "description": "LeftCommand + Rightoption_plus",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_alt"],
+                 dest_keys_list: ["equal_sign"],
+                 from_mandatory_modifiers: ["left_control"],
+                 from_optional_modifiers: ["any"],
+                 to_modifiers: ["right_shift"],                 
+                 to_if_alone: [{"key_code": "left_control"}],
+                 as_json: true
+               )
+       %>
+    },    
+    {
       "description": "LeftCommand + V__AppClose",
       "manipulators":
       <%=
