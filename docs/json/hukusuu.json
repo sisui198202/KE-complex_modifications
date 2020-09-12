@@ -673,65 +673,6 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma__AppsSelect-Previous",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "right_gui",
-                "left_shift"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + .__AppsSelect-next",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + I/J/K/L _Arrows",
       "manipulators": [
         {
