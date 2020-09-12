@@ -1,0 +1,19 @@
+{
+  "title": "frontmost-unless1",
+  "rules": [
+    {
+      "description": "LeftCommand + N_Home",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["n"],
+                 from_mandatory_modifiers: ["left_control"],
+                 dest_keys_list: ["left_arrow"],
+                 conditions: [frontmost_application_unless("vscode", false)],
+                 to_modifiers: ["fn"],
+                 as_json: true
+               )
+       %>
+    }
+]
+}

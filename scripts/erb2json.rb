@@ -219,6 +219,11 @@ def frontmost_application(type, app_aliases, as_json=true)
     '^com\.microsoft\.Excel$'
   ]
 
+  vscode_bundle_identifers = [
+    '^com.microsoft.VSCode$'
+  ]
+
+
   rdt_bundle_identifiers = [
     '^com\.microsoft\.rdc.macos$',
   ]
@@ -232,6 +237,9 @@ def frontmost_application(type, app_aliases, as_json=true)
     case app_alias
     when 'finder'
       bundle_identifiers.concat(finder_bundle_identifiers)
+
+    when 'vscode'
+      bundle_identifiers.concat(vscode_bundle_identifers)
 
     when 'preview'
       bundle_identifiers.concat(preview_bundle_identifiers)
