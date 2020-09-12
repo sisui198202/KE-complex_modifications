@@ -458,7 +458,7 @@
       ]
     },
     {
-      "description": "Rightoption + space_tilde",
+      "description": "Rightoption + space_parcent",
       "manipulators": [
         {
           "type": "basic",
@@ -475,7 +475,7 @@
           },
           "to": [
             {
-              "key_code": "grave_accent_and_tilde",
+              "key_code": "5",
               "modifiers": [
                 "right_shift"
               ]
@@ -490,7 +490,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftcommand_grave_accent",
+      "description": "Rightoption + Leftcommand_dollar",
       "manipulators": [
         {
           "type": "basic",
@@ -507,7 +507,10 @@
           },
           "to": [
             {
-              "key_code": "grave_accent_and_tilde"
+              "key_code": "4",
+              "modifiers": [
+                "right_shift"
+              ]
             }
           ],
           "to_if_alone": [

@@ -123,12 +123,12 @@
        %>
     },
     {
-      "description": "Rightoption + space_tilde",
+      "description": "Rightoption + space_parcent",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
-                 dest_keys_list: ["grave_accent_and_tilde"],
+                 dest_keys_list: ["5"],
                  from_mandatory_modifiers: ["right_alt"],
                  from_optional_modifiers: ["any"], 
                  to_modifiers: ["right_shift"],                 
@@ -138,14 +138,15 @@
        %>
     },
     {
-      "description": "Rightoption + Leftcommand_grave_accent",
+      "description": "Rightoption + Leftcommand_dollar",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["left_control"],
-                 dest_keys_list: ["grave_accent_and_tilde"],
+                 dest_keys_list: ["4"],
                  from_mandatory_modifiers: ["right_alt"],
                  from_optional_modifiers: ["any"], 
+                 to_modifiers: ["right_shift"],                 
                  to_if_alone: [{"key_code": "right_alt"}],
                  as_json: true
                )
