@@ -29,14 +29,16 @@
        %>
     },
    {
-      "description": "RightCommand + LeftCommand_Use Delete as Move to Trash-Finder",
+      "description": "RightCommand + LeftCommand_FileDelete-Finder",
       "manipulators":
       <%=
                each_key(
-                 source_keys_list: ["right_command"],
-                 from_mandatory_modifiers: ["left_control"],                 
+                 source_keys_list: ["left_control"],
+                 from_mandatory_modifiers: ["right_gui"],                 
+                 from_optional_modifiers: ["any"],
                  dest_keys_list: ["delete_or_backspace"],
                  to_modifiers: ["left_command"],
+                 to_if_alone: [{"key_code": "right_gui"}],                 
                  conditions: [frontmost_application_if("finder", false)],
                  as_json: true
                )

@@ -58,15 +58,18 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_Use Delete as Move to Trash-Finder",
+      "description": "RightCommand + LeftCommand_FileDelete-Finder",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_command",
+            "key_code": "left_control",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "right_gui"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
@@ -76,6 +79,11 @@
               "modifiers": [
                 "left_command"
               ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "right_gui"
             }
           ],
           "conditions": [
