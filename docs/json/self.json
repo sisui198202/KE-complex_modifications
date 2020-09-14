@@ -245,7 +245,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftcommand_dollar",
+      "description": "Rightoption + Leftcommand_shape",
       "manipulators": [
         {
           "type": "basic",
@@ -262,7 +262,7 @@
           },
           "to": [
             {
-              "key_code": "4",
+              "key_code": "3",
               "modifiers": [
                 "right_shift"
               ]
