@@ -3,12 +3,25 @@
   "title": "frontmost-if-Finder",
   "rules": [
     {
-      "description": "LeftCommand  + Space_Use Return as Open-Finder",
+      "description": "LeftCommand + Space_OpenFile_Finder",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
                  from_mandatory_modifiers: ["left_control"],
+                 dest_keys_list: ["o"],
+                 conditions: [frontmost_application_if("finder", false)],
+                 to_modifiers: ["right_command"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Enter_OpenFile_Finder",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["return_or_enter"],
                  dest_keys_list: ["o"],
                  conditions: [frontmost_application_if("finder", false)],
                  to_modifiers: ["right_command"],
@@ -43,6 +56,21 @@
                  as_json: true
                )
        %>
-    }       
+    },
+   {
+      "description": "RightCommand + LeftOption_upfolder-Finder",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["left_control"],
+                 from_mandatory_modifiers: ["right_gui"],                 
+                 dest_keys_list: ["up_arrow"],
+                 to_modifiers: ["right_command"],
+                 to_if_alone: [{"key_code": "right_gui"}],                 
+                 conditions: [frontmost_application_if("finder", false)],
+                 as_json: true
+               )
+       %>
+    }           
 ]
 }

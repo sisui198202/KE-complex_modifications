@@ -2,7 +2,7 @@
   "title": "frontmost-if-Finder",
   "rules": [
     {
-      "description": "LeftCommand  + Space_Use Return as Open-Finder",
+      "description": "LeftCommand + Space_OpenFile_Finder",
       "manipulators": [
         {
           "type": "basic",
@@ -13,6 +13,33 @@
                 "left_control"
               ]
             }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Enter_OpenFile_Finder",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter"
           },
           "to": [
             {
@@ -78,6 +105,43 @@
               "key_code": "delete_or_backspace",
               "modifiers": [
                 "left_command"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + LeftOption_upfolder-Finder",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "right_command"
               ]
             }
           ],
