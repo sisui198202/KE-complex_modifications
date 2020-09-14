@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)",
+  "title": "number_0-9 (@sisui)",
   "rules": [
     {
       "description": "numbers_0-9",
@@ -17,11 +17,7 @@
               ]
             }
           },
-
           "to": [
-        {
-         "key_code": "japanese_eisuu"
-        },            
             {
               "key_code": "0"
             }
@@ -47,9 +43,6 @@
           },
           "to": [
             {
-             "key_code": "japanese_eisuu"
-            },            
-            {
               "key_code": "1"
             }
           ],
@@ -73,9 +66,6 @@
             }
           },
           "to": [
-            {
-             "key_code": "japanese_eisuu"
-            },            
             {
               "key_code": "2"
             }
@@ -101,9 +91,6 @@
           },
           "to": [
             {
-             "key_code": "japanese_eisuu"
-            },
-            {
               "key_code": "3"
             }
           ],
@@ -128,9 +115,6 @@
           },
           "to": [
             {
-             "key_code": "japanese_eisuu"
-            },
-            {
               "key_code": "4"
             }
           ],
@@ -153,11 +137,7 @@
               ]
             }
           },
-
           "to": [
-            {
-             "key_code": "japanese_eisuu"
-            },
             {
               "key_code": "5"
             }
@@ -183,9 +163,6 @@
           },
           "to": [
             {
-             "key_code": "japanese_eisuu"
-            },
-            {
               "key_code": "6"
             }
           ],
@@ -209,9 +186,6 @@
             }
           },
           "to": [
-            {
-             "key_code": "japanese_eisuu"
-            },
             {
               "key_code": "7"
             }
@@ -237,9 +211,6 @@
           },
           "to": [
             {
-             "key_code": "japanese_eisuu"
-            },
-            {
               "key_code": "8"
             }
           ],
@@ -263,9 +234,6 @@
             }
           },
           "to": [
-            {
-             "key_code": "japanese_eisuu"
-            },
             {
               "key_code": "9"
             }
