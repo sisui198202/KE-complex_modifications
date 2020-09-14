@@ -27,6 +27,20 @@
                  as_json: true
                )
        %>
-    }    
+    },
+   {
+      "description": "RightCommand + LeftCommand_Use Delete as Move to Trash-Finder",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_command"],
+                 from_mandatory_modifiers: ["left_control"],                 
+                 dest_keys_list: ["delete_or_backspace"],
+                 to_modifiers: ["left_command"],
+                 conditions: [frontmost_application_if("finder", false)],
+                 as_json: true
+               )
+       %>
+    }       
 ]
 }
