@@ -815,7 +815,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Space to Enter",
+      "description": "LeftCommand + Space to Enter(!Finder)",
       "manipulators": [
         {
           "type": "basic",
