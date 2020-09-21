@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)",
+  "title": "Personal rules (@sisui)",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace(!Finder)",
+      "description": "LeftCommand + space_BackSpace1(!Finder)",
       "manipulators": [
         {
           "type": "basic",
