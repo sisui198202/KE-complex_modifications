@@ -28,13 +28,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "spacebar"
-              ],
-              "optional": [
-                "any"
+                "left_control"
               ]
             }
           },
@@ -45,7 +42,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "right_gui"
+              "key_code": "left_control"
             }
           ],
           "conditions": [
@@ -572,7 +569,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Space to Enter(!Finder)",
+      "description": "Leftoption + Space to Enter(!Finder)",
       "manipulators": [
         {
           "type": "basic",

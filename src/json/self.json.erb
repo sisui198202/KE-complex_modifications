@@ -18,11 +18,10 @@
       "manipulators":
       <%=
                each_key(
-                 source_keys_list: ["left_control"],
+                 source_keys_list: ["spacebar"],
                  dest_keys_list: ["delete_or_backspace"],
-                 from_mandatory_modifiers: ["spacebar"],
-                 from_optional_modifiers: ["any"],
-                 to_if_alone: [{"key_code": "right_gui"}],
+                 from_mandatory_modifiers: ["left_control"],
+                 to_if_alone: [{"key_code": "left_control"}],
                  conditions: [frontmost_application_unless("finder", false)],                 
                  as_json: true
                )
@@ -251,7 +250,7 @@
        %>
     },
     {
-      "description": "LeftCommand + Space to Enter(!Finder)",
+      "description": "Leftoption + Space to Enter(!Finder)",
       "manipulators":
       <%=
                each_key(
