@@ -1,5 +1,5 @@
 {
-  "title": "frontmost-if-Finder",
+  "title": "frontmost-if-Finder1a",
   "rules": [
     {
       "description": "LeftCommand + Space_OpenFile_Finder",
@@ -90,7 +90,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
                 "right_gui"
