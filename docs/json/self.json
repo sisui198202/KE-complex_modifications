@@ -23,7 +23,105 @@
       ]
     },
     {
-      "description": "RightCommand + Space_Escape",
+      "description": "LeftCommand + space_BackSpace(!Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "spacebar"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + RightCommand_plus",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Rightoption_equal",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Space_delete",
       "manipulators": [
         {
           "type": "basic",
@@ -37,7 +135,7 @@
           },
           "to": [
             {
-              "key_code": "escape"
+              "key_code": "delete_forward"
             }
           ],
           "to_if_alone": [
@@ -75,52 +173,7 @@
       ]
     },
     {
-      "description": "Use F2 as Rename",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f2"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + A_ NewFileCreate",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Leftoption + space_underbar",
+      "description": "Leftoption + space_enter",
       "manipulators": [
         {
           "type": "basic",
@@ -137,10 +190,7 @@
           },
           "to": [
             {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_shift"
-              ]
+              "key_code": "return_or_enter"
             }
           ],
           "to_if_alone": [
@@ -181,7 +231,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_pipeline",
+      "description": "Leftoption + Rightoption_parsent",
       "manipulators": [
         {
           "type": "basic",
@@ -198,7 +248,7 @@
           },
           "to": [
             {
-              "key_code": "backslash",
+              "key_code": "5",
               "modifiers": [
                 "right_shift"
               ]
@@ -213,7 +263,7 @@
       ]
     },
     {
-      "description": "Rightoption + space_parcent",
+      "description": "Rightoption + space_escape",
       "manipulators": [
         {
           "type": "basic",
@@ -230,10 +280,7 @@
           },
           "to": [
             {
-              "key_code": "5",
-              "modifiers": [
-                "right_shift"
-              ]
+              "key_code": "escape"
             }
           ],
           "to_if_alone": [
@@ -245,7 +292,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftcommand_shape1",
+      "description": "Rightoption + Leftcommand_sharpe",
       "manipulators": [
         {
           "type": "basic",
@@ -309,98 +356,45 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_BackSpace(!Finder)",
+      "description": "Use F2 as Rename",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control",
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + A_ NewFileCreate",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
             "modifiers": {
               "mandatory": [
                 "right_gui"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
           "to": [
             {
-              "key_code": "delete_or_backspace"
+              "key_code": "n",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "to_if_alone": [
             {
               "key_code": "right_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + RightCommand_equalsign",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Rightoption_plus",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_alt",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
@@ -586,7 +580,7 @@
             "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_alt"
               ]
             }
           },

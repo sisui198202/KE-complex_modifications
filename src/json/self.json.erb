@@ -14,12 +14,56 @@
       ]
     },
     {
-      "description": "RightCommand + Space_Escape",
+      "description": "LeftCommand + space_BackSpace(!Finder)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["left_control"],
+                 dest_keys_list: ["delete_or_backspace"],
+                 from_mandatory_modifiers: ["spacebar"],
+                 from_optional_modifiers: ["any"],
+                 to_if_alone: [{"key_code": "right_gui"}],
+                 conditions: [frontmost_application_unless("finder", false)],                 
+                 as_json: true
+               )
+       %>        
+    },
+    {
+      "description": "LeftCommand + RightCommand_plus",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_gui"],
+                 dest_keys_list: ["equal_sign"],
+                 from_mandatory_modifiers: ["left_control"],
+                 from_optional_modifiers: ["any"],
+                 to_modifiers: ["right_shift"],                 
+                 to_if_alone: [{"key_code": "left_control"}],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "LeftCommand + Rightoption_equal",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_alt"],
+                 dest_keys_list: ["equal_sign"],
+                 from_mandatory_modifiers: ["left_control"],
+                 from_optional_modifiers: ["any"], 
+                 to_if_alone: [{"key_code": "left_control"}],
+                 as_json: true
+               )
+       %>
+    },                
+    {
+      "description": "RightCommand + Space_delete",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
-                 dest_keys_list: ["escape"],
+                 dest_keys_list: ["delete_forward"],
                  from_mandatory_modifiers: ["right_gui"],
                  to_if_alone: [{"key_code": "right_gui"}],
                  as_json: true
@@ -40,45 +84,19 @@
        %>        
     },
     {
-      "description": "Use F2 as Rename",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["f2"],
-                 dest_keys_list: ["return_or_enter"],
-                 as_json: true
-               )
-       %>
-    },
-    {
-      "description": "RightCommand + A_ NewFileCreate",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["a"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: ["n"],
-                 to_modifiers: ["right_gui"],
-                 to_if_alone: [{"key_code": "right_gui"}],                 
-                 as_json: true
-               )
-       %>
-    },
-    {
-      "description": "Leftoption + space_underbar",
+      "description": "Leftoption + space_enter",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
-                 dest_keys_list: ["hyphen"],
+                 dest_keys_list: ["return_or_enter"],
                  from_mandatory_modifiers: ["left_alt"],
                  from_optional_modifiers: ["any"],
-                 to_modifiers: ["right_shift"],                 
                  to_if_alone: [{"key_code": "left_alt"}],
                  as_json: true
                )
        %>
-    },        
+    },
     {
       "description": "Leftoption + Rightcommand_hypen",
       "manipulators":
@@ -94,12 +112,12 @@
        %>
     },
     {
-      "description": "Leftoption + Rightoption_pipeline",
+      "description": "Leftoption + Rightoption_parsent",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_alt"],
-                 dest_keys_list: ["backslash"],
+                 dest_keys_list: ["5"],
                  from_mandatory_modifiers: ["left_alt"],
                  from_optional_modifiers: ["any"], 
                  to_modifiers: ["right_shift"],                 
@@ -109,22 +127,21 @@
        %>
     },
     {
-      "description": "Rightoption + space_parcent",
+      "description": "Rightoption + space_escape",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
-                 dest_keys_list: ["5"],
+                 dest_keys_list: ["escape"],
                  from_mandatory_modifiers: ["right_alt"],
                  from_optional_modifiers: ["any"], 
-                 to_modifiers: ["right_shift"],                 
                  to_if_alone: [{"key_code": "right_alt"}],
                  as_json: true
                )
        %>
     },
     {
-      "description": "Rightoption + Leftcommand_shape1",
+      "description": "Rightoption + Leftcommand_sharpe",
       "manipulators":
       <%=
                each_key(
@@ -152,51 +169,32 @@
                  as_json: true
                )
        %>
-    },
+    },                
     {
-      "description": "RightCommand + LeftCommand_BackSpace(!Finder)",
+      "description": "Use F2 as Rename",
       "manipulators":
       <%=
                each_key(
-                 source_keys_list: ["left_control"],
-                 dest_keys_list: ["delete_or_backspace"],
+                 source_keys_list: ["f2"],
+                 dest_keys_list: ["return_or_enter"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "RightCommand + A_ NewFileCreate",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["a"],
                  from_mandatory_modifiers: ["right_gui"],
-                 from_optional_modifiers: ["any"],
-                 to_if_alone: [{"key_code": "right_gui"}],
-                 conditions: [frontmost_application_unless("finder", false)],                 
-                 as_json: true
-               )
-       %>        
-    },    
-    {
-      "description": "LeftCommand + RightCommand_equalsign",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_gui"],
-                 dest_keys_list: ["equal_sign"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 to_if_alone: [{"key_code": "left_control"}],
+                 dest_keys_list: ["n"],
+                 to_modifiers: ["right_gui"],
+                 to_if_alone: [{"key_code": "right_gui"}],                 
                  as_json: true
                )
        %>
     },
-    {
-      "description": "LeftCommand + Rightoption_plus",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_alt"],
-                 dest_keys_list: ["equal_sign"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 to_modifiers: ["right_shift"],                 
-                 to_if_alone: [{"key_code": "left_control"}],
-                 as_json: true
-               )
-       %>
-    },    
     {
       "description": "LeftCommand + V__AppClose",
       "manipulators":
@@ -258,7 +256,7 @@
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
-                 from_mandatory_modifiers: ["left_control"],
+                 from_mandatory_modifiers: ["left_alt"],
                  dest_keys_list: ["return_or_enter"],
                  conditions: [frontmost_application_unless("finder", false)],                 
                  as_json: true
