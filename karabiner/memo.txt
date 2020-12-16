@@ -1,0 +1,365 @@
+新jsonファイルを作成する手順
+
+src/json/に.~.json.erbファイルを新規作成
+src/index.html.erbのadd_groupにファイル名等を入力
+makeコマンドを実行
+docs/json/に.jsonファイルが新規作成されているのを確認する。
+ーーーーーーーーーーーー
+コメントの書き方
+
+<%# %>
+ーーーーーーーーーーーー
+karavinerのオリジナルキー設定自分用の公開ページ
+
+https://sisui198202.github.io/KE-complex_modifications/
+ーーーーーーーーーーーー
+makeするディレクトリ
+
+/Users/mac/Desktop/KE-complex_modifications
+ーーーーーーーーーーーー
+github フォークしたurl
+
+https://github.com/sisui198202/KE-complex_modifications.git
+ーーーーーーーーーーーー
+強制的にIMEをオフにする
+        {
+         "key_code": "japanese_eisuu"
+        },
+ーーーーーーーーーーーー
+特定アプリのみにキー割り当て,特定アプリ以外のみにキー割り当て
+
+[erb2json.rb]内にある、def frontmost_applicationの関数内に、
+karabiner-Eventviewerの調べたBundle Identtifer名を追加する。
+whenに変数名を追加。
+
+
+ex）
+[erb2json.rb]
+
+1
+vscode_bundle_identifers = [
+    '^com.microsoft.VSCode$'
+  ]
+
+2
+when 'vscode'
+bundle_identifiers.concat(vscode_bundle_identifers)  
+ーーーーーーーーーーーー
+to_if_alone: ["key_code": "c","modifiers": ["right_command"]],
+
+↓
+
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ]
+ーーーーーーーーーーーー
+json 書き方　成功パターン
+
+to_if_alone: ["key_code": "c","modifiers": ["right_command"],],
+
+↓
+
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ]
+
+ ーーーーーーーーーーーー
+ to_if_alone: ["key_code": ["c","right_command"]],
+
+ ↓変換後
+
+ "to_if_alone": [
+                                    {
+                                        "key_code": [
+                                            "c",
+                                            "right_command"
+                                        ]
+                                    }
+                                ],
+ーーーーーーーーーーーー
+to_if_alone書き方
+
+to_if_alone: ["right_gui"],
+
+↓
+
+to_if_alone: [{"key_code": "right_gui"}],
+
+✳︎
+key_codeをデフォルトだと、key_codeを生成してくれない。
+ーーーーーーーーーーーー
+LeftCommand + space : enter
+LeftCommand + RightCommand:=
+LeftCommand + Rightoption:+
+
+RightCommand + space :escape
+RightCommand + LeftCommand:Backspace
+RightCommand + Leftoption:\
+
+不可:RightCommand + Leftcontrol:
+
+Leftoption + space:_
+Leftoption + Rightcommand:-
+Leftoption + Rightoption:|
+
+Rightoption + space:~
+Rightoption + Leftcommand:`
+Rightoption + Leftoption:&
+ーーーーーーーーーーーー
+見本1
+
+{
+  "title": "Personal rules (@sisui)",
+  "rule_list": false,
+  "make_extra_description": true,
+  "rules": [
+    {
+      "description": "Others (Dock, Sleep, Delete, IME, Misison Control, Spotlight)",
+      "manipulators": [
+        <%# Spotlight %>
+        {
+          "type": "basic",
+          "from": <%= from("f", ["command", "control"]) %>,
+          "to": <%= to([["spacebar", ["command"]]]) %>
+        }
+      ]
+    }
+  ]
+}
+ーーーーーーーーーーーー
+見本2
+
+{
+  "title": "Personal rules (@rcmdnk)",
+  "rules": [
+    {
+      "description": "Change Control-e  to Command-f",
+      "manipulators": [
+        {
+          <%# Control-E to F %>
+          "type": "basic",
+          "from": <%= from("e", ["control"], []) %>,
+          "to": <%= to([["f"]]) %>
+        }
+      ]
+    }
+  ]
+}
+ーーーーーーーーーーーー
+見本３ (1つのルールで２つの項目)
+
+{
+  "title": "Personal rules (@sisui)",
+  "rules": [
+    {
+      "description": "LeftControl + f_Tab",
+      "manipulators": [
+        {
+          <%# Control-E to F %>
+          "type": "basic",
+          "from": <%= from("f", ["left_control"], []) %>,
+          "to": <%= to([["tab"]]) %>
+        }
+      ]
+    },
+   {
+      "description": "kana + spacebar_Escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], []) %>,
+          "to": <%= to([["right_gui"]]) %>
+        }
+      ]
+    }
+  ]
+}
+ーーーーーーーーーーーー
+見本４　each_keyを使った例
+
+{
+  "title": "Personal rules (@sisui)",
+  "rules": [
+    {
+      "description": "LeftControl + f_Tab",
+      "manipulators": [
+        {
+          <%# Control-E to F %>
+          "type": "basic",
+          "from": <%= from("f", ["left_control"], []) %>,
+          "to": <%= to([["tab"]]) %>
+        }
+      ]
+    },
+   {
+      "description": "kana + spacebar_Escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], []) %>,
+          "to": <%= to([["right_gui"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "Change cmd-ctrl-h/j/k/l to arrow keys",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["z", "x", "c", "v"],
+                 dest_keys_list: ["0", "1", "2", "3","4"],
+                 from_mandatory_modifiers: ["right_gui", "right_gui","right_gui","right_gui"],
+                 to_if_alone: ["right_gui","right_gui","right_gui","right_gui"],
+                 as_json: true
+               )
+       %>
+    }
+  ]
+}
+ーーーーーーーーーーーー
+見本５(数字まで実装分)
+
+{
+  "title": "Personal rules (@sisui)",
+  "rules": [
+    {
+      "description": "LeftControl + f_Tab",
+      "manipulators": [
+        {
+          <%# Control-E to F %>
+          "type": "basic",
+          "from": <%= from("f", ["left_control"], []) %>,
+          "to": <%= to([["tab"]]) %>
+        }
+      ]
+    },
+   {
+      "description": "kana + spacebar_Escape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], []) %>,
+          "to": <%= to([["right_gui"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "numbers_0-9",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["z", "x", "c", "v","s","d","f","w","e","r"],
+                 dest_keys_list: ["0", "1", "2", "3","4","5","6","7","8","9"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 to_if_alone: ["right_gui"],
+                 as_json: true
+               )
+       %>
+    }
+  ]
+}
+ーーーーーーーーーーーー
+型
+
+{
+  "title": "$1",
+  "rule_list": false,
+  "make_extra_description": true,
+  "rules": [
+    {
+      "description": "$2",
+      "manipulators": [
+        <%# Spotlight %>
+        {
+          "type": "basic",
+          "from": <%= from("$3", ["$4", "$5"]) %>,
+          "to": <%= to([["$6", ["$7"]]]) %>
+        }
+      ]
+    }
+  ]
+}
+ーーーーーーーーーーーー
+make,make rebuild
+
+make
+
+make rebuild
+ーーーーーーーーーーーー
+アプリケーション一覧からセレクトで選択したアプリを
+アクティブ全面に表示
+
+AppSelect
+
+LeftCommand + ._AppSelect
+
+From
+	Key Code:.(ドット)
+	Mandatory Modifiers:Left Control
+
+To
+	Key Code:Tab Key
+	Modifiers:Right Command
+	Additional Options:Halt
+
+To If Alone Events
+	Key Code(optional):Left Control
+
+-----------------------------------------------
+.rbのファイル
+
+Rubyの拡張子で使用するもの
+ーーーーーーーーーーーー
+
+デフォルトショットカットキー
+
+command + a すべてを選択
+
+ーーーーーーーーーーーー
+キー置き換え
+
+
+:leftshift x 2
+:rightshift x 2
+
+
+$:Leftcommand + space
+:Leftcommand + かな
+:Leftcommand + Rightcommand
+
+enter:英数 + space
+"":英数 + かな
+':英数 + rightcommand
+
+
+escape:かな x space
+backspace:かな + 英数
+=:かな + leftcommand
+
+ーーーーーーーーーーーー
+karaviner	実際に入力されるキー
+
+backslash → ]
+fn → fn
+escape → escape
+hyphen → -
+equal_sign → ^
+open_braket_[ → @
+close_braket_] → [
+non_us_pound → ]
+semicon; → ;
+quote → :_koron
+tiruda → `
+comma → ,
+period → .
+ーーーーーーーーーーーー

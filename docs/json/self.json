@@ -268,15 +268,15 @@
       ]
     },
     {
-      "description": "Rightoption + space_escape",
+      "description": "LeftCommand + g_escape",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "spacebar",
+            "key_code": "g",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_command"
               ],
               "optional": [
                 "any"
@@ -290,7 +290,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "right_alt"
+              "key_code": "left_command"
             }
           ]
         }
@@ -680,12 +680,12 @@
       ]
     },
     {
-      "description": "RightCommand_Copy",
+      "description": "LeftAlt_Copy",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_command"
+            "key_code": "left_alt"
           },
           "to": [
             {
