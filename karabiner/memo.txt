@@ -1,4 +1,3 @@
----------------------
 macのキー: karavinerが認識するキー
 
 left_control: left_control
@@ -59,6 +58,75 @@ aを押したら、b cと入力
     ]
 }
     ]
+}
+---------------------
+単独で押した場合と組み合わせで押した場合で違う変換を行う
+
+Macの5つの修飾キー
+
+left_control
+left_option:copy
+left_command:英数モードに切り替え(IME有効化)
+right_command:かな入力モードに切り替え(IME無効化)
+right_option(貼り付け)
+
+[left_option]のケース
+
+      "from": {
+        "key_code": "left_option",
+        "modifiers": { "optional": [ "any" ] }
+      },
+
+      "to": [
+        {
+          "key_code": "left_option",
+          "lazy": true
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "c",
+          "modifiers": [
+            "left_command"
+          ]
+
+# ex)
+{
+  "description": "commandキー単体で押したら英数・かなキーに変換。組み合わせで押したらcommandキーとして使う。",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "left_command",
+        "modifiers": { "optional": [ "any" ] }
+      },
+      "to": [
+        {
+          "key_code": "left_command",
+          "lazy": true
+        }
+      ],
+      "to_if_alone": [
+        { "key_code": "japanese_eisuu" }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "right_command",
+        "modifiers": { "optional": [ "any" ] }
+      },
+      "to": [
+        {
+          "key_code": "right_command",
+          "lazy": true
+        }
+      ],
+      "to_if_alone": [
+        { "key_code": "japanese_kana" }
+      ]
+    }
+  ]
 }
 ---------------------
 強制的にIMEをオフにする
