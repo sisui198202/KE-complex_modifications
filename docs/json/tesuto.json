@@ -1,20 +1,37 @@
 {
-  "title": "tesuto",
+  "title": "1行選択",
   "rules": [
     {
-      "description": "a押したらb,c",
+      "description": "1行選択",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a"
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
           },
           "to": [
             {
-              "key_code": "b"
+              "key_code": "a",
+              "modifiers": [
+                "left_ctrl"
+              ]
             },
             {
-              "key_code": "c"
+              "key_code": "down",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ]
         }

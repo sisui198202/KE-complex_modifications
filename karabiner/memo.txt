@@ -22,6 +22,36 @@ github フォークしたurl
 
 https://github.com/sisui198202/KE-complex_modifications.git
 ーーーーーーーーーーーー
+aを押したら、b cと入力
+
+"to": [
+    { "key_code": "１つ目の処理" },
+    { "key_code": "2つ目の処理" }
+]
+
+
+# ex)
+{
+    "title": "tesuto",
+    "rules": [
+            {
+    "description": "a押したらb,c",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "a"
+            },
+            "to": [
+                { "key_code": "b" },
+                { "key_code": "c" }
+            ]
+        }
+    ]
+}
+    ]
+}
+---------------------
 強制的にIMEをオフにする
         {
          "key_code": "japanese_eisuu"
