@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)",
+  "title": "add_Personal rules1 (@sisui)_ver2",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver1",
@@ -58,6 +58,34 @@
           "to_if_alone": [
             {
               "key_code": "left_control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + I_FocusNeighboringGroup",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
             }
           ]
         }

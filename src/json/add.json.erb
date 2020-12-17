@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)",
+  "title": "add_Personal rules1 (@sisui)_ver2",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver1",
@@ -14,7 +14,7 @@
                )
        %>        
     },
-        {
+      {
       "description": "LeftCommand + o_tesuto99",
       "manipulators":
       <%=
@@ -25,6 +25,20 @@
                  dest_keys_list: ["o"],
                  to_modifiers: ["left_control","left_shift"],
                  to_if_alone: ["key_code": "left_control"],                 
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "RightCommand + I_FocusNeighboringGroup",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["i"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 from_optional_modifiers: ["any"],
+                 dest_keys_list: ["i"],
+                 to_modifiers: ["right_gui","right_alt"],                 
                  as_json: true
                )
        %>
