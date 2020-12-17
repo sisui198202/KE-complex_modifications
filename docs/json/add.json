@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver2",
+  "title": "add_Personal rules1 (@sisui)_ver3",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver2",
+      "description": "LeftAlt + o_Save_ver3",
       "manipulators": [
         {
           "type": "basic",
@@ -100,7 +100,7 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ]
             }
           },
