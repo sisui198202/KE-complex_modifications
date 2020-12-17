@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver6",
+  "title": "add_Personal rules1 (@sisui)_ver7",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver6",
+      "description": "LeftAlt + o_Save_ver7",
       "manipulators": [
         {
           "type": "basic",
@@ -130,6 +130,30 @@
               "modifiers": [
                 "right_control",
                 "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + P_RightHalfMove",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_alt"
               ]
             }
           ]

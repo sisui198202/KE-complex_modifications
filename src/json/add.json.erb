@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver6",
+  "title": "add_Personal rules1 (@sisui)_ver7",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver6",
+      "description": "LeftAlt + o_Save_ver7",
       "manipulators":
       <%=
                each_key(
@@ -65,6 +65,19 @@
                  from_mandatory_modifiers: ["left_control"],
                  dest_keys_list: ["t"],
                  to_modifiers: ["right_control","left_shift"],                 
+                 as_json: true
+               )
+       %>
+    },
+   {
+      "description": "RightCommand + P_RightHalfMove",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["p"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 dest_keys_list: ["3"],
+                 to_modifiers: ["right_alt"],
                  as_json: true
                )
        %>
