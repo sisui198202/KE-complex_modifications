@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver12",
+  "title": "add_Personal rules1 (@sisui)_ver13",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver7",
@@ -132,6 +132,19 @@
                  from_mandatory_modifiers: ["left_control"],
                  dest_keys_list: ["2"],
                  to_modifiers: ["right_option"],
+                 as_json: true
+               )
+       %>
+    },
+   {
+      "description": "LeftCommand + Z_RowCursolNewline",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["z"],
+                 from_mandatory_modifiers: ["left_control"],
+                 dest_keys_list: ["return_or_enter"],
+                 to_modifiers: ["right_gui"],
                  as_json: true
                )
        %>

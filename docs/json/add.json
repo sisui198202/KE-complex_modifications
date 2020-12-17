@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver12",
+  "title": "add_Personal rules1 (@sisui)_ver13",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver7",
@@ -252,6 +252,30 @@
               "key_code": "2",
               "modifiers": [
                 "right_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_RowCursolNewline",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ]
