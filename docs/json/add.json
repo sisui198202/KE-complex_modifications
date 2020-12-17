@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver9",
+  "title": "add_Personal rules1 (@sisui)_ver10",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver7",
@@ -169,7 +169,7 @@
             "key_code": "slash",
             "modifiers": {
               "mandatory": [
-                "right_control"
+                "right_gui"
               ]
             }
           },
