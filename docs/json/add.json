@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver3",
+  "title": "add_Personal rules1 (@sisui)_ver4",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver3",
+      "description": "LeftAlt + o_Save_ver4",
       "manipulators": [
         {
           "type": "basic",
@@ -107,6 +107,31 @@
           "to": [
             {
               "key_code": "h",
+              "modifiers": [
+                "right_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_ToggleSidebarOnOff",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
               "modifiers": [
                 "right_control",
                 "left_shift"
