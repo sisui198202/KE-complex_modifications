@@ -1,0 +1,8 @@
+{
+  "title": "これだけでもAdd rulesに表示されます。",
+  "rules": [
+    {
+      "description": "descriptionだけ記述"
+    }
+  ]
+}
