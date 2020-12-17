@@ -277,20 +277,12 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
           "to": [
             {
               "key_code": "escape"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
