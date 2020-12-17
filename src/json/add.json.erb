@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver8",
+  "title": "add_Personal rules1 (@sisui)_ver9",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver7",
@@ -90,6 +90,19 @@
                  source_keys_list: ["slash"],
                  from_mandatory_modifiers: ["right_control"],
                  dest_keys_list: ["i"],
+                 to_modifiers: ["right_control","right-shift"],
+                 as_json: true
+               )
+       %>
+    },
+   {
+      "description": "LeftCommand + CloseBracket_unindent",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["close_bracket"],
+                 from_mandatory_modifiers: ["left_control"],
+                 dest_keys_list: ["1"],
                  to_modifiers: ["right_control","right-shift"],
                  as_json: true
                )
