@@ -851,39 +851,6 @@
       ]
     },
     {
-      "description": "LeftCommand + o_tesuto99",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + o_SameWordExpandSelection",
       "manipulators": [
         {
