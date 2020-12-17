@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver10",
+  "title": "add_Personal rules1 (@sisui)_ver11",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver7",
@@ -204,6 +204,30 @@
               "modifiers": [
                 "right_control",
                 "right-shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + OpenBracket_Command Palete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ]
