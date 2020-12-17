@@ -2,7 +2,7 @@
   "title": "add_Personal rules1 (@sisui)_ver2",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver1",
+      "description": "LeftAlt + o_Save_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "description": "LeftCommand + o_tesuto99",
+      "description": "LeftCommand + o_VSCODE横2画面へ",
       "manipulators": [
         {
           "type": "basic",
@@ -85,6 +85,31 @@
               "modifiers": [
                 "right_gui",
                 "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + H_VSCODE1画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "right_control",
+                "left_shift"
               ]
             }
           ]

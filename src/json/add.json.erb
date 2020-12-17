@@ -2,7 +2,7 @@
   "title": "add_Personal rules1 (@sisui)_ver2",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver1",
+      "description": "LeftAlt + o_Save_ver2",
       "manipulators":
       <%=
                each_key(
@@ -15,7 +15,7 @@
        %>        
     },
       {
-      "description": "LeftCommand + o_tesuto99",
+      "description": "LeftCommand + o_VSCODE横2画面へ",
       "manipulators":
       <%=
                each_key(
@@ -39,6 +39,19 @@
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["i"],
                  to_modifiers: ["right_gui","right_alt"],                 
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "LeftCommand + H_VSCODE1画面へ",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["h"],
+                 from_mandatory_modifiers: ["left_gui"],
+                 dest_keys_list: ["h"],
+                 to_modifiers: ["right_control","left_shift"],                 
                  as_json: true
                )
        %>
