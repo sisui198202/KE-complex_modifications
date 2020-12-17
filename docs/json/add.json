@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver4",
+  "title": "add_Personal rules1 (@sisui)_ver5",
   "rules": [
     {
-      "description": "LeftAlt + o_Save_ver4",
+      "description": "LeftAlt + o_Save_ver5",
       "manipulators": [
         {
           "type": "basic",
