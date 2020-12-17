@@ -384,21 +384,6 @@
        %>
     },
     {
-      "description": "LeftCommand + o_tesuto99",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["o"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["o"],
-                 to_modifiers: ["left_control","left_shift"],
-                 to_if_alone: ["key_code": "left_control"],                 
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "RightCommand + o_SameWordExpandSelection",
       "manipulators":
       <%=
