@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver11",
+  "title": "add_Personal rules1 (@sisui)_ver12",
   "rules": [
     {
       "description": "LeftAlt + o_Save_ver7",
@@ -228,6 +228,30 @@
               "key_code": "open_bracket",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Q_LeftWindowMove",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option"
               ]
             }
           ]
