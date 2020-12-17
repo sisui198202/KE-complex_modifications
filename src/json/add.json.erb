@@ -1,0 +1,18 @@
+{
+  "title": "add_Personal rules1 (@sisui)",
+  "rules": [
+    {
+      "description": "LeftAlt + o_Save_ver1",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["o"],
+                 dest_keys_list: ["left_alt"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 to_if_alone: ["key_code": "s","modifiers": ["left_command"]],
+                 as_json: true
+               )
+       %>        
+    }
+      ]
+}

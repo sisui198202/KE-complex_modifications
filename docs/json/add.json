@@ -1,0 +1,34 @@
+{
+  "title": "add_Personal rules1 (@sisui)",
+  "rules": [
+    {
+      "description": "LeftAlt + o_Save_ver1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
