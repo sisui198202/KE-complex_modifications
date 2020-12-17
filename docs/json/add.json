@@ -159,6 +159,31 @@
           ]
         }
       ]
+    },
+    {
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_control",
+                "right-shift"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -81,6 +81,19 @@
                  as_json: true
                )
        %>
+    },
+   {
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["slash"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 dest_keys_list: ["i"],
+                 to_modifiers: ["right_control","right-shift"],
+                 as_json: true
+               )
+       %>
     }
       ]
 }
