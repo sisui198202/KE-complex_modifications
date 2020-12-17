@@ -1,4 +1,13 @@
+---------------------
+macのキー: karavinerが認識するキー
 
+left_control: left_control
+left_option: left_option
+left_command: left_gui
+
+right_command: right_gui
+right_option: right_option
+---------------------
 新jsonファイルを作成する手順
 
 src/json/に.~.json.erbファイルを新規作成
