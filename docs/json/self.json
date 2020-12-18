@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver4",
+  "title": "Personal rules1 (@sisui)_ver5",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -61,20 +61,12 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
           "to": [
             {
               "key_code": "equal_sign"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
