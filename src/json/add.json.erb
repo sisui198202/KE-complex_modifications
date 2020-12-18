@@ -1,6 +1,50 @@
 {
   "title": "add_Personal rules1 (@sisui)_ver17",
   "rules": [
+    {
+      "description": "Rightoption + Leftcommand_sharpe",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["left_control"],
+                 dest_keys_list: ["3"],
+                 from_mandatory_modifiers: ["right_alt"],
+                 from_optional_modifiers: ["any"], 
+                 to_modifiers: ["right_shift"],                 
+                 to_if_alone: [{"key_code": "right_alt"}],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Leftoption + Rightoption_parsent",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_alt"],
+                 dest_keys_list: ["5"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 from_optional_modifiers: ["any"], 
+                 to_modifiers: ["right_shift"],                 
+                 to_if_alone: [{"key_code": "left_alt"}],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Leftoption + Rightcommand_hypen",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_command"],
+                 dest_keys_list: ["hyphen"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 from_optional_modifiers: ["any"], 
+                 to_if_alone: [{"key_code": "left_alt"}],
+                 as_json: true
+               )
+       %>
+    },
         {
       "description": "Leftoption + space_enter",
       "manipulators":

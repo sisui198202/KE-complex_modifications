@@ -2,6 +2,99 @@
   "title": "add_Personal rules1 (@sisui)_ver17",
   "rules": [
     {
+      "description": "Rightoption + Leftcommand_sharpe",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "right_alt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leftoption + Rightoption_parsent",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_alt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leftoption + Rightcommand_hypen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_alt"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Leftoption + space_enter",
       "manipulators": [
         {
