@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver6",
+  "title": "Personal rules1 (@sisui)_ver7",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "description": "RightCommand + Space_delete(!Finder)_ver1",
+      "description": "RightCommand + Space_delete(!Finder)_ver3",
       "manipulators": [
         {
           "type": "basic",
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "description": "RightCommand + Leftoption_backslash_ver1",
+      "description": "RightCommand + Leftoption_backslash_ver3",
       "manipulators": [
         {
           "type": "basic",
