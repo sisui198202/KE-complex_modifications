@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver25",
+  "title": "Personal rules1 (@sisui)_ver26",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -1118,7 +1118,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma__AppsSelect-Previous",
+      "description": "LeftCommand + ,comma__AppsSelect-Previous_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -1138,17 +1138,12 @@
                 "left_shift"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
           ]
         }
       ]
     },
     {
-      "description": "LeftCommand + .__AppsSelect-next",
+      "description": "LeftCommand + .__AppsSelect-next_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -1166,11 +1161,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
