@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver16",
+  "title": "Personal rules1 (@sisui)_ver17",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -472,7 +472,7 @@
       ]
     },
     {
-      "description": "RightCommand + T_Search",
+      "description": "RightCommand + T_Search_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -491,17 +491,12 @@
                 "right_gui"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
           ]
         }
       ]
     },
     {
-      "description": "LeftCommand + c_DesktopExist",
+      "description": "LeftCommand + c_DesktopExist_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -519,11 +514,6 @@
               "modifiers": [
                 "left_alt"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
