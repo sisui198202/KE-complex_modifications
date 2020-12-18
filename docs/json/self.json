@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver23",
+  "title": "Personal rules1 (@sisui)_ver25",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -627,7 +627,7 @@
       ]
     },
     {
-      "description": "LeftOption + Q_Window UP_ver1",
+      "description": "LeftOption + Q_Window UP_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -636,9 +636,6 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -654,7 +651,7 @@
       ]
     },
     {
-      "description": "LeftOption + P_Window down_ver1",
+      "description": "LeftOption + P_Window down_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -663,9 +660,6 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -681,7 +675,7 @@
       ]
     },
     {
-      "description": "LeftOption + W_Window Right up_ver1",
+      "description": "LeftOption + W_Window Right up_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -690,9 +684,6 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -708,7 +699,7 @@
       ]
     },
     {
-      "description": "LeftOption + E_Window Right down_ver1",
+      "description": "LeftOption + E_Window Right down_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -717,9 +708,6 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -831,7 +819,7 @@
       ]
     },
     {
-      "description": "LeftCommand + S_Cut",
+      "description": "LeftCommand + S_Cut_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -850,17 +838,12 @@
                 "right_gui"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
           ]
         }
       ]
     },
     {
-      "description": "RightCommand + G_File-Tab-Close",
+      "description": "RightCommand + G_File-Tab-Close_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -879,17 +862,12 @@
                 "right_gui"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
           ]
         }
       ]
     },
     {
-      "description": "RightCommand + ;_LatestTabToggle",
+      "description": "RightCommand + ;_LatestTabToggle_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -908,17 +886,12 @@
                 "left_control"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
           ]
         }
       ]
     },
     {
-      "description": "RightCommand + L_NextTab",
+      "description": "RightCommand + L_NextTab_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -938,17 +911,12 @@
                 "left_shift"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
           ]
         }
       ]
     },
     {
-      "description": "LeftCommand + o_VSCODE横2画面へ",
+      "description": "LeftCommand + o_VSCODE横2画面へ_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -970,11 +938,6 @@
                 "left_control",
                 "left_shift"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
