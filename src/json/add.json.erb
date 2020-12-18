@@ -1,6 +1,21 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver15",
+  "title": "add_Personal rules1 (@sisui)_ver16",
   "rules": [
+        {
+      "description": "LeftCommand + RightCommand_plus",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_gui"],
+                 dest_keys_list: ["equal_sign"],
+                 from_mandatory_modifiers: ["left_control"],
+                 from_optional_modifiers: ["any"],
+                 to_modifiers: ["right_shift"],
+                 to_if_alone: [{"key_code": "left_control"}],
+                 as_json: true
+               )
+       %>
+    },
         {
             "description": "1行選択_ver1",
             "manipulators": [

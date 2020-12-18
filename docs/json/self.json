@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver3",
+  "title": "Personal rules1 (@sisui)_ver4",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -46,38 +46,6 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.finder$"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + RightCommand_plus",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }

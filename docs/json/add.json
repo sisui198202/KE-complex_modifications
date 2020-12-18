@@ -1,6 +1,38 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver15",
+  "title": "add_Personal rules1 (@sisui)_ver16",
   "rules": [
+    {
+      "description": "LeftCommand + RightCommand_plus",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_control"
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "1行選択_ver1",
       "manipulators": [
