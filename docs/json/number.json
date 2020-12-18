@@ -16,12 +16,10 @@
           },
           "to": [
             {
-              "key_code": "0"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "0"
             }
           ]
         },
@@ -37,12 +35,10 @@
           },
           "to": [
             {
-              "key_code": "1"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "1"
             }
           ]
         },
@@ -58,12 +54,10 @@
           },
           "to": [
             {
-              "key_code": "2"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "2"
             }
           ]
         },
@@ -79,12 +73,10 @@
           },
           "to": [
             {
-              "key_code": "3"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "3"
             }
           ]
         },
@@ -100,12 +92,10 @@
           },
           "to": [
             {
-              "key_code": "4"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "4"
             }
           ]
         },
@@ -121,12 +111,10 @@
           },
           "to": [
             {
-              "key_code": "5"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "5"
             }
           ]
         },
@@ -142,12 +130,10 @@
           },
           "to": [
             {
-              "key_code": "6"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "6"
             }
           ]
         },
@@ -163,12 +149,10 @@
           },
           "to": [
             {
-              "key_code": "7"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "7"
             }
           ]
         },
@@ -184,12 +168,10 @@
           },
           "to": [
             {
-              "key_code": "8"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "8"
             }
           ]
         },
@@ -205,12 +187,10 @@
           },
           "to": [
             {
-              "key_code": "9"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "9"
             }
           ]
         }
