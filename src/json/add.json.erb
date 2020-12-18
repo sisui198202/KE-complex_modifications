@@ -1,6 +1,36 @@
 {
   "title": "add_Personal rules1 (@sisui)_ver14",
   "rules": [
+        {
+            "description": "1行選択_ver1",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_gui"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [
+                                "left_control"
+                            ]
+                        },
+                        {
+                            "key_code": "down",
+                            "modifiers": [
+                                "left_shift"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
     {
       "description": "LeftAlt + o_Save_ver7",
       "manipulators":
