@@ -1,0 +1,3 @@
+          add_group("number","number_setting",[
+              "number.json"
+          ])
