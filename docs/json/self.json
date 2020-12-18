@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver18",
+  "title": "Personal rules1 (@sisui)_ver19",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -577,7 +577,7 @@
       ]
     },
     {
-      "description": "RightCommand + o_SameWordExpandSelection",
+      "description": "RightCommand + o_SameWordExpandSelection_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -596,11 +596,6 @@
                 "right_gui",
                 "right_alt"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
             }
           ]
         }
@@ -627,17 +622,12 @@
                 "left_control"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
           ]
         }
       ]
     },
     {
-      "description": "LeftOption + Q_Set Mark",
+      "description": "LeftOption + Q_Window UP",
       "manipulators": [
         {
           "type": "basic",
@@ -651,16 +641,10 @@
           },
           "to": [
             {
-              "key_code": "q",
+              "key_code": "4",
               "modifiers": [
-                "left_alt",
-                "left_shift"
+                "left_alt"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
             }
           ]
         }
