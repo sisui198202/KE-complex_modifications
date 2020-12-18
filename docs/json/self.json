@@ -1,6 +1,38 @@
 {
-  "title": "Personal rules1 (@sisui)_ver28",
+  "title": "Personal rules1 (@sisui)_ver29",
   "rules": [
+    {
+      "description": "Rightoption + Leftcommand_sharpe",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "right_alt"
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
       "manipulators": [
