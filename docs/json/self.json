@@ -1,30 +1,22 @@
 {
-  "title": "Personal rules1 (@sisui)_ver33",
+  "title": "Personal rules1 (@sisui)_ver34",
   "rules": [
     {
-      "description": "Leftoption + Rightcommand_hypen",
+      "description": "Leftoption + Rightcommand_hypen_ver1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_command",
+            "key_code": "right_gui",
             "modifiers": {
               "mandatory": [
                 "left_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
           "to": [
             {
               "key_code": "hyphen"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
             }
           ]
         }
