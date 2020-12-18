@@ -76,7 +76,7 @@
       ]
     },
     {
-      "description": "RightCommand + Space_delete(!Finder)",
+      "description": "RightCommand + Space_delete(!Finder)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -93,11 +93,6 @@
               "key_code": "delete_forward"
             }
           ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
-            }
-          ],
           "conditions": [
             {
               "type": "frontmost_application_unless",
@@ -110,12 +105,12 @@
       ]
     },
     {
-      "description": "RightCommand + Leftoption_backslash",
+      "description": "RightCommand + Leftoption_backslash_ver1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "mandatory": [
                 "right_gui"
@@ -124,12 +119,10 @@
           },
           "to": [
             {
-              "key_code": "backslash"
-            }
-          ],
-          "to_if_alone": [
+              "key_code": "japanese_eisuu"
+            },
             {
-              "key_code": "right_gui"
+              "key_code": "backslash"
             }
           ]
         }

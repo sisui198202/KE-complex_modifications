@@ -39,28 +39,26 @@
        %>
     },
     {
-      "description": "RightCommand + Space_delete(!Finder)",
+      "description": "RightCommand + Space_delete(!Finder)_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["spacebar"],
-                 dest_keys_list: ["delete_forward"],
                  from_mandatory_modifiers: ["right_gui"],
-                 to_if_alone: [{"key_code": "right_gui"}],
+                 dest_keys_list: ["delete_forward"],
                  conditions: [frontmost_application_unless("finder", false)],
                  as_json: true
                )
        %>
     },
     {
-      "description": "RightCommand + Leftoption_backslash",
+      "description": "RightCommand + Leftoption_backslash_ver1",
       "manipulators":
       <%=
                each_key(
-                 source_keys_list: ["left_alt"],
-                 dest_keys_list: ["backslash"],
+                 source_keys_list: ["left_option"],
                  from_mandatory_modifiers: ["right_gui"],
-                 to_if_alone: [{"key_code": "right_gui"}],
+                 dest_keys_list: [["japanese_eisuu","backslash"]],
                  as_json: true
                )
        %>
