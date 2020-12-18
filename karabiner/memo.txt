@@ -30,6 +30,19 @@ github フォークしたurl
 
 https://github.com/sisui198202/KE-complex_modifications.git
 ーーーーーーーーーーーー
+https://sisui198202.github.io/KE-complex_modifications/(自分用の公開ページ)は、どこを読み取って表示されているかの確認
+
+makeコマンドをしたら、下記のディレクトリに、~.jsonファイルが作成される。
+/Users/user/Dropbox/iCollections/Folder1/KE-complex_modifications/docs/json
+
+このディレクトリにある、jsonファイルと/Users/user/Dropbox/iCollections/Folder1/KE-complex_modifications/docs/index.htmlのファイルの内容を読み取って表示されている。
+---------------------
+makeとadd_groupと自分用公開ページの反映の関係
+
+/Users/user/Dropbox/iCollections/Folder1/KE-complex_modifications/src/index.html.erbにあるadd_groupに/Users/user/Dropbox/iCollections/Folder1/KE-complex_modifications/src/json内にあるファイル名を書き込む必要あり。
+
+これをすることによって、https://sisui198202.github.io/KE-complex_modifications/(自分用の公開ページ)にも反映されるようになる。
+---------------------
 aを押したら、b cと入力
 
 "to": [
