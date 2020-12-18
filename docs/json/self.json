@@ -153,36 +153,6 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado_ver1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Use F2 as Rename",
       "manipulators": [
         {
@@ -328,7 +298,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowCut",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -342,15 +312,11 @@
           },
           "to": [
             {
-              "key_code": "k",
+              "key_code": "e",
               "modifiers": [
+                "left_shift",
                 "left_control"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
