@@ -1,65 +1,6 @@
 {
-  "title": "Personal rules1 (@sisui)_ver28",
+  "title": "Personal rules1 (@sisui)_ver30",
   "rules": [
-    {
-      "description": "Rightoption + Leftoption_anbasado_ver1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Leftoption + Space to Enter(!Finder)_ver1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "LeftControl + f_Tab",
       "manipulators": [
@@ -1177,7 +1118,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma__AppsSelect-Previous_ver1",
+      "description": "LeftCommand + ,comma__AppsSelect-Previous",
       "manipulators": [
         {
           "type": "basic",
@@ -1202,7 +1143,7 @@
       ]
     },
     {
-      "description": "LeftCommand + .__AppsSelect-next_ver1",
+      "description": "LeftCommand + .__AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
