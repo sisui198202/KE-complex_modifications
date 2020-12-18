@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver14",
+  "title": "Personal rules1 (@sisui)_ver15",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -424,7 +424,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy_ver1",
+      "description": "LeftAlt_Copy_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -434,24 +434,24 @@
           "to": [
             {
               "key_code": "right_gui"
+            },
+            {
+              "lazy": true
             }
           ],
           "to_if_alone": [
-            [
-              {
-                "key_code": "c",
-                "lazy": true,
-                "modifiers": [
-                  "right_gui"
-                ]
-              }
-            ]
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
           ]
         }
       ]
     },
     {
-      "description": "RightOption_Paste",
+      "description": "RightOption_Paste_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -461,6 +461,9 @@
           "to": [
             {
               "key_code": "right_alt"
+            },
+            {
+              "lazy": true
             }
           ],
           "to_if_alone": [
