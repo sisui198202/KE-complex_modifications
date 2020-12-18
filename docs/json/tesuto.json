@@ -2,6 +2,7 @@
   "title": "tesuto_case",
   "rules": [
     {
+      "description": "Leftoption + Space to Enter(!Finder)_ver1",
       "type": "basic",
       "from": {
         "key_code": "print_screen"
