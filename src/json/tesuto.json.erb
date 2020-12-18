@@ -1,0 +1,25 @@
+{
+  "title": "tesuto_case",
+  "rules": [
+{
+  "type": "basic",
+  "from": { "key_code": "print_screen" },
+  "to": [
+    { "key_code": "fn" }
+  ],
+  "to_if_alone": [
+    { "shell_command": "screencapture ~/Desktop/screenshot-`date +%Y%m%d-%H%M%S`.png" }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "p",
+    "modifiers": { "mandatory": [ "fn" ] }
+  },
+  "to": [
+    { "shell_command": "screencapture -P ~/Desktop/screenshot-`date +%Y%m%d-%H%M%S`.png" }
+  ]
+}
+      ]
+}
