@@ -27,13 +27,13 @@
        %>        
     },
     {
-      "description": "LeftCommand + Rightoption_equal",
+      "description": "LeftCommand + Rightoption_equal_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_alt"],
                  from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["equal_sign"],
+                 dest_keys_list: [["japanese_eisuu","equal_sign"]],
                  as_json: true
                )
        %>

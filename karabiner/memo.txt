@@ -43,6 +43,17 @@ makeとadd_groupと自分用公開ページの反映の関係
 
 これをすることによって、https://sisui198202.github.io/KE-complex_modifications/(自分用の公開ページ)にも反映されるようになる。
 ---------------------
+dest_keys_listを複数コマンドで指定する方法
+
+      <%=
+               each_key(
+                 source_keys_list: ["right_alt"],
+                 from_mandatory_modifiers: ["left_control"],
+                 dest_keys_list: [["japanese_eisuu","equal_sign"]],
+                 as_json: true
+               )
+       %>
+---------------------
 aを押したら、b cと入力
 
 "to": [
