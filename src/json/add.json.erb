@@ -2,20 +2,6 @@
   "title": "add_Personal rules1 (@sisui)_ver18",
   "rules": [
     {
-      "description": "LeftOption + Z_Current Row to Set Mark Row Selection",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["z"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["z"],
-                 to_modifiers: ["left_alt","left_shift"],
-                 to_if_alone: ["key_code": "left_alt"],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "Rightoption + Leftoption_anbasado_ver1",
       "manipulators":
       <%=
@@ -68,20 +54,6 @@
                  dest_keys_list: ["hyphen"],
                  from_mandatory_modifiers: ["left_alt"],
                  from_optional_modifiers: ["any"], 
-                 to_if_alone: [{"key_code": "left_alt"}],
-                 as_json: true
-               )
-       %>
-    },
-        {
-      "description": "Leftoption + space_enter",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 dest_keys_list: ["return_or_enter"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 from_optional_modifiers: ["any"],
                  to_if_alone: [{"key_code": "left_alt"}],
                  as_json: true
                )

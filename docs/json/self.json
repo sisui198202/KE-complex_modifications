@@ -2,27 +2,6 @@
   "title": "Personal rules1 (@sisui)_ver34",
   "rules": [
     {
-      "description": "Leftoption + Rightcommand_hypen_ver1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
       "manipulators": [
         {
