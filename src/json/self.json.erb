@@ -38,6 +38,7 @@
                )
        %>
     },
+    <%# deleteを機能させるには、anyが必要%>
     {
       "description": "RightCommand + Space_delete(!Finder)_ver2",
       "manipulators":
@@ -77,14 +78,14 @@
        %>
     },
     {
-      "description": "Rightoption + Leftoption_anbasado",
+      "description": "Rightoption + Leftoption_anbasado_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["left_alt"],
                  from_mandatory_modifiers: ["right_alt"],
                  dest_keys_list: ["7"],
-                 to_modifiers: ["right_shift"],
+                 to_modifiers: [["japanese_eisuu","right_shift"]],
                  as_json: true
                )
        %>
@@ -101,7 +102,7 @@
        %>
     },
     {
-      "description": "RightCommand + A_ NewFileCreate",
+      "description": "RightCommand + A_ NewFileCreate_ver1",
       "manipulators":
       <%=
                each_key(
@@ -109,7 +110,6 @@
                  from_mandatory_modifiers: ["right_gui"],
                  dest_keys_list: ["n"],
                  to_modifiers: ["right_gui"],
-                 to_if_alone: [{"key_code": "right_gui"}],                 
                  as_json: true
                )
        %>

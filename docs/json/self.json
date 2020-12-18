@@ -153,7 +153,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado",
+      "description": "Rightoption + Leftoption_anbasado_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -169,7 +169,10 @@
             {
               "key_code": "7",
               "modifiers": [
-                "right_shift"
+                [
+                  "japanese_eisuu",
+                  "right_shift"
+                ]
               ]
             }
           ]
@@ -193,7 +196,7 @@
       ]
     },
     {
-      "description": "RightCommand + A_ NewFileCreate",
+      "description": "RightCommand + A_ NewFileCreate_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -211,11 +214,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_gui"
             }
           ]
         }
