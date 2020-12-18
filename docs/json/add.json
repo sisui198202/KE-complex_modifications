@@ -1,6 +1,35 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver16",
+  "title": "add_Personal rules1 (@sisui)_ver17",
   "rules": [
+    {
+      "description": "Leftoption + space_enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_alt"
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "LeftCommand + RightCommand_plus",
       "manipulators": [

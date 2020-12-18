@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver5",
+  "title": "Personal rules1 (@sisui)_ver6",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -123,35 +123,6 @@
             },
             {
               "key_code": "backslash"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Leftoption + space_enter",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
             }
           ]
         }

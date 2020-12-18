@@ -1,6 +1,20 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver16",
+  "title": "add_Personal rules1 (@sisui)_ver17",
   "rules": [
+        {
+      "description": "Leftoption + space_enter",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["spacebar"],
+                 dest_keys_list: ["return_or_enter"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 from_optional_modifiers: ["any"],
+                 to_if_alone: [{"key_code": "left_alt"}],
+                 as_json: true
+               )
+       %>
+    },
         {
       "description": "LeftCommand + RightCommand_plus",
       "manipulators":
