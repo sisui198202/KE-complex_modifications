@@ -1,6 +1,35 @@
 {
-  "title": "Personal rules1 (@sisui)_ver26",
+  "title": "Personal rules1 (@sisui)_ver27",
   "rules": [
+    {
+      "description": "Leftoption + Space to Enter(!Finder)_ver1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "LeftControl + f_Tab",
       "manipulators": [
