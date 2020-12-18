@@ -16,20 +16,6 @@
        %>
     },
     {
-      "description": "Leftoption + Space to Enter(!Finder)_ver1",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["return_or_enter"],
-                 conditions: [frontmost_application_unless("finder", false)],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "Rightoption + Leftoption_anbasado_ver1",
       "manipulators":
       <%=
