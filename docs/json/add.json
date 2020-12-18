@@ -2,6 +2,36 @@
   "title": "add_Personal rules1 (@sisui)_ver18",
   "rules": [
     {
+      "description": "LeftOption + Z_Current Row to Set Mark Row Selection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_alt",
+                "left_shift"
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_alt"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
       "manipulators": [
         {

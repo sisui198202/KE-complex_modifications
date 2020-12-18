@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver21",
+  "title": "Personal rules1 (@sisui)_ver22",
   "rules": [
     {
       "description": "LeftControl + f_Tab",
@@ -735,37 +735,7 @@
       ]
     },
     {
-      "description": "LeftOption + Z_Current Row to Set Mark Row Selection",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "z",
-              "modifiers": [
-                "left_alt",
-                "left_shift"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + d_All Select",
+      "description": "LeftCommand + d_All Select_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -783,11 +753,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
             }
           ]
         }
@@ -842,7 +807,7 @@
       ]
     },
     {
-      "description": "LeftOption + O_Save",
+      "description": "LeftOption + O_Save_ver5",
       "manipulators": [
         {
           "type": "basic",
@@ -860,11 +825,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
             }
           ]
         }
