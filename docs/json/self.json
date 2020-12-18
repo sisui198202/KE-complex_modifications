@@ -1,6 +1,36 @@
 {
-  "title": "Personal rules1 (@sisui)_ver27",
+  "title": "Personal rules1 (@sisui)_ver28",
   "rules": [
+    {
+      "description": "Rightoption + Leftoption_anbasado_ver1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                [
+                  "japanese_eisuu",
+                  "right_shift"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
       "manipulators": [
