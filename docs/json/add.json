@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver40",
+  "title": "add_Personal rules1 (@sisui)_ver41",
   "rules": [
     {
       "description": "Rightoption + Leftcommand_sharpe",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -85,10 +85,9 @@
           },
           "to": [
             {
-              "key_code": "i",
+              "key_code": "2",
               "modifiers": [
-                "right_control",
-                "right-shift"
+                "right_control"
               ]
             }
           ]
