@@ -119,6 +119,12 @@
               "modifiers": [
                 "left_control"
               ]
+            },
+            {
+              "key_code": "down",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ]
         }
