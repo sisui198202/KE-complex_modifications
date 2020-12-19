@@ -1,38 +1,27 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver1",
+  "title": "add_PersonalRules(@sisui)_ver2",
   "rules": [
     {
-      "description": "Rightoption + Leftcommand_sharpe",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_control"],
-                 from_mandatory_modifiers: ["right_alt"],
-                 dest_keys_list: ["3"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
-    },
-    {
-      "description": "Leftoption + Rightcommand_hypen",
+      "description": "Leftoption + Rightcommand_hypen_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_gui"],
                  from_mandatory_modifiers: ["left_alt"],
+                 from_optional_modifiers: ["any"],
                  dest_keys_list: ["hyphen"],
                  as_json: true
                )
        %>
     },
         {
-      "description": "LeftCommand + RightCommand_plus_ver1",
+      "description": "LeftCommand + RightCommand_plus_ver2",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_gui"],
                  from_mandatory_modifiers: ["left_control"],
+                 from_optional_modifiers: ["any"],
                  dest_keys_list: ["equal_sign"],
                  to_modifiers: ["right_shift"],
                  as_json: true
