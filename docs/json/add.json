@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver31",
+  "title": "add_Personal rules1 (@sisui)_ver32",
   "rules": [
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "1行選択_ver5",
+      "description": "1行選択_ver6",
       "manipulators": [
         {
           "type": "basic",
@@ -115,16 +115,9 @@
           },
           "to": [
             {
-              "key_code": "a",
+              "key_code": "l",
               "modifiers": [
-                "left_control"
-              ]
-            },
-            {
-              "key_code": "down",
-              "halt": true,
-              "modifiers": [
-                "left_shift"
+                "right_gui"
               ]
             }
           ]
