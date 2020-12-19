@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver34",
+  "title": "add_Personal rules1 (@sisui)_ver35",
   "rules": [
     {
-      "description": "Rightoption + Leftoption_anbasado_ver1",
+      "description": "Rightoption + Leftoption_anbasado_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -21,10 +21,7 @@
             {
               "key_code": "7",
               "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
+                "right_shift"
               ]
             }
           ]

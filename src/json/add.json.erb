@@ -1,8 +1,8 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver34",
+  "title": "add_Personal rules1 (@sisui)_ver35",
   "rules": [
     {
-      "description": "Rightoption + Leftoption_anbasado_ver1",
+      "description": "Rightoption + Leftoption_anbasado_ver2",
       "manipulators":
       <%=
                each_key(
@@ -10,7 +10,7 @@
                  from_mandatory_modifiers: ["right_alt"],
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["7"],
-                 to_modifiers: [["japanese_eisuu","right_shift"]],
+                 to_modifiers: ["right_shift"],
                  as_json: true
                )
        %>
@@ -73,7 +73,7 @@
                each_key(
                  source_keys_list: ["close_bracket"],
                  from_mandatory_modifiers: ["left_control"],
-                from_optional_modifiers: ["any"],
+                 from_optional_modifiers: ["any"],
                  dest_keys_list: ["1"],
                  to_modifiers: ["right-shift","right_control"],
                  as_json: true
