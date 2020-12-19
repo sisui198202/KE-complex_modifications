@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver39",
+  "title": "add_Personal rules1 (@sisui)_ver40",
   "rules": [
     {
       "description": "Rightoption + Leftcommand_sharpe",
@@ -89,30 +89,6 @@
               "modifiers": [
                 "right_control",
                 "right-shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + CloseBracket_unindent_ver6",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_control"
               ]
             }
           ]
