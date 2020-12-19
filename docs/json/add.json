@@ -64,38 +64,6 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_alt",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Leftoption + Rightcommand_hypen",
       "manipulators": [
         {

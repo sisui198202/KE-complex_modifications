@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver34",
+  "title": "Personal rules1 (@sisui)_ver35",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1192,6 +1192,33 @@
               "key_code": "tab",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leftoption + Rightoption_parsent",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "right_shift"
               ]
             }
           ]
