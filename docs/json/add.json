@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver5",
+  "title": "add_PersonalRules(@sisui)_ver6",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -46,31 +46,6 @@
               "key_code": "equal_sign",
               "modifiers": [
                 "right_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Terminal Focus (vscode)_ver2",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_control",
-                "left_alt"
               ]
             }
           ]
