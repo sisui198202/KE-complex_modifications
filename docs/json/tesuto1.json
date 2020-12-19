@@ -1,16 +1,16 @@
 {
-  "title": "tesuto_case1",
+  "title": "tesuto_case2",
   "rules": [
     {
-      "description": "command-EでFinderを開く",
+      "description": "alt-EでFinderを開く",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
-                "command"
+                "left_alt"
               ],
               "optional": [
                 "any"
