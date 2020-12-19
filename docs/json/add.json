@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver19",
+  "title": "add_Personal rules1 (@sisui)_ver20",
   "rules": [
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "1行選択_ver2",
+      "description": "1行選択_ver3",
       "manipulators": [
         {
           "type": "basic",
