@@ -76,31 +76,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "Terminal Panel Max Toggle (vscode)_ver1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "left_control",
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
