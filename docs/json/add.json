@@ -78,30 +78,6 @@
       ]
     },
     {
-      "description": "DebugStart (vscode)_ver2",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Terminal Clear (vscode)",
       "manipulators": [
         {
