@@ -101,30 +101,6 @@
       ]
     },
     {
-      "description": "1行選択_ver6",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
       "manipulators": [
         {
