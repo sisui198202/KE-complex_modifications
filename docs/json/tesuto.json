@@ -70,7 +70,7 @@
       ]
     },
     {
-      "description": "Double RightShift_Doller",
+      "description": "Double RightShift_Pipeline",
       "manipulators": [
         {
           "type": "basic",
@@ -84,7 +84,7 @@
           },
           "to": [
             {
-              "key_code": "4",
+              "key_code": "backslash",
               "modifiers": [
                 "left_shift"
               ]
