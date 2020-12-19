@@ -678,6 +678,19 @@
                  as_json: true
                )
        %>
-   }
+   },
+    {
+      "description": "DebugStart (vscode)_ver2",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["b"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["b"],
+                 to_modifiers: ["right_alt"],
+                 as_json: true
+               )
+       %>
+    }
   ]
 }
