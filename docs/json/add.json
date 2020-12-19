@@ -78,7 +78,7 @@
       ]
     },
     {
-      "description": "Terminal Focus (vscode)",
+      "description": "DebugStart (vscode)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -92,10 +92,10 @@
           },
           "to": [
             {
-              "key_code": "b",
-              "modifiers": [
-                "right_alt"
-              ]
+              "key_code": "b"
+            },
+            {
+              "key_code": "return_or_enter"
             }
           ]
         }

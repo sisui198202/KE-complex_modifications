@@ -42,13 +42,13 @@
        %>
     },
     {
-      "description": "Terminal Focus (vscode)",
+      "description": "DebugStart (vscode)_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["b"],
                  from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["b"],
+                 dest_keys_list: [["b","return_or_enter"]],
                  to_modifiers: ["right_alt"],
                  as_json: true
                )
