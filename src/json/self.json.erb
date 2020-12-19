@@ -638,6 +638,20 @@
                     ]
                 }
             ]
-        }
+        },
+    {
+      "description": "Rightoption + Leftoption_anbasado_ver2",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["left_alt"],
+                 from_mandatory_modifiers: ["right_alt"],
+                 from_optional_modifiers: ["any"],
+                 dest_keys_list: ["7"],
+                 to_modifiers: ["right_shift"],
+                 as_json: true
+               )
+       %>
+    }
   ]
 }

@@ -1245,6 +1245,33 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado_ver2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
