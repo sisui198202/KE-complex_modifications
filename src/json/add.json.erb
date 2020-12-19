@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver3",
+  "title": "add_PersonalRules(@sisui)_ver4",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -42,13 +42,13 @@
        %>
     },
     {
-      "description": "DebugStart (vscode)_ver1",
+      "description": "DebugStart (vscode)_ver2",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["b"],
                  from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: [["b","return_or_enter"]],
+                 dest_keys_list: ["b"],
                  to_modifiers: ["right_alt"],
                  as_json: true
                )

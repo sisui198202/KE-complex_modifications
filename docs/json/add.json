@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver3",
+  "title": "add_PersonalRules(@sisui)_ver4",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "description": "DebugStart (vscode)_ver1",
+      "description": "DebugStart (vscode)_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -92,10 +92,10 @@
           },
           "to": [
             {
-              "key_code": "b"
-            },
-            {
-              "key_code": "return_or_enter"
+              "key_code": "b",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ]
         }
