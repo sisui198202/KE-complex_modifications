@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver41",
+  "title": "Personal rules1 (@sisui)_ver42",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1291,6 +1291,30 @@
               "key_code": "1",
               "modifiers": [
                 "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)_ver1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_control"
               ]
             }
           ]
