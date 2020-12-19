@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver18",
+  "title": "add_Personal rules1 (@sisui)_ver19",
   "rules": [
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
@@ -41,9 +41,6 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -53,11 +50,6 @@
               "modifiers": [
                 "right_shift"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "right_alt"
             }
           ]
         }
@@ -69,13 +61,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_command",
+            "key_code": "right_gui",
             "modifiers": {
               "mandatory": [
                 "left_alt"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -83,17 +72,12 @@
             {
               "key_code": "hyphen"
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_alt"
-            }
           ]
         }
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus",
+      "description": "LeftCommand + RightCommand_plus_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -102,9 +86,6 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -115,17 +96,12 @@
                 "right_shift"
               ]
             }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_control"
-            }
           ]
         }
       ]
     },
     {
-      "description": "1行選択_ver1",
+      "description": "1行選択_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -141,7 +117,7 @@
             {
               "key_code": "a",
               "modifiers": [
-                "left_gui"
+                "left_control"
               ]
             }
           ]

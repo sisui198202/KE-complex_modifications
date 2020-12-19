@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver18",
+  "title": "add_Personal rules1 (@sisui)_ver19",
   "rules": [
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
@@ -21,11 +21,9 @@
       <%=
                each_key(
                  source_keys_list: ["left_control"],
-                 dest_keys_list: ["3"],
                  from_mandatory_modifiers: ["right_alt"],
-                 from_optional_modifiers: ["any"],
+                 dest_keys_list: ["3"],
                  to_modifiers: ["right_shift"],
-                 to_if_alone: [{"key_code": "right_alt"}],
                  as_json: true
                )
        %>
@@ -35,32 +33,28 @@
       "manipulators":
       <%=
                each_key(
-                 source_keys_list: ["right_command"],
-                 dest_keys_list: ["hyphen"],
+                 source_keys_list: ["right_gui"],
                  from_mandatory_modifiers: ["left_alt"],
-                 from_optional_modifiers: ["any"], 
-                 to_if_alone: [{"key_code": "left_alt"}],
+                 dest_keys_list: ["hyphen"],
                  as_json: true
                )
        %>
     },
         {
-      "description": "LeftCommand + RightCommand_plus",
+      "description": "LeftCommand + RightCommand_plus_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["right_gui"],
-                 dest_keys_list: ["equal_sign"],
                  from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
+                 dest_keys_list: ["equal_sign"],
                  to_modifiers: ["right_shift"],
-                 to_if_alone: [{"key_code": "left_control"}],
                  as_json: true
                )
        %>
     },
         {
-            "description": "1行選択_ver1",
+            "description": "1行選択_ver2",
             "manipulators": [
                 {
                     "type": "basic",
@@ -76,7 +70,7 @@
                         {
                             "key_code": "a",
                             "modifiers": [
-                                "left_gui"
+                                "left_control"
                             ]
                         }
                     ]
