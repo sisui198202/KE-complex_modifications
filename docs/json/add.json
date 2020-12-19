@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver7",
+  "title": "add_PersonalRules(@sisui)_ver8",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "description": "Terminal Panel Max Toggle (vscode)",
+      "description": "Terminal Panel Max Toggle (vscode)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -94,8 +94,8 @@
             {
               "key_code": "o",
               "modifiers": [
-                "right_gui",
-                "left_shift"
+                "left_control",
+                "left_alt"
               ]
             }
           ]
