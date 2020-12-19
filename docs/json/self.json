@@ -1,5 +1,5 @@
 {
-  "title": "Personal rules1 (@sisui)_ver40",
+  "title": "Personal rules1 (@sisui)_ver41",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1267,6 +1267,30 @@
               "key_code": "7",
               "modifiers": [
                 "right_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + CloseBracket_unindent_ver6",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_control"
               ]
             }
           ]
