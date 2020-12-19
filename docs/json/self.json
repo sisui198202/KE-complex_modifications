@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver4",
+  "title": "PersonalRules(@sisui)_ver5",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1388,6 +1388,31 @@
               "key_code": "o",
               "modifiers": [
                 "left_control",
+                "left_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Terminal Clear (vscode)_ver2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_control",
                 "left_alt"
               ]
             }
