@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver2",
+  "title": "add_PersonalRules(@sisui)_ver3",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -24,6 +24,58 @@
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["equal_sign"],
                  to_modifiers: ["right_shift"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Terminal Focus (vscode)_ver1",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["t"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["8"],
+                 to_modifiers: ["right_gui","left_shift"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Terminal Focus (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["b"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["b"],
+                 to_modifiers: ["right_alt"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Terminal Clear (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["v"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["p"],
+                 to_modifiers: ["right_gui","left_shift"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Terminal Panel Max Toggle (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["comma"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 dest_keys_list: ["o"],
+                 to_modifiers: ["right_gui","left_shift"],
                  as_json: true
                )
        %>
