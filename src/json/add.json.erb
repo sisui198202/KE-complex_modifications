@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver4",
+  "title": "add_PersonalRules(@sisui)_ver5",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -29,14 +29,14 @@
        %>
     },
     {
-      "description": "Terminal Focus (vscode)_ver1",
+      "description": "Terminal Focus (vscode)_ver2",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["t"],
                  from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["8"],
-                 to_modifiers: ["right_gui","left_shift"],
+                 dest_keys_list: ["4"],
+                 to_modifiers: ["left_control","left_alt"],
                  as_json: true
                )
        %>
