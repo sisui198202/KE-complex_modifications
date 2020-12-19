@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver33",
+  "title": "add_Personal rules1 (@sisui)_ver34",
   "rules": [
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
@@ -67,12 +67,13 @@
        %>
    },
    {
-      "description": "LeftCommand + CloseBracket_unindent_ver1",
+      "description": "LeftCommand + CloseBracket_unindent_ver2",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["close_bracket"],
                  from_mandatory_modifiers: ["left_control"],
+                from_optional_modifiers: ["any"],
                  dest_keys_list: ["1"],
                  to_modifiers: ["right-shift","right_control"],
                  as_json: true

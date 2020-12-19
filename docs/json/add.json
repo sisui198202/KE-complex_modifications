@@ -1,5 +1,5 @@
 {
-  "title": "add_Personal rules1 (@sisui)_ver33",
+  "title": "add_Personal rules1 (@sisui)_ver34",
   "rules": [
     {
       "description": "Rightoption + Leftoption_anbasado_ver1",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "description": "LeftCommand + CloseBracket_unindent_ver1",
+      "description": "LeftCommand + CloseBracket_unindent_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -135,6 +135,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
