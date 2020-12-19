@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver3",
+  "title": "PersonalRules(@sisui)_ver4",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1322,7 +1322,7 @@
       ]
     },
     {
-      "description": "DebugStart (vscode)_ver2",
+      "description": "LeftAlt + b_DebugStart (vscode)_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -1346,7 +1346,7 @@
       ]
     },
     {
-      "description": "Terminal Focus (vscode)_ver2",
+      "description": "LeftAlt + T_Terminal Focus (vscode)_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -1371,7 +1371,7 @@
       ]
     },
     {
-      "description": "Terminal Panel Max Toggle (vscode)_ver1",
+      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)_ver1",
       "manipulators": [
         {
           "type": "basic",
