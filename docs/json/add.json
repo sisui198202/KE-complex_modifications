@@ -2,30 +2,6 @@
   "title": "add_PersonalRules(@sisui)_ver14",
   "rules": [
     {
-      "description": "Leftoption + Rightcommand_hypen_ver2",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "hyphen"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftAlt + u_PathFinderActivePathSelection_ver1",
       "manipulators": [
         {
@@ -36,9 +12,6 @@
               "mandatory": [
                 "left_alt",
                 "right_gui"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },

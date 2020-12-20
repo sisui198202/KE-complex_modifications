@@ -1521,6 +1521,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Leftoption + Rightcommand_hypen_ver2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "hyphen"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

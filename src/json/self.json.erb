@@ -797,6 +797,18 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "Leftoption + Rightcommand_hypen_ver2",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["right_gui"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: [["japanese_eisuu","hyphen"]],
+                 as_json: true
+               )
+       %>
     }
   ]
 }
