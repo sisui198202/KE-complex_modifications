@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "LeftControl + f_Tab",
+      "description": "LeftCommand + f_Tab",
       "manipulators": [
         {
           "type": "basic",
@@ -43,6 +43,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },

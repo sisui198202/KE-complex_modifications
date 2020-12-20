@@ -17,15 +17,17 @@
        %>
     },
     {
-      "description": "LeftControl + f_Tab",
-      "manipulators": [
-        {
-          <%# Control-E to F %>
-          "type": "basic",
-          "from": <%= from("f", ["left_control"], []) %>,
-          "to": <%= to([["tab"]]) %>
-        }
-      ]
+      "description": "LeftCommand + f_Tab",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["f"],
+                 from_mandatory_modifiers: ["left_control"],
+                 from_optional_modifiers: ["any"],
+                 dest_keys_list: ["tab"],
+                 as_json: true
+               )
+       %>
     },
     {
       "description": "LeftCommand + space_BackSpace1(!Finder)",
