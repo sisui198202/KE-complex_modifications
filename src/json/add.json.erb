@@ -13,20 +13,6 @@
                  as_json: true
                )
        %>
-    },
-        {
-      "description": "LeftCommand + RightCommand_plus_ver2",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_gui"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["equal_sign"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
     }
     ]
 }

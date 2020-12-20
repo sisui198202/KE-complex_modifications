@@ -24,33 +24,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "LeftCommand + RightCommand_plus_ver2",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }

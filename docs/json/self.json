@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver5",
+  "title": "PersonalRules(@sisui)_ver6",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1414,6 +1414,72 @@
               "modifiers": [
                 "right_control",
                 "left_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (長押し設定はなし)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_kana"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + RightCommand_plus_ver2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": [
+                "right_shift"
               ]
             }
           ]
