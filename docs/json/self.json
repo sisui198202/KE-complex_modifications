@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver7",
+  "title": "PersonalRules(@sisui)_ver8",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1475,6 +1475,30 @@
           "to": [
             {
               "key_code": "equal_sign",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + LeftCommand_underbar_ver1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
               "modifiers": [
                 "right_shift"
               ]

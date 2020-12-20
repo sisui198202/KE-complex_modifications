@@ -13,19 +13,6 @@
                  as_json: true
                )
        %>
-    },
-   {
-      "description": "RightCommand + LeftCommand_underbar_ver1",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_control"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: ["hyphen"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
     }
     ]
 }

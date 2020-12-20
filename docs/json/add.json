@@ -24,30 +24,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "RightCommand + LeftCommand_underbar_ver1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_control",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
