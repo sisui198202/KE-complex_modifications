@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver10",
+  "title": "PersonalRules(@sisui)_ver11",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -28,30 +28,6 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.finder$"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + f_Tab",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab"
             }
           ]
         }
@@ -1214,6 +1190,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "any"
               ]
             }
           },
