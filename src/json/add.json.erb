@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver12",
+  "title": "add_PersonalRules(@sisui)_ver13",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -15,12 +15,13 @@
        %>
     },
     {
-      "description": "LeftAlt + u_PathFinderActivePathSelection",
+      "description": "LeftAlt + u_PathFinderActivePathSelection_ver1",
       "manipulators":
       <%=
                each_key(
                  source_keys_list: ["u"],
                  from_mandatory_modifiers: ["left_alt"],
+                 from_optional_modifiers: ["any"],
                  dest_keys_list: ["l"],
                  from_mandatory_modifiers: ["left_alt","right_gui"],
                  as_json: true
