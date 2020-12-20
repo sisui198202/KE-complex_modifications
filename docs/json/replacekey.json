@@ -2,7 +2,7 @@
   "title": "replacekey",
   "rules": [
     {
-      "description": "Leftoption + Space to Enter(!Finder)_ver1",
+      "description": "Leftoption + Space to Enter(!Finder)",
       "manipulators": [
         {
           "type": "basic",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace1(!Finder)_ver1",
+      "description": "LeftCommand + space_BackSpace1(!Finder)",
       "manipulators": [
         {
           "type": "basic",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal_ver1",
+      "description": "LeftCommand + Rightoption_equal",
       "manipulators": [
         {
           "type": "basic",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "description": "RightCommand + Space_delete(!Finder)_ver2",
+      "description": "RightCommand + Space_delete(!Finder)",
       "manipulators": [
         {
           "type": "basic",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "description": "RightCommand + Leftoption_backslash_ver2",
+      "description": "RightCommand + Leftoption_backslash",
       "manipulators": [
         {
           "type": "basic",
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I/J/K/L _Arrows_ver1",
+      "description": "LeftCommand + I/J/K/L _Arrows",
       "manipulators": [
         {
           "type": "basic",
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy_ver4",
+      "description": "LeftAlt_Copy",
       "manipulators": [
         {
           "type": "basic",
@@ -317,7 +317,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste_ver2",
+      "description": "RightOption_Paste",
       "manipulators": [
         {
           "type": "basic",
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent_ver5",
+      "description": "Leftoption + Rightoption_parsent",
       "manipulators": [
         {
           "type": "basic",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado_ver2",
+      "description": "Rightoption + Leftoption_anbasado",
       "manipulators": [
         {
           "type": "basic",
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus_ver3",
+      "description": "LeftCommand + RightCommand_plus",
       "manipulators": [
         {
           "type": "basic",
@@ -464,7 +464,7 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_underbar_ver1",
+      "description": "RightCommand + LeftCommand_underbar",
       "manipulators": [
         {
           "type": "basic",
@@ -488,7 +488,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightcommand_hypen_ver2",
+      "description": "Leftoption + Rightcommand_hypen",
       "manipulators": [
         {
           "type": "basic",
