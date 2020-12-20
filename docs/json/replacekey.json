@@ -357,10 +357,7 @@
             {
               "key_code": "5",
               "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
+                "right_shift"
               ]
             }
           ]
@@ -387,10 +384,7 @@
             {
               "key_code": "7",
               "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
+                "right_shift"
               ]
             }
           ]
@@ -398,7 +392,7 @@
       ]
     },
     {
-      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (長押し設定はなし)",
+      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）",
       "manipulators": [
         {
           "from": {
@@ -453,10 +447,7 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
+                "right_shift"
               ]
             }
           ]
@@ -478,10 +469,10 @@
           },
           "to": [
             {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "hyphen"
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_shift"
+              ]
             }
           ]
         }

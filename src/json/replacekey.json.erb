@@ -152,7 +152,7 @@
                  source_keys_list: ["right_alt"],
                  from_mandatory_modifiers: ["left_alt"],
                  dest_keys_list: ["5"],
-                 to_modifiers: [["japanese_eisuu","right_shift"]],
+                 to_modifiers: ["right_shift"],
                  as_json: true
                )
        %>
@@ -166,13 +166,13 @@
                  from_mandatory_modifiers: ["right_alt"],
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["7"],
-                 to_modifiers: [["japanese_eisuu","right_shift"]],
+                 to_modifiers: ["right_shift"],
                  as_json: true
                )
        %>
     },
 {
-                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (長押し設定はなし)",
+                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）",
                         "manipulators": [
                             {
                                 "from": {
@@ -218,7 +218,7 @@
                  source_keys_list: ["right_gui"],
                  from_mandatory_modifiers: ["left_control"],
                  dest_keys_list: ["equal_sign"],
-                 to_modifiers: [["japanese_eisuu","right_shift"]],
+                 to_modifiers: ["right_shift"],
                  as_json: true
                )
        %>
@@ -230,7 +230,7 @@
                each_key(
                  source_keys_list: ["left_control"],
                  from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: [["japanese_eisuu","hyphen"]],
+                 dest_keys_list: ["hyphen"],
                  to_modifiers: ["right_shift"],
                  as_json: true
                )
