@@ -2,54 +2,6 @@
   "title": "TesutoCase",
   "rules": [
     {
-      "description": "無変換/英数 + 「スペース/かな」で「Return/Escape」",
-      "_comment": "無変換/英数を押している間だけ、スペースキーをEnterキーに変換する設定",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "shift",
-                "control",
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "international5",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "fn"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "japanese_eisuu"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
       "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
       "manipulators": [
@@ -93,6 +45,67 @@
           "to": [
             {
               "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vi_mode",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_commandキーを押しながらright_commnadキーを押すとplusに変換するという設定",
+      "_comment": "left_commandキーを押しながらright_commnadキーを押すとplusに変換するという設定",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "vi_mode",
+                "value": 1
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "vi_mode",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": {
+                "mandatory": [
+                  "left_shift"
+                ]
+              }
             }
           ],
           "conditions": [
