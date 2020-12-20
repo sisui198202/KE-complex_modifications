@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver6",
+  "title": "PersonalRules(@sisui)_ver7",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver1",
@@ -1460,7 +1460,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus_ver2",
+      "description": "LeftCommand + RightCommand_plus_ver3",
       "manipulators": [
         {
           "type": "basic",
@@ -1469,9 +1469,6 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },

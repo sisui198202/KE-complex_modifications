@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver10",
+  "title": "add_PersonalRules(@sisui)_ver11",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -20,6 +20,30 @@
           "to": [
             {
               "key_code": "hyphen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + LeftCommand_underbar_ver1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_shift"
+              ]
             }
           ]
         }
