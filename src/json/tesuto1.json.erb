@@ -1,108 +1,60 @@
 {
-  "title": "TesutoCase1",
+  "title": "TesutoCase2",
   "rules": [
 {
-    "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
-    "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
-    "manipulators": [
-        {
-            "type": "basic",
-            "from": {
-                "key_code": "s"
-            },
-            "to": [
-                {
-                    "set_variable": {
-                        "name": "vi_mode",
-                        "value": 1
+                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (rev 3)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_command"
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_kana"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
-                }
-            ],
-            "to_after_key_up": [
-                {
-                    "set_variable": {
-                        "name": "vi_mode",
-                        "value": 0
-                    }
-                }
-            ]
-        },
-        {
-            "type": "basic",
-            "from": {
-                "key_code": "h",
-                "modifiers": {
-                    "optional": [
-                        "caps_lock"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "left_arrow"
-                }
-            ],
-            "conditions": [
-                {
-                    "type": "variable_if",
-                    "name": "vi_mode",
-                    "value": 1
-                }
-            ]
-        }
-    ]
-},
-{
-    "description": "left_commandキーを押しながらright_commnadキーを押すとplusに変換するという設定",
-    "_comment": "left_commandキーを押しながらright_commnadキーを押すとplusに変換するという設定",
-    "manipulators": [
-        {
-            "type": "basic",
-            "from": {
-                "key_code": "left_control"
-            },
-            "to": [
-                {
-                    "set_variable": {
-                        "name": "vi_mode",
-                        "value": 1
-                    }
-                }
-            ],
-            "to_after_key_up": [
-                {
-                    "set_variable": {
-                        "name": "vi_mode",
-                        "value": 0
-                    }
-                }
-            ]
-        },
-        {
-            "type": "basic",
-            "from": {
-                "key_code": "right_command",
-                "modifiers": {
-                    "optional": [
-                        "caps_lock"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "equal_sign",
-                    "modifiers": { "mandatory": [ "left_shift" ] }
-                }
-            ],
-            "conditions": [
-                {
-                    "type": "variable_if",
-                    "name": "vi_mode",
-                    "value": 1
-                }
-            ]
-        }
-    ]
-}
     ]
 }
