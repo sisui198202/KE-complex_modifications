@@ -54,6 +54,61 @@
       ]
     }
   ]
+},
+{
+    "description": "tesuto",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "s",
+                "modifiers": {
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "vi_mode",
+                        "value": 1
+                    }
+                }
+            ],
+            "to_after_key_up": [
+                {
+                    "set_variable": {
+                        "name": "vi_mode",
+                        "value": 0
+                    }
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow"
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "vi_mode",
+                    "value": 1
+                }
+            ]
+        }
+    ]
 }
     ]
 }

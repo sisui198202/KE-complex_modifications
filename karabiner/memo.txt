@@ -495,3 +495,172 @@ tiruda → `
 comma → ,
 period → .
 ーーーーーーーーーーーー
+to/lazy
+---2017 年 11 月 17 日追記---
+
+"key_code"とセットで使う設定で、設定する値はtrueまたはfalseです。
+trueまたはfalseを指定した場合の動作の違いは、以下のとおりです。
+
+trueを指定
+"to"の設定が実行されるタイミングが、"from"に設定したキーを押した時点ではなく、"from"で設定したキーを押しながら別のキーを押した時点になります。
+
+設定例（"lazy": true)
+
+{
+  "type": "basic",
+  "from": { "key_code": "right_command" },
+  "to": [
+    {
+      "key_code": "right_control",
+      "lazy": true
+    }
+  ]
+}
+実際の動作
+
+"右 Command" を押した時点では何も起きない
+そのまま "右 Command" を押しながら別のキーを押した時点で、"右 Command" が "右 control" に変換される
+(例）"右 Command-H" で "右 control-H" に変換される
+falseを指定
+"to"の設定が実行されるタイミングが、"from"に設定したキーを押した時点になります。これは"lazy"を指定しない場合と同じ動作です。
+
+設定例（"lazy": false)
+
+
+{
+  "type": "basic",
+  "from": { "key_code": "right_command" },
+  "to": [
+    {
+      "key_code": "right_control",
+      "lazy": false
+    }
+  ]
+}
+実際の動作
+
+右 Command を押した時点で、右 Command を右 control に変換する
+---------------------
+to/mouse_key
+---2018 年 5 月 6 日追加---
+
+マウスカーソルの移動やホイールスクロールを割り当てる場合に使う機能です。なお、マウスクリックは、"to/pointing_button"で実現します。
+
+
+//マウスカーソルの移動
+"to": [ { "mouse_key": { "x": -960 } }
+  //"x"で横方向への移動。正の数値で右に、負の数値で左に移動。
+  //"y"で縦方向への移動。正の数値で下に、負の数値で上に移動。
+]
+
+//ホイールスクロールを実現
+"to": [
+  { "mouse_key": { "horizontal_wheel": 64 } }
+  //"vertical_wheel"で上下のスクロール。正の数値で下に、負の数値で上にスクロール。
+  //"horizontal_wheel"で左右のスクロール。正の数値で左に、負の数値で右にスクロール。
+]
+
+//マウスの左クリックを実現
+"to": [
+  { "pointing_button": "button1" }
+]
+---------------------
+左 command"を 2000 ミリ秒押し続けると、"英数"への変換はキャンセルされる
+
+to_if_alone/key_code, modifiers
+上記の"to"と同様です。
+
+//設定例
+"from": {
+  "key_code": "left_command",
+  "modifiers": {
+    "optional": [ "any" ]
+  }
+},
+"to": [
+  {"key_code": "left_command"}
+],
+"parameters": {
+  "basic.to_if_alone_timeout_milliseconds": 2000,
+},
+"to_if_alone": [
+  {"key_code": "japanese_eisuu"}
+]
+"左 Command"を単独で押した場合は"英数"に変換し、他のと組み合わせて押した場合は、他のキーはそのまま変換後に引き継ぎ（"optional"に"any"を指定）し、"左 Command"は"左 Command"("to"の"key_code"に"left_command"を指定）として扱うという設定。"左 command"を 2000 ミリ秒押し続けると、"英数"への変換はキャンセルされます。
+---------------------
+特定のアプリだけ（または特定のアプリ以外）でキー変換を実行したい場合
+
+//設定例
+"conditions": [
+  {
+    "type": "frontmost_application_if",
+    "bundle_identifiers": [ "^com\\.apple\\.Safari" ]
+  }
+]
+---------------------
+変数の値が特定の値の場合（または特定の値以外の場合）に変換を実行したい場合
+
+"D"を押している間は、"J, K, H, L"を上下左右キーに変換する
+"Escape"を押したら Vi ライクな操作を可能にし、もう一度"Escape"を押したら通常の操作に戻す
+"PrintScreen"単独で押したらスクリーンショット撮影のみ行い、"PrintScreen-P"を押すとスクリーンショット撮影後にプレビューする
+Emacs の"control-x control-f"のような 2 段階のキーストロークを実現する
+//設定例
+"from": {
+  "key_code": "s",
+  "modifiers": {
+    "optional": [ "caps_lock" ]
+  }
+},
+"to": [
+  {
+    "set_variable": {    //変数に値をセットする箇所
+      "name": "vi_mode",
+      "value": 1         //ここで変数に値を格納する
+    }
+  }
+],
+"to_after_key_up": [
+  {
+    "set_variable": {
+      "name": "vi_mode",
+      "value": 0
+    }
+  }
+]
+},
+{
+"type": "basic",
+"from": {
+  "key_code": "h",
+  "modifiers": {
+    "optional": [ "caps_lock" ]
+  }
+},
+"to": [
+  { "key_code": "left_arrow" }
+],
+"conditions": [
+  {
+    "type": "variable_if",  //上記で設定した変数を評価
+    "name": "vi_mode",      //vi_mode変数が1 = Sキーを押している状態
+    "value": 1              //Sキーが押されているので、"to"で指定した変換を実行
+  }
+]
+pqrs-org/KE-complex_modificationsにある"vi_mode"の設定から抜粋（"S"キーを押しながら"H"キーを押すと左矢印に変換するという設定 )
+---------------------
+MultitouchExtension
+2019 年 10 月 7 日追加
+
+Ver.12.6.9 から使用可能になった機能です。この機能は、MacBook のタッチパッドに何本の指でタッチしているか、タッチパッドの左（右）半分 or 上（下）半分に何本の指でタッチしているかという情報を取得できるというものです。
+
+この機能を使うと、タッチパッドに触れているときだけ"J, K, H, L"キーをカーソルキーに変換したり、タッチパッドをファンクションキーの代わりに使うといった設定ができます。
+
+この機能を使う際は、まず Karabiner-Elements の設定画面の「Misc」から「Open Karabiner-MultitouchExtension app」を起動しておく必要があります。このアプリが起動していると、タッチパッドに触れている指の本数などが次の変数に格納されます。
+
+変数名	説明
+multitouch_extension_finger_count_total	タッチパッドに触れている指の本数が格納されます。
+multitouch_extension_finger_count_left_half_area	タッチパッドの左半分に触れている指の本数が格納されます。
+multitouch_extension_finger_count_right_half_area	タッチパッドの右半分に触れている指の本数が格納されます。
+multitouch_extension_finger_count_upper_half_area	タッチパッドの上半分に触れている指の本数が格納されます。
+multitouch_extension_finger_count_lower_half_area	タッチパッドの下半分に触れている指の本数が格納されます。
+---------------------
