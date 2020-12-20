@@ -1,0 +1,108 @@
+{
+  "title": "TesutoCase1",
+  "rules": [
+{
+    "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
+    "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "s"
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "vi_mode",
+                        "value": 1
+                    }
+                }
+            ],
+            "to_after_key_up": [
+                {
+                    "set_variable": {
+                        "name": "vi_mode",
+                        "value": 0
+                    }
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow"
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "vi_mode",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+},
+{
+    "description": "left_commandキーを押しながらright_commnadキーを押すとplusに変換するという設定",
+    "_comment": "left_commandキーを押しながらright_commnadキーを押すとplusに変換するという設定",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_control"
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "vi_mode",
+                        "value": 1
+                    }
+                }
+            ],
+            "to_after_key_up": [
+                {
+                    "set_variable": {
+                        "name": "vi_mode",
+                        "value": 0
+                    }
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_command",
+                "modifiers": {
+                    "optional": [
+                        "caps_lock"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "equal_sign",
+                    "modifiers": { "mandatory": [ "left_shift" ] }
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "vi_mode",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}
+    ]
+}
