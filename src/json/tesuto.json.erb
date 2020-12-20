@@ -1,29 +1,9 @@
 {
   "title": "TesutoCase",
   "rules": [
-        {
-            "description": "Leftoption + Space to Enter(!Finder)_ver1",
-            "manipulators": [
-                {
-            "type": "basic",
-            "from": {
-                "key_code": "print_screen"
-            },
-            "to": [
-                {
-                    "key_code": "fn"
-                }
-            ],
-            "to_if_alone": [
-                {
-                    "shell_command": "screencapture ~/Desktop/screenshot-`date +%Y%m%d-%H%M%S`.png"
-                }
-            ]
-            }
-            ]
-        },
 {
   "description": "無変換/英数 + 「スペース/かな」で「Return/Escape」",
+  "_comment": "無変換/英数を押している間だけ、スペースキーをEnterキーに変換する設定",
   "manipulators": [
     {
       "type": "basic",
@@ -56,7 +36,8 @@
   ]
 },
 {
-    "description": "tesuto",
+    "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
+    "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
     "manipulators": [
         {
             "type": "basic",
