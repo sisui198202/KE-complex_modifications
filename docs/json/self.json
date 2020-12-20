@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver15",
+  "title": "PersonalRules(@sisui)_ver16",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver2",
@@ -1229,7 +1229,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado_ver2",
+      "description": "Rightoption + Leftoption_anbasado_ver3",
       "manipulators": [
         {
           "type": "basic",
@@ -1248,10 +1248,7 @@
             {
               "key_code": "7",
               "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
+                "right_shift"
               ]
             }
           ]
@@ -1469,7 +1466,7 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_underbar_ver1",
+      "description": "RightCommand + LeftCommand_underbar_ver2",
       "manipulators": [
         {
           "type": "basic",
@@ -1483,10 +1480,10 @@
           },
           "to": [
             {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "hyphen"
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_shift"
+              ]
             }
           ]
         }
