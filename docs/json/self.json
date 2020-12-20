@@ -58,7 +58,7 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace1(!Finder)",
+      "description": "LeftCommand + space_BackSpace1(!Finder)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -71,6 +71,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "delete_or_backspace"
             }
@@ -1153,7 +1156,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma__AppsSelect-Previous",
+      "description": "LeftCommand + ,comma_AppsSelect-Previous",
       "manipulators": [
         {
           "type": "basic",
@@ -1178,7 +1181,7 @@
       ]
     },
     {
-      "description": "LeftCommand + .__AppsSelect-next",
+      "description": "LeftCommand + ._AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
@@ -1218,7 +1221,10 @@
             {
               "key_code": "5",
               "modifiers": [
-                "right_shift"
+                [
+                  "japanese_eisuu",
+                  "right_shift"
+                ]
               ]
             }
           ]
@@ -1269,7 +1275,10 @@
             {
               "key_code": "7",
               "modifiers": [
-                "right_shift"
+                [
+                  "japanese_eisuu",
+                  "right_shift"
+                ]
               ]
             }
           ]
@@ -1479,7 +1488,10 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                "right_shift"
+                [
+                  "japanese_eisuu",
+                  "right_shift"
+                ]
               ]
             }
           ]
@@ -1501,10 +1513,10 @@
           },
           "to": [
             {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_shift"
-              ]
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "hyphen"
             }
           ]
         }
