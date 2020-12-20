@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)_ver14",
+  "title": "PersonalRules(@sisui)_ver15",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)_ver2",
@@ -1445,7 +1445,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus_ver3",
+      "description": "LeftCommand + RightCommand_plus_ver4",
       "manipulators": [
         {
           "type": "basic",
@@ -1461,10 +1461,7 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                [
-                  "japanese_eisuu",
-                  "right_shift"
-                ]
+                "right_shift"
               ]
             }
           ]
