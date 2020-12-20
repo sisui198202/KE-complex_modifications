@@ -1,5 +1,5 @@
 {
-  "title": "add_PersonalRules(@sisui)_ver11",
+  "title": "add_PersonalRules(@sisui)_ver12",
   "rules": [
     {
       "description": "Leftoption + Rightcommand_hypen_ver1",
@@ -10,6 +10,19 @@
                  from_mandatory_modifiers: ["left_alt"],
                  from_optional_modifiers: ["any"],
                  dest_keys_list: ["hyphen"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "LeftAlt + u_PathFinderActivePathSelection",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["u"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["l"],
+                 from_mandatory_modifiers: ["left_alt","right_gui"],
                  as_json: true
                )
        %>
