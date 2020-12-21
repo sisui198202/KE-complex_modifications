@@ -2,22 +2,31 @@
     "title": "MouseControl",
     "rules": [
         {
-            "description": "マウスカーソル",
+            "description": "fnキーを押しながらIキーを押すとmousecursolでUp移動",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "w",
+                        "key_code": "fn",
                         "modifiers": {
-                            "mandatory": [
-                                "right_shift"
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "mouse_key": {
-                                "y": -1536
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
                             }
                         }
                     ]
@@ -25,17 +34,56 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "a",
+                        "key_code": "i",
                         "modifiers": {
-                            "mandatory": [
-                                "right_shift"
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
                     "to": [
                         {
                             "mouse_key": {
-                                "x": -1536
+                                "y": -1800
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "fnキーを押しながらJキーを押すとmousecursolでleft移動",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "fn",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
                             }
                         }
                     ]
@@ -43,17 +91,56 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "s",
+                        "key_code": "j",
                         "modifiers": {
-                            "mandatory": [
-                                "right_shift"
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
                     "to": [
                         {
                             "mouse_key": {
-                                "y": 1536
+                                "x": -1800
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "fnキーを押しながらKキーを押すとmousecursolでdown移動",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "fn",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
                             }
                         }
                     ]
@@ -61,17 +148,56 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "d",
+                        "key_code": "k",
                         "modifiers": {
-                            "mandatory": [
-                                "right_shift"
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
                     "to": [
                         {
                             "mouse_key": {
-                                "x": 1536
+                                "y": 1800
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "fnキーを押しながらLキーを押すとmousecursolでright移動",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "fn",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
                             }
                         }
                     ]
@@ -79,36 +205,25 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "r",
+                        "key_code": "l",
                         "modifiers": {
-                            "mandatory": [
-                                "right_shift"
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
                     "to": [
                         {
                             "mouse_key": {
-                                "vertical_wheel": -32
+                                "x": 1800
                             }
                         }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "v",
-                        "modifiers": {
-                            "mandatory": [
-                                "right_shift"
-                            ]
-                        }
-                    },
-                    "to": [
+                    ],
+                    "conditions": [
                         {
-                            "mouse_key": {
-                                "vertical_wheel": 32
-                            }
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
                         }
                     ]
                 }
