@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
     {
       "description": "Use F2 as Rename",
@@ -204,9 +204,6 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
@@ -214,7 +211,7 @@
             {
               "key_code": "q",
               "modifiers": [
-                "left_alt"
+                "right_alt"
               ]
             }
           ]
