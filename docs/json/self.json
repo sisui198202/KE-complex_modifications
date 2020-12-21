@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)3",
+  "title": "PersonalRules(@sisui)4",
   "rules": [
     {
       "description": "Use F2 as Rename",
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "description": "RightCommand + A_ NewFileCreate",
+      "description": "RightCommand + A_NewFileCreate",
       "manipulators": [
         {
           "type": "basic",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "description": "LeftCommand + V__AppClose",
+      "description": "LeftCommand + V_AppClose",
       "manipulators": [
         {
           "type": "basic",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ;_Cursol-RowEnd",
+      "description": "LeftCommand + ;_CursolRowEnd",
       "manipulators": [
         {
           "type": "basic",
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "description": "LeftOption + Q_Window UP",
+      "description": "LeftOption + Q_WindowUP",
       "manipulators": [
         {
           "type": "basic",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "description": "LeftOption + P_Window down",
+      "description": "LeftOption + P_WindowDown",
       "manipulators": [
         {
           "type": "basic",
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "description": "LeftOption + W_Window Right up",
+      "description": "LeftOption + W_WindowRightUp",
       "manipulators": [
         {
           "type": "basic",
@@ -398,7 +398,7 @@
       ]
     },
     {
-      "description": "LeftOption + E_Window Right down",
+      "description": "LeftOption + E_WindowRightDown",
       "manipulators": [
         {
           "type": "basic",
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "description": "LeftCommand + d_All Select",
+      "description": "LeftCommand + d_AllSelect",
       "manipulators": [
         {
           "type": "basic",
@@ -542,7 +542,7 @@
       ]
     },
     {
-      "description": "RightCommand + G_File-Tab-Close",
+      "description": "RightCommand + G_FileTabClose",
       "manipulators": [
         {
           "type": "basic",
@@ -615,7 +615,7 @@
       ]
     },
     {
-      "description": "LeftCommand + o_VSCODE横2画面へ",
+      "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
       "manipulators": [
         {
           "type": "basic",
@@ -671,7 +671,7 @@
       ]
     },
     {
-      "description": "LeftCommand + H_VSCODE1画面へ",
+      "description": "LeftCommand + H_VSCODE,sublime1画面へ",
       "manipulators": [
         {
           "type": "basic",
@@ -883,153 +883,6 @@
               "key_code": "l",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + CloseBracket_unindent",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + b_DebugStart (vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + T_Terminal Focus (vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_control",
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "left_control",
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Terminal Clear (vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_control",
-                "left_alt"
               ]
             }
           ]
