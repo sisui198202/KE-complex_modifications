@@ -113,6 +113,62 @@
           ]
         }
       ]
+    },
+    {
+      "description": "１秒間押し続けないとcommand-qが実行されない設定",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 1000
+          },
+          "to_if_held_down": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "command"
+              ],
+              "repeat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "１秒間押し続けないとaが実行されない設定",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 1000
+          },
+          "to_if_held_down": [
+            {
+              "key_code": "a",
+              "repeat": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }
