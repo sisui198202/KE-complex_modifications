@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder_ver2",
   "rules": [
     {
       "description": "LeftCommand + Space_OpenFile_Finder",
@@ -26,7 +26,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.apple\\.finder"
               ]
             }
           ]
@@ -53,7 +53,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.apple\\.finder"
               ]
             }
           ]
@@ -77,7 +77,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.apple\\.finder"
               ]
             }
           ]
@@ -117,7 +117,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.apple\\.finder"
               ]
             }
           ]
@@ -154,7 +154,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.apple\\.finder"
               ]
             }
           ]

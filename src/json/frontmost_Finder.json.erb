@@ -1,76 +1,165 @@
-
 {
-  "title": "FrontmostIfFinder",
-  "rules": [
-    {
-      "description": "LeftCommand + Space_OpenFile_Finder",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["o"],
-                 conditions: [frontmost_application_if("finder", false)],
-                 to_modifiers: ["right_command"],
-                 as_json: true
-               )
-       %>
-    },
-    {
-      "description": "Enter_OpenFile_Finder",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["return_or_enter"],
-                 dest_keys_list: ["o"],
-                 conditions: [frontmost_application_if("finder", false)],
-                 to_modifiers: ["right_command"],
-                 as_json: true
-               )
-       %>
-    },
-   {
-      "description": "F2_Use F2 as Rename-Finder",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["f2"],
-                 dest_keys_list: ["return_or_enter"],
-                 conditions: [frontmost_application_if("finder", false)],
-                 as_json: true
-               )
-       %>
-    },
-   {
-      "description": "RightCommand + space_FileDelete-Finder",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 from_mandatory_modifiers: ["right_gui"],                 
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["delete_or_backspace"],
-                 to_modifiers: ["left_command"],
-                 to_if_alone: [{"key_code": "right_gui"}],                 
-                 conditions: [frontmost_application_if("finder", false)],
-                 as_json: true
-               )
-       %>
-    },
-   {
-      "description": "RightCommand + LeftOption_upfolder-Finder",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_control"],
-                 from_mandatory_modifiers: ["right_gui"],                 
-                 dest_keys_list: ["up_arrow"],
-                 to_modifiers: ["right_command"],
-                 to_if_alone: [{"key_code": "right_gui"}],                 
-                 conditions: [frontmost_application_if("finder", false)],
-                 as_json: true
-               )
-       %>
-    }           
-]
+    "title": "FrontmostIfFinder_ver2",
+    "rules": [
+        {
+            "description": "LeftCommand + Space_OpenFile_Finder",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "o",
+                            "modifiers": [
+                                "right_command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.finder"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Enter_OpenFile_Finder",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "return_or_enter"
+                    },
+                    "to": [
+                        {
+                            "key_code": "o",
+                            "modifiers": [
+                                "right_command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.finder"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "F2_Use F2 as Rename-Finder",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f2"
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.finder"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "RightCommand + space_FileDelete-Finder",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                      "key_code": "spacebar",
+                      "modifiers": {
+                        "mandatory": [
+                          "right_gui"
+                        ],
+                        "optional": [
+                          "any"
+                        ]
+                      }
+                    },
+                    "to": [
+                      {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": [
+                          "left_command"
+                        ]
+                      }
+                    ],
+                    "to_if_alone": [
+                      {
+                        "key_code": "right_gui"
+                      }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.finder"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "RightCommand + LeftOption_upfolder-Finder",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                      "key_code": "left_control",
+                      "modifiers": {
+                        "mandatory": [
+                          "right_gui"
+                        ]
+                      }
+                    },
+                    "to": [
+                      {
+                        "key_code": "up_arrow",
+                        "modifiers": [
+                          "right_command"
+                        ]
+                      }
+                    ],
+                    "to_if_alone": [
+                      {
+                        "key_code": "right_gui"
+                      }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.finder"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
