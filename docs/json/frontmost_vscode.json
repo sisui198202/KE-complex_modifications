@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode_ver1",
   "rules": [
     {
-      "description": "LeftCommand + N_Home-vscode",
+      "description": "LeftCommand + N_Home(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -18,7 +18,7 @@
             {
               "key_code": "up_arrow",
               "modifiers": [
-                "right_command"
+                "right_gui"
               ]
             }
           ],
@@ -26,7 +26,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com\\.microsoft\\.VSCode"
               ]
             }
           ]
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_End-vscode",
+      "description": "LeftCommand + M_End(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -50,7 +50,7 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "right_command"
+                "right_gui"
               ]
             }
           ],
@@ -58,7 +58,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com\\.microsoft\\.VSCode"
               ]
             }
           ]
