@@ -1,0 +1,37 @@
+{
+  "title": "FrontmostIfChrome",
+  "rules": [
+    {
+      "description": "LeftAlt + Space_OpenFile(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
