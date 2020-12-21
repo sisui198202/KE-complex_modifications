@@ -33,6 +33,38 @@
                     ]
                 }
             ]
+        },
+        {
+            "description": "LeftAlt + A_CopyTab(Chrome)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_alt"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f12",
+                            "modifiers": [
+                                "right_shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
