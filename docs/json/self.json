@@ -18,7 +18,7 @@
       ]
     },
     {
-      "description": "RightCommand + A_ NewFileCreate_ver1",
+      "description": "RightCommand + A_ NewFileCreate",
       "manipulators": [
         {
           "type": "basic",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect_ver1",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
       "manipulators": [
         {
           "type": "basic",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "description": "LeftCommand + U_Undo_ver1",
+      "description": "LeftCommand + U_Undo",
       "manipulators": [
         {
           "type": "basic",
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "description": "RightCommand + T_Search_ver1",
+      "description": "RightCommand + T_Search",
       "manipulators": [
         {
           "type": "basic",
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "description": "LeftCommand + c_DesktopExist_ver1",
+      "description": "LeftCommand + c_DesktopExist",
       "manipulators": [
         {
           "type": "basic",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "description": "LeftCommand + e_Expand Selection Word_ver1",
+      "description": "LeftCommand + e_Expand Selection Word",
       "manipulators": [
         {
           "type": "basic",
@@ -276,7 +276,7 @@
       ]
     },
     {
-      "description": "RightCommand + o_SameWordExpandSelection_ver1",
+      "description": "RightCommand + o_SameWordExpandSelection",
       "manipulators": [
         {
           "type": "basic",
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "description": "LeftOption + Q_Window UP_ver2",
+      "description": "LeftOption + Q_Window UP",
       "manipulators": [
         {
           "type": "basic",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "description": "LeftOption + P_Window down_ver2",
+      "description": "LeftOption + P_Window down",
       "manipulators": [
         {
           "type": "basic",
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "description": "LeftOption + W_Window Right up_ver2",
+      "description": "LeftOption + W_Window Right up",
       "manipulators": [
         {
           "type": "basic",
@@ -398,7 +398,7 @@
       ]
     },
     {
-      "description": "LeftOption + E_Window Right down_ver2",
+      "description": "LeftOption + E_Window Right down",
       "manipulators": [
         {
           "type": "basic",
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "description": "LeftCommand + d_All Select_ver1",
+      "description": "LeftCommand + d_All Select",
       "manipulators": [
         {
           "type": "basic",
@@ -494,7 +494,7 @@
       ]
     },
     {
-      "description": "LeftOption + O_Save_ver5",
+      "description": "LeftOption + O_Save",
       "manipulators": [
         {
           "type": "basic",
@@ -518,7 +518,7 @@
       ]
     },
     {
-      "description": "LeftCommand + S_Cut_ver1",
+      "description": "LeftCommand + S_Cut",
       "manipulators": [
         {
           "type": "basic",
@@ -542,7 +542,7 @@
       ]
     },
     {
-      "description": "RightCommand + G_File-Tab-Close_ver1",
+      "description": "RightCommand + G_File-Tab-Close",
       "manipulators": [
         {
           "type": "basic",
@@ -566,7 +566,7 @@
       ]
     },
     {
-      "description": "RightCommand + ;_LatestTabToggle_ver1",
+      "description": "RightCommand + ;_LatestTabToggle",
       "manipulators": [
         {
           "type": "basic",
@@ -590,7 +590,7 @@
       ]
     },
     {
-      "description": "RightCommand + L_NextTab_ver1",
+      "description": "RightCommand + L_NextTab",
       "manipulators": [
         {
           "type": "basic",
@@ -615,7 +615,7 @@
       ]
     },
     {
-      "description": "LeftCommand + o_VSCODE横2画面へ_ver1",
+      "description": "LeftCommand + o_VSCODE横2画面へ",
       "manipulators": [
         {
           "type": "basic",
@@ -866,7 +866,7 @@
       ]
     },
     {
-      "description": "1行選択_ver6",
+      "description": "1行選択",
       "manipulators": [
         {
           "type": "basic",
@@ -890,7 +890,7 @@
       ]
     },
     {
-      "description": "LeftCommand + CloseBracket_unindent_ver6",
+      "description": "LeftCommand + CloseBracket_unindent",
       "manipulators": [
         {
           "type": "basic",
@@ -914,7 +914,7 @@
       ]
     },
     {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)_ver1",
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -938,7 +938,7 @@
       ]
     },
     {
-      "description": "LeftAlt + b_DebugStart (vscode)_ver2",
+      "description": "LeftAlt + b_DebugStart (vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -962,7 +962,7 @@
       ]
     },
     {
-      "description": "LeftAlt + T_Terminal Focus (vscode)_ver2",
+      "description": "LeftAlt + T_Terminal Focus (vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -987,7 +987,7 @@
       ]
     },
     {
-      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)_ver1",
+      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -1012,7 +1012,7 @@
       ]
     },
     {
-      "description": "Terminal Clear (vscode)_ver2",
+      "description": "Terminal Clear (vscode)",
       "manipulators": [
         {
           "type": "basic",
