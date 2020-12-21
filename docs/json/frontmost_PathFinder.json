@@ -1,0 +1,30 @@
+{
+  "title": "FrontmostIfPathFinder",
+  "rules": [
+    {
+      "description": "LeftAlt + u_PathSelection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
