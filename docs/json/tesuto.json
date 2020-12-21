@@ -58,12 +58,12 @@
       ]
     },
     {
-      "description": "Aキーを押しながらI,J,K,Lキーを押すとmousecursolで上下左右移動",
+      "description": "Aキーを押しながらIキーを押すとmousecursolでk移動",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "spacebar",
             "modifiers": {
               "optional": [
                 "caps_lock"
