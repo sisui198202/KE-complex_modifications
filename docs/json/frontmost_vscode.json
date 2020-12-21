@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_Home(vscode)",
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "description": "Terminal Clear (vscode)",
+      "description": "LeftAlt + U_Terminal Clear (vscode)",
       "manipulators": [
         {
           "type": "basic",
