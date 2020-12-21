@@ -2,23 +2,24 @@
     "title": "FrontmostIfChrome",
     "rules": [
         {
-            "description": "LeftAlt + Space_OpenFile(Finder)",
+            "description": "LeftAlt + Space_Reload(Chrome)",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "spacebar",
+                        "key_code": "h",
                         "modifiers": {
                             "mandatory": [
-                                "left_alt"
+                                "right_gui"
                             ]
                         }
                     },
                     "to": [
                         {
-                            "key_code": "o",
+                            "key_code": "w",
                             "modifiers": [
-                                "right_gui"
+                                "right_control",
+                                "right_shift"
                             ]
                         }
                     ],
