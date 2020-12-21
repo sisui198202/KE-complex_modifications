@@ -1,5 +1,5 @@
 {
-  "title": "TesutoCase",
+  "title": "TesutoCase1",
   "rules": [
     {
       "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
@@ -63,7 +63,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "s",
+            "key_code": "a",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -90,7 +90,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "i",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -99,7 +99,9 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "mouse_key": {
+                "y": -1536
+              }
             }
           ],
           "conditions": [
