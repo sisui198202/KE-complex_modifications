@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)2",
+  "title": "PersonalRules(@sisui)3",
   "rules": [
     {
       "description": "Use F2 as Rename",
@@ -967,7 +967,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "left_alt"
@@ -1017,7 +1017,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "v",
+            "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
                 "left_alt"
