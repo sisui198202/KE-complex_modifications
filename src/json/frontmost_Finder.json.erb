@@ -2,7 +2,7 @@
     "title": "FrontmostIfFinder_ver2",
     "rules": [
         {
-            "description": "LeftCommand + Space_OpenFile_Finder",
+            "description": "LeftAlt + Space_OpenFile(Finder)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -10,7 +10,7 @@
                         "key_code": "spacebar",
                         "modifiers": {
                             "mandatory": [
-                                "left_control"
+                                "left_alt"
                             ]
                         }
                     },
@@ -18,7 +18,7 @@
                         {
                             "key_code": "o",
                             "modifiers": [
-                                "right_command"
+                                "right_gui"
                             ]
                         }
                     ],
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "description": "Enter_OpenFile_Finder",
+            "description": "Enter_OpenFile(Finder)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "description": "F2_Use F2 as Rename-Finder",
+            "description": "F2_Rename(Finder)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -85,7 +85,7 @@
             ]
         },
         {
-            "description": "RightCommand + space_FileDelete-Finder",
+            "description": "RightCommand + space_FileDelete(Finder)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -94,9 +94,6 @@
                       "modifiers": {
                         "mandatory": [
                           "right_gui"
-                        ],
-                        "optional": [
-                          "any"
                         ]
                       }
                     },
@@ -106,48 +103,6 @@
                         "modifiers": [
                           "left_command"
                         ]
-                      }
-                    ],
-                    "to_if_alone": [
-                      {
-                        "key_code": "right_gui"
-                      }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.apple\\.finder"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "RightCommand + LeftOption_upfolder-Finder",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                      "key_code": "left_control",
-                      "modifiers": {
-                        "mandatory": [
-                          "right_gui"
-                        ]
-                      }
-                    },
-                    "to": [
-                      {
-                        "key_code": "up_arrow",
-                        "modifiers": [
-                          "right_command"
-                        ]
-                      }
-                    ],
-                    "to_if_alone": [
-                      {
-                        "key_code": "right_gui"
                       }
                     ],
                     "conditions": [

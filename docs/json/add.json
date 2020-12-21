@@ -2,7 +2,7 @@
   "title": "add_PersonalRules(@sisui)1",
   "rules": [
     {
-      "description": "LeftAlt + u_PathFinderActivePathSelection",
+      "description": "None",
       "manipulators": [
         {
           "type": "basic",
