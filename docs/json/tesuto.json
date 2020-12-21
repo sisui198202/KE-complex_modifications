@@ -440,7 +440,7 @@
       ]
     },
     {
-      "description": "LeftControl + RightCommand_click",
+      "description": "LeftAlt + RightCommand_click",
       "manipulators": [
         {
           "type": "basic",
@@ -448,7 +448,7 @@
             "key_code": "right_gui",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "left_alt"
               ]
             }
           },
