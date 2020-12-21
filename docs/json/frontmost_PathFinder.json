@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder_ver1",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection",
@@ -18,8 +18,16 @@
             {
               "key_code": "l",
               "modifiers": [
-                "right_alt",
-                "right_gui"
+                "left_alt",
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder"
               ]
             }
           ]

@@ -1,19 +1,31 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder_ver1",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["u"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["l"],
-                 conditions: [frontmost_application_if("com.cocoatech.PathFinder", false)],
-                 to_modifiers: ["right_alt","right_gui"],
-                 as_json: true
-               )
-       %>
+      "manipulators": [
+      {
+  "type": "basic",
+  "from": {
+    "key_code": "u",
+    "modifiers": {
+      "mandatory": [ "left_alt" ]
+    }
+  },
+  "to": [
+    {
+      "key_code": "l",
+      "modifiers": [ "left_alt", "left_gui" ]
+    }
+  ],
+  "conditions": [
+    {
+      "type": "frontmost_application_if",
+      "bundle_identifiers": [ "^com\\.cocoatech\\.PathFinder" ]
+    }
+  ]
+}
+      ]
     }
 ]
 }
