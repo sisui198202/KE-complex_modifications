@@ -58,63 +58,6 @@
       ]
     },
     {
-      "description": "Aキーを押しながらIキーを押すとmousecursolでk移動",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 0
-              }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "y": -1536
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vi_mode",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "１秒間押し続けないとcommand-qが実行されない設定",
       "manipulators": [
         {
@@ -190,43 +133,6 @@
             {
               "key_code": "spacebar",
               "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "クリック設定",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "return_or_enter"
-          },
-          "to": [
-            {
-              "pointing_button": "button1"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + RightCommand_click",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button1"
             }
           ]
         }
