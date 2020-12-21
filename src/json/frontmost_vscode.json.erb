@@ -64,6 +64,84 @@
                     ]
                 }
             ]
-        }
+        },
+  {
+      "description": "LeftCommand + CloseBracket_unindent",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["close_bracket"],
+                 from_mandatory_modifiers: ["left_control"],
+                 dest_keys_list: ["1"],
+                 to_modifiers: ["left_control"],
+                 as_json: true
+               )
+       %>
+    },
+   {
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["slash"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 dest_keys_list: ["2"],
+                 to_modifiers: ["right_control"],
+                 as_json: true
+               )
+       %>
+   },
+    {
+      "description": "LeftAlt + b_DebugStart (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["b"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["b"],
+                 to_modifiers: ["right_alt"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "LeftAlt + T_Terminal Focus (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["i"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["4"],
+                 to_modifiers: ["left_control","left_alt"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["comma"],
+                 from_mandatory_modifiers: ["right_gui"],
+                 dest_keys_list: ["o"],
+                 to_modifiers: ["left_control","left_alt"],
+                 as_json: true
+               )
+       %>
+    },
+    {
+      "description": "Terminal Clear (vscode)",
+      "manipulators":
+      <%=
+               each_key(
+                 source_keys_list: ["u"],
+                 from_mandatory_modifiers: ["left_alt"],
+                 dest_keys_list: ["2"],
+                 to_modifiers: ["right_control","left_alt"],
+                 as_json: true
+               )
+       %>
+    }
     ]
 }
