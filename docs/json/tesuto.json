@@ -115,7 +115,7 @@
       ]
     },
     {
-      "description": "fnキーを押しながらIキーを押すとmousecursolでk移動",
+      "description": "fnキーを押しながらIキーを押すとmousecursolでUp移動",
       "manipulators": [
         {
           "type": "basic",
