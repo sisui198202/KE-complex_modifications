@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -503,7 +503,7 @@
       ]
     },
     {
-      "description": "RightCommand + z,x,c,v,a,s,d,w,e,r_Number(0~9)",
+      "description": "RightCommand + z,x,c,v,a,s,d,w,e,r_Number(0~9)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -516,6 +516,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "0"
             }
@@ -533,6 +536,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "1"
             }
           ]
@@ -548,6 +554,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "2"
             }
@@ -565,6 +574,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "3"
             }
           ]
@@ -580,6 +592,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "4"
             }
@@ -597,6 +612,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "5"
             }
           ]
@@ -612,6 +630,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "6"
             }
@@ -629,6 +650,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "7"
             }
           ]
@@ -645,6 +669,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "8"
             }
           ]
@@ -660,6 +687,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "9"
             }

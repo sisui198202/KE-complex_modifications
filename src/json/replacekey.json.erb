@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey1",
   "rules": [
         {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -249,13 +249,13 @@
        %>
     },
     {
-      "description": "RightCommand + z,x,c,v,a,s,d,w,e,r_Number(0~9)",
+      "description": "RightCommand + z,x,c,v,a,s,d,w,e,r_Number(0~9)_ver1",
       "manipulators":
       <%=
               each_key(
                 source_keys_list: ["z", "x", "c", "v","s","d","f","w","e","r"],
                 from_mandatory_modifiers: ["right_gui"],
-                dest_keys_list: ["0", "1", "2", "3","4","5","6","7","8","9"],
+                dest_keys_list: [["japanese_eisuu","0"],["japanese_eisuu","1"], ["japanese_eisuu","2"], ["japanese_eisuu","3"],["japanese_eisuu","4"],["japanese_eisuu","5"],["japanese_eisuu","6"],["japanese_eisuu","7"],["japanese_eisuu","8"],["japanese_eisuu","9"]],
                 as_json: true
               )
       %>
