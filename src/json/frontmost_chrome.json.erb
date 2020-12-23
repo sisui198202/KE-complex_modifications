@@ -35,7 +35,7 @@
             ]
         },
         {
-            "description": "LeftAlt + A_CopyTab(Chrome)",
+            "description": "LeftAlt + A_CopyTab(Chrome)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -65,6 +65,17 @@
                     ]
                 }
             ]
+        },
+    {
+      "description": "LeftAlt + A_CopyTab(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"]) %>,
+          "to": <%= to([["f12", ["right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
+      ]
+    }
     ]
 }
