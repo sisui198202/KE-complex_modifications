@@ -13,19 +13,6 @@
       ]
     },
     {
-      "description": "LeftCommand + f_Tab_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["f"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["tab"],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "LeftCommand + f_Tab",
       "manipulators": [
         {
@@ -34,19 +21,6 @@
           "to": <%= to([["tab"]]) %>
         }
       ]
-    },
-    {
-      "description": "LeftCommand + space_BackSpace(!Finder)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: [["japanese_eisuu","delete_or_backspace"]],
-                 conditions: [frontmost_application_unless("finder", false)],
-                 as_json: true
-               )
-       %>        
     },
     {
       "description": "LeftCommand + space_BackSpace(!Finder)",

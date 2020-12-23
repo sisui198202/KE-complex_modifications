@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver1",
+  "title": "Replacekey",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -34,30 +34,6 @@
       ]
     },
     {
-      "description": "LeftCommand + f_Tab_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + f_Tab",
       "manipulators": [
         {
@@ -76,38 +52,6 @@
           "to": [
             {
               "key_code": "tab"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + space_BackSpace(!Finder)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
             }
           ]
         }
