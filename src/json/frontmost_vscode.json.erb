@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode2",
     "rules": [
         {
-            "description": "LeftCommand + N_Home(vscode)",
+            "description": "LeftCommand + N_Home(vscode)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -33,8 +33,19 @@
                 }
             ]
         },
+    {
+      "description": "LeftCommand + N_Home(vscode)",
+      "manipulators": [
         {
-            "description": "LeftCommand + M_End(vscode)",
+          "type": "basic",
+          "from": <%= from("n", ["left_control"]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+        {
+            "description": "LeftCommand + M_End(vscode)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -65,8 +76,19 @@
                 }
             ]
         },
+    {
+      "description": "LeftCommand + M_End(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_control"]) %>,
+          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
   {
-      "description": "LeftCommand + CloseBracket_unindent",
+      "description": "LeftCommand + CloseBracket_unindent(vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -78,8 +100,19 @@
                )
        %>
     },
+    {
+      "description": "LeftCommand + CloseBracket_unindent(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["left_control"]) %>,
+          "to": <%= to([["1", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
    {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -92,7 +125,18 @@
        %>
    },
     {
-      "description": "LeftAlt + b_DebugStart (vscode)",
+      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("slash", ["right_gui"]) %>,
+          "to": <%= to([["2", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + b_DebugStart (vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -105,7 +149,18 @@
        %>
     },
     {
-      "description": "LeftAlt + T_Terminal Focus (vscode)",
+      "description": "LeftAlt + b_DebugStart (vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["left_alt"]) %>,
+          "to": <%= to([["b", ["right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + T_Terminal Focus (vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -118,7 +173,18 @@
        %>
     },
     {
-      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)",
+      "description": "LeftAlt + T_Terminal Focus (vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["left_alt"]) %>,
+          "to": <%= to([["4", ["left_control","left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -131,7 +197,18 @@
        %>
     },
     {
-      "description": "LeftAlt + U_Terminal Clear (vscode)",
+      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["right_gui"]) %>,
+          "to": <%= to([["o", ["left_control","left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + U_Terminal Clear (vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -142,6 +219,17 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "LeftAlt + U_Terminal Clear (vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_alt"]) %>,
+          "to": <%= to([["2", ["right_control","left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
     }
     ]
 }
