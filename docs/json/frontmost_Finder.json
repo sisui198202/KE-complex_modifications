@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder1",
   "rules": [
     {
       "description": "LeftAlt + Space_OpenFile(Finder)",
@@ -103,6 +103,38 @@
               "modifiers": [
                 "left_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + Space_OpenFile(Finder)_tesuto",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            },
+            {
+              "pointing_button": "button1"
             }
           ],
           "conditions": [

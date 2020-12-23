@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder",
+    "title": "FrontmostIfFinder1",
     "rules": [
     {
       "description": "LeftAlt + Space_OpenFile(Finder)",
@@ -41,6 +41,17 @@
           "type": "basic",
           "from": <%= from("spacebar", ["right_gui"]) %>,
           "to": <%= to([["delete_or_backspace", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + Space_OpenFile(Finder)_tesuto",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_alt"]) %>,
+          "to": <%= to([["button1"],["button1"]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
