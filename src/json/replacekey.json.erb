@@ -2,7 +2,7 @@
   "title": "Replacekey",
   "rules": [
         {
-      "description": "Leftoption + Space to Enter(!Finder)",
+      "description": "Leftoption + Space to Enter(!Finder)_old",
       "manipulators":
       <%=
                each_key(
@@ -14,6 +14,17 @@
                  as_json: true
                )
        %>
+    },
+   {
+      "description": "Leftoption + Space to Enter(!Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
+          "to": <%= to([["return_or_enter"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+        }
+      ]
     },
     {
       "description": "LeftCommand + f_Tab",
