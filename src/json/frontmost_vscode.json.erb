@@ -1,38 +1,6 @@
 {
     "title": "FrontmostIfVscode2",
     "rules": [
-        {
-            "description": "LeftCommand + N_Home(vscode)_old",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "n",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "up_arrow",
-                            "modifiers": [
-                                "right_gui"
-                            ]
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.microsoft\\.VSCode"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
     {
       "description": "LeftCommand + N_Home(vscode)",
       "manipulators": [
@@ -44,38 +12,6 @@
         }
       ]
     },
-        {
-            "description": "LeftCommand + M_End(vscode)_old",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "m",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "down_arrow",
-                            "modifiers": [
-                                "right_gui"
-                            ]
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.microsoft\\.VSCode"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
     {
       "description": "LeftCommand + M_End(vscode)",
       "manipulators": [
@@ -86,19 +22,6 @@
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
-    },
-  {
-      "description": "LeftCommand + CloseBracket_unindent(vscode)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["close_bracket"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["1"],
-                 to_modifiers: ["left_control"],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "LeftCommand + CloseBracket_unindent(vscode)",
@@ -111,19 +34,6 @@
         }
       ]
     },
-   {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["slash"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: ["2"],
-                 to_modifiers: ["right_control"],
-                 as_json: true
-               )
-       %>
-   },
     {
       "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
       "manipulators": [
@@ -134,19 +44,6 @@
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
-    },
-    {
-      "description": "LeftAlt + b_DebugStart (vscode)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["b"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["b"],
-                 to_modifiers: ["right_alt"],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "LeftAlt + b_DebugStart (vscode)",
@@ -160,20 +57,7 @@
       ]
     },
     {
-      "description": "LeftAlt + T_Terminal Focus (vscode)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["i"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["4"],
-                 to_modifiers: ["left_control","left_alt"],
-                 as_json: true
-               )
-       %>
-    },
-    {
-      "description": "LeftAlt + T_Terminal Focus (vscode)",
+      "description": "LeftAlt + I_Terminal Focus (vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -182,19 +66,6 @@
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
-    },
-    {
-      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["comma"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: ["o"],
-                 to_modifiers: ["left_control","left_alt"],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)",
@@ -206,19 +77,6 @@
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
-    },
-    {
-      "description": "LeftAlt + U_Terminal Clear (vscode)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["u"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["2"],
-                 to_modifiers: ["right_control","left_alt"],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "LeftAlt + U_Terminal Clear (vscode)",

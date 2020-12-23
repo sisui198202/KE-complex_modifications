@@ -2,38 +2,6 @@
   "title": "FrontmostIfVscode2",
   "rules": [
     {
-      "description": "LeftCommand + N_Home(vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.VSCode"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + N_Home(vscode)",
       "manipulators": [
         {
@@ -59,38 +27,6 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + M_End(vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.VSCode"
               ]
             }
           ]
@@ -130,30 +66,6 @@
       ]
     },
     {
-      "description": "LeftCommand + CloseBracket_unindent(vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + CloseBracket_unindent(vscode)",
       "manipulators": [
         {
@@ -179,30 +91,6 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_control"
               ]
             }
           ]
@@ -242,30 +130,6 @@
       ]
     },
     {
-      "description": "LeftAlt + b_DebugStart (vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftAlt + b_DebugStart (vscode)",
       "manipulators": [
         {
@@ -298,32 +162,7 @@
       ]
     },
     {
-      "description": "LeftAlt + T_Terminal Focus (vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_control",
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + T_Terminal Focus (vscode)",
+      "description": "LeftAlt + I_Terminal Focus (vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -349,31 +188,6 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + comma_Terminal Panel Max Toggle (vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "left_control",
-                "left_alt"
               ]
             }
           ]
@@ -407,31 +221,6 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + U_Terminal Clear (vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_control",
-                "left_alt"
               ]
             }
           ]
