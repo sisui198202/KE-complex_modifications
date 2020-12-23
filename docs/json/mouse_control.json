@@ -2,88 +2,22 @@
   "title": "MouseControl",
   "rules": [
     {
-      "description": "fnキーを押しながらIキーを押すとmousecursolでUp移動",
+      "description": "CursolMoveUpLeftRightDown",
       "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 0
-              }
-            }
-          ]
-        },
         {
           "type": "basic",
           "from": {
             "key_code": "i",
             "modifiers": {
-              "optional": [
-                "caps_lock"
+              "mandatory": [
+                "fn"
               ]
             }
           },
           "to": [
             {
               "mouse_key": {
-                "y": -1800
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vi_mode",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "fnキーを押しながらJキーを押すとmousecursolでleft移動",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 0
+                "y": -1536
               }
             }
           ]
@@ -93,54 +27,15 @@
           "from": {
             "key_code": "j",
             "modifiers": {
-              "optional": [
-                "caps_lock"
+              "mandatory": [
+                "fn"
               ]
             }
           },
           "to": [
             {
               "mouse_key": {
-                "x": -1800
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vi_mode",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "fnキーを押しながらKキーを押すとmousecursolでdown移動",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 0
+                "x": -1536
               }
             }
           ]
@@ -150,54 +45,15 @@
           "from": {
             "key_code": "k",
             "modifiers": {
-              "optional": [
-                "caps_lock"
+              "mandatory": [
+                "fn"
               ]
             }
           },
           "to": [
             {
               "mouse_key": {
-                "y": 1800
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vi_mode",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "fnキーを押しながらLキーを押すとmousecursolでright移動",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 0
+                "y": 1536
               }
             }
           ]
@@ -207,23 +63,38 @@
           "from": {
             "key_code": "l",
             "modifiers": {
-              "optional": [
-                "caps_lock"
+              "mandatory": [
+                "fn"
               ]
             }
           },
           "to": [
             {
               "mouse_key": {
-                "x": 1800
+                "x": 1536
               }
             }
-          ],
-          "conditions": [
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Fn + Spacebar_LeftClick",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            },
+            "key_code": "spacebar"
+          },
+          "to": [
             {
-              "type": "variable_if",
-              "name": "vi_mode",
-              "value": 1
+              "repeat": false,
+              "pointing_button": "button1"
             }
           ]
         }
