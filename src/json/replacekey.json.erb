@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver2",
+  "title": "Replacekey_ver3",
   "rules": [
    {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -24,18 +24,6 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_alt"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: [["japanese_eisuu","equal_sign"]],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "LeftCommand + Rightoption_equal",
       "manipulators": [
         {
@@ -48,20 +36,6 @@
     },
     <%# deleteを機能させるには、anyが必要%>
     {
-      "description": "RightCommand + Space_delete(!Finder)_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["spacebar"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["delete_forward"],
-                 conditions: [frontmost_application_unless("finder", false)],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "RightCommand + Space_delete(!Finder)",
       "manipulators": [
         {
@@ -73,18 +47,6 @@
       ]
     },
     {
-      "description": "RightCommand + Leftoption_backslash_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_alt"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: [["japanese_eisuu","backslash"]],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "RightCommand + Leftoption_backslash",
       "manipulators": [
         {
@@ -93,18 +55,6 @@
           "to": <%= to([["japanese_eisuu"],["backslash"]]) %>
         }
       ]
-    },
-    {
-      "description": "LeftCommand + g_escape_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["g"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["escape"],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "LeftCommand + g_escape",

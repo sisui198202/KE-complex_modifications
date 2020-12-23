@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver2",
+  "title": "Replacekey_ver3",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -66,30 +66,6 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_alt",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "equal_sign"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + Rightoption_equal",
       "manipulators": [
         {
@@ -108,38 +84,6 @@
             },
             {
               "key_code": "equal_sign"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Space_delete(!Finder)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_forward"
             }
           ],
           "conditions": [
@@ -186,30 +130,6 @@
       ]
     },
     {
-      "description": "RightCommand + Leftoption_backslash_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "backslash"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + Leftoption_backslash",
       "manipulators": [
         {
@@ -228,27 +148,6 @@
             },
             {
               "key_code": "backslash"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + g_escape_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "escape"
             }
           ]
         }
