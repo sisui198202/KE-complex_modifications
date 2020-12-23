@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey_ver2",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -28,30 +28,6 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.finder$"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + f_Tab",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab"
             }
           ]
         }
@@ -210,6 +186,30 @@
       ]
     },
     {
+      "description": "RightCommand + Leftoption_backslash_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "backslash"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "RightCommand + Leftoption_backslash",
       "manipulators": [
         {
@@ -228,6 +228,27 @@
             },
             {
               "key_code": "backslash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + g_escape_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
             }
           ]
         }
@@ -336,7 +357,7 @@
       ]
     },
     {
-      "description": "LeftCommand+F_Tab",
+      "description": "LeftCommand + f_Tab",
       "manipulators": [
         {
           "type": "basic",
