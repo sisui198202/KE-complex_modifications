@@ -1,40 +1,8 @@
 {
-  "title": "FrontmostIfFinder1",
+  "title": "FrontmostIfFinder2",
   "rules": [
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Enter_OpenFile(Finder)",
+      "description": "Enter_OpenFile(Finder)_old",
       "manipulators": [
         {
           "type": "basic",
@@ -128,6 +96,33 @@
                 "left_alt"
               ]
             }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            },
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Enter_OpenFile(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter"
           },
           "to": [
             {

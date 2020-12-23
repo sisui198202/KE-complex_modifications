@@ -1,19 +1,8 @@
 {
-    "title": "FrontmostIfFinder1",
+    "title": "FrontmostIfFinder2",
     "rules": [
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("spacebar", ["left_alt"]) %>,
-          "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "Enter_OpenFile(Finder)",
+      "description": "Enter_OpenFile(Finder)_old",
       "manipulators": [
         {
           "type": "basic",
@@ -51,6 +40,17 @@
         {
           "type": "basic",
           "from": <%= from("spacebar", ["left_alt"]) %>,
+          "to": <%= to([["button1"],["button1"]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Enter_OpenFile(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("return_or_enter") %>,
           "to": <%= to([["button1"],["button1"]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
