@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal",
+      "description": "LeftCommand + Rightoption_equal_old",
       "manipulators":
       <%=
                each_key(
@@ -45,9 +45,20 @@
                )
        %>
     },
+    {
+      "description": "LeftCommand + Rightoption_equal",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_alt", ["left_control"]) %>,
+          "to": <%= to([["japanese_eisuu"],["equal_sign"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+        }
+      ]
+    },
     <%# deleteを機能させるには、anyが必要%>
     {
-      "description": "RightCommand + Space_delete(!Finder)",
+      "description": "RightCommand + Space_delete(!Finder)_old",
       "manipulators":
       <%=
                each_key(
@@ -59,6 +70,17 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "RightCommand + Space_delete(!Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"],["any"]) %>,
+          "to": <%= to([["delete_forward"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+        }
+      ]
     },
     {
       "description": "RightCommand + Leftoption_backslash",
