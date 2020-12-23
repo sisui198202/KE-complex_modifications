@@ -13,7 +13,7 @@
       ]
     },
     {
-      "description": "LeftCommand + f_Tab",
+      "description": "LeftCommand + f_Tab_old",
       "manipulators":
       <%=
                each_key(
@@ -26,7 +26,17 @@
        %>
     },
     {
-      "description": "LeftCommand + space_BackSpace(!Finder)",
+      "description": "LeftCommand + f_Tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f", ["left_control"],["any"]) %>,
+          "to": <%= to([["tab"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + space_BackSpace(!Finder)_old",
       "manipulators":
       <%=
                each_key(
@@ -37,6 +47,17 @@
                  as_json: true
                )
        %>        
+    },
+    {
+      "description": "LeftCommand + space_BackSpace(!Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_control"]) %>,
+          "to": <%= to([["japanese_eisuu"],["delete_or_backspace"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+        }
+      ]
     },
     {
       "description": "LeftCommand + Rightoption_equal",
@@ -234,7 +255,7 @@
        %>
     },
     {
-      "description": "Leftoption + Rightcommand_hypen",
+      "description": "Leftoption + Rightcommand_hypen_old",
       "manipulators":
       <%=
                each_key(
