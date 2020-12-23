@@ -1,5 +1,5 @@
 {
-  "title": "TesutoCase6",
+  "title": "TesutoCase7",
   "rules": [
     {
       "description": "tesuto",
@@ -215,11 +215,6 @@
             "modifiers": {
               "mandatory": [
                 "fn"
-              ],
-              "optional": [
-                "shift",
-                "control",
-                "caps_lock"
               ]
             }
           },
@@ -232,7 +227,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "international5",
+            "key_code": "fn",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -246,7 +241,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "japanese_eisuu"
+              "key_code": "a"
             }
           ]
         }
