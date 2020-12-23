@@ -1,6 +1,34 @@
 {
     "title": "TesutoCase6",
     "rules": [
+    {
+      "description": "Change Control-a  to Command-b",
+      "manipulators": [
+        {
+          <%# Control-A to Command-B %>
+          "type": "basic",
+          "from": <%= from("a", ["control"], ["caps_lock"]) %>,
+          "to": <%= to([["b", ["command"]]]) %>
+        },
+        {
+          <%# Control-C to D %>
+          "type": "basic",
+          "from": <%= from("c", ["control"], ["any"]) %>,
+          "to": <%= to([["d"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "Change Control-e  to Command-f",
+      "manipulators": [
+        {
+          <%# Control-E to F %>
+          "type": "basic",
+          "from": <%= from("e", ["control"], []) %>,
+          "to": <%= to([["f"]]) %>
+        }
+      ]
+    },
         {
             "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
             "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
