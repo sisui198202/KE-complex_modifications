@@ -2,32 +2,6 @@
   "title": "FrontmostIfPathFinder",
   "rules": [
     {
-      "description": "LeftAlt + u_PathSelection_old",
-      "manipulators": [
-      {
-  "type": "basic",
-  "from": {
-    "key_code": "u",
-    "modifiers": {
-      "mandatory": [ "left_alt" ]
-    }
-  },
-  "to": [
-    {
-      "key_code": "l",
-      "modifiers": [ "left_alt", "left_gui" ]
-    }
-  ],
-  "conditions": [
-    {
-      "type": "frontmost_application_if",
-      "bundle_identifiers": [ "^com\\.cocoatech\\.PathFinder" ]
-    }
-  ]
-}
-      ]
-    },
-    {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
       "manipulators": [
         {
