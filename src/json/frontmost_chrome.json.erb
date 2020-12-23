@@ -2,7 +2,7 @@
     "title": "FrontmostIfChrome",
     "rules": [
         {
-            "description": "LeftAlt + Space_Reload(Chrome)",
+            "description": "LeftAlt + Space_Reload(Chrome)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -34,6 +34,17 @@
                 }
             ]
         },
+    {
+      "description": "LeftAlt + Space_Reload(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["right_gui"]) %>,
+          "to": <%= to([["w", ["right_control","right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
         {
             "description": "LeftAlt + A_CopyTab(Chrome)_old",
             "manipulators": [

@@ -2,7 +2,7 @@
   "title": "FrontmostIfChrome",
   "rules": [
     {
-      "description": "LeftAlt + Space_Reload(Chrome)",
+      "description": "LeftAlt + Space_Reload(Chrome)_old",
       "manipulators": [
         {
           "type": "basic",
@@ -28,6 +28,39 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.google\\.Chrome"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + Space_Reload(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_control",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
               ]
             }
           ]
