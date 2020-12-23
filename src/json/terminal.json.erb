@@ -87,7 +87,7 @@
   ]
 },
 {
-  "description": "LeftCommand + X_ターミナルを開く",
+  "description": "LeftCommand + X_ターミナルを開く_old",
   "manipulators": [
     {
       "type": "basic",
@@ -104,12 +104,11 @@
   ]
 },
     {
-      "description": "tesuto2",
+      "description": "LeftCommand + X_ターミナルを開く",
       "manipulators": [
         {
-          <%# Control-E to F %>
           "type": "basic",
-          "from": <%= from("e", ["control"], []) %>,
+          "from": <%= from("x", ["left_control"]) %>,
           "to": <%= set_shell_command(["open -a 'Terminal.app'"]) %>
         }
       ]

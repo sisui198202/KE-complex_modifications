@@ -410,6 +410,30 @@ def input_source_unless(input_source_aliases, as_json=true)
   input_source('input_source_unless', input_source_aliases, as_json)
 end
 
+def variable(type, names, values, as_json=true)
+  data =[]
+  unless names.empty?
+    names.each_with_index do |name, index|
+      data = {
+        "type" => type,
+        "name" => name,
+        "value" => values[index]
+      }
+    end
+  else
+    $stderr << "name empty.\n"
+  end
+  make_data(data, as_json)
+end
+
+def variable_if(names, values, as_json=true)
+  variable('variable_if', names, values, as_json)
+end
+
+def variable_unless(names, values, as_json=true)
+  variable('variable_unless', names, values, as_json)
+end
+
 def check_set_variable(array)
   mode = ""
   array.each do |k|
