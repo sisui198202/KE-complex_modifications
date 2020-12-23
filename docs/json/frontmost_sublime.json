@@ -2,38 +2,6 @@
   "title": "FrontmostIfSublime",
   "rules": [
     {
-      "description": "LeftCommand + Z_RowCursolNewline(sublime)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.sublimetext\\.3"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + Z_RowCursolNewline(sublime)",
       "manipulators": [
         {
