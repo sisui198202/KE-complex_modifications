@@ -1,5 +1,5 @@
 {
-    "title": "TesutoCase7",
+    "title": "TesutoCase8",
     "rules": [
     {
       "description": "tesuto",
@@ -166,40 +166,110 @@
                 }
             ]
         },
+        {
+            "description": "カーソル移動",
+            "manipulators": [
 {
-  "description": "無変換/英数 + 「スペース/かな」で「Return/Escape」",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "spacebar",
-        "modifiers": {
-          "mandatory": [ "fn" ]
-        }
-      },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "x": 1800
-                            }
-                        }
-                    ]
-    },
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "fn",
-        "modifiers": {
-          "optional": [ "caps_lock" ]
-        }
-      },
-      "to": [
-        { "key_code": "fn" }
-      ],
-      "to_if_alone": [
-        { "key_code": "a" }
-      ]
+  "type": "basic",
+  "from": {
+    "key_code": "w",
+    "modifiers": {
+      "mandatory": [ "right_shift" ]
     }
+  },
+  "to": [
+    { "mouse_key": { "y": -1536 } }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "a",
+    "modifiers": {
+      "mandatory": [ "right_shift" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "x": -1536 } }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "s",
+    "modifiers": {
+      "mandatory": [ "right_shift" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "y": 1536 } }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "d",
+    "modifiers": {
+      "mandatory": [ "right_shift" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "x": 1536 } }
+  ]
+}
+  ]
+},
+        {
+            "description": "カーソル移動_tesuto",
+            "manipulators": [
+{
+  "type": "basic",
+  "from": {
+    "key_code": "i",
+    "modifiers": {
+      "mandatory": [ "fn" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "y": -1536 } }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "j",
+    "modifiers": {
+      "mandatory": [ "fn" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "x": -1536 } }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "k",
+    "modifiers": {
+      "mandatory": [ "fn" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "y": 1536 } }
+  ]
+},
+{
+  "type": "basic",
+  "from": {
+    "key_code": "l",
+    "modifiers": {
+      "mandatory": [ "fn" ]
+    }
+  },
+  "to": [
+    { "mouse_key": { "x": 1536 } }
+  ]
+}
   ]
 }
     ]
