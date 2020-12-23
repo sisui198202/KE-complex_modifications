@@ -141,6 +141,10 @@ def frontmost_application(type, app_aliases, as_json=true)
     '^com\.apple\.finder$',
   ]
 
+  pathfinder_bundle_identifiers = [
+    '^com\\.cocoatech\\.PathFinder$',
+  ]
+
   preview_bundle_identifiers = [
     '^com\.apple\.Preview$',
   ]
@@ -244,6 +248,9 @@ def frontmost_application(type, app_aliases, as_json=true)
     case app_alias
     when 'finder'
       bundle_identifiers.concat(finder_bundle_identifiers)
+
+    when 'pathfinder'
+      bundle_identifiers.concat(pathfinder_bundle_identifiers)
 
     when 'sublime'
       bundle_identifiers.concat(sublime_bundle_identifers)
