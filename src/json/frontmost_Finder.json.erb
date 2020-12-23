@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfFinder",
+    "title": "FrontmostIfFinder_ver1",
     "rules": [
         {
-            "description": "LeftAlt + Space_OpenFile(Finder)",
+            "description": "LeftAlt + Space_OpenFile(Finder)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -33,8 +33,19 @@
                 }
             ]
         },
+    {
+      "description": "LeftAlt + Space_OpenFile(Finder)",
+      "manipulators": [
         {
-            "description": "Enter_OpenFile(Finder)",
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_alt"]) %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+        {
+            "description": "Enter_OpenFile(Finder)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -60,8 +71,19 @@
                 }
             ]
         },
+    {
+      "description": "Enter_OpenFile(Finder)",
+      "manipulators": [
         {
-            "description": "F2_Rename(Finder)",
+          "type": "basic",
+          "from": <%= from("return_or_enter") %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+        {
+            "description": "F2_Rename(Finder)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -84,8 +106,19 @@
                 }
             ]
         },
+   {
+      "description": "F2_Rename(Finder)",
+      "manipulators": [
         {
-            "description": "RightCommand + space_FileDelete(Finder)",
+          "type": "basic",
+          "from": <%= from("f2") %>,
+          "to": <%= to([["return_or_enter"]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+        {
+            "description": "RightCommand + space_FileDelete(Finder)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -115,6 +148,17 @@
                     ]
                 }
             ]
+        },
+    {
+      "description": "RightCommand + space_FileDelete(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"]) %>,
+          "to": <%= to([["delete_or_backspace", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
+      ]
+    }
     ]
 }

@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder_ver1",
   "rules": [
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)",
+      "description": "LeftAlt + Space_OpenFile(Finder)_old",
       "manipulators": [
         {
           "type": "basic",
@@ -34,7 +34,39 @@
       ]
     },
     {
-      "description": "Enter_OpenFile(Finder)",
+      "description": "LeftAlt + Space_OpenFile(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Enter_OpenFile(Finder)_old",
       "manipulators": [
         {
           "type": "basic",
@@ -47,6 +79,57 @@
               "modifiers": [
                 "right_command"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Enter_OpenFile(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter"
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "F2_Rename(Finder)_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
@@ -77,7 +160,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder"
+                "^com\\.apple\\.finder$"
               ]
             }
           ]
@@ -85,7 +168,7 @@
       ]
     },
     {
-      "description": "RightCommand + space_FileDelete(Finder)",
+      "description": "RightCommand + space_FileDelete(Finder)_old",
       "manipulators": [
         {
           "type": "basic",
@@ -110,6 +193,38 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.apple\\.finder"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + space_FileDelete(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": [
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
               ]
             }
           ]
