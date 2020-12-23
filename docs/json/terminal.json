@@ -1,27 +1,6 @@
 {
-  "title": "Terminal_ver2",
+  "title": "Terminal_ver3",
   "rules": [
-    {
-      "description": "Leftcommand + R_miを開く_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'mi'"
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "Leftcommand + R_miを開く",
       "manipulators": [
@@ -38,27 +17,6 @@
           "to": [
             {
               "shell_command": "open -a 'mi'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + J_chromeを開く_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Google Chrome.app'"
             }
           ]
         }
@@ -86,27 +44,6 @@
       ]
     },
     {
-      "description": "LeftAlt + L_firefoxを開く_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Firefox.app'"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftAlt + L_firefoxを開く",
       "manipulators": [
         {
@@ -128,27 +65,6 @@
       ]
     },
     {
-      "description": "LeftAlt + K_vscodeを開く_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Visual Studio Code.app'"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftAlt + K_vscodeを開く",
       "manipulators": [
         {
@@ -164,27 +80,6 @@
           "to": [
             {
               "shell_command": "open -a 'Visual Studio Code.app'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + semicolon_Path Finderを開く_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Path Finder.app'"
             }
           ]
         }

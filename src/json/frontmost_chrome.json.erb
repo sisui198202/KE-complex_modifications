@@ -1,41 +1,8 @@
 {
     "title": "FrontmostIfChrome",
     "rules": [
-        {
-            "description": "LeftAlt + Space_Reload(Chrome)_old",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "h",
-                        "modifiers": {
-                            "mandatory": [
-                                "right_gui"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "w",
-                            "modifiers": [
-                                "right_control",
-                                "right_shift"
-                            ]
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
     {
-      "description": "LeftAlt + Space_Reload(Chrome)",
+      "description": "RightCommand + h_Reload(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -45,38 +12,6 @@
         }
       ]
     },
-        {
-            "description": "LeftAlt + A_CopyTab(Chrome)_old",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "a",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_alt"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "f12",
-                            "modifiers": [
-                                "right_shift"
-                            ]
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
     {
       "description": "LeftAlt + A_CopyTab(Chrome)",
       "manipulators": [
