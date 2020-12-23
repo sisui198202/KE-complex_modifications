@@ -2,7 +2,7 @@
     "title": "FrontmostIfSublime",
     "rules": [
         {
-            "description": "LeftCommand + Z_RowCursolNewline(sublime)",
+            "description": "LeftCommand + Z_RowCursolNewline(sublime)_old",
             "manipulators": [
                 {
                     "type": "basic",
@@ -32,6 +32,17 @@
                     ]
                 }
             ]
+        },
+    {
+      "description": "LeftCommand + Z_RowCursolNewline(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("sublime") %> ]
         }
+      ]
+    }
     ]
 }
