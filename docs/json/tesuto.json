@@ -206,113 +206,47 @@
       ]
     },
     {
-      "description": "マウスカーソル",
+      "description": "無変換/英数 + 「スペース/かな」で「Return/Escape」",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "w",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "right_shift"
+                "fn"
+              ],
+              "optional": [
+                "shift",
+                "control",
+                "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "mouse_key": {
-                "y": -1536
-              }
+              "key_code": "return_or_enter"
             }
           ]
         },
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "international5",
             "modifiers": {
-              "mandatory": [
-                "right_shift"
+              "optional": [
+                "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "mouse_key": {
-                "x": -1536
-              }
+              "key_code": "fn"
             }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
+          ],
+          "to_if_alone": [
             {
-              "mouse_key": {
-                "y": 1536
-              }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "x": 1536
-              }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "vertical_wheel": -32
-              }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "vertical_wheel": 32
-              }
+              "key_code": "japanese_eisuu"
             }
           ]
         }
