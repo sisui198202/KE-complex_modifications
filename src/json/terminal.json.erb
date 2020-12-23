@@ -102,6 +102,17 @@
       ]
     }
   ]
-}
+},
+    {
+      "description": "tesuto2",
+      "manipulators": [
+        {
+          <%# Control-E to F %>
+          "type": "basic",
+          "from": <%= from("e", ["control"], []) %>,
+          "to": <%= set_shell_command(["open -a 'Terminal.app'"]) %>
+        }
+      ]
+    }
     ]
 }

@@ -2,7 +2,7 @@
   "title": "TesutoCase6",
   "rules": [
     {
-      "description": "Change Control-a  to Command-b",
+      "description": "tesuto",
       "manipulators": [
         {
           "type": "basic",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "description": "Change Control-e  to Command-f",
+      "description": "tesuto2",
       "manipulators": [
         {
           "type": "basic",

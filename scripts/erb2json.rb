@@ -324,6 +324,18 @@ def frontmost_application(type, app_aliases, as_json=true)
   end
 end
 
+def set_shell_command(commands, as_json=true)
+  data =[]
+  unless commands.empty?
+    commands.each do |command|
+      data << { "shell_command" => command }
+    end
+  else
+    $stderr << "name empty.\n"
+  end
+  make_data(data, as_json)
+end
+
 def frontmost_application_if(app_aliases, as_json=true)
   frontmost_application('frontmost_application_if', app_aliases, as_json)
 end
