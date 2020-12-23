@@ -1,33 +1,6 @@
 {
-  "title": "FrontmostIfFinder2",
+  "title": "FrontmostIfFinder",
   "rules": [
-    {
-      "description": "Enter_OpenFile(Finder)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "return_or_enter"
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "F2_Rename(Finder)",
       "manipulators": [
@@ -85,7 +58,7 @@
       ]
     },
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)_tesuto",
+      "description": "LeftAlt + Space_OpenFile(Finder)",
       "manipulators": [
         {
           "type": "basic",

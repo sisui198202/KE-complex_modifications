@@ -1,17 +1,6 @@
 {
-    "title": "FrontmostIfFinder2",
+    "title": "FrontmostIfFinder",
     "rules": [
-    {
-      "description": "Enter_OpenFile(Finder)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("return_or_enter") %>,
-          "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
    {
       "description": "F2_Rename(Finder)",
       "manipulators": [
@@ -35,7 +24,7 @@
       ]
     },
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)_tesuto",
+      "description": "LeftAlt + Space_OpenFile(Finder)",
       "manipulators": [
         {
           "type": "basic",
