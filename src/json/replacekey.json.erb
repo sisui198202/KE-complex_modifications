@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver4",
+  "title": "Replacekey_ver5",
   "rules": [
    {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -90,19 +90,6 @@
         }
       ]
     },
-    <%# "lazy": true必要なし、あると機能しなくなる %>
-    {
-      "description": "LeftAlt_Copy_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_alt"],
-                 dest_keys_list: ["left_alt"],
-                 to_if_alone: ["key_code": "c","modifiers": ["right_gui"]],
-                 as_json: true
-               )
-       %>
-    },
     {
       "description": "LeftAlt_Copy",
       "manipulators": [
@@ -113,19 +100,6 @@
           "to_if_alone": <%= to([["c","right_gui"]]) %>
         }
       ]
-    },
-   <%# "lazy": true必要なし、あると機能しなくなる %>
-    {
-      "description": "RightOption_Paste_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_alt"],
-                 dest_keys_list: ["right_alt"],
-                 to_if_alone: ["key_code": "v","modifiers": ["left_gui"]],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "RightOption_Paste",
@@ -139,7 +113,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent",
+      "description": "Leftoption + Rightoption_parsent_old",
       "manipulators":
       <%=
                each_key(
@@ -152,7 +126,17 @@
        %>
     },
     {
-      "description": "Rightoption + Leftoption_anbasado",
+      "description": "Leftoption + Rightoption_parsent",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_alt", ["left_alt"]) %>,
+          "to": <%= to([["5","right_shift"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado_old",
       "manipulators":
       <%=
                each_key(
@@ -164,6 +148,16 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"],["any"]) %>,
+          "to": <%= to([["7","right_shift"]]) %>
+        }
+      ]
     },
 {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）",

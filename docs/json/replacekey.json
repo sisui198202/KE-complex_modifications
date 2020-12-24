@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver4",
+  "title": "Replacekey_ver5",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -277,30 +277,6 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt"
-          },
-          "to": [
-            {
-              "key_code": "left_alt"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftAlt_Copy",
       "manipulators": [
         {
@@ -317,30 +293,6 @@
             {
               "key_code": "c",
               "modifiers": "right_gui"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption_Paste_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_alt"
-          },
-          "to": [
-            {
-              "key_code": "right_alt"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "v",
-              "modifiers": [
-                "left_gui"
-              ]
             }
           ]
         }
@@ -369,6 +321,30 @@
       ]
     },
     {
+      "description": "Leftoption + Rightoption_parsent_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Leftoption + Rightoption_parsent",
       "manipulators": [
         {
@@ -384,6 +360,31 @@
           "to": [
             {
               "key_code": "5",
+              "modifiers": "right_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
               "modifiers": [
                 "right_shift"
               ]
@@ -411,9 +412,7 @@
           "to": [
             {
               "key_code": "7",
-              "modifiers": [
-                "right_shift"
-              ]
+              "modifiers": "right_shift"
             }
           ]
         }
