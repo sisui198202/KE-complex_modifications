@@ -8,7 +8,7 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
           "to": <%= to([["left_arrow",["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     },
@@ -19,7 +19,7 @@
           "type": "basic",
           "from": <%= from("a", ["right_gui"]) %>,
           "to": <%= to([["n",["right_alt","right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     },
@@ -30,7 +30,7 @@
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
           "to": <%= to([["left_arrow",["right_gui","right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     }
