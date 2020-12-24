@@ -119,7 +119,7 @@
        %>
     },
     {
-      "description": "LeftCommand + N_Home(!vscode)",
+      "description": "LeftCommand + N_Home(!vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -132,8 +132,19 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + N_Home(!vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_control"]) %>,
+          "to": <%= to([["left_arrow",["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("vscode") %> ]
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + e_Expand Selection Word",
+      "description": "LeftCommand + e_Expand Selection Word_old",
       "manipulators":
       <%=
                each_key(
@@ -145,8 +156,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + e_Expand Selection Word",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["left_control"]) %>,
+          "to": <%= to([["right_arrow",["left_control","left_shift"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "RightCommand + o_SameWordExpandSelection",
+      "description": "RightCommand + o_SameWordExpandSelection_old",
       "manipulators":
       <%=
                each_key(
@@ -157,6 +178,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "RightCommand + o_SameWordExpandSelection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"]) %>,
+          "to": <%= to([["0",["right_gui","right_alt"]]]) %>
+        }
+      ]
     },
     {
       "description": "RightCommand + ._MaxWindow_old",
