@@ -79,7 +79,7 @@
       ]
     },
     {
-      "description": "Fn + Spacebar_LeftClick",
+      "description": "Fn + Spacebar_LeftClick_old",
       "manipulators": [
         {
           "type": "basic",
@@ -94,6 +94,30 @@
           "to": [
             {
               "repeat": false,
+              "pointing_button": "button1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Fn + Spacebar_LeftClick",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            },
+            {
               "pointing_button": "button1"
             }
           ]
