@@ -195,6 +195,30 @@
       ]
     },
     {
+      "description": "LeftCommand + c_DesktopExist_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + c_DesktopExist",
       "manipulators": [
         {

@@ -106,7 +106,7 @@
        %>
     },
     {
-      "description": "LeftCommand + c_DesktopExist",
+      "description": "LeftCommand + c_DesktopExist_old",
       "manipulators":
       <%=
                each_key(
@@ -117,6 +117,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + c_DesktopExist",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["left_control"]) %>,
+          "to": <%= to([["q",["right_alt"]]]) %>
+        }
+      ]
     },
     {
       "description": "LeftCommand + N_Home(!vscode)_old",
