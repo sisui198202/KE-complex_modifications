@@ -614,30 +614,6 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_Command Palete",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + Q_LeftWindowMove",
       "manipulators": [
         {
@@ -662,7 +638,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ,comma_AppsSelect-Previous",
+      "description": "LeftCommand + comma_AppsSelect-Previous",
       "manipulators": [
         {
           "type": "basic",
@@ -687,7 +663,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ._AppsSelect-next",
+      "description": "LeftCommand + period_AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
