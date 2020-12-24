@@ -33,6 +33,137 @@
           ]
         }
       ]
+    },
+    {
+      "description": "RightCommand + o_SameWordExpandSelection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + I_FocusNeighboringGroup",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + H_VSCODE,sublime1画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "right_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_ToggleSidebarOnOff",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

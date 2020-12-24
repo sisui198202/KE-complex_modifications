@@ -11,6 +11,56 @@
           "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
       ]
+    },
+  {
+      "description": "RightCommand + o_SameWordExpandSelection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"]) %>,
+          "to": <%= to([["0",["right_gui","right_alt"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"],["any"]) %>,
+          "to": <%= to([["o",["left_control","left_shift"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + I_FocusNeighboringGroup",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"],["any"]) %>,
+          "to": <%= to([["i",["right_gui","right_alt"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + H_VSCODE,sublime1画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["left_control"]) %>,
+          "to": <%= to([["h",["right_control","left_shift"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + T_ToggleSidebarOnOff",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"]) %>,
+          "to": <%= to([["t",["right_control","left_shift"]]]) %>
+        }
+      ]
     }
     ]
 }
