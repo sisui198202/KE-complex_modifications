@@ -67,7 +67,7 @@
        %>
     },
     {
-      "description": "LeftCommand + U_Undo",
+      "description": "LeftCommand + U_Undo_old",
       "manipulators":
       <%=
                each_key(
@@ -79,8 +79,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + U_Undo",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_control"]) %>,
+          "to": <%= to([["z",["left_gui"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + ;_CursolRowEnd",
+      "description": "LeftCommand + ;_CursolRowEnd_old",
       "manipulators":
       <%=
                each_key(
@@ -92,8 +102,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + ;_CursolRowEnd",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["left_control"]) %>,
+          "to": <%= to([["e",["left_control"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "RightCommand + T_Search",
+      "description": "RightCommand + T_Search_old",
       "manipulators":
       <%=
                each_key(
@@ -104,6 +124,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "RightCommand + T_Search",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["right_gui"]) %>,
+          "to": <%= to([["f",["right_gui"]]]) %>
+        }
+      ]
     },
     {
       "description": "LeftCommand + c_DesktopExist_old",
