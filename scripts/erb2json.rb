@@ -235,6 +235,11 @@ def frontmost_application(type, app_aliases, as_json=true)
     '^com.sublimetext.3$'
   ]
 
+  vscode_sublime_bundle_identifers = [
+    '^com.microsoft.VSCode$',
+    '^com.sublimetext.3$'
+  ]
+
   rdt_bundle_identifiers = [
     '^com\.microsoft\.rdc.macos$',
   ]
@@ -257,6 +262,9 @@ def frontmost_application(type, app_aliases, as_json=true)
 
     when 'vscode'
       bundle_identifiers.concat(vscode_bundle_identifers)
+
+    when 'vscode_sublime'
+      bundle_identifiers.concat(vscode_sublime_bundle_identifers)
 
     when 'preview'
       bundle_identifiers.concat(preview_bundle_identifiers)
