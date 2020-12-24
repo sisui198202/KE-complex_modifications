@@ -25,6 +25,22 @@
           ]
         }
       ]
+    },
+    {
+      "description": "tesuto",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1"
+          },
+          "to": [
+            {
+              "key_code": "a"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

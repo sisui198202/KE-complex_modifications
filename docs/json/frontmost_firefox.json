@@ -26,9 +26,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
+                "org\\.mozilla\\.firefox"
               ]
             }
           ]
@@ -61,9 +59,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
+                "org\\.mozilla\\.firefox"
               ]
             }
           ]
@@ -96,9 +92,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
+                "org\\.mozilla\\.firefox"
               ]
             }
           ]

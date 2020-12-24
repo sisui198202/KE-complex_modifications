@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)",
   "rules": [
     {
       "description": "F2_Rename",
@@ -726,22 +726,6 @@
             },
             {
               "key_code": "delete_or_backspace"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "tesuto",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f1"
-          },
-          "to": [
-            {
-              "key_code": "a"
             }
           ]
         }
