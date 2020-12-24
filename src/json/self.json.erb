@@ -159,7 +159,7 @@
        %>
     },
     {
-      "description": "RCommand + ._MaxWindow",
+      "description": "RightCommand + ._MaxWindow_old",
       "manipulators":
       <%=
                each_key(
@@ -171,8 +171,18 @@
                )
        %>
     },
+  {
+      "description": "RightCommand + ._MaxWindow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["right_gui"]) %>,
+          "to": <%= to([["f",["left_gui","left_control"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftOption + Q_WindowUP",
+      "description": "LeftOption + Q_WindowUP_old",
       "manipulators":
       <%=
                each_key(
@@ -184,8 +194,18 @@
                )
        %>
     },
+  {
+      "description": "LeftOption + Q_WindowUP",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["left_alt"]) %>,
+          "to": <%= to([["4",["left_alt"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftOption + P_WindowDown",
+      "description": "LeftOption + P_WindowDown_old",
       "manipulators":
       <%=
                each_key(
@@ -197,8 +217,18 @@
                )
        %>
     },
+  {
+      "description": "LeftOption + P_WindowDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["left_alt"]) %>,
+          "to": <%= to([["5",["left_alt"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftOption + W_WindowRightUp",
+      "description": "LeftOption + W_WindowRightUp_old",
       "manipulators":
       <%=
                each_key(
@@ -210,8 +240,18 @@
                )
        %>
     },
+  {
+      "description": "LeftOption + W_WindowRightUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["left_alt"]) %>,
+          "to": <%= to([["7",["left_alt"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftOption + E_WindowRightDown",
+      "description": "LeftOption + E_WindowRightDown_old",
       "manipulators":
       <%=
                each_key(
@@ -223,8 +263,18 @@
                )
        %>
     },
+  {
+      "description": "LeftOption + E_WindowRightDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["left_alt"]) %>,
+          "to": <%= to([["9",["left_alt"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + d_AllSelect",
+      "description": "LeftCommand + d_AllSelect_old",
       "manipulators":
       <%=
                each_key(
@@ -236,8 +286,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + d_AllSelect",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("d", ["left_control"]) %>,
+          "to": <%= to([["a",["right_gui"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + B_PageDown",
+      "description": "LeftCommand + B_PageDown_old",
       "manipulators":
       <%=
                each_key(
@@ -248,6 +308,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + B_PageDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["left_control"]) %>,
+          "to": <%= to([["down_arrow",["fn"]]]) %>
+        }
+      ]
     },
     {
       "description": "LeftCommand + /_PageUp_old",

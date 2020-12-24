@@ -301,7 +301,7 @@
       ]
     },
     {
-      "description": "RCommand + ._MaxWindow",
+      "description": "RightCommand + ._MaxWindow_old",
       "manipulators": [
         {
           "type": "basic",
@@ -326,6 +326,55 @@
       ]
     },
     {
+      "description": "RightCommand + ._MaxWindow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_gui",
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + Q_WindowUP_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftOption + Q_WindowUP",
       "manipulators": [
         {
@@ -341,6 +390,30 @@
           "to": [
             {
               "key_code": "4",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + P_WindowDown_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
               "modifiers": [
                 "left_alt"
               ]
@@ -374,6 +447,30 @@
       ]
     },
     {
+      "description": "LeftOption + W_WindowRightUp_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftOption + W_WindowRightUp",
       "manipulators": [
         {
@@ -389,6 +486,30 @@
           "to": [
             {
               "key_code": "7",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + E_WindowRightDown_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
               "modifiers": [
                 "left_alt"
               ]
@@ -422,6 +543,30 @@
       ]
     },
     {
+      "description": "LeftCommand + d_AllSelect_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + d_AllSelect",
       "manipulators": [
         {
@@ -439,6 +584,30 @@
               "key_code": "a",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + B_PageDown_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "fn"
               ]
             }
           ]
