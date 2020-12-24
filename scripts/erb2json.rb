@@ -164,7 +164,7 @@ def frontmost_application(type, app_aliases, as_json=true)
   ]
 
   firefox_bundle_identifiers = [
-    'org\.mozilla\.firefox'
+    'org.mozilla.firefox'
   ]
 
   vivaldi_bundle_identifiers = [
