@@ -302,7 +302,7 @@
        %>
     },
     {
-      "description": "RightCommand + ;_LatestTabToggle",
+      "description": "RightCommand + ;_LatestTabToggle_old",
       "manipulators":
       <%=
                each_key(
@@ -314,8 +314,18 @@
                )
        %>
     },
+  {
+      "description": "RightCommand + ;_LatestTabToggle",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"]) %>,
+          "to": <%= to([["tab",["left_control"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "RightCommand + L_NextTab",
+      "description": "RightCommand + L_NextTab_old",
       "manipulators":
       <%=
                each_key(
@@ -326,6 +336,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "RightCommand + L_NextTab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= to([["tab",["left_control","left_shift"]]]) %>
+        }
+      ]
     },
     {
       "description": "LeftCommand + o_VSCODE,sublime横2画面へ_old",
