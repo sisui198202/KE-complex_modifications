@@ -328,7 +328,7 @@
        %>
     },
     {
-      "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
+      "description": "LeftCommand + o_VSCODE,sublime横2画面へ_old",
       "manipulators":
       <%=
                each_key(
@@ -340,6 +340,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"],["any"]) %>,
+          "to": <%= to([["o",["left_control","left_shift"]]]) %>
+        }
+      ]
     },
     {
       "description": "RightCommand + I_FocusNeighboringGroup_old",
@@ -389,7 +399,7 @@
       ]
     },
    {
-      "description": "LeftCommand + T_ToggleSidebarOnOff",
+      "description": "LeftCommand + T_ToggleSidebarOnOff_old",
       "manipulators":
       <%=
                each_key(
@@ -400,6 +410,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + T_ToggleSidebarOnOff",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"]) %>,
+          "to": <%= to([["t",["right_control","left_shift"]]]) %>
+        }
+      ]
     },
    {
       "description": "RightCommand + P_RightHalfMove_old",
@@ -470,19 +490,6 @@
         }
       ]
     },
-   {
-      "description": "LeftCommand + Z_RowCursolNewline_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["z"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["return_or_enter"],
-                 to_modifiers: ["right_gui"],
-                 as_json: true
-               )
-       %>
-    },
   {
       "description": "LeftCommand + Z_RowCursolNewline",
       "manipulators": [
@@ -493,20 +500,6 @@
         }
       ]
     },
-    {
-      "description": "LeftCommand + ,comma_AppsSelect-Previous_old",
-      "manipulators":
-      <%# toに次のコードを手動で入れる必要あり、"halt": true, %>
-      <%=
-               each_key(
-                 source_keys_list: ["comma"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["tab"],
-                 to_modifiers: ["right_gui","left_shift"],
-                 as_json: true
-               )
-       %>
-    },
   {
       "description": "LeftCommand + ,comma_AppsSelect-Previous",
       "manipulators": [
@@ -516,20 +509,6 @@
           "to": <%= to([["tab",["right_gui","left_shift"]]]) %>
         }
       ]
-    },
-    {
-      "description": "LeftCommand + ._AppsSelect-next_old",
-      "manipulators":
-      <%# toに次のコードを手動で入れる必要あり、"halt": true, %>      
-      <%=
-               each_key(
-                 source_keys_list: ["period"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["tab"],
-                 to_modifiers: ["right_gui"],
-                 as_json: true
-               )
-       %>
     },
   {
       "description": "LeftCommand + ._AppsSelect-next",

@@ -615,6 +615,34 @@
       ]
     },
     {
+      "description": "LeftCommand + o_VSCODE,sublime横2画面へ_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
       "manipulators": [
         {
@@ -739,6 +767,31 @@
           "to": [
             {
               "key_code": "h",
+              "modifiers": [
+                "right_control",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_ToggleSidebarOnOff_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
               "modifiers": [
                 "right_control",
                 "left_shift"
@@ -918,30 +971,6 @@
       ]
     },
     {
-      "description": "LeftCommand + Z_RowCursolNewline_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + Z_RowCursolNewline",
       "manipulators": [
         {
@@ -959,31 +988,6 @@
               "key_code": "return_or_enter",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + ,comma_AppsSelect-Previous_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "right_gui",
-                "left_shift"
               ]
             }
           ]
@@ -1009,30 +1013,6 @@
               "modifiers": [
                 "right_gui",
                 "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + ._AppsSelect-next_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ]
