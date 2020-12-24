@@ -470,6 +470,30 @@
       ]
     },
     {
+      "description": "LeftCommand + /_PageUp_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + /_PageUp",
       "manipulators": [
         {
@@ -487,6 +511,30 @@
               "key_code": "up_arrow",
               "modifiers": [
                 "fn"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + O_Save_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ]
@@ -518,6 +566,30 @@
       ]
     },
     {
+      "description": "LeftCommand + S_Cut_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + S_Cut",
       "manipulators": [
         {
@@ -533,6 +605,30 @@
           "to": [
             {
               "key_code": "x",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + G_FileTabClose_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
               "modifiers": [
                 "right_gui"
               ]

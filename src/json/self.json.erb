@@ -250,7 +250,7 @@
        %>
     },
     {
-      "description": "LeftCommand + /_PageUp",
+      "description": "LeftCommand + /_PageUp_old",
       "manipulators":
       <%=
                each_key(
@@ -262,8 +262,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + /_PageUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("slash", ["left_control"]) %>,
+          "to": <%= to([["up_arrow",["fn"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftOption + O_Save",
+      "description": "LeftOption + O_Save_old",
       "manipulators":
       <%=
                each_key(
@@ -275,8 +285,18 @@
                )
        %>
     },
+  {
+      "description": "LeftOption + O_Save",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_alt"]) %>,
+          "to": <%= to([["s",["right_gui"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + S_Cut",
+      "description": "LeftCommand + S_Cut_old",
       "manipulators":
       <%=
                each_key(
@@ -288,8 +308,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + S_Cut",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["left_control"]) %>,
+          "to": <%= to([["x",["right_gui"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "RightCommand + G_FileTabClose",
+      "description": "RightCommand + G_FileTabClose_old",
       "manipulators":
       <%=
                each_key(
@@ -300,6 +330,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "RightCommand + G_FileTabClose",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g", ["right_gui"]) %>,
+          "to": <%= to([["w",["right_gui"]]]) %>
+        }
+      ]
     },
     {
       "description": "RightCommand + ;_LatestTabToggle_old",
