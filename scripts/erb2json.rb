@@ -167,6 +167,11 @@ def frontmost_application(type, app_aliases, as_json=true)
     'org\.mozilla\.firefox'
   ]
 
+  vivaldi_bundle_identifiers = [
+    'com.vivaldi.Vivaldi'
+  ]
+
+
   emacs_bundle_identifiers = [
     '^org\.gnu\.Emacs$',
     '^org\.gnu\.AquamacsEmacs$',
@@ -339,6 +344,9 @@ def frontmost_application(type, app_aliases, as_json=true)
 
     when 'firefox'
       bundle_identifiers.concat(firefox_bundle_identifiers)
+
+    when 'vivaldi'
+      bundle_identifiers.concat(vivaldi_bundle_identifiers)
 
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
