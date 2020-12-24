@@ -793,30 +793,6 @@
       ]
     },
     {
-      "description": "LeftCommand + Z_RowCursolNewline",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + ,comma_AppsSelect-Previous",
       "manipulators": [
         {
