@@ -1,5 +1,5 @@
 {
-  "title": "Add_None",
+  "title": "Add_",
   "rules": [
     {
       "description": "None",
@@ -13,6 +13,16 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "rightcommand + k_1RowCut",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"]) %>,
+          "to": <%= to([["l","right_gui"],["delete_or_backspace"]]) %>
+        }
+      ]
     }
     ]
 }
