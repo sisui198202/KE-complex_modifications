@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox",
+    "title": "FrontmostIfFirefox1",
     "rules": [
     {
       "description": "LeftCommand + U_Un Do(Firefox)",
@@ -8,6 +8,28 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
           "to": <%= to([["open_bracket",["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + A_NewTabCreate(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= to([["t",["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + L_ActiTabToggleOnoff(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= to([["left_arrow",["right_gui","right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]
