@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfVivaldi",
+    "rules": [
+    {
+      "description": "RightCommand + A_NewTabCreate(Vivaldi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= to([["n",["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+        }
+      ]
+    }
+    ]
+}
