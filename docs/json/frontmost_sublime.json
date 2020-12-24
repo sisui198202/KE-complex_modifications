@@ -1,13 +1,46 @@
 {
-  "title": "FrontmostIfSublime",
+  "title": "FrontmostIfSublime1",
   "rules": [
     {
-      "description": "None(sublime)",
+      "description": "TagCreate(sublime)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "left_control",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.sublimetext.3$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "focus_side_bar(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -16,8 +49,75 @@
           },
           "to": [
             {
-              "key_code": "return_or_enter",
+              "key_code": "p",
               "modifiers": [
+                "left_control",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.sublimetext.3$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "prettifyコード整形(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.sublimetext.3$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "FileControl(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_control",
                 "right_gui"
               ]
             }

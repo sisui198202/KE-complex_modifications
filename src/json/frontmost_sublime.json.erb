@@ -1,13 +1,46 @@
 {
-    "title": "FrontmostIfSublime",
+    "title": "FrontmostIfSublime1",
     "rules": [
     {
-      "description": "None(sublime)",
+      "description": "TagCreate(sublime)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["left_control"]) %>,
-          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+          "from": <%= from("h", ["right_gui"]) %>,
+          "to": <%= to([["w", ["left_control","right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("sublime") %> ]
+        }
+      ]
+    },
+    {
+      "description": "focus_side_bar(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["left_control"]) %>,
+          "to": <%= to([["p", ["left_control","right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("sublime") %> ]
+        }
+      ]
+    },
+    {
+      "description": "prettifyコード整形(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_alt"]) %>,
+          "to": <%= to([["h", ["right_gui","right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("sublime") %> ]
+        }
+      ]
+    },
+   {
+      "description": "FileControl(sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f", ["left_alt"]) %>,
+          "to": <%= to([["n", ["left_control","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("sublime") %> ]
         }
       ]
