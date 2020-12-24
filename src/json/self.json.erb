@@ -53,7 +53,7 @@
        %>
     },
     {
-      "description": "LeftCommand + M_End(!vscode)",
+      "description": "LeftCommand + M_End(!vscode)_old",
       "manipulators":
       <%=
                each_key(
@@ -65,6 +65,17 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + M_End(!vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_control"]) %>,
+          "to": <%= to([["right_arrow",["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("vscode") %> ]
+        }
+      ]
     },
     {
       "description": "LeftCommand + U_Undo_old",
