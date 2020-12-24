@@ -321,30 +321,6 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_alt",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Leftoption + Rightoption_parsent",
       "manipulators": [
         {
@@ -361,33 +337,6 @@
             {
               "key_code": "5",
               "modifiers": "right_shift"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Rightoption + Leftoption_anbasado_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                "right_shift"
-              ]
             }
           ]
         }
@@ -473,6 +422,28 @@
           "to": [
             {
               "key_code": "equal_sign",
+              "modifiers": "right_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + LeftCommand_underbar_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
               "modifiers": [
                 "right_shift"
               ]
@@ -497,9 +468,7 @@
           "to": [
             {
               "key_code": "hyphen",
-              "modifiers": [
-                "right_shift"
-              ]
+              "modifiers": "right_shift"
             }
           ]
         }
@@ -507,6 +476,30 @@
     },
     {
       "description": "Leftoption + Rightcommand_hypen_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "hyphen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leftoption + Rightcommand_hypen",
       "manipulators": [
         {
           "type": "basic",

@@ -113,19 +113,6 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_alt"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["5"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
-    },
-    {
       "description": "Leftoption + Rightoption_parsent",
       "manipulators": [
         {
@@ -134,20 +121,6 @@
           "to": <%= to([["5","right_shift"]]) %>
         }
       ]
-    },
-    {
-      "description": "Rightoption + Leftoption_anbasado_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_alt"],
-                 from_mandatory_modifiers: ["right_alt"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["7"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "Rightoption + Leftoption_anbasado",
@@ -200,19 +173,16 @@
                     },
     {
       "description": "LeftCommand + RightCommand_plus",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_gui"],
-                 from_mandatory_modifiers: ["left_control"],
-                 dest_keys_list: ["equal_sign"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_control"]) %>,
+          "to": <%= to([["equal_sign","right_shift"]]) %>
+        }
+      ]
     },
    {
-      "description": "RightCommand + LeftCommand_underbar",
+      "description": "RightCommand + LeftCommand_underbar_old",
       "manipulators":
       <%=
                each_key(
@@ -225,6 +195,16 @@
        %>
     },
     {
+      "description": "RightCommand + LeftCommand_underbar",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_control", ["right_gui"]) %>,
+          "to": <%= to([["hyphen","right_shift"]]) %>
+        }
+      ]
+    },
+    {
       "description": "Leftoption + Rightcommand_hypen_old",
       "manipulators":
       <%=
@@ -235,6 +215,16 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "Leftoption + Rightcommand_hypen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_alt"]) %>,
+          "to": <%= to([["japanese_eisuu"],["hyphen"]]) %>
+        }
+      ]
     },
     {
       "description": "RightCommand + z,x,c,v,a,s,d,w,e,r_Number(0~9)",
