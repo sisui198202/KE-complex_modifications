@@ -22,31 +22,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "rightcommand + k_1RowCut",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": "right_gui"
-            },
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ]
-        }
-      ]
     }
   ]
 }
