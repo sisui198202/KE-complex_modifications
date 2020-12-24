@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime1",
+  "title": "FrontmostIfVscodeSublime2",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "description": "prettifyコード整形(vscode_sublime)",
+      "description": "LeftAlt + N_prettifyコード整形(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
