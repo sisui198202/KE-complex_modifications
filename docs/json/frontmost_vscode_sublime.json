@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "RightCommand + o_SameWordExpandSelection",
+      "description": "RightCommand + o_SameWordExpandSelection(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "description": "LeftCommand + o_VSCODE,sublime横2画面へ",
+      "description": "LeftCommand + o_横2画面へ(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "description": "RightCommand + I_FocusNeighboringGroup",
+      "description": "RightCommand + I_FocusNeighboringGroup(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "description": "LeftCommand + H_VSCODE,sublime1画面へ",
+      "description": "LeftCommand + H_1画面へ(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "description": "LeftCommand + T_ToggleSidebarOnOff",
+      "description": "LeftCommand + T_ToggleSidebarOnOff(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_Command Palete",
+      "description": "LeftCommand + OpenBracket_Command Palete(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
