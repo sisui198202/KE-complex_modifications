@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime2",
+  "title": "FrontmostIfVscodeSublime1",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
@@ -224,6 +224,39 @@
               "key_code": "open_bracket",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "prettifyコード整形(vscode_sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.sublimetext.3$"
               ]
             }
           ]
