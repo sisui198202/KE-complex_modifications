@@ -434,7 +434,7 @@
        %>
     },
     {
-      "description": "LeftCommand + ,comma_AppsSelect-Previous",
+      "description": "LeftCommand + ,comma_AppsSelect-Previous_old",
       "manipulators":
       <%# toに次のコードを手動で入れる必要あり、"halt": true, %>
       <%=
@@ -447,8 +447,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + ,comma_AppsSelect-Previous",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_control"]) %>,
+          "to": <%= to([["tab",["right_gui","left_shift"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + ._AppsSelect-next",
+      "description": "LeftCommand + ._AppsSelect-next_old",
       "manipulators":
       <%# toに次のコードを手動で入れる必要あり、"halt": true, %>      
       <%=
@@ -461,30 +471,16 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + ._AppsSelect-next",
+      "manipulators": [
         {
-            "description": "1行選択_old",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "j",
-                        "modifiers": {
-                            "mandatory": [
-                                "right_gui"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "l",
-                            "modifiers": [
-                                "right_gui"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
+          "type": "basic",
+          "from": <%= from("period", ["left_control"]) %>,
+          "to": <%= to([["tab","right_gui"]]) %>
+        }
+      ]
+    },
   {
       "description": "rightcommand + J_1RowSelect",
       "manipulators": [

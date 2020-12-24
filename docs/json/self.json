@@ -817,6 +817,31 @@
       ]
     },
     {
+      "description": "LeftCommand + ,comma_AppsSelect-Previous_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "right_gui",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + ,comma_AppsSelect-Previous",
       "manipulators": [
         {
@@ -842,7 +867,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ._AppsSelect-next",
+      "description": "LeftCommand + ._AppsSelect-next_old",
       "manipulators": [
         {
           "type": "basic",
@@ -866,24 +891,22 @@
       ]
     },
     {
-      "description": "1行選択_old",
+      "description": "LeftCommand + ._AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "j",
+            "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": [
-                "right_gui"
-              ]
+              "key_code": "tab",
+              "modifiers": "right_gui"
             }
           ]
         }
