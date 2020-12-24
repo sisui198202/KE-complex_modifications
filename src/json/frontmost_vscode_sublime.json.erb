@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfVscodeSublime",
+    "rules": [
+    {
+      "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+        }
+      ]
+    }
+    ]
+}
