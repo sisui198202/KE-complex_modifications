@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfFirefox",
+    "rules": [
+    {
+      "description": "LeftCommand + U_Un Do(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_control"]) %>,
+          "to": <%= to([["open_bracket",["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    }
+    ]
+}
