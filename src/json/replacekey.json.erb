@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver3",
+  "title": "Replacekey_ver4",
   "rules": [
    {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -92,7 +92,7 @@
     },
     <%# "lazy": true必要なし、あると機能しなくなる %>
     {
-      "description": "LeftAlt_Copy",
+      "description": "LeftAlt_Copy_old",
       "manipulators":
       <%=
                each_key(
@@ -103,9 +103,20 @@
                )
        %>
     },
+    {
+      "description": "LeftAlt_Copy",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt") %>,
+          "to": <%= to([["left_alt"]]) %>,
+          "to_if_alone": <%= to([["c","right_gui"]]) %>
+        }
+      ]
+    },
    <%# "lazy": true必要なし、あると機能しなくなる %>
     {
-      "description": "RightOption_Paste",
+      "description": "RightOption_Paste_old",
       "manipulators":
       <%=
                each_key(
@@ -115,6 +126,17 @@
                  as_json: true
                )
        %>
+    },
+    {
+      "description": "RightOption_Paste",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_alt") %>,
+          "to": <%= to([["right_alt"]]) %>,
+          "to_if_alone": <%= to([["v","left_gui"]]) %>
+        }
+      ]
     },
     {
       "description": "Leftoption + Rightoption_parsent",

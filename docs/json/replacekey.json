@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_ver3",
+  "title": "Replacekey_ver4",
   "rules": [
     {
       "description": "Leftoption + Space to Enter(!Finder)",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy",
+      "description": "LeftAlt_Copy_old",
       "manipulators": [
         {
           "type": "basic",
@@ -301,7 +301,29 @@
       ]
     },
     {
-      "description": "RightOption_Paste",
+      "description": "LeftAlt_Copy",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption_Paste_old",
       "manipulators": [
         {
           "type": "basic",
@@ -319,6 +341,28 @@
               "modifiers": [
                 "left_gui"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption_Paste",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt"
+          },
+          "to": [
+            {
+              "key_code": "right_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "v",
+              "modifiers": "left_gui"
             }
           ]
         }
