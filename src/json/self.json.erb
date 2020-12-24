@@ -40,7 +40,7 @@
        %>
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect_old",
       "manipulators":
       <%=
                each_key(
@@ -51,6 +51,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["left_control"]) %>,
+          "to": <%= to([["e",["left_shift","left_control"]]]) %>
+        }
+      ]
     },
     {
       "description": "LeftCommand + M_End(!vscode)_old",

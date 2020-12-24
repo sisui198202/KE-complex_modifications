@@ -66,6 +66,31 @@
       ]
     },
     {
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_shift",
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
       "manipulators": [
         {
