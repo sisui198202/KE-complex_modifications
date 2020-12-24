@@ -429,30 +429,6 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_underbar_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_control",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + LeftCommand_underbar",
       "manipulators": [
         {
@@ -469,30 +445,6 @@
             {
               "key_code": "hyphen",
               "modifiers": "right_shift"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Leftoption + Rightcommand_hypen_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_gui",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "hyphen"
             }
           ]
         }

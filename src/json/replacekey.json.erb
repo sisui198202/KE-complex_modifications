@@ -181,19 +181,6 @@
         }
       ]
     },
-   {
-      "description": "RightCommand + LeftCommand_underbar_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["left_control"],
-                 from_mandatory_modifiers: ["right_gui"],
-                 dest_keys_list: ["hyphen"],
-                 to_modifiers: ["right_shift"],
-                 as_json: true
-               )
-       %>
-    },
     {
       "description": "RightCommand + LeftCommand_underbar",
       "manipulators": [
@@ -203,18 +190,6 @@
           "to": <%= to([["hyphen","right_shift"]]) %>
         }
       ]
-    },
-    {
-      "description": "Leftoption + Rightcommand_hypen_old",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["right_gui"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: [["japanese_eisuu","hyphen"]],
-                 as_json: true
-               )
-       %>
     },
     {
       "description": "Leftoption + Rightcommand_hypen",
