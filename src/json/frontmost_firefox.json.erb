@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox1",
+    "title": "FrontmostIfFirefox2",
     "rules": [
     {
       "description": "LeftCommand + U_Un Do(Firefox)",
@@ -7,7 +7,7 @@
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
-          "to": <%= to([["open_bracket",["right_gui"]]]) %>,
+          "to": <%= to([["left_arrow",["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= to([["t",["right_gui"]]]) %>,
+          "to": <%= to([["n",["right_alt","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]

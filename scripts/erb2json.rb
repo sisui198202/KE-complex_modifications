@@ -255,6 +255,7 @@ def frontmost_application(type, app_aliases, as_json=true)
 
   to_array(app_aliases).each do |app_alias|
     case app_alias
+
     when 'finder'
       bundle_identifiers.concat(finder_bundle_identifiers)
 
