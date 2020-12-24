@@ -643,6 +643,34 @@
       ]
     },
     {
+      "description": "RightCommand + I_FocusNeighboringGroup_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "RightCommand + I_FocusNeighboringGroup",
       "manipulators": [
         {
@@ -664,6 +692,31 @@
               "modifiers": [
                 "right_gui",
                 "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + H_VSCODE,sublime1画面へ_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "right_control",
+                "left_shift"
               ]
             }
           ]
@@ -721,6 +774,30 @@
       ]
     },
     {
+      "description": "RightCommand + P_RightHalfMove_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "RightCommand + P_RightHalfMove",
       "manipulators": [
         {
@@ -738,6 +815,30 @@
               "key_code": "3",
               "modifiers": [
                 "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + OpenBracket_Command Palete_old",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ]
@@ -769,7 +870,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Q_LeftWindowMove",
+      "description": "LeftCommand + Q_LeftWindowMove_old",
       "manipulators": [
         {
           "type": "basic",
@@ -786,6 +887,30 @@
               "key_code": "2",
               "modifiers": [
                 "right_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Q_LeftWindowMove",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_alt"
               ]
             }
           ]

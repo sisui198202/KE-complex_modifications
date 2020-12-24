@@ -342,7 +342,7 @@
        %>
     },
     {
-      "description": "RightCommand + I_FocusNeighboringGroup",
+      "description": "RightCommand + I_FocusNeighboringGroup_old",
       "manipulators":
       <%=
                each_key(
@@ -355,8 +355,18 @@
                )
        %>
     },
+  {
+      "description": "RightCommand + I_FocusNeighboringGroup",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"],["any"]) %>,
+          "to": <%= to([["i",["right_gui","right_alt"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + H_VSCODE,sublime1画面へ",
+      "description": "LeftCommand + H_VSCODE,sublime1画面へ_old",
       "manipulators":
       <%=
                each_key(
@@ -367,6 +377,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + H_VSCODE,sublime1画面へ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["left_control"]) %>,
+          "to": <%= to([["h",["right_control","left_shift"]]]) %>
+        }
+      ]
     },
    {
       "description": "LeftCommand + T_ToggleSidebarOnOff",
@@ -382,7 +402,7 @@
        %>
     },
    {
-      "description": "RightCommand + P_RightHalfMove",
+      "description": "RightCommand + P_RightHalfMove_old",
       "manipulators":
       <%=
                each_key(
@@ -394,8 +414,18 @@
                )
        %>
     },
+  {
+      "description": "RightCommand + P_RightHalfMove",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["right_gui"]) %>,
+          "to": <%= to([["3",["right_alt"]]]) %>
+        }
+      ]
+    },
    {
-      "description": "LeftCommand + OpenBracket_Command Palete",
+      "description": "LeftCommand + OpenBracket_Command Palete_old",
       "manipulators":
       <%=
                each_key(
@@ -407,8 +437,18 @@
                )
        %>
     },
+  {
+      "description": "LeftCommand + OpenBracket_Command Palete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_control"]) %>,
+          "to": <%= to([["open_bracket",["right_gui"]]]) %>
+        }
+      ]
+    },
    {
-      "description": "LeftCommand + Q_LeftWindowMove",
+      "description": "LeftCommand + Q_LeftWindowMove_old",
       "manipulators":
       <%=
                each_key(
@@ -419,6 +459,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + Q_LeftWindowMove",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["left_control"]) %>,
+          "to": <%= to([["2",["right_alt"]]]) %>
+        }
+      ]
     },
    {
       "description": "LeftCommand + Z_RowCursolNewline_old",
