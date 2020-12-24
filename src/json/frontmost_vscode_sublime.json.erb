@@ -61,6 +61,16 @@
           "to": <%= to([["t",["right_control","left_shift"]]]) %>
         }
       ]
+    },
+  {
+      "description": "LeftCommand + OpenBracket_Command Palete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_control"]) %>,
+          "to": <%= to([["open_bracket",["right_gui"]]]) %>
+        }
+      ]
     }
     ]
 }
