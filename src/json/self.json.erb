@@ -3,7 +3,7 @@
   "title": "PersonalRules(@sisui)2",
   "rules": [
     {
-      "description": "Use F2 as Rename",
+      "description": "F2_Rename_old",
       "manipulators":
       <%=
                each_key(
@@ -13,8 +13,18 @@
                )
        %>
     },
+  {
+      "description": "F2_Rename",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f2") %>,
+          "to": <%= to([["return_or_enter"]]) %>
+        }
+      ]
+    },
     {
-      "description": "RightCommand + A_NewFileCreate",
+      "description": "RightCommand + A_NewFileCreate_old",
       "manipulators":
       <%=
                each_key(
@@ -26,8 +36,18 @@
                )
        %>
     },
+  {
+      "description": "RightCommand + A_NewFileCreate",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= to([["n",["right_gui"]]]) %>
+        }
+      ]
+    },
     {
-      "description": "LeftCommand + V_AppClose",
+      "description": "LeftCommand + V_AppClose_old",
       "manipulators":
       <%=
                each_key(
@@ -38,6 +58,16 @@
                  as_json: true
                )
        %>
+    },
+  {
+      "description": "LeftCommand + V_AppClose",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v", ["left_control"]) %>,
+          "to": <%= to([["q",["right_gui"]]]) %>
+        }
+      ]
     },
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect_old",
