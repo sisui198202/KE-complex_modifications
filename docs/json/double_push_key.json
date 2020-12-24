@@ -2,7 +2,7 @@
   "title": "DoublePushKey",
   "rules": [
     {
-      "description": "Double RightShift_Pipeline1",
+      "description": "Double RightShift_Pipeline",
       "manipulators": [
         {
           "type": "basic",
