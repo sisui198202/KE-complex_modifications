@@ -7,17 +7,20 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "left_alt",
-                "left_gui"
+                "right_gui"
               ]
             }
           },
           "to": [
             {
-              "key_code": "l"
+              "key_code": "l",
+              "modifiers": "right_gui"
+            },
+            {
+              "key_code": "delete_or_backspace"
             }
           ]
         }

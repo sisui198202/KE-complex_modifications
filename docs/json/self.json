@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "Use F2 as Rename",
@@ -866,7 +866,7 @@
       ]
     },
     {
-      "description": "1行選択",
+      "description": "1行選択_old",
       "manipulators": [
         {
           "type": "basic",
@@ -890,7 +890,29 @@
       ]
     },
     {
-      "description": "rightcommand + k_1RowCut",
+      "description": "rightcommand + J_1RowSelect",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": "right_gui"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "rightcommand + K_1RowCut",
       "manipulators": [
         {
           "type": "basic",

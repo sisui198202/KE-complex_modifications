@@ -1,18 +1,15 @@
 {
   "title": "Add_",
   "rules": [
-    {
+  {
       "description": "None",
-      "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["u"],
-                 from_mandatory_modifiers: ["left_alt"],
-                 dest_keys_list: ["l"],
-                 from_mandatory_modifiers: ["left_alt","left_gui"],
-                 as_json: true
-               )
-       %>
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"]) %>,
+          "to": <%= to([["l","right_gui"],["delete_or_backspace"]]) %>
+        }
+      ]
     }
     ]
 }
