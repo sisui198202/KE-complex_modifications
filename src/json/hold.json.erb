@@ -228,6 +228,16 @@
                     ]
                 }
             ]
+        },
+  {
+      "description": "LeftCommand + quote_HideFrontmostAppWindow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_control"]) %>,
+          "to": <%= to([["quote",["left_control"]]]) %>
         }
+      ]
+    }
     ]
 }

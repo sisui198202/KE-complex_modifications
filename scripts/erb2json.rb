@@ -163,6 +163,10 @@ def frontmost_application(type, app_aliases, as_json=true)
     '^com\.google\.Chrome$'
   ]
 
+  firefox_bundle_identifiers = [
+    '^org\.mozilla\.firefox$'
+  ]
+
   emacs_bundle_identifiers = [
     '^org\.gnu\.Emacs$',
     '^org\.gnu\.AquamacsEmacs$',
@@ -331,6 +335,9 @@ def frontmost_application(type, app_aliases, as_json=true)
 
     when 'chrome'
       bundle_identifiers.concat(chrome_bundle_identifiers)
+
+    when 'firefox'
+      bundle_identifiers.concat(firefox_bundle_identifiers)
 
     else
       $stderr << "unknown app_alias: #{app_alias}\n"

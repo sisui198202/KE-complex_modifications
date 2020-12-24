@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfSublime2",
+  "title": "FrontmostIfSublime",
   "rules": [
     {
       "description": "RightCommand + H_TagCreate(sublime)",
