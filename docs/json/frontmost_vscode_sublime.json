@@ -82,34 +82,6 @@
                 "left_control",
                 "left_shift"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + o_横2画面へ(vscode_sublime)_new",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
             },
             {
               "key_code": "i",
