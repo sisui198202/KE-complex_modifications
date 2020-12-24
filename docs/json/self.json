@@ -1,22 +1,6 @@
 {
-  "title": "PersonalRules(@sisui)2",
+  "title": "PersonalRules(@sisui)",
   "rules": [
-    {
-      "description": "F2_Rename_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f2"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "F2_Rename",
       "manipulators": [
@@ -28,30 +12,6 @@
           "to": [
             {
               "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + A_NewFileCreate_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui"
-              ]
             }
           ]
         }
@@ -73,30 +33,6 @@
           "to": [
             {
               "key_code": "n",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + V_AppClose_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "q",
               "modifiers": [
                 "right_gui"
               ]
@@ -130,31 +66,6 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "e",
-              "modifiers": [
-                "left_shift",
-                "left_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
       "manipulators": [
         {
@@ -173,38 +84,6 @@
               "modifiers": [
                 "left_shift",
                 "left_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + M_End(!vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -244,30 +123,6 @@
       ]
     },
     {
-      "description": "LeftCommand + U_Undo_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "z",
-              "modifiers": [
-                "left_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + U_Undo",
       "manipulators": [
         {
@@ -285,30 +140,6 @@
               "key_code": "z",
               "modifiers": [
                 "left_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + ;_CursolRowEnd_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "e",
-              "modifiers": [
-                "left_control"
               ]
             }
           ]
@@ -340,30 +171,6 @@
       ]
     },
     {
-      "description": "RightCommand + T_Search_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + T_Search",
       "manipulators": [
         {
@@ -388,30 +195,6 @@
       ]
     },
     {
-      "description": "LeftCommand + c_DesktopExist_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "q",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + c_DesktopExist",
       "manipulators": [
         {
@@ -429,38 +212,6 @@
               "key_code": "q",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + N_Home(!vscode)_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -500,31 +251,6 @@
       ]
     },
     {
-      "description": "LeftCommand + e_Expand Selection Word_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + e_Expand Selection Word",
       "manipulators": [
         {
@@ -543,31 +269,6 @@
               "modifiers": [
                 "left_control",
                 "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + o_SameWordExpandSelection_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "0",
-              "modifiers": [
-                "right_gui",
-                "right_alt"
               ]
             }
           ]
@@ -600,31 +301,6 @@
       ]
     },
     {
-      "description": "RightCommand + ._MaxWindow_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "left_gui",
-                "left_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + ._MaxWindow",
       "manipulators": [
         {
@@ -650,30 +326,6 @@
       ]
     },
     {
-      "description": "LeftOption + Q_WindowUP_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftOption + Q_WindowUP",
       "manipulators": [
         {
@@ -689,30 +341,6 @@
           "to": [
             {
               "key_code": "4",
-              "modifiers": [
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + P_WindowDown_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
               "modifiers": [
                 "left_alt"
               ]
@@ -746,30 +374,6 @@
       ]
     },
     {
-      "description": "LeftOption + W_WindowRightUp_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftOption + W_WindowRightUp",
       "manipulators": [
         {
@@ -785,30 +389,6 @@
           "to": [
             {
               "key_code": "7",
-              "modifiers": [
-                "left_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + E_WindowRightDown_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "9",
               "modifiers": [
                 "left_alt"
               ]
@@ -842,30 +422,6 @@
       ]
     },
     {
-      "description": "LeftCommand + d_AllSelect_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + d_AllSelect",
       "manipulators": [
         {
@@ -890,30 +446,6 @@
       ]
     },
     {
-      "description": "LeftCommand + B_PageDown_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + B_PageDown",
       "manipulators": [
         {
@@ -929,30 +461,6 @@
           "to": [
             {
               "key_code": "down_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + /_PageUp_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
               "modifiers": [
                 "fn"
               ]
@@ -986,30 +494,6 @@
       ]
     },
     {
-      "description": "LeftOption + O_Save_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "s",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftOption + O_Save",
       "manipulators": [
         {
@@ -1025,30 +509,6 @@
           "to": [
             {
               "key_code": "s",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + S_Cut_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "x",
               "modifiers": [
                 "right_gui"
               ]
@@ -1082,30 +542,6 @@
       ]
     },
     {
-      "description": "RightCommand + G_FileTabClose_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "w",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + G_FileTabClose",
       "manipulators": [
         {
@@ -1123,30 +559,6 @@
               "key_code": "w",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + ;_LatestTabToggle_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_control"
               ]
             }
           ]
@@ -1178,31 +590,6 @@
       ]
     },
     {
-      "description": "RightCommand + L_NextTab_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + L_NextTab",
       "manipulators": [
         {
@@ -1218,34 +605,6 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + o_VSCODE,sublime横2画面へ_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
               "modifiers": [
                 "left_control",
                 "left_shift"
@@ -1284,34 +643,6 @@
       ]
     },
     {
-      "description": "RightCommand + I_FocusNeighboringGroup_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "i",
-              "modifiers": [
-                "right_gui",
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + I_FocusNeighboringGroup",
       "manipulators": [
         {
@@ -1340,31 +671,6 @@
       ]
     },
     {
-      "description": "LeftCommand + H_VSCODE,sublime1画面へ_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "h",
-              "modifiers": [
-                "right_control",
-                "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + H_VSCODE,sublime1画面へ",
       "manipulators": [
         {
@@ -1380,31 +686,6 @@
           "to": [
             {
               "key_code": "h",
-              "modifiers": [
-                "right_control",
-                "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + T_ToggleSidebarOnOff_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
               "modifiers": [
                 "right_control",
                 "left_shift"
@@ -1440,30 +721,6 @@
       ]
     },
     {
-      "description": "RightCommand + P_RightHalfMove_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + P_RightHalfMove",
       "manipulators": [
         {
@@ -1488,30 +745,6 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_Command Palete_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + OpenBracket_Command Palete",
       "manipulators": [
         {
@@ -1529,30 +762,6 @@
               "key_code": "open_bracket",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Q_LeftWindowMove_old",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_option"
               ]
             }
           ]
