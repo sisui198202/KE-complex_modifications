@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi2",
+    "title": "FrontmostIfmi",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -13,7 +13,18 @@
       ]
     },
     {
-      "description": "LeftCommand + Z_RowCursolNewline(mi)1",
+      "description": "RightCommand + K_1RowCut(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"]) %>,
+          "to": <%= to([["a", ["left_control"]],["down_arrow","left_shift"],["delete_or_backspace"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_RowCursolNewline(mi)",
       "manipulators": [
         {
           "type": "basic",
