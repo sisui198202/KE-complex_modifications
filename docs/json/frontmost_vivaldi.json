@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVivaldi1",
+  "title": "FrontmostIfVivaldi2",
   "rules": [
     {
-      "description": "RightCommand + A_NewTabCreate(Vivaldi)",
+      "description": "適用済み_RightCommand + A_NewTabCreate(Vivaldi)",
       "manipulators": [
         {
           "type": "basic",
@@ -19,6 +19,39 @@
               "key_code": "t",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + U_UnDo(Vivaldi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
               ]
             }
           ],
