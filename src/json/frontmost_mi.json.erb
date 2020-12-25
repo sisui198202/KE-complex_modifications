@@ -33,6 +33,28 @@
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
+    },
+    {
+      "description": "RightCommand + NextTab(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= to([["close_bracket",["left_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + semicolon_LatestTabToggle(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"]) %>,
+          "to": <%= to([["open_bracket",["left_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
     }
     ]
 }
