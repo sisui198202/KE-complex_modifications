@@ -1,13 +1,24 @@
 {
-    "title": "FrontmostIfmi1",
+    "title": "FrontmostIfmi2",
     "rules": [
     {
-      "description": "RightCommand + J_1RowSelection(mi)1",
+      "description": "RightCommand + J_1RowSelection(mi)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
           "to": <%= to([["a", ["left_control"]],["down_arrow","left_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_RowCursolNewline(mi)1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"]) %>,
+          "to": <%= to([["e",["left_control"]],["return_or_enter"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
