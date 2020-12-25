@@ -1,8 +1,8 @@
 {
-  "title": "MouseControl",
+  "title": "MouseControl1",
   "rules": [
     {
-      "description": "CursolMoveUpLeftRightDown",
+      "description": "CursolMoveUpLeftRightDown1",
       "manipulators": [
         {
           "type": "basic",
@@ -17,7 +17,7 @@
           "to": [
             {
               "mouse_key": {
-                "y": -1536
+                "y": -2000
               }
             }
           ]
@@ -35,7 +35,7 @@
           "to": [
             {
               "mouse_key": {
-                "x": -1536
+                "x": -2000
               }
             }
           ]
@@ -53,7 +53,7 @@
           "to": [
             {
               "mouse_key": {
-                "y": 1536
+                "y": 2000
               }
             }
           ]
@@ -71,7 +71,7 @@
           "to": [
             {
               "mouse_key": {
-                "x": 1536
+                "x": 2000
               }
             }
           ]
