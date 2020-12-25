@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfmi",
+    "rules": [
+    {
+      "description": "RightCommand + J_1RowSelection(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"]) %>,
+          "to": <%= to([["a", ["left_control"],["down_arrow","left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    }
+    ]
+}
