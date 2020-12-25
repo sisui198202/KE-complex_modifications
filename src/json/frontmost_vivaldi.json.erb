@@ -2,17 +2,6 @@
     "title": "FrontmostIfVivaldi3",
     "rules": [
     {
-      "description": "適用済み_RightCommand + A_NewTabCreate(Vivaldi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= to([["t",["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + U_UnDo(Vivaldi)1",
       "manipulators": [
         {
