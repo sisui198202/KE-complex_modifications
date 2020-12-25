@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVivaldi2",
+    "title": "FrontmostIfVivaldi3",
     "rules": [
     {
       "description": "適用済み_RightCommand + A_NewTabCreate(Vivaldi)",
@@ -13,12 +13,12 @@
       ]
     },
     {
-      "description": "LeftCommand + U_UnDo(Vivaldi)",
+      "description": "LeftCommand + U_UnDo(Vivaldi)1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
-          "to": <%= to([["8", ["right_gui","right_alt"]]]) %>,
+          "to": <%= to([["8", ["right_alt","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         }
       ]

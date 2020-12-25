@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVivaldi2",
+  "title": "FrontmostIfVivaldi3",
   "rules": [
     {
       "description": "適用済み_RightCommand + A_NewTabCreate(Vivaldi)",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "LeftCommand + U_UnDo(Vivaldi)",
+      "description": "LeftCommand + U_UnDo(Vivaldi)1",
       "manipulators": [
         {
           "type": "basic",
@@ -50,8 +50,8 @@
             {
               "key_code": "8",
               "modifiers": [
-                "right_gui",
-                "right_alt"
+                "right_alt",
+                "right_gui"
               ]
             }
           ],
