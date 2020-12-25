@@ -238,6 +238,16 @@
           "to": <%= to([["quote",["left_control"]]]) %>
         }
       ]
+    },
+{
+  "description": "None",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("l", ["left_alt"]) %>,
+      "to": <%= set_shell_command(["open -a 'Firefox.app'"]) %>
     }
+  ]
+}
     ]
 }
