@@ -1,0 +1,27 @@
+{
+    "title": "FrontmostIfMysqlworkbench",
+    "rules": [
+    {
+      "description": "LeftCommand + A_RowHeadCursolMove(mysqlworkbench)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_control"]) %>,
+          "to": <%= to([["left_arrow",["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + semicolon_RowEndCursolMove(mysqlworkbench)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["left_control"]) %>,
+          "to": <%= to([["right_arrow",["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
+        }
+      ]
+    }
+    ]
+}

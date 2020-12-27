@@ -251,6 +251,9 @@ def frontmost_application(type, app_aliases, as_json=true)
   mi_bundle_identifers = [
     '^net.mimikaki.mi$',
   ]
+  mysqlworkbench_bundle_identifers = [
+    '^com.oracle.workbench.MySQLWorkbench$',
+  ]
   rdt_bundle_identifiers = [
     '^com\.microsoft\.rdc.macos$',
   ]
@@ -280,6 +283,10 @@ def frontmost_application(type, app_aliases, as_json=true)
 
     when 'mi'
       bundle_identifiers.concat(mi_bundle_identifers)
+
+    when 'mysqlworkbench'
+      bundle_identifiers.concat(mysqlworkbench_bundle_identifers)
+
     when 'preview'
       bundle_identifiers.concat(preview_bundle_identifiers)
 
