@@ -22,6 +22,28 @@
           "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
         }
       ]
+    },
+    {
+      "description": "LeftCommand + N_Home(mysqlworkbench)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_control"]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + M_End(mysqlworkbench)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_control"]) %>,
+          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
+        }
+      ]
     }
     ]
 }
