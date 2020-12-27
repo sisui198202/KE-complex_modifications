@@ -55,6 +55,17 @@
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
+    },
+    {
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["left_control"]) %>,
+          "to": <%= to([["down_arrow",["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
     }
     ]
 }
