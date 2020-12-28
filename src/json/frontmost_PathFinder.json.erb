@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder_ver10",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
@@ -85,6 +85,17 @@
           "type": "basic",
           "from": <%= from("period",["left_alt"]) %>,
           "to": <%= to([["period", ["left_control","right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + comma_SelectFilePathCopy(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma",["left_alt"]) %>,
+          "to": <%= to([["backslash", ["left_control","left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
