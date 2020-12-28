@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder_ver12",
+  "title": "FrontmostIfPathFinder_ver13",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
@@ -18,6 +18,17 @@
         {
           "type": "basic",
           "from": <%= from("delete_or_backspace") %>,
+          "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + space_FileDelete(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"]) %>,
           "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
