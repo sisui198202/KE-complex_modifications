@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder1",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
@@ -74,6 +74,17 @@
           "type": "basic",
           "from": <%= from("a",["left_alt"]) %>,
           "to": <%= to([["n", ["right_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+   {
+      "description": "LeftAlt + period_CurrentFolderTerminalOpen(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period",["left_alt"]) %>,
+          "to": <%= to([["period", ["left_control","right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
