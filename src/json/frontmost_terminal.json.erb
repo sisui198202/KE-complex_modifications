@@ -1,0 +1,27 @@
+{
+    "title": "FrontmostIfTerminal",
+    "rules": [
+    {
+      "description": "RightCommand + A_TagCreate(terminal)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("terminal") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + C_Clear(terminal)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["right_alt"]) %>,
+          "to": <%= to([["l", ["right_control","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("terminal") %> ]
+        }
+      ]
+    }
+    ]
+}

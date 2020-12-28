@@ -257,7 +257,9 @@ def frontmost_application(type, app_aliases, as_json=true)
   rdt_bundle_identifiers = [
     '^com\.microsoft\.rdc.macos$',
   ]
-
+  terminal_bundle_identifiers = [
+    '^com.apple.Terminal$',
+  ]
 
   # ----------------------------------------
 
@@ -358,6 +360,9 @@ def frontmost_application(type, app_aliases, as_json=true)
 
     when 'vivaldi'
       bundle_identifiers.concat(vivaldi_bundle_identifiers)
+    when 'terminal'
+      bundle_identifiers.concat(terminal_bundle_identifiers)
+
 
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
