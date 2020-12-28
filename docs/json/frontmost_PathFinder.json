@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "delete_FileDelete(pathfinder)",
+      "description": "使用しない_delete_FileDelete(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
