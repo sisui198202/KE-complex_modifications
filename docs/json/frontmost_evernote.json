@@ -1,0 +1,32 @@
+{
+  "title": "FrontmostIfEvernote",
+  "rules": [
+    {
+      "description": "delete_or_backs_NoteDelete(Evernote)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_or_backs"
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backs",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.evernote.Evernote$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

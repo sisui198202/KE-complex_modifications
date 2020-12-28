@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfEvernote",
+    "rules": [
+    {
+      "description": "delete_or_backs_NoteDelete(Evernote)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("delete_or_backs") %>,
+          "to": <%= to([["delete_or_backs", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("evernote") %> ]
+        }
+      ]
+    }
+    ]
+}

@@ -261,6 +261,9 @@ def frontmost_application(type, app_aliases, as_json=true)
     '^com.apple.Terminal$',
   ]
 
+  evernote_bundle_identifiers = [
+    '^com.evernote.Evernote$',
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -362,6 +365,8 @@ def frontmost_application(type, app_aliases, as_json=true)
       bundle_identifiers.concat(vivaldi_bundle_identifiers)
     when 'terminal'
       bundle_identifiers.concat(terminal_bundle_identifiers)
+    when 'evernote'
+      bundle_identifiers.concat(evernote_bundle_identifiers)
 
 
     else
