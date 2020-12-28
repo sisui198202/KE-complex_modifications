@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder_ver12",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
@@ -52,6 +52,17 @@
           "type": "basic",
           "from": <%= from("return_or_enter") %>,
           "to": <%= to([["button1"],["button1"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+   {
+      "description": "LeftAlt + A_FolderCreate(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a",["left_alt"]) %>,
+          "to": <%= to([["n", ["right_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
