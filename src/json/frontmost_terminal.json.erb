@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfTerminal_ver1",
+    "title": "FrontmostIfTerminal",
     "rules": [
     {
       "description": "RightCommand + A_TagCreate(terminal)",
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("c", ["right_alt"]) %>,
+          "from": <%= from("c", ["left_alt"]) %>,
           "to": <%= to([["l", ["left_control","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("terminal") %> ]
         }

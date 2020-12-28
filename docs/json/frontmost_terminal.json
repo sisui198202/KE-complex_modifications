@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfTerminal_ver1",
+  "title": "FrontmostIfTerminal",
   "rules": [
     {
       "description": "RightCommand + A_TagCreate(terminal)",
@@ -42,7 +42,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_alt"
               ]
             }
           },
