@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder_ver2",
+  "title": "FrontmostIfPathFinder_ver3",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
@@ -17,8 +17,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("delete_or_backs",[], ["any"]) %>,
-          "to": <%= to([["delete_or_backs", ["right_gui"]]]) %>,
+          "from": <%= from("delete_or_backspace") %>,
+          "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
