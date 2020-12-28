@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEvernote",
+  "title": "FrontmostIfEvernote_ver1",
   "rules": [
     {
       "description": "delete_or_backs_NoteDelete(Evernote)",
@@ -7,11 +7,11 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "delete_or_backs"
+            "key_code": "delete_or_backspace"
           },
           "to": [
             {
-              "key_code": "delete_or_backs",
+              "key_code": "delete_or_backspace",
               "modifiers": [
                 "right_gui"
               ]
