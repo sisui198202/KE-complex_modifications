@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder_ver1",
+  "title": "FrontmostIfPathFinder_ver2",
   "rules": [
     {
       "description": "LeftAlt + u_PathSelection(pathfinder)",
@@ -40,7 +40,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "delete_or_backs"
+            "key_code": "delete_or_backs",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
