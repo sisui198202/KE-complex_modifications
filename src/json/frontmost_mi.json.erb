@@ -88,6 +88,17 @@
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
+    },
+    {
+      "description": "marukako_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("9", ["left_shift"]) %>,
+          "to": <%= to([["9", ["left_shift"],["9","left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
     }
     ]
 }
