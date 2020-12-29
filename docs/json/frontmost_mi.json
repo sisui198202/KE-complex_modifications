@@ -292,6 +292,12 @@
               "modifiers": [
                 "left_shift"
               ]
+            },
+            {
+              "key_code": "9",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "conditions": [
