@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi_ver3",
+  "title": "FrontmostIfmi",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -368,10 +368,7 @@
               "key_code": "open_bracket"
             },
             {
-              "key_code": "close_bracket",
-              "modifiers": [
-                "left_shift"
-              ]
+              "key_code": "close_bracket"
             },
             {
               "key_code": "left_arrow"
