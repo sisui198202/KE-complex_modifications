@@ -665,8 +665,12 @@ multitouch_extension_finger_count_upper_half_area	タッチパッドの上半分
 multitouch_extension_finger_count_lower_half_area	タッチパッドの下半分に触れている指の本数が格納されます。
 ---------------------
 toに複数コマンドで出力させる方法
-
+2つのコマンド
 "to": <%= to([["button1"],["button1"]]) %>,
+
+3つのコマンド
+"to": <%= to([["button1"],["button2"],["button3"]]) %>,
+
 ↓(出力結果)
           "to": [
             {

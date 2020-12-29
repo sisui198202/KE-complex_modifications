@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi_ver2",
+  "title": "FrontmostIfmi_ver3",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -295,6 +295,80 @@
             },
             {
               "key_code": "0",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "namikako_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "kakukako_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket"
+          },
+          "to": [
+            {
+              "key_code": "open_bracket"
+            },
+            {
+              "key_code": "close_bracket",
               "modifiers": [
                 "left_shift"
               ]
