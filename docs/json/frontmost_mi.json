@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi_ver20",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -369,6 +369,47 @@
             },
             {
               "key_code": "close_bracket"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "dainari_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "comma",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "period",
+              "modifiers": [
+                "left_shift"
+              ]
             },
             {
               "key_code": "left_arrow"
