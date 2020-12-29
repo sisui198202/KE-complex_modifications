@@ -298,6 +298,9 @@
               "modifiers": [
                 "left_shift"
               ]
+            },
+            {
+              "key_code": "left_arrow"
             }
           ],
           "conditions": [
