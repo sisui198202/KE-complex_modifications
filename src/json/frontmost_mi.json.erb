@@ -132,6 +132,28 @@
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
+    },
+   {
+      "description": "DoubleQuote_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote",["left_shift"]) %>,
+          "to": <%= to([["quote",["left_shift"]],["quote",["left_shift"]],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+   {
+      "description": "SingleQuote_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote") %>,
+          "to": <%= to([["quote"],["quote"],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
     }
     ]
 }
