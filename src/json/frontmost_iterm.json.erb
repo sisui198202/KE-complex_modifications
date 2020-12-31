@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIterm2",
+    "title": "FrontmostIfIterm2_ver2",
     "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -52,6 +52,17 @@
           "type": "basic",
           "from": <%= from("h", ["left_control"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui","left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftAlt + c_ClearBuffer(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["left_alt"]) %>,
+          "to": <%= to([["k", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]

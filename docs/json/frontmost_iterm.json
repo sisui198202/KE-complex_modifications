@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIterm2",
+  "title": "FrontmostIfIterm2_ver2",
   "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -149,6 +149,38 @@
               "modifiers": [
                 "right_gui",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + c_ClearBuffer(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],
