@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIterm2",
+    "title": "FrontmostIfIterm3",
     "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -30,6 +30,28 @@
           "type": "basic",
           "from": <%= from("i", ["right_gui"]) %>,
           "to": <%= to([["open_bracket", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
+    },
+   {
+      "description": "RightCommand + period_WindowMaxToggleOnOff(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["right_gui"]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
+    },
+   {
+      "description": "LeftCommand + h_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["left_control"]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui","left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
