@@ -1,0 +1,27 @@
+{
+    "title": "FrontmostIfIterm2",
+    "rules": [
+    {
+      "description": "RightCommand + A_TagCreate(iterm)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + C_Clear(iterm)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["left_alt"]) %>,
+          "to": <%= to([["l", ["left_control","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
+    }
+    ]
+}
