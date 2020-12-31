@@ -1,24 +1,24 @@
 {
-    "title": "FrontmostIfIterm2",
+    "title": "FrontmostIfIterm2_ver1",
     "rules": [
     {
-      "description": "RightCommand + A_TagCreate(iterm)",
+      "description": "LeftCommand + O_SplitVertically(iterm2)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "from": <%= from("o", ["left_control"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
     },
     {
-      "description": "LeftAlt + C_Clear(iterm)",
+      "description": "LeftAlt + O_Horizontally(iterm2)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("c", ["left_alt"]) %>,
-          "to": <%= to([["l", ["left_control","right_gui"]]]) %>,
+          "from": <%= from("o", ["left_alt"]) %>,
+          "to": <%= to([["d", ["right_gui","left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
