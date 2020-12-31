@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIterm2_ver1",
+    "title": "FrontmostIfIterm2_ver2",
     "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("o", ["left_alt"]) %>,
           "to": <%= to([["d", ["right_gui","left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
+    },
+   {
+      "description": "RightCommand + I_SelectNextPanel(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"]) %>,
+          "to": <%= to([["close_bracket", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
