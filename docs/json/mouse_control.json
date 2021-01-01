@@ -1,5 +1,5 @@
 {
-  "title": "MouseControl",
+  "title": "MouseControl_ver1",
   "rules": [
     {
       "description": "CursolMoveUpLeftRightDown(MouseControl)",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "description": "Fn + Spacebar_LeftClick(MouseControl)",
+      "description": "Fn + Spacebar_LeftClick(MouseControl)1",
       "manipulators": [
         {
           "type": "basic",
@@ -93,10 +93,10 @@
           },
           "to": [
             {
-              "pointing_button": "button1"
-            },
-            {
-              "pointing_button": "button1"
+              "pointing_button": "button1",
+              "modifiers": [
+                "left_gui"
+              ]
             }
           ]
         }

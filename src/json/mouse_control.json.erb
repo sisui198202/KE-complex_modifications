@@ -1,5 +1,5 @@
 {
-    "title": "MouseControl",
+    "title": "MouseControl_ver1",
     "rules": [
         {
             "description": "CursolMoveUpLeftRightDown(MouseControl)",
@@ -79,12 +79,12 @@
             ]
         },
   {
-      "description": "Fn + Spacebar_LeftClick(MouseControl)",
+      "description": "Fn + Spacebar_LeftClick(MouseControl)1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("spacebar", ["fn"]) %>,
-          "to": <%= to([["button1"],["button1"]]) %>
+          "to": <%= to([["button1",["left_gui"]]]) %>
         }
       ]
     }
