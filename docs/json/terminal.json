@@ -2,7 +2,7 @@
   "title": "iterm2Script",
   "rules": [
     {
-      "description": "Leftcommand + R_miActiveWindow(iterm2)",
+      "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "description": "LeftAlt + J_ChromeActiveWindow(iterm2)",
+      "description": "LeftAlt + J_ChromeActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "description": "LeftAlt + K_VscodeActiveWindow(iterm2)",
+      "description": "LeftAlt + K_VscodeActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "description": "LeftAlt + semicolon_PathfinderActiveWindow(iterm2)",
+      "description": "LeftAlt + semicolon_PathfinderActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "description": "LeftCommand + X_iterm2ActiveWindow(iterm2)",
+      "description": "LeftCommand + X_iterm2ActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "description": "LeftAlt + l_ExcelActiveWindow(iterm2)",
+      "description": "LeftAlt + l_ExcelActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "description": "LeftAlt + quote_VivaldiActiveWindow(iterm2)",
+      "description": "LeftAlt + quote_VivaldiActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
