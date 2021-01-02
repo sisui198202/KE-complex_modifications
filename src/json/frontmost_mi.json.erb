@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi_ver1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -40,7 +40,7 @@
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
-          "to": <%= to([["close_bracket",["left_shift","right_gui"]]]) %>,
+          "to": <%= to([["open_bracket",["left_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -51,7 +51,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
-          "to": <%= to([["open_bracket",["left_shift","right_gui"]]]) %>,
+          "to": <%= to([["close_bracket",["left_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
