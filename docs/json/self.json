@@ -91,7 +91,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_End(!vscode)",
+      "description": "LeftCommand + M_EndRowCursol(!vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "description": "LeftCommand + U_Undo",
+      "description": "LeftCommand + U_戻る",
       "manipulators": [
         {
           "type": "basic",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ;_CursolRowEnd",
+      "description": "LeftCommand + ;_RowEndCursolMove",
       "manipulators": [
         {
           "type": "basic",
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_Home(!vscode)",
+      "description": "LeftCommand + N_HeadRowCursol(!vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -590,7 +590,7 @@
       ]
     },
     {
-      "description": "RightCommand + P_RightHalfMove",
+      "description": "RightCommand + P_RightHalfWindowMove",
       "manipulators": [
         {
           "type": "basic",
