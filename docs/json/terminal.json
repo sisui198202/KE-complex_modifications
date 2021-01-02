@@ -1,5 +1,5 @@
 {
-  "title": "iterm2",
+  "title": "iterm2Script",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2)",
