@@ -154,7 +154,7 @@
       ]
     },
     {
-      "description": "LeftCommand + g_escape",
+      "description": "LeftCommand + G_escape",
       "manipulators": [
         {
           "type": "basic",
@@ -256,7 +256,7 @@
       ]
     },
     {
-      "description": "LeftCommand + f_Tab",
+      "description": "LeftCommand + F_Tab",
       "manipulators": [
         {
           "type": "basic",
@@ -475,7 +475,7 @@
       ]
     },
     {
-      "description": "RightCommand + z,x,c,v,a,s,d,w,e,r_Number(0~9)",
+      "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number(0~9)",
       "manipulators": [
         {
           "type": "basic",

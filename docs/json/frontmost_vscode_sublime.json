@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "RightCommand + o_SameWordExpandSelection(vscode_sublime)",
+      "description": "RightCommand + O_SameWordExpandSelection(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "description": "LeftCommand + o_2SplitEditerScreen(vscode_sublime)",
+      "description": "LeftCommand + O_2SplitEditerScreen(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",

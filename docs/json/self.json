@@ -276,7 +276,7 @@
       ]
     },
     {
-      "description": "RightCommand + ._MaxWindow",
+      "description": "RightCommand + Period_MaxWindow",
       "manipulators": [
         {
           "type": "basic",
@@ -445,7 +445,7 @@
       ]
     },
     {
-      "description": "LeftCommand + /_PageUp",
+      "description": "LeftCommand + Slash_PageUp",
       "manipulators": [
         {
           "type": "basic",
@@ -541,7 +541,7 @@
       ]
     },
     {
-      "description": "RightCommand + ;_LatestTabToggle",
+      "description": "RightCommand + Semicolon_LatestTabToggle",
       "manipulators": [
         {
           "type": "basic",
@@ -638,7 +638,7 @@
       ]
     },
     {
-      "description": "LeftCommand + comma_AppsSelect-Previous",
+      "description": "LeftCommand + Comma_AppsSelect-Previous",
       "manipulators": [
         {
           "type": "basic",
@@ -663,7 +663,7 @@
       ]
     },
     {
-      "description": "LeftCommand + period_AppsSelect-next",
+      "description": "LeftCommand + Period_AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",

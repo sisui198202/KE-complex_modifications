@@ -112,7 +112,7 @@
       ]
     },
     {
-      "description": "RightCommand + NextTab(mi)",
+      "description": "RightCommand + L_NextTab(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "description": "RightCommand + semicolon_LatestTabToggle(mi)",
+      "description": "RightCommand + Semicolon_LatestTabToggle(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "description": "marukako_OpenCloseInput(mi)",
+      "description": "Marukako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -315,7 +315,7 @@
       ]
     },
     {
-      "description": "namikako_OpenCloseInput(mi)",
+      "description": "Namikako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -356,7 +356,7 @@
       ]
     },
     {
-      "description": "kakukako_OpenCloseInput(mi)",
+      "description": "Kakukako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "description": "dainari_OpenCloseInput(mi)",
+      "description": "Dainari_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
