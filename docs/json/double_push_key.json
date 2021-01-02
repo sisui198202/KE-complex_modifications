@@ -2,7 +2,7 @@
   "title": "DoublePushKey",
   "rules": [
     {
-      "description": "Double RightShift_Pipeline",
+      "description": "Double RightShift_Pipeline(Double Push)",
       "manipulators": [
         {
           "type": "basic",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "description": "Double LeftShift_tilde",
+      "description": "Double LeftShift_tilde(Double Push)",
       "manipulators": [
         {
           "type": "basic",
