@@ -2,7 +2,7 @@
   "title": "FrontmostIfExcel_ver2",
   "rules": [
     {
-      "description": "marukako_OpenCloseInput(Excel)",
+      "description": "Marukako_OpenCloseInput(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "description": "namikako_OpenCloseInput(Excel)",
+      "description": "Namikako_OpenCloseInput(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "description": "kakukako_OpenCloseInput(Excel)",
+      "description": "Kakukako_OpenCloseInput(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "description": "dainari_OpenCloseInput(Excel)",
+      "description": "Dainari_OpenCloseInput(Excel)",
       "manipulators": [
         {
           "type": "basic",
