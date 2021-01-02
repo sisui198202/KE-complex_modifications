@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "LeftCommand + P_focus_side_bar(sublime)",
+      "description": "LeftCommand + P_FocusSidebar(sublime)",
       "manipulators": [
         {
           "type": "basic",
