@@ -1,13 +1,68 @@
 {
-    "title": "FrontmostIfExcel_1",
+    "title": "FrontmostIfExcel",
     "rules": [
-    {
-      "description": "None_RightCommand + H_TagCreate(Excel)",
+   {
+      "description": "marukako_OpenCloseInput(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h", ["right_gui"]) %>,
-          "to": <%= to([["w", ["left_control","right_shift"]]]) %>,
+          "from": <%= from("9", ["left_shift"]) %>,
+          "to": <%= to([["9",["left_shift"]],["0",["left_shift"]],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "namikako_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_shift"]) %>,
+          "to": <%= to([["open_bracket",["left_shift"]],["close_bracket",["left_shift"]],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "kakukako_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket") %>,
+          "to": <%= to([["open_bracket"],["close_bracket"],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "dainari_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma",["left_shift"]) %>,
+          "to": <%= to([["comma",["left_shift"]],["period",["left_shift"]],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "DoubleQuote_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote",["left_shift"]) %>,
+          "to": <%= to([["quote",["left_shift"]],["quote",["left_shift"]],["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "SingleQuote_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote") %>,
+          "to": <%= to([["quote"],["quote"],["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
