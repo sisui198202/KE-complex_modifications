@@ -1,5 +1,5 @@
 {
-  "title": "Terminal_ver1",
+  "title": "Terminal_ver2",
   "rules": [
 {
   "description": "Leftcommand + R_miを開く(Terminal)",
@@ -52,22 +52,22 @@
   ]
 },
 {
-  "description": "LeftAlt + l_vivaldiを開く(Terminal)",
+  "description": "LeftAlt + l_excelを開く(Terminal)",
   "manipulators": [
     {
       "type": "basic",
       "from": <%= from("l", ["left_alt"]) %>,
-      "to": <%= set_shell_command(["open -a 'Vivaldi.app'"]) %>
+      "to": <%= set_shell_command(["open -a 'Microsoft Excel.app'"]) %>
     }
   ]
 },
 {
-  "description": "LeftAlt + quote_Excelを開く(Terminal)",
+  "description": "LeftAlt + quote_Vivaldiを開く(Terminal)",
   "manipulators": [
     {
       "type": "basic",
       "from": <%= from("quote", ["left_alt"]) %>,
-      "to": <%= set_shell_command(["open -a 'Microsoft Excel.app'"]) %>
+      "to": <%= set_shell_command(["open -a 'Vivaldi.app'"]) %>
     }
   ]
 }
