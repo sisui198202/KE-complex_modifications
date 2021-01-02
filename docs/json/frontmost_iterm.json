@@ -99,7 +99,7 @@
       ]
     },
     {
-      "description": "RightCommand + period_WindowMaxToggleOnOff(iterm2)",
+      "description": "RightCommand + Period_WindowMaxToggleOnOff(iterm2)",
       "manipulators": [
         {
           "type": "basic",
@@ -131,7 +131,7 @@
       ]
     },
     {
-      "description": "LeftCommand + h_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
+      "description": "LeftCommand + H_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
       "manipulators": [
         {
           "type": "basic",
@@ -164,7 +164,7 @@
       ]
     },
     {
-      "description": "LeftAlt + c_ClearBuffer(iterm2)",
+      "description": "LeftAlt + C_ClearBuffer(iterm2)",
       "manipulators": [
         {
           "type": "basic",
