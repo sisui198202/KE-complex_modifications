@@ -2,7 +2,7 @@
   "title": "FrontmostIfVscode",
   "rules": [
     {
-      "description": "LeftCommand + N_Home(vscode)",
+      "description": "LeftCommand + N_HeadRowCursol(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_End(vscode)",
+      "description": "LeftCommand + M_EndRowCursol(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "description": "RightCommand + Slash_SelectAllSameWord2(vscode)",
+      "description": "RightCommand + Slash_SelectAllSameWord(vscode)",
       "manipulators": [
         {
           "type": "basic",
