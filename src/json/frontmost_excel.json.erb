@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfExcel_1",
+    "rules": [
+    {
+      "description": "None_RightCommand + H_TagCreate(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["right_gui"]) %>,
+          "to": <%= to([["w", ["left_control","right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    }
+    ]
+}
