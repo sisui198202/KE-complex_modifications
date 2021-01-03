@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel_ver1",
+    "title": "FrontmostIfExcel_ver2",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_HeadRowCursol(Excel)",
+      "description": "LeftCommand + N_HeadRowCursol1(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -90,12 +90,34 @@
       ]
     },
     {
-      "description": "LeftCommand + M_EndRowCursol(Excel)",
+      "description": "LeftAlt + N_HeadRowCursol2(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_alt"]) %>,
+          "to": <%= to([["up_arrow", ["right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + M_EndRowCursol1(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("m", ["left_control"]) %>,
           "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + M_EndRowCursol2(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_alt"]) %>,
+          "to": <%= to([["down_arrow", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
