@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel_ver4",
+    "title": "FrontmostIfExcel_ver5",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -140,6 +140,17 @@
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
           "to": <%= to([["right_arrow", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + J_1RowSelect(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"]) %>,
+          "to": <%= to([["spacebar", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
