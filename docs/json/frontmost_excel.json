@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel_ver3",
+  "title": "FrontmostIfExcel_ver4",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -354,12 +354,12 @@
       ]
     },
     {
-      "description": "Space_CellEdit(Excel)",
+      "description": "LeftControl_CellEdit(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "spacebar"
+            "key_code": "fn"
           },
           "to": [
             {

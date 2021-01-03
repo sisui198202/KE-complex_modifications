@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel_ver3",
+    "title": "FrontmostIfExcel_ver4",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -112,11 +112,11 @@
       ]
     },
    {
-      "description": "Space_CellEdit(Excel)",
+      "description": "LeftControl_CellEdit(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar") %>,
+          "from": <%= from("fn") %>,
           "to": <%= to([["f2"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
