@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)",
   "rules": [
     {
       "description": "F2_Rename",
@@ -726,28 +726,6 @@
             },
             {
               "key_code": "delete_or_backspace"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Quote_from Japanese to English_ver2",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "F1",
-              "modifiers": "left_alt"
             }
           ]
         }
