@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel_ver2",
+  "title": "FrontmostIfExcel_ver3",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -570,7 +570,7 @@
       ]
     },
     {
-      "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
+      "description": "LeftCommand + T_SelectRowColumnAdd(Excel)_ver1",
       "manipulators": [
         {
           "type": "basic",
@@ -578,7 +578,7 @@
             "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ]
             }
           },

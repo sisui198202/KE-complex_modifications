@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel_ver2",
+    "title": "FrontmostIfExcel_ver3",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -189,11 +189,11 @@
       ]
     },
  {
-      "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
+      "description": "LeftCommand + T_SelectRowColumnAdd(Excel)_ver1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["left_gui"]) %>,
+          "from": <%= from("t", ["left_control"]) %>,
           "to": <%= to([["equal_sign", ["right_gui","right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
