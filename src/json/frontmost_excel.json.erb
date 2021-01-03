@@ -99,6 +99,17 @@
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
+    },
+   {
+      "description": "RightCommand + U_ColumnSelection(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["right_gui"]) %>,
+          "to": <%= to([["spacebar", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
     }
     ]
 }
