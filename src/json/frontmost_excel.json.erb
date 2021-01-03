@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel_ver1",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -151,6 +151,28 @@
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
           "to": <%= to([["spacebar", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+ {
+      "description": "RightCommand + Y_SelectRowColumnDelete(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y", ["right_gui"]) %>,
+          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+ {
+      "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_gui"]) %>,
+          "to": <%= to([["equal_sign", ["right_gui","right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
