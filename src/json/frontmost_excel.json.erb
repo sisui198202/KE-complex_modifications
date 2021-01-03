@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel_ver1",
+    "title": "FrontmostIfExcel_ver2",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -118,6 +118,28 @@
           "type": "basic",
           "from": <%= from("spacebar") %>,
           "to": <%= to([["f2"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "RightCommand + L_PreviousTab(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= to([["left_arrow", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "RightCommand + L_NextTab(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= to([["right_arrow", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
