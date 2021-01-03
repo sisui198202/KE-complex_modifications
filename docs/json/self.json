@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
     {
       "description": "F2_Rename",
@@ -732,12 +732,12 @@
       ]
     },
     {
-      "description": "LeftCommand + H_from Japanese to English",
+      "description": "LeftCommand + Quote_from Japanese to English",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": [
                 "left_control"
