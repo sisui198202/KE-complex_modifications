@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel_ver2",
+    "title": "FrontmostIfExcel_ver3",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -134,11 +134,11 @@
       ]
     },
    {
-      "description": "RightCommand + L_NextTab(Excel)",
+      "description": "RightCommand + semicolon_NextTab(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l", ["right_gui"]) %>,
+          "from": <%= from("semicolon", ["right_gui"]) %>,
           "to": <%= to([["right_arrow", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel_ver2",
+  "title": "FrontmostIfExcel_ver3",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -410,12 +410,12 @@
       ]
     },
     {
-      "description": "RightCommand + L_NextTab(Excel)",
+      "description": "RightCommand + semicolon_NextTab(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "right_gui"
