@@ -70,6 +70,16 @@
       "to": <%= set_shell_command(["open -a 'Vivaldi.app'"]) %>
     }
   ]
+},
+{
+  "description": "LeftAlt + slash_FinderActiveWindow(iterm2Script)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("slash", ["left_alt"]) %>,
+      "to": <%= set_shell_command(["open -a 'finder.app'"]) %>
+    }
+  ]
 }
     ]
 }
