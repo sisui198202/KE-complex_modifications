@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode_ver12",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -246,6 +246,39 @@
               "modifiers": [
                 "right_control",
                 "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + N_prettifyコード整形 (vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_alt",
+                "left_shigt"
               ]
             }
           ],

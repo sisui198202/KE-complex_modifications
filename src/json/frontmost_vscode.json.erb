@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode_ver12",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -85,6 +85,17 @@
           "type": "basic",
           "from": <%= from("u", ["left_alt"]) %>,
           "to": <%= to([["2", ["right_control","left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + N_prettifyコード整形 (vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_alt"]) %>,
+          "to": <%= to([["f", ["right_alt","left_shigt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
