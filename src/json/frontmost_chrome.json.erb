@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome_ver3",
+    "title": "FrontmostIfChrome_ver4",
     "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -24,11 +24,11 @@
       ]
     },
    {
-      "description": "RightCommand + H_SuperReload(Chrome)2",
+      "description": "RightCommand + H_SuperReload(Chrome)3",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h", ["right_gui"]) %>,
+          "from": <%= from("h", ["right_alt"]) %>,
           "to": <%= to([["i",["right_alt","right_gui"]], ["r", ["right_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
