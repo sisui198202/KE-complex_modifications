@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVivaldi_ver1",
+  "title": "FrontmostIfVivaldi",
   "rules": [
     {
       "description": "LeftCommand + U_戻る(Vivaldi)",
@@ -50,39 +50,6 @@
           "to": [
             {
               "key_code": "f5"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + H_SuperReload(Vivaldi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "r",
-              "modifiers": [
-                "left_control",
-                "right_shift"
-              ]
             }
           ],
           "conditions": [

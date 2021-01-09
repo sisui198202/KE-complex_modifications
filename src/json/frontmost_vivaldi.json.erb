@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVivaldi_ver1",
+    "title": "FrontmostIfVivaldi",
     "rules": [
     {
       "description": "LeftCommand + U_戻る(Vivaldi)",
@@ -19,17 +19,6 @@
           "type": "basic",
           "from": <%= from("h", ["right_gui"]) %>,
           "to": <%= to([["f5"]]) %>,
-          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + H_SuperReload(Vivaldi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("h", ["left_alt"]) %>,
-          "to": <%= to([["r", ["left_control","right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         }
       ]
