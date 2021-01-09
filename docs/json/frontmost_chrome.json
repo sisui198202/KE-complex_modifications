@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome_ver5",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -52,46 +52,6 @@
               "key_code": "f12",
               "modifiers": [
                 "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + H_SuperReload(Chrome)4",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "i",
-              "modifiers": [
-                "right_alt",
-                "right_gui"
-              ]
-            },
-            {
-              "key_code": "r",
-              "modifiers": [
-                "right_shift",
-                "right_gui"
               ]
             }
           ],
