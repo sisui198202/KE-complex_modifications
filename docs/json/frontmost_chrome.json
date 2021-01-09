@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome_ver4",
+  "title": "FrontmostIfChrome_ver5",
   "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "description": "RightCommand + H_SuperReload(Chrome)3",
+      "description": "LeftAlt + H_SuperReload(Chrome)4",
       "manipulators": [
         {
           "type": "basic",
@@ -75,7 +75,7 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_alt"
               ]
             }
           },
