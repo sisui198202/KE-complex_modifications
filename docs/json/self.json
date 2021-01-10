@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "F2_Rename",
@@ -685,7 +685,7 @@
       ]
     },
     {
-      "description": "rightcommand + J_1RowSelect",
+      "description": "rightcommand + J_1RowSelect1",
       "manipulators": [
         {
           "type": "basic",
@@ -701,6 +701,12 @@
             {
               "key_code": "l",
               "modifiers": "right_gui"
+            },
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ]
         }
