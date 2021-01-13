@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode_ver3",
+    "title": "FrontmostIfVscode_ver4",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -97,6 +97,16 @@
           "from": <%= from("n", ["left_alt"]) %>,
           "to": <%= to([["f", ["right_alt","left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + 0(ゼロ)_2RowSplitEditerScreen(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("0", ["left_control"]) %>,
+          "to": <%= to([["2",["right_alt","right_gui","right_shift"]]]) %>
         }
       ]
     }
