@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "description": "LeftCommand + 0(ゼロ)_2RowSplitEditerScreen(vscode)1",
+      "description": "LeftCommand + 0(ゼロ)_2RowSplitEditerScreen(vscode)",
       "manipulators": [
         {
           "type": "basic",
