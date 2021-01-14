@@ -281,6 +281,46 @@
               ]
             }
           ]
+        },
+        {
+          "description": "RightCommand + P_RightHalfWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + Q_LeftWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ]
         }
       ]
     }
