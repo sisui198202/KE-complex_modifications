@@ -1,8 +1,8 @@
 {
-  "title": "Window Control",
+  "title": "WindowControl_ver1",
   "rules": [
     {
-      "description": "Fn + UIJK_WindowsControl",
+      "description": "Fn + UIJK_WindowsControl(WindowControl)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
@@ -57,58 +57,38 @@
         "type": "basic",
         "from": <%= from("o", ["fn"]) %>,
         "to": <%= to([["c", "right_control", "right_alt"]]) %>
-    }
- ]
-},
-  {
-      "description": "RightCommand + Period_MaxWindow",
-      "manipulators": [
+    },
         {
+          "description": "RightCommand + Period_MaxWindow",
           "type": "basic",
           "from": <%= from("period", ["right_gui"]) %>,
           "to": <%= to([["f", ["left_gui", "left_control"]]]) %>
-        }
-      ]
-    },
-      {
-      "description": "LeftOption + Q_WindowUP",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + Q_WindowUP",
           "type": "basic",
           "from": <%= from("q", ["left_alt"]) %>,
           "to": <%= to([["4", ["left_alt"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "LeftOption + P_WindowDown",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + P_WindowDown",
           "type": "basic",
           "from": <%= from("p", ["left_alt"]) %>,
           "to": <%= to([["5", ["left_alt"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "LeftOption + W_WindowRightUp",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + W_WindowRightUp",
           "type": "basic",
           "from": <%= from("w", ["left_alt"]) %>,
           "to": <%= to([["7", ["left_alt"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "LeftOption + E_WindowRightDown",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + E_WindowRightDown",
           "type": "basic",
           "from": <%= from("e", ["left_alt"]) %>,
           "to": <%= to([["9", ["left_alt"]]]) %>
         }
-      ]
-    }
+ ]
+}
   ]
 }

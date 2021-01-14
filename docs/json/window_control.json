@@ -1,8 +1,8 @@
 {
-  "title": "Window Control",
+  "title": "WindowControl_ver1",
   "rules": [
     {
-      "description": "Fn + UIJK_WindowsControl",
+      "description": "Fn + UIJK_WindowsControl(WindowControl)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
@@ -165,13 +165,9 @@
               "modifiers": "right_control"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Period_MaxWindow",
-      "manipulators": [
+        },
         {
+          "description": "RightCommand + Period_MaxWindow",
           "type": "basic",
           "from": {
             "key_code": "period",
@@ -190,13 +186,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + Q_WindowUP",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + Q_WindowUP",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -214,13 +206,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + P_WindowDown",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + P_WindowDown",
           "type": "basic",
           "from": {
             "key_code": "p",
@@ -238,13 +226,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + W_WindowRightUp",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + W_WindowRightUp",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -262,13 +246,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + E_WindowRightDown",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + E_WindowRightDown",
           "type": "basic",
           "from": {
             "key_code": "e",
