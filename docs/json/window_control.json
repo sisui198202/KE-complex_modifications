@@ -77,10 +77,10 @@
           ]
         },
         {
-          "description": "Fn + H_WindowLeftOneThird",
+          "description": "Fn + G_WindowLeftOneThird",
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "g",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -98,10 +98,10 @@
           ]
         },
         {
-          "description": "Fn + L_WindowRightOneThird",
+          "description": "Fn + Quote_WindowRightOneThird",
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -371,6 +371,46 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + L_RightHalfWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + H_LeftWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "fn"
               ]
             }
           },

@@ -29,15 +29,15 @@
         "to": <%= to([["9", "right_alt"]]) %>
     },
     {
-        "description": "Fn + H_WindowLeftOneThird",
+        "description": "Fn + G_WindowLeftOneThird",
         "type": "basic",
-        "from": <%= from("h", ["fn"]) %>,
+        "from": <%= from("g", ["fn"]) %>,
         "to": <%= to([["d", ["right_control", "right_alt"]]]) %>
     },
     {
-        "description": "Fn + L_WindowRightOneThird",
+        "description": "Fn + Quote_WindowRightOneThird",
         "type": "basic",
-        "from": <%= from("l", ["fn"]) %>,
+        "from": <%= from("quote", ["fn"]) %>,
         "to": <%= to([["g", ["right_control", "right_alt"]]]) %>
     },
     {
@@ -116,6 +116,18 @@
       "description": "LeftCommand + Q_LeftWindowMove",
       "type": "basic",
       "from": <%= from("q", ["left_control"]) %>,
+      "to": <%= to([["2", ["right_alt"]]]) %>
+    },
+    {
+      "description": "Fn + L_RightHalfWindowMove",
+      "type": "basic",
+      "from": <%= from("l", ["fn"]) %>,
+      "to": <%= to([["3", ["right_alt"]]]) %>
+    },
+    {
+      "description": "Fn + H_LeftWindowMove",
+      "type": "basic",
+      "from": <%= from("h", ["fn"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>
     }
  ]
