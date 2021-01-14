@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl_ver101",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -129,6 +129,12 @@
       "type": "basic",
       "from": <%= from("h", ["fn"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>
+    },
+    {
+      "description": "RightAlt + A_MaxWindow",
+      "type": "basic",
+        "from": <%= from("a", ["right_alt"]) %>,
+      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
     }
  ]
 }

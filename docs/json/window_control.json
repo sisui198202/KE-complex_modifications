@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl_ver101",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -419,6 +419,27 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightAlt + A_MaxWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_gui"
               ]
             }
           ]
