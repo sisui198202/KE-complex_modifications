@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "F2_Rename",
@@ -301,6 +301,16 @@
           "type": "basic",
           "from": <%= from("k", ["right_gui"]) %>,
           "to": <%= to([["l","right_gui"],["delete_or_backspace"]]) %>
+        }
+      ]
+    },
+   {
+      "description": "Fn + I_WindowLeftUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["fn"]) %>,
+          "to": <%= to([["6","right_alt"]]) %>
         }
       ]
     }
