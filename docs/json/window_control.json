@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl_ver1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -161,10 +161,10 @@
           ]
         },
         {
-          "description": "Fn + n_WindowCenter",
+          "description": "Fn + Comma_WindowCenter",
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "comma",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -198,6 +198,46 @@
               "modifiers": [
                 "right_control",
                 "right_gui"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + N_WindowUP",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + M_WindowDown",
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_alt"
               ]
             }
           ]

@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl_ver1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -53,9 +53,9 @@
         "to": <%= to([["t", ["right_control", "right_alt"]]]) %>
     },
     {
-        "description": "Fn + n_WindowCenter",
+        "description": "Fn + Comma_WindowCenter",
         "type": "basic",
-        "from": <%= from("n", ["fn"]) %>,
+        "from": <%= from("comma", ["fn"]) %>,
         "to": <%= to([["c", ["right_control", "right_alt"]]]) %>
     },
     {
@@ -63,6 +63,18 @@
       "type": "basic",
       "from": <%= from("period", ["right_gui"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
+    },
+    {
+        "description": "Fn + N_WindowUP",
+        "type": "basic",
+        "from": <%= from("n", ["fn"]) %>,
+        "to": <%= to([["4", ["left_alt"]]]) %>
+    },
+    {
+        "description": "Fn + M_WindowDown",
+        "type": "basic",
+        "from": <%= from("m", ["fn"]) %>,
+        "to": <%= to([["5", ["left_alt"]]]) %>
     },
     {
       "description": "LeftOption + Q_WindowUP",
