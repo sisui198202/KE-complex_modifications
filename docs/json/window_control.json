@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl_",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -203,10 +203,10 @@
           ]
         },
         {
-          "description": "Fn + Period_MaxWindow",
+          "description": "Fn + Semicolon_MaxWindow",
           "type": "basic",
           "from": {
-            "key_code": "period",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "fn"
