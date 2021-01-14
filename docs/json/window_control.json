@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver99",
+  "title": "WindowControl_ver100",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -164,7 +164,7 @@
           "description": "Fn + n_WindowCenter",
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
                 "fn"
