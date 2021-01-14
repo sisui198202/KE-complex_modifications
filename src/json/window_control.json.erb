@@ -8,57 +8,107 @@
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
           "from": <%= from("u", ["fn"]) %>,
-          "to": <%= to([["6","right_alt"]]) %>
+          "to": <%= to([["6", "right_alt"]]) %>
         },
     {
         "description": "Fn + J_WindowLeftDown",
         "type": "basic",
         "from": <%= from("j", ["fn"]) %>,
-        "to": <%= to([["8","right_alt"]]) %>
+        "to": <%= to([["8", "right_alt"]]) %>
     },
     {
         "description": "Fn + I_WindowRightUp",
         "type": "basic",
         "from": <%= from("i", ["fn"]) %>,
-        "to": <%= to([["7","right_alt"]]) %>
+        "to": <%= to([["7", "right_alt"]]) %>
     },
     {
         "description": "Fn + K_WindowRightDown",
         "type": "basic",
         "from": <%= from("k", ["fn"]) %>,
-        "to": <%= to([["9","right_alt"]]) %>
+        "to": <%= to([["9", "right_alt"]]) %>
     },
     {
         "description": "Fn + H_WindowLeftOneThird",
         "type": "basic",
         "from": <%= from("h", ["fn"]) %>,
-        "to": <%= to([["d","right_control","right_alt"]]) %>
+        "to": <%= to([["d", "right_control", "right_alt"]]) %>
     },
     {
         "description": "Fn + L_WindowRightOneThird",
         "type": "basic",
         "from": <%= from("k", ["fn"]) %>,
-        "to": <%= to([["g","right_control","right_alt"]]) %>
+        "to": <%= to([["g", "right_control", "right_alt"]]) %>
     },
     {
         "description": "Fn + Y_WindowLeftTwo-thirds",
         "type": "basic",
         "from": <%= from("y", ["fn"]) %>,
-        "to": <%= to([["e","right_control","right_alt"]]) %>
+        "to": <%= to([["e", "right_control", "right_alt"]]) %>
     },
     {
         "description": "Fn + O_WindowRightTwo-thirds",
         "type": "basic",
         "from": <%= from("o", ["fn"]) %>,
-        "to": <%= to([["t","right_control","right_alt"]]) %>
+        "to": <%= to([["t", "right_control", "right_alt"]]) %>
     },
     {
         "description": "Fn + n_WindowCenter",
         "type": "basic",
         "from": <%= from("o", ["fn"]) %>,
-        "to": <%= to([["c","right_control","right_alt"]]) %>
+        "to": <%= to([["c", "right_control", "right_alt"]]) %>
     }
  ]
-}
+},
+  {
+      "description": "RightCommand + Period_MaxWindow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["right_gui"]) %>,
+          "to": <%= to([["f", ["left_gui", "left_control"]]]) %>
+        }
+      ]
+    },
+      {
+      "description": "LeftOption + Q_WindowUP",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["left_alt"]) %>,
+          "to": <%= to([["4", ["left_alt"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "LeftOption + P_WindowDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["left_alt"]) %>,
+          "to": <%= to([["5", ["left_alt"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "LeftOption + W_WindowRightUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["left_alt"]) %>,
+          "to": <%= to([["7", ["left_alt"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "LeftOption + E_WindowRightDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["left_alt"]) %>,
+          "to": <%= to([["9", ["left_alt"]]]) %>
+        }
+      ]
+    }
   ]
 }
