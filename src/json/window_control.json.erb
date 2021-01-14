@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver3",
+  "title": "WindowControl_ver4",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -32,37 +32,37 @@
         "description": "Fn + H_WindowLeftOneThird",
         "type": "basic",
         "from": <%= from("h", ["fn"]) %>,
-        "to": <%= to([["d", "right_control", "right_alt"]]) %>
+        "to": <%= to(["d", ["right_control", ["right_alt"]]]) %>
     },
     {
         "description": "Fn + L_WindowRightOneThird",
         "type": "basic",
         "from": <%= from("l", ["fn"]) %>,
-        "to": <%= to([["g", "right_control", "right_alt"]]) %>
+        "to": <%= to(["g", ["right_control", ["right_alt"]]]) %>
     },
     {
         "description": "Fn + Y_WindowLeftTwo-thirds",
         "type": "basic",
         "from": <%= from("y", ["fn"]) %>,
-        "to": <%= to([["e", "right_control", "right_alt"]]) %>
+        "to": <%= to(["e", ["right_control", ["right_alt"]]]) %>
     },
     {
         "description": "Fn + O_WindowRightTwo-thirds",
         "type": "basic",
         "from": <%= from("o", ["fn"]) %>,
-        "to": <%= to([["t", "right_control", "right_alt"]]) %>
+        "to": <%= to(["t", ["right_control", ["right_alt"]]]) %>
     },
     {
         "description": "Fn + n_WindowCenter",
         "type": "basic",
         "from": <%= from("o", ["fn"]) %>,
-        "to": <%= to([["c", "right_control", "right_alt"]]) %>
+        "to": <%= to(["c", ["right_control", ["right_alt"]]]) %>
     },
         {
           "description": "RightCommand + Period_MaxWindow",
           "type": "basic",
           "from": <%= from("period", ["right_gui"]) %>,
-          "to": <%= to([["f", ["left_gui", "left_control"]]]) %>
+          "to": <%= to(["f", ["right_control", ["right_alt"]]]) %>
         },
         {
           "description": "LeftOption + Q_WindowUP",

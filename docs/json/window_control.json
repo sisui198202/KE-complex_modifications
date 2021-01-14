@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver3",
+  "title": "WindowControl_ver4",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -89,8 +89,13 @@
           },
           "to": [
             {
-              "key_code": "d",
-              "modifiers": "right_control"
+              "key_code": "d"
+            },
+            {
+              "key_code": "right_control",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ]
         },
@@ -107,8 +112,13 @@
           },
           "to": [
             {
-              "key_code": "g",
-              "modifiers": "right_control"
+              "key_code": "g"
+            },
+            {
+              "key_code": "right_control",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ]
         },
@@ -125,8 +135,13 @@
           },
           "to": [
             {
-              "key_code": "e",
-              "modifiers": "right_control"
+              "key_code": "e"
+            },
+            {
+              "key_code": "right_control",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ]
         },
@@ -143,8 +158,13 @@
           },
           "to": [
             {
-              "key_code": "t",
-              "modifiers": "right_control"
+              "key_code": "t"
+            },
+            {
+              "key_code": "right_control",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ]
         },
@@ -161,8 +181,13 @@
           },
           "to": [
             {
-              "key_code": "c",
-              "modifiers": "right_control"
+              "key_code": "c"
+            },
+            {
+              "key_code": "right_control",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ]
         },
@@ -179,10 +204,12 @@
           },
           "to": [
             {
-              "key_code": "f",
+              "key_code": "f"
+            },
+            {
+              "key_code": "right_control",
               "modifiers": [
-                "left_gui",
-                "left_control"
+                "right_alt"
               ]
             }
           ]
