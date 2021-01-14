@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver4",
+  "title": "WindowControl_ver5",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -89,11 +89,9 @@
           },
           "to": [
             {
-              "key_code": "d"
-            },
-            {
-              "key_code": "right_control",
+              "key_code": "d",
               "modifiers": [
+                "right_control",
                 "right_alt"
               ]
             }
@@ -112,12 +110,12 @@
           },
           "to": [
             {
-              "key_code": "g"
-            },
-            {
-              "key_code": "right_control",
+              "key_code": "g",
               "modifiers": [
-                "right_alt"
+                "right_control",
+                [
+                  "right_alt"
+                ]
               ]
             }
           ]
@@ -135,12 +133,12 @@
           },
           "to": [
             {
-              "key_code": "e"
-            },
-            {
-              "key_code": "right_control",
+              "key_code": "e",
               "modifiers": [
-                "right_alt"
+                "right_control",
+                [
+                  "right_alt"
+                ]
               ]
             }
           ]
@@ -158,12 +156,12 @@
           },
           "to": [
             {
-              "key_code": "t"
-            },
-            {
-              "key_code": "right_control",
+              "key_code": "t",
               "modifiers": [
-                "right_alt"
+                "right_control",
+                [
+                  "right_alt"
+                ]
               ]
             }
           ]
@@ -181,12 +179,12 @@
           },
           "to": [
             {
-              "key_code": "c"
-            },
-            {
-              "key_code": "right_control",
+              "key_code": "c",
               "modifiers": [
-                "right_alt"
+                "right_control",
+                [
+                  "right_alt"
+                ]
               ]
             }
           ]
