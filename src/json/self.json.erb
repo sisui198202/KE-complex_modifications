@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)_ver99",
   "rules": [
   {
       "description": "F2_Rename",
@@ -191,26 +191,6 @@
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
           "to": <%= to([["tab",["left_control","left_shift"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "RightCommand + P_RightHalfWindowMove",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("p", ["right_gui"]) %>,
-          "to": <%= to([["3",["right_alt"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "LeftCommand + Q_LeftWindowMove",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("q", ["left_control"]) %>,
-          "to": <%= to([["2",["right_alt"]]]) %>
         }
       ]
     },

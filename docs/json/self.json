@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)_ver99",
   "rules": [
     {
       "description": "F2_Rename",
@@ -462,54 +462,6 @@
               "modifiers": [
                 "left_control",
                 "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + P_RightHalfWindowMove",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Q_LeftWindowMove",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_alt"
               ]
             }
           ]
