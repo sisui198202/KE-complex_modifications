@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver8",
+  "title": "WindowControl_ver99",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -53,10 +53,16 @@
         "to": <%= to([["t", ["right_control", "right_alt"]]]) %>
     },
     {
+        "description": "Fn + n_WindowCenter",
+        "type": "basic",
+        "from": <%= from("o", ["fn"]) %>,
+        "to": <%= to([["c", ["right_control", "right_alt"]]]) %>
+    },
+    {
       "description": "RightCommand + Period_MaxWindow",
       "type": "basic",
       "from": <%= from("period", ["right_gui"]) %>,
-      "to": <%= to([["f", ["right_control", "right_alt"]]]) %>
+      "to": <%= to([["f", ["right_gui", "right_alt"]]]) %>
     },
     {
       "description": "LeftOption + Q_WindowUP",

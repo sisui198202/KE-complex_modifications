@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver8",
+  "title": "WindowControl_ver99",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -161,6 +161,27 @@
           ]
         },
         {
+          "description": "Fn + n_WindowCenter",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_control",
+                "right_alt"
+              ]
+            }
+          ]
+        },
+        {
           "description": "RightCommand + Period_MaxWindow",
           "type": "basic",
           "from": {
@@ -175,7 +196,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_control",
+                "right_gui",
                 "right_alt"
               ]
             }
