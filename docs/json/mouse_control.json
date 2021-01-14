@@ -2,7 +2,7 @@
   "title": "MouseControl",
   "rules": [
     {
-      "description": "WindowLeftUp(MouseControl)",
+      "description": "Not applicable_WindowLeftUp(MouseControl)",
       "manipulators": [
         {
           "type": "basic",
