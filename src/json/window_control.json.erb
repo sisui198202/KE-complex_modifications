@@ -2,28 +2,61 @@
   "title": "Window Control",
   "rules": [
     {
-      "description": "Fn + IJKL_WindowsControl",
+      "description": "Fn + UIJK_WindowsControl",
       "manipulators": [
         {
-          "description": "Fn + I_WindowsControl",
+          "description": "Fn + U_WindowLeftUp",
           "type": "basic",
-          "from": <%= from("i", ["fn"]) %>,
+          "from": <%= from("u", ["fn"]) %>,
           "to": <%= to([["6","right_alt"]]) %>
         },
     {
+        "description": "Fn + J_WindowLeftDown",
         "type": "basic",
         "from": <%= from("j", ["fn"]) %>,
         "to": <%= to([["8","right_alt"]]) %>
     },
     {
+        "description": "Fn + I_WindowRightUp",
         "type": "basic",
-        "from": <%= from("k", ["fn"]) %>,
+        "from": <%= from("i", ["fn"]) %>,
         "to": <%= to([["7","right_alt"]]) %>
     },
     {
+        "description": "Fn + K_WindowRightDown",
         "type": "basic",
-        "from": <%= from("l", ["fn"]) %>,
+        "from": <%= from("k", ["fn"]) %>,
         "to": <%= to([["9","right_alt"]]) %>
+    },
+    {
+        "description": "Fn + H_WindowLeftOneThird",
+        "type": "basic",
+        "from": <%= from("h", ["fn"]) %>,
+        "to": <%= to([["d","right_control","right_alt"]]) %>
+    },
+    {
+        "description": "Fn + L_WindowRightOneThird",
+        "type": "basic",
+        "from": <%= from("k", ["fn"]) %>,
+        "to": <%= to([["g","right_control","right_alt"]]) %>
+    },
+    {
+        "description": "Fn + Y_WindowLeftTwo-thirds",
+        "type": "basic",
+        "from": <%= from("y", ["fn"]) %>,
+        "to": <%= to([["e","right_control","right_alt"]]) %>
+    },
+    {
+        "description": "Fn + O_WindowRightTwo-thirds",
+        "type": "basic",
+        "from": <%= from("o", ["fn"]) %>,
+        "to": <%= to([["t","right_control","right_alt"]]) %>
+    },
+    {
+        "description": "Fn + n_WindowCenter",
+        "type": "basic",
+        "from": <%= from("o", ["fn"]) %>,
+        "to": <%= to([["c","right_control","right_alt"]]) %>
     }
  ]
 }

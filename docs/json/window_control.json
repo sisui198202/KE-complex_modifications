@@ -2,13 +2,13 @@
   "title": "Window Control",
   "rules": [
     {
-      "description": "Fn + IJKL_WindowsControl",
+      "description": "Fn + UIJK_WindowsControl",
       "manipulators": [
         {
-          "description": "Fn + I_WindowsControl",
+          "description": "Fn + U_WindowLeftUp",
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -23,6 +23,7 @@
           ]
         },
         {
+          "description": "Fn + J_WindowLeftDown",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -40,9 +41,10 @@
           ]
         },
         {
+          "description": "Fn + I_WindowRightUp",
           "type": "basic",
           "from": {
-            "key_code": "k",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -57,9 +59,10 @@
           ]
         },
         {
+          "description": "Fn + K_WindowRightDown",
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "k",
             "modifiers": {
               "mandatory": [
                 "fn"
@@ -70,6 +73,96 @@
             {
               "key_code": "9",
               "modifiers": "right_alt"
+            }
+          ]
+        },
+        {
+          "description": "Fn + H_WindowLeftOneThird",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": "right_control"
+            }
+          ]
+        },
+        {
+          "description": "Fn + L_WindowRightOneThird",
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": "right_control"
+            }
+          ]
+        },
+        {
+          "description": "Fn + Y_WindowLeftTwo-thirds",
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": "right_control"
+            }
+          ]
+        },
+        {
+          "description": "Fn + O_WindowRightTwo-thirds",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": "right_control"
+            }
+          ]
+        },
+        {
+          "description": "Fn + n_WindowCenter",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": "right_control"
             }
           ]
         }
