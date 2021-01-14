@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver5",
+  "title": "WindowControl_ver6",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -113,9 +113,7 @@
               "key_code": "g",
               "modifiers": [
                 "right_control",
-                [
-                  "right_alt"
-                ]
+                "right_alt"
               ]
             }
           ]
@@ -136,9 +134,7 @@
               "key_code": "e",
               "modifiers": [
                 "right_control",
-                [
-                  "right_alt"
-                ]
+                "right_alt"
               ]
             }
           ]
@@ -159,9 +155,7 @@
               "key_code": "t",
               "modifiers": [
                 "right_control",
-                [
-                  "right_alt"
-                ]
+                "right_alt"
               ]
             }
           ]
@@ -182,9 +176,7 @@
               "key_code": "c",
               "modifiers": [
                 "right_control",
-                [
-                  "right_alt"
-                ]
+                "right_alt"
               ]
             }
           ]
@@ -202,11 +194,9 @@
           },
           "to": [
             {
-              "key_code": "f"
-            },
-            {
-              "key_code": "right_control",
+              "key_code": "f",
               "modifiers": [
+                "right_control",
                 "right_alt"
               ]
             }
