@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver100",
+  "title": "WindowControl_ver101",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -62,7 +62,7 @@
       "description": "RightCommand + Period_MaxWindow",
       "type": "basic",
       "from": <%= from("period", ["right_gui"]) %>,
-      "to": <%= to([["f", ["right_gui", "right_alt"]]]) %>
+      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
     },
     {
       "description": "LeftOption + Q_WindowUP",

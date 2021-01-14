@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver100",
+  "title": "WindowControl_ver101",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -196,8 +196,8 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui",
-                "right_alt"
+                "right_control",
+                "right_gui"
               ]
             }
           ]
