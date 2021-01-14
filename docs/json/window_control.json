@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver1",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -189,6 +189,27 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_gui"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + Period_MaxWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "fn"
               ]
             }
           },

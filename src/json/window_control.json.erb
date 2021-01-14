@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver1",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -62,6 +62,12 @@
       "description": "RightCommand + Period_MaxWindow",
       "type": "basic",
       "from": <%= from("period", ["right_gui"]) %>,
+      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
+    },
+    {
+      "description": "Fn + Period_MaxWindow",
+      "type": "basic",
+        "from": <%= from("period", ["fn"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
     },
     {
