@@ -2,7 +2,7 @@
   "title": "Replacekey",
   "rules": [
     {
-      "description": "Leftoption + Space to Enter(!Finder)",
+      "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace(!Finder)",
+      "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal",
+      "description": "LeftCommand + Rightoption_equal(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "description": "RightCommand + Space_delete(!Finder)",
+      "description": "RightCommand + Space_delete_!Finder(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "description": "RightCommand + Leftoption_backslash",
+      "description": "RightCommand + Leftoption_backslash(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -154,7 +154,7 @@
       ]
     },
     {
-      "description": "LeftCommand + G_escape",
+      "description": "LeftCommand + G_escape(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I/J/K/L _Arrows",
+      "description": "LeftCommand + I/J/K/L_Arrows(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -256,7 +256,7 @@
       ]
     },
     {
-      "description": "LeftCommand + F_Tab",
+      "description": "LeftCommand + F_Tab(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy",
+      "description": "LeftAlt_Copy(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste",
+      "description": "RightOption_Paste(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent",
+      "description": "Leftoption + Rightoption_parsent(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -343,7 +343,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado",
+      "description": "Rightoption + Leftoption_anbasado(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）",
+      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)",
       "manipulators": [
         {
           "from": {
@@ -407,7 +407,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus",
+      "description": "LeftCommand + RightCommand_plus(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -429,7 +429,7 @@
       ]
     },
     {
-      "description": "RightCommand + LeftCommand_underbar",
+      "description": "RightCommand + LeftCommand_underbar(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -451,7 +451,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightcommand_hypen",
+      "description": "Leftoption + Rightcommand_hypen(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -475,7 +475,7 @@
       ]
     },
     {
-      "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number(0~9)",
+      "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number0~9(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
