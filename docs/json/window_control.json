@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver2",
+  "title": "WindowControl_ver3",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -98,7 +98,7 @@
           "description": "Fn + L_WindowRightOneThird",
           "type": "basic",
           "from": {
-            "key_code": "k",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "fn"
