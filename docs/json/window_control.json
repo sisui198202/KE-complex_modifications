@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl_ver7",
+  "title": "WindowControl_ver8",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -153,27 +153,6 @@
           "to": [
             {
               "key_code": "t",
-              "modifiers": [
-                "right_control",
-                "right_alt"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + n_WindowCenter",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
               "modifiers": [
                 "right_control",
                 "right_alt"
