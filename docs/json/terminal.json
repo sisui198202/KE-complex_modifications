@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script_ver5",
+  "title": "iterm2Script_ver6",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "description": "F2_VerificationPythonFile(iterm2Script)",
+      "description": "F4_VerificationPythonFile(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
