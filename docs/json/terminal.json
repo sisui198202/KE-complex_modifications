@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script_ver6",
+  "title": "iterm2Script_ver7",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -198,7 +198,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "f2"
+            "key_code": "f4"
           },
           "to": [
             {
