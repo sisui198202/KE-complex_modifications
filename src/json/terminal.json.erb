@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script_ver1",
+  "title": "iterm2Script_ver2",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -87,7 +87,7 @@
     {
       "type": "basic",
       "from": <%= from("f1") %>,
-      "to": <%= set_shell_command(["python  '/Users/user/Dropbox/Python/Script/tmpFileCreate.py'"]) %>
+      "to": <%= set_shell_command(["touch '/Users/user/Dropbox/iCollections/Files/tmp.py && open /Users/user/Dropbox/iCollections/Files/tmp.py'"]) %>
     }
   ]
 }
