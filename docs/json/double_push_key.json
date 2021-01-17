@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey",
+  "title": "DoublePushKey2",
   "rules": [
     {
       "description": "Double RightShift_Pipeline(Double Push)",
@@ -135,6 +135,74 @@
               {
                 "set_variable": {
                   "name": "left_shift pressed",
+                  "value": 0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "description": "Double F1_tmp2FileOpen(Double Push)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Users/user/Dropbox/iCollections/Files/tmp2.py'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "f1 pressed",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "f1 pressed",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f1"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "f1 pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "f1 pressed",
                   "value": 0
                 }
               }
