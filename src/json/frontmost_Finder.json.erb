@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder_ver3",
+    "title": "FrontmostIfFinder_ver4",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -62,7 +62,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= set_shell_command(["python '/Users/user/Dropbox/Python/Script/iCollections_FileCreate.py'"]) %>,
+          "to": <%= set_shell_command(["python  '/Users/user/Dropbox/iCollections/Drop Well/a1.py'"]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
