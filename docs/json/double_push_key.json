@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey2",
+  "title": "DoublePushKey3",
   "rules": [
     {
       "description": "Double RightShift_Pipeline(Double Push)",
@@ -187,7 +187,7 @@
               }
             },
             {
-              "key_code": "f1"
+              "shell_command": "open '/Users/user/Dropbox/iCollections/Files/tmp1.py'"
             }
           ],
           "to_delayed_action": {
