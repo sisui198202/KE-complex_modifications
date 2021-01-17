@@ -160,7 +160,7 @@
           },
           "to": [
             {
-              "shell_command": "touch '/Users/user/Dropbox/iCollections/Files/a.txt'"
+              "shell_command": "ipython '/Users/user/Dropbox/Python/Script/iCollections_FileCreate.py'"
             }
           ],
           "conditions": [
