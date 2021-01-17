@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script_ver4",
+  "title": "iterm2Script_ver5",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -88,6 +88,26 @@
       "type": "basic",
       "from": <%= from("f1") %>,
       "to": <%= set_shell_command([["touch '/Users/user/Dropbox/iCollections/Files/tmp.py'"], ["open '/Users/user/Dropbox/iCollections/Files/tmp.py'"]]) %>
+    }
+  ]
+},
+{
+  "description": "F2_VerificationPythonFile(iterm2Script)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("f2") %>,
+      "to": <%= set_shell_command(["touch '/Users/user/Dropbox/iCollections/Files/tmp.py'"]) %>
+    }
+  ]
+},
+{
+  "description": "F3_VerificationPythonFile(iterm2Script)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("f3") %>,
+      "to": <%= set_shell_command(["open '/Users/user/Dropbox/iCollections/Files/tmp.py'"]) %>
     }
   ]
 }
