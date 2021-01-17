@@ -117,7 +117,7 @@
       ]
     },
     {
-      "description": "LeftAlt + A_FolderCreate(Finder)",
+      "description": "LeftAlt + A_FrontICollectionsFolderCreate(Finder)",
       "manipulators": [
         {
           "type": "basic",
