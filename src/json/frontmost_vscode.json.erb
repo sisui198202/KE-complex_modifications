@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -107,6 +107,17 @@
           "type": "basic",
           "from": <%= from("0", ["left_control"]) %>,
           "to": <%= to([["2",["right_alt","right_gui","right_shift"]],["i",["right_gui","right_alt"]],["n",["right_gui"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + Comma_SelectFilePathCopy(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma",["left_alt"]) %>,
+          "to": <%= to([["c", ["right_alt","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     }
