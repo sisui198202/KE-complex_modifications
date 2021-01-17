@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder_ver6",
+  "title": "FrontmostIfFinder_ver7",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -164,7 +164,7 @@
           },
           "to": [
             {
-              "shell_command": "python  '/Users/user/Dropbox/iCollections/Drop Well/a1.py'"
+              "shell_command": "touch '/Users/user/Dropbox/iCollections/Files/a1.py'"
             }
           ],
           "conditions": [
