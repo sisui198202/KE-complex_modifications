@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder_ver5",
+  "title": "FrontmostIfFinder_ver6",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -131,7 +131,11 @@
           },
           "to": [
             {
-              "shell_command": "python '/Users/user/Dropbox/Python/Script/iCollections_FileCreate.py'"
+              "key_code": "n",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
