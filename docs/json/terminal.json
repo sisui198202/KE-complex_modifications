@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script_ver11",
+  "title": "iterm2Script_ver12",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -179,7 +179,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/iCollections/Files/tmp.py'"
+              "shell_command": "open '/Users/user/Dropbox/iCollections/Files/tmp1.py'"
             }
           ]
         }
@@ -195,7 +195,7 @@
           },
           "to": [
             {
-              "shell_command": "ipython '/Users/user/Dropbox/iCollections/Files/tmp.py'"
+              "shell_command": "python '/Users/user/Dropbox/Python/Script/tmpFileCreate.py'"
             }
           ]
         }
