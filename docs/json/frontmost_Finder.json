@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder_ver7",
+  "title": "FrontmostIfFinder_ver8",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -131,11 +131,7 @@
           },
           "to": [
             {
-              "key_code": "n",
-              "modifiers": [
-                "right_shift",
-                "right_gui"
-              ]
+              "shell_command": "mkdir '/Users/user/Dropbox/iCollections/Folder1/a'"
             }
           ],
           "conditions": [
@@ -164,7 +160,7 @@
           },
           "to": [
             {
-              "shell_command": "touch '/Users/user/Dropbox/iCollections/Files/a1.py'"
+              "shell_command": "touch '/Users/user/Dropbox/iCollections/Files/a.txt'"
             }
           ],
           "conditions": [
