@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder_ver9",
+  "title": "FrontmostIfFinder_ver10",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -131,7 +131,7 @@
           },
           "to": [
             {
-              "shell_command": "ipython '/Users/user/Dropbox/Python/Script/FrontIcollectionFolderCreate.py'"
+              "shell_command": "mkdir '/Users/user/Dropbox/iCollections/TmpFolder/z'"
             }
           ],
           "conditions": [
@@ -160,7 +160,7 @@
           },
           "to": [
             {
-              "shell_command": "ipython '/Users/user/Dropbox/Python/Script/iCollections_FileCreate.py'"
+              "shell_command": "fi"
             }
           ],
           "conditions": [

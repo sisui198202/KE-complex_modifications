@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script_ver16",
+  "title": "iterm2Script",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -78,16 +78,6 @@
       "type": "basic",
       "from": <%= from("slash", ["left_alt"]) %>,
       "to": <%= set_shell_command(["open -a 'finder.app'"]) %>
-    }
-  ]
-},
-{
-  "description": "F7_PythonFileCreate(iterm2Script)3",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": <%= from("f7") %>,
-      "to": <%= set_shell_command(["python '/Users/user/Dropbox/iCollections/Files/tmp1.py'"]) %>
     }
   ]
 }
