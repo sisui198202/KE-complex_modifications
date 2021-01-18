@@ -2,22 +2,6 @@
   "title": "PersonalRules(@sisui)",
   "rules": [
     {
-      "description": "F2_Rename",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f2"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + A_NewFileCreate",
       "manipulators": [
         {

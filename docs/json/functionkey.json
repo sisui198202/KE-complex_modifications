@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey2",
+  "title": "FunctionKey3",
   "rules": [
     {
       "description": "Double F1_tmp2FileOpen(Double Push)",
@@ -95,7 +95,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsx'"
+              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsx'"
             }
           ]
         }
@@ -111,7 +111,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a '/Users/user/Dropbox/iCollections/Folder2/Summary/rule.txt'"
+              "shell_command": "open '/Users/user/Dropbox/iCollections/Folder2/Summary/rule.txt'"
             }
           ]
         }
