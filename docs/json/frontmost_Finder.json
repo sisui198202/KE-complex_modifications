@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder_ver15",
+  "title": "FrontmostIfFinder_ver16",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -131,7 +131,7 @@
           },
           "to": [
             {
-              "shell_command": "mkdir '$(date +%Y%m%d+.txt)'"
+              "shell_command": "mkdir `'date +%m%d%H%M%.txt'`"
             }
           ],
           "conditions": [
@@ -160,7 +160,7 @@
           },
           "to": [
             {
-              "shell_command": "touch '$(date +%Y%m%d+.txt)'"
+              "shell_command": "touch `'date +%m%d%H%M%.txt'`"
             }
           ],
           "conditions": [
