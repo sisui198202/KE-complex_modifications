@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder_ver10",
+  "title": "FrontmostIfFinder_ver12",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -131,7 +131,7 @@
           },
           "to": [
             {
-              "shell_command": "mkdir '/Users/user/Dropbox/iCollections/TmpFolder/z'"
+              "shell_command": "mkdir '`date +%H%M%S%.txt`'"
             }
           ],
           "conditions": [
@@ -160,7 +160,7 @@
           },
           "to": [
             {
-              "shell_command": "fi"
+              "shell_command": "touch `date +%H%M%S%.txt`"
             }
           ],
           "conditions": [
