@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode2",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -51,7 +51,7 @@
         {
           "type": "basic",
           "from": <%= from("b", ["left_alt"]) %>,
-          "to": <%= to([["f5", ["right_gui"]]]) %>,
+          "to": <%= to([["f5", ["right_gui"]],["return_or_enter"]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
