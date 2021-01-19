@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -144,9 +144,9 @@
           },
           "to": [
             {
-              "key_code": "b",
+              "key_code": "f5",
               "modifiers": [
-                "right_alt"
+                "right_gui"
               ]
             }
           ],
