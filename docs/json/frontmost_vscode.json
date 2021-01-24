@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "description": "LeftAlt + B_DebugStart (vscode)",
+      "description": "RightAlt + B_DebugStart (vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -138,7 +138,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_alt"
               ]
             }
           },
@@ -405,6 +405,39 @@
           "type": "basic",
           "from": {
             "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + B_StartDebug(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
             "modifiers": {
               "mandatory": [
                 "right_alt"
