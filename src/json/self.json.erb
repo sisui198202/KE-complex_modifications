@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -221,6 +221,28 @@
           "type": "basic",
           "from": <%= from("k", ["right_gui"]) %>,
           "to": <%= to([["l","right_gui"],["delete_or_backspace"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + S_AlfredHotkey(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["left_alt"]) %>,
+          "to": <%= to([["open_bracket", ["right_control","right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+        {
+      "description": "RightAlt + S_Clipboardlist(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["right_alt"]) %>,
+          "to": <%= to([["quote", ["right_control","right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     }

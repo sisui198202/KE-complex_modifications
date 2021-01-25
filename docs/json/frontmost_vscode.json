@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode2",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -483,39 +483,6 @@
               "modifiers": [
                 "right_shift",
                 "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + S_Clipboardlist(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "quote",
-              "modifiers": [
-                "right_control",
-                "right_alt"
               ]
             }
           ],
