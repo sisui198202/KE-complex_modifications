@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)3",
+  "title": "PersonalRules(@sisui)4",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -234,13 +234,23 @@
         }
       ]
     },
-        {
+    {
       "description": "RightAlt + S_Clipboardlist(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("s", ["right_alt"]) %>,
           "to": <%= to([["quote", ["right_control","right_alt"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + X_AppWindowSelect(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x", ["right_alt"]) %>,
+          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>
         }
       ]
     }
