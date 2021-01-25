@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)3",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -573,14 +573,6 @@
                 "right_alt"
               ]
             }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
           ]
         }
       ]
@@ -604,14 +596,6 @@
               "modifiers": [
                 "right_control",
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
               ]
             }
           ]

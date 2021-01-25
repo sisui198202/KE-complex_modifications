@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)3",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -230,8 +230,7 @@
         {
           "type": "basic",
           "from": <%= from("s", ["left_alt"]) %>,
-          "to": <%= to([["open_bracket", ["right_control","right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          "to": <%= to([["open_bracket", ["right_control","right_alt"]]]) %>
         }
       ]
     },
@@ -241,10 +240,10 @@
         {
           "type": "basic",
           "from": <%= from("s", ["right_alt"]) %>,
-          "to": <%= to([["quote", ["right_control","right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          "to": <%= to([["quote", ["right_control","right_alt"]]]) %>
         }
       ]
     }
+
   ]
 }
