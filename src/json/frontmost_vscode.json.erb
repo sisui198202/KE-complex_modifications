@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode2",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -143,13 +143,35 @@
         }
       ]
     },
-        {
+    {
       "description": "RightAlt + B_StartDebug(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("b", ["right_alt"]) %>,
           "to": <%= to([["9", ["right_gui","right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + A_VscodeNewWindows(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_alt"]) %>,
+          "to": <%= to([["n", ["right_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + S_Clipboardlist(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["right_alt"]) %>,
+          "to": <%= to([["quote", ["right_control","right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
