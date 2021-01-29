@@ -553,7 +553,7 @@
       ]
     },
     {
-      "description": "LeftAlt + S_AlfredHotkey(vscode)",
+      "description": "LeftAlt + S_AlfredHotkey",
       "manipulators": [
         {
           "type": "basic",
@@ -578,7 +578,7 @@
       ]
     },
     {
-      "description": "RightAlt + D_Clipboardlist(vscode)",
+      "description": "RightAlt + D_Clipboardlist",
       "manipulators": [
         {
           "type": "basic",
@@ -603,7 +603,7 @@
       ]
     },
     {
-      "description": "RightAlt + X_AppWindowSelect(vscode)",
+      "description": "RightAlt + X_AppWindowSelect",
       "manipulators": [
         {
           "type": "basic",
@@ -627,7 +627,7 @@
       ]
     },
     {
-      "description": "RightAlt + S_PythonDirectoryinfiles(vscode)",
+      "description": "RightAlt + S_PythonDirectoryinfiles",
       "manipulators": [
         {
           "type": "basic",
