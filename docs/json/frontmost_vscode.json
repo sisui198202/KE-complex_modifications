@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -399,12 +399,12 @@
       ]
     },
     {
-      "description": "RightAlt + G_TerminalClose(vscode)",
+      "description": "RightAlt + T_TerminalClose(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
                 "right_alt"
