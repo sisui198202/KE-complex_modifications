@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode12",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -122,11 +122,11 @@
       ]
     },
     {
-      "description": "RightAlt + T_FolderInSearch(vscode)",
+      "description": "RightAlt + H_FolderInSearch(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["right_alt"]) %>,
+          "from": <%= from("h", ["right_alt"]) %>,
           "to": <%= to([["f", ["right_gui","right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
