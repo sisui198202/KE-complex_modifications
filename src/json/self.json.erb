@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)5",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -235,11 +235,11 @@
       ]
     },
     {
-      "description": "RightAlt + S_Clipboardlist(vscode)",
+      "description": "RightAlt + D_Clipboardlist(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s", ["right_alt"]) %>,
+          "from": <%= from("d", ["right_alt"]) %>,
           "to": <%= to([["quote", ["right_control","right_alt"]]]) %>
         }
       ]
@@ -251,6 +251,16 @@
           "type": "basic",
           "from": <%= from("x", ["right_alt"]) %>,
           "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + S_PythonDirectoryinfiles(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["right_alt"]) %>,
+          "to": <%= to([["9", ["right_alt","right_gui"]]]) %>
         }
       ]
     }
