@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome1",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
