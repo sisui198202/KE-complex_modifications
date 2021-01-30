@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome",
+  "title": "FrontmostIfChrome1",
   "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -82,6 +82,39 @@
           "to": [
             {
               "key_code": "i",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + H_PageSourchOutput(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "u",
               "modifiers": [
                 "right_alt",
                 "right_gui"
