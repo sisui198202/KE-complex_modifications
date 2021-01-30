@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -513,6 +513,39 @@
           "to": [
             {
               "key_code": "u",
+              "modifiers": [
+                "right_control",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + Period_OpenIntegrateTerminal(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
               "modifiers": [
                 "right_control",
                 "right_alt"
