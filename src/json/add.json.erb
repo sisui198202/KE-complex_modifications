@@ -7,7 +7,7 @@
         {
           "type": "basic",
           "from": <%= from("k", ["right_gui"]) %>,
-          "to": <%= to([["l","right_gui"],["delete_or_backspace"]]) %>
+          "to": <%= to([["l", "right_gui"], ["delete_or_backspace"]]) %>
         }
       ]
     },
@@ -18,6 +18,33 @@
           "type": "basic",
           "from": <%= from("f1") %>,
           "to": <%= to(["a"]) %>
+        }
+      ]
+    },
+    {
+      "description": "Fn + period_ChromeUp&VscodeDown(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Google Chrome.app'"
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ]
         }
       ]
     }
