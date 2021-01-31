@@ -1,5 +1,5 @@
 {
-  "title": "Add_1",
+  "title": "Add_2",
   "rules": [
     {
       "description": "None",
@@ -61,6 +61,15 @@
             },
             {
               "key_code": "4",
+              "modifiers": [
+                "left_alt"
+              ]
+            },
+            {
+              "shell_command": "open -a 'Visual Studio Code.app'"
+            },
+            {
+              "key_code": "5",
               "modifiers": [
                 "left_alt"
               ]
