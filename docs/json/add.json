@@ -48,10 +48,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "j",
+            "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "fn"
               ]
             }
           },
