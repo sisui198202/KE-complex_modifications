@@ -179,30 +179,6 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_Command Palete(vscode_sublime)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftAlt + N_prettifyコード整形(vscode_sublime)",
       "manipulators": [
         {
