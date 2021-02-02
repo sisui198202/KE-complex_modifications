@@ -69,6 +69,74 @@
                 }
             ]
         },
+        {
+            "description": "Double F11_PasswordfileOpen(Double Push)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f11",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                        "shell_command": "open '/Users/user/Dropbox/パスワードメルアド/パスワード.INI'"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "f11 pressed",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f11",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "f11 pressed",
+                                "value": 1
+                            }
+                        },
+                        {
+                            "shell_command": "open '/Users/user/Dropbox/パスワードメルアド/server_ftp_password.ini'"
+                        }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [
+                            {
+                                "set_variable": {
+                                    "name": "f11 pressed",
+                                    "value": 0
+                                }
+                            }
+                        ],
+                        "to_if_canceled": [
+                            {
+                                "set_variable": {
+                                    "name": "f11 pressed",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
   {
       "description": "F2_Rename",
       "manipulators": [
