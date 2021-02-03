@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfTerminal",
+  "title": "FrontmostIfTerminal1",
   "rules": [
     {
       "description": "RightCommand + A_TagCreate(terminal)",
@@ -34,12 +34,12 @@
       ]
     },
     {
-      "description": "LeftAlt + C_Clear(terminal)",
+      "description": "LeftAlt + U_Clear(terminal)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "c",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
                 "left_alt"
