@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIterm3",
+  "title": "FrontmostIfIterm",
   "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
