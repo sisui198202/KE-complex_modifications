@@ -1,6 +1,6 @@
 <%# %>
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -235,11 +235,11 @@
       ]
     },
     {
-      "description": "RightAlt + D_Clipboardlist",
+      "description": "RightAlt + C_Clipboardlist",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d", ["right_alt"]) %>,
+          "from": <%= from("c", ["right_alt"]) %>,
           "to": <%= to([["quote", ["right_control","right_alt"]]]) %>
         }
       ]
@@ -261,6 +261,16 @@
           "type": "basic",
           "from": <%= from("s", ["right_alt"]) %>,
           "to": <%= to([["8", ["right_alt","right_gui"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + D_SummaryDirectoryinfiles",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("d", ["right_alt"]) %>,
+          "to": <%= to([["7", ["right_alt","right_gui"]]]) %>
         }
       ]
     }

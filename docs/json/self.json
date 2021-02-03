@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -578,12 +578,12 @@
       ]
     },
     {
-      "description": "RightAlt + D_Clipboardlist",
+      "description": "RightAlt + C_Clipboardlist",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "d",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
                 "right_alt"
@@ -642,6 +642,31 @@
           "to": [
             {
               "key_code": "8",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + D_SummaryDirectoryinfiles",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
               "modifiers": [
                 "right_alt",
                 "right_gui"
