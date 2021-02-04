@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
     {
       "description": "Double F1_tmp2FileOpen(Double Push)",
@@ -152,7 +152,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/iCollections/Folder2/Summary/terminal.txt'"
+              "shell_command": "open '/Users/user/.zshrc'"
             }
           ],
           "conditions": [
@@ -181,7 +181,7 @@
               }
             },
             {
-              "shell_command": "open '/Users/user/.zshrc'"
+              "shell_command": "open '/Users/user/.zsh/alias_setting.zsh'"
             }
           ],
           "to_delayed_action": {
