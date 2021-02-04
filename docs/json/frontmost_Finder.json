@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder1",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -131,7 +131,7 @@
           },
           "to": [
             {
-              "shell_command": "mkdir '/Users/user/Dropbox/iCollections/TmpFolder/z'"
+              "shell_command": "mkdir '/Users/user/Desktop/iCollections/TmpFolder/z'"
             }
           ],
           "conditions": [
@@ -160,7 +160,7 @@
           },
           "to": [
             {
-              "shell_command": "touch '/Users/user/Dropbox/iCollections/TmpFile/z.txt'"
+              "shell_command": "touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"
             }
           ],
           "conditions": [
