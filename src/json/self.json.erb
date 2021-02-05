@@ -1,6 +1,5 @@
-<%# %>
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -8,7 +7,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= to([["n",["right_gui"]]]) %>
+          "to": <%= to([["n", ["right_gui"]]]) %>
         }
       ]
     },
@@ -18,7 +17,7 @@
         {
           "type": "basic",
           "from": <%= from("v", ["left_control"]) %>,
-          "to": <%= to([["q",["right_gui"]]]) %>
+          "to": <%= to([["q", ["right_gui"]]]) %>
         }
       ]
     },
@@ -28,7 +27,7 @@
         {
           "type": "basic",
           "from": <%= from("w", ["left_control"]) %>,
-          "to": <%= to([["e",["left_shift","left_control"]]]) %>
+          "to": <%= to([["e", ["left_shift", "left_control"]]]) %>
         }
       ]
     },
@@ -38,7 +37,7 @@
         {
           "type": "basic",
           "from": <%= from("m", ["left_control"]) %>,
-          "to": <%= to([["right_arrow",["fn"]]]) %>,
+          "to": <%= to([["right_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
       ]
@@ -49,7 +48,7 @@
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
-          "to": <%= to([["z",["left_gui"]]]) %>
+          "to": <%= to([["z", ["left_gui"]]]) %>
         }
       ]
     },
@@ -59,7 +58,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["left_control"]) %>,
-          "to": <%= to([["e",["left_control"]]]) %>
+          "to": <%= to([["e", ["left_control"]]]) %>
         }
       ]
     },
@@ -69,7 +68,7 @@
         {
           "type": "basic",
           "from": <%= from("t", ["right_gui"]) %>,
-          "to": <%= to([["f",["right_gui"]]]) %>
+          "to": <%= to([["f", ["right_gui"]]]) %>
         }
       ]
     },
@@ -79,7 +78,7 @@
         {
           "type": "basic",
           "from": <%= from("c", ["left_control"]) %>,
-          "to": <%= to([["q",["right_alt"]]]) %>
+          "to": <%= to([["q", ["right_alt"]]]) %>
         }
       ]
     },
@@ -89,7 +88,7 @@
         {
           "type": "basic",
           "from": <%= from("n", ["left_control"]) %>,
-          "to": <%= to([["left_arrow",["fn"]]]) %>,
+          "to": <%= to([["left_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
       ]
@@ -100,7 +99,7 @@
         {
           "type": "basic",
           "from": <%= from("e", ["left_control"]) %>,
-          "to": <%= to([["right_arrow",["left_control","left_shift"]]]) %>
+          "to": <%= to([["right_arrow", ["left_control", "left_shift"]]]) %>
         }
       ]
     },
@@ -110,7 +109,7 @@
         {
           "type": "basic",
           "from": <%= from("d", ["left_control"]) %>,
-          "to": <%= to([["a",["right_gui"]]]) %>
+          "to": <%= to([["a", ["right_gui"]]]) %>
         }
       ]
     },
@@ -120,7 +119,7 @@
         {
           "type": "basic",
           "from": <%= from("b", ["left_control"]) %>,
-          "to": <%= to([["down_arrow",["fn"]]]) %>
+          "to": <%= to([["down_arrow", ["fn"]]]) %>
         }
       ]
     },
@@ -130,7 +129,7 @@
         {
           "type": "basic",
           "from": <%= from("slash", ["left_control"]) %>,
-          "to": <%= to([["up_arrow",["fn"]]]) %>
+          "to": <%= to([["up_arrow", ["fn"]]]) %>
         }
       ]
     },
@@ -140,7 +139,7 @@
         {
           "type": "basic",
           "from": <%= from("o", ["left_alt"]) %>,
-          "to": <%= to([["s",["right_gui"]]]) %>
+          "to": <%= to([["s", ["right_gui"]]]) %>
         }
       ]
     },
@@ -150,7 +149,7 @@
         {
           "type": "basic",
           "from": <%= from("s", ["left_control"]) %>,
-          "to": <%= to([["x",["right_gui"]]]) %>
+          "to": <%= to([["x", ["right_gui"]]]) %>
         }
       ]
     },
@@ -160,7 +159,7 @@
         {
           "type": "basic",
           "from": <%= from("g", ["right_gui"]) %>,
-          "to": <%= to([["w",["right_gui"]]]) %>
+          "to": <%= to([["w", ["right_gui"]]]) %>
         }
       ]
     },
@@ -170,7 +169,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
-          "to": <%= to([["tab",["left_control"]]]) %>
+          "to": <%= to([["tab", ["left_control"]]]) %>
         }
       ]
     },
@@ -180,7 +179,7 @@
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
-          "to": <%= to([["tab",["left_control","left_shift"]]]) %>
+          "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>
         }
       ]
     },
@@ -190,7 +189,7 @@
         {
           "type": "basic",
           "from": <%= from("comma", ["left_control"]) %>,
-          "to": <%= to([["tab",["right_gui","left_shift"]]]) %>
+          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>
         }
       ]
     },
@@ -200,7 +199,7 @@
         {
           "type": "basic",
           "from": <%= from("period", ["left_control"]) %>,
-          "to": <%= to([["tab","right_gui"]]) %>
+          "to": <%= to([["tab", "right_gui"]]) %>
         }
       ]
     },
@@ -210,7 +209,7 @@
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["l","right_gui"],["left_arrow",["left_shift"]]]) %>
+          "to": <%= to([["l", "right_gui"], ["left_arrow", ["left_shift"]]]) %>
         }
       ]
     },
@@ -220,7 +219,7 @@
         {
           "type": "basic",
           "from": <%= from("k", ["right_gui"]) %>,
-          "to": <%= to([["l","right_gui"],["delete_or_backspace"]]) %>
+          "to": <%= to([["l", "right_gui"], ["delete_or_backspace"]]) %>
         }
       ]
     },
@@ -230,7 +229,7 @@
         {
           "type": "basic",
           "from": <%= from("s", ["left_alt"]) %>,
-          "to": <%= to([["open_bracket", ["right_control","right_alt"]]]) %>
+          "to": <%= to([["open_bracket", ["right_control", "right_alt"]]]) %>
         }
       ]
     },
@@ -240,7 +239,7 @@
         {
           "type": "basic",
           "from": <%= from("c", ["right_alt"]) %>,
-          "to": <%= to([["quote", ["right_control","right_alt"]]]) %>
+          "to": <%= to([["quote", ["right_control", "right_alt"]]]) %>
         }
       ]
     },
@@ -260,7 +259,7 @@
         {
           "type": "basic",
           "from": <%= from("s", ["right_alt"]) %>,
-          "to": <%= to([["8", ["right_alt","right_gui"]]]) %>
+          "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>
         }
       ]
     },
@@ -270,7 +269,17 @@
         {
           "type": "basic",
           "from": <%= from("d", ["right_alt"]) %>,
-          "to": <%= to([["7", ["right_alt","right_gui"]]]) %>
+          "to": <%= to([["7", ["right_alt", "right_gui"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + V_AlfredSnippetsCall",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v", ["right_alt"]) %>,
+          "to": <%= to([["6", ["right_alt", "right_gui"]]]) %>
         }
       ]
     }
