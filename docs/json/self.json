@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)3",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -691,7 +691,7 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "3",
               "modifiers": [
                 "left_control",
                 "right_alt"
