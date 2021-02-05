@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script2",
+  "title": "iterm2Script4",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -87,6 +87,16 @@
     {
       "type": "basic",
       "from": <%= from("g", ["right_alt"]) %>,
+      "to": <%= set_shell_command(['"pro"']) %>
+    }
+  ]
+},
+{
+  "description": "RightAlt + O_tesuto(iterm2Script)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("o", ["right_alt"]) %>,
       "to": <%= set_shell_command(["pro"]) %>
     }
   ]

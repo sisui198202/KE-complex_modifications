@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script2",
+  "title": "iterm2Script4",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -176,6 +176,27 @@
           "type": "basic",
           "from": {
             "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "\"pro\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + O_tesuto(iterm2Script)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "right_alt"
