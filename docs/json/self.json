@@ -700,6 +700,31 @@
           ]
         }
       ]
+    },
+    {
+      "description": "RightAlt + F_AlfredSnippetsCall",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_control",
+                "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
