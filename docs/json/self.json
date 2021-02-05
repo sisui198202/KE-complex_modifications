@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)2",
+  "title": "PersonalRules(@sisui)3",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -702,7 +702,7 @@
       ]
     },
     {
-      "description": "RightAlt + F_AlfredSnippetsCall",
+      "description": "RightAlt + F_AlfredArticleitemCall",
       "manipulators": [
         {
           "type": "basic",
