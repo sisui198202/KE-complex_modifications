@@ -195,17 +195,6 @@
             dest_keys_list: [["japanese_eisuu", "0"], ["japanese_eisuu", "1"], ["japanese_eisuu", "2"], ["japanese_eisuu", "3"], ["japanese_eisuu", "4"], ["japanese_eisuu", "5"], ["japanese_eisuu", "6"], ["japanese_eisuu", "7"], ["japanese_eisuu", "8"], ["japanese_eisuu", "9"]],
             as_json: true,
           ) %>
-    },
-    {
-      "description": "LeftCommand + I/J/K/L_Arrows(Replacekey)",
-      "manipulators":
-      <%= each_key(
-            source_keys_list: ["i", "j", "k", "l"],
-            from_mandatory_modifiers: ["left_control"],
-            from_optional_modifiers: ["any"],
-            dest_keys_list: ["up_arrow", "left_arrow", "down_arrow", "right_arrow"],
-            as_json: true,
-          ) %>
     }
   ]
 }
