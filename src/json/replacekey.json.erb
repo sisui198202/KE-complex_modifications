@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey1",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("spacebar", ["left_control"]) %>,
-          "to": <%= to([["japanese_eisuu"],["delete_or_backspace"]]) %>,
+          "to": <%= to([["japanese_eisuu"], ["delete_or_backspace"]]) %>,
           "conditions": [ <%= frontmost_application_unless("finder") %> ]
         }
       ]
@@ -29,18 +29,18 @@
         {
           "type": "basic",
           "from": <%= from("right_alt", ["left_control"]) %>,
-          "to": <%= to([["japanese_eisuu"],["equal_sign"]]) %>,
+          "to": <%= to([["japanese_eisuu"], ["equal_sign"]]) %>,
           "conditions": [ <%= frontmost_application_unless("finder") %> ]
         }
       ]
     },
-    <%# deleteを機能させるには、anyが必要%>
+    <% # deleteを機能させるには、anyが必要 %>
     {
       "description": "RightCommand + Space_delete_!Finder(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"],["any"]) %>,
+          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
           "to": <%= to([["delete_forward"]]) %>,
           "conditions": [ <%= frontmost_application_unless("finder") %> ]
         }
@@ -52,7 +52,7 @@
         {
           "type": "basic",
           "from": <%= from("left_alt", ["right_gui"]) %>,
-          "to": <%= to([["japanese_eisuu"],["backslash"]]) %>
+          "to": <%= to([["japanese_eisuu"], ["backslash"]]) %>
         }
       ]
     },
@@ -66,19 +66,17 @@
         }
       ]
     },
-    <%# shift + 矢印キーを機能させるには、anyが必要%>
+    <% # shift + 矢印キーを機能させるには、anyが必要 %>
     {
       "description": "LeftCommand + I/J/K/L_Arrows(Replacekey)",
       "manipulators":
-      <%=
-               each_key(
-                 source_keys_list: ["i","j","k","l"],
-                 from_mandatory_modifiers: ["left_control"],
-                 from_optional_modifiers: ["any"],
-                 dest_keys_list: ["up_arrow","left_arrow","down_arrow","right_arrow"],
-                 as_json: true
-               )
-       %>
+      <%= each_key(
+            source_keys_list: ["i", "j", "k", "l"],
+            from_mandatory_modifiers: ["left_control"],
+            from_optional_modifiers: ["any"],
+            dest_keys_list: ["up_arrow", "left_arrow", "down_arrow", "right_arrow"],
+            as_json: true,
+          ) %>
     },
     {
       "description": "LeftCommand + F_Tab(Replacekey)",
@@ -97,7 +95,7 @@
           "type": "basic",
           "from": <%= from("left_alt") %>,
           "to": <%= to([["left_alt"]]) %>,
-          "to_if_alone": <%= to([["c","right_gui"]]) %>
+          "to_if_alone": <%= to([["c", "right_gui"]]) %>
         }
       ]
     },
@@ -108,7 +106,7 @@
           "type": "basic",
           "from": <%= from("right_alt") %>,
           "to": <%= to([["right_alt"]]) %>,
-          "to_if_alone": <%= to([["v","left_gui"]]) %>
+          "to_if_alone": <%= to([["v", "left_gui"]]) %>
         }
       ]
     },
@@ -118,7 +116,7 @@
         {
           "type": "basic",
           "from": <%= from("right_alt", ["left_alt"]) %>,
-          "to": <%= to([["5","right_shift"]]) %>
+          "to": <%= to([["5", "right_shift"]]) %>
         }
       ]
     },
@@ -127,8 +125,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("left_alt", ["right_alt"],["any"]) %>,
-          "to": <%= to([["7","right_shift"]]) %>
+          "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
+          "to": <%= to([["7", "right_shift"]]) %>
         }
       ]
     },
@@ -177,7 +175,7 @@
         {
           "type": "basic",
           "from": <%= from("right_gui", ["left_control"]) %>,
-          "to": <%= to([["equal_sign","right_shift"]]) %>
+          "to": <%= to([["equal_sign", "right_shift"]]) %>
         }
       ]
     },
@@ -187,7 +185,7 @@
         {
           "type": "basic",
           "from": <%= from("left_control", ["right_gui"]) %>,
-          "to": <%= to([["hyphen","right_shift"]]) %>
+          "to": <%= to([["hyphen", "right_shift"]]) %>
         }
       ]
     },
@@ -197,21 +195,19 @@
         {
           "type": "basic",
           "from": <%= from("right_gui", ["left_alt"]) %>,
-          "to": <%= to([["japanese_eisuu"],["hyphen"]]) %>
+          "to": <%= to([["japanese_eisuu"], ["hyphen"]]) %>
         }
       ]
     },
     {
       "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number0~9(Replacekey)",
       "manipulators":
-      <%=
-              each_key(
-                source_keys_list: ["z", "x", "c", "v","s","d","f","w","e","r"],
-                from_mandatory_modifiers: ["right_gui"],
-                dest_keys_list: [["japanese_eisuu","0"],["japanese_eisuu","1"], ["japanese_eisuu","2"], ["japanese_eisuu","3"],["japanese_eisuu","4"],["japanese_eisuu","5"],["japanese_eisuu","6"],["japanese_eisuu","7"],["japanese_eisuu","8"],["japanese_eisuu","9"]],
-                as_json: true
-              )
-      %>
+      <%= each_key(
+            source_keys_list: ["z", "x", "c", "v", "s", "d", "f", "w", "e", "r"],
+            from_mandatory_modifiers: ["right_gui"],
+            dest_keys_list: [["japanese_eisuu", "0"], ["japanese_eisuu", "1"], ["japanese_eisuu", "2"], ["japanese_eisuu", "3"], ["japanese_eisuu", "4"], ["japanese_eisuu", "5"], ["japanese_eisuu", "6"], ["japanese_eisuu", "7"], ["japanese_eisuu", "8"], ["japanese_eisuu", "9"]],
+            as_json: true,
+          ) %>
     }
   ]
 }
