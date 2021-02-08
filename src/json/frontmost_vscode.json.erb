@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -62,7 +62,7 @@
         {
           "type": "basic",
           "from": <%= from("i", ["left_alt"]) %>,
-          "to": <%= to([["4", ["left_control","left_alt"]]]) %>,
+          "to": <%= to([["4", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -73,7 +73,7 @@
         {
           "type": "basic",
           "from": <%= from("comma", ["right_gui"]) %>,
-          "to": <%= to([["o", ["left_control","left_alt"]]]) %>,
+          "to": <%= to([["o", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -84,7 +84,7 @@
         {
           "type": "basic",
           "from": <%= from("u", ["left_alt"]) %>,
-          "to": <%= to([["2", ["right_control","left_alt"]]]) %>,
+          "to": <%= to([["2", ["right_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -95,7 +95,7 @@
         {
           "type": "basic",
           "from": <%= from("n", ["left_alt"]) %>,
-          "to": <%= to([["f", ["right_alt","left_shift"]]]) %>,
+          "to": <%= to([["f", ["right_alt", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -106,7 +106,7 @@
         {
           "type": "basic",
           "from": <%= from("0", ["left_control"]) %>,
-          "to": <%= to([["2",["right_alt","right_gui","right_shift"]],["i",["right_gui","right_alt"]],["n",["right_gui"]]]) %>
+          "to": <%= to([["2", ["right_alt", "right_gui", "right_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>
         }
       ]
     },
@@ -115,8 +115,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma",["left_alt"]) %>,
-          "to": <%= to([["f9", ["right_control","right_alt"]]]) %>,
+          "from": <%= from("comma", ["left_alt"]) %>,
+          "to": <%= to([["f9", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -127,7 +127,7 @@
         {
           "type": "basic",
           "from": <%= from("h", ["right_alt"]) %>,
-          "to": <%= to([["f", ["right_gui","right_shift"]]]) %>,
+          "to": <%= to([["f", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -138,7 +138,7 @@
         {
           "type": "basic",
           "from": <%= from("t", ["right_alt"]) %>,
-          "to": <%= to([["7", ["right_gui","right_alt"]]]) %>,
+          "to": <%= to([["7", ["right_gui", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -149,7 +149,7 @@
         {
           "type": "basic",
           "from": <%= from("b", ["right_alt"]) %>,
-          "to": <%= to([["9", ["right_gui","right_alt"]]]) %>,
+          "to": <%= to([["9", ["right_gui", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -160,7 +160,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["right_alt"]) %>,
-          "to": <%= to([["n", ["right_shift","right_gui"]]]) %>,
+          "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -171,7 +171,7 @@
         {
           "type": "basic",
           "from": <%= from("z", ["right_alt"]) %>,
-          "to": <%= to([["u", ["right_control","right_alt"]]]) %>,
+          "to": <%= to([["u", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -182,7 +182,18 @@
         {
           "type": "basic",
           "from": <%= from("period", ["right_alt"]) %>,
-          "to": <%= to([["6", ["right_control","right_alt"]]]) %>,
+          "to": <%= to([["6", ["right_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + OpenBracket_すべてのコマンドを表示(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("openbracket", ["left_control"]) %>,
+          "to": <%= to([["openbracket", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
