@@ -1,5 +1,5 @@
 {
-  "title": "Vim emulation1",
+  "title": "Vim emulation2",
   "rule_list": false,
   "make_extra_description": true,
   "rules": [
@@ -11,7 +11,7 @@
     {
       "description": "Vim emulation: Ctrl-[ to enter normal mode",
       "extra_description_level": 1,
-      "manipulators": <%= vim_emu_esc([hash_from("c", ["control"])], true) %>
+      "manipulators": <%= vim_emu_esc([hash_from("open_bracket", ["control"])], true) %>
     },
     {
       "description": "Vim emulation: Simultaneous jk to toggle normal-insert mode",
