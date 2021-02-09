@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEvernote",
+  "title": "FrontmostIfEvernote1",
   "rules": [
     {
       "description": "Delete_NoteDelete(Evernote)",
@@ -14,6 +14,42 @@
               "key_code": "delete_or_backspace",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.evernote.Evernote$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Spacebar_Delete(Evernote)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "left_control",
+                "left_shift"
               ]
             }
           ],
