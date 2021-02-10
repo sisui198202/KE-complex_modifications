@@ -131,30 +131,6 @@
       ]
     },
     {
-      "description": "LeftCommand + ;_RowEndCursolMove",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "e",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + T_Search",
       "manipulators": [
         {
