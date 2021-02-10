@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode6",
+    "title": "FrontmostIfVscode7",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -177,12 +177,12 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_FileSearch2(vscode)",
+      "description": "LeftCommand + OpenBracket_FileSearch3(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("openbracket", ["left_control"]) %>,
-          "to": <%= to([["openbracket", ["right_gui"]]]) %>,
+          "to": <%= to([["f7", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
