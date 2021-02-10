@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode3",
+  "title": "FrontmostIfVscode4",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -531,7 +531,39 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_すべてのコマンドを表示(vscode)",
+      "description": "LeftAlt + OpenBracket_すべてのコマンドを表示(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "openbracket",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "openbracket",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + OpenBracket_FileSearch(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -547,7 +579,7 @@
             {
               "key_code": "openbracket",
               "modifiers": [
-                "left_alt"
+                "left_gui"
               ]
             }
           ],
