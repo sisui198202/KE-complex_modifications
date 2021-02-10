@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel1",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -7,7 +7,7 @@
         {
           "type": "basic",
           "from": <%= from("9", ["left_shift"]) %>,
-          "to": <%= to([["9",["left_shift"]],["0",["left_shift"]],["left_arrow"]]) %>,
+          "to": <%= to([["9", ["left_shift"]], ["0", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("open_bracket", ["left_shift"]) %>,
-          "to": <%= to([["open_bracket",["left_shift"]],["close_bracket",["left_shift"]],["left_arrow"]]) %>,
+          "to": <%= to([["open_bracket", ["left_shift"]], ["close_bracket", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("open_bracket") %>,
-          "to": <%= to([["open_bracket"],["close_bracket"],["left_arrow"]]) %>,
+          "to": <%= to([["open_bracket"], ["close_bracket"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -39,8 +39,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma",["left_shift"]) %>,
-          "to": <%= to([["comma",["left_shift"]],["period",["left_shift"]],["left_arrow"]]) %>,
+          "from": <%= from("comma", ["left_shift"]) %>,
+          "to": <%= to([["comma", ["left_shift"]], ["period", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -50,8 +50,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("quote",["left_shift"]) %>,
-          "to": <%= to([["quote",["left_shift"]],["quote",["left_shift"]],["left_arrow"]]) %>,
+          "from": <%= from("quote", ["left_shift"]) %>,
+          "to": <%= to([["quote", ["left_shift"]], ["quote", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -62,7 +62,7 @@
         {
           "type": "basic",
           "from": <%= from("quote") %>,
-          "to": <%= to([["quote"],["quote"],["left_arrow"]]) %>,
+          "to": <%= to([["quote"], ["quote"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -73,7 +73,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["left_control"]) %>,
-          "to": <%= to([["left_arrow",["fn"]]]) %>,
+          "to": <%= to([["left_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -194,7 +194,7 @@
         {
           "type": "basic",
           "from": <%= from("t", ["left_control"]) %>,
-          "to": <%= to([["equal_sign", ["right_gui","right_shift"]]]) %>,
+          "to": <%= to([["equal_sign", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]

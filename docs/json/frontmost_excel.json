@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -26,9 +26,6 @@
               "modifiers": [
                 "left_shift"
               ]
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [
@@ -67,9 +64,6 @@
               "modifiers": [
                 "left_shift"
               ]
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [
@@ -97,9 +91,6 @@
             },
             {
               "key_code": "close_bracket"
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [
@@ -138,9 +129,6 @@
               "modifiers": [
                 "left_shift"
               ]
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [
@@ -179,9 +167,6 @@
               "modifiers": [
                 "left_shift"
               ]
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [
@@ -209,9 +194,6 @@
             },
             {
               "key_code": "quote"
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [
