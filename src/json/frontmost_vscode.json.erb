@@ -144,17 +144,6 @@
       ]
     },
     {
-      "description": "RightAlt + B_StartDebug(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("b", ["right_alt"]) %>,
-          "to": <%= to([["9", ["right_gui", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
-        }
-      ]
-    },
-    {
       "description": "RightAlt + A_VscodeNewWindows(vscode)",
       "manipulators": [
         {
@@ -165,7 +154,7 @@
         }
       ]
     },
-    {
+   {
       "description": "RightAlt + Z_Zenmode(vscode)",
       "manipulators": [
         {
