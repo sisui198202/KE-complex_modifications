@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime",
+  "title": "FrontmostIfVscodeSublime1",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
@@ -129,12 +129,12 @@
       ]
     },
     {
-      "description": "LeftCommand + H_1EditerScreen(vscode_sublime)",
+      "description": "LeftCommand + Semicolon_1EditerScreen(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "description": "LeftAlt + N_prettifyコード整形(vscode_sublime)",
+      "description": "X_LeftAlt + N_prettifyコード整形(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
