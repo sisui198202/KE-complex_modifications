@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)3",
+  "title": "PersonalRules(@sisui)4",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -193,16 +193,6 @@
         }
       ]
     },
-  {
-      "description": "rightcommand + J_1RowSelect",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["l", "right_gui"], ["left_arrow", ["left_shift"]]]) %>
-        }
-      ]
-    },
    {
       "description": "rightcommand + K_1RowCut",
       "manipulators": [
@@ -259,7 +249,7 @@
         {
           "type": "basic",
           "from": <%= from("d", ["right_alt"]) %>,
-          "to": <%= to([["7", ["right_alt", "right_gui"]]]) %>
+          "to": <%= to([["7", ["right_alt", "left_shift", "right_gui"]]]) %>
         }
       ]
     },
