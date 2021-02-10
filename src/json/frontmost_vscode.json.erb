@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode2",
+    "title": "FrontmostIfVscode3",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -166,12 +166,12 @@
       ]
     },
     {
-      "description": "RightAlt + Period_OpenIntegrateTerminal(vscode)",
+      "description": "RightAlt + Period_OpenIntegrateTerminal_a(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("period", ["right_alt"]) %>,
-          "to": <%= to([["6", ["right_control", "right_alt"]]]) %>,
+          "to": <%= to([["f2", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]

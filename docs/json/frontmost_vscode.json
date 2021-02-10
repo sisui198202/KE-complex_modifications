@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode2",
+  "title": "FrontmostIfVscode3",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "description": "RightAlt + Period_OpenIntegrateTerminal(vscode)",
+      "description": "RightAlt + Period_OpenIntegrateTerminal_a(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -512,10 +512,10 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "f2",
               "modifiers": [
-                "right_control",
-                "right_alt"
+                "right_alt",
+                "right_gui"
               ]
             }
           ],
