@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIterm2",
+    "title": "FrontmostIfIterm3",
     "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -46,11 +46,11 @@
       ]
     },
    {
-      "description": "LeftCommand + Semicoln_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
+      "description": "LeftCommand + Semicolon_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("semicoln", ["left_control"]) %>,
+          "from": <%= from("semicolon", ["left_control"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }

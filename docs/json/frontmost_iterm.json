@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIterm2",
+  "title": "FrontmostIfIterm3",
   "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -131,12 +131,12 @@
       ]
     },
     {
-      "description": "LeftCommand + Semicoln_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
+      "description": "LeftCommand + Semicolon_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "semicoln",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "left_control"
