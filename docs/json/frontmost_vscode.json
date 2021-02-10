@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode7",
+  "title": "FrontmostIfVscode8",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -531,12 +531,12 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_FileSearch3(vscode)",
+      "description": "LeftCommand + OpenBracket_FileSearch4(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "openbracket",
+            "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
                 "left_control"
