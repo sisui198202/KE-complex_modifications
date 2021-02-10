@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfVivaldi",
+    "title": "FrontmostIfVivaldi1",
     "rules": [
     {
-      "description": "LeftCommand + U_戻る(Vivaldi)",
+      "description": "X_LeftCommand + U_戻る(Vivaldi)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
-          "to": <%= to([["8", ["right_alt","right_gui"]]]) %>,
+          "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         }
       ]
