@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode8",
+  "title": "FrontmostIfVscode9",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -531,7 +531,7 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_FileSearch4(vscode)",
+      "description": "LeftCommand + OpenBracket_ファイルに移動(vscode)",
       "manipulators": [
         {
           "type": "basic",
