@@ -531,38 +531,6 @@
       ]
     },
     {
-      "description": "LeftAlt + OpenBracket_すべてのコマンドを表示(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "openbracket",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "openbracket",
-              "modifiers": [
-                "left_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + OpenBracket_FileSearch2(vscode)",
       "manipulators": [
         {
