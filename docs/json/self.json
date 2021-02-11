@@ -700,7 +700,7 @@
       ]
     },
     {
-      "description": "RightCommand + Y_ConstScrollUp",
+      "description": "RightCommand + K_ConstScrollUp",
       "manipulators": [
         {
           "type": "basic",
