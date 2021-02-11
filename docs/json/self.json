@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules1(@sisui)",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -691,6 +691,30 @@
           "to": [
             {
               "key_code": "e",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Y_ConstScrollUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "y",
               "modifiers": [
                 "left_control"
               ]

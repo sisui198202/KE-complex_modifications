@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules1(@sisui)",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -280,6 +280,16 @@
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
           "to": <%= to([["e", ["left_control"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Y_ConstScrollUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"]) %>,
+          "to": <%= to([["y", ["left_control"]]]) %>
         }
       ]
     }
