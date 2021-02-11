@@ -674,6 +674,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "RightCommand + J_ConstScrollDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

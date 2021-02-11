@@ -272,6 +272,16 @@
           "to": <%= to([["5", ["left_control", "right_alt"]]]) %>
         }
       ]
+    },
+    {
+      "description": "RightCommand + J_ConstScrollDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"]) %>,
+          "to": <%= to([["e", ["left_control"]]]) %>
+        }
+      ]
     }
   ]
 }
