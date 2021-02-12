@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscodeSublime1",
+    "title": "FrontmostIfVscodeSublime2",
     "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
@@ -49,17 +49,6 @@
           "type": "basic",
           "from": <%= from("semicolon", ["left_control"]) %>,
           "to": <%= to([["h", ["right_control", "left_shift"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "LeftCommand + T_ToggleSidebarOnOff1(vscode_sublime)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("t", ["left_control"]) %>,
-          "to": <%= to([["t", ["right_control", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },

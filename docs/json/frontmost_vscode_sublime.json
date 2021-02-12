@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime1",
+  "title": "FrontmostIfVscodeSublime2",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
@@ -147,39 +147,6 @@
               "modifiers": [
                 "right_control",
                 "left_shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + T_ToggleSidebarOnOff1(vscode_sublime)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
-              "modifiers": [
-                "right_control",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
               ]
             }
           ]
