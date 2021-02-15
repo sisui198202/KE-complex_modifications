@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode3",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "description": "LeftAlt + Comma_SelectFilePathCopy(vscode)",
+      "description": "LeftAlt + Comma_copyFilePath(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "description": "RightAlt + T_TerminalClose(vscode)",
+      "description": "RightAlt + T_workbench.action.closePanel(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -166,12 +166,12 @@
       ]
     },
     {
-      "description": "RightAlt + Period_OpenIntegrateTerminal(vscode)",
+      "description": "RightAlt + Period_SplitTerminal(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("period", ["right_alt"]) %>,
-          "to": <%= to([["f2", ["right_alt", "right_gui"]]]) %>,
+          "to": <%= to([["backslash", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]

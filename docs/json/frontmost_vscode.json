@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode3",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "description": "LeftAlt + Comma_SelectFilePathCopy(vscode)",
+      "description": "LeftAlt + Comma_copyFilePath(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -399,7 +399,7 @@
       ]
     },
     {
-      "description": "RightAlt + T_TerminalClose(vscode)",
+      "description": "RightAlt + T_workbench.action.closePanel(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "description": "RightAlt + Period_OpenIntegrateTerminal(vscode)",
+      "description": "RightAlt + Period_SplitTerminal(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -512,9 +512,8 @@
           },
           "to": [
             {
-              "key_code": "f2",
+              "key_code": "backslash",
               "modifiers": [
-                "right_alt",
                 "right_gui"
               ]
             }
