@@ -51,17 +51,6 @@
           "to": <%= to([["h", ["right_control", "left_shift"]]]) %>
         }
       ]
-    },
-    {
-      "description": "X_LeftAlt + N_prettifyコード整形(vscode_sublime)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("n", ["left_alt"]) %>,
-          "to": <%= to([["h", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("sublime") %> ]
-        }
-      ]
     }
     ]
 }
