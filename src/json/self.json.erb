@@ -292,6 +292,16 @@
           "to": <%= to([["y", ["left_control"]]]) %>
         }
       ]
+    },
+    {
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["left_gui"]) %>,
+          "to": <%= to([["e", ["right_control"]]]) %>
+        }
+      ]
     }
   ]
 }

@@ -722,6 +722,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "right_control"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
