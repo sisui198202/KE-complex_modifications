@@ -724,7 +724,7 @@
       ]
     },
     {
-      "description": "LeftCommand + semicolon_CurrentRowCursolEnd",
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd1",
       "manipulators": [
         {
           "type": "basic",
@@ -732,7 +732,7 @@
             "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ]
             }
           },
