@@ -724,7 +724,7 @@
       ]
     },
     {
-      "description": "LeftCommand + semicolon_CurrentRowCursolEnd1",
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd4",
       "manipulators": [
         {
           "type": "basic",
@@ -740,7 +740,7 @@
             {
               "key_code": "e",
               "modifiers": [
-                "right_control"
+                "left_control"
               ]
             }
           ]
