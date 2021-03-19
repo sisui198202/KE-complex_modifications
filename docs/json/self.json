@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -750,6 +750,34 @@
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + J_1RowSelection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_control"
+              ]
+            },
+            {
+              "key_code": "down_arrow",
+              "modifiers": "left_shift"
             }
           ]
         }
