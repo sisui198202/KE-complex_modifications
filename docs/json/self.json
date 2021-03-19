@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -676,7 +676,7 @@
       ]
     },
     {
-      "description": "RightCommand + J_ConstScrollDown",
+      "description": "RightAlt + J_ConstScrollDown1",
       "manipulators": [
         {
           "type": "basic",
@@ -684,7 +684,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_alt"
               ]
             }
           },
@@ -700,7 +700,7 @@
       ]
     },
     {
-      "description": "RightCommand + K_ConstScrollUp",
+      "description": "RightAlt + K_ConstScrollUp1",
       "manipulators": [
         {
           "type": "basic",
@@ -708,7 +708,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_alt"
               ]
             }
           },
