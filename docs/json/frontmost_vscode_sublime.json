@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscodeSublime",
+  "title": "FrontmostIfVscodeSublime1",
   "rules": [
     {
-      "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
+      "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
@@ -19,6 +19,40 @@
               "key_code": "return_or_enter",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$",
+                "^com.sublimetext.3$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + Z_RowCursolPreviousline(vscode_sublime)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "right_gui",
+                "left_shift"
               ]
             }
           ],
