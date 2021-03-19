@@ -299,7 +299,8 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["left_control"]) %>,
-          "to": <%= to([["e", ["right_control"]]]) %>
+          "to": <%= to([["e", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
       ]
     }

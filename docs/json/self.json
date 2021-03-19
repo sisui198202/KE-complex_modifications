@@ -743,6 +743,14 @@
                 "right_control"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
           ]
         }
       ]

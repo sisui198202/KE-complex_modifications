@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime2",
+  "title": "FrontmostIfVscodeSublime",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNewline(vscode_sublime)",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Quote_1EditerScreen2(vscode_sublime)",
+      "description": "LeftCommand + Quote_1EditerScreen(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
