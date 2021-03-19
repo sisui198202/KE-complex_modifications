@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -465,12 +465,12 @@
       ]
     },
     {
-      "description": "RightAlt + Z_Zenmode(vscode)",
+      "description": "RightAlt + Slash_Zenmode(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "slash",
             "modifiers": {
               "mandatory": [
                 "right_alt"

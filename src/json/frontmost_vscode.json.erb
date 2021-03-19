@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -155,11 +155,11 @@
       ]
     },
    {
-      "description": "RightAlt + Z_Zenmode(vscode)",
+      "description": "RightAlt + Slash_Zenmode(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_alt"]) %>,
+          "from": <%= from("slash", ["right_alt"]) %>,
           "to": <%= to([["u", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
