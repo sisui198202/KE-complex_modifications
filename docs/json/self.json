@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -724,7 +724,7 @@
       ]
     },
     {
-      "description": "LeftCommand + semicolon_CurrentRowCursolEnd1",
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd2",
       "manipulators": [
         {
           "type": "basic",
