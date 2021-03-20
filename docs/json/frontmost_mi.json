@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfmi2",
+  "title": "FrontmostIfmi",
   "rules": [
     {
-      "description": "RightCommand + J_1RowSelection(mi)2",
+      "description": "RightCommand + J_1RowSelection(mi)",
       "manipulators": [
         {
           "type": "basic",
