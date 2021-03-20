@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi1",
   "rules": [
     {
-      "description": "RightCommand + J_1RowSelection(mi)",
+      "description": "RightCommand + J_1RowSelection(mi)1",
       "manipulators": [
         {
           "type": "basic",
@@ -24,6 +24,9 @@
             {
               "key_code": "down_arrow",
               "modifiers": "left_shift"
+            },
+            {
+              "key_code": "left_arrow"
             }
           ],
           "conditions": [

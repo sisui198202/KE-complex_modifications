@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
-      "description": "RightCommand + J_1RowSelection(mi)",
+      "description": "RightCommand + J_1RowSelection(mi)1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["a", ["left_control"]],["down_arrow","left_shift"]]) %>,
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("k", ["right_gui"]) %>,
-          "to": <%= to([["a", ["left_control"]],["down_arrow","left_shift"],["delete_or_backspace"]]) %>,
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["delete_or_backspace"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("z", ["left_control"]) %>,
-          "to": <%= to([["e",["left_control"]],["return_or_enter"]]) %>,
+          "to": <%= to([["e", ["left_control"]], ["return_or_enter"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -40,7 +40,7 @@
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
-          "to": <%= to([["open_bracket",["left_shift","right_gui"]]]) %>,
+          "to": <%= to([["open_bracket", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -51,7 +51,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
-          "to": <%= to([["close_bracket",["left_shift","right_gui"]]]) %>,
+          "to": <%= to([["close_bracket", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -62,7 +62,7 @@
         {
           "type": "basic",
           "from": <%= from("w", ["left_control"]) %>,
-          "to": <%= to([["down_arrow",["left_shift"]]]) %>,
+          "to": <%= to([["down_arrow", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -95,7 +95,7 @@
         {
           "type": "basic",
           "from": <%= from("9", ["left_shift"]) %>,
-          "to": <%= to([["9",["left_shift"]],["0",["left_shift"]],["left_arrow"]]) %>,
+          "to": <%= to([["9", ["left_shift"]], ["0", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -106,7 +106,7 @@
         {
           "type": "basic",
           "from": <%= from("open_bracket", ["left_shift"]) %>,
-          "to": <%= to([["open_bracket",["left_shift"]],["close_bracket",["left_shift"]],["left_arrow"]]) %>,
+          "to": <%= to([["open_bracket", ["left_shift"]], ["close_bracket", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -117,7 +117,7 @@
         {
           "type": "basic",
           "from": <%= from("open_bracket") %>,
-          "to": <%= to([["open_bracket"],["close_bracket"],["left_arrow"]]) %>,
+          "to": <%= to([["open_bracket"], ["close_bracket"], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -127,8 +127,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma",["left_shift"]) %>,
-          "to": <%= to([["comma",["left_shift"]],["period",["left_shift"]],["left_arrow"]]) %>,
+          "from": <%= from("comma", ["left_shift"]) %>,
+          "to": <%= to([["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -138,8 +138,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("quote",["left_shift"]) %>,
-          "to": <%= to([["quote",["left_shift"]],["quote",["left_shift"]],["left_arrow"]]) %>,
+          "from": <%= from("quote", ["left_shift"]) %>,
+          "to": <%= to([["quote", ["left_shift"]], ["quote", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -150,7 +150,7 @@
         {
           "type": "basic",
           "from": <%= from("quote") %>,
-          "to": <%= to([["quote"],["quote"],["left_arrow"]]) %>,
+          "to": <%= to([["quote"], ["quote"], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
