@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -305,12 +305,12 @@
       ]
     },
     {
-      "description": "RightCommand + J_1RowSelection",
+      "description": "RightCommand + J_1RowSelection1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"]]) %>
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>
         }
       ]
     }

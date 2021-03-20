@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -756,7 +756,7 @@
       ]
     },
     {
-      "description": "RightCommand + J_1RowSelection",
+      "description": "RightCommand + J_1RowSelection1",
       "manipulators": [
         {
           "type": "basic",
@@ -777,6 +777,10 @@
             },
             {
               "key_code": "down_arrow",
+              "modifiers": "left_shift"
+            },
+            {
+              "key_code": "left_arrow",
               "modifiers": "left_shift"
             }
           ]
