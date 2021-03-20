@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -756,7 +756,7 @@
       ]
     },
     {
-      "description": "RightCommand + J_1RowSelection1",
+      "description": "RightCommand + J_1RowSelection",
       "manipulators": [
         {
           "type": "basic",
