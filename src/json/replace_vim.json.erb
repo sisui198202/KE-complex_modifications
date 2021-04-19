@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim2",
+  "title": "Replacekey_vim3",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -118,7 +118,7 @@
       ]
     },
 {
-                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)",
+                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)1",
                         "manipulators": [
                             {
                                 "from": {
@@ -139,7 +139,12 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "right_command"
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                      "optional": [
+                                        "caps_lock"
+                                      ]
+                                    }
                                 },
                                 "to": [
                                     {
