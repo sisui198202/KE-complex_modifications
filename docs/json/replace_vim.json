@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim",
+  "title": "Replacekey_vim1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus(Replacekey)",
+      "description": "LeftCommand + RightCommand_plus(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -338,6 +338,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

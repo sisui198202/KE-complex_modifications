@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim",
+  "title": "Replacekey_vim1",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -157,11 +157,11 @@
                         ]
                     },
     {
-      "description": "LeftCommand + RightCommand_plus(Replacekey)",
+      "description": "LeftCommand + RightCommand_plus(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("right_gui", ["left_control"]) %>,
+          "from": <%= from("right_gui", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["equal_sign", "right_shift"]]) %>
         }
       ]
