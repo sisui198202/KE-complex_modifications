@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim1",
+  "title": "Replacekey_vim2",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -43,6 +43,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -75,6 +78,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -139,6 +145,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -163,6 +172,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -184,6 +196,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -252,6 +267,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -329,7 +347,7 @@
       ]
     },
     {
-      "description": "LeftCommand + RightCommand_plus(Replacekey)1",
+      "description": "LeftCommand + RightCommand_plus(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -363,6 +381,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -385,6 +406,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

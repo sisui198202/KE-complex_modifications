@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim1",
+  "title": "Replacekey_vim2",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["left_control"]) %>,
+          "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["delete_or_backspace"]]) %>,
           "conditions": [ <%= frontmost_application_unless("finder") %> ]
         }
@@ -28,7 +28,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("right_alt", ["left_control"]) %>,
+          "from": <%= from("right_alt", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["equal_sign"]]) %>,
           "conditions": [ <%= frontmost_application_unless("finder") %> ]
         }
@@ -50,7 +50,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("left_alt", ["right_gui"]) %>,
+          "from": <%= from("left_alt", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["backslash"]]) %>
         }
       ]
@@ -60,7 +60,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("g", ["left_control"]) %>,
+          "from": <%= from("g", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["escape"]]) %>
         }
       ]
@@ -70,7 +70,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("f", ["left_control"]) %>,
+          "from": <%= from("f", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab"]]) %>
         }
       ]
@@ -102,7 +102,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("right_alt", ["left_alt"]) %>,
+          "from": <%= from("right_alt", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["5", "right_shift"]]) %>
         }
       ]
@@ -157,7 +157,7 @@
                         ]
                     },
     {
-      "description": "LeftCommand + RightCommand_plus(Replacekey)1",
+      "description": "LeftCommand + RightCommand_plus(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -171,7 +171,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("left_control", ["right_gui"]) %>,
+          "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["hyphen", "right_shift"]]) %>
         }
       ]
@@ -181,7 +181,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("right_gui", ["left_alt"]) %>,
+          "from": <%= from("right_gui", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["hyphen"]]) %>
         }
       ]
