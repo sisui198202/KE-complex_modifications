@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim6",
+  "title": "Replacekey_vim7",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -76,22 +76,22 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy(Replacekey)1",
+      "description": "LeftAlt_Copy(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("left_alt", ["caps_lock"]) %>,
+          "from": <%= from("left_alt") %>,
           "to": <%= to([["left_alt"]]) %>,
           "to_if_alone": <%= to([["japanese_eisuu"], ["c", "right_gui"]]) %>
         }
       ]
     },
     {
-      "description": "RightOption_Paste(Replacekey)1",
+      "description": "RightOption_Paste(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("right_alt", ["caps_lock"]) %>,
+          "from": <%= from("right_alt") %>,
           "to": <%= to([["right_alt"]]) %>,
           "to_if_alone": <%= to([["v", "left_gui"]]) %>
         }
