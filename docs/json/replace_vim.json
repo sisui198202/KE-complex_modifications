@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim4",
+  "title": "Replacekey_vim5",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -211,12 +211,17 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy(Replacekey)",
+      "description": "LeftAlt_Copy(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_alt"
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -236,12 +241,17 @@
       ]
     },
     {
-      "description": "RightOption_Paste(Replacekey)",
+      "description": "RightOption_Paste(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_alt"
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
