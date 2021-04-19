@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim5",
+  "title": "Replacekey_vim6",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -197,11 +197,12 @@
       ]
     },
     {
-      "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number0~9(Replacekey)",
+      "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number0~9(Replacekey)1",
       "manipulators":
       <%= each_key(
             source_keys_list: ["z", "x", "c", "v", "s", "d", "f", "w", "e", "r"],
             from_mandatory_modifiers: ["right_gui"],
+            from_optional_modifiers: ["caps_lock"],
             dest_keys_list: [["japanese_eisuu", "0"], ["japanese_eisuu", "1"], ["japanese_eisuu", "2"], ["japanese_eisuu", "3"], ["japanese_eisuu", "4"], ["japanese_eisuu", "5"], ["japanese_eisuu", "6"], ["japanese_eisuu", "7"], ["japanese_eisuu", "8"], ["japanese_eisuu", "9"]],
             as_json: true,
           ) %>
