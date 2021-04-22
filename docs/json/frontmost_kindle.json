@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfkindle1",
+  "title": "FrontmostIfkindle",
   "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "RightAlt + Z_To_IndexPage(kindle)1",
+      "description": "RightAlt + Z_To_IndexPage(kindle)",
       "manipulators": [
         {
           "type": "basic",
