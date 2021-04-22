@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfkindle",
+    "title": "FrontmostIfkindle1",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -35,11 +35,11 @@
       ]
     },
     {
-      "description": "RightCommand + Z_To_IndexPage(kindle)",
+      "description": "RightAlt + Z_To_IndexPage(kindle)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_gui"]) %>,
+          "from": <%= from("z", ["right_alt"]) %>,
           "to": <%= to([["0", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
