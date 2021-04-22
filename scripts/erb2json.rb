@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'erb'
-require 'json'
+require "erb"
+require "json"
 
 def deepcopy(data)
   Marshal.load(Marshal.dump(data))
@@ -14,7 +14,7 @@ def to_array(data)
   data
 end
 
-def make_data(data, as_json=true)
+def make_data(data, as_json = true)
   if as_json
     JSON.generate(data)
   else
@@ -32,7 +32,7 @@ def key(data, key)
   end
 end
 
-def from(key_code, mandatory_modifiers=[], optional_modifiers=[], as_json=true)
+def from(key_code, mandatory_modifiers = [], optional_modifiers = [], as_json = true)
   mandatory_modifiers = to_array(mandatory_modifiers)
   optional_modifiers = to_array(optional_modifiers)
 
@@ -51,11 +51,11 @@ def from(key_code, mandatory_modifiers=[], optional_modifiers=[], as_json=true)
   make_data(data, as_json)
 end
 
-def hash_from(key_code, mandatory_modifiers=[], optional_modifiers=[])
+def hash_from(key_code, mandatory_modifiers = [], optional_modifiers = [])
   from(key_code, mandatory_modifiers, optional_modifiers, false)
 end
 
-def to(events, as_json=true, repeat=1)
+def to(events, as_json = true, repeat = 1)
   data = []
   events.each do |e|
     d = {}
@@ -78,7 +78,7 @@ def to(events, as_json=true, repeat=1)
   make_data(data_total, as_json)
 end
 
-def hash_to(events, repeat=1)
+def hash_to(events, repeat = 1)
   to(events, false, repeat)
 end
 
@@ -91,7 +91,7 @@ def each_key(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_lis
   source_keys_list.each_with_index do |from_key, index|
     to_key = dest_keys_list[index]
     d = {}
-    d[:type] = 'basic'
+    d[:type] = "basic"
     if from_key.is_a? String
       d[:from] = from(from_key, from_mandatory_modifiers, from_optional_modifiers, false)
     else
@@ -133,12 +133,16 @@ def each_key(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_lis
     data << d
   end
 
-  make_data(data,as_json)
+  make_data(data, as_json)
 end
 
-def frontmost_application(type, app_aliases, as_json=true)
+def frontmost_application(type, app_aliases, as_json = true)
   finder_bundle_identifiers = [
     '^com\.apple\.finder$',
+  ]
+
+  kindle_bundle_identifiers = [
+    "^com.amazon.Kindle$",
   ]
 
   pathfinder_bundle_identifiers = [
@@ -156,21 +160,20 @@ def frontmost_application(type, app_aliases, as_json=true)
   browser_bundle_identifiers = [
     '^org\.mozilla\.firefox$',
     '^org\.waterfoxproject\.waterfox$',
-    '^com\.google\.Chrome$'
+    '^com\.google\.Chrome$',
   ]
 
   chrome_bundle_identifiers = [
-    '^com\.google\.Chrome$'
+    '^com\.google\.Chrome$',
   ]
 
   firefox_bundle_identifiers = [
-    'org.mozilla.firefox'
+    "org.mozilla.firefox",
   ]
 
   vivaldi_bundle_identifiers = [
-    'com.vivaldi.Vivaldi'
+    "com.vivaldi.Vivaldi",
   ]
-
 
   emacs_bundle_identifiers = [
     '^org\.gnu\.Emacs$',
@@ -227,42 +230,42 @@ def frontmost_application(type, app_aliases, as_json=true)
   ]
 
   word_bundle_identifiers = [
-    '^com\.microsoft\.Word$'
+    '^com\.microsoft\.Word$',
   ]
   powerpoint_bundle_identifers = [
-    '^com\.microsoft\.Powerpoint$'
+    '^com\.microsoft\.Powerpoint$',
   ]
   excel_bundle_identifers = [
-    '^com\.microsoft\.Excel$'
+    '^com\.microsoft\.Excel$',
   ]
 
   vscode_bundle_identifers = [
-    '^com.microsoft.VSCode$'
+    "^com.microsoft.VSCode$",
   ]
 
   sublime_bundle_identifers = [
-    '^com.sublimetext.3$'
+    "^com.sublimetext.3$",
   ]
 
   vscode_sublime_bundle_identifers = [
-    '^com.microsoft.VSCode$',
-    '^com.sublimetext.3$'
+    "^com.microsoft.VSCode$",
+    "^com.sublimetext.3$",
   ]
   mi_bundle_identifers = [
-    '^net.mimikaki.mi$',
+    "^net.mimikaki.mi$",
   ]
   mysqlworkbench_bundle_identifers = [
-    '^com.oracle.workbench.MySQLWorkbench$',
+    "^com.oracle.workbench.MySQLWorkbench$",
   ]
   rdt_bundle_identifiers = [
     '^com\.microsoft\.rdc.macos$',
   ]
   terminal_bundle_identifiers = [
-    '^com.apple.Terminal$',
+    "^com.apple.Terminal$",
   ]
 
   evernote_bundle_identifiers = [
-    '^com.evernote.Evernote$',
+    "^com.evernote.Evernote$",
   ]
   # ----------------------------------------
 
@@ -271,79 +274,60 @@ def frontmost_application(type, app_aliases, as_json=true)
   to_array(app_aliases).each do |app_alias|
     case app_alias
 
-    when 'finder'
+    when "finder"
       bundle_identifiers.concat(finder_bundle_identifiers)
-
-    when 'pathfinder'
+    when "kindle"
+      bundle_identifiers.concat(kindle_bundle_identifiers)
+    when "pathfinder"
       bundle_identifiers.concat(pathfinder_bundle_identifiers)
-
-    when 'sublime'
+    when "sublime"
       bundle_identifiers.concat(sublime_bundle_identifers)
-
-    when 'vscode'
+    when "vscode"
       bundle_identifiers.concat(vscode_bundle_identifers)
-
-    when 'vscode_sublime'
+    when "vscode_sublime"
       bundle_identifiers.concat(vscode_sublime_bundle_identifers)
-
-    when 'mi'
+    when "mi"
       bundle_identifiers.concat(mi_bundle_identifers)
-
-    when 'mysqlworkbench'
+    when "mysqlworkbench"
       bundle_identifiers.concat(mysqlworkbench_bundle_identifers)
-
-    when 'preview'
+    when "preview"
       bundle_identifiers.concat(preview_bundle_identifiers)
-
-    when 'mac_tab'
+    when "mac_tab"
       bundle_identifiers.concat(finder_bundle_identifiers)
       bundle_identifiers.concat(preview_bundle_identifiers)
       bundle_identifiers.concat(safari_bundle_identifiers)
-
-    when 'iterm2'
+    when "iterm2"
       bundle_identifiers.concat(iterm2_bundle_identifiers)
-
-    when 'terminal'
+    when "terminal"
       bundle_identifiers.concat(terminal_bundle_identifiers)
-
-    when 'emacs'
+    when "emacs"
       bundle_identifiers.concat(emacs_bundle_identifiers)
-
-    when 'emacs_key_bindings_exception'
+    when "emacs_key_bindings_exception"
       bundle_identifiers.concat(emacs_bundle_identifiers)
       bundle_identifiers.concat(remote_desktop_bundle_identifiers)
       bundle_identifiers.concat(terminal_bundle_identifiers)
       bundle_identifiers.concat(vi_bundle_identifiers)
       bundle_identifiers.concat(virtual_machine_bundle_identifiers)
       bundle_identifiers.concat(x11_bundle_identifiers)
-
-    when 'remote_desktop'
+    when "remote_desktop"
       bundle_identifiers.concat(remote_desktop_bundle_identifiers)
-
-    when 'vi'
+    when "vi"
       bundle_identifiers.concat(vi_bundle_identifiers)
-
-    when 'virtual_machine'
+    when "virtual_machine"
       bundle_identifiers.concat(virtual_machine_bundle_identifiers)
-
-    when 'browser'
+    when "browser"
       bundle_identifiers.concat(browser_bundle_identifiers)
-
-    when 'word'
+    when "word"
       bundle_identifiers.concat(word_bundle_identifiers)
-
-    when 'powerpoint'
+    when "powerpoint"
       bundle_identifiers.concat(powerpoint_bundle_identifers)
-
-    when 'excel'
+    when "excel"
       bundle_identifiers.concat(excel_bundle_identifers)
-
-    when 'office'
+    when "office"
       bundle_identifiers.concat(word_bundle_identifiers)
       bundle_identifiers.concat(powerpoint_bundle_identifers)
       bundle_identifiers.concat(excel_bundle_identifers)
-
-    when 'vim_emu_exception'
+    when "vim_emu_exception"
       bundle_identifiers.concat(emacs_bundle_identifiers)
       bundle_identifiers.concat(remote_desktop_bundle_identifiers)
       bundle_identifiers.concat(terminal_bundle_identifiers)
@@ -351,24 +335,18 @@ def frontmost_application(type, app_aliases, as_json=true)
       bundle_identifiers.concat(virtual_machine_bundle_identifiers)
       bundle_identifiers.concat(x11_bundle_identifiers)
       bundle_identifiers.concat(browser_bundle_identifiers)
-
-    when 'rdt'
+    when "rdt"
       bundle_identifiers.concat(rdt_bundle_identifiers)
-
-    when 'chrome'
+    when "chrome"
       bundle_identifiers.concat(chrome_bundle_identifiers)
-
-    when 'firefox'
+    when "firefox"
       bundle_identifiers.concat(firefox_bundle_identifiers)
-
-    when 'vivaldi'
+    when "vivaldi"
       bundle_identifiers.concat(vivaldi_bundle_identifiers)
-    when 'terminal'
+    when "terminal"
       bundle_identifiers.concat(terminal_bundle_identifiers)
-    when 'evernote'
+    when "evernote"
       bundle_identifiers.concat(evernote_bundle_identifiers)
-
-
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end
@@ -376,15 +354,15 @@ def frontmost_application(type, app_aliases, as_json=true)
 
   unless bundle_identifiers.empty?
     data = {
-      type:  type,
-      bundle_identifiers: bundle_identifiers
+      type: type,
+      bundle_identifiers: bundle_identifiers,
     }
     make_data(data, as_json)
   end
 end
 
-def set_shell_command(commands, as_json=true)
-  data =[]
+def set_shell_command(commands, as_json = true)
+  data = []
   unless commands.empty?
     commands.each do |command|
       data << { "shell_command" => command }
@@ -395,16 +373,16 @@ def set_shell_command(commands, as_json=true)
   make_data(data, as_json)
 end
 
-def frontmost_application_if(app_aliases, as_json=true)
-  frontmost_application('frontmost_application_if', app_aliases, as_json)
+def frontmost_application_if(app_aliases, as_json = true)
+  frontmost_application("frontmost_application_if", app_aliases, as_json)
 end
 
-def frontmost_application_unless(app_aliases, as_json=true)
-  frontmost_application('frontmost_application_unless', app_aliases, as_json)
+def frontmost_application_unless(app_aliases, as_json = true)
+  frontmost_application("frontmost_application_unless", app_aliases, as_json)
 end
 
-def device(type, device_aliases, as_json=true)
-  hhkb_id = {vendor_id: 2131}
+def device(type, device_aliases, as_json = true)
+  hhkb_id = { vendor_id: 2131 }
 
   # ----------------------------------------
 
@@ -412,9 +390,8 @@ def device(type, device_aliases, as_json=true)
 
   to_array(device_aliases).each do |device_alias|
     case device_alias
-    when 'hhkb'
+    when "hhkb"
       ids << hhkb_id
-
     else
       $stderr << "unknown hhkb_alias: #{device_aliases}\n"
     end
@@ -422,61 +399,61 @@ def device(type, device_aliases, as_json=true)
 
   unless ids.empty?
     data = {
-      type:  type,
-      identifiers: ids
+      type: type,
+      identifiers: ids,
     }
     make_data(data, as_json)
   end
 end
 
-def device_if(device_aliases, as_json=true)
-  device('device_if', device_aliases, as_json)
+def device_if(device_aliases, as_json = true)
+  device("device_if", device_aliases, as_json)
 end
 
-def device_unless(device_alias, as_json=true)
-  device('device_unless', device_aliases, as_json)
+def device_unless(device_alias, as_json = true)
+  device("device_unless", device_aliases, as_json)
 end
 
-def input_source(type, input_source_aliases, as_json=true)
+def input_source(type, input_source_aliases, as_json = true)
   input_sources = []
   to_array(input_source_aliases).each do |input_source_alias|
     if input_source_alias.is_a? Hash
       input_sources << input_source_alias
     end
     if input_source_alias.include?("keylayout")
-      input_sources << { input_source_id: input_source_alias}
+      input_sources << { input_source_id: input_source_alias }
     elsif input_source_alias.include?("inputmethod")
-      input_sources << { input_mode_id: input_source_alias}
+      input_sources << { input_mode_id: input_source_alias }
     else
-      input_sources << { language: input_source_alias}
+      input_sources << { language: input_source_alias }
     end
   end
 
   unless input_sources.empty?
     data = {
       type: type,
-      input_sources: input_sources
+      input_sources: input_sources,
     }
     make_data(data, as_json)
   end
 end
 
-def input_source_if(input_source_aliases, as_json=true)
-  input_source('input_source_if', input_source_aliases, as_json)
+def input_source_if(input_source_aliases, as_json = true)
+  input_source("input_source_if", input_source_aliases, as_json)
 end
 
-def input_source_unless(input_source_aliases, as_json=true)
-  input_source('input_source_unless', input_source_aliases, as_json)
+def input_source_unless(input_source_aliases, as_json = true)
+  input_source("input_source_unless", input_source_aliases, as_json)
 end
 
-def variable(type, names, values, as_json=true)
-  data =[]
+def variable(type, names, values, as_json = true)
+  data = []
   unless names.empty?
     names.each_with_index do |name, index|
       data = {
         "type" => type,
         "name" => name,
-        "value" => values[index]
+        "value" => values[index],
       }
     end
   else
@@ -485,12 +462,12 @@ def variable(type, names, values, as_json=true)
   make_data(data, as_json)
 end
 
-def variable_if(names, values, as_json=true)
-  variable('variable_if', names, values, as_json)
+def variable_if(names, values, as_json = true)
+  variable("variable_if", names, values, as_json)
 end
 
-def variable_unless(names, values, as_json=true)
-  variable('variable_unless', names, values, as_json)
+def variable_unless(names, values, as_json = true)
+  variable("variable_unless", names, values, as_json)
 end
 
 def check_set_variable(array)
@@ -536,7 +513,7 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
   mode.each do |m|
     conditions_vim_emu = deepcopy(conditions_vim_emu_common)
     if m != "" and m != "insert"
-      conditions_vim_emu += [{type: "variable_if", name: "vim_emu_#{m}", value: 1}]
+      conditions_vim_emu += [{ type: "variable_if", name: "vim_emu_#{m}", value: 1 }]
     end
 
     dest_keys_list_vim_emu = []
@@ -573,7 +550,7 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
         r.times do |i|
           keys_list += to_array(k)
         end
-        if move  >= 10
+        if move >= 10
           if m == "y"
             keys_list += [["c", ["command"]], ["left_arrow"]] + vim_emu_mode(normal: 1, line: line)
           elsif m == "d"
@@ -585,7 +562,7 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
         dest_keys_list_repeat.push(keys_list)
       end
       conditions_repeat = deepcopy(conditions_vim_emu)
-      conditions_repeat += [{type: "variable_if", name: "vim_emu_n", value: r}] if r > 1
+      conditions_repeat += [{ type: "variable_if", name: "vim_emu_n", value: r }] if r > 1
 
       notice = false
       dest_keys_list_repeat_notice = []
@@ -595,7 +572,7 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
         mode = check_set_variable(l)
         if mode != ""
           notice = true
-          dest_keys_list_repeat_notice.push(l + [{shell_command: "osascript -e 'display notification \"#{mode} Mode\" with title \"vim_emu\"'"}])
+          dest_keys_list_repeat_notice.push(l + [{ shell_command: "osascript -e 'display notification \"#{mode} Mode\" with title \"vim_emu\"'" }])
         else
           dest_keys_list_repeat_notice.push(l)
         end
@@ -605,7 +582,7 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
         if mode != ""
           notice = true
           dest_keys_list_repeat_notice = dest_keys_list_repeat
-          to_post_events_notice = to_post_events + [{shell_command: "osascript -e 'display notification \"#{mode} Mode\" with title \"vim_emu\"'"}]
+          to_post_events_notice = to_post_events + [{ shell_command: "osascript -e 'display notification \"#{mode} Mode\" with title \"vim_emu\"'" }]
         end
       end
 
@@ -621,8 +598,8 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
           to_if_alone: to_if_alone,
           to_after_key_up: to_after_key_up,
           to_delayed_action: to_delayed_action,
-          conditions: conditions_repeat + [{type: "variable_if", name: "vim_emu_notice", value: 1}],
-          as_json: false
+          conditions: conditions_repeat + [{ type: "variable_if", name: "vim_emu_notice", value: 1 }],
+          as_json: false,
         )
       end
       data += each_key(
@@ -637,14 +614,14 @@ def vim_emu(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_list
         to_after_key_up: to_after_key_up,
         to_delayed_action: to_delayed_action,
         conditions: conditions_repeat,
-        as_json: false
+        as_json: false,
       )
     end
   end
   make_data(data, as_json)
 end
 
-def vim_emu_modes(list="change")
+def vim_emu_modes(list = "change")
   normal_modes = ["normal"]
   visual_modes = ["visual", "visual_line"]
   command_modes = ["command", "command_w"]
@@ -670,7 +647,7 @@ def vim_emu_modes(list="change")
   end
 end
 
-def vim_emu_mode(normal: 0, visual: 0, visual_line: 0, command: 0, command_w: 0, y:0, d: 0, c: 0, g: 0, r:0, r_cont: 0, search_input: 0, search: 0, z: 0, insert: 0, line: -1, as_json: false)
+def vim_emu_mode(normal: 0, visual: 0, visual_line: 0, command: 0, command_w: 0, y: 0, d: 0, c: 0, g: 0, r: 0, r_cont: 0, search_input: 0, search: 0, z: 0, insert: 0, line: -1, as_json: false)
   # vim_emu_mode() -> insert mode
   any = 0
   modes = vim_emu_modes("change")
@@ -691,12 +668,12 @@ def vim_emu_mode(normal: 0, visual: 0, visual_line: 0, command: 0, command_w: 0,
 
   data = []
   (modes + ["n"]).each do |m|
-    data.push({"set_variable": {name: "vim_emu_#{m}", value: eval(m)}})
+    data.push({ "set_variable": { name: "vim_emu_#{m}", value: eval(m) } })
   end
   make_data(data, as_json)
 end
 
-def vim_emu_esc(source_keys_list, as_json=false)
+def vim_emu_esc(source_keys_list, as_json = false)
   unless source_keys_list.is_a? Array
     source_keys_list = [source_keys_list]
   end
@@ -712,7 +689,7 @@ def vim_emu_esc(source_keys_list, as_json=false)
     source_keys_list: source_keys_list,
     dest_keys_list: dest_keys_list,
     to_post_events: hash_to([["escape"]]) + vim_emu_mode(normal: 1),
-    mode: ["search", "search_input"]
+    mode: ["search", "search_input"],
   )
   data += vim_emu(
     source_keys_list: source_keys_list,
@@ -722,20 +699,20 @@ def vim_emu_esc(source_keys_list, as_json=false)
   make_data(data, as_json)
 end
 
-def vim_emu_simul(key1, key2, as_json=false)
+def vim_emu_simul(key1, key2, as_json = false)
   data = []
   data += vim_emu(
-    source_keys_list: {simultaneous: [{ key_code: key1}, { key_code: key2}]},
+    source_keys_list: { simultaneous: [{ key_code: key1 }, { key_code: key2 }] },
     dest_keys_list: vim_emu_mode(),
     mode: ["normal"],
   )
   data += vim_emu(
-    source_keys_list: {simultaneous: [{ key_code: key1}, { key_code: key2}]},
+    source_keys_list: { simultaneous: [{ key_code: key1 }, { key_code: key2 }] },
     dest_keys_list: [["left_arrow"]] + vim_emu_mode(normal: 1),
     mode: ["visual", "visual_line"],
   )
   data += vim_emu(
-    source_keys_list: {simultaneous: [{ key_code: key1}, { key_code: key2}]},
+    source_keys_list: { simultaneous: [{ key_code: key1 }, { key_code: key2 }] },
     dest_keys_list: vim_emu_mode(normal: 1),
     mode: "",
   )
@@ -743,7 +720,7 @@ def vim_emu_simul(key1, key2, as_json=false)
   make_data(data, as_json)
 end
 
-def vim_emu_double(key1, as_json=false)
+def vim_emu_double(key1, as_json = false)
   data = []
   data += vim_emu(
     source_keys_list: key1,
@@ -800,17 +777,17 @@ def vim_emu_double(key1, as_json=false)
           set_variable: {
             name: "vim_emu_" + key1 + "_pressed",
             value: 0,
-          }
-        }
+          },
+        },
       ],
       to_if_canceled: [
         {
           set_variable: {
             name: "vim_emu_" + key1 + "_pressed",
             value: 0,
-          }
-        }
-      ]
+          },
+        },
+      ],
     },
   )
   make_data(data, as_json)
