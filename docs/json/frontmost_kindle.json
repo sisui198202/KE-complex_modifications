@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfkindle",
+  "title": "FrontmostIfkindle1",
   "rules": [
     {
-      "description": "LeftAlt + A_FullScreen(kindle)",
+      "description": "RightAlt + A_FullScreen(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -10,16 +10,16 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_alt"
               ]
             }
           },
           "to": [
             {
-              "key_code": "f",
+              "key_code": "7",
               "modifiers": [
                 "left_control",
-                "right_gui"
+                "left_alt"
               ]
             }
           ],
