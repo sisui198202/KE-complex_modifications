@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfkindle1",
+    "title": "FrontmostIfkindle2",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -46,23 +46,23 @@
       ]
     },
     {
-      "description": "LeftCommand + I_Expansion(kindle)1",
+      "description": "LeftCommand + I_Expansion(kindle)2",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("i", ["left_control"]) %>,
-          "to": <%= to([["=", ["left_control", "left_alt"]]]) %>,
+          "to": <%= to([["equal_sign", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
     },
     {
-      "description": "LeftCommand + U_Shrink(kindle)1",
+      "description": "LeftCommand + U_Shrink(kindle)2",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
-          "to": <%= to([["\\", ["left_control", "left_alt"]]]) %>,
+          "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

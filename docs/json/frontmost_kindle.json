@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfkindle1",
+  "title": "FrontmostIfkindle2",
   "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I_Expansion(kindle)1",
+      "description": "LeftCommand + I_Expansion(kindle)2",
       "manipulators": [
         {
           "type": "basic",
@@ -148,7 +148,7 @@
           },
           "to": [
             {
-              "key_code": "=",
+              "key_code": "equal_sign",
               "modifiers": [
                 "left_control",
                 "left_alt"
@@ -167,7 +167,7 @@
       ]
     },
     {
-      "description": "LeftCommand + U_Shrink(kindle)1",
+      "description": "LeftCommand + U_Shrink(kindle)2",
       "manipulators": [
         {
           "type": "basic",
@@ -181,7 +181,7 @@
           },
           "to": [
             {
-              "key_code": "\\",
+              "key_code": "backslash",
               "modifiers": [
                 "left_control",
                 "left_alt"
