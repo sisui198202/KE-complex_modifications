@@ -107,15 +107,15 @@
       ]
     },
     {
-      "description": "LeftAlt + L_ExcelActiveWindow(iterm2Script)",
+      "description": "RightAlt + G_ExcelActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "g",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_alt"
               ]
             }
           },
@@ -164,6 +164,27 @@
           "to": [
             {
               "shell_command": "open -a 'finder.app'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + L_KindleActiveWindow(iterm2Script)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Kindle.app'"
             }
           ]
         }
