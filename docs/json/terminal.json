@@ -1,8 +1,8 @@
 {
-  "title": "iterm2Script",
+  "title": "iterm2Script1",
   "rules": [
     {
-      "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
+      "description": "Leftcommand + R_miActiveWindow(iterm2Script)1",
       "manipulators": [
         {
           "type": "basic",
@@ -11,6 +11,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
