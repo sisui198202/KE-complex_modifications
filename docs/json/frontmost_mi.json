@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi1",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -478,14 +478,22 @@
       ]
     },
     {
-      "description": "SingleQuote_OpenCloseInput(mi)",
+      "description": "SingleQuote_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "quote"
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "quote"
             },

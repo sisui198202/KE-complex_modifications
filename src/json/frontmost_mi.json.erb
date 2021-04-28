@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -145,12 +145,12 @@
       ]
     },
    {
-      "description": "SingleQuote_OpenCloseInput(mi)",
+      "description": "SingleQuote_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("quote") %>,
-          "to": <%= to([["quote"], ["quote"], ["left_arrow"]]) %>,
+          "from": <%= from("quote", ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["quote"], ["quote"], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
