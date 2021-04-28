@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi2",
+  "title": "FrontmostIfmi",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "description": "Marukako_OpenCloseInput(mi)1",
+      "description": "Marukako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
