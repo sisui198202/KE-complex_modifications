@@ -101,45 +101,45 @@
       ]
     },
    {
-      "description": "Namikako_OpenCloseInput(mi)",
+      "description": "Namikako_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("open_bracket", ["left_shift"]) %>,
-          "to": <%= to([["open_bracket", ["left_shift"]], ["close_bracket", ["left_shift"]], ["left_arrow"]]) %>,
+          "from": <%= from("open_bracket", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["open_bracket", ["left_shift"]], ["close_bracket", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
     },
    {
-      "description": "Kakukako_OpenCloseInput(mi)",
+      "description": "Kakukako_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("open_bracket") %>,
-          "to": <%= to([["open_bracket"], ["close_bracket"], ["left_arrow"]]) %>,
+          "from": <%= from("open_bracket", [""], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["open_bracket"], ["close_bracket"], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
     },
    {
-      "description": "Dainari_OpenCloseInput(mi)",
+      "description": "Dainari_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma", ["left_shift"]) %>,
-          "to": <%= to([["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
+          "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
     },
    {
-      "description": "DoubleQuote_OpenCloseInput(mi)",
+      "description": "DoubleQuote_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("quote", ["left_shift"]) %>,
-          "to": <%= to([["quote", ["left_shift"]], ["quote", ["left_shift"]], ["left_arrow"]]) %>,
+          "from": <%= from("quote", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["quote", ["left_shift"]], ["quote", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]

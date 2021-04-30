@@ -325,7 +325,7 @@
       ]
     },
     {
-      "description": "Namikako_OpenCloseInput(mi)",
+      "description": "Namikako_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
@@ -334,10 +334,16 @@
             "modifiers": {
               "mandatory": [
                 "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "open_bracket",
               "modifiers": [
@@ -366,14 +372,25 @@
       ]
     },
     {
-      "description": "Kakukako_OpenCloseInput(mi)",
+      "description": "Kakukako_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "open_bracket"
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                ""
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "open_bracket"
             },
@@ -396,7 +413,7 @@
       ]
     },
     {
-      "description": "Dainari_OpenCloseInput(mi)",
+      "description": "Dainari_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
@@ -405,10 +422,16 @@
             "modifiers": {
               "mandatory": [
                 "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "comma",
               "modifiers": [
@@ -437,7 +460,7 @@
       ]
     },
     {
-      "description": "DoubleQuote_OpenCloseInput(mi)",
+      "description": "DoubleQuote_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
@@ -446,10 +469,16 @@
             "modifiers": {
               "mandatory": [
                 "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "quote",
               "modifiers": [
