@@ -101,7 +101,7 @@
       ]
     },
    {
-      "description": "Namikako_OpenCloseInput(mi)1",
+      "description": "Namikako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -111,19 +111,46 @@
         }
       ]
     },
-   {
-      "description": "Kakukako_OpenCloseInput(mi)1",
+    {
+      "description": "Kakukako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("open_bracket", [""], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"], ["open_bracket"], ["close_bracket"], ["left_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("mi") %> ]
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "open_bracket"
+            },
+            {
+              "key_code": "close_bracket"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
         }
       ]
     },
    {
-      "description": "Dainari_OpenCloseInput(mi)1",
+      "description": "使用しない_Dainari_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -134,7 +161,7 @@
       ]
     },
    {
-      "description": "DoubleQuote_OpenCloseInput(mi)1",
+      "description": "DoubleQuote_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",

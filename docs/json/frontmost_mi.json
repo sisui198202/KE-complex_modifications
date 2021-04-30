@@ -325,7 +325,7 @@
       ]
     },
     {
-      "description": "Namikako_OpenCloseInput(mi)1",
+      "description": "Namikako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -372,16 +372,13 @@
       ]
     },
     {
-      "description": "Kakukako_OpenCloseInput(mi)1",
+      "description": "Kakukako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "key_code": "open_bracket",
             "modifiers": {
-              "mandatory": [
-                ""
-              ],
               "optional": [
                 "caps_lock"
               ]
@@ -413,7 +410,7 @@
       ]
     },
     {
-      "description": "Dainari_OpenCloseInput(mi)1",
+      "description": "使用しない_Dainari_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -460,7 +457,7 @@
       ]
     },
     {
-      "description": "DoubleQuote_OpenCloseInput(mi)1",
+      "description": "DoubleQuote_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
