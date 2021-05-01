@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -12,6 +12,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -30,6 +33,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -48,6 +54,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -66,6 +75,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -84,6 +96,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -105,6 +120,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -126,6 +144,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -147,6 +168,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -168,6 +192,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -189,6 +216,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -210,6 +240,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -231,6 +264,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -251,6 +287,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -271,6 +310,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -291,6 +333,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -311,6 +356,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -331,6 +379,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -351,6 +402,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -371,6 +425,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -391,6 +448,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -411,6 +471,9 @@
             "modifiers": {
               "mandatory": [
                 "fn"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -431,6 +494,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

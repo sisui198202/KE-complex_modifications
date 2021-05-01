@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -7,133 +7,133 @@
         {
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
-          "from": <%= from("u", ["fn"]) %>,
+          "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
           "to": <%= to([["6", "right_alt"]]) %>
         },
     {
         "description": "Fn + J_WindowLeftDown",
         "type": "basic",
-        "from": <%= from("j", ["fn"]) %>,
+        "from": <%= from("j", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["8", "right_alt"]]) %>
     },
     {
         "description": "Fn + I_WindowRightUp",
         "type": "basic",
-        "from": <%= from("i", ["fn"]) %>,
+        "from": <%= from("i", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["7", "right_alt"]]) %>
     },
     {
         "description": "Fn + K_WindowRightDown",
         "type": "basic",
-        "from": <%= from("k", ["fn"]) %>,
+        "from": <%= from("k", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["9", "right_alt"]]) %>
     },
     {
         "description": "Fn + G_WindowLeftOneThird",
         "type": "basic",
-        "from": <%= from("g", ["fn"]) %>,
+        "from": <%= from("g", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["d", ["right_control", "right_alt"]]]) %>
     },
     {
         "description": "Fn + Quote_WindowRightOneThird",
         "type": "basic",
-        "from": <%= from("quote", ["fn"]) %>,
+        "from": <%= from("quote", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["g", ["right_control", "right_alt"]]]) %>
     },
     {
         "description": "Fn + Y_WindowLeftTwo-thirds",
         "type": "basic",
-        "from": <%= from("y", ["fn"]) %>,
+        "from": <%= from("y", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["e", ["right_control", "right_alt"]]]) %>
     },
     {
         "description": "Fn + O_WindowRightTwo-thirds",
         "type": "basic",
-        "from": <%= from("o", ["fn"]) %>,
+        "from": <%= from("o", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["t", ["right_control", "right_alt"]]]) %>
     },
     {
         "description": "Fn + Comma_WindowCenter",
         "type": "basic",
-        "from": <%= from("comma", ["fn"]) %>,
+        "from": <%= from("comma", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["c", ["right_control", "right_alt"]]]) %>
     },
     {
       "description": "RightCommand + Period_MaxWindow",
       "type": "basic",
-      "from": <%= from("period", ["right_gui"]) %>,
+      "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
     },
     {
       "description": "Fn + Semicolon_MaxWindow",
       "type": "basic",
-        "from": <%= from("semicolon", ["fn"]) %>,
+        "from": <%= from("semicolon", ["fn"], ["caps_lock"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
     },
     {
         "description": "Fn + N_WindowUP",
         "type": "basic",
-        "from": <%= from("n", ["fn"]) %>,
+        "from": <%= from("n", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["4", ["left_alt"]]]) %>
     },
     {
         "description": "Fn + M_WindowDown",
         "type": "basic",
-        "from": <%= from("m", ["fn"]) %>,
+        "from": <%= from("m", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["5", ["left_alt"]]]) %>
     },
     {
       "description": "LeftOption + Q_WindowUP",
       "type": "basic",
-      "from": <%= from("q", ["left_alt"]) %>,
+      "from": <%= from("q", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= to([["4", ["left_alt"]]]) %>
     },
     {
       "description": "LeftOption + P_WindowDown",
       "type": "basic",
-      "from": <%= from("p", ["left_alt"]) %>,
+      "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= to([["5", ["left_alt"]]]) %>
     },
     {
       "description": "LeftOption + W_WindowRightUp",
       "type": "basic",
-      "from": <%= from("w", ["left_alt"]) %>,
+      "from": <%= from("w", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= to([["7", ["left_alt"]]]) %>
     },
     {
       "description": "LeftOption + E_WindowRightDown",
       "type": "basic",
-      "from": <%= from("e", ["left_alt"]) %>,
+      "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= to([["9", ["left_alt"]]]) %>
     },
     {
       "description": "RightCommand + P_RightHalfWindowMove",
       "type": "basic",
-      "from": <%= from("p", ["right_gui"]) %>,
+      "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
       "to": <%= to([["3", ["right_alt"]]]) %>
     },
     {
       "description": "LeftCommand + Q_LeftWindowMove",
       "type": "basic",
-      "from": <%= from("q", ["left_control"]) %>,
+      "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>
     },
     {
       "description": "Fn + L_RightHalfWindowMove",
       "type": "basic",
-      "from": <%= from("l", ["fn"]) %>,
+      "from": <%= from("l", ["fn"], ["caps_lock"]) %>,
       "to": <%= to([["3", ["right_alt"]]]) %>
     },
     {
       "description": "Fn + H_LeftWindowMove",
       "type": "basic",
-      "from": <%= from("h", ["fn"]) %>,
+      "from": <%= from("h", ["fn"], ["caps_lock"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>
     },
     {
       "description": "RightAlt + A_MaxWindow",
       "type": "basic",
-        "from": <%= from("a", ["right_alt"]) %>,
+        "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
     }
  ]
