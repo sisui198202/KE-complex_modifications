@@ -550,8 +550,14 @@
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": "right_gui"
+              "key_code": "a",
+              "modifiers": [
+                "left_control"
+              ]
+            },
+            {
+              "key_code": "down_arrow",
+              "modifiers": "left_shift"
             },
             {
               "key_code": "delete_or_backspace"
