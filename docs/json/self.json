@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)5",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -93,6 +93,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -206,6 +209,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

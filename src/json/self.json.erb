@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)5",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -36,7 +36,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m", ["left_control"]) %>,
+          "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
@@ -77,7 +77,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n", ["left_control"]) %>,
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
