@@ -110,7 +110,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("right_alt") %>,
+          "from": <%= from("right_alt", [""], ["caps_lock"]) %>,
           "to": <%= to([["right_alt"]]) %>,
           "to_if_alone": <%= to([["v", "left_gui"]]) %>
         }

@@ -246,7 +246,15 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_alt"
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                ""
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
