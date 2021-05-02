@@ -1,12 +1,12 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_gui"]) %>,
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_gui"]]]) %>
         }
       ]
@@ -16,7 +16,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v", ["left_control"]) %>,
+          "from": <%= from("v", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["q", ["right_gui"]]]) %>
         }
       ]
@@ -26,7 +26,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("w", ["left_control"]) %>,
+          "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["left_shift", "left_control"]]]) %>
         }
       ]
@@ -36,7 +36,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m", ["left_control"]) %>,
+          "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
@@ -47,7 +47,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_control"]) %>,
+          "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["z", ["left_gui"]]]) %>
         }
       ]
@@ -57,7 +57,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["right_gui"]) %>,
+          "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui"]]]) %>
         }
       ]
@@ -67,7 +67,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("c", ["left_control"]) %>,
+          "from": <%= from("c", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["q", ["right_alt"]]]) %>
         }
       ]
@@ -77,7 +77,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n", ["left_control"]) %>,
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
@@ -88,7 +88,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("e", ["left_control"]) %>,
+          "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["left_control", "left_shift"]]]) %>
         }
       ]
@@ -98,7 +98,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d", ["left_control"]) %>,
+          "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["right_gui"]]]) %>
         }
       ]
@@ -108,7 +108,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b", ["left_control"]) %>,
+          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["down_arrow", ["fn"]]]) %>
         }
       ]
@@ -118,7 +118,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("slash", ["left_control"]) %>,
+          "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["up_arrow", ["fn"]]]) %>
         }
       ]
@@ -138,7 +138,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s", ["left_control"]) %>,
+          "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["x", ["right_gui"]]]) %>
         }
       ]
@@ -148,7 +148,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("g", ["right_gui"]) %>,
+          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_gui"]]]) %>
         }
       ]
@@ -158,7 +158,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("semicolon", ["right_gui"]) %>,
+          "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control"]]]) %>
         }
       ]
@@ -168,7 +168,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l", ["right_gui"]) %>,
+          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>
         }
       ]
@@ -178,7 +178,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma", ["left_control"]) %>,
+          "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>
         }
       ]
@@ -188,7 +188,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("period", ["left_control"]) %>,
+          "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", "right_gui"]]) %>
         }
       ]
@@ -198,7 +198,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("k", ["right_gui"]) %>,
+          "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["l", "right_gui"], ["delete_or_backspace"]]) %>
         }
       ]
@@ -208,7 +208,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s", ["left_alt"]) %>,
+          "from": <%= from("s", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["open_bracket", ["right_control", "right_alt"]]]) %>
         }
       ]
@@ -218,7 +218,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("c", ["right_alt"]) %>,
+          "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["quote", ["right_control", "right_alt"]]]) %>
         }
       ]
@@ -228,7 +228,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("x", ["right_alt"]) %>,
+          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>
         }
       ]
@@ -238,7 +238,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s", ["right_alt"]) %>,
+          "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>
         }
       ]
@@ -248,7 +248,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d", ["right_alt"]) %>,
+          "from": <%= from("d", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_alt", "left_shift", "right_gui"]]]) %>
         }
       ]
@@ -258,7 +258,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v", ["right_alt"]) %>,
+          "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["left_control", "right_alt"]]]) %>
         }
       ]
@@ -268,7 +268,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("f", ["right_alt"]) %>,
+          "from": <%= from("f", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["5", ["left_control", "right_alt"]]]) %>
         }
       ]
@@ -278,7 +278,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("j", ["right_alt"]) %>,
+          "from": <%= from("j", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["left_control"]]]) %>
         }
       ]
@@ -288,7 +288,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("k", ["right_alt"]) %>,
+          "from": <%= from("k", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["y", ["left_control"]]]) %>
         }
       ]
@@ -298,7 +298,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("semicolon", ["left_control"]) %>,
+          "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("vscode") %> ]
         }
@@ -309,7 +309,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("j", ["right_gui"]) %>,
+          "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>
         }
       ]
