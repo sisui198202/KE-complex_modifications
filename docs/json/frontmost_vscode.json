@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -11,6 +11,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -43,6 +46,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -75,6 +81,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -107,6 +116,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -139,6 +151,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -171,6 +186,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -204,6 +222,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -237,6 +258,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -270,6 +294,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -294,7 +321,7 @@
       ]
     },
     {
-      "description": "LeftCommand + 0(ゼロ)_2RowSplitEditerScreen(vscode)",
+      "description": "LeftCommand + 0(オー)_2RowSplitEditerScreen(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -303,6 +330,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -342,6 +372,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -375,6 +408,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -408,6 +444,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -441,6 +480,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -474,6 +516,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -507,6 +552,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -540,6 +588,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -573,6 +624,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

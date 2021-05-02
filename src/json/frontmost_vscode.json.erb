@@ -1,12 +1,12 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n", ["left_control"]) %>,
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m", ["left_control"]) %>,
+          "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -28,7 +28,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("close_bracket", ["left_control"]) %>,
+          "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -39,7 +39,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("slash", ["right_gui"]) %>,
+          "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -50,7 +50,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b", ["right_alt"]) %>,
+          "from": <%= from("b", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f5", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -61,7 +61,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["left_alt"]) %>,
+          "from": <%= from("i", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -72,7 +72,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma", ["right_gui"]) %>,
+          "from": <%= from("comma", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["o", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -83,7 +83,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_alt"]) %>,
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["right_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -94,18 +94,18 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n", ["left_alt"]) %>,
+          "from": <%= from("n", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_alt", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },
   {
-      "description": "LeftCommand + 0(ゼロ)_2RowSplitEditerScreen(vscode)",
+      "description": "LeftCommand + 0(オー)_2RowSplitEditerScreen(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("0", ["left_control"]) %>,
+          "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["right_alt", "right_gui", "right_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>
         }
       ]
@@ -115,7 +115,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma", ["left_alt"]) %>,
+          "from": <%= from("comma", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f9", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -126,7 +126,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h", ["right_alt"]) %>,
+          "from": <%= from("h", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -137,7 +137,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["right_alt"]) %>,
+          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_gui", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -148,7 +148,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_alt"]) %>,
+          "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -159,7 +159,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("slash", ["right_alt"]) %>,
+          "from": <%= from("slash", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["u", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -170,7 +170,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["right_alt"]) %>,
+          "from": <%= from("o", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f4", ["left_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -181,7 +181,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("open_bracket", ["left_control"]) %>,
+          "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["f7", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -192,7 +192,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["left_control"]) %>,
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["t", ["right_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
