@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim2",
+  "title": "Replacekey_vim3",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -678,7 +678,7 @@
       ]
     },
     {
-      "description": "semicolon",
+      "description": "Semicolon(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -696,6 +696,33 @@
             },
             {
               "key_code": "semicolon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Colon(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "colon"
             }
           ]
         }
