@@ -3,3 +3,19 @@ Profilesについて
 JupyterLabを使用する。
 
 tesutoは、テスト用のプロファイルとして使用する。理由は、Complex modificationsのEnable rulesで新規のルールを追加して、追加したルールが適用できているかを検証する場合にUpで一番上にのっていかないと適用できないケースがあるため。
+---------------------
+[replace_vim.json.erb]
+
+ハイフンは、["japanese_eisuu"]を使用しない理由: 日本語での文章入力では、-ではなく、ーを使うため。
+
+    {
+      "description": "Leftoption + Rightcommand_hypen(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["hyphen"]]) %>
+        }
+      ]
+    },
+---------------------

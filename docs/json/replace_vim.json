@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim1",
+  "title": "Replacekey_vim2",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -672,6 +672,30 @@
             },
             {
               "key_code": "9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "semicolon",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "semicolon"
             }
           ]
         }
