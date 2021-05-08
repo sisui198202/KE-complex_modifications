@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim",
+  "title": "Replacekey_vim1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -445,9 +445,6 @@
             }
           },
           "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
             {
               "key_code": "hyphen"
             }
