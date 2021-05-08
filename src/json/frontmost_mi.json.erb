@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -72,7 +72,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n", ["left_control"]) %>,
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
@@ -83,7 +83,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m", ["left_control"]) %>,
+          "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
