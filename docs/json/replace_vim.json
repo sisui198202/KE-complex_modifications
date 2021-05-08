@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim",
+  "title": "Replacekey_vim1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -285,6 +285,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "5",
               "modifiers": "right_shift"
             }
@@ -309,6 +312,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "7",
               "modifiers": "right_shift"
@@ -384,6 +390,9 @@
           },
           "to": [
             {
+              "key_code": "japanese_eisuu"
+            },
+            {
               "key_code": "equal_sign",
               "modifiers": "right_shift"
             }
@@ -408,6 +417,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "hyphen",
               "modifiers": "right_shift"
