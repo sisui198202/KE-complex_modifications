@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscodeSublime1",
+    "title": "FrontmostIfVscodeSublime2",
     "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
@@ -28,7 +28,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["right_gui"]) %>,
+          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>
         }
       ]
