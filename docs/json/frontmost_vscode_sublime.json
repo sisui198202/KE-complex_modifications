@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime",
+  "title": "FrontmostIfVscodeSublime1",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
@@ -11,6 +11,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -44,6 +47,9 @@
             "modifiers": {
               "mandatory": [
                 "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -172,6 +178,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

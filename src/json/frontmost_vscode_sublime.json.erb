@@ -1,12 +1,12 @@
 {
-    "title": "FrontmostIfVscodeSublime",
+    "title": "FrontmostIfVscodeSublime1",
     "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["left_control"]) %>,
+          "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_alt"]) %>,
+          "from": <%= from("z", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
@@ -58,7 +58,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("quote", ["left_control"]) %>,
+          "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["h", ["right_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
