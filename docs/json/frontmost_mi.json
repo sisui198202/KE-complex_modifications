@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi1",
+  "title": "FrontmostIfmi",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(mi)1",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(mi)",
       "manipulators": [
         {
           "type": "basic",
