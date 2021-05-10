@@ -579,7 +579,7 @@
       ]
     },
     {
-      "description": "LeftCommand + OpenBracket_ファイルに移動(vscode)",
+      "description": "LeftCommand + OpenBracket_FileSearch(vscode)",
       "manipulators": [
         {
           "type": "basic",
