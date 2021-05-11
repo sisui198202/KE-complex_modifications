@@ -732,6 +732,36 @@
       ]
     },
     {
+      "description": "MarukakoTozi(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + H/J/K/L_Arrows(Replacekey)",
       "manipulators": [
         {
