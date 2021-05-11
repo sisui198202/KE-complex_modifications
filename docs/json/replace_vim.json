@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim",
+  "title": "Replacekey_vim1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -756,6 +756,9 @@
               "modifiers": [
                 "left_shift"
               ]
+            },
+            {
+              "key_code": "japanese_kana"
             }
           ]
         }
