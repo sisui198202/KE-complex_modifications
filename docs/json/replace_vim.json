@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim1",
+  "title": "Replacekey_vim",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -833,7 +833,7 @@
             "key_code": "6",
             "modifiers": {
               "mandatory": [
-                "left_shift"
+                "right_shift"
               ],
               "optional": [
                 "caps_lock"
@@ -863,7 +863,7 @@
             "key_code": "4",
             "modifiers": {
               "mandatory": [
-                "left_shift"
+                "right_shift"
               ],
               "optional": [
                 "caps_lock"
@@ -893,7 +893,7 @@
             "key_code": "3",
             "modifiers": {
               "mandatory": [
-                "left_shift"
+                "right_shift"
               ],
               "optional": [
                 "caps_lock"
@@ -923,7 +923,7 @@
             "key_code": "2",
             "modifiers": {
               "mandatory": [
-                "left_shift"
+                "right_shift"
               ],
               "optional": [
                 "caps_lock"
@@ -953,7 +953,7 @@
             "key_code": "1",
             "modifiers": {
               "mandatory": [
-                "left_shift"
+                "right_shift"
               ],
               "optional": [
                 "caps_lock"
