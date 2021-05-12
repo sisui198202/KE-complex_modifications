@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim1",
+  "title": "Replacekey_vim2",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -441,6 +441,36 @@
             },
             {
               "key_code": "6",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+},
+{
+      "description": "Parsent(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "5",
+                "modifiers": {
+                "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "5",
               "modifiers": [
                 "left_shift"
               ]
