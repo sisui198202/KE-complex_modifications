@@ -1,16 +1,16 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfPararell",
   "rules": [
     {
-      "description": "LeftCommand + N_HeadRowCursol(vscode)",
+      "description": "保留_RightAlt + W_ActiveParellDeskWindows(Pararell)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "right_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -19,17 +19,14 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "right_gui"
-              ]
+              "shell_command": "open -a 'mi'"
             }
           ],
           "conditions": [
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.parallels.desktop.console$"
               ]
             }
           ]

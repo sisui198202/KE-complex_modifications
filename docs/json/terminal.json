@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script",
+  "title": "iterm2Script1",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -212,6 +212,30 @@
           "to": [
             {
               "shell_command": "open -a 'Kindle.app'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + W_ActiveParellDeskWindows(iterm2Script)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Parallels Desktop.app'"
             }
           ]
         }
