@@ -1,16 +1,16 @@
 {
-  "title": "FrontmostIfPararell",
+  "title": "FrontmostIfPararell(a)",
   "rules": [
     {
-      "description": "LeftAlt + O(オー)_Save(Pararell)",
+      "description": "LeftCommand + D_SelectAll(Pararell)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "d",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
@@ -19,7 +19,7 @@
           },
           "to": [
             {
-              "key_code": "s",
+              "key_code": "a",
               "modifiers": [
                 "left_control"
               ]
