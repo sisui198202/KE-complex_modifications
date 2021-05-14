@@ -144,6 +144,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   kindle_bundle_identifiers = [
     "^com.amazon.Kindle$",
   ]
+  pararelldesk_bundle_identifiers = [
+    "^com.parallels.desktop.console$",
+  ]
 
   pathfinder_bundle_identifiers = [
     '^com\\.cocoatech\\.PathFinder$',
@@ -276,6 +279,8 @@ def frontmost_application(type, app_aliases, as_json = true)
 
     when "finder"
       bundle_identifiers.concat(finder_bundle_identifiers)
+    when "pararell"
+      bundle_identifiers.concat(pararelldesk_bundle_identifiers)
     when "kindle"
       bundle_identifiers.concat(kindle_bundle_identifiers)
     when "pathfinder"

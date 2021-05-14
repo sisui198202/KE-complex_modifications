@@ -1,0 +1,16 @@
+{
+    "title": "FrontmostIfVscode1",
+    "rules": [
+    {
+      "description": "LeftCommand + N_HeadRowCursol(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    }
+   ]
+}
