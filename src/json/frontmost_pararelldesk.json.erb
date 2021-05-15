@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell(a)9",
+    "title": "FrontmostIfPararell(a)10",
     "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -115,6 +115,41 @@
           "to_if_alone": [
             {
               "key_code": "c",
+              "modifiers": "right_gui"
+            }
+],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+{
+      "description": "RightAlt_Paste(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "v",
               "modifiers": "right_gui"
             }
 ],
