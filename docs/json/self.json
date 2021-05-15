@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)5",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_EndRowCursol(!vscode)1",
+      "description": "LeftCommand + M_EndRowCursol",
       "manipulators": [
         {
           "type": "basic",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_HeadRowCursol(!vscode)",
+      "description": "LeftCommand + N_HeadRowCursol",
       "manipulators": [
         {
           "type": "basic",
@@ -227,7 +227,7 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]

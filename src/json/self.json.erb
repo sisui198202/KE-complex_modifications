@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)5",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -32,7 +32,7 @@
       ]
     },
   {
-      "description": "LeftCommand + M_EndRowCursol(!vscode)1",
+      "description": "LeftCommand + M_EndRowCursol",
       "manipulators": [
         {
           "type": "basic",
@@ -73,13 +73,13 @@
       ]
     },
   {
-      "description": "LeftCommand + N_HeadRowCursol(!vscode)",
+      "description": "LeftCommand + N_HeadRowCursol",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("vscode") %> ]
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
