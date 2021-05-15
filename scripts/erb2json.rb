@@ -145,7 +145,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^com.amazon.Kindle$",
   ]
   pararelldesk_bundle_identifiers = [
-    "^com.parallels.desktop.console$",
+    "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
   ]
 
   pathfinder_bundle_identifiers = [
