@@ -11,6 +11,17 @@
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
+    },
+    {
+      "description": "a +_tesuto(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a") %>,
+          "to": <%= to([["b"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
     }
    ]
 }
