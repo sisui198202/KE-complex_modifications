@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -808,6 +808,33 @@
           "to": [
             {
               "key_code": "y",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + U_UwscDirectorySearch",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
               "modifiers": [
                 "left_control"
               ]

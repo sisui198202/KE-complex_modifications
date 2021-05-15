@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -290,6 +290,16 @@
           "type": "basic",
           "from": <%= from("k", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["y", ["left_control"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + U_UwscDirectorySearch",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_control"], ["right_alt"]]]) %>
         }
       ]
     },
