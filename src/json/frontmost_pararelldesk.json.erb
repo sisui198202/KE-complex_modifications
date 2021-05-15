@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell(a)3",
+    "title": "FrontmostIfPararell(a)4",
     "rules": [
     {
       "description": "LeftCommand + D_SelectAll(Pararell)",
@@ -44,6 +44,41 @@
                                 "to_if_alone": [
                                     {
                                         "key_code": "F13"
+                                    }
+                                ],
+                                          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
+              ]
+            }
+          ],
+                                "type": "basic"
+}
+   ]
+},
+{
+                        "description": "かなキー(pararell)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "japanese_kana",
+                                    "modifiers": {
+                                      "optional": [
+                                        "caps_lock"
+                                      ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "F14"
                                     }
                                 ],
                                           "conditions": [
