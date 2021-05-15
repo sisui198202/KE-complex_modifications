@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell(a)15",
+  "title": "FrontmostIfPararell(a)16",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy(Pararell)1",
+      "description": "LeftAlt_Copy(Pararell)2",
       "manipulators": [
         {
           "type": "basic",
@@ -128,7 +128,9 @@
           "to_if_alone": [
             {
               "key_code": "c",
-              "modifiers": "fn"
+              "modifiers": [
+                "right_control"
+              ]
             }
           ],
           "conditions": [
@@ -143,7 +145,7 @@
       ]
     },
     {
-      "description": "RightAlt_Paste(Pararell)1",
+      "description": "RightAlt_Paste(Pararell)2",
       "manipulators": [
         {
           "type": "basic",
@@ -163,7 +165,9 @@
           "to_if_alone": [
             {
               "key_code": "v",
-              "modifiers": "fn"
+              "modifiers": [
+                "right_control"
+              ]
             }
           ],
           "conditions": [
