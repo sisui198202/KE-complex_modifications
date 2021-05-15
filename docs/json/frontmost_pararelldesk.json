@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell(a)11",
+  "title": "FrontmostIfPararell(a)12",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -23,30 +23,6 @@
               "modifiers": [
                 "left_control"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "a +_tesuto(Pararell)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a"
-          },
-          "to": [
-            {
-              "key_code": "b"
             }
           ],
           "conditions": [

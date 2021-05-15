@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell(a)11",
+    "title": "FrontmostIfPararell(a)12",
     "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -8,17 +8,6 @@
           "type": "basic",
           "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pararell") %> ]
-        }
-      ]
-    },
-    {
-      "description": "a +_tesuto(Pararell)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a") %>,
-          "to": <%= to([["b"]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
