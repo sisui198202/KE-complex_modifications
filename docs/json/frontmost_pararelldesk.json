@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPararell(a)6",
+  "title": "FrontmostIfPararell(a)7",
   "rules": [
     {
-      "description": "LeftCommand + D_SelectAll(Pararell)",
+      "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
       "manipulators": [
         {
           "type": "basic",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)",
+      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)",
       "manipulators": [
         {
           "from": {
@@ -80,7 +80,10 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "f13"
+              "key_code": "f9",
+              "modifiers": [
+                "left_control"
+              ]
             }
           ],
           "conditions": [
@@ -110,7 +113,10 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "f14"
+              "key_code": "f12",
+              "modifiers": [
+                "left_control"
+              ]
             }
           ],
           "conditions": [
