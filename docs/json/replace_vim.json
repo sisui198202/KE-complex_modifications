@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim2",
+  "title": "Replacekey_vim3",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -249,7 +249,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste(Replacekey)",
+      "description": "RightOption_Paste(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -270,6 +270,14 @@
             {
               "key_code": "v",
               "modifiers": "left_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
+              ]
             }
           ]
         }
