@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
     {
       "description": "Double F1_tmp1Python_tmpUwscFileOpen(Double Push)",
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Desktop/iCollections/TmpFile/tmp.uws'"
+              "shell_command": "open '/Users/user/MacWindowShare/Uwsc/tmp.uws'"
             }
           ],
           "conditions": [
