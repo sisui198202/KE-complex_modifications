@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell4",
+    "title": "FrontmostIfPararell5",
     "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -8,6 +8,17 @@
           "type": "basic",
           "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+{
+      "description": "RightCommand + I_FocusNeighboringGroup(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_alt"], ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
