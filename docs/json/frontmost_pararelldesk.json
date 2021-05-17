@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell",
+  "title": "FrontmostIfPararell98",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -56,7 +56,8 @@
             {
               "key_code": "1",
               "modifiers": [
-                "right_alt"
+                "right_alt",
+                "left_shift"
               ]
             }
           ],
