@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscodeSublime",
+    "title": "FrontmostIfVscodeSublime99",
     "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
@@ -29,7 +29,8 @@
         {
           "type": "basic",
           "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>
+          "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
       ]
     },
@@ -38,9 +39,9 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["left_control"], ["any"]) %>,
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
       ]
     },
@@ -50,7 +51,8 @@
         {
           "type": "basic",
           "from": <%= from("i", ["right_gui"], ["any"]) %>,
-          "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>
+          "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
       ]
     },

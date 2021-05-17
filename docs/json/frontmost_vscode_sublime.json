@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime",
+  "title": "FrontmostIfVscodeSublime99",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
@@ -98,6 +98,15 @@
                 "right_alt"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$",
+                "^com.sublimetext.3$"
+              ]
+            }
           ]
         }
       ]
@@ -114,7 +123,7 @@
                 "left_control"
               ],
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
@@ -142,9 +151,10 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
+                "^com.microsoft.VSCode$",
+                "^com.sublimetext.3$"
               ]
             }
           ]
@@ -173,6 +183,15 @@
               "modifiers": [
                 "right_gui",
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$",
+                "^com.sublimetext.3$"
               ]
             }
           ]
