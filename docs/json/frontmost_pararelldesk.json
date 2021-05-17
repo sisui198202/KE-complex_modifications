@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell99",
+  "title": "FrontmostIfPararell98",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "description": "RightAlt_Paste(Pararell)",
+      "description": "RightAlt_Paste(Pararell)1",
       "manipulators": [
         {
           "type": "basic",
@@ -230,7 +230,7 @@
           },
           "to": [
             {
-              "key_code": "left_alt"
+              "key_code": "right_alt"
             }
           ],
           "to_if_alone": [
