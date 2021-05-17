@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -68,7 +68,8 @@
       "description": "Fn + Semicolon_MaxWindow",
       "type": "basic",
         "from": <%= from("semicolon", ["fn"], ["caps_lock"]) %>,
-      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
+      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
         "description": "Fn + N_WindowUP",

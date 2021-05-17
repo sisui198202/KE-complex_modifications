@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -252,6 +252,14 @@
               "modifiers": [
                 "right_control",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
