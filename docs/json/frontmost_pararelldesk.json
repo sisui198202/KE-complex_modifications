@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell98",
+  "title": "FrontmostIfPararell97",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -37,15 +37,15 @@
       ]
     },
     {
-      "description": "RightCommand + I_FocusNeighboringGroup(Pararell)",
+      "description": "LeftCommand + Quote_Single(Pararell)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"

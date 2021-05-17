@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell98",
+    "title": "FrontmostIfPararell97",
     "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -13,11 +13,11 @@
       ]
     },
 {
-      "description": "RightCommand + I_FocusNeighboringGroup(Pararell)",
+      "description": "LeftCommand + Quote_Single(Pararell)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_alt", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
