@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -306,56 +306,6 @@
               "modifiers": [
                 "right_alt",
                 "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + 0(オー)_2RowSplitEditerScreen(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "0",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_alt",
-                "right_gui",
-                "right_shift"
-              ]
-            },
-            {
-              "key_code": "i",
-              "modifiers": [
-                "right_gui",
-                "right_alt"
-              ]
-            },
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ],

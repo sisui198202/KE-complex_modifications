@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime",
+  "title": "FrontmostIfVscodeSublime12",
   "rules": [
     {
       "description": "LeftCommand + Z_RowCursolNextline(vscode_sublime)",
@@ -137,6 +137,14 @@
               "key_code": "n",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
