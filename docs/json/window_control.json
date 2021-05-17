@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl1",
+  "title": "WindowControl2",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -228,38 +228,6 @@
               "modifiers": [
                 "right_control",
                 "right_gui"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + Semicolon_MaxWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_control",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -514,6 +482,38 @@
               "modifiers": [
                 "right_control",
                 "right_gui"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + Semicolon_MaxWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]

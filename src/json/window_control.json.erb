@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl1",
+  "title": "WindowControl2",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -63,13 +63,6 @@
       "type": "basic",
       "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
-    },
-    {
-      "description": "Fn + Semicolon_MaxWindow",
-      "type": "basic",
-        "from": <%= from("semicolon", ["fn"], ["caps_lock"]) %>,
-      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
-      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
         "description": "Fn + N_WindowUP",
@@ -136,6 +129,13 @@
       "type": "basic",
         "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
       "to": <%= to([["f", ["right_control", "right_gui"]]]) %>
+    },
+{
+      "description": "Fn + Semicolon_MaxWindow",
+      "type": "basic",
+        "from": <%= from("semicolon", ["fn"], ["caps_lock"]) %>,
+      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     }
  ]
 }
