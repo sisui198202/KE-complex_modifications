@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell2",
+  "title": "FrontmostIfPararell3",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -130,6 +130,14 @@
               "modifiers": [
                 "left_shift"
               ]
+            },
+            {
+              "key_code": "left_arrow",
+              "modifiers": "left_shift"
+            },
+            {
+              "key_code": "left_arrow",
+              "modifiers": "left_shift"
             }
           ],
           "conditions": [

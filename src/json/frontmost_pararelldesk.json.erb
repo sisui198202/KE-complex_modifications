@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell2",
+    "title": "FrontmostIfPararell3",
     "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -40,7 +40,7 @@
         {
           "type": "basic",
           "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["down_arrow", ["left_shift"]]]) %>,
+          "to": <%= to([["down_arrow", ["left_shift"]], ["left_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
