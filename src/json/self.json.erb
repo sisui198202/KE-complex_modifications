@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -210,7 +210,8 @@
         {
           "type": "basic",
           "from": <%= from("s", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["open_bracket", ["right_control", "right_alt"]]]) %>
+          "to": <%= to([["open_bracket", ["right_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -220,7 +221,8 @@
         {
           "type": "basic",
           "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["quote", ["right_control", "right_alt"]]]) %>
+          "to": <%= to([["quote", ["right_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -230,7 +232,8 @@
         {
           "type": "basic",
           "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>
+          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -240,7 +243,8 @@
         {
           "type": "basic",
           "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>
+          "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -250,7 +254,8 @@
         {
           "type": "basic",
           "from": <%= from("d", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["7", ["right_alt", "left_shift", "right_gui"]]]) %>
+          "to": <%= to([["7", ["right_alt", "left_shift", "right_gui"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -260,7 +265,8 @@
         {
           "type": "basic",
           "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["3", ["left_control", "right_alt"]]]) %>
+          "to": <%= to([["3", ["left_control", "right_alt"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -270,7 +276,8 @@
         {
           "type": "basic",
           "from": <%= from("f", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["5", ["left_control", "right_alt"]]]) %>
+          "to": <%= to([["5", ["left_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -280,7 +287,8 @@
         {
           "type": "basic",
           "from": <%= from("j", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["e", ["left_control"]]]) %>
+          "to": <%= to([["e", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -290,7 +298,8 @@
         {
           "type": "basic",
           "from": <%= from("k", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["y", ["left_control"]]]) %>
+          "to": <%= to([["y", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
