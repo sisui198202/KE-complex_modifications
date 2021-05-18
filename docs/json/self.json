@@ -64,7 +64,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect1",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
       "manipulators": [
         {
           "type": "basic",
