@@ -109,7 +109,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_ CurrentCursol-EndRowSelect(Pararell)",
+      "description": "使用しないLeftCommand + W_ CurrentCursol-EndRowSelect(Pararell)",
       "manipulators": [
         {
           "type": "basic",
