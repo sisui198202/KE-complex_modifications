@@ -29,7 +29,7 @@
       ]
     },
     {
-      "description": "LeftCommand + V_AppClose1",
+      "description": "LeftCommand + V_AppClose",
       "manipulators": [
         {
           "type": "basic",
