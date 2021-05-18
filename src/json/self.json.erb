@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -22,12 +22,13 @@
       ]
     },
   {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["e", ["left_shift", "left_control"]]]) %>
+          "to": <%= to([["e", ["left_shift", "left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %>]
         }
       ]
     },

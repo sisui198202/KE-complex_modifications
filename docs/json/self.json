@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)1",
+  "title": "PersonalRules(@sisui)2",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect1",
       "manipulators": [
         {
           "type": "basic",
@@ -77,6 +77,14 @@
               "modifiers": [
                 "left_shift",
                 "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
