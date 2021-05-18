@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -147,12 +147,13 @@
       ]
     },
   {
-      "description": "RightCommand + G_FileTabClose",
+      "description": "RightCommand + G_FileTabClose1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_gui"]]]) %>
+          "to": <%= to([["w", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
