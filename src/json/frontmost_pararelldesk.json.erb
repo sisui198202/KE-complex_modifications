@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell1",
+    "title": "FrontmostIfPararell2",
     "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -30,6 +30,17 @@
           "type": "basic",
           "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["z", ["right_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+{
+      "description": "LeftCommand + W_ CurrentCursol-EndRowSelect(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["down_arrow", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]

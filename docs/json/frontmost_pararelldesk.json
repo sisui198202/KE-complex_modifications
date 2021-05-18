@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell1",
+  "title": "FrontmostIfPararell2",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -94,6 +94,41 @@
               "modifiers": [
                 "right_control",
                 "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + W_ CurrentCursol-EndRowSelect(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "left_shift"
               ]
             }
           ],
