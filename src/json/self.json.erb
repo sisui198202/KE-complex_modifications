@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -180,7 +180,8 @@
         {
           "type": "basic",
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>
+          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -190,7 +191,8 @@
         {
           "type": "basic",
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_gui"]]) %>
+          "to": <%= to([["tab", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
