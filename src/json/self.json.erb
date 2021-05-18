@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)2",
+  "title": "PersonalRules(@sisui)3",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -12,12 +12,13 @@
       ]
     },
   {
-      "description": "LeftCommand + V_AppClose",
+      "description": "LeftCommand + V_AppClose1",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("v", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["q", ["right_gui"]]]) %>
+          "to": <%= to([["q", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %>]
         }
       ]
     },
