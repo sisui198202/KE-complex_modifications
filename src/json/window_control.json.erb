@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -81,37 +81,43 @@
       "description": "LeftOption + Q_WindowUP",
       "type": "basic",
       "from": <%= from("q", ["left_alt"], ["caps_lock"]) %>,
-      "to": <%= to([["4", ["left_alt"]]]) %>
+      "to": <%= to([["4", ["left_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "LeftOption + P_WindowDown",
       "type": "basic",
       "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
-      "to": <%= to([["5", ["left_alt"]]]) %>
+      "to": <%= to([["5", ["left_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "LeftOption + W_WindowRightUp",
       "type": "basic",
       "from": <%= from("w", ["left_alt"], ["caps_lock"]) %>,
-      "to": <%= to([["7", ["left_alt"]]]) %>
+      "to": <%= to([["7", ["left_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "LeftOption + E_WindowRightDown",
       "type": "basic",
       "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
-      "to": <%= to([["9", ["left_alt"]]]) %>
+      "to": <%= to([["9", ["left_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "RightCommand + P_RightHalfWindowMove",
       "type": "basic",
       "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["3", ["right_alt"]]]) %>
+      "to": <%= to([["3", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "LeftCommand + Q_LeftWindowMove",
       "type": "basic",
       "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= to([["2", ["right_alt"]]]) %>
+      "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "Fn + L_RightHalfWindowMove",
