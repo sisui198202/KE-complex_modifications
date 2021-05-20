@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script1",
+  "title": "iterm2Script2",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "description": "RightAlt + G_ExcelActiveWindow(iterm2Script)",
+      "description": "LeftAlt + H_ExcelActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
