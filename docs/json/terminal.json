@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script2",
+  "title": "iterm2Script",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -127,10 +127,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"

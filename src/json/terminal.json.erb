@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script2",
+  "title": "iterm2Script",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -56,7 +56,7 @@
   "manipulators": [
     {
       "type": "basic",
-      "from": <%= from("g", ["right_alt"], ["caps_lock"]) %>,
+      "from": <%= from("h", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Microsoft Excel.app'"]) %>
     }
   ]
