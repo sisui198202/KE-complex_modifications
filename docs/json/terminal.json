@@ -242,12 +242,12 @@
       ]
     },
     {
-      "description": "RightAlt + W_ActiveParellDeskWindowsSublime(iterm2Script)",
+      "description": "RightAlt + S_ActiveParellDeskWindowsSublime(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "w",
+            "key_code": "s",
             "modifiers": {
               "mandatory": [
                 "right_alt"

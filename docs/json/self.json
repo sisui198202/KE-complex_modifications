@@ -722,12 +722,12 @@
       ]
     },
     {
-      "description": "RightAlt + S_PythonDirectoryinfiles",
+      "description": "leftAlt + P_PythonDirectoryinfiles",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "s",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "right_alt"

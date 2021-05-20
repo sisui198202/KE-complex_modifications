@@ -243,11 +243,11 @@
       ]
     },
     {
-      "description": "RightAlt + S_PythonDirectoryinfiles",
+      "description": "leftAlt + P_PythonDirectoryinfiles",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
+          "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
