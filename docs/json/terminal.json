@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script",
+  "title": "iterm2Script1",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "description": "RightAlt + W_ActiveParellDeskWindows(iterm2Script)",
+      "description": "使用しないRightAlt + W_ActiveParellDeskWindows(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
