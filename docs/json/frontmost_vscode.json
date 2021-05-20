@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -609,15 +609,15 @@
       ]
     },
     {
-      "description": "RightCommand + H_Replace(vscode)",
+      "description": "LeftAlt + R_Replace(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "r",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"
