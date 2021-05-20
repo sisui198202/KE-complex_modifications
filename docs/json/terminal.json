@@ -98,7 +98,7 @@
       ]
     },
     {
-      "description": "LeftCommand + X_iterm2ActiveWindow1(iterm2Script)",
+      "description": "LeftCommand + X_iterm2ActiveWindow(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
