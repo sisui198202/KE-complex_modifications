@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -722,7 +722,7 @@
       ]
     },
     {
-      "description": "leftAlt + P_PythonDirectoryinfiles",
+      "description": "LeftAlt + P_PythonDirectoryinfiles",
       "manipulators": [
         {
           "type": "basic",
@@ -730,7 +730,7 @@
             "key_code": "p",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"
