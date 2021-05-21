@@ -67,12 +67,12 @@
       ]
     },
     {
-      "description": "LeftAlt + H_DeveloperTool(Chrome)",
+      "description": "LeftAlt + d_DeveloperTool(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "d",
             "modifiers": {
               "mandatory": [
                 "left_alt"

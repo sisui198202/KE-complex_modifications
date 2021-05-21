@@ -24,11 +24,11 @@
       ]
     },
    {
-      "description": "LeftAlt + H_DeveloperTool(Chrome)",
+      "description": "LeftAlt + d_DeveloperTool(Chrome)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h", ["left_alt"]) %>,
+          "from": <%= from("d", ["left_alt"]) %>,
           "to": <%= to([["i", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
