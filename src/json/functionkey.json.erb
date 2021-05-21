@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
         {
             "description": "Double F1_tmp1Python_tmpUwscFileOpen(Double Push)",
@@ -239,7 +239,8 @@
         {
           "type": "basic",
           "from": <%= from("f2") %>,
-          "to": <%= to([["return_or_enter"]]) %>
+          "to": <%= to([["return_or_enter"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
