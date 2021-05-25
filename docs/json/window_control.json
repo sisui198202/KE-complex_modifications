@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl3",
+  "title": "WindowControl4",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -209,7 +209,7 @@
           ]
         },
         {
-          "description": "RightCommand + Period_MaxWindow1",
+          "description": "RightCommand + Period_MaxWindow",
           "type": "basic",
           "from": {
             "key_code": "period",
