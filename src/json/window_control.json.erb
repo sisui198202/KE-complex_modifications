@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl1",
+  "title": "WindowControl2",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -76,6 +76,13 @@
         "type": "basic",
         "from": <%= from("m", ["fn"], ["caps_lock"]) %>,
         "to": <%= to([["5", ["left_alt"]]]) %>
+    },
+    {
+      "description": "RightCommand + P_RightWindowMove",
+      "type": "basic",
+      "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
+      "to": <%= to([["3", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "LeftCommand + Q_LeftWindowMove",
