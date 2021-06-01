@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder1",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -7,7 +7,7 @@
         {
           "type": "basic",
           "from": <%= from("u", ["left_alt"]) %>,
-          "to": <%= to([["l", ["left_alt","left_gui"]]]) %>,
+          "to": <%= to([["l", ["left_alt", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -39,8 +39,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a",["right_gui"]) %>,
-          "to": <%= to([["n", ["right_alt","right_gui"]]]) %>,
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -51,7 +51,7 @@
         {
           "type": "basic",
           "from": <%= from("spacebar", ["left_alt"]) %>,
-          "to": <%= to([["button1"],["button1"]]) %>,
+          "to": <%= to([["button1"], ["button1"]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -62,7 +62,7 @@
         {
           "type": "basic",
           "from": <%= from("return_or_enter") %>,
-          "to": <%= to([["button1"],["button1"]]) %>,
+          "to": <%= to([["button1"], ["button1"]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -72,8 +72,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a",["left_alt"]) %>,
-          "to": <%= to([["n", ["right_shift","right_gui"]]]) %>,
+          "from": <%= from("a", ["left_alt"]) %>,
+          "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -83,8 +83,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("period",["left_alt"]) %>,
-          "to": <%= to([["period", ["left_control","right_alt"]]]) %>,
+          "from": <%= from("period", ["left_alt"]) %>,
+          "to": <%= to([["period", ["left_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -94,8 +94,8 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma",["left_alt"]) %>,
-          "to": <%= to([["backslash", ["left_control","left_alt"]]]) %>,
+          "from": <%= from("comma", ["left_alt"]) %>,
+          "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
