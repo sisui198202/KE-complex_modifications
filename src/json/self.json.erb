@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -293,6 +293,17 @@
           "type": "basic",
           "from": <%= from("f", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["5", ["left_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Q_AlfredSQLPLUSCOMMAND_List",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["left_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
