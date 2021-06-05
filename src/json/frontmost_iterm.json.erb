@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIterm",
+    "title": "FrontmostIfIterm1",
     "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -50,7 +50,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("semicolon", ["left_control"]) %>,
+          "from": <%= from("quote", ["left_control"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
