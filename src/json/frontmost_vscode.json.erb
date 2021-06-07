@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -140,6 +140,17 @@
           "type": "basic",
           "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + A_VscodeNewFileCreate(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
