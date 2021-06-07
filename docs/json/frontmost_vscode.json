@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode2",
+  "title": "FrontmostIfVscode3",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -483,6 +483,42 @@
           "to": [
             {
               "key_code": "1",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + F_VscodeNewFolderCreate(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
               "modifiers": [
                 "right_alt",
                 "right_gui"
