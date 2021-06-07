@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode2",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -151,6 +151,17 @@
           "type": "basic",
           "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + Q_VscodeSideBarFocus(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["p", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
