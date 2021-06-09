@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -30,6 +30,17 @@
           "type": "basic",
           "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["left_control"]], ["return_or_enter"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + R_Replace(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["r", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
