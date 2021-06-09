@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi1",
+    "title": "FrontmostIfmi",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -40,7 +40,7 @@
         {
           "type": "basic",
           "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["r", ["right_gui"]]]) %>,
+          "to": <%= to([["f", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
