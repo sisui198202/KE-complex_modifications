@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -50,8 +50,19 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l", ["right_gui"]) %>,
+          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["open_bracket", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Semicolon_LatestTabToggle(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["close_bracket", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
@@ -74,17 +85,6 @@
           "type": "basic",
           "from": <%= from("comma", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["w", ["left_control", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("mi") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Semicolon_LatestTabToggle(mi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("semicolon", ["right_gui"]) %>,
-          "to": <%= to([["close_bracket", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
