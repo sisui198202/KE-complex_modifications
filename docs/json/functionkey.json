@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
     {
       "description": "Double F1_tmp1Python_tmpUwscFileOpen(Double Push)",
@@ -273,6 +273,30 @@
           "to": [
             {
               "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsx'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightShift + F1_MokuziKugiriCreate.exe",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f1",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open '/Users/user/MacWindowShare/MokuziKugiriCreate.exe'"
             }
           ]
         }

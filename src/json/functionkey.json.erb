@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
         {
             "description": "Double F1_tmp1Python_tmpUwscFileOpen(Double Push)",
@@ -254,6 +254,16 @@
     }
   ]
 },
+  {
+      "description": "RightShift + F1_MokuziKugiriCreate.exe",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f1", ["right_shift"], ["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open '/Users/user/MacWindowShare/MokuziKugiriCreate.exe'"]) %>
+        }
+      ]
+    },
 {
   "description": "F4_Rule.txtOpen(iterm2Script)",
   "manipulators": [
