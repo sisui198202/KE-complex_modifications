@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfkindle",
+    "title": "FrontmostIfkindle1",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -40,7 +40,7 @@
         {
           "type": "basic",
           "from": <%= from("z", ["right_alt"]) %>,
-          "to": <%= to([["0", ["left_control", "left_alt"]]]) %>,
+          "to": <%= to([["4", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
