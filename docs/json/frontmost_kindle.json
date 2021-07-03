@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfkindle",
+  "title": "FrontmostIfkindle1",
   "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -18,8 +18,8 @@
             {
               "key_code": "7",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "right_shift",
+                "right_gui"
               ]
             }
           ],
