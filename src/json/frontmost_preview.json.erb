@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview1",
+    "title": "FrontmostIfpreview2",
     "rules": [
     {
       "description": "LeftCommand + I_Expansion(preview)",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
           "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + R_RowNumberSelectMove(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["left_alt"]) %>,
+          "to": <%= to([["8", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]

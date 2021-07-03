@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview1",
+  "title": "FrontmostIfpreview2",
   "rules": [
     {
       "description": "LeftCommand + I_Expansion(preview)",
@@ -53,6 +53,39 @@
               "modifiers": [
                 "left_shift",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + R_RowNumberSelectMove(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": [
+                "left_control",
+                "left_alt"
               ]
             }
           ],
