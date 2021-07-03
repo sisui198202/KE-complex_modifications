@@ -1,25 +1,25 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview1",
   "rules": [
     {
-      "description": "RightAlt + A_FullScreen(preview)",
+      "description": "LeftCommand + I_Expansion(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "7",
+              "key_code": "equal_sign",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "left_shift",
+                "right_gui"
               ]
             }
           ],
@@ -35,24 +35,24 @@
       ]
     },
     {
-      "description": "LeftAlt + R_RowNumberSelectMove(preview)",
+      "description": "LeftCommand + U_Shrink(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "r",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "8",
+              "key_code": "hyphen",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "left_shift",
+                "right_gui"
               ]
             }
           ],

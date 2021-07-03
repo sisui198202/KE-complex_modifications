@@ -1,24 +1,24 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview1",
     "rules": [
     {
-      "description": "RightAlt + A_FullScreen(preview)",
+      "description": "LeftCommand + I_Expansion(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_alt"]) %>,
-          "to": <%= to([["7", ["left_control", "left_alt"]]]) %>,
+          "from": <%= from("i", ["left_control"]) %>,
+          "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
     {
-      "description": "LeftAlt + R_RowNumberSelectMove(preview)",
+      "description": "LeftCommand + U_Shrink(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("r", ["left_alt"]) %>,
-          "to": <%= to([["8", ["left_control", "left_alt"]]]) %>,
+          "from": <%= from("u", ["left_control"]) %>,
+          "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
