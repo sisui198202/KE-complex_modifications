@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIterm",
+  "title": "FrontmostIfIterm1",
   "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "description": "LeftAlt + U_LineDown(iterm2)",
+      "description": "LeftAlt + U_LineUp(iterm2)",
       "manipulators": [
         {
           "type": "basic",
@@ -229,7 +229,7 @@
       ]
     },
     {
-      "description": "LeftAlt + I_LineUp(iterm2)",
+      "description": "LeftAlt + I_LineDown(iterm2)",
       "manipulators": [
         {
           "type": "basic",
