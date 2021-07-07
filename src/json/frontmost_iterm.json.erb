@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIterm1",
+    "title": "FrontmostIfIterm",
     "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -68,23 +68,23 @@
       ]
     },
     {
-      "description": "LeftAlt + U_LineUp(iterm2)",
+      "description": "LeftAlt + U_LineDown(iterm2)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["left_alt"]) %>,
-          "to": <%= to([["1", ["right_gui", "left_shift"]]]) %>,
+          "to": <%= to([["2", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
     },
     {
-      "description": "LeftAlt + I_LineDown(iterm2)",
+      "description": "LeftAlt + I_LineUp(iterm2)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("i", ["left_alt"]) %>,
-          "to": <%= to([["2", ["right_gui", "left_shift"]]]) %>,
+          "to": <%= to([["1", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]

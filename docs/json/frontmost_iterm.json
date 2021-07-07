@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIterm1",
+  "title": "FrontmostIfIterm",
   "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -196,7 +196,7 @@
       ]
     },
     {
-      "description": "LeftAlt + U_LineUp(iterm2)",
+      "description": "LeftAlt + U_LineDown(iterm2)",
       "manipulators": [
         {
           "type": "basic",
@@ -210,7 +210,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "2",
               "modifiers": [
                 "right_gui",
                 "left_shift"
@@ -229,7 +229,7 @@
       ]
     },
     {
-      "description": "LeftAlt + I_LineDown(iterm2)",
+      "description": "LeftAlt + I_LineUp(iterm2)",
       "manipulators": [
         {
           "type": "basic",
@@ -243,7 +243,7 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "1",
               "modifiers": [
                 "right_gui",
                 "left_shift"
