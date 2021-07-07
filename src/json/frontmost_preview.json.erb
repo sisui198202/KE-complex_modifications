@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview1",
     "rules": [
     {
       "description": "LeftCommand + I_Expansion(preview)",
@@ -30,6 +30,17 @@
           "type": "basic",
           "from": <%= from("r", ["left_alt"]) %>,
           "to": <%= to([["8", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_LeftSideBarToggleOnOff(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"]) %>,
+          "to": <%= to([["1", ["left_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
