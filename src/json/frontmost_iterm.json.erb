@@ -77,6 +77,17 @@
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
+    },
+    {
+      "description": "LeftAlt + I_LineUp(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["left_alt"]) %>,
+          "to": <%= to([["2", ["right_gui", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+        }
+      ]
     }
     ]
 }
