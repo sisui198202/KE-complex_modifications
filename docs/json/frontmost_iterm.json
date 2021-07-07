@@ -262,7 +262,7 @@
       ]
     },
     {
-      "description": "LeftCommand + B_PageDown",
+      "description": "LeftCommand + B_PageDown(iterm2)",
       "manipulators": [
         {
           "type": "basic",
@@ -298,7 +298,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Slash_PageUp",
+      "description": "LeftCommand + Slash_PageUp(iterm2)",
       "manipulators": [
         {
           "type": "basic",
