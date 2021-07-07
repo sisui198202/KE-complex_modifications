@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview1",
+  "title": "FrontmostIfpreview",
   "rules": [
     {
       "description": "LeftCommand + I_Expansion(preview)",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "LeftCommand + T_LeftSideBarToggleOnOff(preview)",
+      "description": "LeftCommand + T_LeftSideBarToggleOff(preview)",
       "manipulators": [
         {
           "type": "basic",
