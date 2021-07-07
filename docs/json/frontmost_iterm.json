@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIterm",
+  "title": "FrontmostIfIterm1",
   "rules": [
     {
       "description": "LeftCommand + O_SplitVertically(iterm2)",
@@ -169,7 +169,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
                 "left_alt"
@@ -181,6 +181,39 @@
               "key_code": "k",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + U_LineDown(iterm2)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui",
+                "left_shift"
               ]
             }
           ],
