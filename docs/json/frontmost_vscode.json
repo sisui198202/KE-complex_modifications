@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode2",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -465,7 +465,7 @@
       ]
     },
     {
-      "description": "LeftAlt + A_VscodeNewFileCreate(vscode)",
+      "description": "LeftAlt + A_VscodeNewFolderCreate(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -501,7 +501,7 @@
       ]
     },
     {
-      "description": "LeftAlt + F_VscodeNewFolderCreate(vscode)",
+      "description": "LeftAlt + F_VscodeNewFileCreate(vscode)",
       "manipulators": [
         {
           "type": "basic",
