@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder1",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -94,15 +94,15 @@
       ]
     },
     {
-      "description": "RightCommand + A_NewFileCreate(pathfinder)",
+      "description": "LeftAlt + F_NewFileCreate(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"
