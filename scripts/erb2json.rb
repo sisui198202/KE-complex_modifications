@@ -272,11 +272,12 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^com.apple.Terminal$",
   ]
 
+  virtualBoxVM_bundle_identifiers = [
+    "^org.virtualbox.app.VirtualBoxVM$",
+  ]
+
   evernote_bundle_identifiers = [
     "^com.evernote.Evernote$",
-  ]
-  VirtualBoxVM_bundle_identifiers = [
-    "^org.virtualbox.app.VirtualBoxVM",
   ]
   # ----------------------------------------
 
@@ -361,7 +362,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     when "evernote"
       bundle_identifiers.concat(evernote_bundle_identifiers)
     when "centos_ubuntu"
-      bundle_identifiers.concat(VirtualBoxVM_bundle_identifiers)
+      bundle_identifiers.concat(virtualBoxVM_bundle_identifiers)
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end
