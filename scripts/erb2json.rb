@@ -275,6 +275,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   evernote_bundle_identifiers = [
     "^com.evernote.Evernote$",
   ]
+  VirtualBoxVM_bundle_identifiers = [
+    "^org.virtualbox.app.VirtualBoxVM",
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -357,6 +360,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(terminal_bundle_identifiers)
     when "evernote"
       bundle_identifiers.concat(evernote_bundle_identifiers)
+    when "centos_ubuntu"
+      bundle_identifiers.concat(VirtualBoxVM_bundle_identifiers)
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end
