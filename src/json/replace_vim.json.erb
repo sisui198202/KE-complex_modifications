@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey_vim",
+  "title": "Replacekey_vim123",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -277,6 +277,14 @@
             },
             {
               "key_code": "semicolon"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
             }
           ]
         }
