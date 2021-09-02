@@ -470,7 +470,7 @@
       ]
     },
     {
-      "description": "RightCommand + Z,X,C,V,A,S,D,W,E,R_Number0~9(Replacekey)",
+      "description": "RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
