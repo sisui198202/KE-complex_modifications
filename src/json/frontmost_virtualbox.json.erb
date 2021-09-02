@@ -1,0 +1,27 @@
+{
+    "title": "FrontmostIfVirtualbox",
+    "rules": [
+    {
+      "description": "RightCommand + Z_0(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0"]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + H_Reload(Vivaldi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["right_gui"]) %>,
+          "to": <%= to([["f5"]]) %>,
+          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+        }
+      ]
+    }
+    ]
+}
