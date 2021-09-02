@@ -11,17 +11,6 @@
           "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
         }
       ]
-    },
-    {
-      "description": "RightCommand + H_Reload(Vivaldi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("h", ["right_gui"]) %>,
-          "to": <%= to([["f5"]]) %>,
-          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-        }
-      ]
     }
     ]
 }

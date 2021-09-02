@@ -32,35 +32,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "RightCommand + H_Reload(Vivaldi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f5"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
