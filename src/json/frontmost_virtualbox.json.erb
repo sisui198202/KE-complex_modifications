@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox12345",
+    "title": "FrontmostIfVirtualbox123456",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -173,6 +173,17 @@
           "type": "basic",
           "from": <%= from("right_alt", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["equal_sign"]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Leftoption_backslash(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["backslash"]]) %>,
           "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
         }
       ]

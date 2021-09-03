@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox12345",
+  "title": "FrontmostIfVirtualbox123456",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -504,6 +504,38 @@
           "to": [
             {
               "key_code": "equal_sign"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Leftoption_backslash(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "backslash"
             }
           ],
           "conditions": [
