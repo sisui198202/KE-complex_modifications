@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey123",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -767,7 +767,7 @@
       ]
     },
     {
-      "description": "Colon(Replacekey)",
+      "description": "Colon(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -792,12 +792,20 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
           ]
         }
       ]
     },
     {
-      "description": "MarukakoHiraki(Replacekey)",
+      "description": "MarukakoHiraki(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -820,6 +828,14 @@
               "key_code": "9",
               "modifiers": [
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
               ]
             }
           ]
