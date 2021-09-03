@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox1234",
+  "title": "FrontmostIfVirtualbox12345",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -486,7 +486,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal(Vitualbox)",
+      "description": "LeftCommand + Rightoption_equal(Vitualbox)1",
       "manipulators": [
         {
           "type": "basic",
@@ -502,9 +502,6 @@
             }
           },
           "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
             {
               "key_code": "equal_sign"
             }
