@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox",
+  "title": "FrontmostIfVirtualbox1",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -313,6 +313,39 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leftoption + Rightoption_parsent(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": "right_shift"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^org.virtualbox.app.VirtualBoxVM$"
               ]

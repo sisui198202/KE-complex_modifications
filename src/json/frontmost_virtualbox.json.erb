@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox",
+    "title": "FrontmostIfVirtualbox1",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -111,6 +111,17 @@
         }
       ]
     },
+    {
+      "description": "Leftoption + Rightoption_parsent(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_alt", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["5", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        }
+      ]
+},
     {
       "description": "Double RightShift_Pipeline(Vitualbox)",
       "manipulators": [
