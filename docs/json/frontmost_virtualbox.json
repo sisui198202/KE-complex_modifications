@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox1",
+  "title": "FrontmostIfVirtualbox",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -322,7 +322,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent(Vitualbox)",
+      "description": "使用不可hostキー起動の為、Leftoption + Rightoption_parsent(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
@@ -345,7 +345,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^org.virtualbox.app.VirtualBoxVM$"
               ]
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado(Vitualbox)",
+      "description": "使用不可hostキー起動の為、Rightoption + Leftoption_anbasado(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
@@ -378,7 +378,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^org.virtualbox.app.VirtualBoxVM$"
               ]
@@ -411,7 +411,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^org.virtualbox.app.VirtualBoxVM$"
               ]
@@ -444,7 +444,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^org.virtualbox.app.VirtualBoxVM$"
               ]
