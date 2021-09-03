@@ -322,7 +322,7 @@
       ]
     },
     {
-      "description": "Double RightShift_Pipeline(Double Push)",
+      "description": "Double RightShift_Pipeline(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
@@ -393,7 +393,7 @@
       ]
     },
     {
-      "description": "Double LeftShift_tilde(Double Push)",
+      "description": "Double LeftShift_tilde(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",

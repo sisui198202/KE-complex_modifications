@@ -285,7 +285,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent(Replacekey)",
+      "description": "Leftoption + Rightoption_parsent(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -308,12 +308,20 @@
               "key_code": "5",
               "modifiers": "right_shift"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
           ]
         }
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado(Replacekey)",
+      "description": "Rightoption + Leftoption_anbasado(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -335,6 +343,14 @@
             {
               "key_code": "7",
               "modifiers": "right_shift"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
             }
           ]
         }
@@ -413,6 +429,14 @@
               "key_code": "equal_sign",
               "modifiers": "right_shift"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
           ]
         }
       ]
@@ -440,6 +464,14 @@
             {
               "key_code": "hyphen",
               "modifiers": "right_shift"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
             }
           ]
         }
