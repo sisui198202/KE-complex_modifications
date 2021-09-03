@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey5",
+  "title": "Replacekey6",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -157,6 +157,14 @@
             },
             {
               "key_code": "backslash"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
             }
           ]
         }

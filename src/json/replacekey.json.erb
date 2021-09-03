@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey5",
+  "title": "Replacekey6",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -51,7 +51,8 @@
         {
           "type": "basic",
           "from": <%= from("left_alt", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"], ["backslash"]]) %>
+          "to": <%= to([["japanese_eisuu"], ["backslash"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
         }
       ]
     },
