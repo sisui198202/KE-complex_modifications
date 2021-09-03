@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey2",
+  "title": "Replacekey3",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -30,7 +30,7 @@
           "type": "basic",
           "from": <%= from("right_alt", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["equal_sign"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
         }
       ]
     },

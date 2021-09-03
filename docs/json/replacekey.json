@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey2",
+  "title": "Replacekey3",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -96,7 +96,7 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^org.virtualbox.app.VirtualBoxVM$"
               ]
             }
           ]
