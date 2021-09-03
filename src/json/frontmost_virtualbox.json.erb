@@ -122,6 +122,39 @@
         }
       ]
 },
+{
+      "description": "Rightoption + Leftoption_anbasado(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
+          "to": <%= to([["7", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + RightCommand_plus(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["equal_sign", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + LeftCommand_underbar(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["hyphen", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        }
+      ]
+    },
     {
       "description": "Double RightShift_Pipeline(Vitualbox)",
       "manipulators": [
