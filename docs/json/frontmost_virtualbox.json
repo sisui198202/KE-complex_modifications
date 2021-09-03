@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox123",
+  "title": "FrontmostIfVirtualbox1234",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -454,7 +454,7 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace(Vitualbox)1",
+      "description": "LeftCommand + space_BackSpace(Vitualbox)2",
       "manipulators": [
         {
           "type": "basic",
@@ -476,9 +476,9 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^org.virtualbox.app.VirtualBoxVM$"
               ]
             }
           ]

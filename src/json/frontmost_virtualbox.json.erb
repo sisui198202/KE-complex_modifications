@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox123",
+    "title": "FrontmostIfVirtualbox1234",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -156,14 +156,13 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace(Vitualbox)1",
+      "description": "LeftCommand + space_BackSpace(Vitualbox)2",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["delete_or_backspace"]]) %>,
-          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ],
-          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
         }
       ]
     },
