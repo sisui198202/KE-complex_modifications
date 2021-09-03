@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox12",
+    "title": "FrontmostIfVirtualbox123",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -151,6 +151,29 @@
           "type": "basic",
           "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["hyphen", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + space_BackSpace(Vitualbox)1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["delete_or_backspace"]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ],
+          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Rightoption_equal(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_alt", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["equal_sign"]]) %>,
           "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
         }
       ]
