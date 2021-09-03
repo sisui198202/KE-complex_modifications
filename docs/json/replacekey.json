@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey6",
+  "title": "Replacekey",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "description": "Leftoption + Rightoption_parsent(Replacekey)1",
+      "description": "Leftoption + Rightoption_parsent(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado(Replacekey)1",
+      "description": "Rightoption + Leftoption_anbasado(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
