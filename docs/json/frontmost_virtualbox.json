@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox99",
+  "title": "FrontmostIfVirtualbox98",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "description": "コマンドキー単体で押す（左コマンドキー英数、右コマンドキーかな）(Vitualbox)99",
+      "description": "コマンドキー単体で押す（左コマンドキー英数、右コマンドキーかな）(Vitualbox)98",
       "manipulators": [
         {
           "from": {
@@ -577,7 +577,10 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "left_command"
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ],
           "type": "basic"
