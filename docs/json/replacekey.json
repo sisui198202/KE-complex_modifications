@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -366,7 +366,7 @@
       ]
     },
     {
-      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)1",
+      "description": "コマンドキー単体で押す（左コマンドキー英数、右コマンドキーかな）(Replacekey)1",
       "manipulators": [
         {
           "from": {
