@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox123456",
+    "title": "FrontmostIfVirtualbox99",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -188,6 +188,71 @@
         }
       ]
     },
+    {
+      "description": "コマンドキー単体で押す（左コマンドキー英数、右コマンドキーかな）(Vitualbox)99",
+      "manipulators": [
+          {
+              "from": {
+                  "key_code": "left_control",
+                  "modifiers": {
+                    "optional": [
+                      "caps_lock"
+                    ]
+                  }
+              },
+              "to": [
+                  {
+                      "key_code": "left_control",
+                      "lazy": true
+                  }
+              ],
+              "conditions": [
+                {
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": [
+                    "^org.virtualbox.app.VirtualBoxVM$"
+                  ]
+                }
+              ],
+              "to_if_alone": [
+                  {
+                      "key_code": "left_command"
+                  }
+              ],
+              "type": "basic"
+          },
+          {
+              "from": {
+                  "key_code": "right_command",
+                  "modifiers": {
+                    "optional": [
+                      "caps_lock"
+                    ]
+                  }
+              },
+              "to": [
+                  {
+                      "key_code": "right_command",
+                      "lazy": true
+                  }
+              ],
+              "conditions": [
+                {
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": [
+                    "^org.virtualbox.app.VirtualBoxVM$"
+                  ]
+                }
+              ],
+              "to_if_alone": [
+                  {
+                      "key_code": "right_command"
+                  }
+              ],
+              "type": "basic"
+          }
+      ]
+  },
     {
       "description": "Double RightShift_Pipeline(Vitualbox)",
       "manipulators": [
