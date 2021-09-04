@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey2",
+  "title": "Replacekey3",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "description": "Colon(Replacekey)1",
+      "description": "Colon(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -822,7 +822,7 @@
       ]
     },
     {
-      "description": "MarukakoHiraki(Replacekey)1",
+      "description": "MarukakoHiraki(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
