@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey1235",
+  "title": "Replacekey",
   "rules": [
    {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste(Replacekey)1",
+      "description": "RightOption_Paste(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -174,7 +174,7 @@
       ]
     },
 {
-                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)",
+                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Replacekey)1",
                         "manipulators": [
                             {
                                 "from": {
@@ -190,6 +190,14 @@
                                         "key_code": "left_control",
                                         "lazy": true
                                     }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "frontmost_application_unless",
+                                    "bundle_identifiers": [
+                                      "^org.virtualbox.app.VirtualBoxVM$"
+                                    ]
+                                  }
                                 ],
                                 "to_if_alone": [
                                     {
@@ -212,6 +220,14 @@
                                         "key_code": "right_command",
                                         "lazy": true
                                     }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "frontmost_application_unless",
+                                    "bundle_identifiers": [
+                                      "^org.virtualbox.app.VirtualBoxVM$"
+                                    ]
+                                  }
                                 ],
                                 "to_if_alone": [
                                     {
