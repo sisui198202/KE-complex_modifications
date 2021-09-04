@@ -454,7 +454,7 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace(Vitualbox)2",
+      "description": "LeftCommand + space_BackSpace(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
@@ -486,7 +486,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Rightoption_equal(Vitualbox)1",
+      "description": "LeftCommand + Rightoption_equal(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
