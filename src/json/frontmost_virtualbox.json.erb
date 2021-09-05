@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox9",
+    "title": "FrontmostIfVirtualbox91",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -206,6 +206,17 @@
           "type": "basic",
           "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["t", ["left_control", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + G_FileTabClose(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["w", ["left_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
         }
       ]
