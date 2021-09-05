@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox0",
+  "title": "FrontmostIfVirtualbox99",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -621,7 +621,45 @@
       ]
     },
     {
-      "description": "RightOption_Paste(Vitualbox)1",
+      "description": "LeftAlt_Copy(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_shift",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption_Paste(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
@@ -642,8 +680,8 @@
             {
               "key_code": "v",
               "modifiers": [
-                "left_control",
-                "left_shift"
+                "left_shift",
+                "left_control"
               ]
             }
           ],
