@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox123",
+    "title": "FrontmostIfVirtualbox",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -232,6 +232,28 @@
         }
       ]
     },
+    {
+      "description": "LeftCommand + B_PageDown(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["page_down", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+        }
+      ]
+          },
+          {
+            "description": "LeftCommand + Slash_PageUp(Vitualbox)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+                "to": <%= to([["page_up", ["left_shift"]]]) %>,
+                "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+              }
+            ]
+                },
     {
       "description": "コマンドキー単体で押す（左コマンドキー英数、右コマンドキーかな）(Vitualbox)",
       "manipulators": [
