@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox",
+  "title": "FrontmostIfVirtualbox123",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -571,6 +571,41 @@
               "modifiers": [
                 "left_control",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + C_Clear(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "left_control"
               ]
             }
           ],
