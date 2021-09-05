@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox79",
+  "title": "FrontmostIfVirtualbox",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -622,7 +622,7 @@
       ]
     },
     {
-      "description": "LeftAlt + C_Clear(Vitualbox)1",
+      "description": "LeftAlt + C_Clear(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
