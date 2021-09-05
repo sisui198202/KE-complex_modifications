@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtualbox7",
+    "title": "FrontmostIfVirtualbox79",
     "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -184,6 +184,17 @@
           "type": "basic",
           "from": <%= from("left_alt", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["backslash"]]) %>,
+          "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + N_HeadRowCursol(Vitualbox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["left_arrow", ["fn", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
         }
       ]
