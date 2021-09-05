@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtualbox",
+  "title": "FrontmostIfVirtualbox12",
   "rules": [
     {
       "description": "RightCommand + Z_0(Vitualbox)",
@@ -621,7 +621,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste(Replacekey)",
+      "description": "RightOption_Paste(Vitualbox)",
       "manipulators": [
         {
           "type": "basic",
