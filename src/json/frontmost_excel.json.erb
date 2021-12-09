@@ -188,6 +188,41 @@
         }
       ]
     },
+    {
+      "description": "LeftAlt_Copy(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+	  "conditions": [
+		{
+		  "type": "frontmost_application_if",
+		  "bundle_identifiers": [
+		    "^com\\.microsoft\\.Excel$"
+		  ]
+		}
+	      ]
+        }
+      ]
+    },
  {
       "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
       "manipulators": [
