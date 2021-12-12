@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel4",
+    "title": "FrontmostIfExcel6",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -258,6 +258,28 @@
         }
       ]
     },
+    {
+      "description": "RightCommand + C_2(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["c", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + V_3(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["v", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+},
  {
       "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
       "manipulators": [
