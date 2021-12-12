@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel99",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -162,6 +162,17 @@
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
           "to": <%= to([["right_arrow", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + B_Build(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["right_gui"]) %>,
+          "to": <%= to([["f5"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
