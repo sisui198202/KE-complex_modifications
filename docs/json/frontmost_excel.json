@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel6",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -622,7 +622,7 @@
       ]
     },
     {
-      "description": "RightCommand + C_2(Excel)",
+      "description": "RightCommand + C_Copy(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -655,7 +655,7 @@
       ]
     },
     {
-      "description": "RightCommand + V_3(Excel)",
+      "description": "RightCommand + V_Paste(Excel)",
       "manipulators": [
         {
           "type": "basic",
