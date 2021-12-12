@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel1",
+    "title": "FrontmostIfExcel2",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy(Replacekey)",
+      "description": "LeftAlt_Copy(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -209,6 +209,41 @@
           "to_if_alone": [
             {
               "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+	  "conditions": [
+		{
+		  "type": "frontmost_application_if",
+		  "bundle_identifiers": [
+		    "^com\\.microsoft\\.Excel$"
+		  ]
+		}
+	      ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Vaste(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "v",
               "modifiers": "right_gui"
             }
           ],
