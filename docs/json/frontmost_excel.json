@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel2",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -549,7 +549,7 @@
       ]
     },
     {
-      "description": "LeftAlt + F11_VBAeditor(Excel)",
+      "description": "使用しない_LeftAlt + F11_VBAeditor(Excel)",
       "manipulators": [
         {
           "type": "basic",
