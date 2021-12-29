@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel1",
+  "title": "FrontmostIfExcel2",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -735,6 +735,41 @@
             {
               "key_code": "v",
               "modifiers": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + X_VisualBasic",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f11",
+              "modifiers": [
+                "right_alt"
+              ]
             }
           ],
           "conditions": [

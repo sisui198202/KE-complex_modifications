@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel1",
+    "title": "FrontmostIfExcel2",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -302,6 +302,17 @@
         }
       ]
 },
+{
+      "description": "RightAlt + X_VisualBasic",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["f11", ["right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
  {
       "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
       "manipulators": [
