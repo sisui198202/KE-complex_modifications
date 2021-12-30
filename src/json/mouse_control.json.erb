@@ -1,5 +1,5 @@
 {
-    "title": "MouseControl",
+    "title": "MouseControl1",
     "rules": [
         {
             "description": "適用しない_WindowLeftUp(MouseControl)",
@@ -78,6 +78,26 @@
                 }
             ]
         },
+        {
+            "description": "RAlt + Z_750-300Click(MouseControl)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": <%= from("z", ["right_alt"]) %>,
+      "to": [
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "750",
+              "y": "300",
+              "screen": 0
+            }
+          }
+        }
+      ]
+              }
+            ]
+          },
   {
       "description": "適用しない_Fn + Spacebar_LeftClick(MouseControl)",
       "manipulators": [
