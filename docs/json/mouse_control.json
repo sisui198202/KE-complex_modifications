@@ -1,5 +1,5 @@
 {
-  "title": "MouseControl5",
+  "title": "MouseControl",
   "rules": [
     {
       "description": "適用しない_WindowLeftUp(MouseControl)",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "description": "RAlt + Z_20-60Click(MouseControl)",
+      "description": "RAlt + Z_Visual Basic-Excel(MouseControl)",
       "manipulators": [
         {
           "type": "basic",
