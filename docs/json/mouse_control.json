@@ -1,5 +1,5 @@
 {
-  "title": "MouseControl3",
+  "title": "MouseControl4",
   "rules": [
     {
       "description": "適用しない_WindowLeftUp(MouseControl)",
@@ -93,13 +93,7 @@
           },
           "to": [
             {
-              "software_function": {
-                "set_mouse_cursor_position": {
-                  "x": "20",
-                  "y": "60",
-                  "screen": 0
-                }
-              }
+              "pointing_button": "button1"
             }
           ]
         }
