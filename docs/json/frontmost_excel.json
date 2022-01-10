@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel3",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -789,7 +789,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "F8"
+            "key_code": "f8"
           },
           "to": [
             {
