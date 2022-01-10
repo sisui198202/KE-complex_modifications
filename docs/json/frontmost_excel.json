@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -769,6 +769,34 @@
               "key_code": "f11",
               "modifiers": [
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "F8_StepIn(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "F8"
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
               ]
             }
           ],

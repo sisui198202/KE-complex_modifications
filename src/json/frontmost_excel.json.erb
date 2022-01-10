@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel1",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -309,6 +309,17 @@
           "type": "basic",
           "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f11", ["right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "F8_StepIn(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("F8") %>,
+          "to": <%= to([["i", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
