@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi1",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -497,7 +497,7 @@
       ]
     },
     {
-      "description": "Kakukako_OpenCloseInput(mi)",
+      "description": "Kakukako_OpenCloseInput(mi)1",
       "manipulators": [
         {
           "type": "basic",
@@ -510,6 +510,11 @@
             }
           },
           "to": [
+            {
+              "select_input_source": {
+                "input_source_id": "com.google.inputmethod.Japanese.Roman"
+              }
+            },
             {
               "key_code": "japanese_eisuu"
             },
