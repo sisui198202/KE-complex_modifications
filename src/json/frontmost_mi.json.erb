@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi1",
+    "title": "FrontmostIfmi",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "description": "Kakukako_OpenCloseInput(mi)3",
+      "description": "Kakukako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
@@ -172,6 +172,45 @@
             {
               "type": "input_source_if",
               "input_sources": [{ "language": "en" }]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Kagikako_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket"
+            },
+            {
+              "key_code": "close_bracket"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "ja" }]
             },
             {
               "type": "frontmost_application_if",
