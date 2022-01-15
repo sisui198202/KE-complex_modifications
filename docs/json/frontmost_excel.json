@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel3",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -613,7 +613,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy(Excel)1",
+      "description": "使用しないLeftAlt_Copy(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -683,7 +683,7 @@
       ]
     },
     {
-      "description": "RightCommand + C_Copy(Excel)",
+      "description": "RightAlt + C_Copy(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -691,7 +691,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "description": "RightCommand + V_Paste(Excel)",
+      "description": "RightAlt + V_Paste(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -724,7 +724,7 @@
             "key_code": "v",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_alt"
               ],
               "optional": [
                 "caps_lock"

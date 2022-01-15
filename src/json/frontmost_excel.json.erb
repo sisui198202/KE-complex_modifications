@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel3",
+    "title": "FrontmostIfExcel",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy(Excel)1",
+      "description": "使用しないLeftAlt_Copy(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -281,22 +281,22 @@
       ]
     },
     {
-      "description": "RightCommand + C_Copy(Excel)",
+      "description": "RightAlt + C_Copy(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("c", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["c", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
     },
     {
-      "description": "RightCommand + V_Paste(Excel)",
+      "description": "RightAlt + V_Paste(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["v", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
