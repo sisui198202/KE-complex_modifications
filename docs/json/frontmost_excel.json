@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel3",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -304,7 +304,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_EndRowCursol1(Excel)",
+      "description": "LeftCommand + M_EndRowCursol(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "description": "LeftAlt + M_EndRowCursol2(Excel)",
+      "description": "LeftAlt + M_EndRowCursol(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -632,7 +632,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "c",
+              "key_code": "left_alt",
               "modifiers": "left_gui"
             }
           ],
@@ -789,7 +789,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "f8"
+            "key_code": "F8"
           },
           "to": [
             {
