@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "description": "Kakukako_OpenCloseInput(mi)2",
+      "description": "Kakukako_OpenCloseInput(mi)3",
       "manipulators": [
         {
           "type": "basic",
@@ -159,16 +159,6 @@
           },
           "to": [
             {
-              "select_input_source": {
-                "input_mode_id": "com.apple.inputmethod.Roman",
-                "input_source_id": "com.google.inputmethod.Japanese.Roman",
-                "language": "en"
-              }
-            },
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
               "key_code": "open_bracket"
             },
             {
@@ -179,6 +169,10 @@
             }
           ],
           "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "en" }]
+            },
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
