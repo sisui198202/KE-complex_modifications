@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
     {
       "description": "Double F1_tmp1Python_tmpUwscFileOpen(Double Push)",
@@ -313,6 +313,14 @@
           "to": [
             {
               "shell_command": "open '/Users/user/Dropbox/手順_ルール/rule.txt'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
             }
           ]
         }
