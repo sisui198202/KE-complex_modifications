@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -830,6 +830,38 @@
               "modifiers": [
                 "right_gui",
                 "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + J_Select1Row(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_gui"
               ]
             }
           ],
