@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel1",
+  "title": "FrontmostIfExcel99",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -895,6 +895,62 @@
               "modifiers": [
                 "right_gui",
                 "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "F9_StepOver(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f9"
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "F10_StepOut(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f10"
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_gui",
+                "left_shift"
               ]
             }
           ],
