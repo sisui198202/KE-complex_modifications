@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel1",
+    "title": "FrontmostIfExcel2",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -341,7 +341,7 @@
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["a", ["left_gui"]]]) %>,
+          "to": <%= to([["left_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
