@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel2",
+  "title": "FrontmostIfExcel4",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -845,6 +845,38 @@
       ]
     },
     {
+      "description": "LeftCommand + P_BreakPointSet(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + J_Select1Row(Excel)",
       "manipulators": [
         {
@@ -863,6 +895,16 @@
               "modifiers": [
                 "fn"
               ]
+            },
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            },
+            {
+              "key_code": "down_arrow",
+              "modifiers": "left_shift"
             }
           ],
           "conditions": [

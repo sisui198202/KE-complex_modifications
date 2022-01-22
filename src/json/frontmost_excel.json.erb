@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel2",
+    "title": "FrontmostIfExcel4",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -336,12 +336,23 @@
       ]
     },
     {
+      "description": "LeftCommand + P_BreakPointSet(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["left_control"]) %>,
+          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
       "description": "LeftCommand + J_Select1Row(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["left_arrow", ["fn"]]]) %>,
+          "to": <%= to([["left_arrow", ["fn"]], ["left_arrow", ["fn"]], ["down_arrow", "left_shift"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
