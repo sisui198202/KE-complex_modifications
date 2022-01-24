@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -979,12 +979,6 @@
             }
           },
           "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            },
             {
               "key_code": "left_arrow",
               "modifiers": [
