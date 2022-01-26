@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel9",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -375,6 +375,17 @@
           "type": "basic",
           "from": <%= from("f10") %>,
           "to": <%= to([["t", ["right_gui", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftShift + RightOption_形式を選択して貼り付け(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_option",["left_shift"]) %>,
+          "to": <%= to([["v", ["left_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
