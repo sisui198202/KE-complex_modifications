@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel1",
+  "title": "FrontmostIfExcel2",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -1063,7 +1063,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com\\.microsoft\\.Excel$"
               ]
             }
           ]
