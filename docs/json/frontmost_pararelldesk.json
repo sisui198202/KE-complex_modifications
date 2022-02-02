@@ -197,7 +197,7 @@
               ]
             }
           ],
-          "_comment": "c1d8:ExcelのVBE",
+          "_comment": "d51a:Vscode",
           "conditions": [
             {
               "type": "frontmost_application_if",
