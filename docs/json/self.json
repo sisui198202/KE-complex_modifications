@@ -110,7 +110,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_EndRowCursol",
+      "description": "使用しない_LeftCommand + M_EndRowCursol",
       "manipulators": [
         {
           "type": "basic",
