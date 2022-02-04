@@ -151,6 +151,8 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
     "^com.parallels.desktop.console$",
     "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
+    "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
+    "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
   ]
 
   pathfinder_bundle_identifiers = [
