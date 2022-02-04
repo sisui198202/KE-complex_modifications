@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell3",
+  "title": "FrontmostIfPararell5",
   "rules": [
     {
       "description": "使用しない設定済みLeftCommand + D_SelectAll(Pararell)",
@@ -173,7 +173,7 @@
     },
     {
       "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)",
-      "_comment": "下記にKaravinerツール「frontmostApplicationで日本語_英語キー切り替えをLeftCommandとRightCommandでしたい場合、ウィンドウコード確認し、下記に入力」",
+      "_comment": "下記にKaravinerツール「frontmostApplicationで日本語_英語キー切り替えをLeftCommandとRightCommandでしたい場合、ウィンドウコード確認し、下記に入力」,Sublime:7d56,エクスプローラー:b06b,VScode:d51a,ExcelVBE:c1d8",
       "manipulators": [
         {
           "from": {
