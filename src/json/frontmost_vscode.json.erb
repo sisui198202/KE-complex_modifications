@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode4",
+    "title": "FrontmostIfVscode5",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -238,7 +238,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["e", ["right_control"]]]) %>,
+          "to": <%= to([["e", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
