@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)4",
+  "title": "PersonalRules(@sisui)5",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -45,12 +45,13 @@
       ]
     },
   {
-      "description": "LeftCommand + U_BACK",
+      "description": "LeftCommand + U_Undo",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["z", ["left_gui"]]]) %>
+          "to": <%= to([["z", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
