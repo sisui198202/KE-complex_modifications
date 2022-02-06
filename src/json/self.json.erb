@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)3",
+  "title": "PersonalRules(@sisui)4",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -70,7 +70,8 @@
         {
           "type": "basic",
           "from": <%= from("c", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["q", ["right_alt"]]]) %>
+          "to": <%= to([["q", ["right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
