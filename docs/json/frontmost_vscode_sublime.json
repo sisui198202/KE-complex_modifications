@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime",
+  "title": "FrontmostIfVscodeSublime9",
   "rules": [
     {
       "description": "LeftCommand + Z_Insert Line Below(vscode_sublime)",
@@ -112,7 +112,7 @@
       ]
     },
     {
-      "description": "LeftCommand + O_Column2SplitEditerScreen(vscode_sublime)",
+      "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
