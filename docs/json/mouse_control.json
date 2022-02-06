@@ -1,5 +1,5 @@
 {
-  "title": "MouseControl1",
+  "title": "MouseControl",
   "rules": [
     {
       "description": "適用しない_WindowLeftUp(MouseControl)",
