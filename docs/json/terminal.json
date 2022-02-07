@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script",
+  "title": "iterm2Script1",
   "rules": [
     {
       "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -223,7 +223,9 @@
                 "^com.parallels.winapp.b2a817d172762cf19240b17bdbea9826.dc4dfc2676c848d5bb27640140167936$",
                 "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
                 "^com.parallels.desktop.console$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$"
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -279,7 +281,7 @@
       ]
     },
     {
-      "description": "RightAlt + S_ActiveParellDeskWindowsSublime(iterm2Script)",
+      "description": "RightAlt + S_ActiveParellDeskWindowsVscode(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -296,7 +298,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Sublime Text 3.app'"
+              "shell_command": "open -a '/Users/user/Applications (Parallels)/{dc4dfc26-76c8-48d5-bb27-640140167936} Applications.localized/Visual Studio Code.app/Contents/MacOS/WinAppHelper'"
             }
           ]
         }

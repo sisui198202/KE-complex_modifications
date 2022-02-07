@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script",
+  "title": "iterm2Script1",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -113,12 +113,12 @@
       ]
     },
     {
-      "description": "RightAlt + S_ActiveParellDeskWindowsSublime(iterm2Script)",
+      "description": "RightAlt + S_ActiveParellDeskWindowsVscode(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Sublime Text 3.app'"]) %>
+          "to": <%= set_shell_command(["open -a '/Users/user/Applications (Parallels)/{dc4dfc26-76c8-48d5-bb27-640140167936} Applications.localized/Visual Studio Code.app/Contents/MacOS/WinAppHelper'"]) %>
         }
       ]
     },
