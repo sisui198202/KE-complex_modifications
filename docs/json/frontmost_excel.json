@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel3",
+  "title": "FrontmostIfExcel4",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -1071,7 +1071,7 @@
       ]
     },
     {
-      "description": "RightOption_Paste(Replacekey)",
+      "description": "RightOption_Paste(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -1091,7 +1091,7 @@
           "to_if_alone": [
             {
               "key_code": "v",
-              "modifiers": "right_gui"
+              "modifiers": "right_control"
             }
           ],
           "conditions": [
