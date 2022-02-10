@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel5",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -1057,41 +1057,6 @@
                 "right_gui",
                 "left_shift"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption_Paste(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_alt",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_alt"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "v",
-              "modifiers": "left_gui"
             }
           ],
           "conditions": [
