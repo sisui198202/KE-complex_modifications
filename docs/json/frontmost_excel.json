@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel106",
+  "title": "FrontmostIfExcel107",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -352,9 +352,10 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "modifiers": [
-                "right_alt"
+                "fn",
+                "right_control"
               ]
             }
           ],
@@ -384,9 +385,10 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "modifiers": [
-                "right_gui"
+                "fn",
+                "right_control"
               ]
             }
           ],
