@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel102",
+    "title": "FrontmostIfExcel103",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -102,17 +102,6 @@
     },
     {
       "description": "LeftCommand + M_EndCursol(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("m", ["left_control"]) %>,
-          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + M_EndRowCursol(Excel)",
       "manipulators": [
         {
           "type": "basic",
