@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel100",
+    "title": "FrontmostIfExcel102",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -95,7 +95,7 @@
         {
           "type": "basic",
           "from": <%= from("n", ["left_control"]) %>,
-          "to": <%= to([["up_arrow", ["fn"]]]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -106,29 +106,7 @@
         {
           "type": "basic",
           "from": <%= from("m", ["left_control"]) %>,
-          "to": <%= to([["down_arrow", ["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + N_HeadRowCursol1(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("n", ["left_control"]) %>,
-          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + N_HeadRowCursol2(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("n", ["left_alt"]) %>,
-          "to": <%= to([["up_arrow", ["right_alt"]]]) %>,
+          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -140,17 +118,6 @@
           "type": "basic",
           "from": <%= from("m", ["left_control"]) %>,
           "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + M_EndRowCursol(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("m", ["left_alt"]) %>,
-          "to": <%= to([["down_arrow", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
