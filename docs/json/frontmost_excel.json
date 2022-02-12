@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel107",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "description": "LeftAlt + N_HeadCursol(Excel)",
+      "description": "LeftAlt + N_HeadRowCursol2(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -352,10 +352,9 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
+              "key_code": "up_arrow",
               "modifiers": [
-                "fn",
-                "right_control"
+                "right_alt"
               ]
             }
           ],
@@ -371,7 +370,7 @@
       ]
     },
     {
-      "description": "LeftAlt + M_EndCursol(Excel)",
+      "description": "LeftAlt + M_EndRowCursol(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -385,10 +384,9 @@
           },
           "to": [
             {
-              "key_code": "right_arrow",
+              "key_code": "down_arrow",
               "modifiers": [
-                "fn",
-                "right_control"
+                "right_alt"
               ]
             }
           ],
