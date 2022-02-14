@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey1",
   "rules": [
     {
       "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
@@ -758,6 +758,7 @@
     },
     {
       "description": "Semicolon(Replacekey)",
+      "_comment": "Alfredでスニペットを起動する為、英数モードにしてからのセミコロン入力はしないことにしている",
       "manipulators": [
         {
           "type": "basic",
