@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel98",
+  "title": "FrontmostIfExcel97",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -1116,7 +1116,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"

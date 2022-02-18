@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel98",
+    "title": "FrontmostIfExcel97",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -429,7 +429,7 @@
         {
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
-          "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
+          "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
           "to": <%= to([["6", "right_alt"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         },
