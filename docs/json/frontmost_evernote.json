@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEvernote1",
+  "title": "FrontmostIfEvernote",
   "rules": [
     {
       "description": "適用しない_Delete_NoteDelete(Evernote)",
@@ -82,7 +82,7 @@
           },
           "to": [
             {
-              "key_code": "0",
+              "key_code": "9",
               "modifiers": [
                 "left_control",
                 "right_alt"
