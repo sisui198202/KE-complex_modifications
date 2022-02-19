@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel1",
+    "title": "FrontmostIfExcel99",
     "rules": [
    {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -145,12 +145,12 @@
       ]
     },
    {
-      "description": "Spacebar_CellEdit(Excel)",
+      "description": "LeftContorl_CellEdit(Excel)",
       "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar") %>,
+          "from": <%= from("fn") %>,
           "to": <%= to([["f2"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
@@ -430,63 +430,63 @@
         {
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
-          "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
+          "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
           "to": <%= to([["6", "right_alt"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         },
     {
         "description": "Fn + J_WindowLeftDown",
         "type": "basic",
-        "from": <%= from("j", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["8", "right_alt"]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + I_WindowRightUp",
         "type": "basic",
-        "from": <%= from("i", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["7", "right_alt"]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + K_WindowRightDown",
         "type": "basic",
-        "from": <%= from("k", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("k", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["9", "right_alt"]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + G_WindowLeftOneThird",
         "type": "basic",
-        "from": <%= from("g", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["d", ["right_control", "right_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + Quote_WindowRightOneThird",
         "type": "basic",
-        "from": <%= from("quote", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["g", ["right_control", "right_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + Y_WindowLeftTwo-thirds",
         "type": "basic",
-        "from": <%= from("y", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["e", ["right_control", "right_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + O_WindowRightTwo-thirds",
         "type": "basic",
-        "from": <%= from("o", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["t", ["right_control", "right_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + Comma_WindowCenter",
         "type": "basic",
-        "from": <%= from("comma", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["c", ["right_control", "right_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
@@ -500,14 +500,14 @@
     {
         "description": "Fn + N_WindowUP",
         "type": "basic",
-        "from": <%= from("n", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("n", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["4", ["left_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
         "description": "Fn + M_WindowDown",
         "type": "basic",
-        "from": <%= from("m", ["fn"], ["caps_lock"]) %>,
+        "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
         "to": <%= to([["5", ["left_alt"]]]) %>,
         "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
@@ -521,21 +521,21 @@
     {
       "description": "LeftCommand + Q_LeftWindowMove",
       "type": "basic",
-      "from": <%= from("q", ["fn"], ["caps_lock"]) %>,
+      "from": <%= from("q", ["right_control"], ["caps_lock"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
       "description": "Fn + L_RightHalfWindowMove",
       "type": "basic",
-      "from": <%= from("l", ["fn"], ["caps_lock"]) %>,
+      "from": <%= from("l", ["right_control"], ["caps_lock"]) %>,
       "to": <%= to([["3", ["right_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("excel") %> ]
     },
     {
       "description": "Fn + H_LeftWindowMove",
       "type": "basic",
-      "from": <%= from("h", ["fn"], ["caps_lock"]) %>,
+      "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("excel") %> ]
     }

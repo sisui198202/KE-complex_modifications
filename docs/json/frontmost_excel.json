@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel1",
+  "title": "FrontmostIfExcel99",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -436,13 +436,13 @@
       ]
     },
     {
-      "description": "Spacebar_CellEdit(Excel)",
+      "description": "LeftContorl_CellEdit(Excel)",
       "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "spacebar"
+            "key_code": "fn"
           },
           "to": [
             {
@@ -1117,7 +1117,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1146,7 +1146,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1175,7 +1175,7 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1204,7 +1204,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1233,7 +1233,7 @@
             "key_code": "g",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1265,7 +1265,7 @@
             "key_code": "quote",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1297,7 +1297,7 @@
             "key_code": "y",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1329,7 +1329,7 @@
             "key_code": "o",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1361,7 +1361,7 @@
             "key_code": "comma",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1425,7 +1425,7 @@
             "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1456,7 +1456,7 @@
             "key_code": "m",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1518,7 +1518,7 @@
             "key_code": "q",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1549,7 +1549,7 @@
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1580,7 +1580,7 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "fn"
+                "right_control"
               ],
               "optional": [
                 "caps_lock"
