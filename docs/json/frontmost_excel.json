@@ -437,6 +437,7 @@
     },
     {
       "description": "Spacebar_CellEdit(Excel)",
+      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
       "manipulators": [
         {
           "type": "basic",

@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEvernote",
+    "title": "FrontmostIfEvernote1a",
     "rules": [
     {
       "description": "適用しない_Delete_NoteDelete(Evernote)",
@@ -8,17 +8,6 @@
           "type": "basic",
           "from": <%= from("delete_or_backspace") %>,
           "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("evernote") %> ]
-        }
-      ]
-    },
-    {
-      "description": "x_RightCommand + Spacebar_Delete(Evernote)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
-          "to": <%= to([["7", ["left_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("evernote") %> ]
         }
       ]
