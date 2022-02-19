@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "Marukako_OpenCloseInput(Excel)",
@@ -1107,7 +1107,7 @@
       ]
     },
     {
-      "description": "Fn + ~_WindowsControl(WindowControl)",
+      "description": "Fn + ~_WindowsControl(Excel)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
