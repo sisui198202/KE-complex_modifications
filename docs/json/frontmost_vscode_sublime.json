@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscodeSublime10",
+  "title": "FrontmostIfVscodeSublime",
   "rules": [
     {
       "description": "LeftCommand + Z_Insert Line Below(vscode_sublime)",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "description": "RightAlt + Insert Line Above(vscode_sublime)",
+      "description": "RightAlt + Z_Insert Line Above(vscode_sublime)",
       "manipulators": [
         {
           "type": "basic",
