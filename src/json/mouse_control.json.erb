@@ -1,83 +1,6 @@
 {
-    "title": "MouseControl",
+    "title": "MouseControl1",
     "rules": [
-        {
-            "description": "適用しない_WindowLeftUp(MouseControl)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "i",
-                        "modifiers": {
-                            "mandatory": [
-                                "fn"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "y": -2500
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "j",
-                        "modifiers": {
-                            "mandatory": [
-                                "fn"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "x": -2500
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "k",
-                        "modifiers": {
-                            "mandatory": [
-                                "fn"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "y": 2500
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "l",
-                        "modifiers": {
-                            "mandatory": [
-                                "fn"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "x": 2500
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "description": "RAlt + Z_VisualBasic-Excel(MouseControl)",
             "manipulators": [
@@ -123,6 +46,83 @@
           "to": <%= to([["button1", ["left_gui"]]]) %>
         }
       ]
+    },
+    {
+        "description": "適用しない_WindowLeftUp(MouseControl)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "i",
+                    "modifiers": {
+                        "mandatory": [
+                            "fn"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "mouse_key": {
+                            "y": -2500
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "j",
+                    "modifiers": {
+                        "mandatory": [
+                            "fn"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "mouse_key": {
+                            "x": -2500
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "k",
+                    "modifiers": {
+                        "mandatory": [
+                            "fn"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "mouse_key": {
+                            "y": 2500
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                        "mandatory": [
+                            "fn"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "mouse_key": {
+                            "x": 2500
+                        }
+                    }
+                ]
+            }
+        ]
     }
     ]
 }
