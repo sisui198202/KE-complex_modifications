@@ -252,13 +252,7 @@ def frontmost_application(type, app_aliases, as_json = true)
   vscode_bundle_identifers = [
     "^com.microsoft.VSCode$",
   ]
-
   sublime_bundle_identifers = [
-    "^com.sublimetext.3$",
-  ]
-
-  vscode_sublime_bundle_identifers = [
-    "^com.microsoft.VSCode$",
     "^com.sublimetext.3$",
   ]
   mi_bundle_identifers = [
