@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode99",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -252,6 +252,72 @@
           "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["right_option", "right_gui", "left_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_Insert Line Below(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+        }
+      ]
+    },
+        {
+      "description": "RightAlt + Z_Insert Line Above(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + O_SameWordExpandSelection(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + I_FocusNeighboringGroup(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"], ["any"]) %>,
+          "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + Quote_Single Column Editor Layout(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["h", ["right_control", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
         }
       ]
     }
