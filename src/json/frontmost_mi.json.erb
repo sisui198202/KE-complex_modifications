@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -223,17 +223,6 @@
       ]
     },
    {
-      "description": "使用しない_Dainari_OpenCloseInput(mi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("mi") %> ]
-        }
-      ]
-    },
-   {
       "description": "DoubleQuote_OpenCloseInput(mi)",
       "manipulators": [
         {
@@ -313,6 +302,17 @@
           ]
         }
       ]
-}
+},
+{
+      "description": "使用しない_Dainari_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    }
     ]
 }
