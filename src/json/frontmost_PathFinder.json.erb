@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder1",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -8,17 +8,6 @@
           "type": "basic",
           "from": <%= from("u", ["left_alt"]) %>,
           "to": <%= to([["l", ["left_alt", "left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "使用しない_delete_FileDelete(pathfinder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("delete_or_backspace") %>,
-          "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
@@ -96,6 +85,17 @@
           "type": "basic",
           "from": <%= from("comma", ["left_alt"]) %>,
           "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_delete_FileDelete(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("delete_or_backspace") %>,
+          "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
