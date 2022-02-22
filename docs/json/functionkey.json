@@ -1,8 +1,8 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey99",
   "rules": [
     {
-      "description": "Double F1_tmp1Python_tmpUwscFileOpen(Double Push)",
+      "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "description": "Double F11_GeneralPassword_serverPassword_fileOpen(Double Push)",
+      "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "description": "Double F10_.zshrc_aliassettingfileOpen(Double Push)",
+      "description": "Double F10_.zshrc_aliassettingfileOpen(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -234,7 +234,7 @@
       ]
     },
     {
-      "description": "F2_Rename",
+      "description": "F2_Rename(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "description": "F3_KeyManageList.xlsxOpen(iterm2Script)",
+      "description": "F3_KeyManageList.xlsxOpen(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -281,7 +281,7 @@
       ]
     },
     {
-      "description": "RightShift + F1_MokuziKugiriCreate.exe",
+      "description": "RightShift + F1_MokuziKugiriCreate.exe(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "description": "F4_Rule.txtOpen(iterm2Script)",
+      "description": "F4_Rule.txtOpen(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
