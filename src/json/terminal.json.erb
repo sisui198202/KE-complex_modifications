@@ -1,5 +1,5 @@
 {
-  "title": "iterm2Script",
+  "title": "iterm2Script99",
   "rules": [
 {
   "description": "Leftcommand + R_miActiveWindow(iterm2Script)",
@@ -12,7 +12,7 @@
   ]
 },
 {
-  "description": "LeftAlt + J_ChromeActiveWindow(iterm2Script)",
+  "description": "LeftOption + J_ChromeActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -22,7 +22,7 @@
   ]
 },
 {
-  "description": "LeftAlt + K_VscodeActiveWindow(iterm2Script)",
+  "description": "LeftOption + K_VscodeActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -32,7 +32,7 @@
   ]
 },
 {
-  "description": "LeftAlt + Semicolon_PathfinderActiveWindow(iterm2Script)",
+  "description": "LeftOption + Semicolon_PathfinderActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -52,7 +52,7 @@
   ]
 },
 {
-  "description": "LeftAlt + H_ExcelActiveWindow(iterm2Script)",
+  "description": "LeftOption + H_ExcelActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -62,7 +62,7 @@
   ]
 },
 {
-  "description": "LeftAlt + Quote_PreviewActiveWindow(iterm2Script)",
+  "description": "LeftOption + Quote_PreviewActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -72,7 +72,7 @@
   ]
 },
 {
-  "description": "RightAlt + G_VivaldiActiveWindow(iterm2Script)",
+  "description": "RightOption + G_VivaldiActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -82,7 +82,7 @@
   ]
 },
 {
-  "description": "LeftAlt + slash_FinderActiveWindow(iterm2Script)",
+  "description": "LeftOption + slash_FinderActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -93,7 +93,7 @@
   ]
 },
 {
-  "description": "LeftAlt + L_KindleActiveWindow(iterm2Script)",
+  "description": "LeftOption + L_KindleActiveWindow(iterm2Script)",
   "manipulators": [
     {
       "type": "basic",
@@ -103,17 +103,7 @@
   ]
 },
     {
-      "description": "使用しないRightAlt + W_ActiveParellDeskWindows(iterm2Script)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("w", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Parallels Desktop.app'"]) %>
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + S_ActiveParellDeskWindowsVscode(iterm2Script)",
+      "description": "RightOption + S_ActiveParellDeskWindowsVscode(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -123,7 +113,7 @@
       ]
     },
     {
-      "description": "RightAlt + E_ActiveParellDeskWindowsExploer(iterm2Script)",
+      "description": "RightOption + E_ActiveParellDeskWindowsExploer(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -133,7 +123,7 @@
       ]
     },
     {
-      "description": "使用しない_RightAlt + E_ActiveParellDeskWindowsExploer(iterm2Script)",
+      "description": "使用しない_RightOption + E_ActiveParellDeskWindowsExploer(iterm2Script)",
       "manipulators": [
         {
           "type": "basic",
@@ -157,6 +147,16 @@
               "modifiers": "right_alt"
             }
           ]
+        }
+      ]
+    },
+    {
+      "description": "使用しないRightOption + W_ActiveParellDeskWindows(iterm2Script)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open -a 'Parallels Desktop.app'"]) %>
         }
       ]
     }
