@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEvernote",
+  "title": "FrontmostIfEvernote1",
   "rules": [
     {
       "description": "RightCommand + Spacebar_ゴミ箱に移動(Evernote)",
@@ -23,6 +23,42 @@
               "modifiers": [
                 "left_control",
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.evernote.Evernote$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + M_ノートに移動(Evernote)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "right_control",
+                "right_gui"
               ]
             }
           ],
