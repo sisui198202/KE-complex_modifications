@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEvernote99",
+    "title": "FrontmostIfEvernote",
     "rules": [
     {
       "description": "RightCommand + Spacebar_ゴミ箱に移動(Evernote)",
@@ -35,11 +35,11 @@
       ]
     },
     {
-      "description": "LeftCommand + B_ノートブックに移動(Evernote)",
+      "description": "LeftOption + D_ノートブックに移動(Evernote)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+          "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["right_gui", "right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("evernote") %> ]
         }
