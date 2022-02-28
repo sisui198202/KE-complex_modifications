@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel90",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -429,6 +429,35 @@
       "conditions": [ <%= frontmost_application_if("excel") %> ]
     }
  ]
+},
+{
+  "description": "RAlt + Z_VisualBasic-Excel(MouseControl)ExcelVBE",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("z", ["right_alt"]) %>,
+"to": [
+{
+"software_function": {
+  "set_mouse_cursor_position": {
+    "x": "20",
+    "y": "60",
+    "screen": 0
+  }
+}
+},
+{ "pointing_button": "button1" }
+],
+"conditions": [
+  {
+    "type": "frontmost_application_if",
+    "bundle_identifiers": [
+      "^com\\.microsoft\\.Excel$"
+    ]
+  }
+]
+    }
+  ]
 },
 {
       "description": "使用しない_Marukako_OpenCloseInput(Excel)",
