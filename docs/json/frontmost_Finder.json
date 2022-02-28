@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder99",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -58,39 +58,7 @@
       ]
     },
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button1"
-            },
-            {
-              "pointing_button": "button1"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Enter_OpenFile(Finder)",
+      "description": "Enter_OpenFile(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -99,17 +67,49 @@
           },
           "to": [
             {
-              "pointing_button": "button1"
-            },
-            {
-              "pointing_button": "button1"
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + SpaceBar_FileOpen(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
               ]
             }
           ]

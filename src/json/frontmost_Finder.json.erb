@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder",
+    "title": "FrontmostIfFinder99",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -24,24 +24,24 @@
       ]
     },
     {
-      "description": "LeftAlt + Space_OpenFile(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("spacebar", ["left_alt"]) %>,
-          "to": <%= to([["button1"], ["button1"]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "Enter_OpenFile(Finder)",
+      "description": "Enter_OpenFile(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("return_or_enter") %>,
-          "to": <%= to([["button1"], ["button1"]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
+          "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + SpaceBar_FileOpen(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_option"]) %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
     },
