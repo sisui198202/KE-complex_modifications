@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel91",
+    "title": "FrontmostIfExcel90",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -131,17 +131,6 @@
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
           "to": <%= to([["spacebar", ["left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "使用しない_LeftAlt + F11_VBAeditor(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("f11", ["left_alt"]) %>,
-          "to": <%= to([["f11", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -431,7 +420,7 @@
  ]
 },
 {
-  "description": "RAlt + Z_VisualBasic-Excel(Excel)ExcelVBE",
+  "description": "RightOption + Z_VisualBasic-Excel(Excel)ExcelVBE",
   "manipulators": [
     {
       "type": "basic",
@@ -459,6 +448,17 @@
     }
   ]
 },
+{
+      "description": "使用しない_LeftAlt + F11_VBAeditor(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f11", ["left_alt"]) %>,
+          "to": <%= to([["f11", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
 {
       "description": "使用しない_Marukako_OpenCloseInput(Excel)",
       "manipulators": [
