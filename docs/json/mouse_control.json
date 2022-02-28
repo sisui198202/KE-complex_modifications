@@ -1,44 +1,6 @@
 {
-  "title": "MouseControl12",
+  "title": "MouseControl",
   "rules": [
-    {
-      "description": "使用しない_RAlt + Z_VisualBasic-Excel(MouseControl)ExcelVBE",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "software_function": {
-                "set_mouse_cursor_position": {
-                  "x": "20",
-                  "y": "60",
-                  "screen": 0
-                }
-              }
-            },
-            {
-              "pointing_button": "button1"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "使用しない_RAlt + Z_VisualBasic-Excel(MouseControl)",
       "manipulators": [
@@ -77,8 +39,7 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
-                "^com.cocoatech.PathFinder$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
