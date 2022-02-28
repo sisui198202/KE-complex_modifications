@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey3",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -1292,6 +1292,34 @@
       ]
     },
     {
+      "description": "RightOption + X_コレクションを前面/背面に移動",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": [
+                "right_gui",
+                "right_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "RightOption + Z_コレクションの表示/非表示",
       "manipulators": [
         {
@@ -1309,7 +1337,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "5",
               "modifiers": [
                 "right_gui",
                 "right_option"
