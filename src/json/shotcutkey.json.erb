@@ -1,5 +1,5 @@
 {
-  "title": "PersonalRules(@sisui)",
+  "title": "PersonalRules(@sisui)1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -8,6 +8,16 @@
           "type": "basic",
           "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_gui"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightOption + Z_コレクションの表示/非表示",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_gui"],["right_option"]]]) %>
         }
       ]
     },
