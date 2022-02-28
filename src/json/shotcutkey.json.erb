@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey3",
+  "title": "ShotCutKey",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -235,17 +235,6 @@
       ]
     },
     {
-      "description": "RightAlt + X_AppWindowSelect",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        }
-      ]
-    },
-    {
       "description": "RightAlt + O(オー)_Oracle_NumberLearnParts",
       "manipulators": [
         {
@@ -432,6 +421,17 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_RightAlt + X_AppWindowSelect",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     }
