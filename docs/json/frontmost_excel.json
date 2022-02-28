@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel1",
+  "title": "FrontmostIfExcel2",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -514,7 +514,7 @@
       ]
     },
     {
-      "description": "RightAlt + X_VisualBasic(Excel)",
+      "description": "RightOption + X_VisualBasic(Excel)",
       "manipulators": [
         {
           "type": "basic",
