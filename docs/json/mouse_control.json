@@ -1,5 +1,5 @@
 {
-  "title": "MouseControl3",
+  "title": "MouseControl99",
   "rules": [
     {
       "description": "RAlt + Z_VisualBasic-Excel(MouseControl)ExcelVBE",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "description": "RAlt + Z_VisualBasic-Excel(MouseControl)",
+      "description": "使用しない_RAlt + Z_VisualBasic-Excel(MouseControl)",
       "manipulators": [
         {
           "type": "basic",
