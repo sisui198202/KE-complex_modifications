@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder12",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -77,7 +77,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
+                "^com\\.apple\\.finder$"
               ]
             }
           ]
@@ -109,7 +109,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
+                "^com\\.apple\\.finder$"
               ]
             }
           ]

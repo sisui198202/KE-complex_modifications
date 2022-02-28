@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder",
+    "title": "FrontmostIfFinder12",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -30,7 +30,7 @@
           "type": "basic",
           "from": <%= from("return_or_enter") %>,
           "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
     },
@@ -41,7 +41,7 @@
           "type": "basic",
           "from": <%= from("spacebar", ["left_option"]) %>,
           "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
     },
