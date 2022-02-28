@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey300",
+  "title": "ShotCutKey",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -22,34 +22,6 @@
               "key_code": "n",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + Z_コレクションの表示/非表示",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_gui",
-                "right_option"
               ]
             }
           ]
