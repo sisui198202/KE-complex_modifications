@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel90",
+  "title": "FrontmostIfExcel91",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -1331,7 +1331,7 @@
       ]
     },
     {
-      "description": "RAlt + Z_VisualBasic-Excel(MouseControl)ExcelVBE",
+      "description": "RAlt + Z_VisualBasic-Excel(Excel)ExcelVBE",
       "manipulators": [
         {
           "type": "basic",
