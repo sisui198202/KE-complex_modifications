@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder2",
+  "title": "FrontmostIfPathFinder3",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "description": "LeftAlt + SpaceBar_FileOpen(pathfinder)",
+      "description": "LeftOption + SpaceBar_FileOpen(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -269,7 +269,7 @@
             "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_Option"
               ]
             }
           },
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "description": "LeftAlt + I_親ディレクトリへ(pathfinder)",
+      "description": "LeftOption + I_親ディレクトリへ(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -301,7 +301,7 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_Option"
               ]
             }
           },
