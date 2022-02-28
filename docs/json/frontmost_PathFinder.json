@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder4",
+  "title": "FrontmostIfPathFinder5",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -103,38 +103,6 @@
       ]
     },
     {
-      "description": "LeftAlt + Space_OpenFile(pathfinder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button1"
-            },
-            {
-              "pointing_button": "button1"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Enter_OpenFile(pathfinder)",
       "manipulators": [
         {
@@ -144,10 +112,10 @@
           },
           "to": [
             {
-              "pointing_button": "button1"
-            },
-            {
-              "pointing_button": "button1"
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
