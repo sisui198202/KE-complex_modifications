@@ -1,14 +1,13 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey99",
   "rules": [
    {
-      "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
+      "description": "Leftoption + Space_Enter(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
-          "to": <%= to([["return_or_enter"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          "to": <%= to([["return_or_enter"]]) %>
         }
       ]
     },

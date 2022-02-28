@@ -1,8 +1,8 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey99",
   "rules": [
     {
-      "description": "Leftoption + Space to Enter_!Finder(Replacekey)",
+      "description": "Leftoption + Space_Enter(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
@@ -20,14 +20,6 @@
           "to": [
             {
               "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
             }
           ]
         }
