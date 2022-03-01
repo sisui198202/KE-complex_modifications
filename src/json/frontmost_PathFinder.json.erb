@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder1",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -96,6 +96,17 @@
           "type": "basic",
           "from": <%= from("i", ["left_option"]) %>,
           "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + O(オー)_FileOpen(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_option"]) %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
