@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -74,6 +74,28 @@
           "type": "basic",
           "from": <%= from("m", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["q", ["left_control", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + B_次ページ(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["b", ["left_control", "right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + /(バックスラッシュ)_前ページ(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["r", ["left_control", "right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
