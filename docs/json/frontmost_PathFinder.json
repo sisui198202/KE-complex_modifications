@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder7",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -298,6 +298,30 @@
       ]
     },
     {
+      "description": "LeftControl_Rename(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "使用しないEnter_OpenFile(pathfinder)",
       "_comment": "ファイル名変更でエンターで確定できない為",
       "manipulators": [
@@ -339,30 +363,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftControl_Rename(pathfinder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
