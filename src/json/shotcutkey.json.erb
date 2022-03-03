@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -8,6 +8,16 @@
           "type": "basic",
           "from": <%= from("a", ["right_gui"], ["caps_locak"]) %>,
           "to": <%= to([["n", ["right_gui"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "LeftControl + O(オー)_名前を付けて保存",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["fn"], ["caps_locak"]) %>,
+          "to": <%= to([["s", ["right_shift", "right_gui"]]]) %>
         }
       ]
     },

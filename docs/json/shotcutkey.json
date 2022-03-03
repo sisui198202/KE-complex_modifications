@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -21,6 +21,34 @@
             {
               "key_code": "n",
               "modifiers": [
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl + O(オー)_名前を付けて保存",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "caps_locak"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "right_shift",
                 "right_gui"
               ]
             }
