@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode9",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -262,7 +262,7 @@
           "type": "basic",
           "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },
@@ -273,7 +273,7 @@
           "type": "basic",
           "from": <%= from("z", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },
@@ -284,7 +284,7 @@
           "type": "basic",
           "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },
@@ -295,7 +295,7 @@
           "type": "basic",
           "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },
@@ -306,7 +306,7 @@
           "type": "basic",
           "from": <%= from("i", ["right_gui"], ["any"]) %>,
           "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     },
@@ -317,7 +317,7 @@
           "type": "basic",
           "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["h", ["right_control", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode_sublime") %> ]
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
     }

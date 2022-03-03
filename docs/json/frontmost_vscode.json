@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode9",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -866,8 +866,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.sublimetext.3$"
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -903,8 +902,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.sublimetext.3$"
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -940,8 +938,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.sublimetext.3$"
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -990,8 +987,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.sublimetext.3$"
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -1027,8 +1023,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.sublimetext.3$"
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
@@ -1064,8 +1059,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.sublimetext.3$"
+                "^com.microsoft.VSCode$"
               ]
             }
           ]
