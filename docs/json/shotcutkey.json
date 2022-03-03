@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey99",
+  "title": "ShotCutKey12",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -13,7 +13,7 @@
                 "right_gui"
               ],
               "optional": [
-                "caps_locak"
+                "caps_lock"
               ]
             }
           },
@@ -40,7 +40,7 @@
                 "right_option"
               ],
               "optional": [
-                "caps_locak"
+                "caps_lock"
               ]
             }
           },
