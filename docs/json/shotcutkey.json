@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey99",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "description": "RihgtOption + O(オー)_名前を付けて保存",
+      "description": "RightOption + O(オー)_名前を付けて保存",
       "manipulators": [
         {
           "type": "basic",
