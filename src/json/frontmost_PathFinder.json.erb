@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder1",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -9,6 +9,17 @@
           "from": <%= from("u", ["left_alt"]) %>,
           "to": <%= to([["l", ["left_alt", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("keyboard_fn") %>,
+          "to": <%= to([["return_or_enter"]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
     },
