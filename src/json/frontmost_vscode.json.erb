@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode9",
+    "title": "FrontmostIfVscode88",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -189,11 +189,11 @@
       ]
     },
     {
-      "description": "RightAlt + O(オー)_SplitTerminal(vscode)",
+      "description": "RightAlt + P_SplitTerminal(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["right_alt"], ["caps_lock"]) %>,
+          "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f4", ["left_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }

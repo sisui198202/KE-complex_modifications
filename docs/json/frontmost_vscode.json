@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode9",
+  "title": "FrontmostIfVscode88",
   "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -609,12 +609,12 @@
       ]
     },
     {
-      "description": "RightAlt + O(オー)_SplitTerminal(vscode)",
+      "description": "RightAlt + P_SplitTerminal(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "right_alt"
