@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -245,11 +245,11 @@
       ]
     },
     {
-      "description": "RightAlt + O(オー)_Oracle_NumberLearnParts",
+      "description": "RightAlt + 1_Oracle_NumberLearnParts",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["right_alt"], ["caps_lock"]) %>,
+          "from": <%= from("1", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_alt", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }

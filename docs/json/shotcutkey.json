@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -830,12 +830,12 @@
       ]
     },
     {
-      "description": "RightAlt + O(オー)_Oracle_NumberLearnParts",
+      "description": "RightAlt + 1_Oracle_NumberLearnParts",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "1",
             "modifiers": {
               "mandatory": [
                 "right_alt"
