@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder3",
+  "title": "FrontmostIfPathFinder4",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("keyboard_fn") %>,
+          "from": <%= from("fn") %>,
           "to": <%= to([["return_or_enter"]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }

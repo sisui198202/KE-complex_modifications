@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder3",
+  "title": "FrontmostIfPathFinder4",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -40,7 +40,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "keyboard_fn"
+            "key_code": "fn"
           },
           "to": [
             {
