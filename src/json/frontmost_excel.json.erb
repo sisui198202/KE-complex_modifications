@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel1",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -74,6 +74,17 @@
           "type": "basic",
           "from": <%= from("u", ["right_gui"]) %>,
           "to": <%= to([["spacebar", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + U_CurrentRowToColumnSelection(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_option"]) %>,
+          "to": <%= to([["down_arrow", ["left_shift", "left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]

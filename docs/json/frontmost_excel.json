@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -214,6 +214,39 @@
             {
               "key_code": "spacebar",
               "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + U_CurrentRowToColumnSelection(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "left_shift",
                 "left_control"
               ]
             }
