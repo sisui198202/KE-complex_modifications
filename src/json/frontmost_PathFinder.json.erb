@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder4",
+  "title": "FrontmostIfPathFinder5",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -9,17 +9,6 @@
           "from": <%= from("u", ["left_alt"]) %>,
           "to": <%= to([["l", ["left_alt", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftControl_Rename(pathfinder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("fn") %>,
-          "to": <%= to([["return_or_enter"]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
     },
@@ -131,6 +120,30 @@
           "from": <%= from("delete_or_backspace") %>,
           "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code":"keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
         }
       ]
     }

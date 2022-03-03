@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder4",
+  "title": "FrontmostIfPathFinder5",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -28,30 +28,6 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftControl_Rename(pathfinder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
               ]
             }
           ]
@@ -370,6 +346,30 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
               ]
             }
           ]
