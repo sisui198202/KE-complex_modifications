@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder1",
+  "title": "FrontmostIfFinder2",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -43,34 +43,6 @@
               "key_code": "delete_or_backspace",
               "modifiers": [
                 "left_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Enter_OpenFile(Finder)",
-      "_comment": "ファイル名変更でエンターで確定できない為",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "return_or_enter"
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ],
@@ -162,6 +134,34 @@
           "to": [
             {
               "shell_command": "touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_Enter_OpenFile(Finder)",
+      "_comment": "ファイル名変更でエンターで確定できない為",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter"
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [

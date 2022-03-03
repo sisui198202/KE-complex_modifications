@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder1",
+    "title": "FrontmostIfFinder2",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -19,18 +19,6 @@
           "type": "basic",
           "from": <%= from("spacebar", ["right_gui"]) %>,
           "to": <%= to([["delete_or_backspace", ["left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "Enter_OpenFile(Finder)",
-      "_comment": "ファイル名変更でエンターで確定できない為",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("return_or_enter") %>,
-          "to": <%= to([["o", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
@@ -64,6 +52,18 @@
           "type": "basic",
           "from": <%= from("a", ["right_gui"]) %>,
           "to": <%= set_shell_command(["touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_Enter_OpenFile(Finder)",
+      "_comment": "ファイル名変更でエンターで確定できない為",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("return_or_enter") %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
