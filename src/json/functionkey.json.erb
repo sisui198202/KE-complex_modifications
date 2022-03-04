@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
         {
             "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
@@ -265,12 +265,12 @@
       ]
     },
 {
-  "description": "F4_Rule.txtOpen(FunctionKey)",
+  "description": "F4_Rule.mdOpen(FunctionKey)",
   "manipulators": [
     {
       "type": "basic",
       "from": <%= from("f4") %>,
-      "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール/rule.txt'"]) %>,
+      "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール/rule.md'"]) %>,
       "conditions": [ <%= frontmost_application_unless("excel") %>]
     }
   ]
