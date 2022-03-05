@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel98",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("t", ["right_option"]) %>,
           "to": <%= to([["a", ["right_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + W_CopyToEnd(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["right_option"]) %>,
+          "to": <%= to([["b", ["right_shift","left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
