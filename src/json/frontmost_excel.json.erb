@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel98",
+    "title": "FrontmostIfExcel3",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -30,6 +30,28 @@
           "type": "basic",
           "from": <%= from("w", ["right_option"]) %>,
           "to": <%= to([["b", ["right_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + period_ProcedureNext移動(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["left_option"]) %>,
+          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + comma_ProcedurePrevious移動(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_option"]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
