@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel10",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -52,6 +52,17 @@
           "type": "basic",
           "from": <%= from("comma", ["left_option"]) %>,
           "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + M_モジュール間移動(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_option"]) %>,
+          "to": <%= to([["f6", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
