@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel2",
+    "title": "FrontmostIfExcel3",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -8,6 +8,17 @@
           "type": "basic",
           "from": <%= from("a", ["left_control"]) %>,
           "to": <%= to([["left_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + T_SheetDelete(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["right_option"]) %>,
+          "to": <%= to([["a", ["right_shift","left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
