@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel10",
+    "title": "FrontmostIfExcel11",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -57,12 +57,23 @@
       ]
     },
     {
-      "description": "LeftOption + M_モジュール間移動(Excel)",
+      "description": "LeftCommand + OpenBracket_モジュール間移動(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m", ["left_option"]) %>,
+          "from": <%= from("open_bracket", ["left_control"]) %>,
           "to": <%= to([["f6", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + CloseBracket_unindent(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["left_control"]) %>,
+          "to": <%= to([["tab", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]

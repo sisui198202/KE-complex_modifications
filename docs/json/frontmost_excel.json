@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel10",
+  "title": "FrontmostIfExcel11",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -164,15 +164,15 @@
       ]
     },
     {
-      "description": "LeftOption + M_モジュール間移動(Excel)",
+      "description": "LeftCommand + OpenBracket_モジュール間移動(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "left_control"
               ]
             }
           },
@@ -181,6 +181,38 @@
               "key_code": "f6",
               "modifiers": [
                 "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + CloseBracket_unindent(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "left_shift"
               ]
             }
           ],
