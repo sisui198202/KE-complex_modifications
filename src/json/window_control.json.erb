@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl4",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -227,17 +227,7 @@
       ]
     },
     {
-      "description": "RightOption + I_ActiveMacWindowShare/img/(WindowControl)1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Path Finder.app /Users/user/MacWindowShare/img/'"]) %>
-        }
-      ]
-    },
-    {
-      "description": "RightOption + I_ActiveMacWindowShare/img/(WindowControl)2",
+      "description": "RightOption + I_ActiveMacWindowShare/img/(WindowControl)",
       "manipulators": [
         {
           "type": "basic",
