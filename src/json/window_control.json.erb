@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl1",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -223,6 +223,16 @@
           "type": "basic",
           "from": <%= from("e", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= set_shell_command(["open -a '/Users/user/Applications (Parallels)/{dc4dfc26-76c8-48d5-bb27-640140167936} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightOption + I_ActiveMacWindowShare/img/(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open -a '/Users/user/MacWindowShare/img/'"]) %>
         }
       ]
     },
