@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel99",
+    "title": "FrontmostIfExcel98",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -30,6 +30,17 @@
           "type": "basic",
           "from": <%= from("r", ["right_option"]) %>,
           "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + A_新しいウィンドウを開く(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_option"]) %>,
+          "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
