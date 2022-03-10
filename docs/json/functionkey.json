@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey99",
   "rules": [
     {
       "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
@@ -274,7 +274,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsx'"
+              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'"
             }
           ]
         }
