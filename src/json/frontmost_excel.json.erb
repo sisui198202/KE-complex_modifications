@@ -18,7 +18,18 @@
         {
           "type": "basic",
           "from": <%= from("t", ["right_option"]) %>,
-          "to": <%= to([["a", ["right_shift","left_control"]]]) %>,
+          "to": <%= to([["a", ["right_shift", "left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + R_連続データ作成(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["right_option"]) %>,
+          "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -29,7 +40,7 @@
         {
           "type": "basic",
           "from": <%= from("w", ["right_option"]) %>,
-          "to": <%= to([["b", ["right_shift","left_control"]]]) %>,
+          "to": <%= to([["b", ["right_shift", "left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
