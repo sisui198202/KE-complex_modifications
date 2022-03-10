@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel98",
+    "title": "FrontmostIfExcel",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -41,6 +41,17 @@
           "type": "basic",
           "from": <%= from("a", ["right_option"]) %>,
           "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + Q_すべてのウィンドウを並び替え(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["right_option"]) %>,
+          "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]

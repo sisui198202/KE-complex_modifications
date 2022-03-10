@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel98",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -115,6 +115,39 @@
           "to": [
             {
               "key_code": "4",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + Q_すべてのウィンドウを並び替え(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
               "modifiers": [
                 "right_option",
                 "right_gui"
