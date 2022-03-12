@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel99",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
