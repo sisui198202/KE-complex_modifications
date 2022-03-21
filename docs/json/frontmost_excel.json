@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel98",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -147,9 +147,10 @@
           },
           "to": [
             {
-              "key_code": "f11",
+              "key_code": "c",
               "modifiers": [
-                "right_shift"
+                "right_shift",
+                "left_control"
               ]
             }
           ],
