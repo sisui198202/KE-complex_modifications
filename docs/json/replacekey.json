@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey99",
   "rules": [
     {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -282,7 +282,8 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
