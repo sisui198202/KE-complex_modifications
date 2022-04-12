@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey1",
+  "title": "ShotCutKey2",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -354,12 +354,22 @@
       ]
     },
     {
-      "description": "RightCommand + J_1RowSelection",
+      "description": "RightCommand + J_1RowSelection_LeftArrow",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + J_1RowSelection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"]]) %>
         }
       ]
     },
