@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey99",
+  "title": "Replacekey90",
   "rules": [
     {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -212,6 +212,7 @@
     },
     {
       "description": "LeftAlt_Copy(Replacekey)",
+      "_comment": "エクスプローラー_bf73",
       "manipulators": [
         {
           "type": "basic",
