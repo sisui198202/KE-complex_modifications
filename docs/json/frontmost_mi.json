@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi2",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
@@ -103,6 +103,12 @@
             },
             {
               "key_code": "delete_or_backspace"
+            },
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
