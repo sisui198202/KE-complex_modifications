@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfPararell",
+    "title": "FrontmostIfPararell1",
     "rules": [
+      {
+      "description": "RightCommand + A_NewFileCreate",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %>]
+        }
+      ]
+    },
 {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)",
                         "_comment": "下記にKaravinerツール「frontmostApplicationで日本語_英語キー切り替えをLeftCommandとRightCommandでしたい場合、ウィンドウコード確認し、下記に入力、Vscode_d51,Sublime_7d5,Excel通常画面_VBE_c1d",
