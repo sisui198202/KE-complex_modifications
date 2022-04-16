@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey1",
+  "title": "ShotCutKey3",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -753,6 +753,12 @@
             },
             {
               "key_code": "delete_or_backspace"
+            },
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ]
         }
