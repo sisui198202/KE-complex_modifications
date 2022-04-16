@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey4",
+  "title": "ShotCutKey",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -725,7 +725,7 @@
       ]
     },
     {
-      "description": "rightcommand + K_1RowCut",
+      "description": "rightcommand + K_CopyCurrentRowCut",
       "manipulators": [
         {
           "type": "basic",
