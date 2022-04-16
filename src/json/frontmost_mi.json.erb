@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi3",
+    "title": "FrontmostIfmi4",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("k", ["right_gui"]) %>,
-          "to": <%= to([["c", ["right_gui"]], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["delete_or_backspace"]]) %>,
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]], ["delete_or_backspace"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
