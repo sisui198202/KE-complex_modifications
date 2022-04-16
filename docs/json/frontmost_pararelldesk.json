@@ -1,8 +1,9 @@
 {
-  "title": "FrontmostIfPararell2",
+  "title": "FrontmostIfPararell",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate(Pararell)",
+      "_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
       "manipulators": [
         {
           "type": "basic",
