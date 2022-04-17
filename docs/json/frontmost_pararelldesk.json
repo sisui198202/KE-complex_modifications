@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell2",
+  "title": "FrontmostIfPararell3",
   "rules": [
     {
       "description": "RightAlt + V_Paste(Access)VBE",
@@ -20,7 +20,7 @@
           "to": [
             {
               "key_code": "v",
-              "modifiers": "right_gui"
+              "modifiers": "right_control"
             }
           ],
           "conditions": [

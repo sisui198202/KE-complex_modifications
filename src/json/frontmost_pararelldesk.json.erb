@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell2",
+    "title": "FrontmostIfPararell3",
     "rules": [
       {
         "description": "RightAlt + V_Paste(Access)VBE",
@@ -7,7 +7,7 @@
           {
             "type": "basic",
             "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
-            "to": <%= to([["v", "right_gui"]]) %>,
+            "to": <%= to([["v", "right_control"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %> ]
           }
         ]
