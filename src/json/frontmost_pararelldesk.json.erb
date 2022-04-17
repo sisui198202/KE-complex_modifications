@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfPararell",
+    "title": "FrontmostIfPararell2",
     "rules": [
+      {
+        "description": "RightAlt + V_Paste(Access)VBE",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["v", "right_gui"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %> ]
+          }
+        ]
+  },
       {
       "description": "RightCommand + A_NewFileCreate(Pararell)",
       "_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
