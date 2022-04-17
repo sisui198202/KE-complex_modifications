@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi99",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
@@ -64,6 +64,12 @@
             {
               "key_code": "down_arrow",
               "modifiers": "left_shift"
+            },
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [

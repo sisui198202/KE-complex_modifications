@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfmi",
+    "title": "FrontmostIfmi99",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"]]) %>,
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"],["c", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
