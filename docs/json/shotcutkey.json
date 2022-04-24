@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey123",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -36,7 +36,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -106,7 +107,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -149,7 +151,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -191,7 +194,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -233,50 +237,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + LeftShift + U_進む",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "left_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "z",
-              "modifiers": [
-                "left_gui",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b2a817d172762cf19240b17bdbea9826.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.desktop.console$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -345,7 +307,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -387,7 +350,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -457,7 +421,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -553,7 +518,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -622,7 +588,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -720,7 +687,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -760,7 +728,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -843,7 +812,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -886,7 +856,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -929,7 +900,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -972,7 +944,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1016,7 +989,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1059,7 +1033,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1102,7 +1077,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1145,7 +1121,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1187,7 +1164,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1229,7 +1207,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1299,7 +1278,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
@@ -1484,7 +1464,8 @@
                 "^com.parallels.desktop.console$",
                 "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.dc4dfc2676c848d5bb27640140167936$"
               ]
             }
           ]
