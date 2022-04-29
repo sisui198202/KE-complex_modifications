@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview12",
   "rules": [
     {
       "description": "LeftCommand + I_Expansion(preview)",
@@ -118,6 +118,38 @@
               "key_code": "1",
               "modifiers": [
                 "left_control",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + B_BookMark(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
                 "right_gui"
               ]
             }

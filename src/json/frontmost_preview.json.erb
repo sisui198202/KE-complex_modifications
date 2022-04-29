@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview12",
     "rules": [
     {
       "description": "LeftCommand + I_Expansion(preview)",
@@ -41,6 +41,17 @@
           "type": "basic",
           "from": <%= from("t", ["left_control"]) %>,
           "to": <%= to([["1", ["left_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + B_BookMark(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["right_option"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
