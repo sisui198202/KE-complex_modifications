@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey90",
+  "title": "Replacekey93",
   "rules": [
    {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -11,6 +11,7 @@
         }
       ]
     },
+
     {
       "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
       "manipulators": [
@@ -72,6 +73,17 @@
           "type": "basic",
           "from": <%= from("f", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "Tilde_X3(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
         }
       ]
     },
