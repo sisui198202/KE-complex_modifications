@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi90",
+  "title": "FrontmostIfmi89",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
@@ -821,6 +821,7 @@
     },
     {
       "description": "SingleQuote_X1a_OpenCloseInput(mi)",
+      "_comment": "alfredのスニペットを起動させるために、英数モードにするのを取り除いている",
       "manipulators": [
         {
           "type": "basic",
