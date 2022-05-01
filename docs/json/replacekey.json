@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey94",
+  "title": "Replacekey89",
   "rules": [
     {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -291,7 +291,8 @@
               "modifiers": "left_shift"
             },
             {
-              "key_code": "left_option"
+              "key_code": "c",
+              "modifiers": "left_gui"
             }
           ],
           "conditions": [
