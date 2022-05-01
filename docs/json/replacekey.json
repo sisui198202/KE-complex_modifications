@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey10",
   "rules": [
     {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -577,6 +577,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "hyphen"
             }
