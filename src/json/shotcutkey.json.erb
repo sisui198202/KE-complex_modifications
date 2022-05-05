@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey123456",
+  "title": "ShotCutKey1234567",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -202,17 +202,6 @@
         }
       ]
     },
-    {
-      "description": "RightCommand + L_NextTab1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        }
-      ]
-    },
   {
       "description": "LeftCommand + Comma_AppsSelect-Previous",
       "manipulators": [
@@ -221,6 +210,16 @@
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Comma_AppsSelect-Previous1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>
         }
       ]
     },
