@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey1234567",
+  "title": "ShotCutKey12345678",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -231,6 +231,16 @@
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Period_AppsSelect-next1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", "right_gui"]]) %>
         }
       ]
     },
