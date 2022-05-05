@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey12345",
+  "title": "ShotCutKey123456",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -172,7 +172,8 @@
       ]
     },
     {
-      "description": "RightCommand + G_FileTabClose1",
+      "description": "優先RightCommand + G_FileTabClose1",
+      "_comment": "Windows環境の設定ため",
       "manipulators": [
         {
           "type": "basic",
@@ -198,6 +199,17 @@
           "type": "basic",
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + L_NextTab1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
