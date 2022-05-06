@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell89",
+    "title": "FrontmostIfPararell88",
     "rules": [
       {
       "description": "RightCommand + A_NewFileCreate(Pararell)",
@@ -20,6 +20,17 @@
           "type": "basic",
           "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["h", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + i_Neight bour(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["i", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
