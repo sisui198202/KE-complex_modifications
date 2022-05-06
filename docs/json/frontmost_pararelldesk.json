@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell30",
+  "title": "FrontmostIfPararell31",
   "rules": [
     {
       "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Period_AppsSelect-next",
+      "description": "LeftCommand + Period_AppsSelect-next(Pararell)",
       "manipulators": [
         {
           "type": "basic",
