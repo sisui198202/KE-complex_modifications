@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPararell8",
+  "title": "FrontmostIfPararell",
   "rules": [
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
+      "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
       "manipulators": [
         {
           "type": "basic",
