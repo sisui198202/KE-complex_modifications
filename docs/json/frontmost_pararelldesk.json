@@ -19,14 +19,8 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "left_shift"
-              ]
-            },
-            {
-              "key_code": "left_arrow",
-              "modifiers": "left_shift"
+              "key_code": "equal_sign",
+              "modifiers": "left_option"
             }
           ],
           "conditions": [
