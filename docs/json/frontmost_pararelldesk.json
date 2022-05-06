@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell64",
+  "title": "FrontmostIfPararell65",
   "rules": [
     {
       "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -318,7 +318,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Period_AppsSelect-next(Pararell)うまくいかない",
+      "description": "LeftCommand + Period_AppsSelect-next(Pararell)たｍす",
       "manipulators": [
         {
           "type": "basic",
@@ -345,6 +345,7 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.parallels.desktop.console$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
                 "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
                 "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
                 "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
