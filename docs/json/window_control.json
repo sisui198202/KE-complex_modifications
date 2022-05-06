@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl99",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -235,14 +235,11 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b2a817d172762cf19240b17bdbea9826.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
                 "^com.parallels.desktop.console$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
               ]
             }
           ]
@@ -319,14 +316,11 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b2a817d172762cf19240b17bdbea9826.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
                 "^com.parallels.desktop.console$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
               ]
             }
           ]
@@ -357,14 +351,11 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b2a817d172762cf19240b17bdbea9826.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
                 "^com.parallels.desktop.console$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
               ]
             }
           ]
@@ -634,14 +625,11 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.b2a817d172762cf19240b17bdbea9826.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.dc4dfc2676c848d5bb27640140167936$",
                 "^com.parallels.desktop.console$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.dc4dfc2676c848d5bb27640140167936.fs$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.dc4dfc2676c848d5bb27640140167936$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.dc4dfc2676c848d5bb27640140167936$"
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
               ]
             }
           ]
@@ -697,7 +685,55 @@
       ]
     },
     {
+      "description": "RightOption + S_ActiveParellDeskWindowsVscode1(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/Visual Studio Code.app/Contents/MacOS/WinAppHelper"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "RightOption + E_ActiveParellDeskWindowsExploer(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a '/Users/user/Applications (Parallels)/{dc4dfc26-76c8-48d5-bb27-640140167936} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + E_ActiveParellDeskWindowsExploer1(WindowControl)",
       "manipulators": [
         {
           "type": "basic",
