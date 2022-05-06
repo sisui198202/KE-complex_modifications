@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell61",
+  "title": "FrontmostIfPararell62",
   "rules": [
     {
       "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "description": "RightCommand + ._MaxWindows(Replacekey)",
+      "description": "RightCommand + ._MaxWindows(Pararell)",
       "manipulators": [
         {
           "type": "basic",
