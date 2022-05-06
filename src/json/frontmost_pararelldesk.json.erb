@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell91",
+    "title": "FrontmostIfPararell89",
     "rules": [
       {
       "description": "RightCommand + A_NewFileCreate(Pararell)",
@@ -19,7 +19,7 @@
         {
           "type": "basic",
           "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["h", ["right_control", "left_shift"]]]) %>,
+          "to": <%= to([["h", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]

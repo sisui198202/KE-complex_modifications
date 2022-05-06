@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell91",
+  "title": "FrontmostIfPararell89",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate(Pararell)",
@@ -61,8 +61,7 @@
             {
               "key_code": "h",
               "modifiers": [
-                "right_control",
-                "left_shift"
+                "right_control"
               ]
             }
           ],
