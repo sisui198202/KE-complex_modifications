@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell60",
+    "title": "FrontmostIfPararell61",
     "rules": [
       {
         "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -8,6 +8,17 @@
             "type": "basic",
             "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["down_arrow", ["left_shift"]], ["left_arrow", "left_shift"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + ._MaxWindows(Replacekey)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("period", ["rihgt_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", "left_option"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
           }
         ]

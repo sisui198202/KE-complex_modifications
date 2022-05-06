@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell60",
+  "title": "FrontmostIfPararell61",
   "rules": [
     {
       "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -27,6 +27,43 @@
             {
               "key_code": "left_arrow",
               "modifiers": "left_shift"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + ._MaxWindows(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "rihgt_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": "left_option"
             }
           ],
           "conditions": [
