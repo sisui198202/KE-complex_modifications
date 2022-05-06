@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl99",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -81,15 +81,13 @@
       "description": "RightCommand + P_RightWindowMove",
       "type": "basic",
       "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["3", ["right_alt"]]]) %>,
-      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+      "to": <%= to([["3", ["right_alt"]]]) %>
     },
     {
       "description": "LeftCommand + Q_LeftWindowMove",
       "type": "basic",
       "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= to([["2", ["right_alt"]]]) %>,
-      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+      "to": <%= to([["2", ["right_alt"]]]) %>
     },
     {
       "description": "Fn + L_RightHalfWindowMove",
