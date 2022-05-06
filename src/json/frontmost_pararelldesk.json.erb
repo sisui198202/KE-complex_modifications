@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell",
+    "title": "FrontmostIfPararell30",
     "rules": [
       {
         "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -126,6 +126,17 @@
                                 "type": "basic"
                             }
                         ]
+},
+{
+  "description": "LeftCommand + Period_AppsSelect-next",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
+      "to": <%= to([["tab", "right_option"]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
 },
 {
         "description": "AccessのVBEで反応しない_RightAlt + V_Paste(Access)VBE",
