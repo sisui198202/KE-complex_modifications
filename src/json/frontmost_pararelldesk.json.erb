@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell63",
+    "title": "FrontmostIfPararell64",
     "rules": [
       {
         "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -17,7 +17,7 @@
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("period", ["rihgt_gui"], ["caps_lock"]) %>,
+            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["1", "left_option"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
           }

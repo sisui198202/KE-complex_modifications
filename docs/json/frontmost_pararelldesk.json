@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell63",
+  "title": "FrontmostIfPararell64",
   "rules": [
     {
       "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -53,7 +53,7 @@
             "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "rihgt_gui"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"
