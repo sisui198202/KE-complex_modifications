@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell31",
+    "title": "FrontmostIfPararell38",
     "rules": [
       {
         "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -128,13 +128,51 @@
                         ]
 },
 {
-  "description": "LeftCommand + Period_AppsSelect-next(Pararell)",
+  "description": "LeftCommand + Period_AppsSelect-next(Pararell)0",
   "manipulators": [
     {
       "type": "basic",
       "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
       "to": <%= to([["tab", "right_option"]]) %>,
       "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+{
+  "description": "LeftCommand + Period_AppsSelect-next(Pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "modifiers": {
+          "mandatory": [
+            "left_control"
+          ]
+        },
+        "key_code": "period"
+      },
+      "to": [
+        {
+          "repeat": true,
+          "key_code": "tab",
+          "modifiers": [
+            "right_alt"
+          ],
+          "halt": true
+        }
+      ],
+      "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
     }
   ]
 },
