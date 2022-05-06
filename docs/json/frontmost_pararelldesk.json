@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell49",
+  "title": "FrontmostIfPararell60",
   "rules": [
     {
       "description": "未完成_LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -333,7 +333,7 @@
           },
           "to": [
             {
-              "repeat": true,
+              "repeat": false,
               "key_code": "tab",
               "modifiers": [
                 "right_alt"
