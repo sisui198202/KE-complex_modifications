@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell",
+    "title": "FrontmostIfPararell84",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -17,7 +17,7 @@
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("keyboard_fn", ["caps_lock"]) %>,
+            "from": <%= from("fn", ["caps_lock"]) %>,
             "to": <%= to([["f2"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
           }

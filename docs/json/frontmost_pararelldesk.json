@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell",
+  "title": "FrontmostIfPararell84",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -44,7 +44,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "keyboard_fn",
+            "key_code": "fn",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
