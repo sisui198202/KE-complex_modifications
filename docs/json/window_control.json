@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl93",
+  "title": "WindowControl96",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -767,6 +767,34 @@
             {
               "key_code": "e",
               "modifiers": "right_alt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + Q_ActiveParellDeskWindowsExploerDesktop(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "left_control"
             }
           ]
         }

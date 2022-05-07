@@ -13,6 +13,17 @@
         ]
       },
       {
+        "description": "fn_Rename(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("keyboard_fn", ["caps_lock"]) %>,
+            "to": <%= to([["f2"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
         "description": "RightCommand + ._MaxWindows(Pararell)",
         "manipulators": [
           {
