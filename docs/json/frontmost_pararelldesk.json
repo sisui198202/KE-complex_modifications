@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell40",
+  "title": "FrontmostIfPararell",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "description": "fn_Rename(Pararell)",
+      "description": "うまくいかないfn_Rename(Pararell)",
       "manipulators": [
         {
           "type": "basic",
