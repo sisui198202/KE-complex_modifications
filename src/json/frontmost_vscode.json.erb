@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
@@ -166,17 +166,6 @@
         }
       ]
     },
-    {
-      "description": "RightAlt + Q_VscodeSideBarFocus(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("q", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["p", ["right_control", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
-        }
-      ]
-    },
    {
       "description": "RightAlt + Slash_Zenmode(vscode)",
       "manipulators": [
@@ -317,6 +306,18 @@
           "type": "basic",
           "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["h", ["right_control", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_RightAlt + Q_VscodeSideBarFocus(vscode)",
+      "_comment": "Windowsのウィンドウアクティブに使う",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["p", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
