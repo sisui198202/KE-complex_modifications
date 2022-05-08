@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell8",
+    "title": "FrontmostIfPararell7",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -242,7 +242,7 @@
     {
       "type": "basic",
       "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
+      "to": <%= to([["2", ["right_option"]]]) %>,
       "conditions": [ <%= frontmost_application_if("pararell") %> ]
     }
   ]

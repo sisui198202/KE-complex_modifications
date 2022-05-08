@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararell8",
+  "title": "FrontmostIfPararell7",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -436,10 +436,9 @@
           },
           "to": [
             {
-              "key_code": "0",
+              "key_code": "2",
               "modifiers": [
-                "right_gui",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
