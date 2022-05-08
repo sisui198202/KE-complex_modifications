@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell",
+    "title": "FrontmostIfPararell9",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -233,6 +233,28 @@
               ]
             }
           ]
+    }
+  ]
+},
+{
+  "description": "RightCommand + O(オー)_SameWordExpandSelection(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+      "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+{
+  "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+      "to": <%= to([["o", ["left_control", "left_shift"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
     }
   ]
 },
