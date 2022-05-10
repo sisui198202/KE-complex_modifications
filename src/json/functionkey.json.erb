@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey98",
+  "title": "FunctionKey90",
   "rules": [
         {
             "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
@@ -16,7 +16,7 @@
                     },
                     "to": [
                         {
-                        "shell_command": "open '/Users/user/MacWindowShare/Uwsc/tmp.uws'"
+                        "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/abc.md'"
                         }
                     ],
                     "conditions": [
@@ -261,6 +261,88 @@
       "to": <%= set_shell_command(["open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'"]) %>
     }
   ]
+},
+{
+    "description": "Double F3_.KeyManageListOpen(FunctionKey)",
+    "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "F3",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_windows.xlsx'"
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "variable_if",
+                    "name": "F3 pressed",
+                    "value": 1
+                },
+                            {
+      "type": "frontmost_application_unless",
+      "bundle_identifiers": [
+        "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
+      ]
+    }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "F3",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "F3 pressed",
+                        "value": 1
+                    }
+                },
+                {
+                    "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'"
+                }
+            ],
+            "conditions": [
+                            {
+      "type": "frontmost_application_unless",
+      "bundle_identifiers": [
+        "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
+      ]
+    }
+            ],
+            "to_delayed_action": {
+                "to_if_invoked": [
+                    {
+                        "set_variable": {
+                            "name": "F3 pressed",
+                            "value": 0
+                        }
+                    }
+                ],
+                "to_if_canceled": [
+                    {
+                        "set_variable": {
+                            "name": "F3 pressed",
+                            "value": 0
+                        }
+                    }
+                ]
+            }
+        }
+    ]
 },
   {
       "description": "RightShift + F1_MokuziKugiriCreate.exe(FunctionKey)",
