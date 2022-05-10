@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey87",
+  "title": "FunctionKey86",
   "rules": [
     {
       "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
@@ -293,7 +293,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "F3",
+            "key_code": "f3",
             "modifiers": {
               "optional": [
                 "any"
@@ -308,7 +308,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "F3 pressed",
+              "name": "f3 pressed",
               "value": 1
             },
             {
@@ -322,7 +322,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "F3",
+            "key_code": "f3",
             "modifiers": {
               "optional": [
                 "any"
@@ -332,7 +332,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "F3 pressed",
+                "name": "f3 pressed",
                 "value": 1
               }
             },
@@ -352,7 +352,7 @@
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "F3 pressed",
+                  "name": "f3 pressed",
                   "value": 0
                 }
               }
@@ -360,7 +360,7 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "F3 pressed",
+                  "name": "f3 pressed",
                   "value": 0
                 }
               }
