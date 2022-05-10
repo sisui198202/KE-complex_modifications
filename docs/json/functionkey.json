@@ -1,8 +1,8 @@
 {
-  "title": "FunctionKey80",
+  "title": "FunctionKey79",
   "rules": [
     {
-      "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
+      "description": "Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/abc.md'"
+              "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.md'"
             }
           ],
           "conditions": [
@@ -45,7 +45,7 @@
               }
             },
             {
-              "shell_command": "open '/Users/user/Desktop/iCollections/TmpFile/tmp1.py'"
+              "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'"
             }
           ],
           "to_delayed_action": {
