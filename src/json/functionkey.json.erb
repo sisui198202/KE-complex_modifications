@@ -1,96 +1,94 @@
 {
-  "title": "FunctionKey85",
+  "title": "FunctionKey88",
   "rules": [
-        {
-            "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f1",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
+    {
+        "description": "Double F1_tmp1Python_tmpUwscFileOpen(FunctionKey)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f1",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
                         "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/abc.md'"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f1 pressed",
+                        "value": 1
+                    },
+                                {
+          "type": "frontmost_application_unless",
+          "bundle_identifiers": [
+                    "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                    "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                    "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                    "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+          ]
+        }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f1",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
                             "name": "f1 pressed",
                             "value": 1
-                        },
-                                                            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
-
-              ]
-            }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f1",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
                         }
                     },
-                    "to": [
+                    {
+                        "shell_command": "open '/Users/user/Desktop/iCollections/TmpFile/tmp1.py'"
+                    }
+                ],
+                "conditions": [
+                                {
+          "type": "frontmost_application_unless",
+          "bundle_identifiers": [
+                    "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                    "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                    "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                    "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+          ]
+        }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
                         {
                             "set_variable": {
                                 "name": "f1 pressed",
-                                "value": 1
+                                "value": 0
                             }
-                        },
-                        {
-                            "shell_command": "open '/Users/user/Desktop/iCollections/TmpFile/tmp1.py'"
                         }
                     ],
-                                        "conditions": [
-                                    {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
-
-              ]
-            }
-                    ],
-                    "to_delayed_action": {
-                        "to_if_invoked": [
-                            {
-                                "set_variable": {
-                                    "name": "f1 pressed",
-                                    "value": 0
-                                }
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f1 pressed",
+                                "value": 0
                             }
-                        ],
-                        "to_if_canceled": [
-                            {
-                                "set_variable": {
-                                    "name": "f1 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ]
-                    }
+                        }
+                    ]
                 }
-            ]
-        },
+            }
+        ]
+    },
         {
             "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
             "manipulators": [
