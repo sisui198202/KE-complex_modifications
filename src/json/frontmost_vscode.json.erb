@@ -1,6 +1,28 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode2",
     "rules": [
+    {
+      "description": "LeftOption + M_NextBookmark(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["k", ["right_option","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + M_BookmarkSet(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["l", ["right_option","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftCommand + N_HeadRowCursol(vscode)",
       "manipulators": [
