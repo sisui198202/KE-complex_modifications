@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfVscode2",
+    "title": "FrontmostIfVscode3",
     "rules": [
+      {
+        "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["m", ["right_option","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
     {
       "description": "LeftOption + M_NextBookmark(vscode)",
       "manipulators": [

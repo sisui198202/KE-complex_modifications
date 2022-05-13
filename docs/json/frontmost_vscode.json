@@ -1,6 +1,42 @@
 {
-  "title": "FrontmostIfVscode2",
+  "title": "FrontmostIfVscode3",
   "rules": [
+    {
+      "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "LeftOption + M_NextBookmark(vscode)",
       "manipulators": [
