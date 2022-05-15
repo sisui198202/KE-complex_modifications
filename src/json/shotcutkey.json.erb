@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey10",
+  "title": "ShotCutKey12",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -240,7 +240,8 @@
         {
           "type": "basic",
           "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]], ["delete_or_backspace"]]) %>
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]], ["delete_or_backspace"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
