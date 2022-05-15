@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararell7",
+    "title": "FrontmostIfPararel20",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -236,6 +236,17 @@
     }
   ]
 },
+   {
+      "description": "rightcommand + K_CopyCurrentRowCut(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["3", ["right_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
 {
   "description": "RightCommand + O(オー)_SameWordExpandSelection(pararell)",
   "manipulators": [
