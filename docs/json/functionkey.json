@@ -1,8 +1,8 @@
 {
-  "title": "FunctionKey7",
+  "title": "FunctionKey",
   "rules": [
     {
-      "description": "Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)",
+      "description": "今は使わない_Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)",
       "_comment": "ダブル押しコードでの、「frontmost_application_unless(pararell)」の書き方が分からないので、Single押しでの処理を使うことにする。",
       "manipulators": [
         {
