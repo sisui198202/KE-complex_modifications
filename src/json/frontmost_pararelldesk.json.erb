@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararel2",
+    "title": "FrontmostIfParare85",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -269,6 +269,28 @@
     }
   ]
 },
+  {
+      "description": "RightCommand + Semicolon_LatestTabToggle",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["6", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + L_NextTab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["7", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
 {
         "description": "AccessのVBEで反応しない_RightAlt + V_Paste(Access)VBE",
         "manipulators": [
