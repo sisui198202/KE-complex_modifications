@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfParare15",
+    "title": "FrontmostIfParare123455",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -8,17 +8,6 @@
             "type": "basic",
             "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["equal_sign", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("pararell") %>]
-          }
-        ]
-      },
-      {
-        "description": "うまくいかないfn_Rename(Pararell)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("fn", ["caps_lock"]) %>,
-            "to": <%= to([["f2"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
           }
         ]
@@ -324,6 +313,17 @@
         }
       ]
     },
+      {
+        "description": "うまくいかないfn_Rename(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("fn", ["caps_lock"]) %>,
+            "to": <%= to([["f2"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
 {
         "description": "AccessのVBEで反応しない_RightAlt + V_Paste(Access)VBE",
         "manipulators": [
