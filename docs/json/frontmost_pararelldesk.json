@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfParare123455",
+  "title": "FrontmostIfParare123",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -640,7 +640,7 @@
       ]
     },
     {
-      "description": "LeftCommand + D_AllSelect",
+      "description": "LeftCommand + D_AllSelect(pararell)",
       "manipulators": [
         {
           "type": "basic",
