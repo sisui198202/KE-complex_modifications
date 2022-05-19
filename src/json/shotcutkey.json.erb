@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey14",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -188,7 +188,8 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["left_control"]]]) %>
+          "to": <%= to([["tab", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -198,7 +199,8 @@
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>
+          "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
