@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfParare74",
+  "title": "FrontmostIfParare",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -677,7 +677,7 @@
       ]
     },
     {
-      "description": "F8_StepIn(pararell)",
+      "description": "うまくいかないF8_StepIn(pararell)",
       "manipulators": [
         {
           "type": "basic",
