@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfParare85",
+  "title": "FrontmostIfParare80",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -548,7 +548,7 @@
       ]
     },
     {
-      "description": "RightCommand + Semicolon_LatestTabToggle",
+      "description": "RightCommand + Semicolon_LatestTabToggle(pararell)",
       "manipulators": [
         {
           "type": "basic",
@@ -591,7 +591,7 @@
       ]
     },
     {
-      "description": "RightCommand + L_NextTab",
+      "description": "RightCommand + L_NextTab(pararell)",
       "manipulators": [
         {
           "type": "basic",
