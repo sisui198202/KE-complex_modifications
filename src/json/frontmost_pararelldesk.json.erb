@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfParare80",
+    "title": "FrontmostIfParare79",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -287,6 +287,17 @@
           "type": "basic",
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + U_ColumnSelection(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
