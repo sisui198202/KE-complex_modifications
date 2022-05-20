@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfParare1234",
+    "title": "FrontmostIfParare12345",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -309,6 +309,17 @@
           "type": "basic",
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+      {
+      "description": "RightCommand + Z_0[ゼロ](pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
