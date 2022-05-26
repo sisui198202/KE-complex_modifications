@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey90",
+  "title": "Replacekey",
   "rules": [
    {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -197,6 +197,17 @@
           "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
           "to": <%= to([["japanese_eisuu"], ["7", "right_shift"]]) %>,
           "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado_unless_pararell(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["7", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
