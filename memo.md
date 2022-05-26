@@ -22,6 +22,9 @@ com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2
 [メモ帳]
 com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717
 
+[SSMS]
+com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717
+
 ---------------------
 # 固定アプリとパブリックのキーバインド設定の適用順位について
 
