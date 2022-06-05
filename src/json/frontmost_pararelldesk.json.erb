@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararel2",
+    "title": "FrontmostIfPararel3",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -339,6 +339,17 @@
         }
       ]
     },
+{
+  "description": "LeftOption + J_ChromeActiveWindow(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
+      "to": <%= to([["4", ["left_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
   {
       "description": "うまくいかないF8_StepIn(pararell)",
       "manipulators": [
