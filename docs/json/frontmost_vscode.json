@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode4",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
@@ -430,6 +430,7 @@
     },
     {
       "description": "LeftAlt + Comma_copyFilePath(vscode)",
+      "_comment": "sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
       "manipulators": [
         {
           "type": "basic",

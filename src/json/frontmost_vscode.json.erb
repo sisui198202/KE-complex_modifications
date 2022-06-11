@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode4",
+    "title": "FrontmostIfVscode",
     "rules": [
       {
         "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
@@ -7,7 +7,7 @@
           {
             "type": "basic",
             "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["m", ["right_option","right_gui"]]]) %>,
+            "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["k", ["right_option","right_gui"]]]) %>,
+          "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("m", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["l", ["right_option","right_gui"]]]) %>,
+          "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -135,6 +135,7 @@
     },
     {
       "description": "LeftAlt + Comma_copyFilePath(vscode)",
+      "_comment": "sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
       "manipulators": [
         {
           "type": "basic",
