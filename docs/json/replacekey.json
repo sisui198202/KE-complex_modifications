@@ -318,7 +318,7 @@
     },
     {
       "description": "RightOption_Paste(Replacekey)",
-      "_comment": "b06b_エクスプローラー_powershell上でコピー不可",
+      "_comment": "b06b_エクスプローラー",
       "manipulators": [
         {
           "type": "basic",
