@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl99",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -419,6 +419,7 @@
     },
     {
       "description": "LeftOption + J_ChromeActiveWindow1(WindowControl)",
+      "_comment": "WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる",
       "manipulators": [
         {
           "type": "basic",
