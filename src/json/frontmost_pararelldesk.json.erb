@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararel93",
+    "title": "FrontmostIfPararel4",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -354,6 +354,17 @@
     }
   ]
 },
+   {
+      "description": "LeftContorl_CellEdit(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("fn") %>,
+          "to": <%= to([["f2"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
     {
       "description": "検討中_LeftAlt_Copy(Pararell)",
       "_comment": "エクスプローラー_bf73",
