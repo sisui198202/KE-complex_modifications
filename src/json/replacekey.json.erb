@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey456",
+  "title": "Replacekey",
   "rules": [
    {
       "description": "Leftoption + Space_Enter(Replacekey)",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "description": "Tilde_X3_1(Replacekey)",
+      "description": "優先利用Tilde_X3_1(Replacekey)",
       "_comment": "tildeを3回入力し、3回入力したtildeをクリップボードに入れる",
       "manipulators": [
         {
@@ -84,18 +84,6 @@
           "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
           "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
-        }
-      ]
-    },
-    {
-      "description": "Tilde_X3_2(Replacekey)",
-      "_comment": "tildeを3回入力し、3回入力したtildeをクリップボードに入れる",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     },
@@ -1043,6 +1031,18 @@
             as_json: true,
           ) %>
         },
+            {
+      "description": "利用しないTilde_X3_2(Replacekey)",
+      "_comment": "tildeを3回入力し、3回入力したtildeをクリップボードに入れる",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
         {
           "description": "使用しない_Tilde_X3(Replacekey)",
           "manipulators": [

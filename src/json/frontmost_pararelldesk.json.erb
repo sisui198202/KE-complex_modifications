@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararel99",
+    "title": "FrontmostIfPararel",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -372,18 +372,6 @@
           "type": "basic",
           "from": <%= from("right_control") %>,
           "to": <%= to([["left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("pararell") %> ]
-        }
-      ]
-    },
-    {
-      "description": "Tilde_X3_2(pararell)",
-      "_comment": "tildeを3回入力し、3回入力したtildeをクリップボードに入れる",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("pararell") %> ]
         }
       ]
