@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararel",
+  "title": "FrontmostIfPararel95",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -844,7 +844,7 @@
                 "right_alt"
               ],
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
