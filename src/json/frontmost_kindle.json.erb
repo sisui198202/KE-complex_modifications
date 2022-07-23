@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle98",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "description": "LeftAlt + R_RowNumberSelectMove(kindle)",
+      "description": "LeftAlt + R_起動しないRowNumberSelectMove(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "RightAlt + Z_To_IndexPage(kindle)",
+      "description": "RightAlt + Z_起動しないTo_IndexPage(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I_Expansion(kindle)",
+      "description": "LeftCommand + I_起動しないExpansion(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -96,6 +96,17 @@
           "type": "basic",
           "from": <%= from("y", ["left_option"]) %>,
           "to": <%= to([["0", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + B_ブックマーク追加(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["right_gui"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

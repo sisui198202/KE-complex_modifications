@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle98",
   "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "LeftAlt + R_RowNumberSelectMove(kindle)",
+      "description": "LeftAlt + R_起動しないRowNumberSelectMove(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "RightAlt + Z_To_IndexPage(kindle)",
+      "description": "RightAlt + Z_起動しないTo_IndexPage(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "description": "LeftCommand + I_Expansion(kindle)",
+      "description": "LeftCommand + I_起動しないExpansion(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -279,6 +279,38 @@
           "to": [
             {
               "key_code": "0",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + B_ブックマーク追加(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
               "modifiers": [
                 "right_gui"
               ]
