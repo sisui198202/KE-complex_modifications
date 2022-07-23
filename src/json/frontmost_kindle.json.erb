@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle5",
+    "title": "FrontmostIfKindle",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -63,6 +63,39 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
           "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + I_拡大197%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["left_option"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + U_実際のサイズ100%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_option"]) %>,
+          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + y_画面にフィット121%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y", ["left_option"]) %>,
+          "to": <%= to([["0", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
