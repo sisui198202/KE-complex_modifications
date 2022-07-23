@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle5",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -63,6 +63,50 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"]) %>,
           "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "J_DownArrow(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j") %>,
+          "to": <%= to([["down_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "k_UpArrow(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k") %>,
+          "to": <%= to([["up_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "h_LeftArrow(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h") %>,
+          "to": <%= to([["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "L_RigthArrow(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l") %>,
+          "to": <%= to([["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

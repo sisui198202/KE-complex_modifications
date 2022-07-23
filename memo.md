@@ -31,6 +31,9 @@ com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2
 [PowerShell]
 com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717
 
+[qdir]
+com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717
+
 ---------------------
 # 固定アプリとパブリックのキーバインド設定の適用順位について
 
