@@ -1,16 +1,92 @@
 {
-    "title": "TesutoCase1",
+    "title": "TesutoCase6",
     "rules":                                                                [
-                                                {
-                          "description": "tesuto2",
-              "manipulators":               [
+{
+  "description": "Test全角/半角でIMEのON/OFFを切り替える",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": { "key_code": "grave_accent_and_tilde" },
+      "to": [
         {
-                  "type": "basic",
-                                                  "from": <%= from("e", ["control"], []) %>,
-          "to": <%= to([["f"]]) %>
+          "select_input_source": {
+            "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Japanese$"
+          }
         }
-                                                                                        ]
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        }
+      ]
     },
+    {
+      "type": "basic",
+      "from": { "key_code": "grave_accent_and_tilde" },
+      "to": [
+        {
+          "select_input_source": {
+            "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Roman$"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "ja" }
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "description": "全角/半角でIMEのON/OFFを切り替える",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": { "key_code": "grave_accent_and_tilde" },
+      "to": [
+        {
+          "select_input_source": {
+            "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Japanese$"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": { "key_code": "grave_accent_and_tilde" },
+      "to": [
+        {
+          "select_input_source": {
+            "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Roman$"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "ja" }
+          ]
+        }
+      ]
+    }
+  ]
+},
         {
             "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
             "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
