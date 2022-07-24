@@ -1,5 +1,5 @@
 {
-  "title": "TesutoCase5b",
+  "title": "TesutoCase5c",
   "rules": [
     {
       "description": "Test全角/半角でIMEのON/OFFを切り替える",
@@ -11,9 +11,10 @@
           },
           "to": [
             {
-              "select_input_source": {
-                "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Japanese$"
-              }
+              "key_code": "3",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "conditions": [
@@ -34,9 +35,10 @@
           },
           "to": [
             {
-              "select_input_source": {
-                "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Roman$"
-              }
+              "key_code": "4",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "conditions": [
