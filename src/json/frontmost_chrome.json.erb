@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome2",
     "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -44,6 +44,41 @@
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
+    },
+{
+  "description": "英語モード:j_DownArrow(Chrome)",
+"manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "j",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+            {
+              "key_code": "down_arrow"
+            }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        },
+        {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+      ]
     }
+  ]
+}
     ]
 }
