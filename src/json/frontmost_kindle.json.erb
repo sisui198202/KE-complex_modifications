@@ -1,13 +1,24 @@
 {
-    "title": "FrontmostIfKindle1234",
+    "title": "FrontmostIfKindle12345",
     "rules": [
     {
-      "description": "RightAlt + A_FullScreen(kindle)",
+      "description": "LeftAlt + A_FullScreenOn(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"]) %>,
+          "to": <%= to([["7", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+        {
+      "description": "RightAlt + A_FullScreenOff(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("a", ["right_alt"]) %>,
-          "to": <%= to([["7", ["right_shift", "right_gui"]]]) %>,
+          "to": <%= to([["f", ["right_gui", "left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

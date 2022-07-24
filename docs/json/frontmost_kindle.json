@@ -1,8 +1,41 @@
 {
-  "title": "FrontmostIfKindle1234",
+  "title": "FrontmostIfKindle12345",
   "rules": [
     {
-      "description": "RightAlt + A_FullScreen(kindle)",
+      "description": "LeftAlt + A_FullScreenOn(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + A_FullScreenOff(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -16,10 +49,10 @@
           },
           "to": [
             {
-              "key_code": "7",
+              "key_code": "f",
               "modifiers": [
-                "right_shift",
-                "right_gui"
+                "right_gui",
+                "left_control"
               ]
             }
           ],
