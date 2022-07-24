@@ -1,5 +1,5 @@
 {
-  "title": "TesutoCase89",
+  "title": "TesutoCase111",
   "rules": [
     {
       "description": "Test1",
@@ -29,6 +29,12 @@
                 {
                   "language": "en"
                 }
+              ]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
               ]
             }
           ]
