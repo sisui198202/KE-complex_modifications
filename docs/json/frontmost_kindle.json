@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle33",
+  "title": "FrontmostIfKindle34",
   "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -435,7 +435,7 @@
                 "left_control"
               ],
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
