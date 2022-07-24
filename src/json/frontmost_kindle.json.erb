@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle90",
     "rules": [
     {
       "description": "RightAlt + A_FullScreen(kindle)",
@@ -152,6 +152,32 @@
           "from": <%= from("l") %>,
           "to": <%= to([["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "J_DownArrow_X3(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j"
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "key_code": "down_arrow",
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
         }
       ]
     }
