@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPararel98",
+    "title": "FrontmostIfPararel",
     "rules": [
       {
         "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -368,17 +368,6 @@
       "type": "basic",
       "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
       "to": <%= to([["5", ["left_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("pararell") %> ]
-    }
-  ]
-},
-{
-  "description": "RightCommand + A_標準モジュール追加(pararell)",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["6", ["left_option"]]]) %>,
       "conditions": [ <%= frontmost_application_if("pararell") %> ]
     }
   ]
