@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome3a",
+  "title": "FrontmostIfChrome3b",
   "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -119,6 +119,44 @@
                 "right_alt",
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + J_DownArrow-X3(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
             }
           ],
           "conditions": [
