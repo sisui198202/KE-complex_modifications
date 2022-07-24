@@ -1,5 +1,5 @@
 {
-  "title": "TesutoCase99",
+  "title": "TesutoCase89",
   "rules": [
     {
       "description": "Test1",
@@ -7,14 +7,19 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "grave_accent_and_tilde"
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
-              "key_code": "3",
-              "modifiers": [
-                "left_shift"
-              ]
+              "key_code": "down_arrow"
             }
           ],
           "conditions": [
@@ -23,30 +28,6 @@
               "input_sources": [
                 {
                   "language": "en"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "grave_accent_and_tilde"
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "ja"
                 }
               ]
             }
