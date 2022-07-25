@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome3f",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "RightCommand + H_Reload(Chrome)",
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "description": "LeftCommand + J_DownArrow-X3(Chrome)",
+      "description": "使用しない_LeftCommand + J_DownArrow-X3(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "description": "LeftCommand + k_UpArrow-X3(Chrome)",
+      "description": "使用しない_LeftCommand + k_UpArrow-X3(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -209,7 +209,7 @@
       ]
     },
     {
-      "description": "LeftCommand + h_LeftArrow-X3(Chrome)",
+      "description": "使用しない_LeftCommand + h_LeftArrow-X3(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -247,7 +247,7 @@
       ]
     },
     {
-      "description": "LeftCommand + L_RigthArrow-X3(Chrome)",
+      "description": "使用しない_LeftCommand + L_RigthArrow-X3(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "description": "英語モード:j_DownArrow(Chrome)",
+      "description": "使用しない_英語モード:j_DownArrow(Chrome)",
       "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
       "manipulators": [
         {
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "description": "英語モード:k_UpArrow(Chrome)",
+      "description": "使用しない_英語モード:k_UpArrow(Chrome)",
       "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
       "manipulators": [
         {
@@ -361,7 +361,7 @@
       ]
     },
     {
-      "description": "英語モード:h_LeftArrow(Chrome)",
+      "description": "使用しない_英語モード:h_LeftArrow(Chrome)",
       "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
       "manipulators": [
         {
@@ -399,7 +399,7 @@
       ]
     },
     {
-      "description": "英語モード:L_LeftArrow(Chrome)",
+      "description": "使用しない_英語モード:L_LeftArrow(Chrome)",
       "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
       "manipulators": [
         {
