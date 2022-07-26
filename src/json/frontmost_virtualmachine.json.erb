@@ -1,16 +1,9 @@
 {
-    "title": "Frontmostvirtual_machine76",
+    "title": "Frontmostvirtual_machine75",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList",
       "manipulators": [
-          {
-            "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
-            "type": "basic",
-            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["equal_sign", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
-          },
           {
               "description": "RightCommand + ._MaxWindows(VirtualMachine)",
               "type": "basic",
