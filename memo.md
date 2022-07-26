@@ -1,3 +1,59 @@
+## 1つ説明で複数の設定を入力するパターン
+{
+  "title": "WindowControl123",
+  "rules": [
+              {
+                "description": "Fn + ~_WindowsControl(WindowControl)",
+                "manipulators": [
+                  {
+                    "description": "Fn + U_WindowLeftUp",
+                    "type": "basic",
+                    "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
+                    "to": <%= to([["6", "right_alt"]]) %>
+                  },
+                  {
+                    "description": "Fn + H_LeftWindowMove",
+                    "type": "basic",
+                    "from": <%= from("h", ["fn"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_alt"]]]) %>
+                  }
+              ]
+              },
+          ]
+}
+
+---------------------
+## 1つ説明で1つの設定を入力するパターン
+
+{
+    "title": "FrontmostIfPararel",
+    "rules": [
+      {
+        "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + ._MaxWindows(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      }
+    ]
+}
+
+---------------------
 [Exploer]
 com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717
 
