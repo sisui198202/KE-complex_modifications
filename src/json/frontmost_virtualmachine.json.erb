@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine84",
+    "title": "Frontmostvirtual_machine83",
     "rules": [
     {
       "description": "複数A",
@@ -19,7 +19,7 @@
               "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
           },
         {
-          "description": "コマンドキー、英数モードへ",
+          "description": "LeftCommand、 英語モードへ",
           "type": "basic",
           "from": {
             "key_code": "left_control",
@@ -62,6 +62,8 @@
           "type": "basic"
         },
         {
+          "description": "RightCommand、 日本語モードへ",
+          "type": "basic",
           "from": {
             "key_code": "right_command",
             "modifiers": {

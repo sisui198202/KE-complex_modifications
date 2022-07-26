@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine84",
+  "title": "Frontmostvirtual_machine83",
   "rules": [
     {
       "description": "複数A",
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "description": "コマンドキー、英数モードへ",
+          "description": "LeftCommand、 英語モードへ",
           "type": "basic",
           "from": {
             "key_code": "left_control",
@@ -121,6 +121,8 @@
           ]
         },
         {
+          "description": "RightCommand、 日本語モードへ",
+          "type": "basic",
           "from": {
             "key_code": "right_command",
             "modifiers": {
@@ -158,8 +160,7 @@
                 "^com.parallels.winapp."
               ]
             }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     }
