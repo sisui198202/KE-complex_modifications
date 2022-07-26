@@ -1,53 +1,17 @@
 {
-  "title": "TesutoCase",
+  "title": "TESUTO123",
   "rules": [
     {
-      "description": "英語モード:j_DownArrow(Chrome)",
+      "description": "Fn + ~_WindowsControl(WindowControl)",
       "manipulators": [
         {
+          "description": "Fn + U_WindowLeftUp",
           "type": "basic",
           "from": {
-            "key_code": "j",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "en"
-                }
-              ]
-            },
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Test2",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "fn"
               ],
               "optional": [
                 "caps_lock"
@@ -56,345 +20,31 @@
           },
           "to": [
             {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "en"
-                }
-              ]
-            },
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Test",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "grave_accent_and_tilde"
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "en"
-                }
-              ]
+              "key_code": "6",
+              "modifiers": "right_alt"
             }
           ]
         },
         {
-          "type": "basic",
-          "from": {
-            "key_code": "grave_accent_and_tilde"
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "ja"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + H/J/K/L_Arrows(Replacekey)",
-      "manipulators": [
-        {
+          "description": "Fn + H_LeftWindowMove",
           "type": "basic",
           "from": {
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "全角/半角でIMEのON/OFFを切り替える",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "grave_accent_and_tilde"
-          },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Japanese$"
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "en"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "grave_accent_and_tilde"
-          },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "^com\\.apple\\.inputmethod\\.Kotoeri\\.Roman$"
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "ja"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Sキーを押しながらHキーを押すと左矢印に変換するという設定",
-      "_comment": "Sキーを押しながらHキーを押すと左矢印に変換するという設定 ",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vi_mode",
-                "value": 0
-              }
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vi_mode",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "１秒間押し続けないとcommand-qが実行されない設定",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "command"
+                "fn"
               ],
               "optional": [
                 "caps_lock"
               ]
             }
           },
-          "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 1000
-          },
-          "to_if_held_down": [
+          "to": [
             {
-              "key_code": "q",
+              "key_code": "2",
               "modifiers": [
-                "command"
-              ],
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "１秒間押し続けないとaが実行されない設定",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
+                "right_alt"
               ]
-            }
-          },
-          "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 1000
-          },
-          "to_if_held_down": [
-            {
-              "key_code": "a",
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "１秒間押し続けないとspaceが実行されない設定",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "parameters": {
-            "basic.to_if_held_down_threshold_milliseconds": 1000
-          },
-          "to_if_held_down": [
-            {
-              "key_code": "spacebar",
-              "repeat": false
             }
           ]
         }
