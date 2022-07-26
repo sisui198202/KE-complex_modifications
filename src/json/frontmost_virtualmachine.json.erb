@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine79",
+    "title": "Frontmostvirtual_machine78",
     "rules": [
     {
       "description": "複数A",
@@ -17,6 +17,13 @@
               "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
               "to": <%= to([["1", "left_option"]]) %>,
               "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+          },
+          {
+            "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
           },
         {
           "description": "LeftCommand、 英語モードへ",
