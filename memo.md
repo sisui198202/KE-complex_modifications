@@ -159,3 +159,505 @@ toで指定するキーが違うため、できない
     },
 
 ---------------------
+## backup FrontmostIfPararel
+
+{
+    "title": "FrontmostIfPararel",
+    "rules": [
+      {
+        "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + ._MaxWindows(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+      "description": "RightCommand + A_NewFileCreate(Pararell)",
+      "_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Quote_Single Column Editor Layout(Pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["h", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + i_Neight bour(Pararell)",
+      "_comment": "WindowsSublimeの右のエディターにカーソル移動",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["i", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+{
+                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)",
+                        "_comment": "下記にKaravinerツール「frontmostApplicationで日本語_英語キー切り替えをLeftCommandとRightCommandでしたい場合、ウィンドウコード確認し、下記に入力、Vscode_d51,Sublime_7d5,Excel通常画面_VBE_c1d",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                      "optional": [
+                                        "caps_lock"
+                                      ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+            {
+              "key_code": "f12",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                      "optional": [
+                                        "caps_lock"
+                                      ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+            {
+              "key_code": "f9",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ],
+                                "type": "basic"
+                            }
+                        ]
+},
+{
+  "description": "LeftCommand + Comma_AppsSelect-previous(Pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "modifiers": {
+          "mandatory": [
+            "left_control"
+          ]
+        },
+        "key_code": "comma"
+      },
+      "to": [
+        {
+          "repeat": true,
+          "key_code": "tab",
+          "modifiers": [
+            "left_alt",
+            "right_shift"
+          ],
+          "halt": true
+        }
+      ],
+      "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+               "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+    }
+  ]
+},
+{
+  "description": "LeftCommand + Period_AppsSelect-next(Pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "modifiers": {
+          "mandatory": [
+            "left_control"
+          ]
+        },
+        "key_code": "period"
+      },
+      "to": [
+        {
+          "repeat": true,
+          "key_code": "tab",
+          "modifiers": [
+            "right_alt"
+          ],
+          "halt": true
+        }
+      ],
+      "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+               "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+    }
+  ]
+},
+   {
+      "description": "rightcommand + K_CopyCurrentRowCut(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["5", ["right_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+{
+  "description": "RightCommand + O(オー)_SameWordExpandSelection(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+      "to": <%= to([["4", ["right_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+{
+  "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+      "to": <%= to([["1", ["right_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+  {
+      "description": "RightCommand + Semicolon_LatestTabToggle(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["6", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + L_NextTab(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["7", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + U_ColumnSelection(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + D_AllSelect(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+      {
+      "description": "RightCommand + J_1RowSelect(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+      {
+      "description": "RightCommand + Z_0[ゼロ](pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["3", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+{
+  "description": "LeftCommand + X_iterm2ActiveWindow(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
+      "to": <%= to([["5", ["left_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+   {
+      "description": "LeftContorl_CellEdit(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("fn") %>,
+          "to": <%= to([["f2"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+   {
+      "description": "アクセスキーできない_fn_alt(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_control") %>,
+          "to": <%= to([["left_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "検討中_LeftAlt_Copy(Pararell)",
+      "_comment": "エクスプローラー_bf73",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+{
+  "description": "使用していない_LeftOption + J_ChromeActiveWindow(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
+      "to": <%= to([["4", ["left_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+{
+  "description": "LeftCommand + U_Undo(pararell)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("u", ["left_gui"], ["caps_lock"]) %>,
+      "to": <%= to([["6", ["left_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pararell") %> ]
+    }
+  ]
+},
+  {
+      "description": "うまくいかないF8_StepIn(pararell)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f8", ["caps_lock"]) %>,
+          "to": <%= to([["9", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pararell") %> ]
+        }
+      ]
+    },
+      {
+        "description": "うまくいかないfn_Rename(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("fn", ["caps_lock"]) %>,
+            "to": <%= to([["f2"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+{
+        "description": "AccessのVBEで反応しない_RightAlt + V_Paste(Access)VBE",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["v", "right_control"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %> ]
+          }
+        ]
+  }
+    ]
+}
+
+---------------------
