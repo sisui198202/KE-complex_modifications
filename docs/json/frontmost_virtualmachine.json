@@ -1,8 +1,8 @@
 {
-  "title": "Frontmostvirtual_machine94",
+  "title": "Frontmostvirtual_machine93",
   "rules": [
     {
-      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)",
+      "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
       "_comment": "下記にKaravinerツール「frontmostApplicationで日本語_英語キー切り替えをLeftCommandとRightCommandでしたい場合、ウィンドウコード確認し、下記に入力、Vscode_d51,Sublime_7d5,Excel通常画面_VBE_c1d",
       "manipulators": [
         {
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Comma_AppsSelect-previous(Pararell)",
+      "description": "LeftCommand + Comma_AppsSelect-previous(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Period_AppsSelect-next(Pararell)",
+      "description": "LeftCommand + Period_AppsSelect-next(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(virtual_machine)",
+      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "description": "RightCommand + ._MaxWindows(virtual_machine)",
+      "description": "RightCommand + ._MaxWindows(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -257,7 +257,7 @@
       ]
     },
     {
-      "description": "RightCommand + A_NewFileCreate(virtual_machine)",
+      "description": "RightCommand + A_NewFileCreate(VirtualMachine)",
       "_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
       "manipulators": [
         {
@@ -301,7 +301,7 @@
       ]
     },
     {
-      "description": "LeftCommand + Quote_Single Column Editor Layout(virtual_machine)",
+      "description": "LeftCommand + Quote_Single Column Editor Layout(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -344,7 +344,7 @@
       ]
     },
     {
-      "description": "RightCommand + i_Neight bour(virtual_machine)",
+      "description": "RightCommand + i_Neight bour(VirtualMachine)",
       "_comment": "WindowsSublimeの右のエディターにカーソル移動",
       "manipulators": [
         {
