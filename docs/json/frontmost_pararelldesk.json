@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPararel",
+  "title": "FrontmostIfPararel3",
   "rules": [
     {
       "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
@@ -1090,15 +1090,15 @@
       ]
     },
     {
-      "description": "使用していないRightOption + O(オー)_名前をつけて保存(pararell)",
+      "description": "LeftCommand + U_Undo(pararell)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_gui"
               ],
               "optional": [
                 "caps_lock"
