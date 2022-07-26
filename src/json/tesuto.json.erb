@@ -1,8 +1,8 @@
 {
-  "title": "TESUTO1234",
+  "title": "TESUTO1236",
   "rules": [
               {
-                "description": "Fn + ~_WindowsControl(WindowControl)",
+                "description": "Fn + ~_WindowsControl(TESUTO)",
                 "manipulators": [
                   {
                     "description": "Fn + U_WindowLeftUp",
@@ -19,12 +19,23 @@
               ]
               },
                     {
-        "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
+        "description": "LeftCommand + W_CurrentCursol-EndRowSelect(TESUTO)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + ._MaxWindows(TESUTO)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", "left_option"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
           }
         ]
