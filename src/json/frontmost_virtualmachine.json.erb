@@ -1,54 +1,24 @@
 {
-    "title": "Frontmostvirtual_machine88",
+    "title": "Frontmostvirtual_machine87",
     "rules": [
     {
       "description": "複数A",
       "manipulators": [
-        {
-          "description": "A1",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
+          {
+            "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
           },
-          "to": [
-            {
-              "key_code": "6",
-              "modifiers": "right_alt"
-            }
-          ]
-        },
-        {
-          "description": "A2",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_alt"
-              ]
-            }
-          ]
-        }
+          {
+              "description": "RightCommand + ._MaxWindows(VirtualMachine)",
+              "type": "basic",
+              "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+              "to": <%= to([["1", "left_option"]]) %>,
+              "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+          }
       ]
-    }
+        }
     ]
 }
