@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO123",
+  "title": "TESUTO1234",
   "rules": [
               {
                 "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -17,6 +17,18 @@
                     "to": <%= to([["2", ["right_alt"]]]) %>
                   }
               ]
-              }
+              },
+                    {
+        "description": "LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      }
           ]
+
 }
