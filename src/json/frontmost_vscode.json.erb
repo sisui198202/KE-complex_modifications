@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode99",
     "rules": [
       {
         "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
@@ -7,7 +7,7 @@
           {
             "type": "basic",
             "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
+            "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
+          "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]

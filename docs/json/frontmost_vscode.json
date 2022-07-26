@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode99",
   "rules": [
     {
       "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
@@ -19,7 +19,7 @@
           },
           "to": [
             {
-              "key_code": "m",
+              "key_code": "k",
               "modifiers": [
                 "right_option",
                 "right_gui"
@@ -55,7 +55,7 @@
           },
           "to": [
             {
-              "key_code": "k",
+              "key_code": "m",
               "modifiers": [
                 "right_option",
                 "right_gui"
