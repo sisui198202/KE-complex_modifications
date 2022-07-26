@@ -1,51 +1,34 @@
 {
-  "title": "ReplaceSummary1",
+  "title": "ReplaceSummary4",
   "rules": [
     {
       "description": "ReplaceSummary",
       "manipulators": [
         {
-          "description": "RightCommand + ._MaxWindows(VirtualMachine)",
+          "description": "Leftoption + Space_Enter(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "period",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_alt"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
           "to": [
             {
-              "key_code": "1",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
+              "key_code": "return_or_enter"
             }
           ]
         },
         {
-          "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
+          "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "w",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -57,24 +40,128 @@
           },
           "to": [
             {
-              "key_code": "equal_sign",
-              "modifiers": "left_option"
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
+                "^com\\.apple\\.finder$"
               ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + Rightoption_equal(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "equal_sign"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + Leftoption_backslash(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "backslash"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + G_escape(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
             }
           ]
         }

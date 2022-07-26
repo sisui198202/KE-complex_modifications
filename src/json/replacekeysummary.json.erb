@@ -1,22 +1,48 @@
 {
-    "title": "ReplaceSummary1",
+    "title": "ReplaceSummary4",
     "rules": [
     {
       "description": "ReplaceSummary",
       "manipulators": [
           {
-              "description": "RightCommand + ._MaxWindows(VirtualMachine)",
-              "type": "basic",
-              "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-              "to": <%= to([["1", "left_option"]]) %>,
-              "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+            "description": "Leftoption + Space_Enter(Replacekey)",
+            "type": "basic",
+            "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
+            "to": <%= to([["return_or_enter"]]) %>
           },
           {
-            "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
+            "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
             "type": "basic",
-            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["equal_sign", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+            "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["japanese_eisuu"], ["delete_or_backspace"]]) %>,
+            "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          },
+          {
+            "description": "LeftCommand + Rightoption_equal(Replacekey)",
+            "type": "basic",
+            "from": <%= from("right_alt", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["japanese_eisuu"], ["equal_sign"]]) %>,
+            "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+          },
+          {
+            "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+            "type": "basic",
+            "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+            "to": <%= to([["delete_forward"]]) %>,
+            "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          },
+          {
+            "description": "RightCommand + Leftoption_backslash(Replacekey)",
+            "type": "basic",
+            "from": <%= from("left_alt", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["japanese_eisuu"], ["backslash"]]) %>,
+            "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+          },
+          {
+            "description": "LeftCommand + G_escape(Replacekey)",
+            "type": "basic",
+            "from": <%= from("g", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["escape"]]) %>
           }
       ]
         }
