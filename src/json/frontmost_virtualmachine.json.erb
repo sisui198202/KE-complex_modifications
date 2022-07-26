@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine",
+    "title": "Frontmostvirtual_machine99",
     "rules": [
 {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)",
@@ -88,6 +88,63 @@
                                 "type": "basic"
                             }
                         ]
-}
+},
+{
+        "description": "LeftCommand + W_CurrentCursol-EndRowSelect(virtual_machine)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + ._MaxWindows(virtual_machine)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+          }
+        ]
+      },
+      {
+      "description": "RightCommand + A_NewFileCreate(virtual_machine)",
+      "_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Quote_Single Column Editor Layout(virtual_machine)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["h", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + i_Neight bour(virtual_machine)",
+      "_comment": "WindowsSublimeの右のエディターにカーソル移動",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["i", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        }
+      ]
+    }
     ]
 }
