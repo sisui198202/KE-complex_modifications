@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary",
+    "title": "ReplaceSummary1",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -237,7 +237,7 @@
           "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
         },
         {
-          "description": "使用できない_Leftoption + Rightcommand_hypen(Replacekey)",
+          "description": "Leftoption + Rightcommand_hypen(Replacekey)",
           "type": "basic",
           "from": <%= from("right_gui", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["hyphen"]]) %>

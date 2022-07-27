@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary",
+  "title": "ReplaceSummary1",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -531,7 +531,7 @@
           ]
         },
         {
-          "description": "使用できない_Leftoption + Rightcommand_hypen(Replacekey)",
+          "description": "Leftoption + Rightcommand_hypen(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "right_gui",
