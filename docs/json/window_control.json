@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl8",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -299,7 +299,6 @@
         },
         {
           "description": "RightCommand + P_RightWindowMove",
-          "_comment": "WindowsにRAlt + 3を送信している。",
           "type": "basic",
           "from": {
             "key_code": "p",
