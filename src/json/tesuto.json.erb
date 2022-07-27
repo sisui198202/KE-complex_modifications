@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO",
+  "title": "TESUTO4",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -37,6 +37,26 @@
             "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["1", "left_option"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+        "description": "test1",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j") %>,
+            "to": <%= to([["j"]]) %>
+          }
+        ]
+      },
+      {
+        "description": "test2",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"]]) %>
           }
         ]
       }

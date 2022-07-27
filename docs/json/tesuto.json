@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO",
+  "title": "TESUTO4",
   "rules": [
     {
       "description": "一括設定(TESUTO)",
@@ -133,6 +133,43 @@
                 "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
                 "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "test1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j"
+          },
+          "to": [
+            {
+              "key_code": "j"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "test2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
             }
           ]
         }
