@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary9",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -102,13 +102,6 @@
           "type": "basic",
           "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["x", ["right_gui"]]]) %>
-        },
-        {
-          "description": "優先RightCommand + G_FileTabClose1",
-          "_comment": "Windows環境の設定ため",
-          "type": "basic",
-          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control"]]]) %>
         },
         {
           "description": "RightCommand + Semicolon_LatestTabToggle",
@@ -315,6 +308,15 @@
               ]
             }
           ]
+        }
+      ],
+      "manipulators": [
+      {
+          "description": "優先RightCommand + G_FileTabClose1",
+          "_comment": "Windows環境の設定ため",
+          "type": "basic",
+          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_control"]]]) %>
         }
       ]
     }
