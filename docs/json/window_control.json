@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl123",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -390,13 +390,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "Leftcommand + R_miActiveWindow((WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "Leftcommand + R_miActiveWindow((WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -414,14 +410,10 @@
               "shell_command": "open -a 'mi'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + J_ChromeActiveWindow1(WindowControl)",
-      "_comment": "WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + J_ChromeActiveWindow1(WindowControl)",
+          "_comment": "WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -439,13 +431,9 @@
               "shell_command": "open -a 'Google Chrome.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + J_ChromeActiveWindow2(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + J_ChromeActiveWindow2(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -482,13 +470,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + K_VscodeActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + K_VscodeActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "k",
@@ -506,13 +490,9 @@
               "shell_command": "open -a 'Visual Studio Code.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + Semicolon_PathfinderActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + Semicolon_PathfinderActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -530,13 +510,9 @@
               "shell_command": "open -a 'Path Finder.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + X_iterm2ActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftCommand + X_iterm2ActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "x",
@@ -554,13 +530,9 @@
               "shell_command": "open -a 'iTerm.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + H_ExcelActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + H_ExcelActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -578,13 +550,9 @@
               "shell_command": "open -a 'Microsoft Excel.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + Quote_PreviewActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + Quote_PreviewActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "quote",
@@ -602,13 +570,9 @@
               "shell_command": "open -a 'Preview.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + G_VivaldiActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + G_VivaldiActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -645,13 +609,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + slash_FinderActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + slash_FinderActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -688,13 +648,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + L_KindleActiveWindow(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "LeftOption + L_KindleActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -712,13 +668,9 @@
               "shell_command": "open -a 'Kindle.app'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + S_ActiveParellDeskWindowsVscode1(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + S_ActiveParellDeskWindowsVscode1(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -736,13 +688,9 @@
               "shell_command": "open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/Visual Studio Code.app/Contents/MacOS/WinAppHelper'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + E_ActiveParellDeskWindowsExploer1(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + E_ActiveParellDeskWindowsExploer1(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -760,13 +708,9 @@
               "shell_command": "open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + E_ActiveParellDeskWindowsExploer2(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + E_ActiveParellDeskWindowsExploer2(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -803,13 +747,9 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + I_ActiveMacWindowShare/img/pdf(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + I_ActiveMacWindowShare/img/pdf(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -827,13 +767,9 @@
               "shell_command": "open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/pdf'"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + Q_ActiveParellDeskWindowsExploerDesktop(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + Q_ActiveParellDeskWindowsExploerDesktop(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -855,13 +791,9 @@
               "modifiers": "left_control"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + W_ActiveParellDeskSublime(WindowControl)",
-      "manipulators": [
+        },
         {
+          "description": "RightOption + W_ActiveParellDeskSublime(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "w",
