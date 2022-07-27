@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary10",
+  "title": "ShotCutKeySummary99",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -1375,7 +1375,7 @@
           ]
         },
         {
-          "description": "優先RightCommand + G_FileTabClose2",
+          "description": "優先RightCommand + G_FileTabClose1",
           "type": "basic",
           "from": {
             "key_code": "g",

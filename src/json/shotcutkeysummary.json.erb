@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary10",
+  "title": "ShotCutKeySummary99",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -309,28 +309,11 @@
             }
           ]
         },
-        {
-      "description": "優先RightCommand + G_FileTabClose2",
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
             {
-              "key_code": "w",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ]
+          "description": "優先RightCommand + G_FileTabClose1",
+          "type": "basic",
+          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_gui"]]]) %>
         }
       ]
      }
