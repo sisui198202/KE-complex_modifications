@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey20",
+  "title": "ShotCutKey1",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -104,13 +104,6 @@
           "to": <%= to([["x", ["right_gui"]]]) %>
         },
         {
-          "description": "RightCommand + G_FileTabClose",
-          "type": "basic",
-          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        },
-        {
           "description": "優先RightCommand + G_FileTabClose1",
           "_comment": "Windows環境の設定ため",
           "type": "basic",
@@ -137,12 +130,6 @@
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        },
-        {
-          "description": "LeftCommand + Comma_AppsSelect-Previous1",
-          "type": "basic",
-          "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>
         },
         {
           "description": "LeftCommand + Period_AppsSelect-next",
@@ -328,13 +315,6 @@
               ]
             }
           ]
-        },
-        {
-          "description": "使用しない_RightAlt + X_AppWindowSelect",
-          "type": "basic",
-          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
     }
