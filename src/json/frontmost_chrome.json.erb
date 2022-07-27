@@ -1,6 +1,54 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome1",
     "rules": [
+      {
+        "description": "J_down_arrow",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "H_left_arrow",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("h",["caps_lock"]) %>,
+            "to": <%= to([["left_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "K_uparrow",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k",["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "J_rightarrow",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("l",["caps_lock"]) %>,
+            "to": <%= to([["right_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
     {
       "description": "RightCommand + H_Reload(Chrome)",
       "manipulators": [
