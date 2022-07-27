@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO5",
+  "title": "TESUTO51",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -56,7 +56,9 @@
           {
             "type": "basic",
             "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"]]) %>
+            "to": <%= to([["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
           }
         ]
       }

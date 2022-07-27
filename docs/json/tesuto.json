@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO5",
+  "title": "TESUTO51",
   "rules": [
     {
       "description": "一括設定(TESUTO)",
@@ -170,6 +170,14 @@
           "to": [
             {
               "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
             }
           ]
         }
