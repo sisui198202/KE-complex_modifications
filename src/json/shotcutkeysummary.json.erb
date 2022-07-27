@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary3",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -308,17 +308,15 @@
               ]
             }
           ]
-        }
-      ],
+        },
+     {
       "description": "優先RightCommand + G_FileTabClose1",
       "_comment": "Windows環境の設定ため",
-      "manipulators": [
-      {
           "type": "basic",
           "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_control"]]]) %>
         }
       ]
-    }
+     }
   ]
 }

@@ -1,3 +1,23 @@
+## 一括設定
+
+replacekeysummary.json
+
+shotcutkeysummary.json
+
+window_control.json
+
+---------------------
+## 個別設定
+
+frontmost_~.json
+
+replacekey.json
+
+shotcutkey.json
+
+double_push_key.json
+
+---------------------
 ## 1つ説明で複数の設定を入力するパターン
 {
   "title": "WindowControl123",
