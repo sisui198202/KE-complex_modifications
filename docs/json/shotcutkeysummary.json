@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary5",
+  "title": "ShotCutKeySummary9",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -1375,7 +1375,7 @@
           ]
         },
         {
-          "description": "優先RightCommand + G_FileTabClose1",
+          "description": "優先RightCommand + G_FileTabClose2",
           "_comment": "Windows環境の設定ため",
           "type": "basic",
           "from": {
