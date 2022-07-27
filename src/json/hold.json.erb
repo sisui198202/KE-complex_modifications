@@ -1,5 +1,5 @@
 {
-    "title": "MouseControl",
+    "title": "MouseControl2",
     "rules": [
         {
             "description": "fnキーを押しながらIキーを押すとmousecursolでUp移動",
@@ -249,6 +249,17 @@
     }
   ]
 },
+    {
+      "description": "LeftOption + J_ChromeActiveWindow2(WindowControl)",
+      "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
+      "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
+      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+    }
+    ]
+    },
         {
             "description": "CursolMoveUpLeftRightDown(MouseControl)",
             "manipulators": [
