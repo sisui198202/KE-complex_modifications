@@ -1,12 +1,10 @@
 {
-  "title": "ShotCutKeySummary10",
+  "title": "ShotCutKeySummary3",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "優先RightCommand + G_FileTabClose1",
       "manipulators": [
         {
-          "description": "優先RightCommand + G_FileTabClose1",
-          "_comment": "Windows環境の設定ため",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -28,7 +26,8 @@
             }
           ]
         }
-      ]
+      ],
+      "_comment": "Windows環境の設定ため"
     }
   ]
 }
