@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary15",
+  "title": "ReplaceSummary16",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -362,38 +362,6 @@
           ]
         },
         {
-          "description": "Rightoption + Leftoption_anbasado(Replacekey)",
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "7",
-              "modifiers": "right_shift"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "Rightoption + Leftoption_anbasado_unless_pararell(Replacekey)",
           "type": "basic",
           "from": {
@@ -563,7 +531,7 @@
           ]
         },
         {
-          "description": "Leftoption + Rightcommand_hypen(Replacekey)",
+          "description": "使用できない_Leftoption + Rightcommand_hypen(Replacekey)",
           "_comment": "全角の「ー」は文章で使うので、[japanese_eisuu]を使用しない",
           "type": "basic",
           "from": {

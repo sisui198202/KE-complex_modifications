@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary15",
+    "title": "ReplaceSummary16",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -154,13 +154,6 @@
           "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
         },
         {
-          "description": "Rightoption + Leftoption_anbasado(Replacekey)",
-          "type": "basic",
-          "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
-          "to": <%= to([["japanese_eisuu"], ["7", "right_shift"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
-        },
-        {
           "description": "Rightoption + Leftoption_anbasado_unless_pararell(Replacekey)",
           "type": "basic",
           "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
@@ -244,7 +237,7 @@
           "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
         },
         {
-          "description": "Leftoption + Rightcommand_hypen(Replacekey)",
+          "description": "使用できない_Leftoption + Rightcommand_hypen(Replacekey)",
           "_comment": "全角の「ー」は文章で使うので、[japanese_eisuu]を使用しない",
           "type": "basic",
           "from": <%= from("right_gui", ["left_alt"], ["caps_lock"]) %>,
