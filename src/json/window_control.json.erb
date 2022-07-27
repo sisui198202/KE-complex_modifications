@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl90",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl(WindowControl)",
@@ -109,17 +109,9 @@
     },
     {
       "description": "LeftOption + J_ChromeActiveWindow1(WindowControl)",
-      "_comment": "WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる",
       "type": "basic",
       "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>
-    },
-    {
-      "description": "LeftOption + J_ChromeActiveWindow2(WindowControl)",
-      "type": "basic",
-      "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
-      "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
     },
     {
       "description": "LeftOption + K_VscodeActiveWindow(WindowControl)",
@@ -176,12 +168,6 @@
           "type": "basic",
           "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= set_shell_command(["open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/Visual Studio Code.app/Contents/MacOS/WinAppHelper'"]) %>
-        },
-        {
-          "description": "RightOption + E_ActiveParellDeskWindowsExploer1(WindowControl)",
-          "type": "basic",
-          "from": <%= from("e", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"]) %>
         },
         {
           "description": "RightOption + E_ActiveParellDeskWindowsExploer2(WindowControl)",

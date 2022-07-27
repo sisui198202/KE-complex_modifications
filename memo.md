@@ -684,3 +684,13 @@ toで指定するキーが違うため、できない
 }
 
 ---------------------
+## WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる
+
+    {
+      "description": "LeftOption + J_ChromeActiveWindow1(WindowControl)",
+      "_comment": "WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる",
+      "type": "basic",
+      "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
+      "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>
+    },
+---------------------
