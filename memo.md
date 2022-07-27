@@ -6,6 +6,9 @@ shotcutkeysummary.json
 
 window_control.json
 
+(注)
+"_comment": "",を入れていると、うまく設定が反映されない。
+
 ---------------------
 ## 個別設定
 
