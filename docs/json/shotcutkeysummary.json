@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary5",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -1393,7 +1393,7 @@
             {
               "key_code": "w",
               "modifiers": [
-                "right_control"
+                "right_gui"
               ]
             }
           ]
