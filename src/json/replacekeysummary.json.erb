@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary4",
+    "title": "ReplaceSummary12",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -43,7 +43,451 @@
             "type": "basic",
             "from": <%= from("g", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["escape"]]) %>
-          }
+          },
+        {
+          "description": "LeftCommand + F_Tab(Replacekey)",
+          "type": "basic",
+          "from": <%= from("f", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab"]]) %>
+        },
+        {
+          "description": "優先利用Tilde_X3_1(Replacekey)",
+          "type": "basic",
+          "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        },
+        {
+          "description": "LeftAlt_Copy(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+"conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+        },
+{
+          "description": "RightOption_Paste(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "v",
+              "modifiers": "left_gui"
+            }
+          ],
+"conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Leftoption + Rightoption_parsent(Replacekey)",
+          "type": "basic",
+          "from": <%= from("right_alt", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["5", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        },
+        {
+          "description": "Rightoption + Leftoption_anbasado(Replacekey)",
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["7", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        },
+        {
+          "description": "Rightoption + Leftoption_anbasado_unless_pararell(Replacekey)",
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["7", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        },
+                            {
+                                "description": "LeftCommand英語モード(Replacekey)",
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                      "optional": [
+                                        "caps_lock"
+                                      ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control",
+                                        "lazy": true
+                                    }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "frontmost_application_unless",
+                                    "bundle_identifiers": [
+                                      "^org.virtualbox.app.VirtualBoxVM$"
+                                    ]
+                                  }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "RightCommand日本語モード(Replacekey)",
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                      "optional": [
+                                        "caps_lock"
+                                      ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "lazy": true
+                                    }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "frontmost_application_unless",
+                                    "bundle_identifiers": [
+                                      "^org.virtualbox.app.VirtualBoxVM$"
+                                    ]
+                                  }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_kana"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+        {
+          "description": "LeftCommand + RightCommand_plus(Replacekey)",
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["equal_sign", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        },
+        {
+          "description": "RightCommand + LeftCommand_underbar(Replacekey)",
+          "type": "basic",
+          "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["hyphen", "right_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
+        },
+        {
+          "description": "Leftoption + Rightcommand_hypen(Replacekey)",
+          "_comment": "全角の「ー」は文章で使うので、[japanese_eisuu]を使用しない",
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["hyphen"]]) %>
+        },
+    {
+          "description": "RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_詳細版(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "0"
+            }
+          ],
+                    "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.parallels.desktop.console$",
+                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
+                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
+                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "1"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "2"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "3"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "4"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "5"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "6"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "7"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "8"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "9"
+            }
+          ]
+        }
       ]
         }
     ]
