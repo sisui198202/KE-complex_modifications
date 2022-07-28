@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
-        "description": "J_down_arrow(Chrome)",
+        "description": "J_DownArrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -13,7 +13,7 @@
         ]
       },
       {
-        "description": "H_left_arrow(Chrome)",
+        "description": "H_LeftArrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -25,7 +25,7 @@
         ]
       },
       {
-        "description": "K_uparrow(Chrome)",
+        "description": "K_UpArrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -37,7 +37,7 @@
         ]
       },
       {
-        "description": "L_rightarrow(Chrome)",
+        "description": "L_RightArrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -49,7 +49,7 @@
         ]
       },
       {
-        "description": "J_downarrow_X3(Chrome)",
+        "description": "J_DownArrow_X3(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -57,6 +57,41 @@
             "to": <%= to([["down_arrow"],["down_arrow"],["down_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
 
+          }
+        ]
+      },
+      {
+        "description": "H_LeftArrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("h",["caps_lock"]) %>,
+            "to": <%= to([["left_arrow"],["left_arrow"],["left_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "K_UpArrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k",["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"],["up_arrow"],["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "L_RightArrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("l",["caps_lock"]) %>,
+            "to": <%= to([["right_arrow"],["right_arrow"],["right_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
           }
         ]
       },
