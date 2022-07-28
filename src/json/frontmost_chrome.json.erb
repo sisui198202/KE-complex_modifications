@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome1",
+    "title": "FrontmostIfChrome2",
     "rules": [
       {
-        "description": "J_down_arrow",
+        "description": "J_down_arrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -14,7 +14,7 @@
         ]
       },
       {
-        "description": "H_left_arrow",
+        "description": "H_left_arrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -26,7 +26,7 @@
         ]
       },
       {
-        "description": "K_uparrow",
+        "description": "K_uparrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
@@ -38,12 +38,24 @@
         ]
       },
       {
-        "description": "J_rightarrow",
+        "description": "J_rightarrow(Chrome)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("l",["caps_lock"]) %>,
             "to": <%= to([["right_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "J_downarrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["left_control"],["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"],["down_arrow"],["down_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
 
           }

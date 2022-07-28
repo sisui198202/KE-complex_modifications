@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome1",
+  "title": "FrontmostIfChrome2",
   "rules": [
     {
-      "description": "J_down_arrow",
+      "description": "J_down_arrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "description": "H_left_arrow",
+      "description": "H_left_arrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "description": "K_uparrow",
+      "description": "K_uparrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "description": "J_rightarrow",
+      "description": "J_rightarrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -104,6 +104,44 @@
           "to": [
             {
               "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "J_downarrow_X3(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
             }
           ],
           "conditions": [
