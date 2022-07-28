@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome2",
+  "title": "FrontmostIfChrome3",
   "rules": [
     {
       "description": "J_down_arrow(Chrome)",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "description": "J_rightarrow(Chrome)",
+      "description": "L_rightarrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
