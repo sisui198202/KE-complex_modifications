@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary3",
+  "title": "ReplaceSummary4",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -1212,7 +1212,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com.vmware.fusion$",
                 "^com.vmware.horizon$",
@@ -1247,7 +1247,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com.vmware.fusion$",
                 "^com.vmware.horizon$",
@@ -1282,7 +1282,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com.vmware.fusion$",
                 "^com.vmware.horizon$",
@@ -1317,7 +1317,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com.vmware.fusion$",
                 "^com.vmware.horizon$",
