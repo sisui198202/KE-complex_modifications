@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -9,7 +9,7 @@
           "type": "basic",
           "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "RightOption + O(オー)_名前を付けて保存",
@@ -22,28 +22,28 @@
           "type": "basic",
           "from": <%= from("v", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["q", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
           "type": "basic",
           "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["left_shift", "left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "LeftCommand + M_EndRowCursol(GoogleChromeで起動)1",
           "type": "basic",
           "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + U_Undo",
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["z", ["left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + T_Search",
@@ -56,14 +56,14 @@
           "type": "basic",
           "from": <%= from("c", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["q", ["right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + N_HeadRowCursol1",
           "type": "basic",
           "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + E_Expand Selection Word",
@@ -76,7 +76,7 @@
           "type": "basic",
           "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + B_PageDown",
@@ -95,7 +95,7 @@
           "type": "basic",
           "from": <%= from("o", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["s", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + S_Cut",
@@ -108,105 +108,105 @@
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + L_NextTab",
           "type": "basic",
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "優先LeftCommand + Comma_AppsSelect-Previous",
           "type": "basic",
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + Period_AppsSelect-next",
           "type": "basic",
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "rightcommand + K_CopyCurrentRowCut",
           "type": "basic",
           "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]], ["delete_or_backspace"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftOption + S_AlfredHotkey",
           "type": "basic",
           "from": <%= from("s", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["open_bracket", ["right_control", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + C_Clipboardlist",
           "type": "basic",
           "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["quote", ["right_control", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + 1_Oracle_NumberLearnParts",
           "type": "basic",
           "from": <%= from("1", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_alt", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftAlt + P_PythonDirectoryinfiles",
           "type": "basic",
           "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + D_SummaryDirectoryinfiles",
           "type": "basic",
           "from": <%= from("d", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_alt", "left_shift", "right_gui"]]]) %>,
-         "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + V_AlfredSnippetsCall",
           "type": "basic",
           "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["left_control", "right_alt"]]]) %>,
-         "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + F_AlfredArticleitemCall",
           "type": "basic",
           "from": <%= from("f", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["5", ["left_control", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + Q_AlfredSQLPLUSCOMMAND_List",
           "type": "basic",
           "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["0", ["left_control", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + J_ConstScrollDown",
           "type": "basic",
           "from": <%= from("j", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + K_ConstScrollUp",
           "type": "basic",
           "from": <%= from("k", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["y", ["left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + U_UwscDirectorySearch",
@@ -219,14 +219,14 @@
           "type": "basic",
           "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["e", ["right_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "RightCommand + J_1RowSelection優先",
           "type": "basic",
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "RightOption + X_コレクションを前面/背面に移動",
@@ -255,15 +255,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
                 "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
-                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
               ]
             }
           ]
@@ -295,16 +295,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
                 "^com.parallels.desktop.console$",
                 "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
-                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
               ]
             }
           ]
