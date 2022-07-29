@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome4",
+  "title": "FrontmostIfChrome5",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -178,19 +178,7 @@
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "fn"
-              ]
-            },
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            },
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "fn"
+                "left_control"
               ]
             }
           ],
@@ -254,18 +242,6 @@
             }
           },
           "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            },
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            },
             {
               "key_code": "left_arrow",
               "modifiers": [

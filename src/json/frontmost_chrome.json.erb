@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome4",
+    "title": "FrontmostIfChrome5",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -66,7 +66,7 @@
           {
             "type": "basic",
             "from": <%= from("h",["caps_lock"]) %>,
-            "to": <%= to([["right_arrow", ["fn"]],["right_arrow", ["fn"]],["right_arrow", ["fn"]]]) %>,
+            "to": <%= to([["right_arrow", ["left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
 
           }
@@ -90,7 +90,7 @@
           {
             "type": "basic",
             "from": <%= from("l",["caps_lock"]) %>,
-            "to": <%= to([["left_arrow", ["fn"]],["left_arrow", ["fn"]],["left_arrow", ["fn"]]]) %>,
+            "to": <%= to([["left_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
           }
         ]
