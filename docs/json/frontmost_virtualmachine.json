@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine15",
+  "title": "Frontmostvirtual_machine",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -36,8 +36,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -74,8 +73,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -275,8 +273,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -315,8 +312,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -355,8 +351,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -395,8 +390,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -435,8 +429,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -475,8 +468,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -515,8 +507,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -555,8 +546,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -595,8 +585,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -635,8 +624,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -675,8 +663,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -715,8 +702,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -755,8 +741,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -795,8 +780,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -824,8 +808,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -864,8 +847,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -893,8 +875,7 @@
                 "^com\\.parallels\\.desktop\\.console$",
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\.",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]

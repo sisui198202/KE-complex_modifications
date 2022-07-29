@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine15",
+    "title": "Frontmostvirtual_machine",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -209,20 +209,20 @@
           "to": <%= to([["5", ["right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
-    {
-     "description": "RightCommand + O(オー)_SameWordExpandSelection(VirtualMachine)",
-      "type": "basic",
-      "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["4", ["right_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-    },
-    {
-     "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(VirtualMachine)",
-      "type": "basic",
-      "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= to([["1", ["right_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-    },
+        {
+        "description": "RightCommand + O(オー)_SameWordExpandSelection(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["4", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
         {
          "description": "RightCommand + Semicolon_LatestTabToggle(VirtualMachine)",
           "type": "basic",
@@ -231,7 +231,7 @@
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
-	 "description": "RightCommand + L_NextTab(VirtualMachine)",
+        	 "description": "RightCommand + L_NextTab(VirtualMachine)",
           "type": "basic",
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_option"]]]) %>,
@@ -272,13 +272,13 @@
           "to": <%= to([["3", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
-    {
-     "description": "LeftCommand + X_iterm2ActiveWindow(VirtualMachine)",
-      "type": "basic",
-      "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= to([["5", ["left_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-    },
+        {
+        "description": "LeftCommand + X_iterm2ActiveWindow(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["5", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
         {
          "description": "LeftContorl_CellEdit(VirtualMachine)",
           "type": "basic",
@@ -286,13 +286,13 @@
           "to": <%= to([["f2"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
-    {
-      "description": "LeftCommand + U_Undo(VirtualMachine)",
-      "type": "basic",
-      "from": <%= from("u", ["left_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["6", ["left_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-    },
+        {
+          "description": "LeftCommand + U_Undo(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("u", ["left_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["6", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
         {
          "description": "アクセスキーできない_fn_alt(VirtualMachine)",
           "type": "basic",
