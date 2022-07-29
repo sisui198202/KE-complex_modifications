@@ -234,6 +234,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     '^org\.virtualbox\.app\.VirtualBoxVM$',
     '^com\.vmware\.proxyApp\.', # prefix
     '^com\.parallels\.winapp\.', # prefix
+    '^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$'
   ]
 
   x11_bundle_identifiers = [
