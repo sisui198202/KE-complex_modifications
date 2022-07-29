@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine",
+  "title": "Frontmostvirtual_machine33",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -20,7 +20,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "7",
               "modifiers": "left_option"
             }
           ],
