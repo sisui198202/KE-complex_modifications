@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine1",
+  "title": "Frontmostvirtual_machine",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList",
@@ -241,7 +241,6 @@
         },
         {
           "description": "RightCommand + A_NewFileCreate(VirtualMachine)",
-          "_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -320,7 +319,6 @@
         },
         {
           "description": "RightCommand + i_Neight bour(VirtualMachine)",
-          "_comment": "WindowsSublimeの右のエディターにカーソル移動",
           "type": "basic",
           "from": {
             "key_code": "i",

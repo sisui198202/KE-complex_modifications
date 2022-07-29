@@ -694,3 +694,15 @@ toで指定するキーが違うため、できない
       "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>
     },
 ---------------------
+## コメント入力だと反応しない為、ここにメモ
+
+        {
+	"description": "RightCommand + A_NewFileCreate(VirtualMachine)",
+	"_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+        },
+
+---------------------

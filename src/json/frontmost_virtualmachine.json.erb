@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine1",
+    "title": "Frontmostvirtual_machine",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList",
@@ -182,8 +182,7 @@
           ]
         },
         {
-	"description": "RightCommand + A_NewFileCreate(VirtualMachine)",
-	"_comment": "Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要",
+        	"description": "RightCommand + A_NewFileCreate(VirtualMachine)",
           "type": "basic",
           "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_option"]]]) %>,
@@ -197,8 +196,7 @@
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
-	"description": "RightCommand + i_Neight bour(VirtualMachine)",
-	"_comment": "WindowsSublimeの右のエディターにカーソル移動",
+        	"description": "RightCommand + i_Neight bour(VirtualMachine)",
           "type": "basic",
           "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["i", ["right_control"]]]) %>,
@@ -209,7 +207,7 @@
           "type": "basic",
           "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["5", ["right_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
     {
      "description": "RightCommand + O(オー)_SameWordExpandSelection(VirtualMachine)",
