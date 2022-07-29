@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome5",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "description": "J_DownArrow_X3(Chrome)",
+      "description": "LeftCommand + J_DownArrow_X3(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -162,39 +162,7 @@
       ]
     },
     {
-      "description": "H_LeftArrow_X3(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "K_UpArrow_X3(Chrome)",
+      "description": "LeftCommand + K_UpArrow_X3(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -202,6 +170,9 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
+                "left_control"
+              ],
+              "optional": [
                 "caps_lock"
               ]
             }
@@ -215,38 +186,6 @@
             },
             {
               "key_code": "up_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "L_RightArrow_X3(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
             }
           ],
           "conditions": [
