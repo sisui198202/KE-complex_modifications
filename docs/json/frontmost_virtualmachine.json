@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine33",
+  "title": "Frontmostvirtual_machine55",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -820,7 +820,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"

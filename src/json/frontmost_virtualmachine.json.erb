@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine33",
+    "title": "Frontmostvirtual_machine55",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -289,7 +289,7 @@
         {
           "description": "LeftCommand + U_Undo(VirtualMachine)",
           "type": "basic",
-          "from": <%= from("u", ["left_gui"], ["caps_lock"]) %>,
+          "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["6", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
