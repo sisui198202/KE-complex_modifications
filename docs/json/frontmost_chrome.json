@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome",
+  "title": "FrontmostIfChrome4",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -45,7 +45,10 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
@@ -103,7 +106,10 @@
           },
           "to": [
             {
-              "key_code": "right_arrow"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
@@ -170,13 +176,22 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
             },
             {
-              "key_code": "left_arrow"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
             },
             {
-              "key_code": "left_arrow"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
@@ -240,13 +255,22 @@
           },
           "to": [
             {
-              "key_code": "right_arrow"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
             },
             {
-              "key_code": "right_arrow"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
             },
             {
-              "key_code": "right_arrow"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
