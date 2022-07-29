@@ -1,8 +1,8 @@
 {
-  "title": "WindowControl3",
+  "title": "WindowControl",
   "rules": [
     {
-      "description": "Fn + ~_WindowsControl(WindowControl)",
+      "description": "Fn + ~_WindowsControl",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
