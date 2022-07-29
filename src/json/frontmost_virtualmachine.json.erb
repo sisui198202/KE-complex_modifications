@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine55",
+    "title": "Frontmostvirtual_machine",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -291,13 +291,6 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["6", ["left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-        },
-        {
-         "description": "アクセスキーできない_fn_alt(VirtualMachine)",
-          "type": "basic",
-          "from": <%= from("right_control") %>,
-          "to": <%= to([["left_option"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         }
       ]
