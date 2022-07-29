@@ -706,3 +706,14 @@ toで指定するキーが違うため、できない
         },
 
 ---------------------
+## コメント入力だと反応しない為、ここにメモ
+
+        {
+	"description": "RightCommand + i_Neight bour(VirtualMachine)",
+	"_comment": "WindowsSublimeの右のエディターにカーソル移動",
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["i", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+---------------------
