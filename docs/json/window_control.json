@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl44",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl",
@@ -450,7 +450,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",

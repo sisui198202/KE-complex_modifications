@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl44",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl",
@@ -118,7 +118,7 @@
       "type": "basic",
       "from": <%= from("k", ["left_alt"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Visual Studio Code.app'"]) %>,
-      "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+      "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
     },
     {
       "description": "LeftOption + Semicolon_PathfinderActiveWindow(WindowControl)",
