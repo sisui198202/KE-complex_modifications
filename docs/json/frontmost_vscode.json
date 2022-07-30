@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode99",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
@@ -1163,6 +1163,30 @@
                 "right_control",
                 "right_shift"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
