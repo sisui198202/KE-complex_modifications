@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary99",
+    "title": "ReplaceSummary",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -151,7 +151,7 @@
           "type": "basic",
           "from": <%= from("left_alt", ["right_alt"], ["any"]) %>,
           "to": <%= to([["japanese_eisuu"], ["7", "right_shift"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
                             {
                                 "description": "LeftCommand英語モード(Replacekey)",
