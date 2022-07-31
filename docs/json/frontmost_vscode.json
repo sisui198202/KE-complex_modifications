@@ -1,13 +1,13 @@
 {
-  "title": "FrontmostIfVscode94",
+  "title": "FrontmostIfVscode90",
   "rules": [
     {
-      "description": "LeftOption + N_BookmarkSet(vscode)",
+      "description": "LeftOption + M_BookmarkSet(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
                 "left_option"
@@ -38,12 +38,12 @@
       ]
     },
     {
-      "description": "RightOption + N_NextBookmark(vscode)",
+      "description": "RightOption + M_NextBookmark(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
                 "right_option"
@@ -74,12 +74,12 @@
       ]
     },
     {
-      "description": "LeftOption + M_editor.action.jumpToBracket(vscode)",
+      "description": "LeftOption + N_editor.action.jumpToBracket(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
                 "left_option"
