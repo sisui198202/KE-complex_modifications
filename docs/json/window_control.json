@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl45",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl",
@@ -298,7 +298,7 @@
           ]
         },
         {
-          "description": "RightCommand + P_RightWindowMove",
+          "description": "RightCommand + P_RightHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "p",
@@ -321,7 +321,7 @@
           ]
         },
         {
-          "description": "LeftCommand + Q_LeftWindowMove",
+          "description": "LeftCommand + Q_LeftHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -390,7 +390,7 @@
           ]
         },
         {
-          "description": "Leftcommand + R_miActiveWindow((WindowControl)",
+          "description": "Leftcommand + R_miActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -667,7 +667,7 @@
           ]
         },
         {
-          "description": "RightOption + E_ActiveParellDeskWindowsExploer2(WindowControl)",
+          "description": "RightOption + E_ActiveParellDeskWindowsExploer(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "e",
