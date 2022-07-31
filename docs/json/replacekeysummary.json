@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary",
+  "title": "ReplaceSummary9",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -804,7 +804,7 @@
           ]
         },
         {
-          "description": "Colon(Replacekey)",
+          "description": "LeftShift + Semicolon_Colon(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -838,7 +838,7 @@
           ]
         },
         {
-          "description": "MarukakoHiraki(Replacekey)",
+          "description": "LeftShift + 9_MarukakoHiraki(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "9",
@@ -872,7 +872,7 @@
           ]
         },
         {
-          "description": "MarukakoTozi(Replacekey)",
+          "description": "LeftShift + 0_MarukakoTozi(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "0",
@@ -909,7 +909,7 @@
           ]
         },
         {
-          "description": "Asutarisuku(Replacekey)",
+          "description": "LeftShift + 8_Asutarisuku(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "8",
@@ -943,7 +943,7 @@
           ]
         },
         {
-          "description": "Anpasando(Replacekey)",
+          "description": "LeftShift + 7_Anpasando(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "7",
@@ -977,7 +977,7 @@
           ]
         },
         {
-          "description": "Caret(Replacekey)",
+          "description": "RightShift + 6_Caret(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "6",
@@ -1011,7 +1011,7 @@
           ]
         },
         {
-          "description": "Parsent(Replacekey)",
+          "description": "RightShift + 5_Parsent(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "5",
@@ -1045,7 +1045,7 @@
           ]
         },
         {
-          "description": "Doll(Replacekey)",
+          "description": "RightShift + 4_Doll(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "4",
@@ -1079,7 +1079,7 @@
           ]
         },
         {
-          "description": "Sharp(Replacekey)",
+          "description": "RightShift + 3_Sharp(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "3",
@@ -1113,7 +1113,7 @@
           ]
         },
         {
-          "description": "Attomark(Replacekey)",
+          "description": "RightShift + 2_Attomark(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "2",
@@ -1147,7 +1147,7 @@
           ]
         },
         {
-          "description": "Bikurimark(Replacekey)",
+          "description": "RightShift + 1_Bikurimark(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "1",
