@@ -1,16 +1,16 @@
 {
-  "title": "FrontmostIfVscode99",
+  "title": "FrontmostIfVscode95",
   "rules": [
     {
-      "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
+      "description": "RightOption + N_NextBookmark(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "b",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "description": "LeftOption + M_ブラケットに移動(vscode)",
+      "description": "LeftOption + M_editor.action.jumpToBracket(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -74,15 +74,15 @@
       ]
     },
     {
-      "description": "RightOption + M_NextBookmark(vscode)",
+      "description": "LeftOption + N_BookmarkSet(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -393,12 +393,12 @@
       ]
     },
     {
-      "description": "LeftAlt + N_prettifyコード整形 (vscode)",
+      "description": "LeftAlt + B_prettifyコード整形 (vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "b",
             "modifiers": {
               "mandatory": [
                 "left_alt"
