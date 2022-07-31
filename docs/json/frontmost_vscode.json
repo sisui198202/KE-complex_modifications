@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode99",
   "rules": [
     {
       "description": "LeftOption + B_editor.action.jumpToBracket(vscode)",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "description": "LeftOption + M_BookmarkSet(vscode)",
+      "description": "LeftOption + M_ブラケットに移動(vscode)",
       "manipulators": [
         {
           "type": "basic",
