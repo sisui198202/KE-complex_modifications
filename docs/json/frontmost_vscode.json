@@ -1,6 +1,42 @@
 {
-  "title": "FrontmostIfVscode95",
+  "title": "FrontmostIfVscode94",
   "rules": [
+    {
+      "description": "LeftOption + N_BookmarkSet(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "RightOption + N_NextBookmark(vscode)",
       "manipulators": [
@@ -19,7 +55,7 @@
           },
           "to": [
             {
-              "key_code": "k",
+              "key_code": "l",
               "modifiers": [
                 "right_option",
                 "right_gui"
@@ -56,42 +92,6 @@
           "to": [
             {
               "key_code": "m",
-              "modifiers": [
-                "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + N_BookmarkSet(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
               "modifiers": [
                 "right_option",
                 "right_gui"

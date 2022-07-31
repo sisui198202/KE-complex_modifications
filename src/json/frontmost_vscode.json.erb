@@ -1,17 +1,28 @@
 {
-    "title": "FrontmostIfVscode95",
+    "title": "FrontmostIfVscode94",
     "rules": [
       {
-        "description": "RightOption + N_NextBookmark(vscode)",
+        "description": "LeftOption + N_BookmarkSet(vscode)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("n", ["right_option"], ["caps_lock"]) %>,
+            "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
       },
+      {
+      "description": "RightOption + N_NextBookmark(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftOption + M_editor.action.jumpToBracket(vscode)",
       "manipulators": [
@@ -19,17 +30,6 @@
           "type": "basic",
           "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + N_BookmarkSet(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
