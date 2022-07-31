@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -147,7 +147,7 @@
           ]
         },
         {
-          "description": "LeftCommand + M_EndRowCursol(GoogleChromeで起動)1",
+          "description": "LeftCommand + M_EndRowCursol",
           "type": "basic",
           "from": {
             "key_code": "m",
@@ -287,7 +287,7 @@
           ]
         },
         {
-          "description": "LeftCommand + N_HeadRowCursol1",
+          "description": "LeftCommand + N_HeadRowCursol",
           "type": "basic",
           "from": {
             "key_code": "n",

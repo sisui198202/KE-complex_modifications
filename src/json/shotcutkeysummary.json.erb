@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -32,7 +32,7 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
-          "description": "LeftCommand + M_EndRowCursol(GoogleChromeで起動)1",
+          "description": "LeftCommand + M_EndRowCursol",
           "type": "basic",
           "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["fn"]]]) %>,
@@ -59,7 +59,7 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftCommand + N_HeadRowCursol1",
+          "description": "LeftCommand + N_HeadRowCursol",
           "type": "basic",
           "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["fn"]]]) %>,
