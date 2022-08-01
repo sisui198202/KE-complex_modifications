@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine3",
+    "title": "Frontmostvirtual_machine4",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -291,6 +291,13 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["6", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+       {
+          "description": "LeftCommand + R_miActiveWindow(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("r", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
