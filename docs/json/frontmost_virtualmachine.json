@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine12345678",
+  "title": "Frontmostvirtual_machine12",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -949,7 +949,7 @@
           },
           "to": [
             {
-              "key_code": "0",
+              "key_code": "hypen",
               "modifiers": [
                 "left_option"
               ]
@@ -988,7 +988,7 @@
           },
           "to": [
             {
-              "key_code": "0",
+              "key_code": "equal_sign",
               "modifiers": [
                 "right_option"
               ]
