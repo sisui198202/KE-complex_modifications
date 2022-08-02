@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome1",
+    "title": "FrontmostIfChrome99",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -13,11 +13,11 @@
         ]
       },
       {
-        "description": "H_最終行へ(Chrome)",
+        "description": "M_最終行へ(Chrome)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("h",["caps_lock"]) %>,
+            "from": <%= from("m",["caps_lock"]) %>,
             "to": <%= to([["right_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
 
@@ -37,12 +37,24 @@
         ]
       },
       {
-        "description": "L_最初の行へ(Chrome)",
+        "description": "N_最初の行へ(Chrome)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("l",["caps_lock"]) %>,
+            "from": <%= from("n",["caps_lock"]) %>,
             "to": <%= to([["left_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + J_DownArrow_X1(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["left_control"]) %>,
+            "to": <%= to([["down_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
 
           }
