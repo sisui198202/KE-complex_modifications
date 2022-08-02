@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome97",
+    "title": "FrontmostIfChrome96",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -74,7 +74,7 @@
         {
           "type": "basic",
           "from": <%= from("s", ["caps_lock"]) %>,
-          "to": <%= to([["l", ["right_gui"]]]) %>,
+          "to": <%= to([["l", ["right_gui"]],["caps_lock"]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

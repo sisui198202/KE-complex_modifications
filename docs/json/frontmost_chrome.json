@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome97",
+  "title": "FrontmostIfChrome96",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -218,6 +218,9 @@
               "modifiers": [
                 "right_gui"
               ]
+            },
+            {
+              "key_code": "caps_lock"
             }
           ],
           "conditions": [
