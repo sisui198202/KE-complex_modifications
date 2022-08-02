@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome99",
+  "title": "FrontmostIfChrome98",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -124,35 +124,6 @@
       ]
     },
     {
-      "description": "LeftCommand + J_DownArrow_X1(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + J_DownArrow_X3(Chrome)",
       "manipulators": [
         {
@@ -215,6 +186,38 @@
             },
             {
               "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "S_検索(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [

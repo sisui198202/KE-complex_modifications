@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome99",
+    "title": "FrontmostIfChrome98",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -20,7 +20,6 @@
             "from": <%= from("m",["caps_lock"]) %>,
             "to": <%= to([["right_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
-
           }
         ]
       },
@@ -44,19 +43,6 @@
             "from": <%= from("n",["caps_lock"]) %>,
             "to": <%= to([["left_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
-
-          }
-        ]
-      },
-      {
-        "description": "LeftCommand + J_DownArrow_X1(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["left_control"]) %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-
           }
         ]
       },
@@ -68,7 +54,6 @@
             "from": <%= from("j",["left_control"],["caps_lock"]) %>,
             "to": <%= to([["down_arrow"],["down_arrow"],["down_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
-
           }
         ]
       },
@@ -80,10 +65,20 @@
             "from": <%= from("k",["left_control"],["caps_lock"]) %>,
             "to": <%= to([["up_arrow"],["up_arrow"],["up_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
-
           }
         ]
       },
+    {
+      "description": "S_検索(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["caps_lock"]) %>,
+          "to": <%= to([["l", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
     {
       "description": "RightCommand + H_Reload(Chrome)",
       "manipulators": [

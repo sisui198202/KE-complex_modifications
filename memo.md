@@ -717,3 +717,30 @@ toで指定するキーが違うため、できない
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
 ---------------------
+## "LeftCommand + J_DownArrow_X1(Chrome)"が"LeftCommand + J_DownArrow_X3(Chrome)"に上書きされる仕様
+
+      {
+        "description": "LeftCommand + J_DownArrow_X1(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["left_control"]) %>,
+            "to": <%= to([["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + J_DownArrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["left_control"],["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"],["down_arrow"],["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+
+          }
+        ]
+      },
+---------------------
