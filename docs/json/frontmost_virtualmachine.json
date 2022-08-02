@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine12cc",
+  "title": "Frontmostvirtual_machine",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -937,46 +937,7 @@
           "description": "RightCommand + V_3(VirtualMachine)",
           "type": "basic",
           "from": {
-            "key_code": "3",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f1",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + S_4(VirtualMachine)",
-          "type": "basic",
-          "from": {
-            "key_code": "s",
+            "key_code": "v",
             "modifiers": {
               "mandatory": [
                 "right_gui"
