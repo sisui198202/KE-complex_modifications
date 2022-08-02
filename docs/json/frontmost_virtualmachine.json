@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine1234",
+  "title": "Frontmostvirtual_machine12345",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -853,10 +853,10 @@
           ]
         },
         {
-          "description": "RightCommand + z_0[ゼロ](VirtualMachine)",
+          "description": "RightCommand + X_1(VirtualMachine)",
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "x",
             "modifiers": {
               "mandatory": [
                 "right_gui"

@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine1234",
+    "title": "Frontmostvirtual_machine12345",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -294,9 +294,9 @@
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
-          "description": "RightCommand + z_0[ゼロ](VirtualMachine)",
+          "description": "RightCommand + X_1(VirtualMachine)",
           "type": "basic",
-          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("x", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"],["8", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
