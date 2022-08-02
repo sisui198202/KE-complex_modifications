@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary34",
+  "title": "ReplaceSummary3",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -541,7 +541,7 @@
           ]
         },
         {
-          "description": "RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9(Replacekey)",
+          "description": "RightCommand + Z_0[ゼロ](Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "z",
@@ -619,6 +619,7 @@
           ]
         },
         {
+          "description": "RightCommand + C_2(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "c",
@@ -638,9 +639,26 @@
             {
               "key_code": "2"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + V_3(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "v",
@@ -660,9 +678,26 @@
             {
               "key_code": "3"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + S_4(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -682,9 +717,26 @@
             {
               "key_code": "4"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + D_5(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -704,9 +756,26 @@
             {
               "key_code": "5"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + F_6(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -726,9 +795,26 @@
             {
               "key_code": "6"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + W_7(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -748,9 +834,26 @@
             {
               "key_code": "7"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + E_8(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -770,9 +873,26 @@
             {
               "key_code": "8"
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
           ]
         },
         {
+          "description": "RightCommand + R_9(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -791,6 +911,22 @@
             },
             {
               "key_code": "9"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
             }
           ]
         },
