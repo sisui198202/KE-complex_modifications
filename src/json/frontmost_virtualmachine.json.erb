@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine123456",
+    "title": "Frontmostvirtual_machine1234567",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -259,13 +259,6 @@
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
-         "description": "RightCommand + Z_0[ゼロ](VirtualMachine)",
-          "type": "basic",
-          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"],["2", ["left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-        },
-        {
          "description": "Rightoption + Leftoption_anbasado(VirtualMachine)",
           "type": "basic",
           "from": <%= from("left_alt", ["right_alt"], ["caps_lock"]) %>,
@@ -294,10 +287,38 @@
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
+         "description": "RightCommand + Z_0[ゼロ](VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
           "description": "RightCommand + X_1(VirtualMachine)",
           "type": "basic",
           "from": <%= from("x", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"],["8", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+          "description": "RightCommand + C_2(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("c", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+          "description": "RightCommand + S_4(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("s", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+          "description": "RightCommand + D_5(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("d", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
