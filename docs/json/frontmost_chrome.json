@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome98",
+  "title": "FrontmostIfChrome97",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -205,7 +205,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "s",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
