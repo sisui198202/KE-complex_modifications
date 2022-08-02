@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine12345",
+  "title": "Frontmostvirtual_machine123456",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -683,6 +683,9 @@
             }
           },
           "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
             {
               "key_code": "2",
               "modifiers": [
