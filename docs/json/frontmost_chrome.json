@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome98",
+  "title": "FrontmostIfChrome90",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -345,6 +345,38 @@
               "key_code": "h",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "u_Undo(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_control"
               ]
             }
           ],

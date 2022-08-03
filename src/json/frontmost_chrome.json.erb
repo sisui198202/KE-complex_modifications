@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome98",
+    "title": "FrontmostIfChrome90",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -119,6 +119,17 @@
           "type": "basic",
           "from": <%= from("h", ["caps_lock"]) %>,
           "to": <%= to([["h", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "u_Undo(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["caps_lock"]) %>,
+          "to": <%= to([["u", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
