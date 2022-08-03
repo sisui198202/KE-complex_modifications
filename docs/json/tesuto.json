@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO44",
+  "title": "TESUTO4",
   "rules": [
     {
       "description": "一括設定(TESUTO)",
@@ -258,6 +258,22 @@
               "mouse_key": {
                 "y": -2500
               }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "en"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
             }
           ]
         }
