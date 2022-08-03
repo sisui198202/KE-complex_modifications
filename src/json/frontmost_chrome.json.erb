@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome99",
+    "title": "FrontmostIfChrome98",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -97,6 +97,28 @@
           "type": "basic",
           "from": <%= from("a", ["caps_lock"]) %>,
           "to": <%= to([["a", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "C_タブ複製(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["caps_lock"]) %>,
+          "to": <%= to([["a", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "H_再読込(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["caps_lock"]) %>,
+          "to": <%= to([["h", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
