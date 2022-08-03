@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome94",
+  "title": "FrontmostIfChrome55",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -250,6 +250,38 @@
               "modifiers": [
                 "left_control",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "G_TabClose(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],

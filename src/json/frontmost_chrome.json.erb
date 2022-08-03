@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome94",
+    "title": "FrontmostIfChrome55",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -86,6 +86,17 @@
           "type": "basic",
           "from": <%= from("semicolon", ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "G_TabClose(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g", ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
