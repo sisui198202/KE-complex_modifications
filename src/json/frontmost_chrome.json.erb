@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome31",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -85,7 +85,7 @@
         {
           "type": "basic",
           "from": <%= from("r", ["caps_lock"]) %>,
-          "to": <%= to([["r", ["left_control"]]]) %>,
+          "to": <%= set_shell_command(["open -a 'mi'"]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

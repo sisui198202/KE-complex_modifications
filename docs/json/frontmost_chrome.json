@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome3",
+  "title": "FrontmostIfChrome31",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -246,10 +246,7 @@
           },
           "to": [
             {
-              "key_code": "r",
-              "modifiers": [
-                "left_control"
-              ]
+              "shell_command": "open -a 'mi'"
             }
           ],
           "conditions": [
