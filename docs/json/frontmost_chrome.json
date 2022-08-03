@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome55",
+  "title": "FrontmostIfChrome5",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -248,8 +248,7 @@
             {
               "key_code": "tab",
               "modifiers": [
-                "left_control",
-                "left_shift"
+                "left_control"
               ]
             }
           ],
