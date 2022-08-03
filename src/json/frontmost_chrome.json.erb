@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome85",
+    "title": "FrontmostIfChrome8",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -75,6 +75,17 @@
           "type": "basic",
           "from": <%= from("s", ["caps_lock"]) %>,
           "to": <%= to([["l", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon_NextTab(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["caps_lock"]) %>,
+          "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

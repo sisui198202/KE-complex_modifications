@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome85",
+  "title": "FrontmostIfChrome8",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -217,6 +217,39 @@
               "key_code": "l",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon_NextTab(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "left_control",
+                "left_shift"
               ]
             }
           ],
