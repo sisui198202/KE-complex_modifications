@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO666",
+  "title": "TESUTO112",
   "rules": [
     {
       "description": "一括設定(TESUTO)",
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "description": "spaceキーを押しながらiキーを押すとMouseCursolでp移動",
+      "description": "spaceキーを押しながらkキーを押すとMouseCursolでp移動",
       "manipulators": [
         {
           "type": "basic",
