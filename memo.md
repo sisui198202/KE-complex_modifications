@@ -758,3 +758,34 @@ toで指定するキーが違うため、できない
       ]
     },
 ---------------------
+## Pararell　Rename一旦保留
+
+{
+          "description": "LeftControl_Rename(VirtualMachine)",
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code":"keyboard_fn"
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
+          ]
+        }
+---------------------
