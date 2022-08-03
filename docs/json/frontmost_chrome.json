@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome8",
+  "title": "FrontmostIfChrome94",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -407,9 +407,10 @@
           },
           "to": [
             {
-              "key_code": "h",
+              "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_control",
+                "right_shift"
               ]
             }
           ],
@@ -425,7 +426,7 @@
       ]
     },
     {
-      "description": "u_Undo(Chrome)",
+      "description": "U_Undo(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -439,9 +440,9 @@
           },
           "to": [
             {
-              "key_code": "u",
+              "key_code": "z",
               "modifiers": [
-                "left_control"
+                "left_gui"
               ]
             }
           ],
