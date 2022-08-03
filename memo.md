@@ -744,3 +744,17 @@ toで指定するキーが違うため、できない
         ]
       },
 ---------------------
+## CapsLockがオンになってしまう
+
+    {
+      "description": "S_検索(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["caps_lock"]) %>,
+          "to": <%= to([["l", ["right_gui"]],["caps_lock"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+---------------------
