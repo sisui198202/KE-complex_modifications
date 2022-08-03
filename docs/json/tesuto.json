@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO598",
+  "title": "TESUTO",
   "rules": [
     {
       "description": "一括設定(TESUTO)",
@@ -178,6 +178,63 @@
               "bundle_identifiers": [
                 "^com\\.google\\.Chrome$"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "spaceキーを押しながらIキーを押すとmousecursolでUp移動",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "vi_mode",
+                "value": 1
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "vi_mode",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "y": -1800
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vi_mode",
+              "value": 1
             }
           ]
         }
