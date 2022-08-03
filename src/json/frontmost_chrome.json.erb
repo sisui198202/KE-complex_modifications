@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome90",
+    "title": "FrontmostIfChrome85",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -96,7 +96,18 @@
         {
           "type": "basic",
           "from": <%= from("a", ["caps_lock"]) %>,
-          "to": <%= to([["a", ["right_gui"]]]) %>,
+          "to": <%= to([["n", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "W_新しいウィンドウで開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["caps_lock"]) %>,
+          "to": <%= to([["a", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
@@ -107,7 +118,7 @@
         {
           "type": "basic",
           "from": <%= from("c", ["caps_lock"]) %>,
-          "to": <%= to([["a", ["left_option"]]]) %>,
+          "to": <%= to([["f12", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

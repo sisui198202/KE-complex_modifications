@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome90",
+  "title": "FrontmostIfChrome85",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -278,9 +278,41 @@
           },
           "to": [
             {
-              "key_code": "a",
+              "key_code": "n",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "W_新しいウィンドウで開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_option"
               ]
             }
           ],
@@ -310,9 +342,9 @@
           },
           "to": [
             {
-              "key_code": "a",
+              "key_code": "f12",
               "modifiers": [
-                "left_option"
+                "right_shift"
               ]
             }
           ],
