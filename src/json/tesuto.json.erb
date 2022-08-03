@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO888_",
+  "title": "TESUTO777",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -122,6 +122,195 @@
                         ]
                         }
                               ]
+                }
+            ]
+        },
+        {
+            "description": "spacebarキーを押しながらJキーを押すとmousecursolでleft移動",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "x": -1800
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
+                        },
+                        {
+                        "type": "frontmost_application_if",
+                        "bundle_identifiers": [
+                          "^com\\.google\\.Chrome$"
+                        ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "spacebarキーを押しながらKキーを押すとmousecursolでdown移動",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "y": 1800
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
+                        },
+                        {
+                        "type": "frontmost_application_if",
+                        "bundle_identifiers": [
+                          "^com\\.google\\.Chrome$"
+                        ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "spacebarキーを押しながらLキーを押すとmousecursolでright移動",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 1
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "vi_mode",
+                                "value": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "x": 1800
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "vi_mode",
+                            "value": 1
+                        },
+                        {
+                        "type": "frontmost_application_if",
+                        "bundle_identifiers": [
+                          "^com\\.google\\.Chrome$"
+                        ]
+                        }
+                    ]
                 }
             ]
         },
