@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome312",
+    "title": "FrontmostIfChrome99",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -86,6 +86,17 @@
           "type": "basic",
           "from": <%= from("b", ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "A_新しいタブを開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["caps_lock"]) %>,
+          "to": <%= to([["a", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

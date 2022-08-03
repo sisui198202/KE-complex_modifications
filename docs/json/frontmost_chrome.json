@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome312",
+  "title": "FrontmostIfChrome99",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -247,6 +247,38 @@
           "to": [
             {
               "key_code": "d",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "A_新しいタブを開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
               "modifiers": [
                 "right_gui"
               ]
