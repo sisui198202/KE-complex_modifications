@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO4",
+  "title": "TESUTO9999",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -63,7 +63,7 @@
         ]
       },
               {
-            "description": "spaceキーを押しながらIキーを押すとmousecursolでUp移動",
+            "description": "spaceキーを押しながらiキーを押すとMouseCursolでp移動",
             "manipulators": [
                 {
                     "type": "basic",
@@ -114,8 +114,14 @@
                             "type": "variable_if",
                             "name": "vi_mode",
                             "value": 1
+                        },
+                        {
+                        "type": "frontmost_application_if",
+                        "bundle_identifiers": [
+                          "^com\\.google\\.Chrome$"
+                        ]
                         }
-                    ]
+                              ]
                 }
             ]
         },
@@ -135,7 +141,7 @@
                     "to": [
                         {
                             "mouse_key": {
-                                "y": -2500
+                                "y": -3500
                             }
                         }
                     ],
