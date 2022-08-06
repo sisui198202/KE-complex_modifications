@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome123",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -518,7 +518,7 @@
       ]
     },
     {
-      "description": "P_RightHalfWindowMove",
+      "description": "P_RightHalfWindowMove(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "description": "Q_LeftHalfWindowMove",
+      "description": "Q_LeftHalfWindowMove(Chrome)",
       "manipulators": [
         {
           "type": "basic",
