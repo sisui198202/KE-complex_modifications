@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome5",
+    "title": "FrontmostIfChrome123",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -176,6 +176,28 @@
           "to": <%= set_shell_command(["open -a 'mi'"]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
+      ]
+    },
+   {
+      "description": "P_RightHalfWindowMove",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("p", ["caps_lock"]) %>,
+      "to": <%= to([["3", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("chrome") %> ]
+      }
+    ]
+    },
+    {
+      "description": "Q_LeftHalfWindowMove",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("q", ["caps_lock"]) %>,
+      "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("chrome") %> ]
+      }
       ]
     },
     {
