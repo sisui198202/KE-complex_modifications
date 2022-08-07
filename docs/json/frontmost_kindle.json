@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle9",
+  "title": "FrontmostIfKindle10",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "description": "G_FileTabClose",
+      "description": "G_FileTabClose(kindle)",
       "manipulators": [
         {
           "type": "basic",
