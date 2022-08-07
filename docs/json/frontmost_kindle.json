@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle5",
+  "title": "FrontmostIfKindle6",
   "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -477,12 +477,12 @@
       ]
     },
     {
-      "description": "V_ブックマーク追加(kindle)",
+      "description": "B_ブックマーク追加(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "v",
+            "key_code": "b",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -492,6 +492,38 @@
           "to": [
             {
               "key_code": "d",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "T_ノートブックを表示(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
               "modifiers": [
                 "right_gui"
               ]
@@ -653,6 +685,71 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Z_Home(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "left_control",
+                "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "G_FileTabClose",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],

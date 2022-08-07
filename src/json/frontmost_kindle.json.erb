@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle5",
+    "title": "FrontmostIfKindle6",
     "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -167,12 +167,23 @@
       ]
     },
     {
-      "description": "V_ブックマーク追加(kindle)",
+      "description": "B_ブックマーク追加(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v",["caps_lock"]) %>,
+          "from": <%= from("b",["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "T_ノートブックを表示(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t",["caps_lock"]) %>,
+          "to": <%= to([["b", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
@@ -230,6 +241,28 @@
       "to": <%= to([["2", ["right_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("kindle") %> ]
       }
+      ]
+    },
+    {
+      "description": "Z_Home(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["caps_lock"]) %>,
+          "to": <%= to([["9", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+  {
+      "description": "G_FileTabClose",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g",["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
       ]
     },
     {
