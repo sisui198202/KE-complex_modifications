@@ -789,3 +789,18 @@ toで指定するキーが違うため、できない
           ]
         }
 ---------------------
+## spacebar + j でDownArrow3回
+
+      {
+        "description": "使用できない-LeftCommand + J_DownArrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("j",["spacebar"],["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"],["down_arrow"],["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+
+---------------------

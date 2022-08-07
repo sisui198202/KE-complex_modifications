@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -47,17 +47,6 @@
         ]
       },
       {
-        "description": "LeftCommand + J_DownArrow_X3(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["spacebar"],["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"],["down_arrow"],["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-          }
-        ]
-      },
-      {
         "description": "LeftCommand + K_UpArrow_X3(Chrome)",
         "manipulators": [
           {
@@ -76,6 +65,26 @@
           "from": <%= from("s", ["caps_lock"]) %>,
           "to": <%= to([["l", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Slash_PageUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("slash", ["caps_lock"]) %>,
+          "to": <%= to([["up_arrow", ["fn"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "B_PageDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["caps_lock"]) %>,
+          "to": <%= to([["down_arrow", ["fn"]]]) %>
         }
       ]
     },
@@ -102,11 +111,11 @@
       ]
     },
     {
-      "description": "B_ブックマーク(Chrome)",
+      "description": "V_ブックマーク(Chrome)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b", ["caps_lock"]) %>,
+          "from": <%= from("v", ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome3",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -124,44 +124,6 @@
       ]
     },
     {
-      "description": "LeftCommand + J_DownArrow_X3(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "spacebar"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + K_UpArrow_X3(Chrome)",
       "manipulators": [
         {
@@ -225,6 +187,54 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Slash_PageUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "B_PageDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "fn"
               ]
             }
           ]
@@ -296,12 +306,12 @@
       ]
     },
     {
-      "description": "B_ブックマーク(Chrome)",
+      "description": "V_ブックマーク(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "b",
+            "key_code": "v",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
