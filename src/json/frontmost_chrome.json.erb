@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome90",
+    "title": "FrontmostIfChrome9",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -42,17 +42,6 @@
             "type": "basic",
             "from": <%= from("n",["caps_lock"]) %>,
             "to": <%= to([["left_arrow", ["fn"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-          }
-        ]
-      },
-      {
-        "description": "LeftCommand + K_UpArrow_X3(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("k",["left_control"],["caps_lock"]) %>,
-            "to": <%= to([["up_arrow"],["up_arrow"],["up_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
           }
         ]

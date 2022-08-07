@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome90",
+  "title": "FrontmostIfChrome9",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -110,44 +110,6 @@
               "modifiers": [
                 "fn"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + K_UpArrow_X3(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            },
-            {
-              "key_code": "up_arrow"
-            },
-            {
-              "key_code": "up_arrow"
             }
           ],
           "conditions": [
