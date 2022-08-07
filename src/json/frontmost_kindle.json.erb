@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle7",
+    "title": "FrontmostIfKindle8",
     "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -167,6 +167,28 @@
       ]
     },
     {
+      "description": "P_幅にフィット197%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p",["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "U_実際のサイズ100%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u",["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
       "description": "B_ブックマーク追加(kindle)",
       "manipulators": [
         {
@@ -220,17 +242,6 @@
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
-    },
-   {
-      "description": "P_RightHalfWindowMove(kindle)",
-      "manipulators": [
-      {
-      "type": "basic",
-      "from": <%= from("p", ["caps_lock"]) %>,
-      "to": <%= to([["3", ["right_alt"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("kindle") %> ]
-      }
-    ]
     },
     {
       "description": "Q_LeftHalfWindowMove(kindle)",
