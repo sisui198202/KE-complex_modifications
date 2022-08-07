@@ -1,5 +1,5 @@
 {
-  "title": "Frontmostvirtual_machine95",
+  "title": "Frontmostvirtual_machine52",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -973,10 +973,10 @@
           ]
         },
         {
-          "description": "Leftcommand + =_miActiveWindow(VirtualMachine)",
+          "description": "Leftcommand + f6_miActiveWindow(VirtualMachine)",
           "type": "basic",
           "from": {
-            "key_code": "equal_sign",
+            "key_code": "f6",
             "modifiers": {
               "mandatory": [
                 "left_control"
