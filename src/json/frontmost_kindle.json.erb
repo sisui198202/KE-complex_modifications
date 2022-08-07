@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle4",
+    "title": "FrontmostIfKindle5",
     "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -127,7 +127,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("j") %>,
+          "from": <%= from("j",["caps_lock"]) %>,
           "to": <%= to([["down_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -138,7 +138,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("k") %>,
+          "from": <%= from("k",["caps_lock"]) %>,
           "to": <%= to([["up_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -149,7 +149,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h") %>,
+          "from": <%= from("h",["caps_lock"]) %>,
           "to": <%= to([["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -160,7 +160,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l") %>,
+          "from": <%= from("l",["caps_lock"]) %>,
           "to": <%= to([["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -171,7 +171,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v") %>,
+          "from": <%= from("v",["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -182,7 +182,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o") %>,
+          "from": <%= from("o",["caps_lock"]) %>,
           "to": <%= to([["equal_sign", ["right_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -193,10 +193,43 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i") %>,
+          "from": <%= from("i",["caps_lock"]) %>,
           "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
+      ]
+    },
+    {
+      "description": "R_miアクテイブ(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r",["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open -a 'mi'"]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "P_RightHalfWindowMove(kindle)",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("p", ["caps_lock"]) %>,
+      "to": <%= to([["3", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("kindle") %> ]
+      }
+    ]
+    },
+    {
+      "description": "Q_LeftHalfWindowMove(kindle)",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("q", ["caps_lock"]) %>,
+      "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("kindle") %> ]
+      }
       ]
     },
     {

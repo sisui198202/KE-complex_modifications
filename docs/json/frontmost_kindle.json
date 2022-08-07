@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle4",
+  "title": "FrontmostIfKindle5",
   "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -366,7 +366,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "j"
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -390,7 +395,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "k"
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -414,7 +424,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "h"
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -438,7 +453,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "l"
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -462,7 +482,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "v"
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -489,7 +514,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "o"
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -517,7 +547,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "i"
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -525,6 +560,99 @@
               "modifiers": [
                 "left_control",
                 "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "R_miアクテイブ(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'mi'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "P_RightHalfWindowMove(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Q_LeftHalfWindowMove(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_alt"
               ]
             }
           ],
