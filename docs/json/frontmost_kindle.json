@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle10",
+  "title": "FrontmostIfKindle11",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -108,6 +108,33 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "y_画面にフィット121%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y"
+          },
+          "to": [
+            {
+              "key_code": "0",
               "modifiers": [
                 "right_gui"
               ]
