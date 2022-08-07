@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle3",
+  "title": "FrontmostIfKindle4",
   "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -167,12 +167,12 @@
       ]
     },
     {
-      "description": "LeftCommand + I_一部起動しないExpansion(kindle)",
+      "description": "LeftCommand + O(オー)_一部起動しないExpansion(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -200,12 +200,12 @@
       ]
     },
     {
-      "description": "LeftCommand + U_Shrink(kindle)",
+      "description": "LeftCommand + i_Shrink(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -469,6 +469,62 @@
               "key_code": "d",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "O(オー)_Expansion(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o"
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": [
+                "right_control",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "i_Shrink(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i"
+          },
+          "to": [
+            {
+              "key_code": "backslash",
+              "modifiers": [
+                "left_control",
+                "left_alt"
               ]
             }
           ],

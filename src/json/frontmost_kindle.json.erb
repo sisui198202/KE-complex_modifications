@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle3",
+    "title": "FrontmostIfKindle4",
     "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -57,22 +57,22 @@
       ]
     },
     {
-      "description": "LeftCommand + I_一部起動しないExpansion(kindle)",
+      "description": "LeftCommand + O(オー)_一部起動しないExpansion(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["left_control"]) %>,
+          "from": <%= from("o", ["left_control"]) %>,
           "to": <%= to([["equal_sign", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
     },
     {
-      "description": "LeftCommand + U_Shrink(kindle)",
+      "description": "LeftCommand + i_Shrink(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_control"]) %>,
+          "from": <%= from("i", ["left_control"]) %>,
           "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
@@ -173,6 +173,28 @@
           "type": "basic",
           "from": <%= from("v") %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "O(オー)_Expansion(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o") %>,
+          "to": <%= to([["equal_sign", ["right_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "i_Shrink(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i") %>,
+          "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
