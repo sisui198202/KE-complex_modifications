@@ -1,5 +1,5 @@
 {
-    "title": "Frontmostvirtual_machine52",
+    "title": "Frontmostvirtual_machine",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -312,13 +312,6 @@
           "type": "basic",
           "from": <%= from("fn") %>,
           "to": <%= to([["f2"]]) %>,
-          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-        },
-        {
-          "description": "Leftcommand + f6_miActiveWindow(VirtualMachine)",
-          "type": "basic",
-          "from": <%= from("f6", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'mi'"]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         }
       ]
