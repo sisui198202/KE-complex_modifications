@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle3",
     "rules": [
     {
       "description": "LeftAlt + A_FullScreenOn(kindle)",
@@ -162,6 +162,17 @@
           "type": "basic",
           "from": <%= from("l") %>,
           "to": <%= to([["right_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "V_ブックマーク追加(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v") %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

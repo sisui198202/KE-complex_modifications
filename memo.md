@@ -804,3 +804,18 @@ toで指定するキーが違うため、できない
       },
 
 ---------------------
+##  使用しない_LeftCommand + K_UpArrow_X3(Chrome)
+
+      {
+        "description": "使用しない-LeftCommand + K_UpArrow_X3(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k",["left_control"],["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"],["up_arrow"],["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+
+---------------------
