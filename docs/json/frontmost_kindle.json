@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle12",
+  "title": "FrontmostIfKindle",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -244,63 +244,7 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                "right_control",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "O(オー)_Expansion1(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o"
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
                 "fn",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "O(オー)_Expansion2(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o"
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "keyboard_fn",
                 "right_gui"
               ]
             }

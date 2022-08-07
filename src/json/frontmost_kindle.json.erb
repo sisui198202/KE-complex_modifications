@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle12",
+    "title": "FrontmostIfKindle",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -106,29 +106,7 @@
         {
           "type": "basic",
           "from": <%= from("o") %>,
-          "to": <%= to([["equal_sign", ["right_control", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("kindle") %> ]
-        }
-      ]
-    },
-    {
-      "description": "O(オー)_Expansion1(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("o") %>,
           "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("kindle") %> ]
-        }
-      ]
-    },
-    {
-      "description": "O(オー)_Expansion2(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("o") %>,
-          "to": <%= to([["equal_sign", ["keyboard_fn", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
