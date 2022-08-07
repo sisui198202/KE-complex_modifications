@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome90",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -69,7 +69,7 @@
       ]
     },
   {
-      "description": "Slash_PageUp",
+      "description": "Slash_PageUp(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -79,12 +79,22 @@
       ]
     },
   {
-      "description": "B_PageDown",
+      "description": "B_PageDown(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("b", ["caps_lock"]) %>,
           "to": <%= to([["down_arrow", ["fn"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "T_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["caps_lock"]) %>,
+          "to": <%= to([["period", ["left_option"]]]) %>
         }
       ]
     },
