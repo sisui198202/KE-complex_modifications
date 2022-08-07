@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl100",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl",
@@ -105,7 +105,8 @@
       "description": "Leftcommand + R_miActiveWindow(WindowControl)",
       "type": "basic",
       "from": <%= from("r", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= set_shell_command(["open -a 'mi'"]) %>
+      "to": <%= set_shell_command(["open -a 'mi'"]) %>,
+      "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
     },
     {
       "description": "LeftOption + J_ChromeActiveWindow(WindowControl)",
