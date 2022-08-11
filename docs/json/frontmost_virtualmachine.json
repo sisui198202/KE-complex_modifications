@@ -1,11 +1,11 @@
 {
-  "title": "Frontmostvirtual_machine",
+  "title": "Frontmostvirtual_machine1",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
       "manipulators": [
         {
-          "description": "RightCommand + ._MaxWindows(VirtualMachine)",
+          "description": "RightCommand + ._MaxWindow(VirtualMachine)",
           "type": "basic",
           "from": {
             "key_code": "period",
