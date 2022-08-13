@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey15",
+  "title": "ShotCutKey16",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -867,12 +867,12 @@
       ]
     },
     {
-      "description": "LeftCommand + Period_AppsSelect-next新",
+      "description": "LeftCommand + comma_AppsSelect-privious新",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "period",
+            "key_code": "comma",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -886,6 +886,9 @@
             {
               "key_code": "tab",
               "modifiers": "right_option"
+            },
+            {
+              "key_code": "left_shift"
             }
           ],
           "conditions": [
@@ -905,6 +908,31 @@
                 "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
                 "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Period_AppsSelect-next新",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": "right_option"
             }
           ]
         }

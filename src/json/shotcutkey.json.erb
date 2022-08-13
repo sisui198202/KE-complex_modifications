@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey15",
+  "title": "ShotCutKey16",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -237,13 +237,23 @@
       ]
     },
   {
+      "description": "LeftCommand + comma_AppsSelect-privious新",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", "right_option"],["left_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
+  {
       "description": "LeftCommand + Period_AppsSelect-next新",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_option"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "to": <%= to([["tab", "right_option"]]) %>
         }
       ]
     },
