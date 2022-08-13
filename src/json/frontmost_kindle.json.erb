@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle99",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "description": "T_ノートブックを表示(kindle)",
+      "description": "T_ブックマークリスト表示(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -200,12 +200,12 @@
       ]
     },
     {
-      "description": "LeftAlt + R_一部起動しないRowNumberSelectMove(kindle)",
+      "description": "LeftAlt + OpenBracket_ページ数指定(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("r", ["left_alt"]) %>,
-          "to": <%= to([["8", ["left_control", "left_alt"]]]) %>,
+          "from": <%= from("open_bracket", ["left_alt"]) %>,
+          "to": <%= to([["g", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

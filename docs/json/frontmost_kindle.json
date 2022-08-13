@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle99",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "description": "T_ノートブックを表示(kindle)",
+      "description": "T_ブックマークリスト表示(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -488,12 +488,12 @@
       ]
     },
     {
-      "description": "LeftAlt + R_一部起動しないRowNumberSelectMove(kindle)",
+      "description": "LeftAlt + OpenBracket_ページ数指定(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "r",
+            "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
                 "left_alt"
@@ -502,10 +502,9 @@
           },
           "to": [
             {
-              "key_code": "8",
+              "key_code": "g",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "right_gui"
               ]
             }
           ],
