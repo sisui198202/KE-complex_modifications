@@ -1259,6 +1259,8 @@ toで指定するキーが違うため、できない
 }
 
 ---------------------
+## 今は使わない
+
     {
         "description": "今は使わない_Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)",
         "_comment": "ダブル押しコードでの、「frontmost_application_unless(pararell)」の書き方が分からないので、Single押しでの処理を使うことにする。",
@@ -1329,4 +1331,103 @@ toで指定するキーが違うため、できない
         ]
     },
 
+---------------------
+## 今は使わない
+
+{
+  "description": "F3_KeyManageList.xlsxOpen(FunctionKey)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("f3") %>,
+      "to": <%= set_shell_command(["open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'"]) %>
+    }
+  ]
+},
+
+---------------------
+## うまくいかない
+
+    {
+        "description": "うまくいかない、Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f1",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.md'"
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f1 pressed",
+                        "value": 1
+                    },
+                                {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f1",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
+                            "name": "f1 pressed",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'"
+                    }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                        {
+                            "set_variable": {
+                                "name": "f1 pressed",
+                                "value": 0
+                            }
+                        }
+                    ],
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f1 pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
 ---------------------

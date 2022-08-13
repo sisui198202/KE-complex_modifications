@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey33",
+  "title": "FunctionKey34",
   "rules": [
     {
       "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
@@ -178,22 +178,6 @@
                 "^com\\.vmware\\.proxyApp\\.",
                 "^com\\.parallels\\.winapp\\."
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "F3_KeyManageList.xlsxOpen(FunctionKey)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f3"
-          },
-          "to": [
-            {
-              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'"
             }
           ]
         }
