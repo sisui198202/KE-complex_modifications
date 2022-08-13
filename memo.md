@@ -1431,3 +1431,30 @@ toで指定するキーが違うため、できない
         ]
     }
 ---------------------
+## 使用しない
+
+{
+      "description": "使用しないEnter_OpenFile(pathfinder)",
+      "_comment": "ファイル名変更でエンターで確定できない為",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("return_or_enter") %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_delete_FileDelete(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("delete_or_backspace") %>,
+          "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    }
+
+---------------------

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder33",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -308,61 +308,6 @@
           "to": [
             {
               "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "使用しないEnter_OpenFile(pathfinder)",
-      "_comment": "ファイル名変更でエンターで確定できない為",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "return_or_enter"
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "使用しない_delete_FileDelete(pathfinder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "delete_or_backspace"
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "right_gui"
-              ]
             }
           ],
           "conditions": [
