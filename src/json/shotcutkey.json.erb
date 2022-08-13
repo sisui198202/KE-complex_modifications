@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey14",
+  "title": "ShotCutKey15",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -232,6 +232,17 @@
           "type": "basic",
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftCommand + Period_AppsSelect-next新",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", "right_option"]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
