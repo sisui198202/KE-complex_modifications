@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary44",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -576,7 +576,7 @@
           ]
         },
         {
-          "description": "優先LeftCommand + Comma_AppsSelect-Previous",
+          "description": "LeftCommand + comma_AppsIn-Next",
           "type": "basic",
           "from": {
             "key_code": "comma",
@@ -592,31 +592,12 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": [
-                "right_gui",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
+              "modifiers": "right_gui"
             }
           ]
         },
         {
-          "description": "LeftCommand + Period_AppsSelect-next",
+          "description": "LeftCommand + Period_AppsSelect-Next",
           "type": "basic",
           "from": {
             "key_code": "period",
@@ -632,23 +613,7 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": "right_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
+              "modifiers": "right_option"
             }
           ]
         },

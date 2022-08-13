@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary44",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -118,18 +118,16 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "優先LeftCommand + Comma_AppsSelect-Previous",
+          "description": "LeftCommand + comma_AppsIn-Next",
           "type": "basic",
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          "to": <%= to([["tab", "right_gui"]]) %>
         },
         {
-          "description": "LeftCommand + Period_AppsSelect-next",
+          "description": "LeftCommand + Period_AppsSelect-Next",
           "type": "basic",
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          "to": <%= to([["tab", "right_option"]]) %>
         },
         {
           "description": "rightcommand + K_CopyCurrentRowCut",
