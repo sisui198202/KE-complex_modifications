@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle99",
+  "title": "FrontmostIfKindle100",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -553,7 +553,7 @@
       ]
     },
     {
-      "description": "RightAlt + Z_一部起動しないTo_IndexPage(kindle)",
+      "description": "RightAlt + Z_一部起動しない目次(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -586,7 +586,7 @@
       ]
     },
     {
-      "description": "LeftCommand + O(オー)_一部起動しないExpansion(kindle)",
+      "description": "LeftCommand + O(オー)_Expansion(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -602,8 +602,8 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "fn",
+                "right_gui"
               ]
             }
           ],

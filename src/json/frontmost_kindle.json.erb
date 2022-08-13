@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle99",
+    "title": "FrontmostIfKindle100",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -222,7 +222,7 @@
       ]
     },
     {
-      "description": "RightAlt + Z_一部起動しないTo_IndexPage(kindle)",
+      "description": "RightAlt + Z_一部起動しない目次(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -233,12 +233,12 @@
       ]
     },
     {
-      "description": "LeftCommand + O(オー)_一部起動しないExpansion(kindle)",
+      "description": "LeftCommand + O(オー)_Expansion(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("o", ["left_control"]) %>,
-          "to": <%= to([["equal_sign", ["left_control", "left_alt"]]]) %>,
+          "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
