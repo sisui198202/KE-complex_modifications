@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey16",
+  "title": "ShotCutKey17",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -242,8 +242,7 @@
         {
           "type": "basic",
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_option"],["left_shift"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "to": <%= to([["tab", "right_option","left_shift"]]) %>
         }
       ]
     },
