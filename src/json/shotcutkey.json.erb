@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey17",
+  "title": "ShotCutKey20",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -205,28 +205,7 @@
       ]
     },
   {
-      "description": "優先LeftCommand + Comma_AppsSelect-Previous",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Comma_AppsSelect-Previous1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["right_gui", "left_shift"]]]) %>
-        }
-      ]
-    },
-  {
-      "description": "LeftCommand + Period_AppsSelect-next",
+      "description": "使用しない_LeftCommand + Period_AppsSelect-next",
       "manipulators": [
         {
           "type": "basic",
@@ -237,17 +216,17 @@
       ]
     },
   {
-      "description": "LeftCommand + comma_AppsSelect-privious新",
+      "description": "LeftCommand + comma_AppsIn-Next新",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_option","left_shift"]]) %>
+          "to": <%= to([["tab", "right_gui"]]) %>
         }
       ]
     },
   {
-      "description": "LeftCommand + Period_AppsSelect-next新",
+      "description": "LeftCommand + Period_AppsSelect-Next新",
       "manipulators": [
         {
           "type": "basic",
