@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfmi12",
+  "title": "FrontmostIfmi",
   "rules": [
     {
       "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
@@ -382,15 +382,15 @@
       ]
     },
     {
-      "description": "LeftAlt + Comma_マークと選択範囲とスワップ(mi)",
+      "description": "RightAlt + M_マークと選択範囲とスワップ(mi)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "comma",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -836,85 +836,6 @@
           "to": [
             {
               "key_code": "quote"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^net.mimikaki.mi$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "使用しない(予測変換で2度押しが必要になるため)_Spacebar(mi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "spacebar"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^net.mimikaki.mi$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "使用しない_Dainari_OpenCloseInput(mi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "comma",
-              "modifiers": [
-                "left_shift"
-              ]
-            },
-            {
-              "key_code": "period",
-              "modifiers": [
-                "left_shift"
-              ]
-            },
-            {
-              "key_code": "left_arrow"
             }
           ],
           "conditions": [

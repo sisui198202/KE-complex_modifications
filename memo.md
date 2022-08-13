@@ -901,3 +901,50 @@ toで指定するキーが違うため、できない
 ---------------------
 ## Kindleアクティブキー、Macで設定しWindowsからよびだせるようにする。
 ---------------------
+## 使用しない
+
+{
+      "description": "使用しない(予測変換で2度押しが必要になるため)_Spacebar(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "spacebar"
+            }
+],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        }
+      ]
+},
+{
+      "description": "使用しない_Dainari_OpenCloseInput(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    }
+
+---------------------
