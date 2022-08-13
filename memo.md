@@ -1259,3 +1259,74 @@ toで指定するキーが違うため、できない
 }
 
 ---------------------
+    {
+        "description": "今は使わない_Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)",
+        "_comment": "ダブル押しコードでの、「frontmost_application_unless(pararell)」の書き方が分からないので、Single押しでの処理を使うことにする。",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f1",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.md'"
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f1 pressed",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f1",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
+                            "name": "f1 pressed",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "shell_command": "open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'"
+                    }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                        {
+                            "set_variable": {
+                                "name": "f1 pressed",
+                                "value": 0
+                            }
+                        }
+                    ],
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f1 pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+
+---------------------
