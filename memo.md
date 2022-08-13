@@ -959,3 +959,303 @@ toで指定するキーが違うため、できない
     }
 
 ---------------------
+## 使用しない
+
+    {
+      "description": "使用しない_LeftCommand + J_DownArrow-X3(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_LeftCommand + k_UpArrow-X3(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_LeftCommand + h_LeftArrow-X3(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+              "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+{
+      "description": "使用しない_LeftCommand + L_RigthArrow-X3(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            },
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+              "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+{
+  "description": "使用しない_英語モード:j_DownArrow(Chrome)",
+  "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
+"manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "j",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+            {
+              "key_code": "down_arrow"
+            }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        },
+        {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+      ]
+    }
+  ]
+},
+{
+  "description": "使用しない_英語モード:k_UpArrow(Chrome)",
+  "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
+"manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "k",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+            {
+              "key_code": "up_arrow"
+            }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        },
+        {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+      ]
+    }
+  ]
+},
+{
+  "description": "使用しない_英語モード:h_LeftArrow(Chrome)",
+  "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
+"manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "h",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+            {
+              "key_code": "left_arrow"
+            }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        },
+        {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+      ]
+    }
+  ]
+},
+{
+  "description": "使用しない_英語モード:L_LeftArrow(Chrome)",
+  "_comment": "Chrome上で、検索窓に日本語入力ができなくなる欠点有り",
+"manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "l",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+            {
+              "key_code": "right_arrow"
+            }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "en" }
+          ]
+        },
+        {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+      ]
+    }
+  ]
+}
+
+---------------------
