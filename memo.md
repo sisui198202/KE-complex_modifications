@@ -945,6 +945,17 @@ toで指定するキーが違うため、できない
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
+    },
+    {
+      "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"]) %>,
+          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
     }
 
 ---------------------

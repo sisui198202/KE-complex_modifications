@@ -1,48 +1,8 @@
 {
-  "title": "FrontmostIfmi",
+  "title": "FrontmostIfmi0",
   "rules": [
     {
-      "description": "RightCommand + J_1RowSelection_LeftArrow(mi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "left_control"
-              ]
-            },
-            {
-              "key_code": "down_arrow",
-              "modifiers": "left_shift"
-            },
-            {
-              "key_code": "left_arrow",
-              "modifiers": "left_shift"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^net.mimikaki.mi$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + J_1RowSelection優先(mi)",
+      "description": "RightCommand + J_1RowSelection(mi)",
       "manipulators": [
         {
           "type": "basic",
