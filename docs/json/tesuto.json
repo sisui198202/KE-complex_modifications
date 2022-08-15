@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO31",
+  "title": "TESUTO33",
   "rules": [
     {
       "description": "一括設定(TESUTO)",
@@ -491,7 +491,7 @@
             {
               "software_function": {
                 "set_mouse_cursor_position": {
-                  "x": "20",
+                  "x": "800",
                   "y": "60",
                   "screen": 0
                 }
