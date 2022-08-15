@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle100",
+  "title": "FrontmostIfKindle",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -406,6 +406,34 @@
             {
               "key_code": "w",
               "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Period_WindowMax(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period"
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
                 "right_gui"
               ]
             }

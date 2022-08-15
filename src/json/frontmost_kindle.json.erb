@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle100",
+    "title": "FrontmostIfKindle",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -173,6 +173,17 @@
           "type": "basic",
           "from": <%= from("g") %>,
           "to": <%= to([["w", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Period_WindowMax(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period") %>,
+          "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
