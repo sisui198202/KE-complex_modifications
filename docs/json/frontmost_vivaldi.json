@@ -2,7 +2,7 @@
   "title": "FrontmostIfVivaldi",
   "rules": [
     {
-      "description": "X_LeftCommand + U_戻る(Vivaldi)",
+      "description": "X_LeftCommand + U_undo(Vivaldi)",
       "manipulators": [
         {
           "type": "basic",

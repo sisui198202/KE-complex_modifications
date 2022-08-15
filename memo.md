@@ -1585,3 +1585,19 @@ toで指定するキーが違うため、できない
       ]
     }
  ---------------------
+## 使用しない
+
+    {
+      "description": "適用しない_Delete_NoteDelete(Evernote)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("delete_or_backspace") %>,
+          "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("evernote") %> ]
+        }
+      ]
+    }
+
+---------------------
+
