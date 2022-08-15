@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl3",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl",
@@ -619,7 +619,7 @@
           ]
         },
         {
-          "description": "RightOption + S_ActiveParellDeskWindowsVscode1(WindowControl)",
+          "description": "RightOption + S_ActiveParellDeskWindowsVscode(WindowControl)",
           "type": "basic",
           "from": {
             "key_code": "s",
