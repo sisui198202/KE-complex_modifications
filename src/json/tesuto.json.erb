@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO30",
+  "title": "TESUTO31",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -350,7 +350,28 @@
       ]
                 }
             ]
-        }
+        },
+        {
+            "description": "使用しない_RAlt + Z_VisualBasic-Excel(MouseControl)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": <%= from("z", ["right_alt"]) %>,
+      "to": [
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "20",
+              "y": "60",
+              "screen": 0
+            }
+          }
+        },
+        { "pointing_button": "button1" }
+]
+              }
+            ]
+          }
           ]
 
 }
