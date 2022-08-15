@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEvernote",
+  "title": "FrontmostIfEvernote1",
   "rules": [
     {
       "description": "RightCommand + Spacebar_ゴミ箱に移動(Evernote)",
@@ -310,33 +310,6 @@
               "key_code": "f",
               "modifiers": [
                 "right_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.evernote.Evernote$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "適用しない_Delete_NoteDelete(Evernote)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "delete_or_backspace"
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
                 "right_gui"
               ]
             }

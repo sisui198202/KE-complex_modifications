@@ -1458,3 +1458,130 @@ toで指定するキーが違うため、できない
     }
 
 ---------------------
+## 使用しない
+
+
+{
+      "description": "使用しない_LeftAlt + F11_VBAeditor(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f11", ["left_alt"]) %>,
+          "to": <%= to([["f11", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+{
+      "description": "使用しない_Marukako_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("9", ["left_shift"]) %>,
+          "to": <%= to([["9", ["left_shift"]], ["0", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "使用しない_Namikako_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_shift"]) %>,
+          "to": <%= to([["open_bracket", ["left_shift"]], ["close_bracket", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "使用しない_Kakukako_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket") %>,
+          "to": <%= to([["open_bracket"], ["close_bracket"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "使用しない_Dainari_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_shift"]) %>,
+          "to": <%= to([["comma", ["left_shift"]], ["period", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "使用しない_DoubleQuote_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_shift"]) %>,
+          "to": <%= to([["quote", ["left_shift"]], ["quote", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "使用しない_SingleQuote_OpenCloseInput(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote") %>,
+          "to": <%= to([["quote"], ["quote"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "使用しないLeftAlt_Copy(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_alt",
+              "modifiers": "left_gui"
+            }
+          ],
+	  "conditions": [
+		{
+		  "type": "frontmost_application_if",
+		  "bundle_identifiers": [
+		    "^com\\.microsoft\\.Excel$"
+		  ]
+		}
+	      ]
+        }
+      ]
+    },
+	 {
+      "description": "使用しない_RightCommand + J_Select1Row(Excel)VBEでのみ使用可能",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"]) %>,
+          "to": <%= to([["left_arrow", ["fn"]], ["down_arrow", "left_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    }
+ ---------------------
