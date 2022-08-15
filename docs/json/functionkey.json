@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey34",
+  "title": "FunctionKey",
   "rules": [
     {
       "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
@@ -233,7 +233,7 @@
               }
             },
             {
-              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'"
+              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Mac.xlsm'"
             }
           ],
           "conditions": [
