@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle123",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -84,6 +84,60 @@
           "to": [
             {
               "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "M_EndRowCursol(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m"
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "N_HeadRowCursol(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n"
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
