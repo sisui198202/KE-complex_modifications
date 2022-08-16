@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle25",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -870,6 +870,45 @@
             },
             {
               "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "A_RightTitleBarMouseClick(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a"
+          },
+          "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                  "x": "850",
+                  "y": "40",
+                  "screen": 0
+                }
+              }
+            },
+            {
+              "pointing_button": "button1"
+            },
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
