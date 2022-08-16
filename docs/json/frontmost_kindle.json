@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle99",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -999,9 +999,6 @@
                   "screen": 0
                 }
               }
-            },
-            {
-              "pointing_button": "button1"
             },
             {
               "pointing_button": "button1"
