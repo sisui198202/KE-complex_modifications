@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle11",
+  "title": "FrontmostIfKindle1111",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -862,6 +862,36 @@
             },
             {
               "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Quote_UpArrow-X3(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote"
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
             }
           ],
           "conditions": [
