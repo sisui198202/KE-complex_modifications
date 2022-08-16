@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle5",
+  "title": "FrontmostIfKindle6",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -35,7 +35,10 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome.app'"
+              "key_code": "j",
+              "modifiers": [
+                "left_option"
+              ]
             },
             {
               "key_code": "period",
