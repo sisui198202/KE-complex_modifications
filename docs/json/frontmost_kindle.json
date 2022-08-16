@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle9",
+  "title": "FrontmostIfKindle5",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -876,12 +876,12 @@
       ]
     },
     {
-      "description": "LeftOption + I_幅にフィット197%(kindle)",
+      "description": "LeftOption + O(オー)_幅にフィット197%(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "left_option"
