@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle4",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -1084,6 +1084,24 @@
             "key_code": "a"
           },
           "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                  "x": "950",
+                  "y": "35",
+                  "screen": 0
+                }
+              }
+            },
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                  "x": "950",
+                  "y": "35",
+                  "screen": 0
+                }
+              }
+            },
             {
               "software_function": {
                 "set_mouse_cursor_position": {
