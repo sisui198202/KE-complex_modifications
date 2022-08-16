@@ -1,5 +1,5 @@
 {
-    "title": "MouseControl",
+    "title": "MouseControl92",
     "rules": [
        {
             "description": "A_RightTitleBarMouseClick(MouseControl)",
@@ -17,8 +17,22 @@
             }
           }
         },
-        { "pointing_button": "button1" }
-]
+        { "pointing_button": "button1" },
+        {
+            "key_code": "right_arrow",
+            "modifiers": [
+            "fn"
+            ]
+        }
+],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
               }
             ]
           },
