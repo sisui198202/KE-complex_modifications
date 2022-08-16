@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle123",
+  "title": "FrontmostIfKindle12345",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -490,6 +490,31 @@
                 "right_control",
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Comma_AppsSelect-Next",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma"
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": "right_option"
             }
           ],
           "conditions": [

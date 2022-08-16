@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle123",
+    "title": "FrontmostIfKindle12345",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -206,6 +206,17 @@
           "type": "basic",
           "from": <%= from("period") %>,
           "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Comma_AppsSelect-Next",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma") %>,
+          "to": <%= to([["tab", "right_option"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
