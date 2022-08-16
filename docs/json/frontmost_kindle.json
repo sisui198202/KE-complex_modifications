@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle6",
+  "title": "FrontmostIfKindle666",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -45,30 +45,6 @@
               "modifiers": [
                 "left_option"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "C_ChromeOpen(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c"
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Google Chrome.app'"
             }
           ],
           "conditions": [
@@ -329,6 +305,35 @@
               "key_code": "b",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "D_SelfTextDirectory(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d"
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": [
+                "left_shift",
+                "right_option",
+                "right_control"
               ]
             }
           ],
