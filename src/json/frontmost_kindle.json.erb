@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle98",
+    "title": "FrontmostIfKindle90",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -345,22 +345,22 @@
       ]
     },
     {
-      "description": "LeftOption + U_画面にフィット121%(kindle)",
+      "description": "LeftOption + Y_画面にフィット121%(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_option"]) %>,
+          "from": <%= from("y", ["left_option"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
     },
     {
-      "description": "LeftOption + y_実際のサイズ100%(kindle)",
+      "description": "LeftOption + U_実際のサイズ100%(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("y", ["left_option"]) %>,
+          "from": <%= from("u", ["left_option"]) %>,
           "to": <%= to([["0", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
