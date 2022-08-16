@@ -1,6 +1,27 @@
 {
-    "title": "MouseControl99",
+    "title": "MouseControl",
     "rules": [
+       {
+            "description": "A_RightTitleBarMouseClick(MouseControl)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": <%= from("a") %>,
+      "to": [
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "850",
+              "y": "30",
+              "screen": 0
+            }
+          }
+        },
+        { "pointing_button": "button1" }
+]
+              }
+            ]
+          },
         {
             "description": "使用しない_RAlt + Z_VisualBasic-Excel(MouseControl)",
             "manipulators": [
