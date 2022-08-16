@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle27",
+    "title": "FrontmostIfKindle11",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -306,6 +306,36 @@
           "from": <%= from("b", ["right_gui"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon + J_DownArrow-X3(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "semicolon"
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
         }
       ]
     },
