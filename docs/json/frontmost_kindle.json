@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle98",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -203,12 +203,12 @@
       ]
     },
     {
-      "description": "y_画面にフィット121%(kindle)",
+      "description": "U_画面にフィット121%(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "y"
+            "key_code": "u"
           },
           "to": [
             {
@@ -230,12 +230,12 @@
       ]
     },
     {
-      "description": "U_実際のサイズ100%(kindle)",
+      "description": "Y_実際のサイズ100%(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "u"
+            "key_code": "y"
           },
           "to": [
             {
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "description": "LeftOption + U_実際のサイズ100%(kindle)",
+      "description": "LeftOption + U_画面にフィット121%(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -876,7 +876,7 @@
       ]
     },
     {
-      "description": "LeftOption + y_画面にフィット121%(kindle)",
+      "description": "LeftOption + y_実際のサイズ100%(kindle)",
       "manipulators": [
         {
           "type": "basic",
