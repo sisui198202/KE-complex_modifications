@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle3",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -8,6 +8,17 @@
           "type": "basic",
           "from": <%= from("j") %>,
           "to": <%= to([["down_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "C_ChromeOpen(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c") %>,
+          "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
