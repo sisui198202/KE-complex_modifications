@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle25",
+  "title": "FrontmostIfKindle27",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -896,7 +896,7 @@
               "software_function": {
                 "set_mouse_cursor_position": {
                   "x": "850",
-                  "y": "40",
+                  "y": "50",
                   "screen": 0
                 }
               }
