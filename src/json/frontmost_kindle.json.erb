@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle11",
+    "title": "FrontmostIfKindle12",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -514,12 +514,68 @@
       ]
     },
 {
-            "description": "A_RightTitleBarMouseClick(kindle)",
+            "description": "A00_RightTitleBarMouseClick(kindle)",
             "manipulators": [
               {
                 "type": "basic",
                 "from": <%= from("a") %>,
       "to": [
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "600",
+              "y": "35",
+              "screen": 0
+            }
+          }
+        },
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "700",
+              "y": "35",
+              "screen": 0
+            }
+          }
+        },
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "950",
+              "y": "35",
+              "screen": 0
+            }
+          }
+        },
+        { "pointing_button": "button1" }
+],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+              }
+            ]
+          },
+{
+            "description": "A0_RightTitleBarMouseClick(kindle)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": <%= from("a") %>,
+      "to": [
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "600",
+              "y": "35",
+              "screen": 0
+            }
+          }
+        },
         {
           "software_function": {
             "set_mouse_cursor_position": {
@@ -553,64 +609,6 @@
           "software_function": {
             "set_mouse_cursor_position": {
               "x": "1050",
-              "y": "35",
-              "screen": 0
-            }
-          }
-        },
-        { "pointing_button": "button1" }
-],
-"conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-              }
-            ]
-          },
-{
-            "description": "A2_RightTitleBarMouseClick(kindle)",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": <%= from("a") %>,
-      "to": [
-        {
-          "software_function": {
-            "set_mouse_cursor_position": {
-              "x": "850",
-              "y": "35",
-              "screen": 0
-            }
-          }
-        },
-        { "pointing_button": "button1" }
-],
-"conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-              }
-            ]
-          },
-{
-            "description": "A3_RightTitleBarMouseClick(kindle)",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": <%= from("a") %>,
-      "to": [
-        {
-          "software_function": {
-            "set_mouse_cursor_position": {
-              "x": "1150",
               "y": "35",
               "screen": 0
             }
