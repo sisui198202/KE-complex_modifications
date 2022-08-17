@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode2",
   "rules": [
     {
       "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -1140,12 +1140,12 @@
       ]
     },
     {
-      "description": "LeftOption + P_フォルダービューにフォーカスを置く(vscode)",
+      "description": "LeftOption + T_フォルダービューにフォーカスを置く(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
                 "left_option"

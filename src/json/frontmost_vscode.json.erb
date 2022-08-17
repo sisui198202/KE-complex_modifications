@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode2",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -345,11 +345,11 @@
       ]
     },
   {
-      "description": "LeftOption + P_フォルダービューにフォーカスを置く(vscode)",
+      "description": "LeftOption + T_フォルダービューにフォーカスを置く(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("p", ["left_option"], ["caps_lock"]) %>,
+          "from": <%= from("t", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
