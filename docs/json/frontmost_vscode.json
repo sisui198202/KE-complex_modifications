@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode90",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -1125,6 +1125,42 @@
               "modifiers": [
                 "right_control",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + P_フォルダービューにフォーカスを置く(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_control",
+                "right_gui"
               ]
             }
           ],
