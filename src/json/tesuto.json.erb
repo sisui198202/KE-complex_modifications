@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO35",
+  "title": "TESUTO351",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -371,7 +371,45 @@
 ]
               }
             ]
-          }
+          },
+{
+  "description": "日本語モード:Openbracket_OpenClosebracket(Chrome)",
+"manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+            {
+              "key_code": "open_bracket"
+            },
+            {
+              "key_code": "close_bracket"
+            }
+      ],
+      "conditions": [
+        {
+          "type": "input_source_if",
+          "input_sources": [
+            { "language": "ja" }
+          ]
+        },
+        {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+      ]
+    }
+  ]
+}
           ]
 
 }
