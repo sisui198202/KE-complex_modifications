@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome33",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -154,12 +154,45 @@
       ]
     },
     {
-      "description": "H_再読込(Chrome)",
+      "description": "E_再読込(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "H_LeftArrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("h", ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+          "to": <%= to([["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "L_RightArrow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["caps_lock"]) %>,
+          "to": <%= to([["right_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Period_MaxWindow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["caps_lock"]) %>,
+          "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

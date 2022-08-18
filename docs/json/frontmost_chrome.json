@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome",
+  "title": "FrontmostIfChrome33",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -420,7 +420,40 @@
       ]
     },
     {
-      "description": "H_再読込(Chrome)",
+      "description": "E_再読込(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_control",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "H_LeftArrow(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -434,10 +467,68 @@
           },
           "to": [
             {
-              "key_code": "w",
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "L_RightArrow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Period_MaxWindow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
               "modifiers": [
                 "right_control",
-                "right_shift"
+                "right_gui"
               ]
             }
           ],
