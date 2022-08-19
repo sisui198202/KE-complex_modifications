@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview3",
+    "title": "FrontmostIfpreview4",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -91,6 +91,249 @@
         }
       ]
     },
+    {
+      "description": "P_幅にフィット197%(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p") %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "U_画面にフィット121%(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u") %>,
+          "to": <%= to([["0", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "B_ブックマーク追加(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b") %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "T_ブックマークリスト表示(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t") %>,
+          "to": <%= to([["b", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "D_SelfTextDirectory(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("d") %>,
+          "to": <%= to([["8", ["left_shift", "right_option","right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "O(オー)_Expansion(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o") %>,
+          "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "i_Shrink(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i") %>,
+          "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "R_miアクテイブ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r") %>,
+          "to": <%= set_shell_command(["open -a 'mi'"]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Q_LeftHalfWindowMove(preview)",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("q") %>,
+      "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("preview") %> ]
+      }
+      ]
+    },
+    {
+      "description": "Z_Home(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z") %>,
+          "to": <%= to([["9", ["left_control", "left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "OpenBracket[オープン角括弧]_ページ数指定(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket") %>,
+          "to": <%= to([["g", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+  {
+      "description": "G_FileTabClose(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g") %>,
+          "to": <%= to([["w", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Period_WindowMax(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period") %>,
+          "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Comma_AppsSelect-Next(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma") %>,
+          "to": <%= to([["tab", "right_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon + J_DownArrow-X3(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "semicolon"
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Quote_UpArrow-X3(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote"
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+{
+            "description": "A_RightTitleBarMouseClick(preview)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": <%= from("a") %>,
+      "to": [
+         {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "950",
+              "y": "35",
+              "screen": 0
+            }
+          }
+        },
+        { "pointing_button": "button1" }
+],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+              "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+              }
+            ]
+          },
     {
       "description": "LeftCommand + O_Expansion(preview)",
       "manipulators": [
