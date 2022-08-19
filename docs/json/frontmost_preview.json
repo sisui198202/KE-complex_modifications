@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview4",
+  "title": "FrontmostIfpreview5",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "description": "P_幅にフィット197%(preview)",
+      "description": "P_RightHalfWindowMove(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -185,9 +185,9 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "3",
               "modifiers": [
-                "right_gui"
+                "right_alt"
               ]
             }
           ],
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "description": "U_画面にフィット121%(preview)",
+      "description": "U_Undo(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -212,7 +212,7 @@
           },
           "to": [
             {
-              "key_code": "0",
+              "key_code": "z",
               "modifiers": [
                 "right_gui"
               ]

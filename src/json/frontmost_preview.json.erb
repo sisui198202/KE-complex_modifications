@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview4",
+    "title": "FrontmostIfpreview5",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -92,23 +92,23 @@
       ]
     },
     {
-      "description": "P_幅にフィット197%(preview)",
+      "description": "P_RightHalfWindowMove(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("p") %>,
-          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "to": <%= to([["3", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
     {
-      "description": "U_画面にフィット121%(preview)",
+      "description": "U_Undo(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u") %>,
-          "to": <%= to([["0", ["right_gui"]]]) %>,
+          "to": <%= to([["z", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
