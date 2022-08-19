@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview9",
+  "title": "FrontmostIfpreview10",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -300,6 +300,9 @@
                 "right_option",
                 "right_control"
               ]
+            },
+            {
+              "key_code": "right_arrow"
             }
           ],
           "conditions": [

@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview9",
+    "title": "FrontmostIfpreview10",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -141,7 +141,7 @@
         {
           "type": "basic",
           "from": <%= from("d") %>,
-          "to": <%= to([["8", ["left_shift", "right_option","right_control"]]]) %>,
+          "to": <%= to([["8", ["left_shift", "right_option","right_control"]],["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
