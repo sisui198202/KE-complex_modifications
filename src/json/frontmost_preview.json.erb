@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview5",
+    "title": "FrontmostIfpreview6",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -130,7 +130,7 @@
         {
           "type": "basic",
           "from": <%= from("t") %>,
-          "to": <%= to([["b", ["right_gui"]]]) %>,
+          "to": <%= to([["2", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
@@ -163,7 +163,7 @@
         {
           "type": "basic",
           "from": <%= from("i") %>,
-          "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]

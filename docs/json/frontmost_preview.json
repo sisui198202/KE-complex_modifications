@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview5",
+  "title": "FrontmostIfpreview6",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -266,9 +266,10 @@
           },
           "to": [
             {
-              "key_code": "b",
+              "key_code": "2",
               "modifiers": [
-                "right_gui"
+                "right_gui",
+                "right_control"
               ]
             }
           ],
@@ -350,10 +351,9 @@
           },
           "to": [
             {
-              "key_code": "backslash",
+              "key_code": "hyphen",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "right_gui"
               ]
             }
           ],
