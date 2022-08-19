@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview26",
+    "title": "FrontmostIfpreview30",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -417,6 +417,28 @@
         {
           "type": "basic",
           "from": <%= from("quote", ["left_control"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "E_2ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["left_control"]) %>,
+          "to": <%= to([["3", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Z_単一ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
