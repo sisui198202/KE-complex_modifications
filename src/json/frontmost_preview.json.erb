@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview20",
+    "title": "FrontmostIfpreview21",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -221,17 +221,6 @@
       "to": <%= to([["2", ["right_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("preview") %> ]
       }
-      ]
-    },
-    {
-      "description": "Z_しまう(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("z") %>,
-          "to": <%= to([["m", ["left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
-        }
       ]
     },
     {

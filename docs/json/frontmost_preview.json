@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview20",
+  "title": "FrontmostIfpreview21",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -491,33 +491,6 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Z_しまう(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z"
-          },
-          "to": [
-            {
-              "key_code": "m",
-              "modifiers": [
-                "left_gui"
               ]
             }
           ],
