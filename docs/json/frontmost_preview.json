@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview13",
+  "title": "FrontmostIfpreview15",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -400,6 +400,61 @@
       ]
     },
     {
+      "description": "W_ウィンドウに合わせる(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w"
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_gui",
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Z_実際のサイズに合わせる(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z"
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "R_miアクテイブ(preview)",
       "manipulators": [
         {
@@ -410,6 +465,36 @@
           "to": [
             {
               "shell_command": "open -a 'mi'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "X_ハイライトメモ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x"
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "right_gui",
+                [
+                  "right_option"
+                ]
+              ]
             }
           ],
           "conditions": [
@@ -547,6 +632,61 @@
               "modifiers": [
                 "right_gui",
                 "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "S_サムネイル(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "V_拡大鏡切替(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_shift"
               ]
             }
           ],

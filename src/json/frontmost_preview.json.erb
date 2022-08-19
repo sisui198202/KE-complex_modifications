@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview13",
+    "title": "FrontmostIfpreview15",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -180,12 +180,45 @@
       ]
     },
     {
+      "description": "W_ウィンドウに合わせる(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w") %>,
+          "to": <%= to([["t", ["right_gui","right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Z_実際のサイズに合わせる(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z") %>,
+          "to": <%= to([["0", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
       "description": "R_miアクテイブ(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("r") %>,
           "to": <%= set_shell_command(["open -a 'mi'"]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "X_ハイライトメモ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x") %>,
+          "to": <%= to([["4", ["right_gui",["right_option"]]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
@@ -241,6 +274,28 @@
           "type": "basic",
           "from": <%= from("f") %>,
           "to": <%= to([["n", ["right_gui","right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "S_サムネイル(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s") %>,
+          "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "V_拡大鏡切替(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v") %>,
+          "to": <%= to([["2", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
