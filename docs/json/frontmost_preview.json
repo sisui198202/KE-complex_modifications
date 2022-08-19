@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview10",
+  "title": "FrontmostIfpreview11",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "description": "Z_Home(preview)",
+      "description": "Z_しまう(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -459,7 +459,7 @@
           },
           "to": [
             {
-              "key_code": "8",
+              "key_code": "9",
               "modifiers": [
                 "right_gui",
                 "right_option"
