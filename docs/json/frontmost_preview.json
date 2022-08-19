@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview11",
+  "title": "FrontmostIfpreview12",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -267,6 +267,34 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "right_gui",
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Y_サイドバーを非表示(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y"
+          },
+          "to": [
+            {
+              "key_code": "1",
               "modifiers": [
                 "right_gui",
                 "right_control"

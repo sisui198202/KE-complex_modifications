@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview11",
+    "title": "FrontmostIfpreview12",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -131,6 +131,17 @@
           "type": "basic",
           "from": <%= from("t") %>,
           "to": <%= to([["2", ["right_gui","right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Y_サイドバーを非表示(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y") %>,
+          "to": <%= to([["1", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
