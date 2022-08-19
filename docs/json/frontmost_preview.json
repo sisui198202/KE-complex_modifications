@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview12",
+  "title": "FrontmostIfpreview13",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -506,7 +506,7 @@
       ]
     },
     {
-      "description": "G_FileTabClose(preview)",
+      "description": "G_テキスト(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -515,9 +515,38 @@
           },
           "to": [
             {
-              "key_code": "w",
+              "key_code": "t",
               "modifiers": [
-                "right_gui"
+                "right_gui",
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "F_メモ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f"
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_gui",
+                "right_control"
               ]
             }
           ],

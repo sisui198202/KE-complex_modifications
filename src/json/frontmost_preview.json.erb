@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview12",
+    "title": "FrontmostIfpreview13",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -224,12 +224,23 @@
       ]
     },
   {
-      "description": "G_FileTabClose(preview)",
+      "description": "G_テキスト(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("g") %>,
-          "to": <%= to([["w", ["right_gui"]]]) %>,
+          "to": <%= to([["t", ["right_gui","right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+  {
+      "description": "F_メモ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f") %>,
+          "to": <%= to([["n", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
