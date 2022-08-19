@@ -1,23 +1,23 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview1",
     "rules": [
     {
-      "description": "LeftCommand + I_Expansion(preview)",
+      "description": "LeftCommand + O_Expansion(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["left_control"]) %>,
+          "from": <%= from("o", ["left_control"]) %>,
           "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
     {
-      "description": "LeftCommand + U_Shrink(preview)",
+      "description": "LeftCommand + i_Shrink(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_control"]) %>,
+          "from": <%= from("i", ["left_control"]) %>,
           "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -35,22 +35,22 @@
       ]
     },
     {
-      "description": "LeftCommand + T_LeftSideBarToggleOff(preview)",
+      "description": "LeftOption + T_サイドバーを非表示(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["left_control"]) %>,
+          "from": <%= from("t", ["left_option"]) %>,
           "to": <%= to([["1", ["left_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
     {
-      "description": "RightOption + B_BookMark(preview)",
+      "description": "RightCommand + B_BookMark(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b", ["right_option"]) %>,
+          "from": <%= from("b", ["right_gui"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }

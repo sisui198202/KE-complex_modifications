@@ -1,13 +1,13 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview1",
   "rules": [
     {
-      "description": "LeftCommand + I_Expansion(preview)",
+      "description": "LeftCommand + O_Expansion(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -35,12 +35,12 @@
       ]
     },
     {
-      "description": "LeftCommand + U_Shrink(preview)",
+      "description": "LeftCommand + i_Shrink(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "description": "LeftCommand + T_LeftSideBarToggleOff(preview)",
+      "description": "LeftOption + T_サイドバーを非表示(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -109,7 +109,7 @@
             "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_option"
               ]
             }
           },
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "description": "RightOption + B_BookMark(preview)",
+      "description": "RightCommand + B_BookMark(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -142,7 +142,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "right_gui"
               ]
             }
           },
