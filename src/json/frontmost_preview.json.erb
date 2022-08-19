@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview15",
+    "title": "FrontmostIfpreview20",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -213,17 +213,6 @@
       ]
     },
     {
-      "description": "X_ハイライトメモ(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("x") %>,
-          "to": <%= to([["4", ["right_gui",["right_option"]]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
-        }
-      ]
-    },
-    {
       "description": "Q_LeftHalfWindowMove(preview)",
       "manipulators": [
       {
@@ -285,6 +274,17 @@
           "type": "basic",
           "from": <%= from("s") %>,
           "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "X_ハイライトとメモ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x") %>,
+          "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
@@ -412,22 +412,44 @@
             ]
           },
     {
-      "description": "LeftCommand + O_Expansion(preview)",
+      "description": "LeftCommand + O_2ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("o", ["left_control"]) %>,
+          "to": <%= to([["3", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommnad + Quote_単一ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_gui"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + O_Expansion(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_option"]) %>,
           "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
     {
-      "description": "LeftCommand + i_Shrink(preview)",
+      "description": "LeftOption + i_Shrink(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["left_control"]) %>,
+          "from": <%= from("i", ["left_option"]) %>,
           "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
