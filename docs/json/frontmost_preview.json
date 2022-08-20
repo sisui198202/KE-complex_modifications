@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview31",
+  "title": "FrontmostIfpreview",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -914,12 +914,12 @@
       ]
     },
     {
-      "description": "Z_単一ページ(preview)",
+      "description": "Slash_単一ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "slash",
             "modifiers": {
               "mandatory": [
                 "left_control"

@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview31",
+    "title": "FrontmostIfpreview",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -434,11 +434,11 @@
       ]
     },
     {
-      "description": "Z_単一ページ(preview)",
+      "description": "Slash_単一ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["left_control"]) %>,
+          "from": <%= from("slash", ["left_control"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
