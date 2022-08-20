@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview2",
+  "title": "FrontmostIfpreview3",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -400,12 +400,12 @@
       ]
     },
     {
-      "description": "W_ウィンドウに合わせる(preview)",
+      "description": "Z_実際のサイズに合わせる(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "w"
+            "key_code": "z"
           },
           "to": [
             {
@@ -427,12 +427,12 @@
       ]
     },
     {
-      "description": "Z_実際のサイズに合わせる(preview)",
+      "description": "W_ウィンドウに合わせる(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z"
+            "key_code": "w"
           },
           "to": [
             {
