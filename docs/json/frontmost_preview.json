@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview1",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -850,38 +850,6 @@
       ]
     },
     {
-      "description": "LeftCommnad + Quote_単一ページ(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "E_2ページ(preview)",
       "manipulators": [
         {
@@ -914,17 +882,44 @@
       ]
     },
     {
-      "description": "Slash_単一ページ(preview)",
+      "description": "LeftCommnad + Quote_単一ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "slash",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": [
                 "left_control"
               ]
             }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Slash_単一ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash"
           },
           "to": [
             {
