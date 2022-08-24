@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome33",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -193,6 +193,17 @@
           "type": "basic",
           "from": <%= from("period", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Comma_AppsSelect-Next(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma") %>,
+          "to": <%= to([["tab", "right_option"]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

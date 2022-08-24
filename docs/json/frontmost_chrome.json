@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome33",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -530,6 +530,31 @@
                 "right_control",
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Comma_AppsSelect-Next(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma"
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
