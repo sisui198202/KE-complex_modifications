@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome3",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -214,6 +214,17 @@
           "type": "basic",
           "from": <%= from("comma", ["caps_lock"]) %>,
           "to": <%= to([["tab", "right_option"],["caps_lock"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "PreviewActiveWindow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open -a 'Preview.app'"]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
