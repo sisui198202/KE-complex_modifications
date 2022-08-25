@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder99",
+  "title": "FrontmostIfFinder",
   "rules": [
     {
       "description": "F2_Rename(Finder)",
@@ -109,35 +109,6 @@
                 "right_gui",
                 "right_shift"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + A_FrontICollectionsFolderCreate(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "mkdir '/Users/user/Desktop/iCollections/TmpFolder/z'"
             }
           ],
           "conditions": [

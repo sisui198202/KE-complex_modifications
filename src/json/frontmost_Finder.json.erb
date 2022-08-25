@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder99",
+    "title": "FrontmostIfFinder",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -41,17 +41,6 @@
           "type": "basic",
           "from": <%= from("a", ["left_alt"]) %>,
           "to": <%= to([["n", ["right_gui","right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-  {
-      "description": "LeftAlt + A_FrontICollectionsFolderCreate(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["left_alt"]) %>,
-          "to": <%= set_shell_command(["mkdir '/Users/user/Desktop/iCollections/TmpFolder/z'"]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
