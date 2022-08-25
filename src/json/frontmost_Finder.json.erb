@@ -79,18 +79,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "使用しない_Enter_OpenFile(Finder)",
-      "_comment": "ファイル名変更でエンターで確定できない為",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("return_or_enter") %>,
-          "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
     }
     ]
 }
