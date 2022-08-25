@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome4",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "description": "S_検索(Chrome)",
+      "description": "S_検索バーアクティブ(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -204,7 +204,31 @@
       ]
     },
     {
-      "description": "T_BookMarkSearch(Chrome)",
+      "description": "O(オー)_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "T_単語検索(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -218,9 +242,9 @@
           },
           "to": [
             {
-              "key_code": "period",
+              "key_code": "f",
               "modifiers": [
-                "left_option"
+                "right_gui"
               ]
             }
           ]

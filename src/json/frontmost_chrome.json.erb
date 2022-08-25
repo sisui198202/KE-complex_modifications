@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome4",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -47,7 +47,7 @@
         ]
       },
     {
-      "description": "S_検索(Chrome)",
+      "description": "S_検索バーアクティブ(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -78,12 +78,22 @@
       ]
     },
   {
-      "description": "T_BookMarkSearch(Chrome)",
+      "description": "O(オー)_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["caps_lock"]) %>,
+          "to": <%= to([["period", ["left_option"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "T_単語検索(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("t", ["caps_lock"]) %>,
-          "to": <%= to([["period", ["left_option"]]]) %>
+          "to": <%= to([["f", ["right_gui"]]]) %>
         }
       ]
     },
