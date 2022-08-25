@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder",
+    "title": "FrontmostIfFinder99",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -30,6 +30,17 @@
           "type": "basic",
           "from": <%= from("spacebar", ["left_option"]) %>,
           "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+ {
+      "description": "LeftAlt + A_FolderCreate(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"]) %>,
+          "to": <%= to([["n", ["right_gui","right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
