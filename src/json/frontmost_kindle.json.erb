@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle",
+    "title": "FrontmostIfKindle1",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -92,12 +92,23 @@
       ]
     },
     {
-      "description": "P_幅にフィット197%(kindle)",
+      "description": "W_幅にフィット197%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w") %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "P_RightHalfWindowMove(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("p") %>,
-          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "to": <%= to([["3", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
