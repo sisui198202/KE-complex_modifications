@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview5",
+  "title": "FrontmostIfpreview6",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1144,7 +1144,7 @@
           },
           "to": [
             {
-              "key_code": "delete_forward"
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [

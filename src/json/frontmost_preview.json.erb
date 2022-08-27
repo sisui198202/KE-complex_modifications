@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview5",
+    "title": "FrontmostIfpreview6",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -516,7 +516,7 @@
         {
           "type": "basic",
           "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
-          "to": <%= to([["delete_forward"]]) %>,
+          "to": <%= to([["delete_or_backspace"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
