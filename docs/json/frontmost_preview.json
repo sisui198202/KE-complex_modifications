@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview3",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -533,12 +533,39 @@
       ]
     },
     {
-      "description": "G_テキスト(preview)",
+      "description": "G_WindowClose(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "key_code": "g"
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "V_テキスト(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v"
           },
           "to": [
             {
@@ -645,12 +672,12 @@
       ]
     },
     {
-      "description": "V_拡大鏡切替(preview)",
+      "description": "Hyphen_拡大鏡切替(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "v"
+            "key_code": "hyphen"
           },
           "to": [
             {

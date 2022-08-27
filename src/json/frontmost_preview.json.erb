@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview3",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -235,11 +235,22 @@
       ]
     },
   {
-      "description": "G_テキスト(preview)",
+      "description": "G_WindowClose(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("g") %>,
+          "to": <%= to([["w", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+  {
+      "description": "V_テキスト(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v") %>,
           "to": <%= to([["t", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -279,11 +290,11 @@
       ]
     },
     {
-      "description": "V_拡大鏡切替(preview)",
+      "description": "Hyphen_拡大鏡切替(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v") %>,
+          "from": <%= from("hyphen") %>,
           "to": <%= to([["2", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
