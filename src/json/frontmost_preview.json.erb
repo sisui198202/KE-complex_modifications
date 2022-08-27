@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview3",
+    "title": "FrontmostIfpreview4",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -506,6 +506,17 @@
           "type": "basic",
           "from": <%= from("b", ["right_gui"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Space_delete(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+          "to": <%= to([["delete_forward"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]

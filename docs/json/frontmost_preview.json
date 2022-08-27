@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview3",
+  "title": "FrontmostIfpreview4",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1113,6 +1113,38 @@
               "modifiers": [
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Space_delete(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
             }
           ],
           "conditions": [
