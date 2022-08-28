@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview99",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -427,12 +427,39 @@
       ]
     },
     {
-      "description": "W_ウィンドウに合わせる(preview)",
+      "description": "W_連続スクロール(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "key_code": "w"
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Equalsign_ウィンドウに合わせる(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "equal_sign"
           },
           "to": [
             {

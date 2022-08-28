@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview99",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -191,11 +191,22 @@
       ]
     },
     {
-      "description": "W_ウィンドウに合わせる(preview)",
+      "description": "W_連続スクロール(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("w") %>,
+          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Equalsign_ウィンドウに合わせる(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("equal_sign") %>,
           "to": <%= to([["0", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
