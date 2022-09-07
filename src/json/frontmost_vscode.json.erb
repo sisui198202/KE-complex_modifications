@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -63,6 +63,17 @@
           "type": "basic",
           "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + CloseBracket_Outdent(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
