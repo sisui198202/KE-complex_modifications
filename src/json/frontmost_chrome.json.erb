@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome5",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -78,12 +78,32 @@
       ]
     },
   {
-      "description": "O(オー)_BookMarkSearch(Chrome)",
+      "description": "X_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x", ["caps_lock"]) %>,
+          "to": <%= to([["period", ["left_option"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "O(オー)_拡大(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("o", ["caps_lock"]) %>,
-          "to": <%= to([["period", ["left_option"]]]) %>
+          "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>
+        }
+      ]
+    },
+  {
+      "description": "i_縮小(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["caps_lock"]) %>,
+          "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome5",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -204,7 +204,31 @@
       ]
     },
     {
-      "description": "O(オー)_BookMarkSearch(Chrome)",
+      "description": "X_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "O(オー)_拡大(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -218,9 +242,35 @@
           },
           "to": [
             {
-              "key_code": "period",
+              "key_code": "equal_sign",
               "modifiers": [
-                "left_option"
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "i_縮小(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
               ]
             }
           ]
