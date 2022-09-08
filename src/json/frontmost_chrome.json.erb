@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome4",
+    "title": "FrontmostIfChrome5",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -269,6 +269,28 @@
       "type": "basic",
       "from": <%= from("q", ["caps_lock"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("chrome") %> ]
+      }
+      ]
+    },
+    {
+      "description": "D_WindowUP(Chrome)",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("d", ["caps_lock"]) %>,
+      "to": <%= to([["4", ["left_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("chrome") %> ]
+      }
+      ]
+    },
+    {
+      "description": "F_WindowDown(Chrome)",
+      "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("f", ["caps_lock"]) %>,
+      "to": <%= to([["5", ["left_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("chrome") %> ]
       }
       ]
