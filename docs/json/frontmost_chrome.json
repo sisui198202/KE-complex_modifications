@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome",
+  "title": "FrontmostIfChrome1",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -175,6 +175,14 @@
                 "fn"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
           ]
         }
       ]
@@ -199,6 +207,14 @@
                 "fn"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
           ]
         }
       ]
@@ -221,6 +237,14 @@
               "key_code": "period",
               "modifiers": [
                 "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
               ]
             }
           ]
@@ -248,6 +272,14 @@
                 "right_gui"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
           ]
         }
       ]
@@ -273,6 +305,14 @@
                 "right_gui"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
           ]
         }
       ]
@@ -295,6 +335,14 @@
               "key_code": "f",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
               ]
             }
           ]

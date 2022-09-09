@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome1",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -63,7 +63,8 @@
         {
           "type": "basic",
           "from": <%= from("slash", ["caps_lock"]) %>,
-          "to": <%= to([["up_arrow", ["fn"]]]) %>
+          "to": <%= to([["up_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
@@ -73,7 +74,8 @@
         {
           "type": "basic",
           "from": <%= from("b", ["caps_lock"]) %>,
-          "to": <%= to([["down_arrow", ["fn"]]]) %>
+          "to": <%= to([["down_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
@@ -83,7 +85,8 @@
         {
           "type": "basic",
           "from": <%= from("x", ["caps_lock"]) %>,
-          "to": <%= to([["period", ["left_option"]]]) %>
+          "to": <%= to([["period", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
@@ -93,7 +96,8 @@
         {
           "type": "basic",
           "from": <%= from("o", ["caps_lock"]) %>,
-          "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>
+          "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
@@ -103,7 +107,8 @@
         {
           "type": "basic",
           "from": <%= from("i", ["caps_lock"]) %>,
-          "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>
+          "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
@@ -113,7 +118,8 @@
         {
           "type": "basic",
           "from": <%= from("t", ["caps_lock"]) %>,
-          "to": <%= to([["f", ["right_gui"]]]) %>
+          "to": <%= to([["f", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
