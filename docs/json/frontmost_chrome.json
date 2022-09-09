@@ -235,9 +235,10 @@
           "to": [
             {
               "key_code": "period",
-              "modifiers": [
-                "left_option"
-              ]
+              "modifiers": "left_option"
+            },
+            {
+              "key_code": "caps_lock"
             }
           ],
           "conditions": [
