@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome5",
+  "title": "FrontmostIfChrome6",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -236,6 +236,9 @@
             {
               "key_code": "period",
               "modifiers": "left_option"
+            },
+            {
+              "key_code": "caps_lock"
             }
           ],
           "conditions": [
