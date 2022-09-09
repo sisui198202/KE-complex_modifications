@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview12",
+  "title": "FrontmostIfpreview",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1199,9 +1199,6 @@
               "modifiers": [
                 "right_option"
               ]
-            },
-            {
-              "shell_command": "open -a 'Kindle.app'"
             },
             {
               "shell_command": "open -a 'mi'"
