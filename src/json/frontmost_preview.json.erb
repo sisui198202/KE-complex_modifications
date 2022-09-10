@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview99",
+    "title": "FrontmostIfpreview95",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -549,6 +549,36 @@
             },
           {
             "shell_command": "open -a 'Kindle.app'"
+          }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+            }
+          ]
+    },
+     {
+      "description": "BackSlash_PreviewRight-VscodeLeft(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash"
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
+            },
+          {
+            "shell_command": "open -a 'Visual Studio Code.app'"
           }
           ],
           "conditions": [
