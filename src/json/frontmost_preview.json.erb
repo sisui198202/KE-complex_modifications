@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview99",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -70,23 +70,23 @@
       ]
     },
   {
-      "description": "M_最終ページ移動(preview)",
+      "description": "M_WindowDown(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("m") %>,
-          "to": <%= to([["right_arrow", ["fn"]]]) %>,
+          "to": <%= to([["5", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
   {
-      "description": "N_1ページ移動(preview)",
+      "description": "N_WindowUP(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("n") %>,
-          "to": <%= to([["left_arrow", ["fn"]]]) %>,
+          "to": <%= to([["4", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]

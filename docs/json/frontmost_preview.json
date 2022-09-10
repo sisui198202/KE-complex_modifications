@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview",
+  "title": "FrontmostIfpreview99",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "description": "M_最終ページ移動(preview)",
+      "description": "M_WindowDown(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -131,9 +131,9 @@
           },
           "to": [
             {
-              "key_code": "right_arrow",
+              "key_code": "5",
               "modifiers": [
-                "fn"
+                "left_alt"
               ]
             }
           ],
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "description": "N_1ページ移動(preview)",
+      "description": "N_WindowUP(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -158,9 +158,9 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
+              "key_code": "4",
               "modifiers": [
-                "fn"
+                "left_alt"
               ]
             }
           ],
