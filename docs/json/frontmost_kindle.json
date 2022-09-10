@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle1",
+  "title": "FrontmostIfKindle98",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -434,12 +434,66 @@
       ]
     },
     {
-      "description": "D_SelfTextDirectory(kindle)",
+      "description": "M_WindowBottomHalf(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "d"
+            "key_code": "m"
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "N_WindowTopHalf(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n"
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "E_SelfTextDirectory(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e"
           },
           "to": [
             {

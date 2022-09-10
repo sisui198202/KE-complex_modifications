@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle1",
+    "title": "FrontmostIfKindle98",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -190,12 +190,34 @@
         }
       ]
     },
-    {
-      "description": "D_SelfTextDirectory(kindle)",
+  {
+      "description": "M_WindowBottomHalf(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d") %>,
+          "from": <%= from("m") %>,
+          "to": <%= to([["5", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+  {
+      "description": "N_WindowTopHalf(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n") %>,
+          "to": <%= to([["4", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "E_SelfTextDirectory(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e") %>,
           "to": <%= to([["8", ["left_shift", "right_option","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
