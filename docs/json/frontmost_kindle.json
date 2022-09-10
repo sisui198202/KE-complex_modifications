@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle98",
+  "title": "FrontmostIfKindle97",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -434,12 +434,12 @@
       ]
     },
     {
-      "description": "M_WindowBottomHalf(kindle)",
+      "description": "F_WindowBottomHalf(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "m"
+            "key_code": "f"
           },
           "to": [
             {
@@ -461,12 +461,12 @@
       ]
     },
     {
-      "description": "N_WindowTopHalf(kindle)",
+      "description": "D_WindowTopHalf(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n"
+            "key_code": "d"
           },
           "to": [
             {

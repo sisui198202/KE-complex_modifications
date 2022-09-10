@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle98",
+    "title": "FrontmostIfKindle97",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -191,22 +191,22 @@
       ]
     },
   {
-      "description": "M_WindowBottomHalf(kindle)",
+      "description": "F_WindowBottomHalf(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m") %>,
+          "from": <%= from("f") %>,
           "to": <%= to([["5", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
     },
   {
-      "description": "N_WindowTopHalf(kindle)",
+      "description": "D_WindowTopHalf(kindle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n") %>,
+          "from": <%= from("d") %>,
           "to": <%= to([["4", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
