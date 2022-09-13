@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl9",
+  "title": "WindowControl10",
   "rules": [
     {
       "description": "Fn + ~_WindowsControl",
@@ -387,23 +387,6 @@
           ]
         },
         {
-          "description": "Leftcommand + R_miActiveWindow(WindowControl)",
-          "type": "basic",
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'mi'"
-            }
-          ]
-        },
-        {
           "description": "Leftcommand + R-Caps_miActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
@@ -420,6 +403,23 @@
           "to": [
             {
               "shell_command": "open -a 'mi /Users/user/Documents/tmp/tmp.md'"
+            }
+          ]
+        },
+        {
+          "description": "Leftcommand + R_miActiveWindow(WindowControl)",
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'mi'"
             }
           ]
         },
