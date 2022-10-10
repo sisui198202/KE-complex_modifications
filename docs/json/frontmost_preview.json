@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview2",
+  "title": "FrontmostIfpreview3",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -700,7 +700,7 @@
       ]
     },
     {
-      "description": "Oオー_(preview)",
+      "description": "Oオー_マークアップツールバーを非表示(preview)",
       "manipulators": [
         {
           "type": "basic",
