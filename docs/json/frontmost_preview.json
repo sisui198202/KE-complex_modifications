@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview1",
+  "title": "FrontmostIfpreview2",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -684,6 +684,34 @@
               "key_code": "4",
               "modifiers": [
                 "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Oオー_(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0"
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "right_shift",
                 "right_gui"
               ]
             }

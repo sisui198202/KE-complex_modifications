@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview1",
+    "title": "FrontmostIfpreview2",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -297,6 +297,17 @@
           "type": "basic",
           "from": <%= from("x") %>,
           "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Oオー_(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("0") %>,
+          "to": <%= to([["a", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
