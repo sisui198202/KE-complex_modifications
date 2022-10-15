@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel3",
+  "title": "FrontmostIfExcel8",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -1647,6 +1647,47 @@
                 "set_mouse_cursor_position": {
                   "x": "20",
                   "y": "60",
+                  "screen": 0
+                }
+              }
+            },
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Leftoption+Openbracket_RightTitleBarMouseClick(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                  "x": "950",
+                  "y": "35",
                   "screen": 0
                 }
               }
