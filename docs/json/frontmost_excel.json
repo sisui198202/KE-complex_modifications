@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel8",
+  "title": "FrontmostIfExcel9",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -1686,7 +1686,7 @@
             {
               "software_function": {
                 "set_mouse_cursor_position": {
-                  "x": "950",
+                  "x": "240",
                   "y": "35",
                   "screen": 0
                 }
