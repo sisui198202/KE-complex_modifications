@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel2",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -1667,7 +1667,7 @@
       ]
     },
     {
-      "description": "Leftoption+Openbracket_RightTitleBarMouseClick(Excel)",
+      "description": "Leftoption+Openbracket_クイックアクセスツールバーの画像挿入クリック(Excel)",
       "manipulators": [
         {
           "type": "basic",
