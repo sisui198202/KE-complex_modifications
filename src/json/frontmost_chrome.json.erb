@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome1",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -361,6 +361,17 @@
           "type": "basic",
           "from": <%= from("h", ["right_alt"]) %>,
           "to": <%= to([["u", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + A_タブを新しいウィンドウに移動(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_alt"]) %>,
+          "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
