@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder33",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -96,6 +96,17 @@
           "type": "basic",
           "from": <%= from("o", ["left_option"]) %>,
           "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + O(オー)_デュアルウィンドウ(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"]) %>,
+          "to": <%= to([["f1"]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
