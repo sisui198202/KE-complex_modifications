@@ -1140,15 +1140,15 @@
       ]
     },
     {
-      "description": "LeftOption + T_フォルダービューにフォーカスを置く(vscode)",
+      "description": "RightCommand + H_フォルダービューにフォーカスを置く(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"
