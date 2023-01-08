@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome1",
+    "title": "FrontmostIfChrome2",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -337,7 +337,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["left_alt"]) %>,
+          "from": <%= from("c", ["left_alt"]) %>,
           "to": <%= to([["f12", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
