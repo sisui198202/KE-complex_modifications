@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome99",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -85,6 +85,17 @@
         {
           "type": "basic",
           "from": <%= from("x", ["caps_lock"]) %>,
+          "to": <%= to([["period", "left_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightOption + T_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x", ["right_alt"]) %>,
           "to": <%= to([["period", "left_option"]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
