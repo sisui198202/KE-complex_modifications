@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome2",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -948,7 +948,7 @@
       ]
     },
     {
-      "description": "LeftAlt + A_CopyTab(Chrome)",
+      "description": "LeftAlt + C_CopyTab(Chrome)",
       "manipulators": [
         {
           "type": "basic",
