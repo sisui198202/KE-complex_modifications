@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome99",
+    "title": "FrontmostIfChrome98",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -157,11 +157,22 @@
       ]
     },
     {
-      "description": "V_ブックマーク(Chrome)",
+      "description": "V_Bookmark_Add(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("v", ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + B_Bookmark_Add(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["right_gui"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }

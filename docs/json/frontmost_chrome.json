@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome99",
+  "title": "FrontmostIfChrome98",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -442,7 +442,7 @@
       ]
     },
     {
-      "description": "V_ブックマーク(Chrome)",
+      "description": "V_Bookmark_Add(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -451,6 +451,38 @@
             "modifiers": {
               "mandatory": [
                 "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + B_Bookmark_Add(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
               ]
             }
           },
