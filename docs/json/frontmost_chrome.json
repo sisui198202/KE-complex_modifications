@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome98",
+  "title": "FrontmostIfChrome97",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -255,7 +255,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "x",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
                 "right_alt"
