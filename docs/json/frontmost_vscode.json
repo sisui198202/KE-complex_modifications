@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode99",
   "rules": [
     {
       "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -1208,6 +1208,39 @@
                 }
               ]
             },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Fn + U_WindowLeftUp",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": "right_alt"
+            }
+          ],
+          "conditions": [
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
