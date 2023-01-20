@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview10",
+    "title": "FrontmostIfpreview11",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -352,7 +352,7 @@
       "type": "basic",
       "from": <%= from("a") %>,
       "to": <%= set_shell_command(["open -a 'Music.app'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("preview") %>]
+      "conditions": [ <%= frontmost_application_if("preview") %>]
     }
     ]
     },
