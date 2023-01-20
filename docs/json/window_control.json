@@ -2,10 +2,10 @@
   "title": "WindowControl",
   "rules": [
     {
-      "description": "Fn + ~_WindowsControl",
+      "description": "LeftControl + ~_WindowsControl",
       "manipulators": [
         {
-          "description": "Fn + U_WindowLeftUp",
+          "description": "LeftControl + U_WindowLeftUp",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "description": "Fn + J_WindowLeftDown",
+          "description": "LeftControl + J_WindowLeftDown",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "description": "Fn + I_WindowRightUp",
+          "description": "LeftControl + I_WindowRightUp",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -68,7 +68,7 @@
           ]
         },
         {
-          "description": "Fn + K_WindowRightDown",
+          "description": "LeftControl + K_WindowRightDown",
           "type": "basic",
           "from": {
             "key_code": "k",
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "description": "Fn + G_WindowLeftOneThird",
+          "description": "LeftControl + G_WindowLeftOneThird",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -113,7 +113,7 @@
           ]
         },
         {
-          "description": "Fn + Quote_WindowRightOneThird",
+          "description": "LeftControl + Quote_WindowRightOneThird",
           "type": "basic",
           "from": {
             "key_code": "quote",
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "description": "Fn + Y_WindowLeftTwo-thirds",
+          "description": "LeftControl + Y_WindowLeftTwo-thirds",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "description": "Fn + O_WindowRightTwo-thirds",
+          "description": "LeftControl + O_WindowRightTwo-thirds",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -185,7 +185,7 @@
           ]
         },
         {
-          "description": "Fn + Comma_WindowCenter",
+          "description": "LeftControl + Comma_WindowCenter",
           "type": "basic",
           "from": {
             "key_code": "comma",
@@ -249,7 +249,7 @@
           ]
         },
         {
-          "description": "Fn + N_WindowUP",
+          "description": "LeftControl + N_WindowUP",
           "type": "basic",
           "from": {
             "key_code": "n",
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "description": "Fn + M_WindowDown",
+          "description": "LeftControl + M_WindowDown",
           "type": "basic",
           "from": {
             "key_code": "m",
@@ -341,7 +341,7 @@
           ]
         },
         {
-          "description": "Fn + L_RightHalfWindowMove",
+          "description": "LeftControl + L_RightHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -364,7 +364,7 @@
           ]
         },
         {
-          "description": "Fn + H_LeftWindowMove",
+          "description": "LeftControl + H_LeftWindowMove",
           "type": "basic",
           "from": {
             "key_code": "h",
