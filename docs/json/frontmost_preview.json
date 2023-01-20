@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview3",
+  "title": "FrontmostIfpreview",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -808,6 +808,38 @@
       ]
     },
     {
+      "description": "A_AppleMusicActiveWindow(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a"
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Music.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Semicolon + J_DownArrow-X3(preview)",
       "manipulators": [
         {
@@ -868,12 +900,12 @@
       ]
     },
     {
-      "description": "A_RightTitleBarMouseClick(preview)",
+      "description": "1(イチ)_RightTitleBarMouseClick(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a"
+            "key_code": "1"
           },
           "to": [
             {
