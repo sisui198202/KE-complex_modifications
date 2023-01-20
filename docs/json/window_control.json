@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl99",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "LeftControl + ~_WindowsControl",
@@ -543,6 +543,42 @@
           "to": [
             {
               "shell_command": "open -a 'Vivaldi.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + R_AppleMusicActiveWindow(WindowControl)",
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'apple.Music.app'"
             }
           ],
           "conditions": [
