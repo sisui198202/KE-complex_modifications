@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview10",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -346,13 +346,13 @@
       ]
     },
   {
-    "description": "A_AppleMusicActiveWindow(WindowControl)",
+    "description": "A_AppleMusicActiveWindow(preview)",
     "manipulators": [
     {
       "type": "basic",
       "from": <%= from("a") %>,
       "to": <%= set_shell_command(["open -a 'Music.app'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+      "conditions": [ <%= frontmost_application_unless("preview") %>]
     }
     ]
     },
