@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode99",
+    "title": "FrontmostIfVscode98",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -396,17 +396,6 @@
     }
   ]
 },
-        {
-          "description": "Fn + U_WindowLeftUp",
-          "manipulators": [
-          {
-          "type": "basic",
-          "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
-          "to": <%= to([["6", "right_alt"]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
-        }
-        ]
-        },
     {
       "description": "LeftControl_Rename(vscode)",
       "manipulators": [
