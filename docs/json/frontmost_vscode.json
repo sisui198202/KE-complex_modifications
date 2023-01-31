@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode95",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -887,16 +887,9 @@
               ]
             },
             {
-              "key_code": "i",
+              "key_code": "d",
               "modifiers": [
-                "right_gui",
                 "right_alt"
-              ]
-            },
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ],
