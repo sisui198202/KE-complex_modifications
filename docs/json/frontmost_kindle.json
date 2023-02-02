@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle1",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -176,7 +176,34 @@
       ]
     },
     {
-      "description": "W_幅にフィット197%(kindle)",
+      "description": "U_幅にフィット197%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "W_画面にフィット121%(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -185,7 +212,7 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "0",
               "modifiers": [
                 "right_gui"
               ]
@@ -245,33 +272,6 @@
           "to": [
             {
               "key_code": "2",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "U_画面にフィット121%(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u"
-          },
-          "to": [
-            {
-              "key_code": "0",
               "modifiers": [
                 "right_gui"
               ]
