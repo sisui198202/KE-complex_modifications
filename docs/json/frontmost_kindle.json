@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle11",
+  "title": "FrontmostIfKindle",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -635,8 +635,8 @@
             {
               "key_code": "9",
               "modifiers": [
-                "left_control",
-                "left_alt"
+                "right_control",
+                "left_shift"
               ]
             }
           ],
