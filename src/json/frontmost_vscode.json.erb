@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -351,6 +351,17 @@
           "type": "basic",
           "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+  {
+      "description": "LeftOption + T_アクティビティバ切替(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["t", ["right_shift", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
