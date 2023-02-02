@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle1",
+    "title": "FrontmostIfKindle2",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -114,23 +114,34 @@
       ]
     },
     {
+      "description": "LeftOption + O(オー)_画面にフィット121%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_option"]) %>,
+          "to": <%= to([["0", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + U_幅にフィット197%(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_option"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %> ]
+        }
+      ]
+    },
+    {
       "description": "P_RightHalfWindowMove(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("p") %>,
           "to": <%= to([["3", ["right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("kindle") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + O(オー)_幅にフィット197%(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("o", ["left_option"]) %>,
-          "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
@@ -153,17 +164,6 @@
           "type": "basic",
           "from": <%= from("y", ["left_option"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("kindle") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + U_画面にフィット121%(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("u", ["left_option"]) %>,
-          "to": <%= to([["0", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]

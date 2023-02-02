@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle1",
+  "title": "FrontmostIfKindle2",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -230,18 +230,23 @@
       ]
     },
     {
-      "description": "P_RightHalfWindowMove(kindle)",
+      "description": "LeftOption + O(オー)_画面にフィット121%(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "p"
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
           },
           "to": [
             {
-              "key_code": "3",
+              "key_code": "0",
               "modifiers": [
-                "right_alt"
+                "right_gui"
               ]
             }
           ],
@@ -257,12 +262,12 @@
       ]
     },
     {
-      "description": "LeftOption + O(オー)_幅にフィット197%(kindle)",
+      "description": "LeftOption + U_幅にフィット197%(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
                 "left_option"
@@ -274,6 +279,33 @@
               "key_code": "2",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "P_RightHalfWindowMove(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p"
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_alt"
               ]
             }
           ],
@@ -331,38 +363,6 @@
           "to": [
             {
               "key_code": "1",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + U_画面にフィット121%(kindle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "0",
               "modifiers": [
                 "right_gui"
               ]
