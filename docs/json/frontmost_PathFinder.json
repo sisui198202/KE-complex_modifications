@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder99",
+  "title": "FrontmostIfPathFinder98",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -363,15 +363,15 @@
       ]
     },
     {
-      "description": "RightOption + I_ActiveMacWindowShare/img/pdf(WindowControl)",
+      "description": "LeftCommand + N_Active_~/Dropbox/(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
@@ -380,7 +380,39 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/pdf'"
+              "shell_command": "open -a 'Path Finder.app' '/Users/user/Dropbox'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + M_Active_~/Google ドライブ/(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Path Finder.app' '/Users/user/Google ドライブ'"
             }
           ],
           "conditions": [
