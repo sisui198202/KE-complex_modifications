@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder1",
+  "title": "FrontmostIfPathFinder99",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -354,6 +354,38 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + I_ActiveMacWindowShare/img/pdf(WindowControl)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/pdf'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
               ]
