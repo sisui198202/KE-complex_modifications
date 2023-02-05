@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder98",
+  "title": "FrontmostIfPathFinder97",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -129,7 +129,7 @@
       "type": "basic",
       "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Dropbox'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("pathfinder") %>]
+      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         }
       ]
     },
@@ -140,7 +140,7 @@
       "type": "basic",
       "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Google ドライブ'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("pathfinder") %>]
+      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         }
       ]
     },

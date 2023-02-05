@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder98",
+  "title": "FrontmostIfPathFinder97",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -385,7 +385,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
               ]
@@ -417,7 +417,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
               ]
