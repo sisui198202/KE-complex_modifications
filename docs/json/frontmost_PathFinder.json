@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder97",
+  "title": "FrontmostIfPathFinder95",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "description": "LeftAlt + D_DeskTopMove(pathfinder)",
+      "description": "LeftAlt + D_~/Desktop/(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
