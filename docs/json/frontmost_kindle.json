@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle3",
+  "title": "FrontmostIfKindle",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -1229,9 +1229,9 @@
               ]
             },
             {
-              "key_code": "p",
+              "key_code": "3",
               "modifiers": [
-                "right_gui"
+                "right_alt"
               ]
             }
           ],
