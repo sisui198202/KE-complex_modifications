@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle2",
+    "title": "FrontmostIfKindle",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -585,6 +585,36 @@
           ]
               }
             ]
-          }
+          },
+{
+      "description": "BackSlash_PreviewRight-VscodeLeft(kindle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash"
+          },
+          "to": [
+          {
+            "shell_command": "open -a 'Preview.app'"
+          },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+            }
+          ]
+    }
     ]
 }
