@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle",
+  "title": "FrontmostIfKindle9",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -1038,6 +1038,39 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.amazon.Kindle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + U_NextWindow-NextPage",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "right_gui"
+              ]
+            },
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "left_alt"
               ]
             }
           ]
