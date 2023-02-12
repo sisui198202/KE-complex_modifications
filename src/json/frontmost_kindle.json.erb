@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle9",
+    "title": "FrontmostIfKindle",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -422,12 +422,13 @@
     ]
     },
     {
-      "description": "LeftCommand + U_NextWindow-NextPage",
+      "description": "LeftCommand + U_NextWindow-NextPage(kindle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", ["right_gui"]], ["down_arrow", ["left_alt"]]]) %>
+          "to": <%= to([["tab", ["right_gui"]], ["down_arrow", ["left_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("kindle") %>]
         }
       ]
     },

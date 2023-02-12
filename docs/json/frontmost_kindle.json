@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle9",
+  "title": "FrontmostIfKindle",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -1045,7 +1045,7 @@
       ]
     },
     {
-      "description": "LeftCommand + U_NextWindow-NextPage",
+      "description": "LeftCommand + U_NextWindow-NextPage(kindle)",
       "manipulators": [
         {
           "type": "basic",
@@ -1071,6 +1071,14 @@
               "key_code": "down_arrow",
               "modifiers": [
                 "left_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.amazon.Kindle$"
               ]
             }
           ]
