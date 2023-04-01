@@ -1,14 +1,14 @@
 {
-    "title": "FrontmostIfVscode999",
+    "title": "FrontmostIfEclipse",
     "rules": [
       {
-        "description": "LeftOption + M_BookmarkSet(vscode)",
+        "description": "LeftCommand + E_Expand Selection Word(eclipse)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["left_gui", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("eclipse") %> ]
           }
         ]
       }
