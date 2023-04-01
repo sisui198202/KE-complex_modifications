@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse",
+  "title": "FrontmostIfEclipse99",
   "rules": [
     {
       "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -21,7 +21,8 @@
             {
               "key_code": "3",
               "modifiers": [
-                "left_control"
+                "left_gui",
+                "left_option"
               ]
             }
           ],
