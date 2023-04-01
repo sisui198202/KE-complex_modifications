@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse2",
+  "title": "FrontmostIfEclipse",
   "rules": [
     {
       "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -29,7 +29,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^epp.package.java$"
               ]
             }
           ]

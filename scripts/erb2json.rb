@@ -301,7 +301,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     when "vscode"
       bundle_identifiers.concat(vscode_bundle_identifers)
     when "eclipse"
-      bundle_identifiers.concat(vscode_bundle_identifers)
+      bundle_identifiers.concat(eclipse_bundle_identifers)
     when "vscode_sublime"
       bundle_identifiers.concat(vscode_sublime_bundle_identifers)
     when "mi"
