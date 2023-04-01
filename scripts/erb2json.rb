@@ -252,9 +252,11 @@ def frontmost_application(type, app_aliases, as_json = true)
   excel_bundle_identifers = [
     '^com\.microsoft\.Excel$',
   ]
-
   vscode_bundle_identifers = [
     "^com.microsoft.VSCode$",
+  ]
+  eclipse_bundle_identifers = [
+    "^epp.package.java$",
   ]
   sublime_bundle_identifers = [
     "^com.sublimetext.3$",
@@ -297,6 +299,8 @@ def frontmost_application(type, app_aliases, as_json = true)
     when "sublime"
       bundle_identifiers.concat(sublime_bundle_identifers)
     when "vscode"
+      bundle_identifiers.concat(vscode_bundle_identifers)
+    when "eclipse"
       bundle_identifiers.concat(vscode_bundle_identifers)
     when "vscode_sublime"
       bundle_identifiers.concat(vscode_sublime_bundle_identifers)
