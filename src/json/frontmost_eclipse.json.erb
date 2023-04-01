@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse99",
+    "title": "FrontmostIfEclipse98",
     "rules": [
       {
         "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -7,7 +7,7 @@
           {
             "type": "basic",
             "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["3", ["left_gui", "left_option"]]]) %>,
+            "to": <%= to([["3", ["left_option","left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("eclipse") %> ]
           }
         ]
