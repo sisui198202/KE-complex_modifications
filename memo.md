@@ -1599,4 +1599,17 @@ toで指定するキーが違うため、できない
       ]
     }
 ---------------------
+## 「frontmost_chrome.json.erb_L」キー、RightArrow設定、
 
+    {
+      "description": "L_RightArrow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["caps_lock"]) %>,
+          "to": <%= to([["right_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+---------------------
