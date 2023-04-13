@@ -211,18 +211,6 @@
       ]
     },
    {
-      "description": "LeftContorl_CellEdit(Excel)",
-      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("fn",["caps_lock"]) %>,
-          "to": <%= to([["f2"]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-   {
       "description": "RightCommand + L_PreviousTab(Excel)",
       "manipulators": [
         {
@@ -566,6 +554,36 @@
     }
   ]
 },
+    {
+      "description": "LeftContorl_CellEdit(Excel)",
+      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
 {
             "description": "Leftoption+Openbracket_クイックアクセスツールバーの画像挿入クリック(Excel)",
             "manipulators": [

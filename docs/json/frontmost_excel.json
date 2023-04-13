@@ -622,36 +622,6 @@
       ]
     },
     {
-      "description": "LeftContorl_CellEdit(Excel)",
-      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f2"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + L_PreviousTab(Excel)",
       "manipulators": [
         {
@@ -1658,6 +1628,36 @@
             },
             {
               "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftContorl_CellEdit(Excel)",
+      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2"
             }
           ],
           "conditions": [
