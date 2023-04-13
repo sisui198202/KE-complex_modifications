@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel2",
+    "title": "FrontmostIfExcel",
     "rules": [
    {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -216,7 +216,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("fn") %>,
+          "from": <%= from("fn",["caps_lock"]) %>,
           "to": <%= to([["f2"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }

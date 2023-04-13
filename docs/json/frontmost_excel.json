@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel2",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -628,7 +628,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "fn"
+            "key_code": "fn",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
