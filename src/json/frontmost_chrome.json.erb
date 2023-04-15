@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome99",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -394,6 +394,17 @@
           "type": "basic",
           "from": <%= from("a", ["right_alt"]) %>,
           "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + A_シークレットウィンドウを開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"]) %>,
+          "to": <%= to([["hyphen", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

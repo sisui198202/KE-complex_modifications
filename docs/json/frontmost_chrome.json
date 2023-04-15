@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome",
+  "title": "FrontmostIfChrome99",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1130,6 +1130,39 @@
               "modifiers": [
                 "right_control",
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + A_シークレットウィンドウを開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
               ]
             }
           ],
