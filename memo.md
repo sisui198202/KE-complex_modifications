@@ -1613,3 +1613,23 @@ toで指定するキーが違うため、できない
       ]
     },
 ---------------------
+## mandatoryを無しで「key_code」単独で、「caps_lock」を設定したい場合
+
+下記のような書き方はできない。
+"from": <%= from("a", ["left_control"]) %>,
+
+
+下記のような書き方が必要。
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+
+---------------------
