@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome99",
+  "title": "FrontmostIfChrome98",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -31,17 +31,12 @@
       ]
     },
     {
-      "description": "J_DownArrow(Chrome)_改良1_1",
+      "description": "J_DownArrow_改良1_1(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "j"
           },
           "to": [
             {
@@ -60,7 +55,7 @@
       ]
     },
     {
-      "description": "J_DownArrow(Chrome)_改良1_2",
+      "description": "J_DownArrow改良1_2(Chrome)",
       "manipulators": [
         {
           "type": "basic",
