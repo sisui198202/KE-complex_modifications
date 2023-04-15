@@ -2,7 +2,7 @@
   "title": "FrontmostIfline",
   "rules": [
     {
-      "description": "J_DownArrow(Chrome)",
+      "description": "J_DownArrow(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -23,7 +23,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "description": "M_最終行へ(Chrome)",
+      "description": "M_最終行へ(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -55,7 +55,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "description": "K_UpArrow(Chrome)",
+      "description": "K_UpArrow(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -84,7 +84,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "description": "N_最初の行へ(Chrome)",
+      "description": "N_最初の行へ(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -116,7 +116,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "description": "S_検索バーアクティブ(Chrome)",
+      "description": "S_検索バーアクティブ(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -148,7 +148,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "description": "Slash_PageUp(Chrome)",
+      "description": "Slash_PageUp(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -180,7 +180,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "description": "B_PageDown(Chrome)",
+      "description": "B_PageDown(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -212,7 +212,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "description": "X_BookMarkSearch(Chrome)",
+      "description": "X_BookMarkSearch(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -242,7 +242,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "description": "RightOption + T_BookMarkSearch(Chrome)",
+      "description": "RightOption + T_BookMarkSearch(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -272,7 +272,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "description": "O(オー)_拡大(Chrome)",
+      "description": "O(オー)_拡大(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -305,7 +305,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -313,7 +313,7 @@
       ]
     },
     {
-      "description": "i_縮小(Chrome)",
+      "description": "i_縮小(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -338,7 +338,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "description": "T_単語検索(Chrome)",
+      "description": "T_単語検索(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -370,7 +370,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -378,7 +378,7 @@
       ]
     },
     {
-      "description": "Semicolon_NextTab(Chrome)",
+      "description": "Semicolon_NextTab(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -402,7 +402,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "description": "L_PreviousTab(Chrome)",
+      "description": "L_PreviousTab(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -435,7 +435,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "description": "G_TabClose(Chrome)",
+      "description": "G_TabClose(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -467,7 +467,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -475,7 +475,7 @@
       ]
     },
     {
-      "description": "V_Bookmark_Add(Chrome)",
+      "description": "V_Bookmark_Add(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -499,7 +499,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "description": "RightCommand + B_Bookmark_Add(Chrome)",
+      "description": "RightCommand + B_Bookmark_Add(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -531,7 +531,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -539,7 +539,7 @@
       ]
     },
     {
-      "description": "A_新しいタブを開く(Chrome)",
+      "description": "A_新しいタブを開く(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -563,7 +563,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -571,7 +571,7 @@
       ]
     },
     {
-      "description": "W_新しいウィンドウで開く(Chrome)",
+      "description": "W_新しいウィンドウで開く(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -595,7 +595,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -603,7 +603,7 @@
       ]
     },
     {
-      "description": "C_タブ複製(Chrome)",
+      "description": "C_タブ複製(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -627,7 +627,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -635,7 +635,7 @@
       ]
     },
     {
-      "description": "E_再読込(Chrome)",
+      "description": "E_再読込(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -660,7 +660,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -668,7 +668,7 @@
       ]
     },
     {
-      "description": "H_LeftArrow(Chrome)",
+      "description": "H_LeftArrow(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -689,7 +689,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -697,7 +697,7 @@
       ]
     },
     {
-      "description": "Period_MaxWindow(Chrome)",
+      "description": "Period_MaxWindow(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -722,7 +722,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -730,7 +730,7 @@
       ]
     },
     {
-      "description": "Comma_AppsSelect-Next(Chrome)",
+      "description": "Comma_AppsSelect-Next(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -755,7 +755,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -763,7 +763,7 @@
       ]
     },
     {
-      "description": "Quote_PreviewActiveWindow(Chrome)",
+      "description": "Quote_PreviewActiveWindow(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -784,7 +784,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -792,7 +792,7 @@
       ]
     },
     {
-      "description": "U_Undo(Chrome)",
+      "description": "U_Undo(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -816,7 +816,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -824,7 +824,7 @@
       ]
     },
     {
-      "description": "R_miアクテイブ(Chrome)",
+      "description": "R_miアクテイブ(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -845,7 +845,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -853,7 +853,7 @@
       ]
     },
     {
-      "description": "P_RightHalfWindowMove(Chrome)",
+      "description": "P_RightHalfWindowMove(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -877,7 +877,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -885,7 +885,7 @@
       ]
     },
     {
-      "description": "Q_LeftHalfWindowMove(Chrome)",
+      "description": "Q_LeftHalfWindowMove(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -909,7 +909,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -917,7 +917,7 @@
       ]
     },
     {
-      "description": "D_WindowTopHalf(Chrome)",
+      "description": "D_WindowTopHalf(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -941,7 +941,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -949,7 +949,7 @@
       ]
     },
     {
-      "description": "F_WindowBottomHalf(Chrome)",
+      "description": "F_WindowBottomHalf(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -973,7 +973,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -981,7 +981,7 @@
       ]
     },
     {
-      "description": "RightCommand + H_Reload(Chrome)",
+      "description": "RightCommand + H_Reload(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1006,7 +1006,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -1014,7 +1014,7 @@
       ]
     },
     {
-      "description": "LeftAlt + C_CopyTab(Chrome)",
+      "description": "LeftAlt + C_CopyTab(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1038,7 +1038,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -1046,7 +1046,7 @@
       ]
     },
     {
-      "description": "LeftAlt + d_DeveloperTool(Chrome)",
+      "description": "LeftAlt + d_DeveloperTool(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1071,7 +1071,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -1079,7 +1079,7 @@
       ]
     },
     {
-      "description": "RightAlt + H_PageSourchOutput(Chrome)",
+      "description": "RightAlt + H_PageSourchOutput(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1104,7 +1104,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -1112,7 +1112,7 @@
       ]
     },
     {
-      "description": "RightAlt + A_タブを新しいウィンドウに移動(Chrome)",
+      "description": "RightAlt + A_タブを新しいウィンドウに移動(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1137,7 +1137,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -1145,7 +1145,7 @@
       ]
     },
     {
-      "description": "LeftAlt + A_シークレットウィンドウを開く(Chrome)",
+      "description": "LeftAlt + A_シークレットウィンドウを開く(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1170,7 +1170,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
@@ -1178,7 +1178,7 @@
       ]
     },
     {
-      "description": "LeftAlt + U_検索バーアクティヴ(Chrome)",
+      "description": "LeftAlt + U_検索バーアクティヴ(Line)",
       "manipulators": [
         {
           "type": "basic",
@@ -1202,7 +1202,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^jp.naver.line.mac$"
               ]
             }
           ]
