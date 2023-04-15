@@ -278,6 +278,10 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^org.virtualbox.app.VirtualBoxVM$",
   ]
 
+  line_bundle_identifiers = [
+    "^jp.naver.line.mac$",
+  ]
+
   evernote_bundle_identifiers = [
     "^com.evernote.Evernote$",
   ]
@@ -365,6 +369,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(terminal_bundle_identifiers)
     when "evernote"
       bundle_identifiers.concat(evernote_bundle_identifiers)
+    when "line"
+      bundle_identifiers.concat(line_bundle_identifiers)
     when "centos_ubuntu"
       bundle_identifiers.concat(virtualBoxVM_bundle_identifiers)
     else
