@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome3",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -405,6 +405,17 @@
           "type": "basic",
           "from": <%= from("a", ["left_alt"]) %>,
           "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + U_検索バーアクティヴ(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["right_alt"]) %>,
+          "to": <%= to([["l", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
