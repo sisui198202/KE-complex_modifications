@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome99",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -404,7 +404,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["left_alt"]) %>,
-          "to": <%= to([["hyphen", ["right_shift", "right_gui"]]]) %>,
+          "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
