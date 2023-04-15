@@ -1633,3 +1633,65 @@ toで指定するキーが違うため、できない
           },
 
 ---------------------
+## CapsLocker、起動時にChrome上でCapsLockオン時に「j」キーを押すごとに、CapsLockerのアイコンが表示されることの対策検討
+
+結果:うまくいかなかった。
+Capslockオン時に、「j」キーで、CapsLockerのアイコンが表示されてしまう。
+
+```
+    {
+      "description": "J_DownArrow_改良1_1(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j"
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "J_DownArrow改良1_2(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "j"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+```
+
+---------------------

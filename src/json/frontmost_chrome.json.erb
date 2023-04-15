@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome98",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -8,28 +8,6 @@
             "type": "basic",
             "from": <%= from("j",["caps_lock"]) %>,
             "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-          }
-        ]
-      },
-      {
-        "description": "J_DownArrow_改良1_1(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j") %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-          }
-        ]
-      },
-      {
-        "description": "J_DownArrow改良1_2(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["j"]]) %>,
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
           }
         ]
