@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome11",
+  "title": "FrontmostIfChrome12",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1178,7 +1178,7 @@
       ]
     },
     {
-      "description": "LeftAlt + U_検索バーアクティヴ(Chrome)",
+      "description": "LeftAlt + U_検索バーアクティヴ-Copy(Chrome)",
       "manipulators": [
         {
           "type": "basic",
