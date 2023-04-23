@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey3",
   "rules": [
     {
       "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
@@ -307,6 +307,31 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "F6_Evernoteクイックノート(FunctionKey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f6",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_gui",
+                "right_control"
               ]
             }
           ]
