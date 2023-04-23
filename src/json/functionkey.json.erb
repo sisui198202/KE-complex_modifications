@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey3",
+  "title": "FunctionKey",
   "rules": [
         {
             "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
@@ -265,16 +265,6 @@
     }
   ]
 },
-  {
-      "description": "F6_Evernoteクイックノート(FunctionKey)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("f6", ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_gui","right_control"]]]) %>
-        }
-      ]
-    },
 {
   "description": "F1_tmp.pyOpen(FunctionKey)",
   "manipulators": [
@@ -285,6 +275,31 @@
       "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
     }
   ]
-}
+},
+    {
+      "description": "F6_Evernoteクイックノート(FunctionKey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f6",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_gui",
+                "right_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
