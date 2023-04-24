@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder99",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -118,6 +118,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -151,6 +154,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -184,6 +190,9 @@
             "modifiers": {
               "mandatory": [
                 "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
