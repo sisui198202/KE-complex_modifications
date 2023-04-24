@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder97",
+  "title": "FrontmostIfPathFinder96",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -322,7 +322,7 @@
       ]
     },
     {
-      "description": "LeftCommand + O(オー)_デュアルウィンドウ(pathfinder)",
+      "description": "LeftCommand + O(オー)_デュアルウィンドウトグル(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -459,7 +459,12 @@
         {
           "type": "basic",
           "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn"
+            "apple_vendor_top_case_key_code": "keyboard_fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
