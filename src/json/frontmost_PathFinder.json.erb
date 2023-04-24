@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder98",
+  "title": "FrontmostIfPathFinder97",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -105,7 +105,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["left_control"]) %>,
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["f1"]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
