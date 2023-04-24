@@ -1,12 +1,12 @@
 {
-  "title": "FrontmostIfPathFinder97",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_alt"]) %>,
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l", ["left_alt", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"]) %>,
+          "from": <%= from("spacebar", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
