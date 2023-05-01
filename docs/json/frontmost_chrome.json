@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome12",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1198,6 +1198,35 @@
             {
               "key_code": "c",
               "modifiers": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
