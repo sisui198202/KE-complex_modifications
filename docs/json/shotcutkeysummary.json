@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -576,27 +576,6 @@
           ]
         },
         {
-          "description": "LeftCommand + comma_AppsIn-Next",
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": "right_gui"
-            }
-          ]
-        },
-        {
           "description": "LeftCommand + Period_AppsSelect-Next",
           "type": "basic",
           "from": {
@@ -613,7 +592,7 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": "right_option"
+              "modifiers": "right_gui"
             }
           ]
         },
