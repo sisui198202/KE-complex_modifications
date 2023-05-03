@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfKindle1",
+  "title": "FrontmostIfKindle",
   "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -744,7 +744,7 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": "right_option"
+              "modifiers": "right_gui"
             }
           ],
           "conditions": [

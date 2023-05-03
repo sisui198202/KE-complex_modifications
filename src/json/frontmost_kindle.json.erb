@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfKindle1",
+    "title": "FrontmostIfKindle",
     "rules": [
     {
       "description": "J_DownArrow(kindle)",
@@ -317,7 +317,7 @@
         {
           "type": "basic",
           "from": <%= from("comma") %>,
-          "to": <%= to([["tab", "right_option"]]) %>,
+          "to": <%= to([["tab", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("kindle") %> ]
         }
       ]
