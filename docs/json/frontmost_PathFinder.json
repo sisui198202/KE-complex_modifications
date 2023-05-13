@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder11",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -116,7 +116,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
