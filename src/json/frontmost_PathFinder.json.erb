@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder98",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -30,6 +30,17 @@
           "type": "basic",
           "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["l", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_オリジナルを表示(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["r", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
