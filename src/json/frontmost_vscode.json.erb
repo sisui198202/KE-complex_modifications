@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode99",
+    "title": "FrontmostIfVscode",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -216,7 +216,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
+          "from": <%= from("semicolon", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f4", ["left_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }

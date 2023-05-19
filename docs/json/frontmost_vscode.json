@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode99",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -687,7 +687,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "right_alt"
