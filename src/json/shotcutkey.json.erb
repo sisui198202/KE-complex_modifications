@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey11",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -286,6 +286,17 @@
           "type": "basic",
           "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["9", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + P_英語 → 日本語[DeepL + Alfred]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
