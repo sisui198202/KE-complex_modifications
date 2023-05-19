@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey20",
+  "title": "ShotCutKey",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -280,12 +280,12 @@
       ]
     },
     {
-      "description": "LeftAlt + P_PythonDirectoryinfiles",
+      "description": "LeftAlt + P_日本語 → 英語[DeepL + Alfred]",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
+          "to": <%= to([["9", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %> ]
         }
       ]
