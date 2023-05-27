@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder11",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -24,11 +24,11 @@
       ]
     },
     {
-      "description": "RightCommand + Z_エイリアスを作る(pathfinder)",
+      "description": "RightOption + Z_エイリアスを作る(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("z", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
