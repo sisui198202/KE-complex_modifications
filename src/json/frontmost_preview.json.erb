@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview3",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -452,6 +452,17 @@
           "type": "basic",
           "from": <%= from("o", ["left_control"]) %>,
           "to": <%= to([["3", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + L_サイズを調整(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["left_gui", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
