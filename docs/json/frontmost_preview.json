@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfpreview5",
+  "title": "FrontmostIfpreview6",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -976,7 +976,7 @@
             {
               "key_code": "8",
               "modifiers": [
-                "left_gui",
+                "left_control",
                 "left_option"
               ]
             }
