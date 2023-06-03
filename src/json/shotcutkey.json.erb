@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -374,6 +374,16 @@
           "type": "basic",
           "from": <%= from("u", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_control", "right_alt"]]]) %>
+        }
+      ]
+    },
+   {
+      "description": "RightAlt + Y_QuickEvernote",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["left_control", "right_gui"]]]) %>
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -1438,6 +1438,34 @@
               "modifiers": [
                 "left_control",
                 "right_alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + Y_QuickEvernote",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_control",
+                "right_gui"
               ]
             }
           ]
