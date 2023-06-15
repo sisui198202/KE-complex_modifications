@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey3",
+  "title": "ShotCutKey",
   "rules": [
     {
       "description": "RightCommand + A_NewFileCreate",
@@ -1159,9 +1159,6 @@
                 "left_shift",
                 "right_gui"
               ]
-            },
-            {
-              "key_code": "right_arrow"
             }
           ],
           "conditions": [
