@@ -2,13 +2,13 @@
     "title": "FrontmostIfEagle1",
     "rules": [
     {
-      "description": "RightCommand + L_サイズを調整(preview)",
+      "description": "RightCommand + L_サイズを調整(Eagle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["0", ["right_gui", "right_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
     },
@@ -19,7 +19,7 @@
           "type": "basic",
           "from": <%= from("o", ["left_option"]) %>,
           "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
     },
@@ -30,7 +30,7 @@
           "type": "basic",
           "from": <%= from("i", ["left_option"]) %>,
           "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
     }
