@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle1",
+    "title": "FrontmostIfEagle",
     "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -34,19 +34,18 @@
         }
       ]
     },
-
-       {
-      "description": "k_UpArrow(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("k") %>,
-          "to": <%= to([["up_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("eagle") %> ]
-        }
-      ]
+    {
+    "description": "k_UpArrow(eagle)",
+    "manipulators": [
+      {
+        "type": "basic",
+        "from": <%= from("k") %>,
+        "to": <%= to([["up_arrow"]]) %>,
+        "conditions": [ <%= frontmost_application_if("eagle") %> ]
+      }
+     ]
     },
-   {
+    {
       "description": "h_LeftArrow(eagle)",
       "manipulators": [
         {
@@ -57,7 +56,7 @@
         }
       ]
     },
-   {
+    {
       "description": "L_RigthArrow(eagle)",
       "manipulators": [
         {
