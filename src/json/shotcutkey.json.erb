@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey1",
+  "title": "ShotCutKey2",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -424,7 +424,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("p", ["left_gui"], ["caps_lock"]) %>,
+          "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["f8", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %>]
         }
