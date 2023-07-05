@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle3",
+    "title": "FrontmostIfEagle",
     "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -19,6 +19,51 @@
           "type": "basic",
           "from": <%= from("i", ["left_option"]) %>,
           "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "J_DownArrow(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j") %>,
+          "to": <%= to([["down_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+
+       {
+      "description": "k_UpArrow(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k") %>,
+          "to": <%= to([["up_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "h_LeftArrow(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h") %>,
+          "to": <%= to([["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "L_RigthArrow(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l") %>,
+          "to": <%= to([["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
