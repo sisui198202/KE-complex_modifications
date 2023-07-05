@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey1",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -415,6 +415,17 @@
           "type": "basic",
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + P_Yoinkを手動で表示",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["left_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["f8", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %>]
         }
       ]
