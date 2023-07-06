@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfSkitch98",
+    "title": "FrontmostIfSkitch",
     "rules": [
     {
       "description": "LeftOption + O(オー)_Export(skitch)",
@@ -13,11 +13,11 @@
       ]
     },
     {
-      "description": "LeftCommand + L_長方形(skitch)",
+      "description": "RightCommand + L_長方形(skitch)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l", ["left_control"]) %>,
+          "from": <%= from("l", ["right_gui"]) %>,
           "to": <%= to([["r", ["right_gui","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("skitch") %> ]
         }
