@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle20",
+    "title": "FrontmostIfEagle21",
     "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -18,6 +18,28 @@
         {
           "type": "basic",
           "from": <%= from("i", ["left_option"]) %>,
+          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "O(オー)_Expansion(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o") %>,
+          "to": <%= to([["equal_sign", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "i_Shrink(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i") %>,
           "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
