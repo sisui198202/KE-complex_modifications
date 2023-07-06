@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfSkitch",
+    "title": "FrontmostIfSkitch11",
     "rules": [
     {
       "description": "LeftOption + O(オー)_Export(skitch)",
@@ -19,6 +19,28 @@
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
           "to": <%= to([["r", ["right_gui","right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("skitch") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + ;(セミコロン)_矢印(skitch)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"]) %>,
+          "to": <%= to([["a", ["right_gui","right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("skitch") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + '(クォート)_テキスト(skitch)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["right_gui"]) %>,
+          "to": <%= to([["t", ["right_gui","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("skitch") %> ]
         }
       ]
