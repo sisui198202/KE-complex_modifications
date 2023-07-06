@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfSkitch",
+  "title": "FrontmostIfSkitch99",
   "rules": [
     {
-      "description": "LeftOption + O_Expansion(eagle)",
+      "description": "LeftOption + O(オー)_Export(skitch)",
       "manipulators": [
         {
           "type": "basic",
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "key_code": "equal_sign",
+              "key_code": "e",
               "modifiers": [
                 "right_gui"
               ]
@@ -26,7 +26,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
+                "^com.skitch.skitch$"
               ]
             }
           ]
@@ -34,23 +34,24 @@
       ]
     },
     {
-      "description": "LeftOption + i_Shrink(eagle)",
+      "description": "LeftCommand + u_長方形(skitch)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "hyphen",
+              "key_code": "r",
               "modifiers": [
-                "right_gui"
+                "right_gui",
+                "right_option"
               ]
             }
           ],
@@ -58,157 +59,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "O(オー)_Expansion(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o"
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "i_Shrink(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i"
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "J_DownArrow(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j"
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "k_UpArrow(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k"
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "h_LeftArrow(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h"
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "L_RigthArrow(eagle)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l"
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
+                "^com.skitch.skitch$"
               ]
             }
           ]
