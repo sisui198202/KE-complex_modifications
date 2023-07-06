@@ -289,6 +289,10 @@ def frontmost_application(type, app_aliases, as_json = true)
   eagle_bundle_identifiers = [
     "^tw.ogdesign.eagle$",
   ]
+
+  skitch_bundle_identifiers = [
+    "^com.skitch.skitch$",
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -379,6 +383,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(virtualBoxVM_bundle_identifiers)
     when "eagle"
       bundle_identifiers.concat(eagle_bundle_identifiers)
+    when "skitch"
+      bundle_identifiers.concat(skitch_bundle_identifiers)
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end

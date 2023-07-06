@@ -7,4 +7,7 @@ https://github.com/sisui198202/KE-complex_modifications/actions/runs/5461153684/
 
 ![karavine_error]("/Users/user/MacWindowShare/img/pdf/karavine_error.png")
 
+[改善方法]
+翌日になったら治っていた。
+
 ---------------------
