@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfSkitch99",
+  "title": "FrontmostIfSkitch98",
   "rules": [
     {
       "description": "LeftOption + O(オー)_Export(skitch)",
@@ -34,12 +34,12 @@
       ]
     },
     {
-      "description": "LeftCommand + u_長方形(skitch)",
+      "description": "LeftCommand + L_長方形(skitch)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "left_control"
