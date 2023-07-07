@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle",
+    "title": "FrontmostIfEagle55",
     "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -85,6 +85,28 @@
           "type": "basic",
           "from": <%= from("l") %>,
           "to": <%= to([["right_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_ToggleSidebarOnOff(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_gui", "left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "T_ToggleSidebarOnOff(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t") %>,
+          "to": <%= to([["1", ["right_gui", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]

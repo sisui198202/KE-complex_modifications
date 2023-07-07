@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle",
+  "title": "FrontmostIfEagle55",
   "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -202,6 +202,70 @@
           "to": [
             {
               "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_ToggleSidebarOnOff(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "T_ToggleSidebarOnOff(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t"
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui",
+                "left_option"
+              ]
             }
           ],
           "conditions": [
