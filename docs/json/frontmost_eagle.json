@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle44",
+  "title": "FrontmostIfEagle33",
   "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -66,7 +66,39 @@
       ]
     },
     {
-      "description": "O(オー)_Expansion(eagle)",
+      "description": "LeftOption + .[ピリオド]_pathFinderから開く(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "O[オー]_Expansion(eagle)",
       "manipulators": [
         {
           "type": "basic",
