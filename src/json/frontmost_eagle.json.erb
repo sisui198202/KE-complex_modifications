@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle33",
+    "title": "FrontmostIfEagle58",
     "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("period", ["left_option"]) %>,
-          "to": <%= to([["return", ["right_gui"]]]) %>,
+          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]

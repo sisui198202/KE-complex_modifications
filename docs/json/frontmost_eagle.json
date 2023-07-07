@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle33",
+  "title": "FrontmostIfEagle58",
   "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -80,7 +80,7 @@
           },
           "to": [
             {
-              "key_code": "return",
+              "key_code": "return_or_enter",
               "modifiers": [
                 "right_gui"
               ]
