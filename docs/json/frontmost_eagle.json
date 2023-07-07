@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle55",
+  "title": "FrontmostIfEagle44",
   "rules": [
     {
       "description": "LeftOption + O_Expansion(eagle)",
@@ -71,7 +71,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "o"
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -98,7 +103,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "i"
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -125,7 +135,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "j"
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -149,7 +164,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "k"
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -173,7 +193,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "h"
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -197,7 +222,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "l"
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -257,7 +287,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "t"
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
