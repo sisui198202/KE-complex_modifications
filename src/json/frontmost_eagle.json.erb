@@ -2,6 +2,17 @@
     "title": "FrontmostIfEagle",
     "rules": [
     {
+      "description": "LeftCommand + [_フォルダーを切り替える(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("[", ["left_control"]) %>,
+          "to": <%= to([["j", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
       "description": "LeftOption + O_Expansion(eagle)",
       "manipulators": [
         {
