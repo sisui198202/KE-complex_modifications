@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle98",
+  "title": "FrontmostIfEagle97",
   "rules": [
     {
       "description": "LeftCommand + [_フォルダーを切り替える(eagle)",
@@ -11,6 +11,38 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[_フォルダーを切り替える(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
               ]
             }
           },
@@ -48,7 +80,40 @@
           },
           "to": [
             {
-              "key_code": "j",
+              "key_code": "c",
+              "modifiers": [
+                "right_gui",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": ",[カンマ]_パスをコピー(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
               "modifiers": [
                 "right_gui",
                 "left_option"
