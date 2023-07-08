@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfEagle97",
+  "title": "FrontmostIfEagle96",
   "rules": [
     {
-      "description": "LeftCommand + [_フォルダーを切り替える(eagle)",
+      "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "description": "[_フォルダーを切り替える(eagle)",
+      "description": "openbracket_フォルダーを切り替える(eagle)",
       "manipulators": [
         {
           "type": "basic",
