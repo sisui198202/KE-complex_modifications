@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome11",
+  "title": "FrontmostIfChrome22",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -17,6 +17,35 @@
           "to": [
             {
               "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "L_RightArrow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
             }
           ],
           "conditions": [
@@ -410,12 +439,12 @@
       ]
     },
     {
-      "description": "L_PreviousTab(Chrome)",
+      "description": "Z_PreviousTab(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "z",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
