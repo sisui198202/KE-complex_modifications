@@ -1,0 +1,26 @@
+{
+  "title": "FrontmostIfPhotes",
+  "rules": [
+   {
+      "description": "Leftoption + Space_Enter(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
+          "to": <%= to([["return_or_enter"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+          "to": <%= to([["delete_forward"]]) %>,
+          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+        }
+      ]
+    }
+  ]
+}
