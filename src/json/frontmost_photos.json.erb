@@ -1,24 +1,14 @@
 {
-  "title": "FrontmostIfPhotes",
+  "title": "FrontmostIfPhotes99",
   "rules": [
-   {
-      "description": "Leftoption + Space_Enter(Replacekey)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
-          "to": <%= to([["return_or_enter"]]) %>
-        }
-      ]
-    },
     {
-      "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+      "description": "RightCommand + Space_delete_!Finder(photos)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
           "to": <%= to([["delete_forward"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          "conditions": [ <%= frontmost_application_if("photos") %> ]
         }
       ]
     }

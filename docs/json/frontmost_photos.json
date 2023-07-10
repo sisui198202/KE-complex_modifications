@@ -1,32 +1,8 @@
 {
-  "title": "FrontmostIfPhotes",
+  "title": "FrontmostIfPhotes99",
   "rules": [
     {
-      "description": "Leftoption + Space_Enter(Replacekey)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+      "description": "RightCommand + Space_delete_!Finder(photos)",
       "manipulators": [
         {
           "type": "basic",
@@ -48,9 +24,9 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com.apple.Photos$"
               ]
             }
           ]
