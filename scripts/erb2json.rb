@@ -293,6 +293,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   skitch_bundle_identifiers = [
     "^com.skitch.skitch$",
   ]
+  photos_bundle_identifiers = [
+    "^com.apple.Photos$",
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -385,6 +388,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(eagle_bundle_identifiers)
     when "skitch"
       bundle_identifiers.concat(skitch_bundle_identifiers)
+    when "photos"
+      bundle_identifiers.concat(photos_bundle_identifiers)
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end
