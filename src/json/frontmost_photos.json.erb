@@ -1,12 +1,12 @@
 {
-  "title": "FrontmostIfPhotes99",
+  "title": "FrontmostIfPhotes98",
   "rules": [
     {
-      "description": "RightCommand + Space_delete_!Finder(photos)",
+      "description": "RightCommand + Space_delete(photos)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+          "from": <%= from("spacebar", ["right_gui"]) %>,
           "to": <%= to([["delete_forward"]]) %>,
           "conditions": [ <%= frontmost_application_if("photos") %> ]
         }

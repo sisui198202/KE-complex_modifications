@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPhotes99",
+  "title": "FrontmostIfPhotes98",
   "rules": [
     {
-      "description": "RightCommand + Space_delete_!Finder(photos)",
+      "description": "RightCommand + Space_delete(photos)",
       "manipulators": [
         {
           "type": "basic",
@@ -11,9 +11,6 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
-              ],
-              "optional": [
-                "any"
               ]
             }
           },
