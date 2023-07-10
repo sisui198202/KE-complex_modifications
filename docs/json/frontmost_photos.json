@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPhotes98",
+  "title": "FrontmostIfPhotes97",
   "rules": [
     {
       "description": "RightCommand + Space_delete(photos)",
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "key_code": "delete_forward"
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [
