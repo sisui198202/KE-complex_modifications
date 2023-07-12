@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome2",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -69,28 +69,6 @@
       ]
     },
   {
-      "description": "Slash_PageUp(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("slash", ["caps_lock"]) %>,
-          "to": <%= to([["up_arrow", ["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-  {
-      "description": "B_PageDown(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("b", ["caps_lock"]) %>,
-          "to": <%= to([["down_arrow", ["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-  {
       "description": "X_BookMarkSearch(Chrome)",
       "manipulators": [
         {
@@ -113,22 +91,44 @@
       ]
     },
   {
-      "description": "O(オー)_拡大(Chrome)",
+      "description": "O(オー)_PageUp(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("o", ["caps_lock"]) %>,
+          "to": <%= to([["up_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+  {
+      "description": "i_PageDown(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["caps_lock"]) %>,
+          "to": <%= to([["down_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Slash_拡大(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("slash", ["caps_lock"]) %>,
           "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
   {
-      "description": "i_縮小(Chrome)",
+      "description": "B_縮小(Chrome)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["caps_lock"]) %>,
+          "from": <%= from("b", ["caps_lock"]) %>,
           "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
