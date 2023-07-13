@@ -1,12 +1,12 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview1",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("j") %>,
+          "from": <%= from("j",["caps_lock"]) %>,
           "to": <%= to([["down_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -18,7 +18,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "c"
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
