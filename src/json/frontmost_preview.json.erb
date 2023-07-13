@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview1",
+    "title": "FrontmostIfpreview2",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -57,7 +57,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h") %>,
+          "from": <%= from("h",["caps_lock"]) %>,
           "to": <%= to([["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -68,7 +68,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l") %>,
+          "from": <%= from("l",["caps_lock"]) %>,
           "to": <%= to([["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -79,7 +79,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m") %>,
+          "from": <%= from("m",["caps_lock"]) %>,
           "to": <%= to([["5", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -90,7 +90,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("n") %>,
+          "from": <%= from("n",["caps_lock"]) %>,
           "to": <%= to([["4", ["left_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -101,7 +101,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("p") %>,
+          "from": <%= from("p",["caps_lock"]) %>,
           "to": <%= to([["3", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -112,7 +112,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u") %>,
+          "from": <%= from("u",["caps_lock"]) %>,
           "to": <%= to([["z", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -123,7 +123,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b") %>,
+          "from": <%= from("b",["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -134,7 +134,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t") %>,
+          "from": <%= from("t",["caps_lock"]) %>,
           "to": <%= to([["2", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -145,7 +145,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("y") %>,
+          "from": <%= from("y",["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -156,7 +156,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d") %>,
+          "from": <%= from("d",["caps_lock"]) %>,
           "to": <%= to([["8", ["left_shift", "right_option","right_control"]],["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -167,7 +167,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o") %>,
+          "from": <%= from("o",["caps_lock"]) %>,
           "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -178,7 +178,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i") %>,
+          "from": <%= from("i",["caps_lock"]) %>,
           "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -189,7 +189,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z") %>,
+          "from": <%= from("z",["caps_lock"]) %>,
           "to": <%= to([["9", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -200,7 +200,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("w") %>,
+          "from": <%= from("w",["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -211,7 +211,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("equal_sign") %>,
+          "from": <%= from("equal_sign",["caps_lock"]) %>,
           "to": <%= to([["0", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -222,7 +222,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("r") %>,
+          "from": <%= from("r",["caps_lock"]) %>,
           "to": <%= set_shell_command(["open -a 'mi'"]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -233,7 +233,7 @@
       "manipulators": [
       {
       "type": "basic",
-      "from": <%= from("q") %>,
+      "from": <%= from("q",["caps_lock"]) %>,
       "to": <%= to([["2", ["right_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("preview") %> ]
       }
@@ -244,7 +244,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("open_bracket") %>,
+          "from": <%= from("open_bracket",["caps_lock"]) %>,
           "to": <%= to([["9", ["right_gui","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -255,7 +255,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("g") %>,
+          "from": <%= from("g",["caps_lock"]) %>,
           "to": <%= to([["w", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -266,7 +266,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("v") %>,
+          "from": <%= from("v",["caps_lock"]) %>,
           "to": <%= to([["t", ["right_gui","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -278,7 +278,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("f") %>,
+          "from": <%= from("f",["caps_lock"]) %>,
           "to": <%= to([["9", ["right_option","right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -289,7 +289,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s") %>,
+          "from": <%= from("s",["caps_lock"]) %>,
           "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -300,7 +300,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("x") %>,
+          "from": <%= from("x",["caps_lock"]) %>,
           "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -311,7 +311,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("0") %>,
+          "from": <%= from("0",["caps_lock"]) %>,
           "to": <%= to([["a", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -322,7 +322,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("hyphen") %>,
+          "from": <%= from("hyphen",["caps_lock"]) %>,
           "to": <%= to([["2", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -333,7 +333,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("period") %>,
+          "from": <%= from("period",["caps_lock"]) %>,
           "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -344,7 +344,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma") %>,
+          "from": <%= from("comma",["caps_lock"]) %>,
           "to": <%= to([["tab", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -355,14 +355,14 @@
     "manipulators": [
     {
       "type": "basic",
-      "from": <%= from("a") %>,
+      "from": <%= from("a",["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Music.app'"]) %>,
       "conditions": [ <%= frontmost_application_if("preview") %>]
     }
     ]
     },
     {
-      "description": "Semicolon + J_DownArrow-X3(preview)",
+      "description": "使用しない_Semicolon + J_DownArrow-X3(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -392,7 +392,7 @@
       ]
     },
     {
-      "description": "Quote_UpArrow-X3(preview)",
+      "description": "使用しない_Quote_UpArrow-X3(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -426,7 +426,7 @@
             "manipulators": [
               {
                 "type": "basic",
-                "from": <%= from("1") %>,
+                "from": <%= from("1",["caps_lock"]) %>,
       "to": [
          {
           "software_function": {
@@ -477,7 +477,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("e") %>,
+          "from": <%= from("e",["caps_lock"]) %>,
           "to": <%= to([["3", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -499,7 +499,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("slash") %>,
+          "from": <%= from("slash",["caps_lock"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -577,7 +577,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "close_bracket"
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
@@ -607,7 +612,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "backslash"
+            "key_code": "backslash",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
           },
           "to": [
             {
