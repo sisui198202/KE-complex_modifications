@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome4",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -84,7 +84,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["right_alt"]) %>,
+          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["period", "left_option"]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -194,7 +194,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("b", ["right_gui"]) %>,
+          "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -370,7 +370,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("c", ["left_alt"]) %>,
+          "from": <%= from("c", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f12", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -381,7 +381,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d", ["left_alt"]) %>,
+          "from": <%= from("d", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["i", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -392,7 +392,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h", ["right_alt"]) %>,
+          "from": <%= from("h", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["u", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -403,7 +403,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_alt"]) %>,
+          "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -414,7 +414,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["left_alt"]) %>,
+          "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
@@ -425,7 +425,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("u", ["left_alt"]) %>,
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
