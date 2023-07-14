@@ -1,6 +1,30 @@
 {
-  "title": "Replacekey",
+  "title": "Replacekey1",
   "rules": [
+    {
+      "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f12"
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "Leftoption + Space_Enter(Replacekey)",
       "manipulators": [
