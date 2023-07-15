@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle",
+  "title": "FrontmostIfEagle12",
   "rules": [
     {
       "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
@@ -513,12 +513,12 @@
       ]
     },
     {
-      "description": "LeftCommand + Z_すべて(eagle)",
+      "description": "LeftCommand + P_すべて(eagle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -548,12 +548,12 @@
       ]
     },
     {
-      "description": "Z_すべて(eagle)",
+      "description": "P_すべて(eagle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
