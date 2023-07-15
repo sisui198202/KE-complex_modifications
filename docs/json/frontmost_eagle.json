@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle14",
+  "title": "FrontmostIfEagle",
   "rules": [
     {
       "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
@@ -534,6 +534,70 @@
               "modifiers": [
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + Period_Pathfinderで開く(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(agle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code": "keyboard_fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
