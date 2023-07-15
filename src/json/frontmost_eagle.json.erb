@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle23",
+    "title": "FrontmostIfEagle35",
     "rules": [
     {
       "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
@@ -221,33 +221,14 @@
         }
       ]
     },
-
-    {
-      "description": "LeftControl_Rename(agle)",
+   {
+      "description": "LeftControl_Rename(eagle)",
       "manipulators": [
         {
           "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code":"keyboard_fn",
-          "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
+          "from": <%= from("keyboard_fn", ["caps_lock"]) %>,
+          "to": <%= to([["f2"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
     }
