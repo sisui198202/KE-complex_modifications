@@ -1,9 +1,15 @@
 {
-    "title": "ReplaceSummary",
+    "title": "ReplaceSummary123",
     "rules": [
     {
       "description": "ReplaceSummary",
       "manipulators": [
+          {
+            "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
+            "type": "basic",
+            "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["f12"]]) %>
+          },
           {
             "description": "Leftoption + Space_Enter(Replacekey)",
             "type": "basic",
