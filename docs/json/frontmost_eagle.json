@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle35",
+  "title": "FrontmostIfEagle",
   "rules": [
     {
       "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
@@ -647,14 +647,14 @@
       ]
     },
     {
-      "description": "LeftControl_Rename(eagle)",
+      "description": "LeftOption_Rename(eagle)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "keyboard_fn",
+            "apple_vendor_top_case_key_code": "keyboard_fn",
             "modifiers": {
-              "mandatory": [
+              "optional": [
                 "caps_lock"
               ]
             }
