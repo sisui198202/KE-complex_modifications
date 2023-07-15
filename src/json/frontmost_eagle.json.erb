@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle",
+    "title": "FrontmostIfEagle23",
     "rules": [
     {
       "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
@@ -184,6 +184,28 @@
           "type": "basic",
           "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+  {
+      "description": "Z_すべて(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "U_Undo(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u",["caps_lock"]) %>,
+          "to": <%= to([["z", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
