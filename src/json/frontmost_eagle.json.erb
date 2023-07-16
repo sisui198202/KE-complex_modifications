@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle",
+    "title": "FrontmostIfEagle98",
     "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -217,6 +217,28 @@
           "type": "basic",
           "from": <%= from("p", ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+   {
+      "description": "LeftCommand + CloseBracket_未分類(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+  {
+      "description": "CloseBracket_未分類(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]

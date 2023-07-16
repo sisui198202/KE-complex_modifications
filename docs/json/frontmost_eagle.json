@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle",
+  "title": "FrontmostIfEagle98",
   "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -627,6 +627,73 @@
           "to": [
             {
               "key_code": "1",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + CloseBracket_未分類(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "CloseBracket_未分類(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
               "modifiers": [
                 "right_gui"
               ]
