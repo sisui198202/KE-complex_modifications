@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle12",
+    "title": "FrontmostIfEagle",
     "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("m", ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "G_画像タグを追加(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g", ["caps_lock"]) %>,
+          "to": <%= to([["t", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]

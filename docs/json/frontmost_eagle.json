@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle12",
+  "title": "FrontmostIfEagle",
   "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -51,6 +51,38 @@
               "key_code": "right_arrow",
               "modifiers": [
                 "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "G_画像タグを追加(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],
