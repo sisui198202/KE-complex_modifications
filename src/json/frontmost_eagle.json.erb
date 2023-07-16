@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle99",
+    "title": "FrontmostIfEagle33",
     "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -24,23 +24,45 @@
       ]
     },
     {
-      "description": "G_画像タグを追加(eagle)",
+      "description": "G_Escape(eagle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("g", ["caps_lock"]) %>,
-          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "to": <%= to([["escape"]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
     },
     {
-      "description": "LeftCommand + G_画像タグを追加(eagle)",
+      "description": "LeftCommand + G_Escape(eagle)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("g", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "to": <%= to([["escape"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon_画像タグを追加(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["caps_lock"]) %>,
+          "to": <%= to([["t",["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Semicolon_画像タグを追加(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["t",["left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]

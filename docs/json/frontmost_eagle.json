@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle99",
+  "title": "FrontmostIfEagle33",
   "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "description": "G_画像タグを追加(eagle)",
+      "description": "G_Escape(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -80,10 +80,7 @@
           },
           "to": [
             {
-              "key_code": "t",
-              "modifiers": [
-                "right_gui"
-              ]
+              "key_code": "escape"
             }
           ],
           "conditions": [
@@ -98,7 +95,7 @@
       ]
     },
     {
-      "description": "LeftCommand + G_画像タグを追加(eagle)",
+      "description": "LeftCommand + G_Escape(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -115,9 +112,73 @@
           },
           "to": [
             {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon_画像タグを追加(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
               "key_code": "t",
               "modifiers": [
-                "right_gui"
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Semicolon_画像タグを追加(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "left_gui"
               ]
             }
           ],
