@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle98",
+  "title": "FrontmostIfEagle12",
   "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
+      "description": "LeftCommand + openbracket_すべて(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -80,7 +80,7 @@
           },
           "to": [
             {
-              "key_code": "j",
+              "key_code": "1",
               "modifiers": [
                 "right_gui"
               ]
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "description": "openbracket_フォルダーを切り替える(eagle)",
+      "description": "openbracket_すべて(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -112,7 +112,7 @@
           },
           "to": [
             {
-              "key_code": "j",
+              "key_code": "1",
               "modifiers": [
                 "right_gui"
               ]
@@ -577,7 +577,7 @@
       ]
     },
     {
-      "description": "LeftCommand + P_すべて(eagle)",
+      "description": "LeftCommand + P_フォルダーを切り替える(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -594,7 +594,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "j",
               "modifiers": [
                 "right_gui"
               ]
@@ -612,7 +612,7 @@
       ]
     },
     {
-      "description": "P_すべて(eagle)",
+      "description": "P_フォルダーを切り替える(eagle)",
       "manipulators": [
         {
           "type": "basic",
@@ -626,7 +626,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "j",
               "modifiers": [
                 "right_gui"
               ]
