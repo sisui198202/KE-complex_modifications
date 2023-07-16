@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel99",
+  "title": "FrontmostIfExcel98",
   "rules": [
     {
       "description": "LeftCommand + A_RowHeadCursol(Excel)",
@@ -555,7 +555,7 @@
       ]
     },
     {
-      "description": "LeftOption + U_CurrentRowToColumnSelection(Excel)",
+      "description": "LeftOption + U_CurrentRowToRowsSelection(Excel)",
       "manipulators": [
         {
           "type": "basic",
