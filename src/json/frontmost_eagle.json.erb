@@ -1,6 +1,28 @@
 {
-    "title": "FrontmostIfEagle12",
+    "title": "FrontmostIfEagle",
     "rules": [
+    {
+      "description": "N_HeadRowCursol(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["caps_lock"]) %>,
+          "to": <%= to([["left_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "M_EndRowCursol(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["caps_lock"]) %>,
+          "to": <%= to([["right_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftCommand + openbracket_フォルダーを切り替える(eagle)",
       "manipulators": [
