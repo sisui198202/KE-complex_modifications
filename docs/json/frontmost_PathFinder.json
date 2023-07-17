@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder35",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -560,7 +560,7 @@
       ]
     },
     {
-      "description": "RightCommand + L_Active_~/Dropbox/Summary(pathfinder)",
+      "description": "RightCommand + L_Active_~/マイドライブ/Summary(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -577,7 +577,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app' '/Users/user/Dropbox/Summary'"
+              "shell_command": "open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"
             }
           ],
           "conditions": [
