@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder35",
+  "title": "FrontmostIfPathFinder123",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -184,6 +184,17 @@
       "type": "basic",
       "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"]) %>,
+      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Semicolon_次のタブを選択(pathfinder)",
+      "manipulators": [
+        {
+      "type": "basic",
+      "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
+      "to": <%= to([["close_bracket", ["right_gui"]]]) %>,
       "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         }
       ]
