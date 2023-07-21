@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -152,11 +152,31 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftAlt + P_PythonDirectoryinfiles",
+          "description": "LeftAlt + P_日本語 → 英語[DeepL + Alfred]",
           "type": "basic",
           "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        },
+        {
+          "description": "RightAlt + P_英語 → 日本語[DeepL + Alfred]",
+          "type": "basic",
+          "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+        },
+        {
+          "description": "LeftCommand + P_Yoinkを手動で表示",
+          "type": "basic",
+          "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["f8", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+        },
+        {
+          "description": "RightAlt + Y_QuickEvernote",
+          "type": "basic",
+          "from": <%= from("y", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["left_control", "right_gui"]]]) %>
         },
         {
           "description": "RightAlt + D_SummaryDirectoryinfiles",
