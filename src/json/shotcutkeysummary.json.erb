@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
   {
       "description": "ShotCutKeySummary",
@@ -239,6 +239,13 @@
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+        },
+        {
+          "description": "LeftOption + Q_Paste Stackを有効にする",
+          "type": "basic",
+          "from": <%= from("q", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["f1", ["left_gui","right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %>]
         },
         {
           "description": "RightOption + X_コレクションを前面/背面に移動",
