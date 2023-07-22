@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey2",
+  "title": "ShotCutKey",
   "rules": [
   {
       "description": "RightCommand + A_NewFileCreate",
@@ -426,6 +426,17 @@
           "type": "basic",
           "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["f8", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("pararell") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + Q_Paste Stackを有効にする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["f1", ["left_shift","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("pararell") %>]
         }
       ]
