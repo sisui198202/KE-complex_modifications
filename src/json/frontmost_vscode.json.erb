@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode33",
+    "title": "FrontmostIfVscode",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -73,7 +73,7 @@
         {
           "type": "basic",
           "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["2", ["right_control"]]]) %>,
+          "to": <%= to([["3", ["right_gui","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
         ]
