@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle33",
+    "title": "FrontmostIfEagle",
     "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -41,6 +41,17 @@
           "type": "basic",
           "from": <%= from("g", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["escape"]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Quote_画像削除(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["caps_lock"]) %>,
+          "to": <%= to([["delete_or_backspace",["left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]

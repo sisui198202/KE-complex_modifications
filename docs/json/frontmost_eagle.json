@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEagle33",
+  "title": "FrontmostIfEagle",
   "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -113,6 +113,38 @@
           "to": [
             {
               "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Quote_画像削除(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": [
+                "left_gui"
+              ]
             }
           ],
           "conditions": [
