@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder1234",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -8,6 +8,17 @@
           "type": "basic",
           "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l", ["left_alt", "left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + O(オー)_一括名称変更(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["r", ["left_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
