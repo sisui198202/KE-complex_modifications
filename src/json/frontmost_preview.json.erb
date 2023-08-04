@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfpreview",
+    "title": "FrontmostIfpreview13",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -245,6 +245,17 @@
         {
           "type": "basic",
           "from": <%= from("open_bracket",["caps_lock"]) %>,
+          "to": <%= to([["9", ["right_gui","right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + OpenBracket[オープン角括弧]_ページ数指定(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket",["left_control"],["caps_lock"]) %>,
           "to": <%= to([["9", ["right_gui","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
