@@ -2,7 +2,7 @@
   "title": "ReplaceSummary90",
   "rules": [
     {
-      "description": "ReplaceSummary98",
+      "description": "ReplaceSummary90",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
