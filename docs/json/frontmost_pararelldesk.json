@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Single3",
+  "title": "FrontmostIfVirtual_Pararelldesk_Single4",
   "rules": [
     {
       "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
@@ -783,7 +783,7 @@
             "key_code": "right_gui",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
