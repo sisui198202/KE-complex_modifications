@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
       "manipulators": [
         {
           "description": "RightCommand + ._MaxWindow(VirtualMachine)",
@@ -923,7 +923,7 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                "right_option"
+                "left_option"
               ]
             }
           ],
