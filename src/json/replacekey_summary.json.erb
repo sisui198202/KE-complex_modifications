@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary",
+    "title": "ReplaceSummary3",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -15,13 +15,6 @@
             "type": "basic",
             "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
             "to": <%= to([["return_or_enter"]]) %>
-          },
-          {
-            "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
-            "type": "basic",
-            "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["japanese_eisuu"], ["delete_or_backspace"]]) %>,
-            "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
           },
           {
             "description": "LeftCommand + Rightoption_equal(Replacekey)",

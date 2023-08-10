@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary",
+  "title": "ReplaceSummary3",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -41,37 +41,6 @@
           "to": [
             {
               "key_code": "return_or_enter"
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
-              ]
             }
           ]
         },
