@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Single5",
+    "title": "FrontmostIfVirtual_Pararelldesk_Single6",
     "rules": [
 {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
@@ -191,7 +191,7 @@
           {
             "type": "basic",
             "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["1", "left_option"]]) %>,
+            "to": <%= to([["7", "left_option"]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
           }
         ]
@@ -331,12 +331,23 @@
       ]
     },
       {
-      "description": "LeftCommand + RightCommand_plus(VirtualMachine)",
+      "description": "LeftCommand + RightCommand_plus1(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("right_gui", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["left_option"]]]) %>,
+          "to": <%= to([["4", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        }
+      ]
+    },
+      {
+      "description": "LeftCommand + RightCommand_plus2(VirtualMachine)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         }
       ]
