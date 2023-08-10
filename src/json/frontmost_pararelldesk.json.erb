@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Single",
+    "title": "FrontmostIfVirtual_Pararelldesk_Single3",
     "rules": [
 {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
@@ -326,6 +326,17 @@
           "type": "basic",
           "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        }
+      ]
+    },
+      {
+      "description": "LeftCommand + RightCommand_plus(VirtualMachine)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("right_gui", ["left_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         }
       ]
