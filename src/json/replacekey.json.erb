@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey1",
+  "title": "Replacekey",
   "rules": [
    {
       "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
@@ -11,7 +11,7 @@
         }
       ]
     },
-   {
+    {
       "description": "Leftoption + Space_Enter(Replacekey)",
       "manipulators": [
         {
@@ -22,15 +22,15 @@
       ]
     },
     {
-      "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
+      "description": "LeftCommand + space_BackSpace(Replacekey)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["delete_or_backspace"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("finder") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         }
-      ]
+        ]
     },
     {
       "description": "LeftCommand + Rightoption_equal(Replacekey)",
