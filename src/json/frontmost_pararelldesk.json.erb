@@ -186,17 +186,6 @@
         ]
       },
       {
-        "description": "LeftShift + ;_colon(VirtualMachine)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("semicolon", ["left_shift"], ["caps_lock"]) %>,
-            "to": <%= to([["semicolon", "left_shift"]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
-          }
-        ]
-      },
-      {
         "description": "RightCommand + ._MaxWindows(VirtualMachine)",
         "manipulators": [
           {
@@ -371,6 +360,17 @@
           "from": <%= from("fn") %>,
           "to": <%= to([["f2"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        }
+      ]
+    },
+    {
+      "description": "うまくいかない-LeftShift + ;_colon(VirtualMachine)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["semicolon", "left_shift"]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
         }
       ]
     },
