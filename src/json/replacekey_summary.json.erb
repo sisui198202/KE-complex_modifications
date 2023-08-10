@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary99",
+    "title": "ReplaceSummary",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -21,7 +21,7 @@
             "type": "basic",
             "from": <%= from("spacebar", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["japanese_eisuu"], ["delete_or_backspace"]]) %>,
-            "conditions": [ <%= frontmost_application_unless("finder") %> ]
+            "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
           },
           {
             "description": "LeftCommand + Rightoption_equal(Replacekey)",
