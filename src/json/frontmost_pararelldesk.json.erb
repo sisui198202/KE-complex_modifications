@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Single7",
+    "title": "FrontmostIfVirtual_Pararelldesk_Single8",
     "rules": [
 {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
@@ -364,12 +364,23 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado(VirtualMachine)",
+      "description": "Rightoption + Leftoption_anbasado1(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("left_alt", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado2(VirtualMachine)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["7", ["left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Single7",
+  "title": "FrontmostIfVirtual_Pararelldesk_Single8",
   "rules": [
     {
       "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
@@ -901,7 +901,7 @@
       ]
     },
     {
-      "description": "Rightoption + Leftoption_anbasado(VirtualMachine)",
+      "description": "Rightoption + Leftoption_anbasado1(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -921,6 +921,49 @@
               "key_code": "3",
               "modifiers": [
                 "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Rightoption + Leftoption_anbasado2(VirtualMachine)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "left_shift"
               ]
             }
           ],
