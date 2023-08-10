@@ -1,9 +1,48 @@
 {
-  "title": "ReplaceSummary4",
+  "title": "ReplaceSummary",
   "rules": [
     {
-      "description": "ReplaceSummary4",
+      "description": "ReplaceSummary",
       "manipulators": [
+        {
+          "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
         {
           "description": "LeftCommand + (オ-)_スクショ(Replacekey)",
           "type": "basic",
