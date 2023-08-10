@@ -5,7 +5,7 @@
       "description": "ReplaceSummary",
       "manipulators": [
         {
-          "description": "LeftCommand + space_BackSpace_!Finder(Replacekey)",
+          "description": "LeftCommand + space_BackSpace(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "spacebar",
