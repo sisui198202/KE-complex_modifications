@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Single99",
+  "title": "FrontmostIfVirtual_Pararelldesk_Single",
   "rules": [
     {
       "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(VirtualMachine)",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "description": "LeftShift + ;_plus(VirtualMachine)",
+      "description": "LeftShift + ;_colon(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
@@ -233,7 +233,7 @@
           },
           "to": [
             {
-              "key_code": "equal_sign",
+              "key_code": "semicolon",
               "modifiers": "left_shift"
             }
           ],
