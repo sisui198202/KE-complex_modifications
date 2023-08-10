@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary",
+  "title": "ReplaceSummary90",
   "rules": [
     {
-      "description": "ReplaceSummary",
+      "description": "ReplaceSummary98",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -109,7 +109,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -168,7 +176,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -263,7 +279,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -377,13 +401,21 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
         },
         {
-          "description": "Rightoption + Leftoption_anbasado_unless_pararell(Replacekey)",
+          "description": "Rightoption + Leftoption_anbasado(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "left_alt",
@@ -511,7 +543,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -543,7 +583,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
@@ -565,6 +613,22 @@
           "to": [
             {
               "key_code": "hyphen"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
             }
           ]
         },
@@ -883,19 +947,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
                 "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
-                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
               ]
             }
           ]
@@ -916,9 +976,6 @@
           },
           "to": [
             {
-              "key_code": "japanese_eisuu"
-            },
-            {
               "key_code": "semicolon",
               "modifiers": [
                 "left_shift"
@@ -929,19 +986,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
                 "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$",
-                "^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
-                "^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$"
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
               ]
             }
           ]
