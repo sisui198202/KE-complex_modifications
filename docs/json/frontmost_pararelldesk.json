@@ -1,47 +1,6 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Single4",
+  "title": "FrontmostIfVirtual_Pararelldesk_Single",
   "rules": [
-    {
-      "description": "LeftOption + slash_ExploerActive(VirtualMachine)4",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "うまくいかない-LeftShift + ;_colon(VirtualMachine)",
       "manipulators": [

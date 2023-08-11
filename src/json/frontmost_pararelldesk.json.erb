@@ -1,17 +1,6 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Single4",
+    "title": "FrontmostIfVirtual_Pararelldesk_Single",
     "rules": [
-    {
-      "description": "LeftOption + slash_ExploerActive(VirtualMachine)4",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("slash", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["2", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
-        }
-      ]
-    },
     {
       "description": "うまくいかない-LeftShift + ;_colon(VirtualMachine)",
       "manipulators": [

@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
       "manipulators": [
+          {
+        "description": "LeftOption + slash_ExploerActive(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("slash", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["2", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+          },
           {
               "description": "RightCommand + ._MaxWindow(VirtualMachine)",
               "type": "basic",
