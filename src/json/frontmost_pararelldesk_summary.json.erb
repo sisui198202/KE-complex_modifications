@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
       "manipulators": [
           {
               "description": "RightCommand + ._MaxWindow(VirtualMachine)",
@@ -273,31 +273,31 @@
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
-         "description": "RightCommand + Z_0[ゼロ](VirtualMachine)1",
+         "description": "RightCommand + Z_0[ゼロ](VirtualMachine)",
           "type": "basic",
           "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["2", ["left_option"]]]) %>,
+          "to": <%= to([["0"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + X_1(VirtualMachine)",
           "type": "basic",
           "from": <%= from("x", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"],["8", ["left_option"]]]) %>,
+          "to": <%= to([["1"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + C_2(VirtualMachine)",
           "type": "basic",
           "from": <%= from("c", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["9", ["left_option"]]]) %>,
+          "to": <%= to([["2"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + V_3(VirtualMachine)",
           "type": "basic",
           "from": <%= from("v", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["0", ["left_option"]]]) %>,
+          "to": <%= to([["3"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
