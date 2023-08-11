@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1",
+  "title": "ShotCutKeySummary99",
   "rules": [
   {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary99",
       "manipulators": [
         {
           "description": "RightCommand + A_NewFileCreate",
@@ -156,14 +156,14 @@
           "type": "basic",
           "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["9", ["right_alt", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + P_英語 → 日本語[DeepL + Alfred]",
           "type": "basic",
           "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + P_Yoinkを手動で表示",
