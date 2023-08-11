@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
     {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + A_NewFileCreate",
