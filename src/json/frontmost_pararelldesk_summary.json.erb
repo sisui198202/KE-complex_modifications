@@ -313,6 +313,55 @@
           "from": <%= from("fn") %>,
           "to": <%= to([["f2"]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "LeftCommand + RightCommand_plus(VirtualMachine)",
+        "type": "basic",
+        "from": <%= from("right_gui", ["left_control"], ["caps_lock"]) %>,
+        "to": <%= to([["equal_sign", ["left_shift"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "LeftCommand + RightOption_equal(VirtualMachine)",
+        "type": "basic",
+        "from": <%= from("right_option", ["left_control"], ["caps_lock"]) %>,
+        "to": <%= to([["equal_sign"]]) %>,
+        "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+         "description": "Leftoption + Rightoption_parsent(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("right_alt", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["5", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+          "description": "Rightoption + Leftoption_anbasado(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("left_alt", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["7", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "RightCommand + LeftCommand_underbar(VirtualMachine)",
+        "type": "basic",
+        "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
+        "to": <%= to([["japanese_eisuu"], ["hyphen", "right_shift"]]) %>,
+        "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "Leftoption + Rightcommand_hypen(VirtualMachine)",
+        "type": "basic",
+        "from": <%= from("right_gui", ["left_alt"], ["caps_lock"]) %>,
+        "to": <%= to([["hyphen"]]) %>,
+        "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "RightCommand + Leftoption_backslash(VirtualMachine)",
+        "type": "basic",
+        "from": <%= from("left_alt", ["right_gui"], ["caps_lock"]) %>,
+        "to": <%= to([["backslash"]]) %>,
+        "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         }
       ]
         }
