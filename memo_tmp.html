@@ -2008,6 +2008,276 @@ Capslockオン時に、「j」キーで、CapsLockerのアイコンが表示さ�
     },
 </div></code></pre>
 <hr>
+<h2 id="replacekeyjsonerb">replacekey.json.erb</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_簡易版(Replacekey)&quot;,
+  &quot;manipulators&quot;:
+  &lt;%= each_key(
+        source_keys_list: [&quot;z&quot;, &quot;x&quot;, &quot;c&quot;, &quot;v&quot;, &quot;s&quot;, &quot;d&quot;, &quot;f&quot;, &quot;w&quot;, &quot;e&quot;, &quot;r&quot;],
+        from_mandatory_modifiers: [&quot;right_gui&quot;],
+        from_optional_modifiers: [&quot;caps_lock&quot;],
+        dest_keys_list: [[&quot;japanese_eisuu&quot;, &quot;0&quot;], [&quot;japanese_eisuu&quot;, &quot;1&quot;], [&quot;japanese_eisuu&quot;, &quot;2&quot;], [&quot;japanese_eisuu&quot;, &quot;3&quot;], [&quot;japanese_eisuu&quot;, &quot;4&quot;], [&quot;japanese_eisuu&quot;, &quot;5&quot;], [&quot;japanese_eisuu&quot;, &quot;6&quot;], [&quot;japanese_eisuu&quot;, &quot;7&quot;], [&quot;japanese_eisuu&quot;, &quot;8&quot;], [&quot;japanese_eisuu&quot;, &quot;9&quot;]],
+        as_json: true,
+      ) %&gt;
+},
+    {
+  &quot;description&quot;: &quot;RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_詳細版(Replacekey)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;z&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;0&quot;
+        }
+      ],
+                &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_unless&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.parallels.desktop.console$&quot;,
+            &quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,
+            &quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;x&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;1&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;c&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;2&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;v&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;3&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;s&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;4&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;d&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;5&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;f&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;6&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;w&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;7&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;e&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;8&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;r&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;9&quot;
+        }
+      ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="replacekeyjsonerb">replacekey.json.erb</h2>
+<pre><code>    {
+  &quot;description&quot;: &quot;LeftCommand + H/J/K/L_Arrows(Replacekey)&quot;,
+  &quot;manipulators&quot;:
+  &lt;%= each_key(
+        source_keys_list: [&quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;],
+        from_mandatory_modifiers: [&quot;left_control&quot;],
+        from_optional_modifiers: [&quot;any&quot;],
+        dest_keys_list: [&quot;left_arrow&quot;, &quot;down_arrow&quot;, &quot;up_arrow&quot;, &quot;right_arrow&quot;],
+        as_json: true,
+      ) %&gt;
+    },
+</code></pre>
+<hr>
 
 </body>
 </html>
