@@ -1,305 +1,313 @@
 {
-  "title": "FunctionKey",
+  "title": "FunctionKey1",
   "rules": [
-        {
-            "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f11",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "open '/Users/user/Dropbox/Password/server_ftp_password.ini'"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "f11 pressed",
-                            "value": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f11",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "f11 pressed",
-                                "value": 1
-                            }
-                        },
-                        {
-                            "shell_command": "open '/Users/user/Dropbox/Password/PasswordList.INI'"
-                        }
-                    ],
-                    "to_delayed_action": {
-                        "to_if_invoked": [
-                            {
-                                "set_variable": {
-                                    "name": "f11 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ],
-                        "to_if_canceled": [
-                            {
-                                "set_variable": {
-                                    "name": "f11 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "description": "Double F5_.zshrc_aliassettingfileOpen(FunctionKey)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f5",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "open '/Users/user/.zshrc'"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "f5 pressed",
-                            "value": 1
-                        },
-                                    {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
-              ]
-            }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f5",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "f5 pressed",
-                                "value": 1
-                            }
-                        },
-                        {
-                            "shell_command": "open '/Users/user/.zsh/alias_setting.zsh'"
-                        }
-                    ],
-                    "conditions": [
-                                    {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
-              ]
-            }
-                    ],
-                    "to_delayed_action": {
-                        "to_if_invoked": [
-                            {
-                                "set_variable": {
-                                    "name": "f5 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ],
-                        "to_if_canceled": [
-                            {
-                                "set_variable": {
-                                    "name": "f5 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-  {
-      "description": "F2_Rename(FunctionKey)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("f2") %>,
-          "to": <%= to([["return_or_enter"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        }
-      ]
-    },
-{
-    "description": "Double F3_.KeyManageListOpen(FunctionKey)",
+    {
+    "description": "F1_tmp.pyOpen(FunctionKey)",
     "manipulators": [
         {
-            "type": "basic",
-            "from": {
-                "key_code": "f3",
-                "modifiers": {
-                    "optional": [
-                        "any"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Pararellwindows.xlsx'"
-                }
-            ],
-            "conditions": [
-                {
-                    "type": "variable_if",
-                    "name": "f3 pressed",
-                    "value": 1
-                },
-                            {
-      "type": "frontmost_application_unless",
-      "bundle_identifiers": [
-        "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
-      ]
-    }
-            ]
-        },
-        {
-            "type": "basic",
-            "from": {
-                "key_code": "f3",
-                "modifiers": {
-                    "optional": [
-                        "any"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "set_variable": {
-                        "name": "f3 pressed",
-                        "value": 1
-                    }
-                },
-                {
-                    "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Mac.xlsm'"
-                }
-            ],
-            "conditions": [
-                            {
-      "type": "frontmost_application_unless",
-      "bundle_identifiers": [
-        "^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$"
-      ]
-    }
-            ],
-            "to_delayed_action": {
-                "to_if_invoked": [
-                    {
-                        "set_variable": {
-                            "name": "f3 pressed",
-                            "value": 0
-                        }
-                    }
-                ],
-                "to_if_canceled": [
-                    {
-                        "set_variable": {
-                            "name": "f3 pressed",
-                            "value": 0
-                        }
-                    }
-                ]
-            }
+        "type": "basic",
+        "from": <%= from("f1") %>,
+        "to": <%= set_shell_command(["open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'"]) %>,
+        "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         }
     ]
-},
-  {
+    },
+    {
       "description": "RightShift + F1_MokuziKugiriCreate.exe(FunctionKey)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("f1", ["right_shift"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open '/Users/user/MacWindowShare/MokuziKugiriCreate.exe'"]) %>
+          "to": <%= set_shell_command(["open '/Users/user/MacWindowShare/MokuziKugiriCreate.exe'"]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         }
       ]
     },
-{
-  "description": "F4_Rule.mdOpen(FunctionKey)",
-  "manipulators": [
     {
-      "type": "basic",
-      "from": <%= from("f4") %>,
-      "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール/rule.md'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("excel") %>]
-    }
-  ]
-},
-{
-  "description": "F1_tmp.pyOpen(FunctionKey)",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": <%= from("f1") %>,
-      "to": <%= set_shell_command(["open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
-    }
-  ]
-},
-    {
-      "description": "F6_Evernoteクイックノート(FunctionKey)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "f6",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
+        "description": "F2_Rename(FunctionKey)",
+        "manipulators": [
             {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui",
-                "right_control"
-              ]
+            "type": "basic",
+            "from": <%= from("f2") %>,
+            "to": <%= to([["return_or_enter"]]) %>,
+            "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
             }
-          ]
+        ]
+    },
+    {
+        "description": "Double F3_.KeyManageListOpen(FunctionKey)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f3",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Pararellwindows.xlsx'"
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f3 pressed",
+                        "value": 1
+                    },
+                                {
+        "type": "frontmost_application_unless",
+        "bundle_identifiers": [
+                    "^com.vmware.fusion$",
+                    "^com.vmware.horizon$",
+                    "^com.vmware.view$",
+                    "^com.parallels.desktop$",
+                    "^com.parallels.vm$",
+                    "^com.parallels.desktop.console$",
+                    "^org.virtualbox.app.VirtualBoxVM$",
+                    "^com.vmware.proxyApp.",
+                    "^com.parallels.winapp."
+        ]
         }
-      ]
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f3",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
+                            "name": "f3 pressed",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Mac.xlsm'"
+                    }
+                ],
+                "conditions": [
+                                {
+        "type": "frontmost_application_unless",
+        "bundle_identifiers": [
+                    "^com.vmware.fusion$",
+                    "^com.vmware.horizon$",
+                    "^com.vmware.view$",
+                    "^com.parallels.desktop$",
+                    "^com.parallels.vm$",
+                    "^com.parallels.desktop.console$",
+                    "^org.virtualbox.app.VirtualBoxVM$",
+                    "^com.vmware.proxyApp.",
+                    "^com.parallels.winapp."
+        ]
+        }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                        {
+                            "set_variable": {
+                                "name": "f3 pressed",
+                                "value": 0
+                            }
+                        }
+                    ],
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f3 pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+    "description": "F4_Rule.mdOpen(FunctionKey)",
+    "manipulators": [
+        {
+        "type": "basic",
+        "from": <%= from("f4") %>,
+        "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール/rule.md'"]) %>,
+        "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+        }
+    ]
+    },
+    {
+        "description": "Double F5_.zshrc_aliassettingfileOpen(FunctionKey)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f5",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open '/Users/user/.zshrc'"
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f5 pressed",
+                        "value": 1
+                    },
+                                {
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+            "^com.vmware.fusion$",
+            "^com.vmware.horizon$",
+            "^com.vmware.view$",
+            "^com.parallels.desktop$",
+            "^com.parallels.vm$",
+            "^com.parallels.desktop.console$",
+            "^org.virtualbox.app.VirtualBoxVM$",
+            "^com.vmware.proxyApp.",
+            "^com.parallels.winapp."
+            ]
+        }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f5",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
+                            "name": "f5 pressed",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "shell_command": "open '/Users/user/.zsh/alias_setting.zsh'"
+                    }
+                ],
+                "conditions": [
+                                {
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+            "^com.vmware.fusion$",
+            "^com.vmware.horizon$",
+            "^com.vmware.view$",
+            "^com.parallels.desktop$",
+            "^com.parallels.vm$",
+            "^com.parallels.desktop.console$",
+            "^org.virtualbox.app.VirtualBoxVM$",
+            "^com.vmware.proxyApp.",
+            "^com.parallels.winapp."
+            ]
+        }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                        {
+                            "set_variable": {
+                                "name": "f5 pressed",
+                                "value": 0
+                            }
+                        }
+                    ],
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f5 pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "description": "Double F11_GeneralPassword_serverPassword_fileOpen(FunctionKey)",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f11",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open '/Users/user/Dropbox/Password/server_ftp_password.ini'"
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f11 pressed",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f11",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
+                            "name": "f11 pressed",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "shell_command": "open '/Users/user/Dropbox/Password/PasswordList.INI'"
+                    }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                        {
+                            "set_variable": {
+                                "name": "f11 pressed",
+                                "value": 0
+                            }
+                        }
+                    ],
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f11 pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     }
   ]
 }
