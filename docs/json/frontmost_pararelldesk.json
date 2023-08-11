@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Single3",
+  "title": "FrontmostIfVirtual_Pararelldesk_Single4",
   "rules": [
     {
-      "description": "LeftOption + slash_ExploerActive(VirtualMachine)3",
+      "description": "LeftOption + slash_ExploerActive(VirtualMachine)4",
       "manipulators": [
         {
           "type": "basic",
@@ -19,7 +19,7 @@
           },
           "to": [
             {
-              "key_code": "0",
+              "key_code": "2",
               "modifiers": "left_option"
             }
           ],
