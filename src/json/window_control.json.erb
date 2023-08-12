@@ -1,8 +1,8 @@
 {
-  "title": "WindowControl",
+  "title": "WindowControl99",
   "rules": [
     {
-      "description": "LeftControl + ~_WindowsControl",
+      "description": "LeftControl + ~_WindowsControl99",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -81,13 +81,15 @@
       "description": "RightCommand + P_RightHalfWindowMove",
       "type": "basic",
       "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
-      "to": <%= to([["3", ["right_alt"]]]) %>
+      "to": <%= to([["3", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
     },
     {
       "description": "LeftCommand + Q_LeftHalfWindowMove",
       "type": "basic",
       "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= to([["2", ["right_alt"]]]) %>
+      "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
     },
     {
       "description": "LeftControl + L_RightHalfWindowMove",
