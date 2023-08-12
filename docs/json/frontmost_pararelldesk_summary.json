@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary35",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary34",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)35",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)34",
       "manipulators": [
         {
           "description": "RightCommand + P_RightHalfWindowMove",
