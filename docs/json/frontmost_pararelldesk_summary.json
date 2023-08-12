@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary22",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary11",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)22",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)11",
       "manipulators": [
         {
           "description": "LeftOption + Comma_copyFilePath(VirtualMachine)",
@@ -22,7 +22,7 @@
             {
               "key_code": "8",
               "modifiers": [
-                "right_option"
+                "left_option"
               ]
             }
           ],
