@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary33",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary22",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)33",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)22",
       "manipulators": [
+          {
+            "description": "LeftOption + Comma_copyFilePath(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("comma", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
           {
         "description": "LeftOption + slash_ExploerActive(VirtualMachine)",
             "type": "basic",
