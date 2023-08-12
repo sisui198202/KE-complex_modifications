@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary98",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)98",
@@ -221,6 +221,13 @@
           "type": "basic",
           "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["right_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        "description": "RightCommand + /_expansion-SameWordExpandSelection(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["3", ["left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
