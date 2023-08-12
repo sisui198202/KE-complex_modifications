@@ -2,7 +2,7 @@
   "title": "FrontmostIfVirtual_Pararelldesk_Single2",
   "rules": [
     {
-      "description": "LeftCommand + R_メモ帳アクティブ(VirtualMachine)",
+      "description": "使用しない-LeftCommand + R_メモ帳アクティブ(VirtualMachine)",
       "manipulators": [
         {
           "type": "basic",
