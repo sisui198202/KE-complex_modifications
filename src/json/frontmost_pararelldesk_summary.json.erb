@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary11",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary2",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)11",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)2",
       "manipulators": [
           {
             "description": "RightCommand + Y_カレント行/列削除(Excel)",
@@ -29,7 +29,7 @@
             "description": "RightCommand + J_1RowSelect(VirtualMachine)",
             "type": "basic",
             "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["1", ["right_option"]]]) %>,
+            "to": <%= to([["1", ["left_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
