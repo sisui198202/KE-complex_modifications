@@ -1,25 +1,25 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary77",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary66",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)77",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)66",
       "manipulators": [
           {
-            "description": "RightCommand + Y_カレント行/列削除(Excel)",
+            "description": "RightCommand + Y_カレント行/列削除(VirtualMachine)",
             "type": "basic",
             "from": <%= from("y", ["right_gui"]) %>,
             "to": <%= to([["0", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
-            "description": "LeftCommand + Q_LeftHalfWindowMove",
+            "description": "LeftCommand + Q_LeftHalfWindowMove(VirtualMachine)",
             "type": "basic",
             "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
-            "description": "RightCommand + P_RightHalfWindowMove",
+            "description": "RightCommand + P_RightHalfWindowMove(VirtualMachine)",
             "type": "basic",
             "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["3", ["right_option"]]]) %>,
