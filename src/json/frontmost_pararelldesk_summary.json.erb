@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary34",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary4",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)34",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)4",
       "manipulators": [
           {
             "description": "RightCommand + P_RightHalfWindowMove",
@@ -304,7 +304,7 @@
           "description": "RightCommand + J_1RowSelect(VirtualMachine)",
           "type": "basic",
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["left_option"]]]) %>,
+          "to": <%= to([["2", ["right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
