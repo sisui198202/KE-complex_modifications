@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary11",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)11",
       "manipulators": [
           {
             "description": "RightCommand + Y_カレント行/列削除(Excel)",
@@ -15,14 +15,21 @@
             "description": "RightCommand + P_RightHalfWindowMove",
             "type": "basic",
             "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["3", ["right_alt"]]]) %>,
+            "to": <%= to([["3", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
             "description": "LeftCommand + Q_LeftHalfWindowMove",
             "type": "basic",
             "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["2", ["right_alt"]]]) %>,
+            "to": <%= to([["2", ["right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "RightCommand + J_1RowSelect(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
@@ -305,13 +312,6 @@
           "type": "basic",
           "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["9", ["right_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-        },
-        {
-          "description": "RightCommand + J_1RowSelect(VirtualMachine)",
-          "type": "basic",
-          "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["2", ["right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
