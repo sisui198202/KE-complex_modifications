@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel90",
     "rules": [
    {
       "description": "LeftCommand + A_最初の列へカーソル(Excel)",
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_HeadRowCursol(Excel通常画面)",
+      "description": "LeftCommand + N_HeadRowCursol(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_EndRowCursol(Excel通常画面)",
+      "description": "LeftCommand + M_EndRowCursol(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -46,29 +46,7 @@
       ]
     },
     {
-      "description": "LeftAlt + N_HeadRowCursol(ExcelVBE)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("n", ["left_alt"]) %>,
-          "to": <%= to([["left_arrow", ["fn", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + M_EndRowCursol(ExcelVBE)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("m", ["left_alt"]) %>,
-          "to": <%= to([["right_arrow", ["fn", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + U_CurrentRowToRowsSelection(Excel)",
+      "description": "LeftOption + U_最終行カーソル移動-Ctrl + ↓(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -79,7 +57,18 @@
       ]
     },
     {
-      "description": "RightOption + T_SheetDelete(Excel)",
+      "description": "LeftOption + A_新規シート挿入(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_option"]) %>,
+          "to": <%= to([["f11", ["right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + T_シート削除(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -112,23 +101,23 @@
       ]
     },
     {
-      "description": "LeftOption + A_新規シート挿入(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["left_option"]) %>,
-          "to": <%= to([["f11", ["right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
       "description": "RightOption + Q_すべてのウィンドウを並び替え(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("q", ["right_option"]) %>,
           "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + R_Replace(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["h", ["right_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -144,57 +133,46 @@
         }
       ]
     },
-    {
-      "description": "LeftOption + period_ProcedureNextMove(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("period", ["left_option"]) %>,
-          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + comma_ProcedurePreviousMove(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("comma", ["left_option"]) %>,
-          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + OpenBracket_モジュール間移動(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("open_bracket", ["left_control"]) %>,
-          "to": <%= to([["f6", ["left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + CloseBracket_unindent(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("close_bracket", ["left_control"]) %>,
-          "to": <%= to([["tab", ["left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
    {
-      "description": "RightCommand + U_ColumnSelection(Excel)",
+      "description": "RightCommand + U_カレント列選択(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("u", ["right_gui"]) %>,
           "to": <%= to([["spacebar", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + J_カレント行選択(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j", ["right_gui"]) %>,
+          "to": <%= to([["spacebar", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+   {
+      "description": "RightCommand + Y_カレント列削除(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y", ["right_gui"]) %>,
+          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_カレント行追加(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"]) %>,
+          "to": <%= to([["equal_sign", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -210,7 +188,7 @@
         }
       ]
     },
-   {
+    {
       "description": "RightCommand + L_PreviousTab(Excel)",
       "manipulators": [
         {
@@ -221,47 +199,13 @@
         }
       ]
     },
-   {
+    {
       "description": "RightCommand + semicolon_NextTab(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
           "to": <%= to([["right_arrow", ["left_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + B_Build(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("b", ["right_gui"]) %>,
-          "to": <%= to([["f5"]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-  {
-      "description": "RightCommand + J_1RowSelect(Excel)",
-      "_comment": "Excel通常画面で使用",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("j", ["right_gui"]) %>,
-          "to": <%= to([["spacebar", ["left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
- {
-      "description": "RightCommand + Y_SelectRowColumnDelete(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("y", ["right_gui"]) %>,
-          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -302,105 +246,6 @@
       ]
     },
     {
-      "description": "RightAlt + C_VBE-Copy(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["c", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + V_VBE-Paste(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["v", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-},
-{
-      "description": "RightOption + X_VisualBasic(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["f11", ["right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "F8_StepIn(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("F8") %>,
-          "to": <%= to([["i", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
- {
-      "description": "LeftCommand + T_SelectRowColumnAdd(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("t", ["left_control"]) %>,
-          "to": <%= to([["equal_sign", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + P_BreakPointSet(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("p", ["left_control"]) %>,
-          "to": <%= to([["t", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + i_ImmediateWindow(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("i", ["left_alt"]) %>,
-          "to": <%= to([["g", ["right_gui", "left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "F9_StepOver(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("f9") %>,
-          "to": <%= to([["o", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "F10_StepOut(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("f10") %>,
-          "to": <%= to([["t", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
       "description": "LeftShift + RightOption_形式を選択して貼り付け(Excel)",
       "manipulators": [
         {
@@ -412,13 +257,82 @@
       ]
     },
     {
-      "description": "LeftAlt + R_Replace(Excel)",
+      "description": "RightOption + X_VBE切替(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["h", ["right_gui", "left_shift"]]]) %>,
+          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["f11", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+            "description": "Leftoption+Openbracket_クイックアクセスツールバーの画像挿入クリック(Excel)",
+            "manipulators": [
+              {
+                "type": "basic",
+           "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+      "to": [
+         {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "220",
+              "y": "35",
+              "screen": 0
+            }
+          }
+        },
+        { "pointing_button": "button1" }
+],
+"conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+              "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+              }
+            ]
+          },
+    {
+      "description": "LeftContorl_CellEdit(Excel)",
+      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -525,8 +439,162 @@
     }
  ]
 },
+    {
+      "description": "LeftAlt + N_HeadRowCursol(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_alt"]) %>,
+          "to": <%= to([["left_arrow", ["fn", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + M_EndRowCursol(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_alt"]) %>,
+          "to": <%= to([["right_arrow", ["fn", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + period_ProcedureNextMove(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["left_option"]) %>,
+          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + comma_ProcedurePreviousMove(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_option"]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + OpenBracket_モジュール間移動(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_control"]) %>,
+          "to": <%= to([["f6", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + CloseBracket_unindent(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["left_control"]) %>,
+          "to": <%= to([["tab", ["left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + B_Build(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["right_gui"]) %>,
+          "to": <%= to([["f5"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + C_VBE-Copy(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["c", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + V_VBE-Paste(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["v", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+},
+    {
+      "description": "F8_StepIn(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("F8") %>,
+          "to": <%= to([["i", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "F9_StepOver(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f9") %>,
+          "to": <%= to([["o", ["right_gui", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "F10_StepOut(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("f10") %>,
+          "to": <%= to([["t", ["right_gui", "left_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + P_BreakPointSet(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("p", ["left_control"]) %>,
+          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + i_ImmediateWindow(ExcelVBE)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["left_alt"]) %>,
+          "to": <%= to([["g", ["right_gui", "left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
 {
-  "description": "RightOption + Z_VBE-FromExcelMouse(Excel)",
+  "description": "RightOption + Z_VBE-FromExcelMouse(ExcelVBE)",
   "manipulators": [
     {
       "type": "basic",
@@ -553,75 +621,6 @@
 ]
     }
   ]
-},
-    {
-      "description": "LeftContorl_CellEdit(Excel)",
-      "_comment": "Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f2"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-{
-            "description": "Leftoption+Openbracket_クイックアクセスツールバーの画像挿入クリック(Excel)",
-            "manipulators": [
-              {
-                "type": "basic",
-           "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-      "to": [
-         {
-          "software_function": {
-            "set_mouse_cursor_position": {
-              "x": "220",
-              "y": "35",
-              "screen": 0
-            }
-          }
-        },
-        { "pointing_button": "button1" }
-],
-"conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-              "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-              }
-            ]
-          }
+}
     ]
 }
