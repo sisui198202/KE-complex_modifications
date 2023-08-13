@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary5",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)5",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)",
       "manipulators": [
         {
-          "description": "RightCommand + Y_カレント列削除(Excel)",
+          "description": "RightCommand + Y_カレント行/列削除(Excel)",
           "type": "basic",
           "from": {
             "key_code": "y",
