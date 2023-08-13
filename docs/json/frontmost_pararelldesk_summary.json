@@ -1,9 +1,45 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary5",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)5",
       "manipulators": [
+        {
+          "description": "RightCommand + Y_カレント列削除(Excel)",
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
         {
           "description": "RightCommand + P_RightHalfWindowMove",
           "type": "basic",
