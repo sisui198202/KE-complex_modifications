@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel89",
+    "title": "FrontmostIfExcel",
     "rules": [
    {
       "description": "LeftCommand + A_最初の列へカーソル(Excel)",
@@ -68,17 +68,6 @@
       ]
     },
     {
-      "description": "効かない-RightOption + T_シート削除(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("t", ["right_option"]) %>,
-          "to": <%= to([["a", ["right_shift", "left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
       "description": "RightOption + R_連続データ作成(Excel)",
       "manipulators": [
         {
@@ -118,17 +107,6 @@
           "type": "basic",
           "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["h", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "効かない-RightOption + W_CopyToEnd(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("w", ["right_option"]) %>,
-          "to": <%= to([["b", ["right_shift", "left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -439,6 +417,28 @@
     }
  ]
 },
+    {
+      "description": "効かない-RightOption + T_シート削除(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["right_option"]) %>,
+          "to": <%= to([["a", ["right_shift", "left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "効かない-RightOption + W_CopyToEnd(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["right_option"]) %>,
+          "to": <%= to([["b", ["right_shift", "left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftAlt + N_HeadRowCursol(ExcelVBE)",
       "manipulators": [

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel89",
+  "title": "FrontmostIfExcel",
   "rules": [
     {
       "description": "LeftCommand + A_最初の列へカーソル(Excel)",
@@ -197,39 +197,6 @@
       ]
     },
     {
-      "description": "効かない-RightOption + T_シート削除(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "right_shift",
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightOption + R_連続データ作成(Excel)",
       "manipulators": [
         {
@@ -350,39 +317,6 @@
               "modifiers": [
                 "right_gui",
                 "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "効かない-RightOption + W_CopyToEnd(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_shift",
-                "left_control"
               ]
             }
           ],
@@ -1220,6 +1154,72 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "効かない-RightOption + T_シート削除(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "right_shift",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "効かない-RightOption + W_CopyToEnd(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "right_shift",
+                "left_control"
               ]
             }
           ],
