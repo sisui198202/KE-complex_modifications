@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary88",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary77",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)88",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)77",
       "manipulators": [
         {
           "description": "RightCommand + Y_カレント行/列削除(Excel)",
@@ -407,7 +407,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "hyphen",
               "modifiers": [
                 "left_option"
               ]
