@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary4",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)4",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)",
       "manipulators": [
         {
           "description": "RightCommand + P_RightHalfWindowMove",
@@ -589,7 +589,7 @@
           ]
         },
         {
-          "description": "LeftCommand + T_サイドバー切替-workbench.action.toggleSidebarVisibility(VirtualMachine)",
+          "description": "LeftCommand + T_サイドバー切替-workbench.action.toggleSidebarVisibility[vscode,sublime],カレント行/列追加[excel](VirtualMachine)",
           "type": "basic",
           "from": {
             "key_code": "t",

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel1",
   "rules": [
     {
       "description": "LeftCommand + A_最初の列へカーソル(Excel)",
@@ -428,7 +428,7 @@
       ]
     },
     {
-      "description": "LeftCommand + T_カレント行追加(Excel)",
+      "description": "LeftCommand + T_カレント行/列追加(Excel)",
       "manipulators": [
         {
           "type": "basic",
