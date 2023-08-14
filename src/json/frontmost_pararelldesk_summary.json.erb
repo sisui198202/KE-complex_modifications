@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary66",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)66",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)",
       "manipulators": [
+          {
+            "description": "LeftOption + Quote_PreviewActiveWindow(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("quote", ["left_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          },
           {
             "description": "RightCommand + Y_カレント行/列削除(VirtualMachine)",
             "type": "basic",
