@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
       "manipulators": [
         {
           "description": "LeftOption + Quote_PreviewActiveWindow(VirtualMachine)",
@@ -11,7 +11,7 @@
             "key_code": "quote",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -28,7 +28,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
