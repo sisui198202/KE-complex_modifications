@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary88",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)88",
       "manipulators": [
         {
           "description": "LeftOption + Quote_検討中-空いている状態(VirtualMachine)",
@@ -392,6 +392,45 @@
           ]
         },
         {
+          "description": "RightCommand + J_1RowSelect(VirtualMachine)",
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
           "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(VirtualMachine)",
           "type": "basic",
           "from": {
@@ -431,7 +470,7 @@
           ]
         },
         {
-          "description": "RightCommand + J_1RowSelect(VirtualMachine)",
+          "description": "RightCommand + J_1RowSelection",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -446,7 +485,7 @@
           },
           "to": [
             {
-              "key_code": "hyphen",
+              "key_code": "1",
               "modifiers": [
                 "left_option"
               ]

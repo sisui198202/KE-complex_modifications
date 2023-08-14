@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary88",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)88",
       "manipulators": [
           {
             "description": "LeftOption + Quote_検討中-空いている状態(VirtualMachine)",
@@ -75,6 +75,13 @@
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
+            "description": "RightCommand + J_1RowSelect(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
           "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(VirtualMachine)",
             "type": "basic",
             "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
@@ -82,11 +89,11 @@
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
-            "description": "RightCommand + J_1RowSelect(VirtualMachine)",
+            "description": "RightCommand + J_1RowSelection",
             "type": "basic",
             "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["hyphen", ["left_option"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+            "to": <%= to([["1", ["left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
           },
           {
             "description": "LeftOption + slash_ExploerActive(VirtualMachine)",
