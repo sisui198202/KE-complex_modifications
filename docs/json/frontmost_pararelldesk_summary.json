@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)",
       "manipulators": [
         {
-          "description": "LeftOption + Quote_PreviewActiveWindow(VirtualMachine)",
+          "description": "LeftOption + Quote_検討中-空いている状態(VirtualMachine)",
           "type": "basic",
           "from": {
             "key_code": "quote",
