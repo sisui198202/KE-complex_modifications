@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary1",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)1",
       "manipulators": [
         {
           "description": "LeftOption + Quote_Fifo(VirtualMachine)",
