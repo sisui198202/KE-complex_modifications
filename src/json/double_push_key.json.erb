@@ -1,8 +1,8 @@
 {
-  "title": "DoublePushKey",
+  "title": "DoublePushKey1",
   "rules": [
         {
-            "description": "Double RightShift_Pipeline(Double Push)",
+            "description": "Double RightShift_/MacWindowShare/(Double Push)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -16,13 +16,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "japanese_eisuu"
-                        },
-                        {
-                            "key_code": "backslash",
-                            "modifiers": [
-                                "left_shift"
-                            ]
+                        "shell_command": "open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/'"
                         }
                     ],
                     "conditions": [
@@ -30,6 +24,20 @@
                             "type": "variable_if",
                             "name": "right_shift pressed",
                             "value": 1
+                        },
+                        {
+                        "type": "frontmost_application_unless",
+                        "bundle_identifiers": [
+                            "^com\\.vmware\\.fusion$",
+                            "^com\\.vmware\\.horizon$",
+                            "^com\\.vmware\\.view$",
+                            "^com\\.parallels\\.desktop$",
+                            "^com\\.parallels\\.vm$",
+                            "^com\\.parallels\\.desktop\\.console$",
+                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                            "^com\\.vmware\\.proxyApp\\.",
+                            "^com\\.parallels\\.winapp\\."
+                        ]
                         }
                     ]
                 },

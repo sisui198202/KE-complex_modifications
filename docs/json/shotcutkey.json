@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey98",
+  "title": "ShotCutKey97",
   "rules": [
     {
       "description": "使用しない_LeftCommand + Period_AppsSelect-next",
@@ -86,10 +86,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_shift",
+            "key_code": "left_control",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_shift"
               ],
               "optional": [
                 "caps_lock"
