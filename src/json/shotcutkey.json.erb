@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKey99",
+  "title": "ShotCutKey98",
   "rules": [
   {
       "description": "使用しない_LeftCommand + Period_AppsSelect-next",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + LeftShift_/MacWindowShare/",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("left_shift", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/'"]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         }
       ]
     },
