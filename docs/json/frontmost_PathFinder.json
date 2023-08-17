@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder2",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
