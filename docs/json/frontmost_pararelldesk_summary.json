@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary98",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)98",
       "manipulators": [
         {
           "description": "LeftCommand + N_Dropboxディレクトリへ(VirtualMachine)",
@@ -21,6 +21,45 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + M_GoogleDriveディレクトリへ(VirtualMachine)",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
               "modifiers": [
                 "right_control"
               ]

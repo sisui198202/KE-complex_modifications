@@ -1,14 +1,21 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary98",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)99",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)98",
       "manipulators": [
           {
             "description": "LeftCommand + N_Dropboxディレクトリへ(VirtualMachine)",
             "type": "basic",
             "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["right_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "LeftCommand + M_GoogleDriveディレクトリへ(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["right_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
