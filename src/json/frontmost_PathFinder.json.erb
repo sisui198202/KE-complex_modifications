@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder99",
+  "title": "FrontmostIfPathFinder98",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -195,6 +195,17 @@
       "type": "basic",
       "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"]) %>,
+      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + M_Active_~/MacWindowShare/(pathfinder)",
+      "manipulators": [
+        {
+      "type": "basic",
+      "from": <%= from("m", ["left_alt"], ["caps_lock"]) %>,
+      "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/MacWindowShare'"]) %>,
       "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         }
       ]
