@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + A_NewFileCreate",
@@ -39,6 +39,13 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
+          "description": "LeftCommand + N_HeadRowCursol",
+          "type": "basic",
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["left_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
+        {
           "description": "LeftCommand + U_Undo",
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
@@ -56,13 +63,6 @@
           "type": "basic",
           "from": <%= from("c", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["q", ["right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
-          "description": "LeftCommand + N_HeadRowCursol",
-          "type": "basic",
-          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["left_arrow", ["fn"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
