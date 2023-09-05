@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder98",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -532,7 +532,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_Active_~/Dropbox/(pathfinder)",
+      "description": "LeftOption + N_Active_~/Dropbox/(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -540,7 +540,7 @@
             "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -564,7 +564,74 @@
       ]
     },
     {
-      "description": "LeftCommand + M_Active_~/Google ドライブ/(pathfinder)",
+      "description": "LeftOption + M_Active_~/Google ドライブ/(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + N_HeadRowCursol(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + M_EndRowCursol(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -581,7 +648,10 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder98",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -167,23 +167,45 @@
       ]
     },
     {
-      "description": "LeftCommand + N_Active_~/Dropbox/(pathfinder)",
+      "description": "LeftOption + N_Active_~/Dropbox/(pathfinder)",
       "manipulators": [
         {
       "type": "basic",
-      "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+      "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
       "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Dropbox'"]) %>,
       "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         }
       ]
     },
     {
-      "description": "LeftCommand + M_Active_~/Google ドライブ/(pathfinder)",
+      "description": "LeftOption + M_Active_~/Google ドライブ/(pathfinder)",
+      "manipulators": [
+        {
+      "type": "basic",
+      "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
+      "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"]) %>,
+      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + N_HeadRowCursol(pathfinder)",
+      "manipulators": [
+        {
+      "type": "basic",
+      "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+      "to": <%= to([["left_arrow", ["fn"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + M_EndRowCursol(pathfinder)",
       "manipulators": [
         {
       "type": "basic",
       "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
-      "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"]) %>,
+      "to": <%= to([["right_arrow", ["fn"]]]) %>,
       "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         }
       ]
