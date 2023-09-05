@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder12",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -698,15 +698,15 @@
       ]
     },
     {
-      "description": "LeftAlt + M_Active_~/MacWindowShare/(pathfinder)",
+      "description": "RightOption + S_Active_~/MacWindowShare/(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "s",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
