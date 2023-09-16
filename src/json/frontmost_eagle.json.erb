@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEagle35",
+    "title": "FrontmostIfEagle",
     "rules": [
     {
       "description": "N_HeadRowCursol(eagle)",
@@ -239,6 +239,28 @@
           "type": "basic",
           "from": <%= from("t",["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui", "left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + i_詳細情報切替(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_gui", "left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eagle") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Z_詳細情報切替(eagle)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z",["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_gui", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eagle") %> ]
         }
       ]
