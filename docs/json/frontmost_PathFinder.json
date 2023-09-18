@@ -766,7 +766,7 @@
       ]
     },
     {
-      "description": "RightOption + T_タブセット1(pathfinder)",
+      "description": "RightOption + T_タブセット(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
