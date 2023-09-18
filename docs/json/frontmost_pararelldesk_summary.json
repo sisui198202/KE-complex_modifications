@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
   "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -1187,6 +1187,45 @@
           "to": [
             {
               "key_code": "i",
+              "modifiers": [
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + i_Space_delete(VirtualMachine)",
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
               "modifiers": [
                 "right_control"
               ]

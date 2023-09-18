@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -354,6 +354,13 @@
           "type": "basic",
           "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["i", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+        },
+        {
+        	"description": "RightCommand + i_Space_delete(VirtualMachine)",
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+          "to": <%= to([["4", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
