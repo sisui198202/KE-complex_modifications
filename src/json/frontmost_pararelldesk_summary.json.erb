@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary98",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -16,6 +16,13 @@
             "type": "basic",
             "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["3", ["right_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "RightCommand + i_Space_delete(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+            "to": <%= to([["4", ["right_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
@@ -354,13 +361,6 @@
           "type": "basic",
           "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["i", ["right_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-        },
-        {
-        	"description": "RightCommand + i_Space_delete(VirtualMachine)",
-          "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
-          "to": <%= to([["4", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
         },
         {
