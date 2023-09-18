@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary",
+    "title": "ReplaceSummary99",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -31,11 +31,11 @@
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
-            "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+            "description": "RightCommand + Space_delete(Replacekey)",
             "type": "basic",
             "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
             "to": <%= to([["delete_forward"]]) %>,
-            "conditions": [ <%= frontmost_application_unless("finder") %> ]
+            "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
             "description": "RightCommand + Leftoption_backslash(Replacekey)",

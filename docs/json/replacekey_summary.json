@@ -1,5 +1,5 @@
 {
-  "title": "ReplaceSummary",
+  "title": "ReplaceSummary99",
   "rules": [
     {
       "description": "ReplaceSummary",
@@ -123,7 +123,7 @@
           ]
         },
         {
-          "description": "RightCommand + Space_delete_!Finder(Replacekey)",
+          "description": "RightCommand + Space_delete(Replacekey)",
           "type": "basic",
           "from": {
             "key_code": "spacebar",
@@ -145,7 +145,15 @@
             {
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
