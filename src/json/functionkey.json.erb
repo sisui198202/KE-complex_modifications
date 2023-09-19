@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey1",
+  "title": "FunctionKey",
   "rules": [
     {
     "description": "F1_tmp.pyOpen(FunctionKey)",
@@ -138,8 +138,7 @@
         {
         "type": "basic",
         "from": <%= from("f4") %>,
-        "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール/rule.md'"]) %>,
-        "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+        "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール/rule.md'"]) %>
         }
     ]
     },

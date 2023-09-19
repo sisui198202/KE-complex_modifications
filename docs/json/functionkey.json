@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey1",
+  "title": "FunctionKey",
   "rules": [
     {
       "description": "F1_tmp.pyOpen(FunctionKey)",
@@ -214,22 +214,6 @@
           "to": [
             {
               "shell_command": "open '/Users/user/Dropbox/手順_ルール/rule.md'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
             }
           ]
         }
