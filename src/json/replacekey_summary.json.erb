@@ -1,5 +1,5 @@
 {
-    "title": "ReplaceSummary99",
+    "title": "ReplaceSummary",
     "rules": [
     {
       "description": "ReplaceSummary",
@@ -57,10 +57,10 @@
           "to": <%= to([["tab"]]) %>
         },
         {
-          "description": "優先利用Tilde_X3_1(Replacekey)",
+          "description": "Tilde_X3_1(Replacekey)",
           "type": "basic",
           "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
+          "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["c", "left_gui"]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
