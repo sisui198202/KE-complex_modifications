@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary98",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -23,6 +23,13 @@
             "type": "basic",
             "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
             "to": <%= to([["4", ["right_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "LeftCommand + ゼロ_Vscode2Row(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("0", ["left_control"], ["any"]) %>,
+            "to": <%= to([["5", ["right_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
