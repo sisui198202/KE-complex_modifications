@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder1",
+  "title": "FrontmostIfPathFinder2",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -68,11 +68,11 @@
       ]
     },
     {
-      "description": "LeftCommand + T_フォルダーへ移動(pathfinder)",
+      "description": "RightCommand + H_フォルダーへ移動(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+          "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["g", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }

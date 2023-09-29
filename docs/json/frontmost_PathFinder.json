@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder1",
+  "title": "FrontmostIfPathFinder2",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -215,15 +215,15 @@
       ]
     },
     {
-      "description": "LeftCommand + T_フォルダーへ移動(pathfinder)",
+      "description": "RightCommand + H_フォルダーへ移動(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"
