@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder",
+  "title": "FrontmostIfPathFinder1",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -164,6 +164,42 @@
               "key_code": "r",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_左シェルフ(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_control",
+                "right_option"
               ]
             }
           ],
