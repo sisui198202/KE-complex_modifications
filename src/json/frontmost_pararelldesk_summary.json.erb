@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary1",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -30,13 +30,6 @@
             "type": "basic",
             "from": <%= from("0", ["left_control"], ["any"]) %>,
             "to": <%= to([["5", ["right_control"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-          },
-          {
-            "description": "LeftOption + Quote_Fifo(VirtualMachine)",
-            "type": "basic",
-            "from": <%= from("quote", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["hyphen", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
