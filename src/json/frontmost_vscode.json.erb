@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode99",
+    "title": "FrontmostIfVscode98",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -283,7 +283,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("-", ["left_control"], ["caps_lock"]) %>,
+          "from": <%= from("hyphen", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["right_shift", "right_gui",]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
@@ -294,7 +294,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("=", ["left_control"], ["caps_lock"]) %>,
+          "from": <%= from("equal_sign", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["right_shift", "right_gui",]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
