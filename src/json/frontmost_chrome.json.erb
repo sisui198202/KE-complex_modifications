@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome4",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -124,6 +124,17 @@
       ]
     },
   {
+      "description": "RightCommand + Slash_拡大(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+   {
       "description": "B_縮小(Chrome)",
       "manipulators": [
         {
@@ -134,6 +145,18 @@
         }
       ]
     },
+  {
+      "description": "RightOption + B_縮小(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+
   {
       "description": "T_単語検索(Chrome)",
       "manipulators": [
