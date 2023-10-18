@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl3",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "LeftControl + ~_WindowsControl3",
@@ -691,10 +691,10 @@
           ]
         },
         {
-          "description": "RightOption + R_AppleMusicActiveWindow(WindowControl)",
+          "description": "RightOption + L_AppleMusicActiveWindow(WindowControl)",
           "type": "basic",
           "from": {
-            "key_code": "r",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "right_alt"

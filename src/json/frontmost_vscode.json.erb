@@ -388,6 +388,17 @@
         }
       ]
     },
+    {
+      "description": "RightOption + R_エディターを右のグループに分割(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_shift","right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+        ]
+    },
 {
   "description": "日本語モード:Openbracket_OpenClosebracket(Vscode)",
 "manipulators": [
