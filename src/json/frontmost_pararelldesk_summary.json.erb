@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary1",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -30,6 +30,13 @@
             "type": "basic",
             "from": <%= from("0", ["left_control"], ["any"]) %>,
             "to": <%= to([["5", ["right_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "LeftCommand + S_Cut(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["6", ["right_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {

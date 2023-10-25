@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1",
+  "title": "ShotCutKeySummary2",
   "rules": [
   {
-      "description": "ShotCutKeySummary1",
+      "description": "ShotCutKeySummary2",
       "manipulators": [
         {
           "description": "RightCommand + A_NewFileCreate",
@@ -101,7 +101,8 @@
           "description": "LeftCommand + S_Cut",
           "type": "basic",
           "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["x", ["right_gui"]]]) %>
+          "to": <%= to([["x", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightCommand + Semicolon_LatestTabToggle",
