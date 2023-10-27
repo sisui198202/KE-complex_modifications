@@ -1,21 +1,63 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary4",
   "rules": [
   {
-      "description": "ShotCutKeySummary2",
+      "description": "ShotCutKeySummary4",
       "manipulators": [
         {
-          "description": "RightCommand + A_NewFileCreate",
+          "description": "優先RightCommand + G_FileTabClose1",
           "type": "basic",
-          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_gui"]]]) %>
         },
         {
           "description": "RightOption + O(オー)_名前を付けて保存",
           "type": "basic",
           "from": <%= from("o", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["s", ["right_shift", "right_gui"]]]) %>
+        },
+        {
+          "description": "LeftCommand + E_Expand Selection Word",
+          "type": "basic",
+          "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["right_arrow", ["left_control", "left_shift"]]]) %>
+        },
+        {
+          "description": "LeftCommand + B_PageDown",
+          "type": "basic",
+          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["down_arrow", ["fn"]]]) %>
+        },
+        {
+          "description": "LeftCommand + Slash_PageUp",
+          "type": "basic",
+          "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["up_arrow", ["fn"]]]) %>
+        },
+        {
+          "description": "LeftCommand + Period_AppsSelect-Next",
+          "type": "basic",
+          "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["tab", "right_gui"]]) %>
+        },
+        {
+          "description": "RightAlt + Y_QuickEvernote",
+          "type": "basic",
+          "from": <%= from("y", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["left_control", "right_gui"]]]) %>
+        },
+        {
+          "description": "RightAlt + U_UwscDirectorySearch",
+          "type": "basic",
+          "from": <%= from("u", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_control", "right_alt"]]]) %>
+        },
+        {
+          "description": "RightCommand + A_NewFileCreate",
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "LeftCommand + V_AppClose",
@@ -67,29 +109,11 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftCommand + E_Expand Selection Word",
-          "type": "basic",
-          "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["right_arrow", ["left_control", "left_shift"]]]) %>
-        },
-        {
           "description": "LeftCommand + D_AllSelect",
           "type": "basic",
           "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["a", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
-          "description": "LeftCommand + B_PageDown",
-          "type": "basic",
-          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["down_arrow", ["fn"]]]) %>
-        },
-        {
-          "description": "LeftCommand + Slash_PageUp",
-          "type": "basic",
-          "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["up_arrow", ["fn"]]]) %>
         },
         {
           "description": "LeftOption + O(オー)_Save",
@@ -118,12 +142,6 @@
           "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
-          "description": "LeftCommand + Period_AppsSelect-Next",
-          "type": "basic",
-          "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_gui"]]) %>
         },
         {
           "description": "rightcommand + K_CopyCurrentRowCut",
@@ -175,12 +193,6 @@
           "conditions": [ <%= frontmost_application_unless("pararell") %>]
         },
         {
-          "description": "RightAlt + Y_QuickEvernote",
-          "type": "basic",
-          "from": <%= from("y", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["n", ["left_control", "right_gui"]]]) %>
-        },
-        {
           "description": "RightAlt + D_SummaryDirectoryinfiles",
           "type": "basic",
           "from": <%= from("d", ["right_alt"], ["caps_lock"]) %>,
@@ -207,12 +219,6 @@
           "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["0", ["left_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
-          "description": "RightAlt + U_UwscDirectorySearch",
-          "type": "basic",
-          "from": <%= from("u", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["left_control", "right_alt"]]]) %>
         },
         {
           "description": "LeftCommand + semicolon_CurrentRowCursolEnd1",
@@ -314,14 +320,8 @@
               ]
             }
           ]
-        },
-            {
-          "description": "優先RightCommand + G_FileTabClose1",
-          "type": "basic",
-          "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_gui"]]]) %>
         }
-      ]
+       ]
      }
   ]
 }
