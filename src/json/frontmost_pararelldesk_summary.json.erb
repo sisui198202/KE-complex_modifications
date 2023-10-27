@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary2",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary3",
     "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)2",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)3",
       "manipulators": [
           {
             "description": "LeftCommand + N_Dropboxディレクトリへ(VirtualMachine)",
@@ -37,13 +37,6 @@
             "type": "basic",
             "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["6", ["right_control"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
-          },
-          {
-            "description": "RightCommand + T_Search(VirtualMachine)",
-            "type": "basic",
-            "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["7", ["right_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
@@ -107,6 +100,13 @@
             "type": "basic",
             "from": <%= from("d", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["9", ["right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "RightCommand + T_Search(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
