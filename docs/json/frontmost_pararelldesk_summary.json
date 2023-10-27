@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary1",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)1",
       "manipulators": [
         {
           "description": "LeftCommand + N_Dropboxディレクトリへ(VirtualMachine)",
@@ -206,7 +206,7 @@
             "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "Right_gui"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"
