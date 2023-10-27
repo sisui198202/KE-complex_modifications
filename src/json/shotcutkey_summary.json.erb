@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary2",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
       "description": "ShotCutKeySummary2",
@@ -56,7 +56,8 @@
           "description": "RightCommand + T_Search",
           "type": "basic",
           "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["f", ["right_gui"]]]) %>
+          "to": <%= to([["f", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + C_DesktopExist",
