@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVirtual_Pararelldesk_Summary99",
+    "title": "FrontmostIfVirtual_Pararelldesk_Summary",
     "rules": [
     {
       "description": "PararellWindowsKeyBindList(VirtualMachine)",
@@ -37,6 +37,13 @@
             "type": "basic",
             "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["6", ["right_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
+          },
+          {
+            "description": "RightCommand + T_Search(VirtualMachine)",
+            "type": "basic",
+            "from": <%= from("t", ["Right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["7", ["right_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("virtual_machine") %> ]
           },
           {
