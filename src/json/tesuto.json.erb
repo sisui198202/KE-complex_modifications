@@ -1,5 +1,5 @@
 {
-  "title": "TESUTO1",
+  "title": "TESUTO2",
   "rules": [
               {
                 "description": "一括設定(TESUTO)",
@@ -26,6 +26,17 @@
             "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["equal_sign", "left_option"]]) %>,
             "conditions": [ <%= frontmost_application_if("pararell") %>]
+          }
+        ]
+      },
+      {
+        "description": "個別設定_RightCommand + B_f13(TESUTO)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["f13"]]) %>,
+            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
           }
         ]
       },
