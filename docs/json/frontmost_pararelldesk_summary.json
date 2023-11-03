@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVirtual_Pararelldesk_Summary3",
+  "title": "FrontmostIfVirtual_Pararelldesk_Summary",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)3",
+      "description": "PararellWindowsKeyBindList(VirtualMachine)",
       "manipulators": [
         {
           "description": "LeftCommand + N_Dropboxディレクトリへ(VirtualMachine)",
@@ -83,7 +83,7 @@
           ]
         },
         {
-          "description": "RightCommand + i_Space_delete(VirtualMachine)",
+          "description": "RightCommand + Space_delete(VirtualMachine)",
           "type": "basic",
           "from": {
             "key_code": "spacebar",
