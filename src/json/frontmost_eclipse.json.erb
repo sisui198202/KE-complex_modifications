@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse90",
+    "title": "FrontmostIfEclipse89",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -24,12 +24,12 @@
       ]
       },
       {
-        "description": "LeftCommand + E_Expand Selection Word(eclipse)",
+        "description": "LeftCommand + P_選択範囲拡張(eclipse)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["3", ["left_option","left_gui"]]]) %>,
+            "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["right_shift", "right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("eclipse") %> ]
           }
         ]
@@ -68,23 +68,12 @@
       ]
       },
     {
-      "description": "LeftCommand + P_選択範囲拡張(eclipse)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["3", ["right_shift", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + O_SameWordExpandSelection(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
+          "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %> ]
         }
       ]
@@ -96,17 +85,6 @@
           "type": "basic",
           "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + J_行をコピー(eclipse)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %> ]
         }
       ]
