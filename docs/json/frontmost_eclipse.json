@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse",
+  "title": "FrontmostIfEclipse2",
   "rules": [
     {
       "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -38,12 +38,12 @@
       ]
     },
     {
-      "description": "LeftCommand + N_HeadRowCursol(eclipse)",
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -55,9 +55,9 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "right_arrow",
               "modifiers": [
-                "right_gui"
+                "right_control"
               ]
             }
           ],
@@ -73,12 +73,12 @@
       ]
     },
     {
-      "description": "LeftCommand + M_EndRowCursol(eclipse)",
+      "description": "LeftCommand + A_CurrentRowCursolHead(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -90,9 +90,9 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "left_arrow",
               "modifiers": [
-                "right_gui"
+                "right_control"
               ]
             }
           ],
