@@ -1,42 +1,6 @@
 {
-  "title": "FrontmostIfEclipse97",
+  "title": "FrontmostIfEclipse90",
   "rules": [
-    {
-      "description": "LeftCommand + E_Expand Selection Word(eclipse)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_option",
-                "left_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^epp.package.java$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
       "manipulators": [
@@ -108,12 +72,119 @@
       ]
     },
     {
-      "description": "LeftCommand + O[オウ]_エディター分割切替(水平)(eclipse)",
+      "description": "LeftCommand + E_Expand Selection Word(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_option",
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + P_次の要素を選択(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_option",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + O[オウ]_エディター分割切替[水平](eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "backslash",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + 0[ゼロ]_エディター分割切替[垂直](eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -143,12 +214,12 @@
       ]
     },
     {
-      "description": "LeftCommand + 0[ゼロ]_エディター分割切替(垂直)(eclipse)",
+      "description": "LeftCommand + P_選択範囲拡張(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "0",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -160,9 +231,117 @@
           },
           "to": [
             {
-              "key_code": "backslash",
+              "key_code": "3",
               "modifiers": [
+                "right_shift",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + O_SameWordExpandSelection(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_現在行の下に行を挿入(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + J_行をコピー(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
               ]
             }
           ],
