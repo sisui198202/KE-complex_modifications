@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse89",
+  "title": "FrontmostIfEclipse88",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -72,12 +72,12 @@
       ]
     },
     {
-      "description": "LeftCommand + P_選択範囲拡張(eclipse)",
+      "description": "LeftCommand + P_次の単語を選択(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "e",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -91,8 +91,8 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_shift",
-                "right_alt"
+                "right_option",
+                "right_gui"
               ]
             }
           ],

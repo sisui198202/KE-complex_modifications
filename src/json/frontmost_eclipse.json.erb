@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse89",
+    "title": "FrontmostIfEclipse88",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -24,12 +24,12 @@
       ]
       },
       {
-        "description": "LeftCommand + P_選択範囲拡張(eclipse)",
+        "description": "LeftCommand + P_次の単語を選択(eclipse)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["3", ["right_shift", "right_alt"]]]) %>,
+            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("eclipse") %> ]
           }
         ]
