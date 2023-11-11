@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse99",
+    "title": "FrontmostIfEclipse98",
     "rules": [
       {
         "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -30,6 +30,28 @@
           "type": "basic",
           "from": <%= from("a", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %>]
+        }
+      ]
+      },
+      {
+      "description": "LeftCommand + O[オウ]_エディター分割切替(水平)(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["backslash", ["left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %>]
+        }
+      ]
+      },
+      {
+      "description": "LeftCommand + 0[ゼロ]_エディター分割切替(垂直)(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["open_bracket", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %>]
         }
       ]
