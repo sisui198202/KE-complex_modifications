@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse97",
+    "title": "FrontmostIfEclipse",
     "rules": [
       {
         "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -11,6 +11,28 @@
             "conditions": [ <%= frontmost_application_if("eclipse") %> ]
           }
         ]
-      }
+      },
+    {
+      "description": "LeftCommand + N_HeadRowCursol(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + M_EndRowCursol(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    }
  ]
 }
