@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse87",
+  "title": "FrontmostIfEclipse",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "description": "LeftCommand + O[オウ]_エディター分割切替[水平](eclipse)",
+      "description": "LeftCommand + O[オウ]_エディター分割切替[垂直](eclipse)",
       "manipulators": [
         {
           "type": "basic",
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "description": "LeftCommand + 0[ゼロ]_エディター分割切替[垂直](eclipse)",
+      "description": "LeftCommand + 0[ゼロ]_エディター分割切替[水平](eclipse)",
       "manipulators": [
         {
           "type": "basic",
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "description": "RightCommand + O_SameWordExpandSelection(eclipse)",
+      "description": "うまくいかない_RightCommand + O_SameWordExpandSelection(eclipse)",
       "manipulators": [
         {
           "type": "basic",
