@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse",
+    "title": "FrontmostIfEclipse3",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -41,6 +41,17 @@
             "type": "basic",
             "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["3", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + H_ビューの表示[パッケージ・エクスプローラー](eclipse)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", ["right_option","left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("eclipse") %> ]
           }
         ]
