@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse2",
+    "title": "FrontmostIfEclipse",
     "rules": [
       {
         "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -18,7 +18,7 @@
           {
             "type": "basic",
             "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["right_arrow", ["right_control"]]]) %>,
+            "to": <%= to([["right_arrow", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("eclipse") %>]
           }
         ]
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["left_arrow", ["right_control"]]]) %>,
+          "to": <%= to([["left_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %>]
         }
       ]
