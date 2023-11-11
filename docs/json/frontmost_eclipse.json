@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse98",
+  "title": "FrontmostIfEclipse97",
   "rules": [
     {
       "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -125,7 +125,7 @@
           },
           "to": [
             {
-              "key_code": "backslash",
+              "key_code": "open_bracket",
               "modifiers": [
                 "left_control"
               ]
@@ -160,7 +160,7 @@
           },
           "to": [
             {
-              "key_code": "open_bracket",
+              "key_code": "backslash",
               "modifiers": [
                 "left_control"
               ]
