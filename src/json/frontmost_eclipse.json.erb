@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse",
+    "title": "FrontmostIfEclipse99",
     "rules": [
       {
         "description": "LeftCommand + E_Expand Selection Word(eclipse)",
@@ -28,7 +28,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
+          "from": <%= from("a", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %>]
         }
