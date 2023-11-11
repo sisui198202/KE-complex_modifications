@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse88",
+  "title": "FrontmostIfEclipse87",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "description": "LeftCommand + P_次の単語を選択(eclipse)",
+      "description": "LeftCommand + E_次の単語を選択(eclipse)",
       "manipulators": [
         {
           "type": "basic",
