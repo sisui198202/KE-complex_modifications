@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse3",
+  "title": "FrontmostIfEclipse",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -233,6 +233,41 @@
           "to": [
             {
               "key_code": "open_bracket",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^epp.package.java$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + G_コードアシスト(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
               "modifiers": [
                 "left_control"
               ]
