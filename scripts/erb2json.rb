@@ -257,6 +257,7 @@ def frontmost_application(type, app_aliases, as_json = true)
   ]
   eclipse_bundle_identifers = [
     "^epp.package.java$",
+    "^epp.package.jee$"
   ]
   sublime_bundle_identifers = [
     "^com.sublimetext.3$",

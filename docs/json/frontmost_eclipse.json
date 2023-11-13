@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse",
+  "title": "FrontmostIfEclipse12",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -29,7 +29,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -64,7 +65,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -100,7 +102,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -136,7 +139,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -172,7 +176,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -207,7 +212,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -242,7 +248,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -277,7 +284,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -313,7 +321,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
@@ -348,7 +357,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^epp.package.java$"
+                "^epp.package.java$",
+                "^epp.package.jee$"
               ]
             }
           ]
