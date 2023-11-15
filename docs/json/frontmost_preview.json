@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview",
+  "title": "FrontmostIfPreview99",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1402,6 +1402,38 @@
               "modifiers": [
                 "left_control",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + P_上書き保存(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_gui"
               ]
             }
           ],
