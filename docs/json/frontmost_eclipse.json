@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse55",
+  "title": "FrontmostIfEclipse11",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "description": "LeftOption + comma_ビューの表示メニュー(eclipse)",
+      "description": "LeftOption + comma_ルーラー・コンテキスト・メニューの表示(eclipse)",
       "manipulators": [
         {
           "type": "basic",
