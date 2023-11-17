@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse77",
+  "title": "FrontmostIfEclipse66",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -773,12 +773,12 @@
       ]
     },
     {
-      "description": "LeftOption + closebracket_クイック・アクセス(eclipse)",
+      "description": "LeftOption + openbracket_クイック・アクセス(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "close_bracket",
+            "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
                 "left_option"
