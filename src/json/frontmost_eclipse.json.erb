@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse88",
+    "title": "FrontmostIfEclipse77",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -145,17 +145,6 @@
       ]
     },
     {
-      "description": "RightCommand + カンマ_アクティブ・ビューまたはエディター最大化(eclipse)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("comma", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["6", ["right_shift","left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + openbracket_リソースを開く(eclipse)",
       "manipulators": [
         {
@@ -206,6 +195,17 @@
           "type": "basic",
           "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["5", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + カンマ_アクティブ・ビューまたはエディター最大化(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["6", ["right_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %> ]
         }
       ]
