@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse35",
+    "title": "FrontmostIfEclipse3",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -149,7 +149,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("comma", ["right_option"], ["caps_lock"]) %>,
+          "from": <%= from("comma", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["6", ["right_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %> ]
         }

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse35",
+  "title": "FrontmostIfEclipse3",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -485,7 +485,7 @@
             "key_code": "comma",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"
