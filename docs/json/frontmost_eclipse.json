@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfEclipse3333",
+  "title": "FrontmostIfEclipse44",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -477,7 +477,7 @@
       ]
     },
     {
-      "description": "RightOption + カンマ_アクティブ・ビューまたはエディター最大化(eclipse)",
+      "description": "RightCommand + カンマ_アクティブ・ビューまたはエディター最大化(eclipse)",
       "manipulators": [
         {
           "type": "basic",
