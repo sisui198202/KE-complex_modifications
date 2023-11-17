@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse12",
+    "title": "FrontmostIfEclipse",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -90,23 +90,133 @@
       ]
       },
     {
-      "description": "うまくいかない_RightCommand + O_SameWordExpandSelection(eclipse)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + Z_現在行の下に行を挿入(eclipse)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_現在行の上に行を挿入(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["7", ["right_option","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + backslash_ブロック選択の切り替え(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("backslash", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_option","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + period_行をコピ(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("period", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["right_option","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + k_行を削除(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["4", ["right_option","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + カンマ_アクティブ・ビューまたはエディター最大化(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["6", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + openbracket_リソースを開く(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + X_次のビュー(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("x", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + L_次のパースペクティブ(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["3", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + G_指定行へジャンプ(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("g", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["4", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + i_エディターをアクティブにする(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["5", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "うまくいかない_RightCommand + O_SameWordExpandSelection(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %> ]
         }
       ]
