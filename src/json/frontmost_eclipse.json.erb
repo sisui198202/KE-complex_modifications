@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfEclipse",
+    "title": "FrontmostIfEclipse88",
     "rules": [
       {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(eclipse)",
@@ -217,6 +217,39 @@
           "type": "basic",
           "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + T_クイック・フィックス(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + closebracket_クイック・アクセス(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["right_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + comma_ビューの表示メニュー(eclipse)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["right_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("eclipse") %> ]
         }
       ]
