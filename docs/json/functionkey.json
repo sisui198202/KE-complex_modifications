@@ -1,5 +1,5 @@
 {
-  "title": "FunctionKey98",
+  "title": "FunctionKey97",
   "rules": [
     {
       "description": "F1_tmp.pyOpen(FunctionKey)",
@@ -213,7 +213,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/手順_ルール/rule.md'"
+              "shell_command": "open '/Users/user/Dropbox/手順_ルール_自動化_リサーチ/rule.md'"
             }
           ]
         }
