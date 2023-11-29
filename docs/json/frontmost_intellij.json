@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij98",
+  "title": "FrontmostIfintellij97",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -21,7 +21,43 @@
             {
               "key_code": "hyphen",
               "modifiers": [
-                "right_ctrl",
+                "left_control",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + T_検査(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_control",
                 "left_option"
               ]
             }
