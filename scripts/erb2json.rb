@@ -259,6 +259,9 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^epp.package.java$",
     "^epp.package.jee$"
   ]
+  intellij_bundle_identifers = [
+    "^com.jetbrains.intellij.ce$",
+  ]
   sublime_bundle_identifers = [
     "^com.sublimetext.3$",
   ]
@@ -317,6 +320,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(vscode_bundle_identifers)
     when "eclipse"
       bundle_identifiers.concat(eclipse_bundle_identifers)
+    when "intellij"
+      bundle_identifiers.concat(intellij_bundle_identifers)
     when "vscode_sublime"
       bundle_identifiers.concat(vscode_sublime_bundle_identifers)
     when "mi"
