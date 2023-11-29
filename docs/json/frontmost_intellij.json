@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij2",
+  "title": "FrontmostIfintellij3",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -56,6 +56,42 @@
           "to": [
             {
               "key_code": "1",
+              "modifiers": [
+                "left_control",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOpiton + M_次のブックマーク(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_optio"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
               "modifiers": [
                 "left_control",
                 "left_option"
@@ -491,42 +527,6 @@
               "modifiers": [
                 "right_option",
                 "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.jetbrains.intellij.ce$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "使用できない-LeftOpiton + D_右に分割して開く(intellij)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "left_optio"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "left_control",
-                "left_option"
               ]
             }
           ],
