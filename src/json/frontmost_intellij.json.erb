@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij9",
+    "title": "FrontmostIfintellij",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -122,6 +122,28 @@
           }
         ]
       },
+     {
+        "description": "LeftCommand + E_選択状態でキャレットを次の単語に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["7", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "ダミー_toの8使用できなかったので次の設定時に再検証_LeftCommand +_(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
       {
         "description": "使用できない-LeftOpiton + D_右に分割して開く(intellij)",
         "manipulators": [
@@ -140,28 +162,6 @@
             "type": "basic",
             "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["8", ["left_control","left_option"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "LeftCommand + E_選択状態でキャレットを次の単語に移動(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["7", ["right_option","left_shift"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "使用しない-LeftCommand + E_キャレットを次の単語に移動(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["7", ["right_option","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
