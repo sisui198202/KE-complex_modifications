@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij93",
+  "title": "FrontmostIfintellij92",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -362,42 +362,6 @@
       ]
     },
     {
-      "description": "LeftCommand + E_選択状態でキャレットを次の単語に移動(intellij)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "8",
-              "modifiers": [
-                "right_option",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.jetbrains.intellij.ce$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "RightCommand + L_キャレット位置の1行を選択(intellij)",
       "manipulators": [
         {
@@ -527,6 +491,42 @@
               "modifiers": [
                 "left_control",
                 "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "使用できない-LeftCommand + E_選択状態でキャレットを次の単語に移動(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": [
+                "right_option",
+                "left_shift"
               ]
             }
           ],
