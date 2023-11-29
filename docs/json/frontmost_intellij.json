@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij",
+  "title": "FrontmostIfintellij2",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -218,7 +218,43 @@
       ]
     },
     {
-      "description": "LeftOption + M_キャレットに一致括弧に移動(intellij)",
+      "description": "LeftOption + N_キャレットに一致括弧に移動(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "right_option",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + M_ブックマーク(intellij)",
       "manipulators": [
         {
           "type": "basic",
@@ -235,7 +271,7 @@
           },
           "to": [
             {
-              "key_code": "4",
+              "key_code": "equal_sign",
               "modifiers": [
                 "right_option",
                 "left_shift"
