@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij555",
+    "title": "FrontmostIfintellij6",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -134,17 +134,6 @@
         ]
       },
       {
-        "description": "RightCommand + J_キャレット位置の1行を選択(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["9", ["right_option","left_shift"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
         "description": "LeftCommand + Z_新しい行の追加(intellij)",
         "manipulators": [
           {
@@ -173,6 +162,17 @@
             "type": "basic",
             "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["8", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "ダミー__(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["9", ["right_option","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
