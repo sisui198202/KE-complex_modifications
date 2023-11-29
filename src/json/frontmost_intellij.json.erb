@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij97",
+    "title": "FrontmostIfintellij95",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -13,12 +13,56 @@
         ]
       },
       {
-        "description": "RightCommand + T_検査(intellij)",
+        "description": "RightCommand + T_検索(intellij)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["1", ["left_control","left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + semicolon_次のタブを選択(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("semicolon", ["right_control"], ["caps_lock"]) %>,
+            "to": <%= to([["4", ["left_control","left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + L_前のタブを選択(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("l", ["right_control"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["left_control","left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOpiton + D_右に分割して開く(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("d", ["left_optio"], ["caps_lock"]) %>,
+            "to": <%= to([["2", ["left_control","left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + D_分割して右に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["left_control","left_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
@@ -30,6 +74,94 @@
             "type": "basic",
             "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["0", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + period_行または選択範囲の複製(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("period", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + M_キャレットに一致括弧に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["4", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + M_キャレットをページの最後に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["5", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + N_キャレットをページの先頭に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["6", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + E_キャレットを次の単語に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["7", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + E_選択状態でキャレットを次の単語に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + L_キャレット位置の1行を選択(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["9", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + Z_新しい行の追加(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["right_option","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
