@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij95",
+    "title": "FrontmostIfintellij94",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -40,28 +40,6 @@
           {
             "type": "basic",
             "from": <%= from("l", ["right_control"], ["caps_lock"]) %>,
-            "to": <%= to([["8", ["left_control","left_option"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "LeftOpiton + D_右に分割して開く(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("d", ["left_optio"], ["caps_lock"]) %>,
-            "to": <%= to([["2", ["left_control","left_option"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "LeftOption + D_分割して右に移動(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["8", ["left_control","left_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
@@ -162,6 +140,28 @@
             "type": "basic",
             "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["hyphen", ["right_option","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "使用できない-LeftOpiton + D_右に分割して開く(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("d", ["left_optio"], ["caps_lock"]) %>,
+            "to": <%= to([["2", ["left_control","left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "使用できない-LeftOption + D_分割して右に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["left_control","left_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
