@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij88",
+  "title": "FrontmostIfintellij77",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -491,6 +491,41 @@
               "modifiers": [
                 "right_option",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + i_ターミナルアクティブ(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "12",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],
