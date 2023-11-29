@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij4",
+  "title": "FrontmostIfintellij555",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -434,12 +434,12 @@
       ]
     },
     {
-      "description": "RightCommand + L_キャレット位置の1行を選択(intellij)",
+      "description": "RightCommand + J_キャレット位置の1行を選択(intellij)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "j",
             "modifiers": {
               "mandatory": [
                 "right_gui"
