@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij",
+  "title": "FrontmostIfintellij99",
   "rules": [
     {
       "description": "LeftCommand + semicolon_CurrentRowCursolEnd(intellij)",
@@ -445,10 +445,10 @@
           },
           "to": [
             {
-              "key_code": "4",
+              "key_code": "2",
               "modifiers": [
-                "right_option",
-                "left_gui"
+                "left_option",
+                "left_shift"
               ]
             }
           ],
