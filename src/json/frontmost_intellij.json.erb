@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij98",
+    "title": "FrontmostIfintellij97",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -182,7 +182,7 @@
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
+            "from": <%= from("comma", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["c", ["right_option", "right_alt","right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }

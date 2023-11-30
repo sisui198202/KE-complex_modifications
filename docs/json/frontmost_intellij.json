@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij98",
+  "title": "FrontmostIfintellij97",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -582,7 +582,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "comma",
             "modifiers": {
               "mandatory": [
                 "left_option"
