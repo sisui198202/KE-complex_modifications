@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij",
+    "title": "FrontmostIfintellij2",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -205,7 +205,18 @@
           {
             "type": "basic",
             "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["o", ["left_cotrol"]]]) %>,
+            "to": <%= to([["g", ["left_cotrol"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + 0[ゼロ]_出現箇所の選択解除(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("0", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["g", ["left_cotrol","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
