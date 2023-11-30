@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij94",
+    "title": "FrontmostIfintellij9",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -184,6 +184,17 @@
             "type": "basic",
             "from": <%= from("comma", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["c", ["right_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + W_選択状態でキャレットを行末に移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["right_arrow", ["right_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
