@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij2",
+    "title": "FrontmostIfintellij3",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -205,7 +205,7 @@
           {
             "type": "basic",
             "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["g", ["left_cotrol"]]]) %>,
+            "to": <%= to([["g", ["left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
@@ -216,7 +216,7 @@
           {
             "type": "basic",
             "from": <%= from("0", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["g", ["left_cotrol","left_shift"]]]) %>,
+            "to": <%= to([["g", ["left_control","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
@@ -227,7 +227,7 @@
           {
             "type": "basic",
             "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["g", ["left_cotrol","left_gui"]]]) %>,
+            "to": <%= to([["g", ["left_control","left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij2",
+  "title": "FrontmostIfintellij3",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -668,7 +668,7 @@
             {
               "key_code": "g",
               "modifiers": [
-                "left_cotrol"
+                "left_control"
               ]
             }
           ],
@@ -703,7 +703,7 @@
             {
               "key_code": "g",
               "modifiers": [
-                "left_cotrol",
+                "left_control",
                 "left_shift"
               ]
             }
@@ -739,7 +739,7 @@
             {
               "key_code": "g",
               "modifiers": [
-                "left_cotrol",
+                "left_control",
                 "left_gui"
               ]
             }
