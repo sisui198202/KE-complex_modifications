@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij99",
+  "title": "FrontmostIfintellij98",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -562,6 +562,43 @@
               "key_code": "f12",
               "modifiers": [
                 "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + comma_参照をコピー(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_option",
+                "right_alt",
+                "right_shift"
               ]
             }
           ],

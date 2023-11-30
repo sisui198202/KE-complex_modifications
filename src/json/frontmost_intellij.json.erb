@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij99",
+    "title": "FrontmostIfintellij98",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -173,6 +173,17 @@
             "type": "basic",
             "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["f12", ["right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + comma_参照をコピー(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["c", ["right_option", "right_alt","right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
