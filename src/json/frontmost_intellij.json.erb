@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij",
+    "title": "FrontmostIfintellij1",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -239,6 +239,17 @@
             "type": "basic",
             "from": <%= from("e", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["z", ["left_option","left_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + T_現在ファイルのパスでターミナルを開く(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("t", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["f12", ["right_option","right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
