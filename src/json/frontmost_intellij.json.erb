@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij1",
+    "title": "FrontmostIfintellij2",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -250,6 +250,17 @@
             "type": "basic",
             "from": <%= from("t", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["f12", ["right_option","right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightOption + T_サイドバー構造表示(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["7", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
