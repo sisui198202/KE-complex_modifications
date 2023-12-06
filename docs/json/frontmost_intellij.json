@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij",
+  "title": "FrontmostIfintellij99",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -951,6 +951,78 @@
           "to": [
             {
               "key_code": "return_or_enter",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + closeBracket_なんでも実行(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + openBracket_どこでも検索(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
               "modifiers": [
                 "left_shift",
                 "right_gui"

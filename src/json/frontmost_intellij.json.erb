@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij",
+    "title": "FrontmostIfintellij99",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -294,6 +294,28 @@
             "type": "basic",
             "from": <%= from("q", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["return_or_enter", ["left_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + closeBracket_なんでも実行(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("close_bracket", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["0", ["left_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftOption + openBracket_どこでも検索(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["9", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
