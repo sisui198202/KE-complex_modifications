@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij3",
+  "title": "FrontmostIfintellij4",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -883,6 +883,41 @@
               "key_code": "spacebar",
               "modifiers": [
                 "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + W_インポートするクラス表示(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],
