@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij2",
+    "title": "FrontmostIfintellij3",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -393,39 +393,6 @@
             "type": "basic",
             "from": <%= from("0", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["1", ["left_shift","right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "ダミー_toの8使用できなかったので次の設定時に再検証_LeftCommand +_(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("e", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["8", ["right_option","left_shift"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "ダミー__(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["9", ["right_option","left_shift"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "使用できない-LeftOption + D_分割して右に移動(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["8", ["left_control","left_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
