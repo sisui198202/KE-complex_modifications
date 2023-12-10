@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij90",
+  "title": "FrontmostIfintellij9",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -1154,7 +1154,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "d",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": [
                 "left_option"
