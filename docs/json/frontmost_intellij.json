@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij",
+  "title": "FrontmostIfintellij1",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -1193,7 +1193,7 @@
             "key_code": "quote",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
