@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij3",
+  "title": "FrontmostIfintellij",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -1077,78 +1077,6 @@
       ]
     },
     {
-      "description": "RightCommand + i_次の分割へ移動(intellij)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "6",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.jetbrains.intellij.ce$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + D_分割して右に移動(intellij)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.jetbrains.intellij.ce$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "LeftCommand + オウ_右に分割(intellij)",
       "manipulators": [
         {
@@ -1185,15 +1113,15 @@
       ]
     },
     {
-      "description": "LeftCommand + quote_分割を解除(intellij)",
+      "description": "LeftOption + D_分割して右に移動(intellij)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "quote",
+            "key_code": "d",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1202,7 +1130,7 @@
           },
           "to": [
             {
-              "key_code": "4",
+              "key_code": "5",
               "modifiers": [
                 "left_shift",
                 "right_gui"
@@ -1275,6 +1203,78 @@
           "to": [
             {
               "key_code": "1",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + i_次の分割へ移動(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + quote_分割を解除(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
               "modifiers": [
                 "left_shift",
                 "right_gui"

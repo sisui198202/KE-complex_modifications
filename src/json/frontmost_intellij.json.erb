@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij3",
+    "title": "FrontmostIfintellij",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -332,28 +332,6 @@
         ]
       },
       {
-        "description": "RightCommand + i_次の分割へ移動(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["6", ["left_shift","right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
-        "description": "LeftOption + D_分割して右に移動(intellij)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["5", ["left_shift","right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("intellij") %> ]
-          }
-        ]
-      },
-      {
         "description": "LeftCommand + オウ_右に分割(intellij)",
         "manipulators": [
           {
@@ -365,12 +343,12 @@
         ]
       },
       {
-        "description": "LeftCommand + quote_分割を解除(intellij)",
+        "description": "LeftOption + D_分割して右に移動(intellij)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["4", ["left_shift","right_gui"]]]) %>,
+            "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["5", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
@@ -393,6 +371,28 @@
             "type": "basic",
             "from": <%= from("0", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["1", ["left_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + i_次の分割へ移動(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["6", ["left_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + quote_分割を解除(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["4", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
