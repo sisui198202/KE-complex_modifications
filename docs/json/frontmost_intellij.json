@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij1",
+  "title": "FrontmostIfintellij2",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -1239,6 +1239,42 @@
           "to": [
             {
               "key_code": "3",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + ゼロ_下に分割移動(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
               "modifiers": [
                 "left_shift",
                 "right_gui"
