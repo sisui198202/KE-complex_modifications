@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij",
+    "title": "FrontmostIfintellij8",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -41,6 +41,17 @@
             "type": "basic",
             "from": <%= from("semicolon", ["right_control"], ["caps_lock"]) %>,
             "to": <%= to([["4", ["left_control","left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + closebracket_選択範囲/行のインデント解除(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["7", ["left_control","left_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
