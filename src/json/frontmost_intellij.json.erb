@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij7",
+    "title": "FrontmostIfintellij",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -101,23 +101,23 @@
         ]
       },
       {
-        "description": "LeftCommand + M_キャレットをページの最後に移動(intellij)",
+        "description": "LeftCommand + M_キャレットをテキストの最後に移動(intellij)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["5", ["right_option","left_shift"]]]) %>,
+            "to": <%= to([["1", ["left_contorl","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
       },
       {
-        "description": "LeftCommand + N_キャレットをページの先頭に移動(intellij)",
+        "description": "LeftCommand + N_キャレットをテキストの先頭に移動(intellij)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["6", ["right_option","left_shift"]]]) %>,
+            "to": <%= to([["2", ["left_control","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]

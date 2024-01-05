@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij7",
+  "title": "FrontmostIfintellij",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -326,7 +326,7 @@
       ]
     },
     {
-      "description": "LeftCommand + M_キャレットをページの最後に移動(intellij)",
+      "description": "LeftCommand + M_キャレットをテキストの最後に移動(intellij)",
       "manipulators": [
         {
           "type": "basic",
@@ -343,9 +343,9 @@
           },
           "to": [
             {
-              "key_code": "5",
+              "key_code": "1",
               "modifiers": [
-                "right_option",
+                "left_contorl",
                 "left_shift"
               ]
             }
@@ -362,7 +362,7 @@
       ]
     },
     {
-      "description": "LeftCommand + N_キャレットをページの先頭に移動(intellij)",
+      "description": "LeftCommand + N_キャレットをテキストの先頭に移動(intellij)",
       "manipulators": [
         {
           "type": "basic",
@@ -379,9 +379,9 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "2",
               "modifiers": [
-                "right_option",
+                "left_control",
                 "left_shift"
               ]
             }
