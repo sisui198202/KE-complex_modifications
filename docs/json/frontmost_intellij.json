@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij3",
+  "title": "FrontmostIfintellij5",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -398,7 +398,7 @@
       ]
     },
     {
-      "description": "LeftCommand + T_インタフェース抽出(intellij)",
+      "description": "RightCommand + quote_インタフェース抽出(intellij)",
       "manipulators": [
         {
           "type": "basic",
