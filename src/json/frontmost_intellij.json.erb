@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij1",
+    "title": "FrontmostIfintellij2",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -118,6 +118,17 @@
             "type": "basic",
             "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["left_control","left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + T_インタフェース抽出(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["left_control","left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
