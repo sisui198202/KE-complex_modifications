@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij5",
+  "title": "FrontmostIfintellij",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -416,6 +416,42 @@
           "to": [
             {
               "key_code": "3",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + A_新規ディレクトリまたはパッケージの作成(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
               "modifiers": [
                 "left_control",
                 "left_shift"
