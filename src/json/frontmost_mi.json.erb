@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfMi",
+    "title": "FrontmostIfMi1",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -155,13 +155,24 @@
         }
       ]
     },
-   {
+    {
       "description": "Namikako_OpenCloseInput(mi)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("open_bracket", ["left_shift"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["open_bracket", ["left_shift"]], ["close_bracket", ["left_shift"]], ["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + quote_NumberList(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["left_control", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
