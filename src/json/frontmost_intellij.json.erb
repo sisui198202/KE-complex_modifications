@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij",
+    "title": "FrontmostIfintellij98",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -451,6 +451,49 @@
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
-      }
+      },
+      {
+        "description": "LeftControl_名前の変更1(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("keyboard_fn", ["caps_lock"]) %>,
+            "to": <%= to([["f6", ["left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+    {
+      "description": "LeftControl_名前の変更(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code":"keyboard_fn",
+          "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f6",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+           "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
  ]
 }
