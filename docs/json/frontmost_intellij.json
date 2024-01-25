@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfintellij1",
+  "title": "FrontmostIfintellij2",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -524,6 +524,42 @@
           "to": [
             {
               "key_code": "5",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + Z_エラーに移動(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote",
               "modifiers": [
                 "left_control",
                 "left_shift"
