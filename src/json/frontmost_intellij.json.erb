@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIntellij99",
+    "title": "FrontmostIfIntellij98",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -514,6 +514,17 @@
             "type": "basic",
             "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["left_option","right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightOption + K_式のクイック評価(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["f8", ["left_option","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
