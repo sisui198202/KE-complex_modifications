@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfintellij",
+    "title": "FrontmostIfintellij1",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -481,6 +481,17 @@
             "type": "basic",
             "from": <%= from("return_or_enter", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["slash", ["left_control","right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightCommand + K_カレント行削除(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["2", ["left_option","right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
