@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIntellij98",
+    "title": "FrontmostIfIntellij97",
     "rules": [
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -514,6 +514,17 @@
             "type": "basic",
             "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["left_option","right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightOption + P_キャレットがある行までプログラムを実行(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("p", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["quote", ["left_option","right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]

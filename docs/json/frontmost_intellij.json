@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIntellij98",
+  "title": "FrontmostIfIntellij97",
   "rules": [
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
@@ -1671,6 +1671,42 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "left_option",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + P_キャレットがある行までプログラムを実行(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote",
               "modifiers": [
                 "left_option",
                 "right_shift"
