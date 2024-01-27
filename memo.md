@@ -137,6 +137,24 @@ com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2
 JupyterLabを使用する。
 
 tesutoは、テスト用のプロファイルとして使用する。理由は、Complex modificationsのEnable rulesで新規のルールを追加して、追加したルールが適用できているかを検証する場合にUpで一番上にのっていかないと適用できないケースがあるため。
+
+---------------------
+## capslockがオンの時、f7で起動し、capslockがオフの時はpublicで指定したf7の挙動
+
+```
+{
+  "description": "F7_ステップアウト(intellij)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": <%= from("f7", ["caps_lock"]) %>,
+      "to": <%= to([["2", ["right_gui","right_option"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("intellij") %> ]
+    }
+  ]
+}
+```
+
 ---------------------
 # [replace_vim.json.erb]
 
@@ -1983,4 +2001,5 @@ ConstScrollDown,ConstScrollUp(保留)
   "to": <%= to([["y", ["left_control"]]]) %>,
   "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
 },
+
 ---------------------
