@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfIntellij97",
+    "title": "FrontmostIfIntellij96",
     "rules": [
+      {
+        "description": "RightCommand + Openbracket_行ブレークポイントの切り替え(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("open_bracket", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["1", ["right_gui","right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
       {
         "description": "RightCommand + A_新規Javaクラス(intellij)",
         "manipulators": [

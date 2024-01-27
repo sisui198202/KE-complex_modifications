@@ -1,6 +1,42 @@
 {
-  "title": "FrontmostIfIntellij97",
+  "title": "FrontmostIfIntellij96",
   "rules": [
+    {
+      "description": "RightCommand + Openbracket_行ブレークポイントの切り替え(intellij)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.jetbrains.intellij.ce$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "RightCommand + A_新規Javaクラス(intellij)",
       "manipulators": [
