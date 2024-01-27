@@ -1,6 +1,39 @@
 {
-    "title": "FrontmostIfIntellij96",
+    "title": "FrontmostIfIntellij3",
     "rules": [
+      {
+        "description": "F7_ステップアウト(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("f7", ["caps_lock"]) %>,
+            "to": <%= to([["2", ["right_gui","right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "F9_ステップイン(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("f9", ["caps_lock"]) %>,
+            "to": <%= to([["3", ["right_gui","right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "F8_ステップオーバー(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("f8", ["caps_lock"]) %>,
+            "to": <%= to([["4", ["right_gui","right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
       {
         "description": "RightCommand + Openbracket_行ブレークポイントの切り替え(intellij)",
         "manipulators": [
