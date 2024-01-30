@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfIntellij3",
+  "title": "FrontmostIfIntellij",
   "rules": [
     {
       "description": "F7_ステップアウト(intellij)",
@@ -1464,7 +1464,7 @@
       ]
     },
     {
-      "description": "LeftCommand + オウ_右に分割(intellij)",
+      "description": "LeftCommand + オウ_分割して右に移動(intellij)",
       "manipulators": [
         {
           "type": "basic",
@@ -1481,7 +1481,7 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "5",
               "modifiers": [
                 "left_shift",
                 "right_gui"
@@ -1536,7 +1536,7 @@
       ]
     },
     {
-      "description": "LeftCommand + ゼロ_下に分割(intellij)",
+      "description": "LeftCommand + ゼロ_右に分割(intellij)",
       "manipulators": [
         {
           "type": "basic",
@@ -1553,7 +1553,7 @@
           },
           "to": [
             {
-              "key_code": "3",
+              "key_code": "2",
               "modifiers": [
                 "left_shift",
                 "right_gui"
@@ -1572,7 +1572,7 @@
       ]
     },
     {
-      "description": "LeftOption + ゼロ_下に分割移動(intellij)",
+      "description": "LeftOption + ゼロ_下に分割(intellij)",
       "manipulators": [
         {
           "type": "basic",
@@ -1589,7 +1589,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "3",
               "modifiers": [
                 "left_shift",
                 "right_gui"

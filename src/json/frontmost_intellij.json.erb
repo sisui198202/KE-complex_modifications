@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfIntellij3",
+    "title": "FrontmostIfIntellij",
     "rules": [
       {
         "description": "F7_ステップアウト(intellij)",
@@ -453,12 +453,12 @@
         ]
       },
       {
-        "description": "LeftCommand + オウ_右に分割(intellij)",
+        "description": "LeftCommand + オウ_分割して右に移動(intellij)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["2", ["left_shift","right_gui"]]]) %>,
+            "to": <%= to([["5", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
@@ -475,23 +475,23 @@
         ]
       },
       {
-        "description": "LeftCommand + ゼロ_下に分割(intellij)",
+        "description": "LeftCommand + ゼロ_右に分割(intellij)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["3", ["left_shift","right_gui"]]]) %>,
+            "to": <%= to([["2", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
       },
       {
-        "description": "LeftOption + ゼロ_下に分割移動(intellij)",
+        "description": "LeftOption + ゼロ_下に分割(intellij)",
         "manipulators": [
           {
             "type": "basic",
             "from": <%= from("0", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["1", ["left_shift","right_gui"]]]) %>,
+            "to": <%= to([["3", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
