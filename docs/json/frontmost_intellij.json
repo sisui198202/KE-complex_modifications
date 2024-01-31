@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfIntellij98",
+  "title": "A_FrontmostIfIntellij",
   "rules": [
     {
       "description": "F7_ステップアウト(intellij)",
@@ -1896,15 +1896,15 @@
       ]
     },
     {
-      "description": "LeftCommand + Closebracket_問題(intellij)",
+      "description": "LeftOption + X_問題(intellij)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "close_bracket",
+            "key_code": "x",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"

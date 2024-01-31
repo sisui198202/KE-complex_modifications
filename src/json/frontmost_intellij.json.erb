@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfIntellij98",
+    "title": "A_FrontmostIfIntellij",
     "rules": [
       {
         "description": "F7_ステップアウト(intellij)",
@@ -585,11 +585,11 @@
         ]
       },
       {
-        "description": "LeftCommand + Closebracket_問題(intellij)",
+        "description": "LeftOption + X_問題(intellij)",
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
+            "from": <%= from("x", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["6", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
