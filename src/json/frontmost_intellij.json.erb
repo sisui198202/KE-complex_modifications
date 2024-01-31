@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfIntellij1",
+    "title": "A_FrontmostIfIntellij2",
     "rules": [
       {
         "description": "F7_ステップアウト(intellij)",
@@ -580,6 +580,17 @@
             "type": "basic",
             "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["f8", ["left_option","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("intellij") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + slash_問題(intellij)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["6", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }
         ]
