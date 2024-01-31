@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfIntellij",
+  "title": "A_FrontmostIfIntellij99",
   "rules": [
     {
       "description": "F7_ステップアウト(intellij)",
@@ -1896,7 +1896,7 @@
       ]
     },
     {
-      "description": "LeftCommand + slash_問題(intellij)",
+      "description": "LeftCommand + Closebracket_問題(intellij)",
       "manipulators": [
         {
           "type": "basic",
