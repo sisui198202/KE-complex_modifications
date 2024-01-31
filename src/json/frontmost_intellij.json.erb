@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfIntellij2",
+    "title": "A_FrontmostIfIntellij",
     "rules": [
       {
         "description": "F7_ステップアウト(intellij)",
@@ -589,7 +589,7 @@
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+            "from": <%= from("close_bracket", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["6", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("intellij") %> ]
           }

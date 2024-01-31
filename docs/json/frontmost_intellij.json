@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfIntellij2",
+  "title": "A_FrontmostIfIntellij",
   "rules": [
     {
       "description": "F7_ステップアウト(intellij)",
@@ -1901,7 +1901,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "slash",
+            "key_code": "close_bracket",
             "modifiers": {
               "mandatory": [
                 "left_control"
