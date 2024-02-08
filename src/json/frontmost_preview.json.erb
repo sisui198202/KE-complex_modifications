@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview1",
+    "title": "FrontmostIfPreview3",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -446,11 +446,11 @@
       ]
     },
     {
-      "description": "LeftCommnad + Quote_単一ページ(preview)",
+      "description": "LeftCommnad + W_単一ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("quote", ["left_control"]) %>,
+          "from": <%= from("W", ["left_control"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -472,7 +472,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("slash",["caps_lock"]) %>,
+          "from": <%= from("slash") %>,
           "to": <%= to([["comma", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }

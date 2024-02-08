@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview1",
+  "title": "FrontmostIfPreview3",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1183,12 +1183,12 @@
       ]
     },
     {
-      "description": "LeftCommnad + Quote_単一ページ(preview)",
+      "description": "LeftCommnad + W_単一ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "quote",
+            "key_code": "W",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -1252,12 +1252,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "slash"
           },
           "to": [
             {
