@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview3",
+    "title": "FrontmostIfPreview4",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -614,6 +614,41 @@
             }
           ]
     },
+        {
+          "description": "LeftAlt_Copy(preview)",
+          "manipulators": [
+            {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+"conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                  "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+          }
+          ]
+        },
     {
       "description": "使用しない_Semicolon + J_DownArrow-X3(preview)",
       "manipulators": [
