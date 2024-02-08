@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview",
+    "title": "FrontmostIfPreview1",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -383,67 +383,7 @@
     }
     ]
     },
-    {
-      "description": "使用しない_Semicolon + J_DownArrow-X3(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-           "from": {
-            "key_code": "semicolon"
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "使用しない_Quote_UpArrow-X3(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote"
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            },
-            {
-              "key_code": "up_arrow"
-            },
-            {
-              "key_code": "up_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-{
+ {
             "description": "1(イチ)_RightTitleBarMouseClick(preview)",
             "manipulators": [
               {
@@ -673,6 +613,66 @@
           ]
             }
           ]
+    },
+    {
+      "description": "使用しない_Semicolon + J_DownArrow-X3(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+           "from": {
+            "key_code": "semicolon"
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            },
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "使用しない_Quote_UpArrow-X3(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote"
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            },
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
     }
     ]
 }
