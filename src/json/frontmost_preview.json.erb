@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview1",
+    "title": "FrontmostIfPreview2",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -240,11 +240,22 @@
       ]
     },
     {
-      "description": "Semicolon_星マーク(preview)",
+      "description": "Semicolon_星マーク旧(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("semicolon",["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_control","left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Semicolon_星マーク新(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon") %>,
           "to": <%= to([["1", ["left_control","left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
