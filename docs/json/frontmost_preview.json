@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview4",
+  "title": "FrontmostIfPreview5",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1576,7 +1576,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.apple\\.Preview$"
               ]
