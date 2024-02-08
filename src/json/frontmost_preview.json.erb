@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview99",
+    "title": "FrontmostIfPreview98",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -384,16 +384,16 @@
       ]
     },
   {
-    "description": "A_AppleMusicActiveWindow(preview)",
+    "description": "A_現在ウィンドウ複製(preview)",
     "manipulators": [
     {
       "type": "basic",
       "from": <%= from("a",["caps_lock"]) %>,
-      "to": <%= set_shell_command(["open -a 'Music.app'"]) %>,
+      "to": <%= to([["o", "right_option"]]) %>,
       "conditions": [ <%= frontmost_application_if("preview") %>]
     }
     ]
-    },
+  },
  {
             "description": "1(イチ)_RightTitleBarMouseClick(preview)",
             "manipulators": [

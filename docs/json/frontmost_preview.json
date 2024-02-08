@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview99",
+  "title": "FrontmostIfPreview98",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1049,7 +1049,7 @@
       ]
     },
     {
-      "description": "A_AppleMusicActiveWindow(preview)",
+      "description": "A_現在ウィンドウ複製(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -1063,7 +1063,8 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Music.app'"
+              "key_code": "o",
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
