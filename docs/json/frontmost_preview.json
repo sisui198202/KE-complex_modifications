@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview2",
+  "title": "FrontmostIfPreview3",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -617,39 +617,6 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Semicolon_星マーク旧(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_control",
-                "left_option"
               ]
             }
           ],
