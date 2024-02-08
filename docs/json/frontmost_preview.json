@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview97",
+  "title": "FrontmostIfPreview96",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1054,12 +1054,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "a"
           },
           "to": [
             {
