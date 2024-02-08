@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview96",
+  "title": "FrontmostIfPreview1",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -490,38 +490,6 @@
           "to": [
             {
               "key_code": "9",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "W_連続スクロール(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
               "modifiers": [
                 "right_gui"
               ]
@@ -1247,7 +1215,39 @@
       ]
     },
     {
-      "description": "Slash_単一ページ(preview)",
+      "description": "W_単一ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Slash_Previewウィンドウ内切替(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -1261,9 +1261,9 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "comma",
               "modifiers": [
-                "right_gui"
+                "left_control"
               ]
             }
           ],

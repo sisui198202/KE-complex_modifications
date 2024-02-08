@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview96",
+    "title": "FrontmostIfPreview1",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -191,17 +191,6 @@
           "type": "basic",
           "from": <%= from("z",["caps_lock"]) %>,
           "to": <%= to([["9", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
-        }
-      ]
-    },
-    {
-      "description": "W_連続スクロール(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("w",["caps_lock"]) %>,
-          "to": <%= to([["1", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
@@ -468,12 +457,23 @@
       ]
     },
     {
-      "description": "Slash_単一ページ(preview)",
+      "description": "W_単一ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w",["caps_lock"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Slash_Previewウィンドウ内切替(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("slash",["caps_lock"]) %>,
-          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "to": <%= to([["comma", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
