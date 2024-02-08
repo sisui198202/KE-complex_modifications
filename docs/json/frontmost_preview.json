@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview6",
+  "title": "FrontmostIfPreview",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -1537,41 +1537,6 @@
             },
             {
               "shell_command": "open -a 'Visual Studio Code.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt_Copy(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_alt"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "c",
-              "modifiers": "right_gui"
             }
           ],
           "conditions": [
