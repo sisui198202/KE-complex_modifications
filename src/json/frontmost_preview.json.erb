@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview",
+    "title": "FrontmostIfPreview99",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -246,6 +246,17 @@
           "type": "basic",
           "from": <%= from("semicolon") %>,
           "to": <%= to([["1", ["left_control","left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
+    {
+      "description": "Quote_注釈(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote") %>,
+          "to": <%= to([["i", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
