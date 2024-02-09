@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview9",
+    "title": "FrontmostIfPreview10",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -152,12 +152,12 @@
       ]
     },
     {
-      "description": "D_SelfTextDirectory(preview)",
+      "description": "D_SummaryDirectory(preview)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("d",["caps_lock"]) %>,
-          "to": <%= to([["8", ["left_shift", "right_option","right_control"]],["right_arrow"]]) %>,
+          "to": <%= to([["7", ["left_shift", "right_option","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]

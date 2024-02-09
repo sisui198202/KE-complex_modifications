@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview9",
+  "title": "FrontmostIfPreview10",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -373,7 +373,7 @@
       ]
     },
     {
-      "description": "D_SelfTextDirectory(preview)",
+      "description": "D_SummaryDirectory(preview)",
       "manipulators": [
         {
           "type": "basic",
@@ -387,15 +387,12 @@
           },
           "to": [
             {
-              "key_code": "8",
+              "key_code": "7",
               "modifiers": [
                 "left_shift",
                 "right_option",
-                "right_control"
+                "right_gui"
               ]
-            },
-            {
-              "key_code": "right_arrow"
             }
           ],
           "conditions": [
