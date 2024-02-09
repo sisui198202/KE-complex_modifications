@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview3",
+    "title": "FrontmostIfPreview4",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -450,7 +450,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("W", ["left_control"]) %>,
+          "from": <%= from("W", ["left_control"],["caps_lock"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
