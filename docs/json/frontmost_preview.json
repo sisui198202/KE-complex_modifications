@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview",
+  "title": "FrontmostIfPreview1",
   "rules": [
     {
       "description": "Z_保存(preview)",
@@ -7,12 +7,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "z"
           },
           "to": [
             {

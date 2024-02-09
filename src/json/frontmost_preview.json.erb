@@ -1,12 +1,12 @@
 {
-    "title": "FrontmostIfPreview",
+    "title": "FrontmostIfPreview1",
     "rules": [
     {
       "description": "Z_保存(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z",["caps_lock"]) %>,
+          "from": <%= from("z") %>,
           "to": <%= to([["s", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
