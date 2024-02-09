@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview12",
+  "title": "FrontmostIfPreview13",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -378,12 +378,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "d"
           },
           "to": [
             {
@@ -922,12 +917,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "hyphen",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "hyphen"
           },
           "to": [
             {

@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview12",
+    "title": "FrontmostIfPreview13",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -156,7 +156,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d",["caps_lock"]) %>,
+          "from": <%= from("d") %>,
           "to": <%= to([["7", ["left_shift", "right_option","right_gui"]],["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -344,7 +344,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("hyphen",["caps_lock"]) %>,
+          "from": <%= from("hyphen") %>,
           "to": <%= to([["2", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
