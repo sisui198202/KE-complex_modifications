@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfPreview15",
+    "title": "FrontmostIfPreview",
     "rules": [
+    {
+      "description": "Z_保存(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z",["caps_lock"]) %>,
+          "to": <%= to([["s", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    },
     {
       "description": "J_DownArrow(preview)",
       "manipulators": [
@@ -185,11 +196,11 @@
       ]
     },
     {
-      "description": "Z_実際のサイズに合わせる(preview)",
+      "description": "CloseBracket_実際のサイズに合わせる(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z",["caps_lock"]) %>,
+          "from": <%= from("close_bracket") %>,
           "to": <%= to([["9", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -554,41 +565,6 @@
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
-    },
-     {
-      "description": "CloseBracket_PreviewLeft-KindleRight(preview)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_option"
-              ]
-            },
-          {
-            "shell_command": "open -a 'Kindle.app'"
-          }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-            }
-          ]
     },
      {
       "description": "BackSlash_PreviewRight-VscodeLeft(preview)",
