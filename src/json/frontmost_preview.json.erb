@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfPreview4",
+    "title": "FrontmostIfPreview6",
     "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -388,7 +388,7 @@
             "manipulators": [
               {
                 "type": "basic",
-                "from": <%= from("1",["caps_lock"]) %>,
+                "from": <%= from("1") %>,
       "to": [
          {
           "software_function": {
@@ -439,18 +439,18 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("e",["caps_lock"]) %>,
+          "from": <%= from("e") %>,
           "to": <%= to([["3", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
       ]
     },
     {
-      "description": "LeftCommnad + W_単一ページ(preview)",
+      "description": "LeftCommand + W_単一ページ(preview)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("W", ["left_control"],["caps_lock"]) %>,
+          "from": <%= from("w", ["left_control"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
@@ -461,7 +461,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("w",["caps_lock"]) %>,
+          "from": <%= from("w") %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("preview") %> ]
         }
