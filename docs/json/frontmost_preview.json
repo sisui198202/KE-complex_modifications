@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPreview8",
+  "title": "FrontmostIfPreview9",
   "rules": [
     {
       "description": "J_DownArrow(preview)",
@@ -660,12 +660,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "open_bracket"
           },
           "to": [
             {
