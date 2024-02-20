@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder9999",
+    "title": "FrontmostIfFinder88",
     "rules": [
     {
       "description": "RightOption + S_マイドライブ/Summary(Finder)",
@@ -72,7 +72,7 @@
       "manipulators": [
         {
       "type": "basic",
-      "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
+      "from": <%= from("a", ["right_option"]) %>,
       "to": <%= to([["5", ["left_control","left_option"]]]) %>,
       "conditions": [ <%= frontmost_application_if("finder") %>]
         }
