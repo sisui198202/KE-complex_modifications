@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfFinder66",
+    "title": "FrontmostIfFinder55",
     "rules": [
+    {
+      "description": "RightOption + A_新規Finderウィンドウ(Finder)",
+      "manipulators": [
+        {
+      "type": "basic",
+      "from": <%= from("a", ["right_option"]) %>,
+      "to": <%= to([["5", ["left_shift","left_gui"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("finder") %>]
+        }
+      ]
+    },
     {
       "description": "RightOption + S_マイドライブ/Summary(Finder)",
       "manipulators": [
@@ -64,17 +75,6 @@
           "from": <%= from("z", ["left_control"]) %>,
           "to": <%= to([["4", ["left_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + A_新規Finderウィンドウ(Finder)",
-      "manipulators": [
-        {
-      "type": "basic",
-      "from": <%= from("a", ["right_option"]) %>,
-      "to": <%= to([["5", ["left_control","left_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("finder") %>]
         }
       ]
     },
