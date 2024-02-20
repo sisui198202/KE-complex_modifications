@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder333",
+    "title": "FrontmostIfFinder44",
     "rules": [
     {
       "description": "RightCommand + L_前のタブを表示(Finder)",
@@ -68,11 +68,11 @@
       ]
     },
     {
-      "description": "RightCommand + i_デュアルモードの切替(Finder)",
+      "description": "LeftCommand + オウ_デュアルモードの切替(Finder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("i", ["right_gui"]) %>,
+          "from": <%= from("o", ["left_control"]) %>,
           "to": <%= to([["u", ["left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
