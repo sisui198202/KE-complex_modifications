@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder4",
+    "title": "FrontmostIfFinder111",
     "rules": [
     {
       "description": "LeftOption + N_Dropbox(Finder)",
@@ -178,11 +178,11 @@
       ]
     },
   {
-      "description": "RightCommand + A_FrontICollectionsFileCreate(Finder)",
+      "description": "LeftOption + F_FrontICollectionsFileCreate(Finder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_gui"]) %>,
+          "from": <%= from("f", ["left_option"]) %>,
           "to": <%= set_shell_command(["touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
