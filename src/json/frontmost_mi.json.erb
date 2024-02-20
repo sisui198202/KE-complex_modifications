@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfMi98",
+    "title": "FrontmostIfMi97",
     "rules": [
+    {
+      "description": "LeftCommand + Oオウ_現在のタブをウインドウ化(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
     {
       "description": "RightCommand + J_1RowSelection(mi)",
       "manipulators": [
