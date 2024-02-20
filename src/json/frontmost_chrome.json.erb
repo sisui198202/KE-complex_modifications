@@ -1,17 +1,6 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome",
     "rules": [
-      {
-        "description": "J_Test999(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-          }
-        ]
-      },
       {
         "description": "J_DownArrow(Chrome)",
         "manipulators": [
