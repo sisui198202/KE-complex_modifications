@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfFinder1",
+    "title": "FrontmostIfFinder2",
     "rules": [
     {
-      "description": "LeftOption + D_Desktop(pathfinder)",
+      "description": "LeftOption + D_Desktop(Finder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["d", ["left_shift", "left_gui"]]]) %>,
+          "from": <%= from("d", ["left_option"]) %>,
+          "to": <%= to([["d", ["left_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
