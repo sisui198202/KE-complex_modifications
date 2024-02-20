@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder87",
   "rules": [
     {
-      "description": "RightOption + A_新規Finderウィンドウ(pathfinder)",
+      "description": "RightOption + A_新規Finderウィンドウ(finder)",
       "manipulators": [
         {
           "type": "basic",
