@@ -138,7 +138,7 @@ end
 
 def frontmost_application(type, app_aliases, as_json = true)
   finder_bundle_identifiers = [
-    '^com\.apple\.finder$',
+    '^com.apple.finder$',
   ]
 
   kindle_bundle_identifiers = [
