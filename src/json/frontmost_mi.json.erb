@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfMi99",
+    "title": "FrontmostIfMi98",
     "rules": [
     {
       "description": "RightCommand + J_1RowSelection(mi)",
@@ -107,17 +107,6 @@
           "type": "basic",
           "from": <%= from("m", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["w", ["left_control", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("mi") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + W_CurrentCursol-EndRowSelect(mi)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["y", ["left_control", "right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
