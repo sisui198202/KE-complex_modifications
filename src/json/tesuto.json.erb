@@ -1,6 +1,116 @@
 {
-    "title": "FrontmostIfFinder98",
+    "title": "FrontmostIfFinder",
     "rules": [
+    {
+      "description": "RightCommand + L_前のタブを表示(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= to([["1", ["left_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + セミコロン_次のタブを表示(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("semicolon", ["right_gui"]) %>,
+          "to": <%= to([["2", ["left_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + M_GoogleDrive(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_option"]) %>,
+          "to": <%= to([["3", ["left_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + M_最近の項目(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"]) %>,
+          "to": <%= to([["4", ["left_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + U_カラム(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["left_option"]) %>,
+          "to": <%= to([["3", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + i_リスト(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["left_option"]) %>,
+          "to": <%= to([["2", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + i_デュアルモードの切替(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"]) %>,
+          "to": <%= to([["u", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_サイドバー切替(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_gui"]) %>,
+          "to": <%= to([["s", ["left_gui","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + A_新規タブ作成(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= to([["t", ["left_shift","left_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + i_アクティブなパネルの切替(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("i", ["right_gui"]) %>,
+          "to": <%= to([["tab", ["left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftOption + D_Desktop(Finder)",
       "manipulators": [
