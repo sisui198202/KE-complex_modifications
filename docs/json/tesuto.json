@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder999",
+  "title": "FrontmostIfFinder",
   "rules": [
     {
       "description": "RightOption + A_新規Finderウィンドウ(pathfinder)",
@@ -30,7 +30,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
+                "^com\\.apple\\.finder$"
               ]
             }
           ]
@@ -55,7 +55,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"
+              "shell_command": "open -a 'Finder' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"
             }
           ],
           "conditions": [

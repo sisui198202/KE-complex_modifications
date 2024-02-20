@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder999",
+    "title": "FrontmostIfFinder",
     "rules": [
     {
       "description": "RightOption + A_新規Finderウィンドウ(pathfinder)",
@@ -8,7 +8,7 @@
       "type": "basic",
       "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
       "to": <%= to([["6", ["left_control","left_option"]]]) %>,
-      "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+      "conditions": [ <%= frontmost_application_if("finder") %>]
         }
       ]
     },
@@ -18,7 +18,7 @@
         {
       "type": "basic",
       "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-      "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"]) %>,
+      "to": <%= set_shell_command(["open -a 'Finder' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"]) %>,
       "conditions": [ <%= frontmost_application_if("finder") %>]
         }
       ]
