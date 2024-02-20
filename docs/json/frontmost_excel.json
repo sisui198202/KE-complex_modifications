@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel2",
+  "title": "FrontmostIfExcel3",
   "rules": [
     {
-      "description": "LeftOption + U_塗りつぶし色(Excel)",
+      "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
       "manipulators": [
         {
           "type": "basic",
