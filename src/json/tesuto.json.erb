@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfFinder987",
+    "title": "FrontmostIfFinder98",
     "rules": [
+    {
+      "description": "LeftOption + D_Desktop(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("d", ["left_option"]) %>,
+          "to": <%= to([["d", ["left_shift","left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
    {
       "description": "F2_Rename(Finder)",
       "manipulators": [
