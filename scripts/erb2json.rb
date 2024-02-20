@@ -137,8 +137,9 @@ def each_key(source_keys_list: :source_keys_list, dest_keys_list: :dest_keys_lis
 end
 
 def frontmost_application(type, app_aliases, as_json = true)
+
   finder_bundle_identifiers = [
-    '^com.apple.finder$',
+    '^com\.apple\.finder$',
   ]
 
   kindle_bundle_identifiers = [
