@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder3333",
+    "title": "FrontmostIfFinder4",
     "rules": [
     {
       "description": "LeftOption + N_Dropbox(Finder)",
@@ -106,7 +106,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= to([["t", ["left_control","left_shift"]]]) %>,
+          "to": <%= to([["t", ["left_shift","left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]

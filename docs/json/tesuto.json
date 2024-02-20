@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder3333",
+  "title": "FrontmostIfFinder4",
   "rules": [
     {
       "description": "LeftOption + N_Dropbox(Finder)",
@@ -307,8 +307,8 @@
             {
               "key_code": "t",
               "modifiers": [
-                "left_control",
-                "left_shift"
+                "left_shift",
+                "left_control"
               ]
             }
           ],
