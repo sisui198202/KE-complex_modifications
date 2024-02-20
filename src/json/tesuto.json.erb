@@ -1,500 +1,84 @@
 {
-  "title": "TESUTO2",
-  "rules": [
-              {
-                "description": "一括設定(TESUTO)",
-                "manipulators": [
-                  {
-                    "description": "Fn + U_WindowLeftUp",
-                    "type": "basic",
-                    "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", "right_alt"]]) %>
-                  },
-                  {
-                    "description": "Fn + H_LeftWindowMove",
-                    "type": "basic",
-                    "from": <%= from("h", ["fn"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>
-                  }
-              ]
-              },
-                    {
-        "description": "個別設定_LeftCommand + W_CurrentCursol-EndRowSelect(TESUTO)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["equal_sign", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("pararell") %>]
-          }
-        ]
-      },
-      {
-        "description": "うまくいかない-個別設定_RightCommand + B_f13(TESUTO)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["f13"]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
-          }
-        ]
-      },
-      {
-        "description": "個別設定_RightCommand + ._MaxWindows(TESUTO)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["1", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("pararell") %>]
-          }
-        ]
-      },
-      {
-        "description": "test1",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j") %>,
-            "to": <%= to([["j"]]) %>
-          }
-        ]
-      },
-      {
-        "description": "test2",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-
-          }
-        ]
-      },
-              {
-            "description": "Space + K_MouseCursolUp移動(Chrome)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 1
-                            }
-                        }
-                    ],
-                    "to_after_key_up": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "k",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "y": -2500
-                            }
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "vi_mode",
-                            "value": 1
-                        },
-                        {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
-                        }
-                              ]
-                }
-            ]
-        },
-        {
-            "description": "Space + H_MouseCursolLeft(Chrome)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 1
-                            }
-                        }
-                    ],
-                    "to_after_key_up": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "h",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "x": -3500
-                            }
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "vi_mode",
-                            "value": 1
-                        },
-                        {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "Space + J_MouseCursolDown(Chrome)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 1
-                            }
-                        }
-                    ],
-                    "to_after_key_up": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "j",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "y": 3500
-                            }
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "vi_mode",
-                            "value": 1
-                        },
-                        {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "Space + L_MouseCursolRight(Chrome)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "spacebar",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 1
-                            }
-                        }
-                    ],
-                    "to_after_key_up": [
-                        {
-                            "set_variable": {
-                                "name": "vi_mode",
-                                "value": 0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "l",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "x": 3500
-                            }
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "vi_mode",
-                            "value": 1
-                        },
-                        {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
-                        }
-                    ]
-                }
-            ]
-        },
-              {
-            "description": "Space + i_MouseCursolUp(Chrome)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "i",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "mouse_key": {
-                                "y": -3500
-                            }
-                        }
-                    ],
-      "conditions": [
-        {
-          "type": "input_source_if",
-          "input_sources": [
-            { "language": "en" }
-          ]
-        },
-        {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-      ]
-                }
-            ]
-        },
-        {
-            "description": "RAlt + Z_VisualBasic-Excel(MouseControl)",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": <%= from("z", ["right_alt"]) %>,
-      "to": [
-        {
-          "software_function": {
-            "set_mouse_cursor_position": {
-              "x": "850",
-              "y": "30",
-              "screen": 0
-            }
-          }
-        },
-        { "pointing_button": "button1" }
-]
-              }
-            ]
-          },
-{
-  "description": "日本語モード:Openbracket_OpenClosebracket(Vscode)",
-"manipulators": [
+    "title": "FrontmostIfFinder987",
+    "rules": [
+   {
+      "description": "F2_Rename(Finder)",
+      "manipulators": [
         {
           "type": "basic",
-           "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
+          "from": <%= from("f2") %>,
+          "to": <%= to([["return_or_enter"]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Space_FileDelete(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"]) %>,
+          "to": <%= to([["delete_or_backspace", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + SpaceBar_FileOpen(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["left_option"]) %>,
+          "to": <%= to([["o", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+ {
+      "description": "LeftAlt + A_FolderCreate(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"]) %>,
+          "to": <%= to([["n", ["right_gui","right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+  {
+      "description": "RightCommand + A_FrontICollectionsFileCreate(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"]) %>,
+          "to": <%= set_shell_command(["touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftControl_Rename(finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code":"keyboard_fn"
           },
-      "to": [
+          "to": [
             {
-              "key_code": "open_bracket"
-            },
-            {
-              "key_code": "close_bracket"
-            },
-            {
-              "key_code": "left_arrow"
+              "key_code": "return_or_enter"
             }
-      ],
-      "conditions": [
-        {
-          "type": "input_source_if",
-          "input_sources": [
-            { "language": "ja" }
-          ]
-        },
-        {
+          ],
+          "conditions": [
+            {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com\\.apple\\.finder$"
               ]
             }
+          ]
+        }
       ]
     }
-  ]
-},
-    {
-      "description": "使用しない-Double RightShift_Pipeline(Vitualbox)",
-      "manipulators": [
-          {
-              "type": "basic",
-              "from": {
-                  "key_code": "right_shift",
-                  "modifiers": {
-                      "optional": [
-                          "any"
-                      ]
-                  }
-              },
-              "to": [
-                  {
-                      "key_code": "backslash",
-                      "modifiers": [
-                          "left_shift"
-                      ]
-                  }
-              ],
-              "conditions": [
-                  {
-                      "type": "variable_if",
-                      "name": "right_shift pressed",
-                      "value": 1
-                  }
-              ]
-          },
-          {
-              "type": "basic",
-              "from": {
-                  "key_code": "right_shift",
-                  "modifiers": {
-                      "optional": [
-                          "any"
-                      ]
-                  }
-              },
-              "to": [
-                  {
-                      "set_variable": {
-                          "name": "right_shift pressed",
-                          "value": 1
-                      }
-                  },
-                  {
-                      "key_code": "right_shift"
-                  }
-              ],
-              "to_delayed_action": {
-                  "to_if_invoked": [
-                      {
-                          "set_variable": {
-                              "name": "right_shift pressed",
-                              "value": 0
-                          }
-                      }
-                  ],
-                  "to_if_canceled": [
-                      {
-                          "set_variable": {
-                              "name": "right_shift pressed",
-                              "value": 0
-                          }
-                      }
-                  ]
-              }
-          }
-      ]
-  }
-          ]
-
+    ]
 }
