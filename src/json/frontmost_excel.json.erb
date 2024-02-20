@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel2",
     "rules": [
+    {
+      "description": "LeftOption + U_塗りつぶし色(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_control"]) %>,
+          "to": <%= to([["2", ["left_shift", "left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
    {
       "description": "LeftCommand + A_最初の列へカーソル(Excel)",
       "manipulators": [

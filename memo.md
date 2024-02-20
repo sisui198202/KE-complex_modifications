@@ -1,3 +1,10 @@
+## frontmost_finder.json.erb　でショットカットキー登録できない
+
+correct formatとエラー表示
+
+代用として、「tesuto.json.erb」でショットカットキー登録すること
+
+---------------------
 ## 一括設定
 
 replacekeysummary.json
