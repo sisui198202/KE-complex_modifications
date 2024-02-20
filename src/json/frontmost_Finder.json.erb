@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder4",
+    "title": "FrontmostIfFinder5",
     "rules": [
    {
       "description": "F2_Rename(Finder)",
@@ -9,74 +9,6 @@
           "from": <%= from("f2") %>,
           "to": <%= to([["return_or_enter"]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Space_FileDelete(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"]) %>,
-          "to": <%= to([["delete_or_backspace", ["left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + SpaceBar_FileOpen(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("spacebar", ["left_option"]) %>,
-          "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
- {
-      "description": "LeftAlt + A_FolderCreate(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["left_alt"]) %>,
-          "to": <%= to([["n", ["right_gui","right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-  {
-      "description": "RightCommand + A_FrontICollectionsFileCreate(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["right_gui"]) %>,
-          "to": <%= set_shell_command(["touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftControl_Rename(finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code":"keyboard_fn"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
         }
       ]
     }
