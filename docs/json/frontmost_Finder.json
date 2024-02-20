@@ -1,39 +1,6 @@
 {
-  "title": "FrontmostIfFinder2",
+  "title": "FrontmostIfFinder3",
   "rules": [
-    {
-      "description": "LeftOption + D_Desktop(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "left_shift",
-                "left_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "description": "F2_Rename(Finder)",
       "manipulators": [
