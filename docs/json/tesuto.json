@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder98",
+  "title": "FrontmostIfFinder333",
   "rules": [
     {
       "description": "RightCommand + L_前のタブを表示(Finder)",
@@ -238,7 +238,7 @@
             "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ]
             }
           },
