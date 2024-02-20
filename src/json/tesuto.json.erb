@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder55",
+    "title": "FrontmostIfFinder88",
     "rules": [
     {
       "description": "RightCommand + L_前のタブを表示(Finder)",
@@ -29,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("m", ["left_option"]) %>,
-          "to": <%= to([["3", ["left_shift","left_control"]]]) %>,
+          "to": <%= to([["3", ["left_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
