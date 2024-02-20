@@ -1,13 +1,24 @@
 {
-    "title": "FrontmostIfFinder77",
+    "title": "FrontmostIfFinder55",
     "rules": [
+    {
+      "description": "LeftOption + N_Dropbox(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["right_gui"]) %>,
+          "to": <%= set_shell_command(["open -a 'Finder' /Users/user/Dropbox"]) %>,
+          "conditions": [ <%= frontmost_application_if("finder") %> ]
+        }
+      ]
+    },
     {
       "description": "RightCommand + L_前のタブを表示(Finder)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
-          "to": <%= to([["1", ["left_shift","left_gui"]]]) %>,
+          "to": <%= to([["tab", ["left_shift","left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
@@ -18,7 +29,7 @@
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
-          "to": <%= to([["2", ["left_shift","left_gui"]]]) %>,
+          "to": <%= to([["tab", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
