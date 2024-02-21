@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfExcel5",
+    "title": "A_FrontmostIfExcel6",
     "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -167,11 +167,11 @@
       ]
     },
    {
-      "description": "RightCommand + Y_カレント行列削除(Excel)",
+      "description": "LeftOption + D_カレント行列削除(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("y", ["right_gui"]) %>,
+          "from": <%= from("d", ["left_option"]) %>,
           "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
