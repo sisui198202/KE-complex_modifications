@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfExcel4",
+  "title": "A_FrontmostIfExcel5",
   "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -329,12 +329,12 @@
       ]
     },
     {
-      "description": "RightOption + C_列幅変更(Excel)",
+      "description": "RightOption + E_列幅変更(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "c",
+            "key_code": "e",
             "modifiers": {
               "mandatory": [
                 "right_option"
