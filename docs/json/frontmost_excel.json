@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfExcel6",
+  "title": "A_FrontmostIfExcel7",
   "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -377,6 +377,39 @@
           "to": [
             {
               "key_code": "4",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Y_シート削除(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
               "modifiers": [
                 "right_option",
                 "right_gui"
@@ -1253,39 +1286,6 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "効かない-RightOption + T_シート削除(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "right_shift",
-                "left_control"
               ]
             }
           ],

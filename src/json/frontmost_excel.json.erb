@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfExcel6",
+    "title": "A_FrontmostIfExcel7",
     "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -129,6 +129,17 @@
           "type": "basic",
           "from": <%= from("a", ["right_option"]) %>,
           "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Y_シート削除(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y", ["left_control"]) %>,
+          "to": <%= to([["5", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -450,17 +461,6 @@
     }
  ]
 },
-    {
-      "description": "効かない-RightOption + T_シート削除(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("t", ["right_option"]) %>,
-          "to": <%= to([["a", ["right_shift", "left_control"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
     {
       "description": "効かない-RightOption + W_CopyToEnd(Excel)",
       "manipulators": [
