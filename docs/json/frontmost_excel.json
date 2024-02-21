@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfExcel3",
+  "title": "FrontmostIfExcel4",
   "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -230,54 +230,21 @@
       ]
     },
     {
-      "description": "RightOption + R_連続データ作成(Excel)",
+      "description": "LeftOption + F_連続データ作成(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "r",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_option"
               ]
             }
           },
           "to": [
             {
               "key_code": "0",
-              "modifiers": [
-                "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + A_カレントウィンドウを複製(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
               "modifiers": [
                 "right_option",
                 "right_gui"
@@ -311,6 +278,105 @@
           "to": [
             {
               "key_code": "1",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + R_行の高さ変更(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + C_列幅変更(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + A_カレントウィンドウを複製(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
               "modifiers": [
                 "right_option",
                 "right_gui"

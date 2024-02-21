@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfExcel3",
+    "title": "FrontmostIfExcel4",
     "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -79,23 +79,12 @@
       ]
     },
     {
-      "description": "RightOption + R_連続データ作成(Excel)",
+      "description": "LeftOption + F_連続データ作成(Excel)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("r", ["right_option"]) %>,
+          "from": <%= from("f", ["left_option"]) %>,
           "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + A_カレントウィンドウを複製(Excel)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["right_option"]) %>,
-          "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
@@ -107,6 +96,39 @@
           "type": "basic",
           "from": <%= from("q", ["right_option"]) %>,
           "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + R_行の高さ変更(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["right_option"]) %>,
+          "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + C_列幅変更(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("c", ["right_option"]) %>,
+          "to": <%= to([["3", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + A_カレントウィンドウを複製(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_option"]) %>,
+          "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
