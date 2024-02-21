@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfExcel9",
+  "title": "A_FrontmostIfExcel",
   "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
+      "description": "RightCommand  + i_セルの書式設定(Excel)",
       "manipulators": [
         {
           "type": "basic",
