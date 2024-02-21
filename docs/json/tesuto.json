@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFinder44",
+  "title": "FrontmostIfFinder",
   "rules": [
     {
       "description": "RightOption + A_新規Finderウィンドウ(Finder)",
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "description": "RightCommand + L_前のタブを表示(Finder)",
+      "description": "RightCommand + L_前のタブを選択(Finder)",
       "manipulators": [
         {
           "type": "basic",
@@ -110,10 +110,10 @@
           },
           "to": [
             {
-              "key_code": "tab",
+              "key_code": "1",
               "modifiers": [
                 "left_shift",
-                "left_control"
+                "left_gui"
               ]
             }
           ],
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "description": "RightCommand + セミコロン_次のタブを表示(Finder)",
+      "description": "RightCommand + セミコロン_次のタブを選択(Finder)",
       "manipulators": [
         {
           "type": "basic",
@@ -143,9 +143,10 @@
           },
           "to": [
             {
-              "key_code": "tab",
+              "key_code": "2",
               "modifiers": [
-                "left_control"
+                "left_shift",
+                "left_gui"
               ]
             }
           ],

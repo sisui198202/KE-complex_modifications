@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFinder44",
+    "title": "FrontmostIfFinder",
     "rules": [
     {
       "description": "RightOption + A_新規Finderウィンドウ(Finder)",
@@ -35,23 +35,23 @@
       ]
     },
     {
-      "description": "RightCommand + L_前のタブを表示(Finder)",
+      "description": "RightCommand + L_前のタブを選択(Finder)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("l", ["right_gui"]) %>,
-          "to": <%= to([["tab", ["left_shift","left_control"]]]) %>,
+          "to": <%= to([["1", ["left_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
     },
     {
-      "description": "RightCommand + セミコロン_次のタブを表示(Finder)",
+      "description": "RightCommand + セミコロン_次のタブを選択(Finder)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("semicolon", ["right_gui"]) %>,
-          "to": <%= to([["tab", ["left_control"]]]) %>,
+          "to": <%= to([["2", ["left_shift","left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("finder") %> ]
         }
       ]
