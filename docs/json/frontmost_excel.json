@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfExcel8",
+  "title": "A_FrontmostIfExcel9",
   "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -17,6 +17,39 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "left_shift",
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
               "modifiers": [
                 "left_shift",
                 "left_gui"
