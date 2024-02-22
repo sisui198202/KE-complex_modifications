@@ -1,6 +1,73 @@
 {
-  "title": "FrontmostIfFinder",
+  "title": "FrontmostIfFinder4",
   "rules": [
+    {
+      "description": "LeftOption + Y_リスト(Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + i_親ディレクトリへ(finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "RightOption + A_新規Finderウィンドウ(Finder)",
       "manipulators": [
@@ -243,38 +310,6 @@
           "to": [
             {
               "key_code": "3",
-              "modifiers": [
-                "left_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + i_リスト(Finder)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
               "modifiers": [
                 "left_gui"
               ]
