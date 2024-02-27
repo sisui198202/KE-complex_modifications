@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfIntellij",
+    "title": "A_FrontmostIfIntellij9",
     "rules": [
       {
         "description": "F7_ステップアウト(intellij)",
@@ -626,6 +626,109 @@
           ]
         }
       ]
+    },
+{
+      "description": "Fn + ~_WindowsControl(vscode)",
+      "manipulators": [
+        {
+          "description": "Fn + U_WindowLeftUp",
+          "type": "basic",
+          "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
+          "to": <%= to([["6", "right_alt"]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        },
+    {
+        "description": "Fn + J_WindowLeftDown",
+        "type": "basic",
+        "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["8", "right_alt"]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + I_WindowRightUp",
+        "type": "basic",
+        "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["7", "right_alt"]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + K_WindowRightDown",
+        "type": "basic",
+        "from": <%= from("k", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["9", "right_alt"]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + G_WindowLeftOneThird",
+        "type": "basic",
+        "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["d", ["right_control", "right_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + Quote_WindowRightOneThird",
+        "type": "basic",
+        "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["g", ["right_control", "right_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + Y_WindowLeftTwo-thirds",
+        "type": "basic",
+        "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["e", ["right_control", "right_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + O_WindowRightTwo-thirds",
+        "type": "basic",
+        "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["t", ["right_control", "right_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + Comma_WindowCenter",
+        "type": "basic",
+        "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["c", ["right_control", "right_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+      "description": "RightCommand + Period_MaxWindow",
+      "type": "basic",
+      "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+      "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + N_WindowUP",
+        "type": "basic",
+        "from": <%= from("n", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["4", ["left_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+        "description": "Fn + M_WindowDown",
+        "type": "basic",
+        "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
+        "to": <%= to([["5", ["left_alt"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+      "description": "Fn + L_RightHalfWindowMove",
+      "type": "basic",
+      "from": <%= from("l", ["right_control"], ["caps_lock"]) %>,
+      "to": <%= to([["3", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("vscode") %> ]
+    },
+    {
+      "description": "Fn + H_LeftWindowMove",
+      "type": "basic",
+      "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
+      "to": <%= to([["2", ["right_alt"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("vscode") %> ]
     }
+ ]
+}
  ]
 }
