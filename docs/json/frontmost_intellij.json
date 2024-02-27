@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfIntellij9",
+  "title": "A_FrontmostIfIntellij",
   "rules": [
     {
       "description": "F7_ステップアウト(intellij)",
@@ -1963,7 +1963,7 @@
       ]
     },
     {
-      "description": "Fn + ~_WindowsControl(vscode)",
+      "description": "Fn + ~_WindowsControl(intellij)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
@@ -1989,7 +1989,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2018,7 +2018,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2047,7 +2047,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2076,7 +2076,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2108,7 +2108,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2140,7 +2140,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2172,7 +2172,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2204,7 +2204,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2236,7 +2236,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2268,7 +2268,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2299,7 +2299,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2330,7 +2330,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2361,7 +2361,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
@@ -2392,7 +2392,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.jetbrains.intellij.ce$"
               ]
             }
           ]
