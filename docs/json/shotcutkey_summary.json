@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary4",
+  "title": "ShotCutKeySummary",
   "rules": [
     {
       "description": "ShotCutKeySummary4",
@@ -767,9 +767,8 @@
           },
           "to": [
             {
-              "key_code": "open_bracket",
+              "key_code": "spacebar",
               "modifiers": [
-                "right_control",
                 "right_alt"
               ]
             }

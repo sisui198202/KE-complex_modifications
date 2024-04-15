@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary4",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
       "description": "ShotCutKeySummary4",
@@ -154,7 +154,7 @@
           "description": "LeftOption + S_AlfredHotkey",
           "type": "basic",
           "from": <%= from("s", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["open_bracket", ["right_control", "right_alt"]]]) %>,
+          "to": <%= to([["spacebar", ["right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
