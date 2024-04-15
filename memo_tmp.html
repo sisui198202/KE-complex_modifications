@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>memo.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/user/MarkdownPDF/github-markdown.css" type="text/css">
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/user/MarkdownPDF/style.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="frontmostfinderjsonerb-%E3%81%A7%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC%E7%99%BB%E9%8C%B2%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84">frontmost_finder.json.erb　でショットカットキー登録できない</h2>
+<p>correct formatとエラー表示</p>
+<p>代用として、「tesuto.json.erb」でショットカットキー登録すること</p>
+<hr>
+<h2 id="%E4%B8%80%E6%8B%AC%E8%A8%AD%E5%AE%9A">一括設定</h2>
+<p>replacekeysummary.json</p>
+<p>shotcutkeysummary.json</p>
+<p>window_control.json</p>
+<p>(注)<br>
+&quot;_comment&quot;: &quot;&quot;,を入れていると、うまく設定が反映されない。</p>
+<hr>
+<h2 id="%E5%80%8B%E5%88%A5%E8%A8%AD%E5%AE%9A">個別設定</h2>
+<p>frontmost_~.json</p>
+<p>replacekey.json</p>
+<p>shotcutkey.json</p>
+<p>double_push_key.json</p>
+<hr>
+<h2 id="1%E3%81%A4%E8%AA%AC%E6%98%8E%E3%81%A7%E8%A4%87%E6%95%B0%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E5%85%A5%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3">1つ説明で複数の設定を入力するパターン</h2>
+<p>{<br>
+&quot;title&quot;: &quot;WindowControl123&quot;,<br>
+&quot;rules&quot;: [<br>
+{<br>
+&quot;description&quot;: &quot;Fn + ~_WindowsControl(WindowControl)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;description&quot;: &quot;Fn + U_WindowLeftUp&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;u&quot;, [&quot;fn&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;6&quot;, &quot;right_alt&quot;]]) %&gt;<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;Fn + H_LeftWindowMove&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;h&quot;, [&quot;fn&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;2&quot;, [&quot;right_alt&quot;]]]) %&gt;<br>
+}<br>
+]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="1%E3%81%A4%E8%AA%AC%E6%98%8E%E3%81%A71%E3%81%A4%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E5%85%A5%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3">1つ説明で1つの設定を入力するパターン</h2>
+<p>{<br>
+&quot;title&quot;: &quot;FrontmostIfPararel&quot;,<br>
+&quot;rules&quot;: [<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;w&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;equal_sign&quot;, &quot;left_option&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt;]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + ._MaxWindows(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;period&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;1&quot;, &quot;left_option&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt;]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<p>[Exploer]<br>
+com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[Sublime]<br>
+com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[Vscode]<br>
+com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[Excel]<br>
+com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[Access]<br>
+com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[ファイル名を指定して実行]<br>
+com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs</p>
+<p>[Uws2Exe_uwscのExe化をするツール]<br>
+com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[メモ帳]<br>
+com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[SSMS]<br>
+com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[Chrome_Windows]<br>
+com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[PowerShell]<br>
+com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<p>[qdir]<br>
+com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717</p>
+<hr>
+<h1 id="%E5%9B%BA%E5%AE%9A%E3%82%A2%E3%83%97%E3%83%AA%E3%81%A8%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%90%E3%82%A4%E3%83%B3%E3%83%89%E8%A8%AD%E5%AE%9A%E3%81%AE%E9%81%A9%E7%94%A8%E9%A0%86%E4%BD%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">固定アプリとパブリックのキーバインド設定の適用順位について</h1>
+<p>(上に、パブリックキーバインド設定があるため、固定アプリキーバインド設定は適用できない)</p>
+<ol>
+<li>
+<p>パブリックキーバインド設定</p>
+</li>
+<li>
+<p>固定アプリキーバインド設定</p>
+</li>
+</ol>
+<p>(上に、固定アプリキーバインド設定があるため、固定アプリキーバインド設定も適用できるし、パブリックキーバインド設定も適用される)</p>
+<ol>
+<li>
+<p>固定アプリキーバインド設定</p>
+</li>
+<li>
+<p>パブリックキーバインド設定</p>
+</li>
+</ol>
+<ul>
+<li>パブリックキーバインド設定を一番下に配置するようにした方が良い。</li>
+</ul>
+<hr>
+<h1 id="profiles%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">Profilesについて</h1>
+<p>JupyterLabを使用する。</p>
+<p>tesutoは、テスト用のプロファイルとして使用する。理由は、Complex modificationsのEnable rulesで新規のルールを追加して、追加したルールが適用できているかを検証する場合にUpで一番上にのっていかないと適用できないケースがあるため。</p>
+<hr>
+<h2 id="capslock%E3%81%8C%E3%82%AA%E3%83%B3%E3%81%AE%E6%99%82f7%E3%81%A7%E8%B5%B7%E5%8B%95%E3%81%97capslock%E3%81%8C%E3%82%AA%E3%83%95%E3%81%AE%E6%99%82%E3%81%AFpublic%E3%81%A7%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%9Ff7%E3%81%AE%E6%8C%99%E5%8B%95">capslockがオンの時、f7で起動し、capslockがオフの時はpublicで指定したf7の挙動</h2>
+<pre class="hljs"><code><div>{
+  &quot;description&quot;: &quot;F7_ステップアウト(intellij)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;f7&quot;, [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;2&quot;, [&quot;right_gui&quot;,&quot;right_option&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;intellij&quot;) %&gt; ]
+    }
+  ]
+}
+</div></code></pre>
+<hr>
+<h1 id="replacevimjsonerb">[replace_vim.json.erb]</h1>
+<p>ハイフンは、[&quot;japanese_eisuu&quot;]を使用しない理由: 日本語での文章入力では、-ではなく、ーを使うため。</p>
+<pre><code>{
+  &quot;description&quot;: &quot;Leftoption + Rightcommand_hypen(Replacekey)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;right_gui&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;hyphen&quot;]]) %&gt;
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h1 id="frontmostapplicationif%22excel%22%E3%81%A8mi%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F%E3%81%84">frontmost_application_if(&quot;excel&quot;)とmiをまとめたい</h1>
+<p>toで指定するキーが違うため、できない</p>
+<p>{<br>
+&quot;description&quot;: &quot;RightCommand + semicolon_NextTab(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;semicolon&quot;, [&quot;right_gui&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;right_arrow&quot;, [&quot;left_alt&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},</p>
+<pre><code>{
+  &quot;description&quot;: &quot;RightCommand + Semicolon_LatestTabToggle(mi)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;semicolon&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;close_bracket&quot;, [&quot;left_shift&quot;, &quot;right_gui&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;mi&quot;) %&gt; ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="backup-frontmostifpararel">backup FrontmostIfPararel</h2>
+<p>{<br>
+&quot;title&quot;: &quot;FrontmostIfPararel&quot;,<br>
+&quot;rules&quot;: [<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + W_CurrentCursol-EndRowSelect(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;w&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;equal_sign&quot;, &quot;left_option&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt;]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + ._MaxWindows(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;period&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;1&quot;, &quot;left_option&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt;]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + A_NewFileCreate(Pararell)&quot;,<br>
+&quot;_comment&quot;: &quot;Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;a&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;n&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt;]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + Quote_Single Column Editor Layout(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;quote&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;h&quot;, [&quot;right_control&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + i_Neight bour(Pararell)&quot;,<br>
+&quot;_comment&quot;: &quot;WindowsSublimeの右のエディターにカーソル移動&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;i&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;i&quot;, [&quot;right_control&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）(Pararell)&quot;,<br>
+&quot;_comment&quot;: &quot;下記にKaravinerツール「frontmostApplicationで日本語_英語キー切り替えをLeftCommandとRightCommandでしたい場合、ウィンドウコード確認し、下記に入力、Vscode_d51,Sublime_7d5,Excel通常画面_VBE_c1d&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;left_control&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_control&quot;,<br>
+&quot;lazy&quot;: true<br>
+}<br>
+],<br>
+&quot;to_if_alone&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;f12&quot;,<br>
+&quot;modifiers&quot;: [<br>
+&quot;left_control&quot;<br>
+]<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com.parallels.desktop.console$&quot;,<br>
+&quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;<br>
+]<br>
+}<br>
+],<br>
+&quot;type&quot;: &quot;basic&quot;<br>
+},<br>
+{<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;right_command&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;right_command&quot;,<br>
+&quot;lazy&quot;: true<br>
+}<br>
+],<br>
+&quot;to_if_alone&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;f9&quot;,<br>
+&quot;modifiers&quot;: [<br>
+&quot;left_control&quot;<br>
+]<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com.parallels.desktop.console$&quot;,<br>
+&quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;<br>
+]<br>
+}<br>
+],<br>
+&quot;type&quot;: &quot;basic&quot;<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + Comma_AppsSelect-previous(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;modifiers&quot;: {<br>
+&quot;mandatory&quot;: [<br>
+&quot;left_control&quot;<br>
+]<br>
+},<br>
+&quot;key_code&quot;: &quot;comma&quot;<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;repeat&quot;: true,<br>
+&quot;key_code&quot;: &quot;tab&quot;,<br>
+&quot;modifiers&quot;: [<br>
+&quot;left_alt&quot;,<br>
+&quot;right_shift&quot;<br>
+],<br>
+&quot;halt&quot;: true<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com.parallels.desktop.console$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + Period_AppsSelect-next(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;modifiers&quot;: {<br>
+&quot;mandatory&quot;: [<br>
+&quot;left_control&quot;<br>
+]<br>
+},<br>
+&quot;key_code&quot;: &quot;period&quot;<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;repeat&quot;: true,<br>
+&quot;key_code&quot;: &quot;tab&quot;,<br>
+&quot;modifiers&quot;: [<br>
+&quot;right_alt&quot;<br>
+],<br>
+&quot;halt&quot;: true<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com.parallels.desktop.console$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.cc097fe29f445d49eb74bd5993a02853.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;rightcommand + K_CopyCurrentRowCut(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;k&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;5&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + O(オー)_SameWordExpandSelection(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;o&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;4&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + O(オー)_Column2SplitEditerScreen(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;o&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;1&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + Semicolon_LatestTabToggle(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;semicolon&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;6&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + L_NextTab(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;l&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;7&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + U_ColumnSelection(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;u&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;8&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + D_AllSelect(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;d&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;9&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + J_1RowSelect(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;1&quot;, [&quot;left_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + Z_0<a href="pararell">ゼロ</a>&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;z&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;2&quot;, [&quot;left_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;Rightoption + Leftoption_anbasado(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;left_alt&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;3&quot;, [&quot;left_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + X_iterm2ActiveWindow(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;x&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;5&quot;, [&quot;left_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftContorl_CellEdit(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;fn&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;f2&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;アクセスキーできない_fn_alt(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;right_control&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;left_option&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;検討中_LeftAlt_Copy(Pararell)&quot;,<br>
+&quot;_comment&quot;: &quot;エクスプローラー_bf73&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;left_alt&quot;<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_alt&quot;<br>
+}<br>
+],<br>
+&quot;to_if_alone&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;japanese_eisuu&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;c&quot;,<br>
+&quot;modifiers&quot;: &quot;right_gui&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^org.virtualbox.app.VirtualBoxVM$&quot;,<br>
+&quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,<br>
+&quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,<br>
+&quot;^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用していない_LeftOption + J_ChromeActiveWindow(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;4&quot;, [&quot;left_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;LeftCommand + U_Undo(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;u&quot;, [&quot;left_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;6&quot;, [&quot;left_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;うまくいかないF8_StepIn(pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f8&quot;, [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;9&quot;, [&quot;right_option&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;うまくいかないfn_Rename(Pararell)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;fn&quot;, [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;f2&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt;]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;AccessのVBEで反応しない_RightAlt + V_Paste(Access)VBE&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;v&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;v&quot;, &quot;right_control&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pararell&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="windows%E3%81%AEchrome%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E5%BF%85%E8%A6%81%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%E3%81%ABmac%E3%81%AEchrome%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86%E3%81%AE%E3%82%92%E9%98%B2%E3%81%90%E7%82%BA%E3%81%AB%E4%B8%8B%E8%A8%98%E3%81%AE2%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E9%A0%BB%E5%BA%A6%E3%81%8C%E5%B0%91%E3%81%AA%E3%81%84%E7%82%BAmacchrome%E3%81%A7%E7%B5%B1%E4%B8%80%E3%81%95%E3%81%9B%E3%82%8B">WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;LeftOption + J_ChromeActiveWindow1(WindowControl)&quot;,
+  &quot;_comment&quot;: &quot;WindowsのChromeでインストールする必要があるのにMacのChromeでインストールしてしまうのを防ぐ為に下記の2を使用していたが、インストールする頻度が少ない為、MacChromeで統一させる&quot;,
+  &quot;type&quot;: &quot;basic&quot;,
+  &quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+  &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Google Chrome.app'&quot;]) %&gt;
+},
+</code></pre>
+<hr>
+<h2 id="%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E5%85%A5%E5%8A%9B%E3%81%A0%E3%81%A8%E5%8F%8D%E5%BF%9C%E3%81%97%E3%81%AA%E3%81%84%E7%82%BA%E3%81%93%E3%81%93%E3%81%AB%E3%83%A1%E3%83%A2">コメント入力だと反応しない為、ここにメモ</h2>
+<pre><code>    {
+&quot;description&quot;: &quot;RightCommand + A_NewFileCreate(VirtualMachine)&quot;,
+&quot;_comment&quot;: &quot;Windowsのvscodeで新規ファイルを作成するショットカットキーの為にこの設定が必要&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;a&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;n&quot;, [&quot;right_option&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;virtual_machine&quot;) %&gt;]
+    },
+</code></pre>
+<hr>
+<h2 id="%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E5%85%A5%E5%8A%9B%E3%81%A0%E3%81%A8%E5%8F%8D%E5%BF%9C%E3%81%97%E3%81%AA%E3%81%84%E7%82%BA%E3%81%93%E3%81%93%E3%81%AB%E3%83%A1%E3%83%A2">コメント入力だと反応しない為、ここにメモ</h2>
+<pre><code>    {
+&quot;description&quot;: &quot;RightCommand + i_Neight bour(VirtualMachine)&quot;,
+&quot;_comment&quot;: &quot;WindowsSublimeの右のエディターにカーソル移動&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;i&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;i&quot;, [&quot;right_control&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="%22leftcommand--jdownarrowx1chrome%22%E3%81%8C%22leftcommand--jdownarrowx3chrome%22%E3%81%AB%E4%B8%8A%E6%9B%B8%E3%81%8D%E3%81%95%E3%82%8C%E3%82%8B%E4%BB%95%E6%A7%98">&quot;LeftCommand + J_DownArrow_X1(Chrome)&quot;が&quot;LeftCommand + J_DownArrow_X3(Chrome)&quot;に上書きされる仕様</h2>
+<pre><code>  {
+    &quot;description&quot;: &quot;LeftCommand + J_DownArrow_X1(Chrome)&quot;,
+    &quot;manipulators&quot;: [
+      {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;from&quot;: &lt;%= from(&quot;j&quot;,[&quot;left_control&quot;]) %&gt;,
+        &quot;to&quot;: &lt;%= to([[&quot;down_arrow&quot;]]) %&gt;,
+        &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+
+      }
+    ]
+  },
+  {
+    &quot;description&quot;: &quot;LeftCommand + J_DownArrow_X3(Chrome)&quot;,
+    &quot;manipulators&quot;: [
+      {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;from&quot;: &lt;%= from(&quot;j&quot;,[&quot;left_control&quot;],[&quot;caps_lock&quot;]) %&gt;,
+        &quot;to&quot;: &lt;%= to([[&quot;down_arrow&quot;],[&quot;down_arrow&quot;],[&quot;down_arrow&quot;]]) %&gt;,
+        &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+
+      }
+    ]
+  },
+</code></pre>
+<hr>
+<h2 id="capslock%E3%81%8C%E3%82%AA%E3%83%B3%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86">CapsLockがオンになってしまう</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;S_検索(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;s&quot;, [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;l&quot;, [&quot;right_gui&quot;]],[&quot;caps_lock&quot;]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="pararell-rename%E4%B8%80%E6%97%A6%E4%BF%9D%E7%95%99">Pararell　Rename一旦保留</h2>
+<h2 id="%22description%22-%22leftcontrolrenamevirtualmachine%22%22type%22-%22basic%22%22from%22-%22applevendortopcasekeycode%22%22keyboardfn%22%22to%22-%22keycode%22-%22returnorenter%22%22conditions%22-%22type%22-%22frontmostapplicationif%22%22bundleidentifiers%22-%22comvmwarefusion%22%22comvmwarehorizon%22%22comvmwareview%22%22comparallelsdesktop%22%22comparallelsvm%22%22comparallelsdesktopconsole%22%22orgvirtualboxappvirtualboxvm%22%22comvmwareproxyapp%22%22comparallelswinapp%22">{<br>
+&quot;description&quot;: &quot;LeftControl_Rename(VirtualMachine)&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;apple_vendor_top_case_key_code&quot;:&quot;keyboard_fn&quot;<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;return_or_enter&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com.vmware.fusion$&quot;,<br>
+&quot;^com.vmware.horizon$&quot;,<br>
+&quot;^com.vmware.view$&quot;,<br>
+&quot;^com.parallels.desktop$&quot;,<br>
+&quot;^com.parallels.vm$&quot;,<br>
+&quot;^com.parallels.desktop.console$&quot;,<br>
+&quot;^org.virtualbox.app.VirtualBoxVM$&quot;,<br>
+&quot;^com.vmware.proxyApp.&quot;,<br>
+&quot;^com.parallels.winapp.&quot;<br>
+]<br>
+}<br>
+]<br>
+}</h2>
+<h2 id="spacebar--j-%E3%81%A7downarrow3%E5%9B%9E">spacebar + j でDownArrow3回</h2>
+<pre><code>  {
+    &quot;description&quot;: &quot;使用できない-LeftCommand + J_DownArrow_X3(Chrome)&quot;,
+    &quot;manipulators&quot;: [
+      {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;from&quot;: &lt;%= from(&quot;j&quot;,[&quot;spacebar&quot;],[&quot;caps_lock&quot;]) %&gt;,
+        &quot;to&quot;: &lt;%= to([[&quot;down_arrow&quot;],[&quot;down_arrow&quot;],[&quot;down_arrow&quot;]]) %&gt;,
+        &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+      }
+    ]
+  },
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84leftcommand--kuparrowx3chrome">使用しない_LeftCommand + K_UpArrow_X3(Chrome)</h2>
+<pre><code>  {
+    &quot;description&quot;: &quot;使用しない-LeftCommand + K_UpArrow_X3(Chrome)&quot;,
+    &quot;manipulators&quot;: [
+      {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;from&quot;: &lt;%= from(&quot;k&quot;,[&quot;left_control&quot;],[&quot;caps_lock&quot;]) %&gt;,
+        &quot;to&quot;: &lt;%= to([[&quot;up_arrow&quot;],[&quot;up_arrow&quot;],[&quot;up_arrow&quot;]]) %&gt;,
+        &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+      }
+    ]
+  },
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84-leftcommand--hleftarrow-x3kindle">使用しない-LeftCommand + h_LeftArrow-X3(kindle)</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;LeftCommand + h_LeftArrow-X3(kindle)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;h&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.amazon.Kindle$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  &quot;description&quot;: &quot;LeftCommand + L_RigthArrow-X3(kindle)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;l&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;right_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;right_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;right_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.amazon.Kindle$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<hr>
+<h2 id="kindle%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%82%AD%E3%83%BCmac%E3%81%A7%E8%A8%AD%E5%AE%9A%E3%81%97windows%E3%81%8B%E3%82%89%E3%82%88%E3%81%B3%E3%81%A0%E3%81%9B%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">Kindleアクティブキー、Macで設定しWindowsからよびだせるようにする。</h2>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<p>{<br>
+&quot;description&quot;: &quot;使用しない(予測変換で2度押しが必要になるため)_Spacebar(mi)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;spacebar&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;japanese_eisuu&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;spacebar&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^net.mimikaki.mi$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Dainari_OpenCloseInput(mi)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;comma&quot;, [&quot;left_shift&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;japanese_eisuu&quot;], [&quot;comma&quot;, [&quot;left_shift&quot;]], [&quot;period&quot;, [&quot;left_shift&quot;]], [&quot;left_arrow&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;mi&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + J_1RowSelection_LeftArrow(mi)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_gui&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;a&quot;, [&quot;left_control&quot;]], [&quot;down_arrow&quot;, &quot;left_shift&quot;], [&quot;left_arrow&quot;, &quot;left_shift&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;mi&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;使用しない_LeftCommand + J_DownArrow-X3(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+       &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;j&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;down_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;down_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;down_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com\\.google\\.Chrome$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  &quot;description&quot;: &quot;使用しない_LeftCommand + k_UpArrow-X3(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;k&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;up_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;up_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;up_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com\\.google\\.Chrome$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  &quot;description&quot;: &quot;使用しない_LeftCommand + h_LeftArrow-X3(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;h&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+          &quot;^com\\.google\\.Chrome$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+</code></pre>
+<p>{<br>
+&quot;description&quot;: &quot;使用しない_LeftCommand + L_RigthArrow-X3(Chrome)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;l&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;mandatory&quot;: [<br>
+&quot;left_control&quot;<br>
+],<br>
+&quot;optional&quot;: [<br>
+&quot;any&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:j_DownArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;j&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;down_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:k_UpArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;k&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;up_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:h_LeftArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;h&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:L_LeftArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;l&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="%E4%BB%8A%E3%81%AF%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84">今は使わない</h2>
+<pre><code>{
+    &quot;description&quot;: &quot;今は使わない_Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)&quot;,
+    &quot;_comment&quot;: &quot;ダブル押しコードでの、「frontmost_application_unless(pararell)」の書き方が分からないので、Single押しでの処理を使うことにする。&quot;,
+    &quot;manipulators&quot;: [
+        {
+            &quot;type&quot;: &quot;basic&quot;,
+            &quot;from&quot;: {
+                &quot;key_code&quot;: &quot;f1&quot;,
+                &quot;modifiers&quot;: {
+                    &quot;optional&quot;: [
+                        &quot;any&quot;
+                    ]
+                }
+            },
+            &quot;to&quot;: [
+                {
+                    &quot;shell_command&quot;: &quot;open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.md'&quot;
+                }
+            ],
+            &quot;conditions&quot;: [
+                {
+                    &quot;type&quot;: &quot;variable_if&quot;,
+                    &quot;name&quot;: &quot;f1 pressed&quot;,
+                    &quot;value&quot;: 1
+                }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;basic&quot;,
+            &quot;from&quot;: {
+                &quot;key_code&quot;: &quot;f1&quot;,
+                &quot;modifiers&quot;: {
+                    &quot;optional&quot;: [
+                        &quot;any&quot;
+                    ]
+                }
+            },
+            &quot;to&quot;: [
+                {
+                    &quot;set_variable&quot;: {
+                        &quot;name&quot;: &quot;f1 pressed&quot;,
+                        &quot;value&quot;: 1
+                    }
+                },
+                {
+                    &quot;shell_command&quot;: &quot;open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'&quot;
+                }
+            ],
+            &quot;to_delayed_action&quot;: {
+                &quot;to_if_invoked&quot;: [
+                    {
+                        &quot;set_variable&quot;: {
+                            &quot;name&quot;: &quot;f1 pressed&quot;,
+                            &quot;value&quot;: 0
+                        }
+                    }
+                ],
+                &quot;to_if_canceled&quot;: [
+                    {
+                        &quot;set_variable&quot;: {
+                            &quot;name&quot;: &quot;f1 pressed&quot;,
+                            &quot;value&quot;: 0
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+},
+</code></pre>
+<hr>
+<h2 id="%E4%BB%8A%E3%81%AF%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84">今は使わない</h2>
+<p>{<br>
+&quot;description&quot;: &quot;F3_KeyManageList.xlsxOpen(FunctionKey)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f3&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= set_shell_command([&quot;open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'&quot;]) %&gt;<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="%E3%81%86%E3%81%BE%E3%81%8F%E3%81%84%E3%81%8B%E3%81%AA%E3%81%84">うまくいかない</h2>
+<pre><code>{
+    &quot;description&quot;: &quot;うまくいかない、Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)&quot;,
+    &quot;manipulators&quot;: [
+        {
+            &quot;type&quot;: &quot;basic&quot;,
+            &quot;from&quot;: {
+                &quot;key_code&quot;: &quot;f1&quot;,
+                &quot;modifiers&quot;: {
+                    &quot;optional&quot;: [
+                        &quot;any&quot;
+                    ]
+                }
+            },
+            &quot;to&quot;: [
+                {
+                    &quot;shell_command&quot;: &quot;open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.md'&quot;
+                }
+            ],
+            &quot;conditions&quot;: [
+                {
+                    &quot;type&quot;: &quot;variable_if&quot;,
+                    &quot;name&quot;: &quot;f1 pressed&quot;,
+                    &quot;value&quot;: 1
+                },
+                            {
+          &quot;type&quot;: &quot;frontmost_application_unless&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.vmware.fusion$&quot;,
+            &quot;^com.vmware.horizon$&quot;,
+            &quot;^com.vmware.view$&quot;,
+            &quot;^com.parallels.desktop$&quot;,
+            &quot;^com.parallels.vm$&quot;,
+            &quot;^com.parallels.desktop.console$&quot;,
+            &quot;^org.virtualbox.app.VirtualBoxVM$&quot;,
+            &quot;^com.vmware.proxyApp.&quot;,
+            &quot;^com.parallels.winapp.&quot;
+          ]
+        }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;basic&quot;,
+            &quot;from&quot;: {
+                &quot;key_code&quot;: &quot;f1&quot;,
+                &quot;modifiers&quot;: {
+                    &quot;optional&quot;: [
+                        &quot;any&quot;
+                    ]
+                }
+            },
+            &quot;to&quot;: [
+                {
+                    &quot;set_variable&quot;: {
+                        &quot;name&quot;: &quot;f1 pressed&quot;,
+                        &quot;value&quot;: 1
+                    }
+                },
+                {
+                    &quot;shell_command&quot;: &quot;open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'&quot;
+                }
+            ],
+            &quot;to_delayed_action&quot;: {
+                &quot;to_if_invoked&quot;: [
+                    {
+                        &quot;set_variable&quot;: {
+                            &quot;name&quot;: &quot;f1 pressed&quot;,
+                            &quot;value&quot;: 0
+                        }
+                    }
+                ],
+                &quot;to_if_canceled&quot;: [
+                    {
+                        &quot;set_variable&quot;: {
+                            &quot;name&quot;: &quot;f1 pressed&quot;,
+                            &quot;value&quot;: 0
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<p>{<br>
+&quot;description&quot;: &quot;使用しないEnter_OpenFile(pathfinder)&quot;,<br>
+&quot;_comment&quot;: &quot;ファイル名変更でエンターで確定できない為&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;return_or_enter&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;o&quot;, [&quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pathfinder&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_delete_FileDelete(pathfinder)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;delete_or_backspace&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;delete_or_backspace&quot;, [&quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pathfinder&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<h2 id="%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84leftalt--f11vbaeditorexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22f11%22-%22leftalt%22-%22to%22--to%22f11%22-%22leftalt%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84marukakoopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%229%22-%22leftshift%22-%22to%22--to%229%22-%22leftshift%22-%220%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84namikakoopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22openbracket%22-%22leftshift%22-%22to%22--to%22openbracket%22-%22leftshift%22-%22closebracket%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84kakukakoopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22openbracket%22-%22to%22--to%22openbracket%22-%22closebracket%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84dainariopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22comma%22-%22leftshift%22-%22to%22--to%22comma%22-%22leftshift%22-%22period%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84doublequoteopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22quote%22-%22leftshift%22-%22to%22--to%22quote%22-%22leftshift%22-%22quote%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84singlequoteopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22quote%22-%22to%22--to%22quote%22-%22quote%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84leftaltcopyexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22-%22keycode%22-%22leftalt%22%22modifiers%22-%22optional%22-%22capslock%22%22to%22-%22keycode%22-%22leftalt%22%22toifalone%22-%22keycode%22-%22leftalt%22%22modifiers%22-%22leftgui%22%22conditions%22-%22type%22-%22frontmostapplicationif%22%22bundleidentifiers%22-%22commicrosoftexcel%22%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84rightcommand--jselect1rowexcelvbe%E3%81%A7%E3%81%AE%E3%81%BF%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%83%BD%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22j%22-%22rightgui%22-%22to%22--to%22leftarrow%22-%22fn%22-%22downarrow%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22">{<br>
+&quot;description&quot;: &quot;使用しない_LeftAlt + F11_VBAeditor(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f11&quot;, [&quot;left_alt&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;f11&quot;, [&quot;left_alt&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Marukako_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;9&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;9&quot;, [&quot;left_shift&quot;]], [&quot;0&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Namikako_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;open_bracket&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;open_bracket&quot;, [&quot;left_shift&quot;]], [&quot;close_bracket&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Kakukako_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;open_bracket&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;open_bracket&quot;], [&quot;close_bracket&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Dainari_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;comma&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;comma&quot;, [&quot;left_shift&quot;]], [&quot;period&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_DoubleQuote_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;quote&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;quote&quot;, [&quot;left_shift&quot;]], [&quot;quote&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_SingleQuote_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;quote&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;quote&quot;], [&quot;quote&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しないLeftAlt_Copy(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;left_alt&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_alt&quot;<br>
+}<br>
+],<br>
+&quot;to_if_alone&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_alt&quot;,<br>
+&quot;modifiers&quot;: &quot;left_gui&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.microsoft\.Excel$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_RightCommand + J_Select1Row(Excel)VBEでのみ使用可能&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_gui&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;left_arrow&quot;, [&quot;fn&quot;]], [&quot;down_arrow&quot;, &quot;left_shift&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}</h2>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;適用しない_Delete_NoteDelete(Evernote)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;delete_or_backspace&quot;) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;delete_or_backspace&quot;, [&quot;right_gui&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;evernote&quot;) %&gt; ]
+    }
+  ]
+}
+</code></pre>
+<hr>
+<h2 id="frontmostchromejsonerbl%E3%82%AD%E3%83%BCrightarrow%E8%A8%AD%E5%AE%9A">「frontmost_chrome.json.erb_L」キー、RightArrow設定、</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;L_RightArrow(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;l&quot;, [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;right_arrow&quot;]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="mandatory%E3%82%92%E7%84%A1%E3%81%97%E3%81%A7keycode%E5%8D%98%E7%8B%AC%E3%81%A7capslock%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%97%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88">mandatoryを無しで「key_code」単独で、「caps_lock」を設定したい場合</h2>
+<p>下記のような書き方はできない。<br>
+&quot;from&quot;: &lt;%= from(&quot;a&quot;, [&quot;left_control&quot;]) %&gt;,</p>
+<p>下記のような書き方が必要。<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;fn&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},</p>
+<hr>
+<h2 id="capslocker%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABchrome%E4%B8%8A%E3%81%A7capslock%E3%82%AA%E3%83%B3%E6%99%82%E3%81%ABj%E3%82%AD%E3%83%BC%E3%82%92%E6%8A%BC%E3%81%99%E3%81%94%E3%81%A8%E3%81%ABcapslocker%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AE%E5%AF%BE%E7%AD%96%E6%A4%9C%E8%A8%8E">CapsLocker、起動時にChrome上でCapsLockオン時に「j」キーを押すごとに、CapsLockerのアイコンが表示されることの対策検討</h2>
+<p>結果:うまくいかなかった。<br>
+Capslockオン時に、「j」キーで、CapsLockerのアイコンが表示されてしまう。</p>
+<pre class="hljs"><code><div>    {
+      &quot;description&quot;: &quot;J_DownArrow_改良1_1(Chrome)&quot;,
+      &quot;manipulators&quot;: [
+        {
+          &quot;type&quot;: &quot;basic&quot;,
+          &quot;from&quot;: {
+            &quot;key_code&quot;: &quot;j&quot;
+          },
+          &quot;to&quot;: [
+            {
+              &quot;key_code&quot;: &quot;down_arrow&quot;
+            }
+          ],
+          &quot;conditions&quot;: [
+            {
+              &quot;type&quot;: &quot;frontmost_application_if&quot;,
+              &quot;bundle_identifiers&quot;: [
+                &quot;^com\\.google\\.Chrome$&quot;
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      &quot;description&quot;: &quot;J_DownArrow改良1_2(Chrome)&quot;,
+      &quot;manipulators&quot;: [
+        {
+          &quot;type&quot;: &quot;basic&quot;,
+          &quot;from&quot;: {
+            &quot;key_code&quot;: &quot;j&quot;,
+            &quot;modifiers&quot;: {
+              &quot;mandatory&quot;: [
+                &quot;caps_lock&quot;
+              ]
+            }
+          },
+          &quot;to&quot;: [
+            {
+              &quot;key_code&quot;: &quot;j&quot;
+            }
+          ],
+          &quot;conditions&quot;: [
+            {
+              &quot;type&quot;: &quot;frontmost_application_if&quot;,
+              &quot;bundle_identifiers&quot;: [
+                &quot;^com\\.google\\.Chrome$&quot;
+              ]
+            }
+          ]
+        }
+      ]
+    },
+</div></code></pre>
+<hr>
+<h2 id="replacekeyjsonerb">replacekey.json.erb</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_簡易版(Replacekey)&quot;,
+  &quot;manipulators&quot;:
+  &lt;%= each_key(
+        source_keys_list: [&quot;z&quot;, &quot;x&quot;, &quot;c&quot;, &quot;v&quot;, &quot;s&quot;, &quot;d&quot;, &quot;f&quot;, &quot;w&quot;, &quot;e&quot;, &quot;r&quot;],
+        from_mandatory_modifiers: [&quot;right_gui&quot;],
+        from_optional_modifiers: [&quot;caps_lock&quot;],
+        dest_keys_list: [[&quot;japanese_eisuu&quot;, &quot;0&quot;], [&quot;japanese_eisuu&quot;, &quot;1&quot;], [&quot;japanese_eisuu&quot;, &quot;2&quot;], [&quot;japanese_eisuu&quot;, &quot;3&quot;], [&quot;japanese_eisuu&quot;, &quot;4&quot;], [&quot;japanese_eisuu&quot;, &quot;5&quot;], [&quot;japanese_eisuu&quot;, &quot;6&quot;], [&quot;japanese_eisuu&quot;, &quot;7&quot;], [&quot;japanese_eisuu&quot;, &quot;8&quot;], [&quot;japanese_eisuu&quot;, &quot;9&quot;]],
+        as_json: true,
+      ) %&gt;
+},
+    {
+  &quot;description&quot;: &quot;RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_詳細版(Replacekey)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;z&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;0&quot;
+        }
+      ],
+                &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_unless&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.parallels.desktop.console$&quot;,
+            &quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,
+            &quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;x&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;1&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;c&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;2&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;v&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;3&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;s&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;4&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;d&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;5&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;f&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;6&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;w&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;7&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;e&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;8&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;r&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;9&quot;
+        }
+      ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="replacekeyjsonerb">replacekey.json.erb</h2>
+<pre><code>    {
+  &quot;description&quot;: &quot;LeftCommand + H/J/K/L_Arrows(Replacekey)&quot;,
+  &quot;manipulators&quot;:
+  &lt;%= each_key(
+        source_keys_list: [&quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;],
+        from_mandatory_modifiers: [&quot;left_control&quot;],
+        from_optional_modifiers: [&quot;any&quot;],
+        dest_keys_list: [&quot;left_arrow&quot;, &quot;down_arrow&quot;, &quot;up_arrow&quot;, &quot;right_arrow&quot;],
+        as_json: true,
+      ) %&gt;
+    },
+</code></pre>
+<hr>
+<p>ConstScrollDown,ConstScrollUp(保留)</p>
+<p>{<br>
+&quot;description&quot;: &quot;RightAlt + J_ConstScrollDown&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;e&quot;, [&quot;left_control&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightAlt + K_ConstScrollUp&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;k&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;y&quot;, [&quot;left_control&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},</p>
+<hr>
+<h2 id="karaviner%E3%81%AE%E7%89%B9%E5%AE%9A%E3%82%A2%E3%83%97%E3%83%AA%E5%86%85%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E6%99%82%E3%81%AB%E3%81%9D%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%86">karavinerの特定アプリ内のショットカットキーを設定する時に、そのアプリの初期設定ショットカットキーを使う</h2>
+<p>そのアプリの初期設定のショットカットキーで、karaviner設定した方が<br>
+そのアプリが初期状態になっても、そのままkaraviner設定が反映されるので便利</p>
+<hr>
+
+</body>
+</html>
