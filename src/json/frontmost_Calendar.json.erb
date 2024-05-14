@@ -1,0 +1,27 @@
+{
+  "title": "FrontmostIfCalendar",
+  "rules": [
+    {
+      "description": "RightCommand + Space_delete(photos)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("spacebar", ["right_gui"]) %>,
+          "to": <%= to([["delete_or_backspace"]]) %>,
+          "conditions": [ <%= frontmost_application_if("photos") %> ]
+        }
+      ]
+    },
+    {
+      "description": "E_2ページ(preview)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e") %>,
+          "to": <%= to([["3", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("preview") %> ]
+        }
+      ]
+    }
+  ]
+}
