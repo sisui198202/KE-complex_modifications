@@ -1,25 +1,102 @@
 {
-  "title": "FrontmostIfCalendar",
+  "title": "FrontmostIfCalendar99",
   "rules": [
     {
-      "description": "RightCommand + Space_delete(photos)",
+      "description": "LeftOption + D_日表示(calendar)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"]) %>,
-          "to": <%= to([["delete_or_backspace"]]) %>,
-          "conditions": [ <%= frontmost_application_if("photos") %> ]
+          "from": <%= from("d", ["left_option"]) %>,
+          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
       ]
     },
     {
-      "description": "E_2ページ(preview)",
+      "description": "RightOption + W_週表示(calendar)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("e") %>,
+          "from": <%= from("w", ["right_option"]) %>,
+          "to": <%= to([["2", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + M_月表示(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("m", ["left_option"]) %>,
           "to": <%= to([["3", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("preview") %> ]
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + Y_年表示(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("y", ["left_option"]) %>,
+          "to": <%= to([["4", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + L_次へ(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("l", ["left_option"]) %>,
+          "to": <%= to([["right_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + H_前へ(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["left_option"]) %>,
+          "to": <%= to([["left_arrow", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + A_今日へ移動(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_option"]) %>,
+          "to": <%= to([["t", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + A_日付へ移動(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_option"]) %>,
+          "to": <%= to([["t", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_カレンダーリストを表示・非表示(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"]) %>,
+          "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
       ]
     }
