@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfCalendar98",
+  "title": "FrontmostIfCalendar97",
   "rules": [
     {
       "description": "LeftOption + D_日表示(calendar)",
@@ -17,7 +17,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("w", ["right_option"]) %>,
+          "from": <%= from("w", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -28,7 +28,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("m", ["left_option"]) %>,
+          "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -39,7 +39,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("y", ["left_option"]) %>,
+          "from": <%= from("y", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -50,7 +50,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("l", ["left_option"]) %>,
+          "from": <%= from("l", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["right_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -61,7 +61,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("h", ["left_option"]) %>,
+          "from": <%= from("h", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["left_arrow", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -72,7 +72,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["left_option"]) %>,
+          "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["t", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -83,7 +83,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["right_option"]) %>,
+          "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["t", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
@@ -94,7 +94,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("t", ["left_control"]) %>,
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("calendar") %> ]
         }
