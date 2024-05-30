@@ -303,6 +303,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   calendar_bundle_identifiers = [
     "^com.apple.iCal$",
   ]
+  mail_bundle_identifiers = [
+    "^com.apple.mail$",
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -399,6 +402,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(photos_bundle_identifiers)
     when "calendar"
       bundle_identifiers.concat(calendar_bundle_identifiers)
+    when "mail"
+      bundle_identifiers.concat(mail_bundle_identifiers)
     when "discord"
       bundle_identifiers.concat(discord_bundle_identifiers)
     else

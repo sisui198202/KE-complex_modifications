@@ -1,0 +1,40 @@
+{
+  "title": "FrontmostIfMail",
+  "rules": [
+    {
+      "description": "LeftOption + D_日表示(mail)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.apple.mail$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
