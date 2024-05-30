@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfMail98",
+  "title": "FrontmostIfMail97",
   "rules": [
     {
       "description": "LeftOption + F_フラグを切り替える(mail)",
@@ -46,7 +46,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "left_contorl"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
