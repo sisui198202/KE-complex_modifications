@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfMail99",
+  "title": "FrontmostIfMail98",
   "rules": [
     {
       "description": "LeftOption + F_フラグを切り替える(mail)",
@@ -8,6 +8,17 @@
           "type": "basic",
           "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["l", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mail") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_新規メールをすべて受信(mail)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("z", ["left_contorl"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mail") %> ]
         }
       ]

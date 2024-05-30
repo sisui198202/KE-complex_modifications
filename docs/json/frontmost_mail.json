@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfMail99",
+  "title": "FrontmostIfMail98",
   "rules": [
     {
       "description": "LeftOption + F_フラグを切り替える(mail)",
@@ -20,6 +20,42 @@
           "to": [
             {
               "key_code": "l",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.apple.mail$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + Z_新規メールをすべて受信(mail)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "left_contorl"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
               "modifiers": [
                 "left_shift",
                 "right_gui"
