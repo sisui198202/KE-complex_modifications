@@ -1,13 +1,13 @@
 {
-  "title": "FrontmostIfMail",
+  "title": "FrontmostIfMail99",
   "rules": [
     {
-      "description": "LeftOption + D_日表示(mail)",
+      "description": "LeftOption + F_フラグを切り替える(mail)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "d",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
                 "left_option"
@@ -19,8 +19,9 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "l",
               "modifiers": [
+                "left_shift",
                 "right_gui"
               ]
             }

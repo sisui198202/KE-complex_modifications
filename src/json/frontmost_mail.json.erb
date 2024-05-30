@@ -1,13 +1,13 @@
 {
-  "title": "FrontmostIfMail",
+  "title": "FrontmostIfMail99",
   "rules": [
     {
-      "description": "LeftOption + D_日表示(mail)",
+      "description": "LeftOption + F_フラグを切り替える(mail)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["l", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mail") %> ]
         }
       ]
