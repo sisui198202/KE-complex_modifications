@@ -1,5 +1,5 @@
 {
-  "title": "A_FrontmostIfExcel",
+  "title": "A_FrontmostIfExcel3",
   "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -315,6 +315,35 @@
                 "right_option",
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + K_繰り返し(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f4"
             }
           ],
           "conditions": [

@@ -1,5 +1,5 @@
 {
-    "title": "A_FrontmostIfExcel",
+    "title": "A_FrontmostIfExcel3",
     "rules": [
     {
       "description": "LeftCommand  + Z_塗りつぶし色(Excel)",
@@ -107,6 +107,17 @@
           "type": "basic",
           "from": <%= from("q", ["right_option"]) %>,
           "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + K_繰り返し(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("k", ["right_option"]) %>,
+          "to": <%= to([["f4"]]) %>,
           "conditions": [ <%= frontmost_application_if("excel") %> ]
         }
       ]
