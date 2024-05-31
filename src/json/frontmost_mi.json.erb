@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfMi97",
+    "title": "FrontmostIfMi96",
     "rules": [
     {
       "description": "LeftCommand + Oオウ_現在のタブをウインドウ化(mi)",
@@ -8,6 +8,17 @@
           "type": "basic",
           "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + E_クリップボード内容evernote新規ノート貼付(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["v", ["left_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
