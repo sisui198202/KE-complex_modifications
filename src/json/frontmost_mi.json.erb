@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfMi96",
+    "title": "FrontmostIfMi95",
     "rules": [
     {
       "description": "LeftCommand + Oオウ_現在のタブをウインドウ化(mi)",
@@ -18,7 +18,7 @@
         {
           "type": "basic",
           "from": <%= from("e", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["v", ["left_shift", "right_gui"]]]) %>,
+          "to": <%= to([["v", ["left_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]

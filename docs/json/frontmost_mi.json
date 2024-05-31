@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfMi96",
+  "title": "FrontmostIfMi95",
   "rules": [
     {
       "description": "LeftCommand + Oオウ_現在のタブをウインドウ化(mi)",
@@ -57,7 +57,7 @@
             {
               "key_code": "v",
               "modifiers": [
-                "left_shift",
+                "left_control",
                 "right_gui"
               ]
             }
