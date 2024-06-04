@@ -12,7 +12,7 @@
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
-            "description": "LeftCommand + (オ-)_スクショ(Replacekey)",
+            "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
             "type": "basic",
             "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["f12"]]) %>
