@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode98",
+    "title": "FrontmostIfVscode",
     "rules": [
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -268,12 +268,23 @@
       ]
     },
     {
-      "description": "LeftCommand + 0(ゼロ)_Row2SplitEditerScreen(vscode)",
+      "description": "LeftCommand + O(オー)_Row2SplitEditerScreen(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["2", ["right_option", "right_gui", "left_shift"]], ["d", ["right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + 0(ゼロ)_Column2SplitEditerScreen(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
@@ -329,17 +340,6 @@
           "type": "basic",
           "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["0", ["right_gui", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
-        }
-      ]
-    },
-  {
-      "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_gui", "right_alt"]], ["n", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode98",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "LeftOption + M_BookmarkSet(vscode)",
@@ -863,7 +863,7 @@
       ]
     },
     {
-      "description": "LeftCommand + 0(ゼロ)_Row2SplitEditerScreen(vscode)",
+      "description": "LeftCommand + O(オー)_Row2SplitEditerScreen(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -891,6 +891,55 @@
               "key_code": "d",
               "modifiers": [
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + 0(ゼロ)_Column2SplitEditerScreen(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
+              ]
+            },
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],
@@ -1070,55 +1119,6 @@
               "modifiers": [
                 "right_gui",
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(vscode)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            },
-            {
-              "key_code": "i",
-              "modifiers": [
-                "right_gui",
-                "right_alt"
-              ]
-            },
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ],
