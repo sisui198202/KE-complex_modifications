@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfMail97",
+  "title": "FrontmostIfMail",
   "rules": [
     {
       "description": "LeftOption + F_フラグを切り替える(mail)",
@@ -56,6 +56,42 @@
           "to": [
             {
               "key_code": "n",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.apple.mail$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + S_送信(mail)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
               "modifiers": [
                 "left_shift",
                 "right_gui"
