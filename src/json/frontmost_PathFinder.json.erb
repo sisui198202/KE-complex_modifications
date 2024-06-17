@@ -1,6 +1,17 @@
 {
-  "title": "FrontmostIfPathFinder1",
+  "title": "FrontmostIfPathFinder2",
   "rules": [
+    {
+      "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["left_control"]) %>,
+          "to": <%= to([["f6"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
       "manipulators": [
