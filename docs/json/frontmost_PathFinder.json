@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder33",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -500,7 +500,39 @@
       ]
     },
     {
-      "description": "LeftCommand + O(オー)_デュアルウィンドウトグル(pathfinder)",
+      "description": "RightOption + R_デュアルウィンドウトグル(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + O(オー)_垂直レイアウト(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
@@ -517,7 +549,11 @@
           },
           "to": [
             {
-              "key_code": "f1"
+              "key_code": "o",
+              "modifiers": [
+                "left_control",
+                "right_option"
+              ]
             }
           ],
           "conditions": [

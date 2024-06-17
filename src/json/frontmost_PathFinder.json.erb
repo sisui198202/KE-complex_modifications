@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder33",
+  "title": "FrontmostIfPathFinder",
   "rules": [
     {
       "description": "LeftAlt + U_PathSelection(pathfinder)",
@@ -156,12 +156,23 @@
       ]
     },
     {
-      "description": "LeftCommand + O(オー)_デュアルウィンドウトグル(pathfinder)",
+      "description": "RightOption + R_デュアルウィンドウトグル(pathfinder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["f1"]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + O(オー)_垂直レイアウト(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["f1"]]) %>,
+          "to": <%= to([["o", ["left_control", "right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
       ]
