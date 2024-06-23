@@ -1,9 +1,16 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
   {
-      "description": "ShotCutKeySummary4",
+      "description": "ShotCutKeySummary99",
       "manipulators": [
+        {
+          "description": "RightCommand + tilde_tilde x 3",
+          "type": "basic",
+          "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_shift", "right_gui"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
         {
           "description": "優先RightCommand + G_FileTabClose1",
           "type": "basic",
