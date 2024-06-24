@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome2",
+  "title": "FrontmostIfChrome99",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1322,7 +1322,7 @@
               "key_code": "c",
               "modifiers": [
                 "right_gui",
-                "right_shiftt"
+                "right_shift"
               ]
             }
           ],
