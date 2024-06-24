@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome1",
+    "title": "FrontmostIfChrome2",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -439,6 +439,17 @@
           "type": "basic",
           "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + S_検証(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["c", ["right_gui", "right_shiftt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

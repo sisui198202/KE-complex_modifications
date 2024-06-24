@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome1",
+  "title": "FrontmostIfChrome2",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1287,6 +1287,42 @@
               "modifiers": [
                 "right_control",
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + S_検証(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui",
+                "right_shiftt"
               ]
             }
           ],
