@@ -1,14 +1,14 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary98",
   "rules": [
   {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary98",
       "manipulators": [
         {
           "description": "RightCommand + tilde_tilde x 3",
           "type": "basic",
           "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["right_shift", "right_gui"]]]) %>,
+          "to": <%= to([["1", ["left_control", "right_shift"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {

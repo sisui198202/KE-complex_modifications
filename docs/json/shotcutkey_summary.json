@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary98",
   "rules": [
     {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary98",
       "manipulators": [
         {
           "description": "RightCommand + tilde_tilde x 3",
@@ -22,8 +22,8 @@
             {
               "key_code": "1",
               "modifiers": [
-                "right_shift",
-                "right_gui"
+                "left_control",
+                "right_shift"
               ]
             }
           ],
