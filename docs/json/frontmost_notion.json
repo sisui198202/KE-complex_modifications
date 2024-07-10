@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfNotion",
+  "title": "FrontmostIfNotion1",
   "rules": [
     {
-      "description": "RightCommand + A_新しいNotionウィンドウを開く(notion)",
+      "description": "RightOption + A_新しいNotionウィンドウを開く(notion)",
       "manipulators": [
         {
           "type": "basic",
@@ -10,7 +10,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
