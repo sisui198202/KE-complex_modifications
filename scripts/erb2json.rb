@@ -306,6 +306,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   mail_bundle_identifiers = [
     "^com.apple.mail$",
   ]
+  notion_bundle_identifiers = [
+    "^notion.id$",
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -404,6 +407,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(calendar_bundle_identifiers)
     when "mail"
       bundle_identifiers.concat(mail_bundle_identifiers)
+    when "notion"
+      bundle_identifiers.concat(notion_bundle_identifiers)
     when "discord"
       bundle_identifiers.concat(discord_bundle_identifiers)
     else
