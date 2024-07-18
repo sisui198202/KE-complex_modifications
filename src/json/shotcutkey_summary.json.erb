@@ -1,9 +1,23 @@
 {
-  "title": "ShotCutKeySummary95",
+  "title": "ShotCutKeySummary99",
   "rules": [
   {
-      "description": "ShotCutKeySummary95",
+      "description": "ShotCutKeySummary99",
       "manipulators": [
+        {
+          "description": "RightOption + R_Record Screen/Stop Recording",
+          "type": "basic",
+          "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["9", ["right_option", "right_shift"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
+        {
+          "description": "RightOption + S_Pause/Resume Recording",
+          "type": "basic",
+          "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["8", ["right_option", "right_shift"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
         {
           "description": "RightCommand + tilde_tilde x 3",
           "type": "basic",
