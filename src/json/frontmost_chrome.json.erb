@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome97",
+    "title": "FrontmostIfChrome",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -384,6 +384,17 @@
           "type": "basic",
           "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + T_ドックの位置変更(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
