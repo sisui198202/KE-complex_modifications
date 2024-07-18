@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary98",
   "rules": [
   {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary98",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -12,9 +12,9 @@
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "RightOption + S_Pause/Resume Recording",
+          "description": "LeftCommand + Z_Pause/Resume Recording",
           "type": "basic",
-          "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
+          "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["8", ["right_option", "right_shift"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },

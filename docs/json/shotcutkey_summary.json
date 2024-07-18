@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary98",
   "rules": [
     {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary98",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -45,13 +45,13 @@
           ]
         },
         {
-          "description": "RightOption + S_Pause/Resume Recording",
+          "description": "LeftCommand + Z_Pause/Resume Recording",
           "type": "basic",
           "from": {
-            "key_code": "s",
+            "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
