@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode2",
     "rules": [
+      {
+        "description": "RightCommand + B_OpenwithLiveServer(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
       {
         "description": "LeftOption + M_BookmarkSet(vscode)",
         "manipulators": [
