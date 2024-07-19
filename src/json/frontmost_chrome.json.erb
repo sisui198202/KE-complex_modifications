@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome1",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -395,6 +395,17 @@
           "type": "basic",
           "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + openbracket_コマンドパレット(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["p", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
