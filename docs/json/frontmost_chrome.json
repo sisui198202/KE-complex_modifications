@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome1",
+  "title": "FrontmostIfChrome2",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1181,6 +1181,41 @@
               "modifiers": [
                 "right_gui",
                 "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],

@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome1",
+    "title": "FrontmostIfChrome2",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -406,6 +406,17 @@
           "type": "basic",
           "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["p", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["p", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
