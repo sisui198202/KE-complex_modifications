@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome4",
     "rules": [
       {
         "description": "J_DownArrow(Chrome)",
@@ -417,6 +417,17 @@
           "type": "basic",
           "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["p", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + オウ_単語の複数選択(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
