@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome4",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -1539,6 +1539,39 @@
             {
               "key_code": "c",
               "modifiers": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightAlt + C_ConsoleClear(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": "right_control"
             }
           ],
           "conditions": [
