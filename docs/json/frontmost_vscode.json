@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode2",
+  "title": "FrontmostIfVscode3",
   "rules": [
     {
       "description": "RightCommand + B_OpenwithLiveServer(vscode)",
@@ -23,6 +23,42 @@
               "modifiers": [
                 "right_option",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + B_デバッグの開始(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "right_shift",
+                "right_option"
               ]
             }
           ],

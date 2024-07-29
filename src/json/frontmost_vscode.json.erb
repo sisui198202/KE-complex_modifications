@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode2",
+    "title": "FrontmostIfVscode3",
     "rules": [
       {
         "description": "RightCommand + B_OpenwithLiveServer(vscode)",
@@ -8,6 +8,17 @@
             "type": "basic",
             "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightOption + B_デバッグの開始(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["5", ["right_shift", "right_option" ]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
