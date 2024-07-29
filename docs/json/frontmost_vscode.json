@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode3",
+  "title": "FrontmostIfVscode123",
   "rules": [
     {
       "description": "RightCommand + B_OpenwithLiveServer(vscode)",
@@ -59,6 +59,42 @@
               "modifiers": [
                 "right_shift",
                 "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + W_再起動(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f5",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
               ]
             }
           ],
