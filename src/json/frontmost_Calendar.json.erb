@@ -1,6 +1,17 @@
 {
-  "title": "FrontmostIfCalendar",
+  "title": "FrontmostIfCalendar1",
   "rules": [
+    {
+      "description": "RightCommand + A_クイックイベント作成(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("calendar") %> ]
+        }
+      ]
+    },
     {
       "description": "LeftOption + D_日表示(calendar)",
       "manipulators": [
