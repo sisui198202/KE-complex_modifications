@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfVscode123",
+    "title": "FrontmostIfVscode1",
     "rules": [
+      {
+        "description": "RightOption + K_折りたたみの切り替え(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["0", ["left_control", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
       {
         "description": "RightCommand + B_OpenwithLiveServer(vscode)",
         "manipulators": [

@@ -1,6 +1,42 @@
 {
-  "title": "FrontmostIfVscode123",
+  "title": "FrontmostIfVscode1",
   "rules": [
+    {
+      "description": "RightOption + K_折りたたみの切り替え(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_control",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "RightCommand + B_OpenwithLiveServer(vscode)",
       "manipulators": [
