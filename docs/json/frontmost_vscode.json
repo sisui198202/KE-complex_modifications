@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode3",
+  "title": "FrontmostIfVscode4",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -46,7 +46,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"
