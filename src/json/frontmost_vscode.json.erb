@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -17,7 +17,7 @@
         "manipulators": [
           {
             "type": "basic",
-            "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
+            "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
