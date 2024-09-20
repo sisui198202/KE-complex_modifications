@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode5",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "description": "RightOption + quote_閉じたエディターを再度開く(vscode)",
+      "description": "RightCommand + quote_閉じたエディターを再度開く(vscode)",
       "manipulators": [
         {
           "type": "basic",
