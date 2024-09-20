@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode1",
+    "title": "FrontmostIfVscode3",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -8,6 +8,17 @@
             "type": "basic",
             "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["0", ["left_control", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightOption + quote_閉じたエディターを再度開く(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
