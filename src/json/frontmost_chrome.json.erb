@@ -1,17 +1,28 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome1",
     "rules": [
-      {
-        "description": "J_DownArrow(Chrome)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
-          }
-        ]
-      },
+    {
+      "description": "J_DownArrow(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("j",["caps_lock"]) %>,
+          "to": <%= to([["down_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + quote_閉じたタブを再度開く(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
     {
       "description": "L_RightArrow(Chrome)",
       "manipulators": [
