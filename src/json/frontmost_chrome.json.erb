@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome4",
+    "title": "FrontmostIfChrome5",
     "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -273,7 +273,7 @@
         {
           "type": "basic",
           "from": <%= from("e", ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+          "to": <%= to([["w", ["right_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
@@ -386,17 +386,6 @@
       "to": <%= to([["5", ["left_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("chrome") %> ]
       }
-      ]
-    },
-    {
-      "description": "RightCommand + H_Reload(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
       ]
     },
     {
