@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome",
+    "title": "FrontmostIfChrome1",
     "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -273,7 +273,7 @@
         {
           "type": "basic",
           "from": <%= from("e", ["caps_lock"]) %>,
-          "to": <%= to([["r", ["right_gui"]]]) %>,
+          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
@@ -394,7 +394,7 @@
         {
           "type": "basic",
           "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["r", ["right_gui"]]]) %>,
+          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
@@ -405,7 +405,7 @@
         {
           "type": "basic",
           "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["r", ["right_gui", "right_shift"]]]) %>,
+          "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome",
+  "title": "FrontmostIfChrome1",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -792,9 +792,10 @@
           },
           "to": [
             {
-              "key_code": "r",
+              "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_control",
+                "right_shift"
               ]
             }
           ],
@@ -1140,9 +1141,10 @@
           },
           "to": [
             {
-              "key_code": "r",
+              "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_control",
+                "right_shift"
               ]
             }
           ],
@@ -1176,7 +1178,7 @@
           },
           "to": [
             {
-              "key_code": "r",
+              "key_code": "delete_or_backspace",
               "modifiers": [
                 "right_gui",
                 "right_shift"
