@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome3",
+    "title": "FrontmostIfChrome4",
     "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "description": "E_再読込(Chrome)",
+      "description": "E_Reload(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -394,6 +394,28 @@
         {
           "type": "basic",
           "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + H_Reload(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["w", ["right_control"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftShift + RightCommand + H_ハードキャッシュ(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
