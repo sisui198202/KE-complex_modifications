@@ -160,7 +160,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
   ]
   electron_bundle_identifiers = [
-    '^com.github.Electron$',
+    '^10_desktop_mobile_app/010_electron-quick-start/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron$',
   ]
   pathfinder_bundle_identifiers = [
     '^com\\.cocoatech\\.PathFinder$',
