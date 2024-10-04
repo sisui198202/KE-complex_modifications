@@ -159,7 +159,9 @@ def frontmost_application(type, app_aliases, as_json = true)
     "^com.parallels.winapp.76868ae832f6c6bd26cadc7d7c269986.b9dc48efd5094ca8a69c0e98f2ecf717$",
     "^com.parallels.winapp.bf448b76d11422f4a518bec20eb47937.b9dc48efd5094ca8a69c0e98f2ecf717$",
   ]
-
+  electron_bundle_identifiers = [
+    '^com.github.Electron$',
+  ]
   pathfinder_bundle_identifiers = [
     '^com\\.cocoatech\\.PathFinder$',
   ]
@@ -318,6 +320,8 @@ def frontmost_application(type, app_aliases, as_json = true)
 
     when "finder"
       bundle_identifiers.concat(finder_bundle_identifiers)
+    when "electron"
+      bundle_identifiers.concat(electron_bundle_identifiers)
     when "pararell"
       bundle_identifiers.concat(pararelldesk_bundle_identifiers)
     when "kindle"
