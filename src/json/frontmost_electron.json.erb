@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfElectron3",
+    "title": "FrontmostIfElectron4",
     "rules": [
       {
         "description": "RightCommand + H_Reload(electron)",
@@ -7,7 +7,7 @@
           {
             "type": "basic",
             "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+            "to": <%= to([["r", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("electron") %> ]
           }
         ]
