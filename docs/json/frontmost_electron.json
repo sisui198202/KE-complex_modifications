@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfElectron",
+  "title": "FrontmostIfElectron99",
   "rules": [
     {
       "description": "RightCommand + H_Reload(electron)",
@@ -21,6 +21,42 @@
             {
               "key_code": "r",
               "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.github.Electron$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + d_DeveloperTool(electron)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "right_alt",
                 "right_gui"
               ]
             }
