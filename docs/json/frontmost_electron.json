@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfElectron5",
+  "title": "FrontmostIfElectron",
   "rules": [
     {
       "description": "RightCommand + H_Reload(electron)",
@@ -29,7 +29,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^10_desktop_mobile_app/010_electron-quick-start/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron$"
+                "^com.github.Electron$"
               ]
             }
           ]
