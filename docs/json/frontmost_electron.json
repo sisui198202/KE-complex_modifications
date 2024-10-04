@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfElectron98",
+  "title": "FrontmostIfElectron",
   "rules": [
     {
       "description": "RightCommand + H_Reload(electron)",
@@ -54,7 +54,7 @@
           },
           "to": [
             {
-              "key_code": "l",
+              "key_code": "i",
               "modifiers": [
                 "right_alt",
                 "right_gui"
