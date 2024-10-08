@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode99",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -8,6 +8,17 @@
             "type": "basic",
             "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["0", ["left_control", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + A_CurrentRowHeadCursol(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("a", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["left_arrow", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
