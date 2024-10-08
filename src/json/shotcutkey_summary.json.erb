@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary98",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
-      "description": "ShotCutKeySummary98",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -113,6 +113,13 @@
           "type": "basic",
           "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["z", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
+        {
+          "description": "LeftOption + U_やり直し",
+          "type": "basic",
+          "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["z", ["left_shift" ,"left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
