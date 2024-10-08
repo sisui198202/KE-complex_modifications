@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode3",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1619,6 +1619,38 @@
           "to": [
             {
               "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftShift + 左クリック_ファイルを開く(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift"
+            },
+            {
+              "pointing_button": "button2"
             }
           ],
           "conditions": [
