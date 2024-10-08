@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -1046,10 +1046,10 @@
           },
           "to": [
             {
-              "key_code": "7",
+              "key_code": "8",
               "modifiers": [
-                "left_control",
-                "right_alt"
+                "left_shift",
+                "right_gui"
               ]
             }
           ],
@@ -1086,10 +1086,10 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "0",
               "modifiers": [
-                "left_control",
-                "right_alt"
+                "left_shift",
+                "right_gui"
               ]
             }
           ],
