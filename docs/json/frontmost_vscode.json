@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode3",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1633,7 +1633,7 @@
       ]
     },
     {
-      "description": "LeftShift + 左クリック_ファイルを開く(vscode)",
+      "description": "LeftShift + spacebar_ファイルを開く(vscode)",
       "manipulators": [
         {
           "type": "basic",
@@ -1647,7 +1647,7 @@
           },
           "to": [
             {
-              "key_code": "left_shift"
+              "key_code": "left_gui"
             },
             {
               "pointing_button": "button2"
