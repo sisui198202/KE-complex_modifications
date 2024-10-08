@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -203,14 +203,14 @@
           "description": "LeftAlt + P_英語 → 日本語[DeepL + Alfred]",
           "type": "basic",
           "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["0", ["right_alt", "right_gui"]]]) %>,
+          "to": <%= to([["7", ["left_control","right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + P_日本語 → 英語[DeepL + Alfred]",
           "type": "basic",
           "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["7", ["right_alt", "right_gui"]]]) %>,
+          "to": <%= to([["6", ["left_control","right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
