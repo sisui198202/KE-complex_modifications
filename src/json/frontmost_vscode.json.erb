@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode98",
+    "title": "FrontmostIfVscode97",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -19,6 +19,18 @@
             "type": "basic",
             "from": <%= from("a", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["left_arrow", ["left_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
+      {
+        "description": "LeftCommand + semicolon_CurrentRowCursolEnd(vscode)",
+        "_comment": "vscode上で、直接 Ctrl + ;で設定済み",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["semicolon", ["left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
@@ -317,18 +329,6 @@
           "type": "basic",
           "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["right_control", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vscode") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + semicolon_CurrentRowCursolEnd(vscode)",
-      "_comment": "vscode上で、直接 Ctrl + ;で設定済み",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("semicolon", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["semicolon", ["left_control"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]

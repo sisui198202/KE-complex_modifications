@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode98",
+  "title": "FrontmostIfVscode97",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -58,6 +58,42 @@
               "key_code": "left_arrow",
               "modifiers": [
                 "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + semicolon_CurrentRowCursolEnd(vscode)",
+      "_comment": "vscode上で、直接 Ctrl + ;で設定済み",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "semicolon",
+              "modifiers": [
+                "left_control"
               ]
             }
           ],
@@ -1027,42 +1063,6 @@
               "modifiers": [
                 "right_control",
                 "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + semicolon_CurrentRowCursolEnd(vscode)",
-      "_comment": "vscode上で、直接 Ctrl + ;で設定済み",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "semicolon",
-              "modifiers": [
-                "left_control"
               ]
             }
           ],
