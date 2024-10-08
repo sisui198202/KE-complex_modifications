@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary99",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -1031,7 +1031,7 @@
           ]
         },
         {
-          "description": "LeftAlt + P_日本語 → 英語[DeepL + Alfred]",
+          "description": "LeftAlt + P_英語 → 日本語[DeepL + Alfred]",
           "type": "basic",
           "from": {
             "key_code": "p",
@@ -1071,7 +1071,7 @@
           ]
         },
         {
-          "description": "RightAlt + P_英語 → 日本語[DeepL + Alfred]",
+          "description": "RightAlt + P_日本語 → 英語[DeepL + Alfred]",
           "type": "basic",
           "from": {
             "key_code": "p",
