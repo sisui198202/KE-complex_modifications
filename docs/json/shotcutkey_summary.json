@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -546,13 +546,13 @@
           ]
         },
         {
-          "description": "LeftOption + U_やり直し",
+          "description": "LeftCommand + Y_やり直し",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "y",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
