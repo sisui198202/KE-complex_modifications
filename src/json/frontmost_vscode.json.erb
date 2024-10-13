@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode9",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -373,6 +373,17 @@
           "type": "basic",
           "from": <%= from("equal_sign", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["right_shift", "right_gui",]]]) %>,
+          "conditions": [ <%= frontmost_application_if("vscode") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + U_前のエディターグループにフォーカス(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("u", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["5", ["right_shift", "right_gui",]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
       ]
