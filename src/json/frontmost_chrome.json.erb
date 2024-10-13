@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfChrome2",
+    "title": "FrontmostIfChrome",
     "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -527,6 +527,17 @@
           "type": "basic",
           "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + B_BookmarkManage(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
