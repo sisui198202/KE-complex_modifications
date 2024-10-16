@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode9",
+    "title": "FrontmostIfVscode",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -8,6 +8,17 @@
             "type": "basic",
             "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["0", ["left_control", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          }
+        ]
+      },
+      {
+        "description": "RightOption + G_ワークスペースを閉じる(vscode)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("g", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["8", ["left_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           }
         ]
