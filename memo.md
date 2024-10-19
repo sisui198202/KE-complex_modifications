@@ -1,3 +1,12 @@
+## Karaviner_キー作成仕方
+
+1. 編集
+2. make
+3. karg
+4. karu
+5. インストール
+
+---------------------
 ## 追加でショットカットキーを登録する時の手順
 
 1. 既存の登録分を削除
@@ -2022,5 +2031,16 @@ ConstScrollDown,ConstScrollUp(保留)
 
 そのアプリの初期設定のショットカットキーで、karaviner設定した方が
 そのアプリが初期状態になっても、そのままkaraviner設定が反映されるので便利
+
+---------------------
+## Windowsの新たなツールで日本語アルファベット切り替え、2重貼り付けを防ぐ方法
+
+1. 新たなツールのウィンドウIDを、karaviner-EventViewrのFromntmost Application内のBundle Identiferを確認
+
+2. 確認したidに ^ + id + $に加工
+
+3. 3-1:日本語切り替えできるようにする方法: frontmost_pararelldesk.json内のコマンドキーを単体で押したときに、英数・かなキーを送信する。内にあるbundle_identifiersに加工した分を追加
+
+   3-2:2重貼り付けを防ぐ方法:RightOption_Paste(Replacekey)内にあるbundle_identifiersに加工分を追加
 
 ---------------------

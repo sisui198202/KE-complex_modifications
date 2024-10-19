@@ -1,8 +1,8 @@
 {
-  "title": "DoublePushKey",
+  "title": "DoublePushKey1",
   "rules": [
     {
-      "description": "Double RightShift_Clipboard History(Double Push)",
+      "description": "Double RightShift_Clipboard History(Double Push)1",
       "manipulators": [
         {
           "type": "basic",
@@ -16,7 +16,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "9",
               "modifiers": [
                 "right_option",
                 "right_gui"
