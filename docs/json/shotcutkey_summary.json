@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1",
+  "title": "ShotCutKeySummary",
   "rules": [
     {
-      "description": "ShotCutKeySummary1",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -970,46 +970,6 @@
               "modifiers": [
                 "right_control",
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightAlt + 1_Oracle_NumberLearnParts",
-          "type": "basic",
-          "from": {
-            "key_code": "1",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_alt",
-                "left_shift"
               ]
             }
           ],
