@@ -1,8 +1,8 @@
 {
-  "title": "DoublePushKey1",
+  "title": "DoublePushKey",
   "rules": [
     {
-      "description": "Double RightShift_Clipboard History(Double Push)1",
+      "description": "Double RightShift_Clipboard History(Double Push)",
       "manipulators": [
         {
           "type": "basic",
