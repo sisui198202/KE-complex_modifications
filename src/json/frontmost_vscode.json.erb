@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode99",
+    "title": "FrontmostIfVscode",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -393,7 +393,7 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("z", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["9", ["left_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }
