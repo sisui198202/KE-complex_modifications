@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1269,12 +1269,6 @@
               "modifiers": [
                 "left_gui",
                 "left_shift"
-              ]
-            },
-            {
-              "key_code": "d",
-              "modifiers": [
-                "left_option"
               ]
             }
           ],
