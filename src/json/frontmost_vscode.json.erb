@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfVscode",
+    "title": "FrontmostIfVscode1",
     "rules": [
       {
         "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -378,11 +378,11 @@
       ]
     },
     {
-      "description": "RightCommand + Z_Change Live Server workspace(vscode)",
+      "description": "LeftOption + C_Change Live Server workspace(vscode)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+          "from": <%= from("c", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["left_gui", "left_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vscode") %> ]
         }

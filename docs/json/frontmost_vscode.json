@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode",
+  "title": "FrontmostIfVscode1",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1248,15 +1248,15 @@
       ]
     },
     {
-      "description": "RightCommand + Z_Change Live Server workspace(vscode)",
+      "description": "LeftOption + C_Change Live Server workspace(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
