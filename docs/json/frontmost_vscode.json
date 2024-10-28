@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode1",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1248,7 +1248,7 @@
       ]
     },
     {
-      "description": "RightCommand + Z_Stop Live Server(vscode)",
+      "description": "RightCommand + Z_Change Live Server workspace(vscode)",
       "manipulators": [
         {
           "type": "basic",
