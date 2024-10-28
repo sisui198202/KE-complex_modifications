@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode4",
+  "title": "FrontmostIfVscode",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1224,6 +1224,48 @@
           "to": [
             {
               "key_code": "6",
+              "modifiers": [
+                "left_gui",
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + Z_Stop Live Server(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
               "modifiers": [
                 "left_gui",
                 "left_shift"
