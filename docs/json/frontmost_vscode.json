@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfVscode111",
+  "title": "FrontmostIfVscode99",
   "rules": [
     {
       "description": "RightOption + K_折りたたみの切り替え(vscode)",
@@ -1643,15 +1643,15 @@
       ]
     },
     {
-      "description": "LeftOption + T_アクティビティバ切替(vscode)",
+      "description": "RightOption + Y_アクティビティバ切替(vscode)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "y",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1664,6 +1664,42 @@
               "modifiers": [
                 "right_shift",
                 "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftOption + T_セカンダリサイドバー切替(vscode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "right_option",
+                "right_gui"
               ]
             }
           ],
