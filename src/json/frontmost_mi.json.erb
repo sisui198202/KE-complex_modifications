@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfMi95",
+    "title": "FrontmostIfMi",
     "rules": [
     {
       "description": "LeftCommand + Oオウ_現在のタブをウインドウ化(mi)",
@@ -273,6 +273,17 @@
           "type": "basic",
           "from": <%= from("quote", ["left_shift"], ["caps_lock"]) %>,
           "to": <%= to([["japanese_eisuu"], ["quote", ["left_shift"]], ["quote", ["left_shift"]], ["left_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("mi") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftShift + Comma_Dainari-Syonari(mi)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("mi") %> ]
         }
       ]
