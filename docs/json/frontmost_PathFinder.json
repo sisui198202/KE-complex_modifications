@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder3",
+  "title": "FrontmostIfPathFinder4",
   "rules": [
     {
       "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動(pathfinder)",
