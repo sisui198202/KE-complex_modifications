@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfPathFinder2",
+  "title": "FrontmostIfPathFinder3",
   "rules": [
     {
       "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動(pathfinder)",
@@ -46,11 +46,11 @@
       ]
     },
     {
-      "description": "RightOption + Z_エイリアスを作る(pathfinder)",
+      "description": "RightOption + E_エイリアスを作る(pathfinder)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("z", ["right_alt"], ["caps_lock"]) %>,
+          "from": <%= from("e", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
         }
