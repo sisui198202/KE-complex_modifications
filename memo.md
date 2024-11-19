@@ -1,3 +1,38 @@
+## フォークしてレポジトリを準備する
+
+1. GitHubの KE-complex_modifications へ行ってレポジトリをFork
+
+https://github.com/pqrs-org/KE-complex_modifications
+
+2. Fork選択
+
+![独自ルールGitHubPages接続方法1]("/Users/user/Desktop/Summary/Karabiner/KE-complex_modifications/img/独自ルールGitHubPages接続方法1.png")
+
+3. Settings
+
+![独自ルールGitHubPages接続方法2]("/Users/user/Desktop/Summary/Karabiner/KE-complex_modifications/img/独自ルールGitHubPages接続方法2.png")
+
+4. Visit site
+
+![独自ルールGitHubPages接続方法3]("/Users/user/Desktop/Summary/Karabiner/KE-complex_modifications/img/独自ルールGitHubPages接続方法3.png")
+
+(参考)<br>
+https://rcmdnk.com/blog/2017/08/30/computer-mac-karabiner/#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%97%E3%81%A6%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E6%BA%96%E5%82%99%E3%81%99%E3%82%8B
+
+---------------------
+## KE-complex_modifications を自分のレポジトリにForkしたURL
+
+https://github.com/sisui198202/KE-complex_modifications
+
+---------------------
+Karabiner Elements の独自ルールを追加、デフォルトディレクトリ先
+
+~/.config/karabiner/assets/complex_modifications/
+
+(参考)<br>
+https://zenn.dev/yuichkun/articles/6778b0f88e0629
+
+---------------------
 ## Karaviner_キー作成仕方
 
 1. 編集
@@ -7,14 +42,9 @@
 5. インストール
 
 ---------------------
-## 確認要
-
-https://zenn.dev/yuichkun/articles/6778b0f88e0629
-
----------------------
 ## 確認要1
 
-/Users/user/.config/karabiner/assets/
+% cd ~/Users/user/.config/karabiner/assets/
 
 ---------------------
 ## 追加でショットカットキーを登録する時の手順

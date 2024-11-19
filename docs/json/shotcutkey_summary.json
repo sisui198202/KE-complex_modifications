@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
     {
       "description": "ShotCutKeySummary",
@@ -1402,10 +1402,10 @@
           ]
         },
         {
-          "description": "RightOption + X_コレクションを前面/背面に移動",
+          "description": "RightOption + W_コレクションを前面/背面に移動",
           "type": "basic",
           "from": {
-            "key_code": "x",
+            "key_code": "w",
             "modifiers": {
               "mandatory": [
                 "right_option"
