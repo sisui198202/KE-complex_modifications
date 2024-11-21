@@ -1,5 +1,5 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
       "description": "ShotCutKeySummary99",
@@ -9,6 +9,13 @@
           "type": "basic",
           "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["9", ["right_option", "right_shift"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
+        {
+          "description": "LeftShift + F12_CaptureWindow",
+          "type": "basic",
+          "from": <%= from("f12", ["left_shift"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["left_shift", "right_gui"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
