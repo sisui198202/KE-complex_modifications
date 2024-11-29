@@ -1,3 +1,8 @@
+## ルールがまとめて設定されているファイル
+
+/Users/user/.config/karabiner/karabiner.json
+
+---------------------
 ## フォークしてレポジトリを準備する
 
 1. GitHubの KE-complex_modifications へ行ってレポジトリをFork
