@@ -311,6 +311,10 @@ def frontmost_application(type, app_aliases, as_json = true)
   notion_bundle_identifiers = [
     "^notion.id$",
   ]
+  vscode-iterm2_bundle_identifers = [
+    '^com\.googlecode\.iterm2$',
+    "^com.microsoft.VSCode$",
+  ]
   # ----------------------------------------
 
   bundle_identifiers = []
@@ -415,6 +419,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(notion_bundle_identifiers)
     when "discord"
       bundle_identifiers.concat(discord_bundle_identifiers)
+    when "vscode-iterm2"
+      bundle_identifiers.concat(vscode-iterm2_bundle_identifers)
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end
