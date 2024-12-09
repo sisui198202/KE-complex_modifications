@@ -311,7 +311,7 @@ def frontmost_application(type, app_aliases, as_json = true)
   notion_bundle_identifiers = [
     "^notion.id$",
   ]
-  bind_bundle_identifiers = [
+  band_bundle_identifiers = [
     "^com.campmobile.band$",
   ]
   vscode-iterm2_bundle_identifers = [
@@ -420,8 +420,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(mail_bundle_identifiers)
     when "notion"
       bundle_identifiers.concat(notion_bundle_identifiers)
-    when "bind"
-      bundle_identifiers.concat(bind_bundle_identifiers)
+    when "band"
+      bundle_identifiers.concat(band_bundle_identifiers)
     when "discord"
       bundle_identifiers.concat(discord_bundle_identifiers)
     when "vscode-iterm2"
