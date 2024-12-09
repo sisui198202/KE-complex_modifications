@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBand5",
+  "title": "FrontmostIfBand6",
   "rules": [
     {
       "description": "J_DownArrow(band)",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "description": "T_単語検索(Chrome)",
+      "description": "T_単語検索(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -148,7 +148,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]

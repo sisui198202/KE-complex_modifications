@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfBand5",
+    "title": "FrontmostIfBand6",
     "rules": [
     {
       "description": "J_DownArrow(band)",
@@ -47,13 +47,13 @@
         ]
       },
   {
-      "description": "T_単語検索(Chrome)",
+      "description": "T_単語検索(band)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("t", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          "conditions": [ <%= frontmost_application_if("band") %> ]
         }
       ]
     },
