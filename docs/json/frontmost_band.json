@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBand1",
+  "title": "FrontmostIfBand2",
   "rules": [
     {
       "description": "J_DownArrow(band)",
@@ -31,43 +31,7 @@
       ]
     },
     {
-      "description": "RightCommand + quote_閉じたタブを再度開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "L_RightArrow(Chrome)",
+      "description": "L_RightArrow(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -88,7 +52,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -96,7 +60,7 @@
       ]
     },
     {
-      "description": "M_最終行へ(Chrome)",
+      "description": "M_最終行へ(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -120,7 +84,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -128,7 +92,7 @@
       ]
     },
     {
-      "description": "K_UpArrow(Chrome)",
+      "description": "K_UpArrow(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -149,7 +113,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -157,7 +121,7 @@
       ]
     },
     {
-      "description": "N_最初の行へ(Chrome)",
+      "description": "N_最初の行へ(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -181,7 +145,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -189,7 +153,7 @@
       ]
     },
     {
-      "description": "S_検索バーアクティブ(Chrome)",
+      "description": "S_検索バーアクティブ(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -213,7 +177,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -221,70 +185,7 @@
       ]
     },
     {
-      "description": "X_BookMarkSearch(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "x",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + T_BookMarkSearch(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "O(オー)_PageUp(Chrome)",
+      "description": "O(オー)_PageUp(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -308,7 +209,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -316,7 +217,7 @@
       ]
     },
     {
-      "description": "i_PageDown(Chrome)",
+      "description": "i_PageDown(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -340,7 +241,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -348,242 +249,7 @@
       ]
     },
     {
-      "description": "Slash_拡大(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + Slash_拡大(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "B_縮小(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + B_縮小(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "T_単語検索(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Semicolon_NextTab(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Z_PreviousTab(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_shift",
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "G_TabClose(Chrome)",
+      "description": "G_TabClose(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -607,7 +273,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -615,203 +281,7 @@
       ]
     },
     {
-      "description": "V_Bookmark_Add(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + B_Bookmark_Add(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "A_新しいタブを開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "W_新しいウィンドウで開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "C_タブ複製(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "E_Reload(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "w",
-              "modifiers": [
-                "right_control",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "H_LeftArrow(Chrome)",
+      "description": "H_LeftArrow(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -832,7 +302,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -840,7 +310,7 @@
       ]
     },
     {
-      "description": "Period_MaxWindow(Chrome)",
+      "description": "Period_MaxWindow(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -865,7 +335,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -873,7 +343,7 @@
       ]
     },
     {
-      "description": "Comma_AppsSelect-Next(Chrome)",
+      "description": "Comma_AppsSelect-Next(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -898,7 +368,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -906,36 +376,7 @@
       ]
     },
     {
-      "description": "Quote_PreviewActiveWindow(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Preview.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "U_Undo(Chrome)",
+      "description": "U_Undo(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -959,7 +400,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -967,7 +408,7 @@
       ]
     },
     {
-      "description": "R_miアクテイブ(Chrome)",
+      "description": "R_miアクテイブ(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -988,7 +429,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -996,7 +437,7 @@
       ]
     },
     {
-      "description": "P_RightHalfWindowMove(Chrome)",
+      "description": "P_RightHalfWindowMove(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -1020,7 +461,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1028,7 +469,7 @@
       ]
     },
     {
-      "description": "Q_LeftHalfWindowMove(Chrome)",
+      "description": "Q_LeftHalfWindowMove(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -1052,7 +493,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1060,7 +501,7 @@
       ]
     },
     {
-      "description": "D_WindowTopHalf(Chrome)",
+      "description": "D_WindowTopHalf(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -1084,7 +525,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1092,7 +533,7 @@
       ]
     },
     {
-      "description": "F_WindowBottomHalf(Chrome)",
+      "description": "F_WindowBottomHalf(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -1116,7 +557,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1124,7 +565,7 @@
       ]
     },
     {
-      "description": "RightCommand + H_Reload(Chrome)",
+      "description": "RightCommand + H_Reload(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -1152,7 +593,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1160,571 +601,7 @@
       ]
     },
     {
-      "description": "LeftShift + RightCommand + H_ハードキャッシュ(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_shift",
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + T_ドックの位置変更(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + openbracket_コマンドパレット(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + オウ_単語の複数選択(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + C_CopyTab(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + E_WebCliper起動(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + d_DeveloperTool(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "i",
-              "modifiers": [
-                "right_alt",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + H_PageSourchOutput(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "u",
-              "modifiers": [
-                "right_alt",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + A_タブを新しいウィンドウに移動(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_control",
-                "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + S_検証-Select an Element in the Page to inspect it(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + A_シークレットウィンドウを開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + B_BookmarkManage(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + U_検索バーアクティヴ-Copy(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": "right_gui"
-            },
-            {
-              "key_code": "c",
-              "modifiers": "right_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightAlt + C_ConsoleClear(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": "right_control"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftControl_Rename(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Fn + ~_WindowsControl(chrome)",
+      "description": "Fn + ~_WindowsControl(band)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
@@ -1750,7 +627,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1779,7 +656,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1808,7 +685,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1837,7 +714,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1869,7 +746,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1901,7 +778,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1933,7 +810,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1965,7 +842,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -1997,7 +874,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -2029,7 +906,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -2060,7 +937,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -2091,7 +968,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -2122,7 +999,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
@@ -2153,7 +1030,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com.campmobile.band$"
               ]
             }
           ]
