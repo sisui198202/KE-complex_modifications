@@ -314,10 +314,6 @@ def frontmost_application(type, app_aliases, as_json = true)
   band_bundle_identifiers = [
     "^com.campmobile.band$",
   ]
-  vscode-iterm2_bundle_identifers = [
-    '^com\.googlecode\.iterm2$',
-    "^com.microsoft.VSCode$",
-  ]
   # ----------------------------------------
 
   bundle_identifiers = []
