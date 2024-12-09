@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey98",
+  "title": "DoublePushKey",
   "rules": [
     {
       "description": "Double RightShift_Clipboard History(Double Push)",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "description": "Double LeftShift_Ctrl + C(Vscode-iterm2:Double Push)",
+      "description": "Double LeftShift_Ctrl + C(Vscode-iterm2-terminal:Double Push)",
       "manipulators": [
         {
           "type": "basic",
@@ -113,7 +113,8 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$",
-                "^com.googlecode.iterm2$"
+                "^com.googlecode.iterm2$",
+                "^com.apple.Terminal$"
               ]
             },
             {
