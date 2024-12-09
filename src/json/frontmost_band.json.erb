@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfBand2",
+    "title": "FrontmostIfBand5",
     "rules": [
     {
       "description": "J_DownArrow(band)",
@@ -8,17 +8,6 @@
           "type": "basic",
           "from": <%= from("j",["caps_lock"]) %>,
           "to": <%= to([["down_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("band") %> ]
-        }
-      ]
-    },
-    {
-      "description": "L_RightArrow(band)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("l", ["caps_lock"]) %>,
-          "to": <%= to([["right_arrow"]]) %>,
           "conditions": [ <%= frontmost_application_if("band") %> ]
         }
       ]
@@ -57,14 +46,14 @@
           }
         ]
       },
-    {
-      "description": "S_検索バーアクティブ(band)",
+  {
+      "description": "T_単語検索(Chrome)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("s", ["caps_lock"]) %>,
-          "to": <%= to([["l", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("band") %> ]
+          "from": <%= from("t", ["caps_lock"]) %>,
+          "to": <%= to([["f", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     },
@@ -102,17 +91,6 @@
       ]
     },
     {
-      "description": "H_LeftArrow(band)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("h", ["caps_lock"]) %>,
-          "to": <%= to([["left_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("band") %> ]
-        }
-      ]
-    },
-    {
       "description": "Period_MaxWindow(band)",
       "manipulators": [
         {
@@ -124,7 +102,7 @@
       ]
     },
     {
-      "description": "Comma_AppsSelect-Next(band)",
+      "description": "X:Comma_AppsSelect-Next(band)",
       "manipulators": [
         {
           "type": "basic",
@@ -198,17 +176,6 @@
       "to": <%= to([["5", ["left_alt"]]]) %>,
       "conditions": [ <%= frontmost_application_if("band") %> ]
       }
-      ]
-    },
-    {
-      "description": "RightCommand + H_Reload(band)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("band") %> ]
-        }
       ]
     },
 {
