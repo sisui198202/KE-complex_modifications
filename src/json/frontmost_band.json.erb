@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfBand6",
+    "title": "FrontmostIfBand",
     "rules": [
     {
       "description": "J_DownArrow(band)",
@@ -97,17 +97,6 @@
           "type": "basic",
           "from": <%= from("period", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("band") %> ]
-        }
-      ]
-    },
-    {
-      "description": "X:Comma_AppsSelect-Next(band)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("comma", ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_option"],["caps_lock"]]) %>,
           "conditions": [ <%= frontmost_application_if("band") %> ]
         }
       ]

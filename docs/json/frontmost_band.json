@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBand6",
+  "title": "FrontmostIfBand",
   "rules": [
     {
       "description": "J_DownArrow(band)",
@@ -271,39 +271,6 @@
                 "right_control",
                 "right_gui"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "X:Comma_AppsSelect-Next(band)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": "right_option"
-            },
-            {
-              "key_code": "caps_lock"
             }
           ],
           "conditions": [
