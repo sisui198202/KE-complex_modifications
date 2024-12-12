@@ -1,5 +1,5 @@
 {
-  "title": "WindowControl100",
+  "title": "WindowControl",
   "rules": [
     {
       "description": "WindowsControl100",
@@ -455,6 +455,42 @@
           "to": [
             {
               "shell_command": "open -a 'Google Chrome.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + G_FirefoxActiveWindow(WindowControl)",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Firefox.app'"
             }
           ],
           "conditions": [

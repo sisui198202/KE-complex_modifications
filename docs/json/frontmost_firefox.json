@@ -2,7 +2,7 @@
   "title": "FrontmostIfFirefox",
   "rules": [
     {
-      "description": "LeftCommand + U_Un Do(Firefox)",
+      "description": "LeftCommand + U_戻る(Firefox)",
       "manipulators": [
         {
           "type": "basic",
