@@ -1,8 +1,8 @@
 {
-  "title": "WindowControl99",
+  "title": "WindowControl98",
   "rules": [
     {
-      "description": "WindowsControl99",
+      "description": "WindowsControl98",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
