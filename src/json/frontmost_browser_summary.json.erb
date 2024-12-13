@@ -263,6 +263,31 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
+          "description": "LeftControl_Rename(browser)",
+          "type": "basic",
+          "from": {
+            "apple_vendor_top_case_key_code":"keyboard_fn",
+          "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "T_単語検索(browser)",
           "type": "basic",
           "from": <%= from("t", ["caps_lock"]) %>,
