@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser8",
+  "title": "FrontmostIfbrowser88",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)8",
+      "description": "Basic Navigation Commands (browser)88",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -238,7 +238,7 @@
       "description": "Window Control Commands (browser)",
       "manipulators": [
         {
-          "description": "W_新しいウィンドウで開く(browser)",
+          "description": "W_新規ウインドウ(browser)",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -312,10 +312,7 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": "right_option"
-            },
-            {
-              "key_code": "caps_lock"
+              "modifiers": "right_gui"
             }
           ],
           "conditions": [

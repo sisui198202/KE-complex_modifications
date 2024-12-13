@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser8",
+  "title": "FrontmostIfbrowser88",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)8",
+      "description": "Basic Navigation Commands (browser)88",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -66,7 +66,7 @@
       "description": "Window Control Commands (browser)",
       "manipulators": [
         {
-          "description": "W_新しいウィンドウで開く(browser)",
+          "description": "W_新規ウインドウ(browser)",
           "type": "basic",
           "from": <%= from("w", ["caps_lock"]) %>,
           "to": <%= to([["a", ["left_option"]]]) %>,
@@ -83,7 +83,7 @@
           "description": "Comma_AppsSelect-Next(browser)",
           "type": "basic",
           "from": <%= from("comma", ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_option"],["caps_lock"]]) %>,
+          "to": <%= to([["tab", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
