@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser123",
+  "title": "FrontmostIfbrowser1234",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)123",
+      "description": "Basic Navigation Commands (browser)1234",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -504,6 +504,40 @@
           ]
         },
         {
+          "description": "LeftAlt + A_シークレットウィンドウを開く(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
           "from": {
@@ -790,12 +824,79 @@
           ]
         },
         {
+          "description": "RightAlt + A_タブを新しいウィンドウに移動(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_control",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "C_タブ複製(browser)",
           "type": "basic",
           "from": {
             "key_code": "c",
             "modifiers": {
               "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f12",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + C_CopyTab(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
                 "caps_lock"
               ]
             }
@@ -990,48 +1091,24 @@
           ]
         },
         {
-          "description": "X_BookMarkSearch(browser)",
+          "description": "LeftAlt + B_BookmarkManage(browser)",
           "type": "basic",
           "from": {
-            "key_code": "x",
+            "key_code": "b",
             "modifiers": {
               "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
                 "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "V_Bookmark_Add(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
+              "key_code": "b",
               "modifiers": [
+                "right_option",
                 "right_gui"
               ]
             }
@@ -1139,70 +1216,6 @@
           ]
         },
         {
-          "description": "RightOption + T_BookMarkSearch(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + B_Bookmark_Add(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "RightCommand + H_Reload(browser)",
           "type": "basic",
           "from": {
@@ -1270,17 +1283,117 @@
               ]
             }
           ]
+        },
+        {
+          "description": "RightCommand + オウ_単語の複数選択(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + E_NotionWebCliper起動(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightAlt + H_PageSourchOutput(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "description": "verification(browser)",
+      "description": "BookMarkManagement(browser)",
       "manipulators": [
         {
-          "description": "Slash_拡大(browser)",
+          "description": "X_BookMarkSearch(browser)",
           "type": "basic",
           "from": {
-            "key_code": "slash",
+            "key_code": "x",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -1289,9 +1402,274 @@
           },
           "to": [
             {
-              "key_code": "equal_sign",
+              "key_code": "period",
+              "modifiers": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "V_Bookmark_Add(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
               "modifiers": [
-                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + T_BookMarkSearch(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+              "modifiers": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + B_Bookmark_Add(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "verification(browser)",
+      "manipulators": [
+        {
+          "description": "RightAlt + S_検証-Select an Element in the Page to inspect it(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + T_ドックの位置変更(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + openbracket_コマンドパレット(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + d_DeveloperTool起動(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_alt",
                 "right_gui"
               ]
             }

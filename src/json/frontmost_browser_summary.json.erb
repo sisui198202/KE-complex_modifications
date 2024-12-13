@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser123",
+  "title": "FrontmostIfbrowser1234",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)123",
+      "description": "Basic Navigation Commands (browser)1234",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -129,6 +129,13 @@
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
+          "description": "LeftAlt + A_シークレットウィンドウを開く(browser)",
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
           "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
@@ -197,9 +204,23 @@
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
+          "description": "RightAlt + A_タブを新しいウィンドウに移動(browser)",
+          "type": "basic",
+          "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
           "description": "C_タブ複製(browser)",
           "type": "basic",
           "from": <%= from("c", ["caps_lock"]) %>,
+          "to": <%= to([["f12", ["right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftAlt + C_CopyTab(browser)",
+          "type": "basic",
+          "from": <%= from("c", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["f12", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
@@ -249,18 +270,11 @@
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "X_BookMarkSearch(browser)",
+          "description": "LeftAlt + B_BookmarkManage(browser)",
           "type": "basic",
-          "from": <%= from("x", ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
+          "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "V_Bookmark_Add(browser)",
-          "type": "basic",
-          "from": <%= from("v", ["caps_lock"]) %>,
-          "to": <%= to([["d", ["right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
           "description": "E_Reload(browser)",
@@ -284,20 +298,6 @@
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
-          "description": "RightOption + T_BookMarkSearch(browser)",
-          "type": "basic",
-          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "RightCommand + B_Bookmark_Add(browser)",
-          "type": "basic",
-          "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["d", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
           "description": "RightCommand + H_Reload(browser)",
           "type": "basic",
           "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
@@ -310,6 +310,60 @@
           "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "RightCommand + オウ_単語の複数選択(browser)",
+          "type": "basic",
+          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftAlt + E_NotionWebCliper起動(browser)",
+          "type": "basic",
+          "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "RightAlt + H_PageSourchOutput(browser)",
+          "type": "basic",
+          "from": <%= from("h", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["u", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        }
+      ]
+    },
+    {
+      "description": "BookMarkManagement(browser)",
+      "manipulators": [
+        {
+          "description": "X_BookMarkSearch(browser)",
+          "type": "basic",
+          "from": <%= from("x", ["caps_lock"]) %>,
+          "to": <%= to([["period", "left_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "V_Bookmark_Add(browser)",
+          "type": "basic",
+          "from": <%= from("v", ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [<%= frontmost_application_if("browser") %>]
+        },
+        {
+          "description": "RightOption + T_BookMarkSearch(browser)",
+          "type": "basic",
+          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["period", "left_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "RightCommand + B_Bookmark_Add(browser)",
+          "type": "basic",
+          "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     },
@@ -317,11 +371,39 @@
       "description": "verification(browser)",
       "manipulators": [
         {
-          "description": "Slash_拡大(browser)",
+          "description": "RightAlt + S_検証-Select an Element in the Page to inspect it(browser)",
           "type": "basic",
-          "from": <%= from("slash", ["caps_lock"]) %>,
-          "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("browser") %>]
+          "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["c", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftCommand + T_ドックの位置変更(browser)",
+          "type": "basic",
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftOption + openbracket_コマンドパレット(browser)",
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["p", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く(browser)",
+          "type": "basic",
+          "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["p", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftAlt + d_DeveloperTool起動(browser)",
+          "type": "basic",
+          "from": <%= from("d", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["i", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     }

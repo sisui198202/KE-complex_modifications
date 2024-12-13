@@ -90,6 +90,16 @@ shotcutkey.json
 double_push_key.json
 
 ---------------------
+## 個別登録から一括登録に書換方法
+
+1. 「description」プロパティ行を切取
+2. 「"manipulators"」の配列内のオブジェクト行にコピペ
+3. 個別登録ファイル側「"manipulators"」の配列内のオブジェクト行を一括登録側ファイルの「manipulators」に貼付
+
+![個別登録から一括登録に書換方法]("/Users/user/Desktop/Summary/Karabiner/KE-complex_modifications/img/個別登録から一括登録に書換方法.png")
+
+
+---------------------
 ## 1つ説明で複数の設定を入力するパターン
 {
   "title": "WindowControl123",
