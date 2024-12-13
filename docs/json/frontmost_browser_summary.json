@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser1234",
+  "title": "FrontmostIfbrowser12345",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)1234",
+      "description": "Basic Navigation Commands (browser)12345",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -1216,6 +1216,41 @@
           ]
         },
         {
+          "description": "LeftAlt + U_検索バーアクティヴ-Copy(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": "right_gui"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "RightCommand + H_Reload(browser)",
           "type": "basic",
           "from": {
@@ -1672,6 +1707,37 @@
                 "right_alt",
                 "right_gui"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightAlt + C_ConsoleClear(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": "right_control"
             }
           ],
           "conditions": [
