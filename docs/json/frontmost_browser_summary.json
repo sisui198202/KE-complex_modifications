@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser12",
+  "title": "FrontmostIfbrowser123",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)12",
+      "description": "Basic Navigation Commands (browser)123",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -1257,6 +1257,42 @@
               "modifiers": [
                 "right_gui",
                 "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "verification(browser)",
+      "manipulators": [
+        {
+          "description": "Slash_拡大(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
               ]
             }
           ],

@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser12",
+  "title": "FrontmostIfbrowser123",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)12",
+      "description": "Basic Navigation Commands (browser)123",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -310,6 +310,18 @@
           "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
+        }
+      ]
+    },
+    {
+      "description": "verification(browser)",
+      "manipulators": [
+        {
+          "description": "Slash_拡大(browser)",
+          "type": "basic",
+          "from": <%= from("slash", ["caps_lock"]) %>,
+          "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
+          "conditions": [<%= frontmost_application_if("browser") %>]
         }
       ]
     }
