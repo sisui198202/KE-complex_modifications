@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser99",
+  "title": "FrontmostIfbrowser100",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)",
+      "description": "Basic Navigation Commands (browser)1",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
