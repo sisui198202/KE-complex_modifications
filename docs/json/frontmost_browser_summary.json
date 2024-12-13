@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfbrowser88",
+  "title": "FrontmostIfBrowser77",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)88",
@@ -1155,6 +1155,36 @@
           ]
         },
         {
+          "description": "C_タブ複製(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f12",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "RightAlt + A_タブを新しいウィンドウに移動(browser)",
           "type": "basic",
           "from": {
@@ -1174,36 +1204,6 @@
               "modifiers": [
                 "right_control",
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "C_タブ複製(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12",
-              "modifiers": [
-                "right_shift"
               ]
             }
           ],
