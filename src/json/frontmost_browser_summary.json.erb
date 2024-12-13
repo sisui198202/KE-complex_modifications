@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser",
+  "title": "FrontmostIfbrowser99",
   "rules": [
     {
-      "description": "Basic Navigation Commands (Chrome)",
+      "description": "Basic Navigation Commands (browser)",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -12,122 +12,122 @@
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "L_RightArrow(Chrome)",
+          "description": "L_RightArrow(browser)",
           "type": "basic",
           "from": <%= from("l", ["caps_lock"]) %>,
           "to": <%= to([["right_arrow"]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "H_LeftArrow(Chrome)",
+          "description": "H_LeftArrow(browser)",
           "type": "basic",
           "from": <%= from("h", ["caps_lock"]) %>,
           "to": <%= to([["left_arrow"]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         }
       ]
     },
     {
-      "description": "Window Control Commands (Chrome)",
+      "description": "Window Control Commands (browser)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
           "type": "basic",
           "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
           "to": <%= to([["6", "right_alt"]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
           "description": "Fn + I_WindowRightUp",
           "type": "basic",
           "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
           "to": <%= to([["7", "right_alt"]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
           "description": "Fn + K_WindowRightDown",
           "type": "basic",
           "from": <%= from("k", ["right_control"], ["caps_lock"]) %>,
           "to": <%= to([["9", "right_alt"]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
           "description": "Fn + L_RightHalfWindowMove",
           "type": "basic",
           "from": <%= from("l", ["right_control"], ["caps_lock"]) %>,
           "to": <%= to([["3", ["right_alt"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         }
       ]
     },
     {
-      "description": "Tab Management Commands (Chrome)",
+      "description": "Tab Management Commands (browser)",
       "manipulators": [
         {
-          "description": "Semicolon_NextTab(Chrome)",
+          "description": "Semicolon_NextTab(browser)",
           "type": "basic",
           "from": <%= from("semicolon", ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_control"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "Z_PreviousTab(Chrome)",
+          "description": "Z_PreviousTab(browser)",
           "type": "basic",
           "from": <%= from("z", ["caps_lock"]) %>,
           "to": <%= to([["tab", ["left_shift", "left_control"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "G_TabClose(Chrome)",
+          "description": "G_TabClose(browser)",
           "type": "basic",
           "from": <%= from("g", ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         }
       ]
     },
     {
-      "description": "Zoom Commands (Chrome)",
+      "description": "Zoom Commands (browser)",
       "manipulators": [
         {
-          "description": "Slash_拡大(Chrome)",
+          "description": "Slash_拡大(browser)",
           "type": "basic",
           "from": <%= from("slash", ["caps_lock"]) %>,
           "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "B_縮小(Chrome)",
+          "description": "B_縮小(browser)",
           "type": "basic",
           "from": <%= from("b", ["caps_lock"]) %>,
           "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         }
       ]
     },
     {
-      "description": "Custom Chrome Commands",
+      "description": "Custom browser Commands",
       "manipulators": [
         {
-          "description": "T_単語検索(Chrome)",
+          "description": "T_単語検索(browser)",
           "type": "basic",
           "from": <%= from("t", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "V_Bookmark_Add(Chrome)",
+          "description": "V_Bookmark_Add(browser)",
           "type": "basic",
           "from": <%= from("v", ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "E_Reload(Chrome)",
+          "description": "E_Reload(browser)",
           "type": "basic",
           "from": <%= from("e", ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
-          "conditions": [<%= frontmost_application_if("chrome") %>]
+          "conditions": [<%= frontmost_application_if("browser") %>]
         }
       ]
     }

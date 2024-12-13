@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser",
+  "title": "FrontmostIfbrowser99",
   "rules": [
     {
-      "description": "Basic Navigation Commands (Chrome)",
+      "description": "Basic Navigation Commands (browser)",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "description": "L_RightArrow(Chrome)",
+          "description": "L_RightArrow(browser)",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -51,13 +51,15 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
           ]
         },
         {
-          "description": "H_LeftArrow(Chrome)",
+          "description": "H_LeftArrow(browser)",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -76,6 +78,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -84,7 +88,7 @@
       ]
     },
     {
-      "description": "Window Control Commands (Chrome)",
+      "description": "Window Control Commands (browser)",
       "manipulators": [
         {
           "description": "Fn + U_WindowLeftUp",
@@ -110,6 +114,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -139,6 +145,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -168,6 +176,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -199,6 +209,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -207,10 +219,10 @@
       ]
     },
     {
-      "description": "Tab Management Commands (Chrome)",
+      "description": "Tab Management Commands (browser)",
       "manipulators": [
         {
-          "description": "Semicolon_NextTab(Chrome)",
+          "description": "Semicolon_NextTab(browser)",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -232,13 +244,15 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
           ]
         },
         {
-          "description": "Z_PreviousTab(Chrome)",
+          "description": "Z_PreviousTab(browser)",
           "type": "basic",
           "from": {
             "key_code": "z",
@@ -261,13 +275,15 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
           ]
         },
         {
-          "description": "G_TabClose(Chrome)",
+          "description": "G_TabClose(browser)",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -289,6 +305,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -297,10 +315,10 @@
       ]
     },
     {
-      "description": "Zoom Commands (Chrome)",
+      "description": "Zoom Commands (browser)",
       "manipulators": [
         {
-          "description": "Slash_拡大(Chrome)",
+          "description": "Slash_拡大(browser)",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -323,13 +341,15 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
           ]
         },
         {
-          "description": "B_縮小(Chrome)",
+          "description": "B_縮小(browser)",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -352,6 +372,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
@@ -360,10 +382,10 @@
       ]
     },
     {
-      "description": "Custom Chrome Commands",
+      "description": "Custom browser Commands",
       "manipulators": [
         {
-          "description": "T_単語検索(Chrome)",
+          "description": "T_単語検索(browser)",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -385,13 +407,15 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
           ]
         },
         {
-          "description": "V_Bookmark_Add(Chrome)",
+          "description": "V_Bookmark_Add(browser)",
           "type": "basic",
           "from": {
             "key_code": "v",
@@ -413,13 +437,15 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
           ]
         },
         {
-          "description": "E_Reload(Chrome)",
+          "description": "E_Reload(browser)",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -442,6 +468,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
