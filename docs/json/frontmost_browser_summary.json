@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser12345",
+  "title": "FrontmostIfbrowser1",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)12345",
+      "description": "Basic Navigation Commands (browser)1",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -1064,9 +1064,9 @@
           "description": "LeftControl_Rename(browser)",
           "type": "basic",
           "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn",
+            "key_code": "keyboard_fn",
             "modifiers": {
-              "optional": [
+              "mandatory": [
                 "caps_lock"
               ]
             }
@@ -1080,6 +1080,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$"
               ]
             }
