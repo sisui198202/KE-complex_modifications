@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfbrowser101",
+  "title": "FrontmostIfbrowser",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)2",
+      "description": "Basic Navigation Commands (browser)",
       "manipulators": [
         {
           "description": "J_DownArrow(browser)",
@@ -10,6 +10,13 @@
           "from": <%= from("j", ["caps_lock"]) %>,
           "to": <%= to([["down_arrow"]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
+        },
+        {
+          "description": "K_UpArrow(Chrome)",
+          "type": "basic",
+          "from": <%= from("k",["caps_lock"]) %>,
+          "to": <%= to([["up_arrow"]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
           "description": "L_RightArrow(browser)",
@@ -24,6 +31,20 @@
           "from": <%= from("h", ["caps_lock"]) %>,
           "to": <%= to([["left_arrow"]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
+        },
+        {
+          "description": "M_最終行へ(browser)",
+          "type": "basic",
+          "from": <%= from("m",["caps_lock"]) %>,
+          "to": <%= to([["right_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "N_最初の行へ(browser)",
+          "type": "basic",
+          "from": <%= from("n",["caps_lock"]) %>,
+          "to": <%= to([["left_arrow", ["fn"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     },
@@ -63,6 +84,13 @@
     {
       "description": "Tab Management Commands (browser)",
       "manipulators": [
+        {
+          "description": "RightCommand + quote_閉じたタブを再度開く(browser)",
+          "type": "basic",
+          "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
         {
           "description": "Semicolon_NextTab(browser)",
           "type": "basic",
@@ -106,7 +134,7 @@
       ]
     },
     {
-      "description": "Custom browser Commands",
+      "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
           "description": "T_単語検索(browser)",
@@ -114,6 +142,13 @@
           "from": <%= from("t", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui"]]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
+        },
+        {
+          "description": "X_BookMarkSearch(browser)",
+          "type": "basic",
+          "from": <%= from("x", ["caps_lock"]) %>,
+          "to": <%= to([["period", "left_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
           "description": "V_Bookmark_Add(browser)",
@@ -128,6 +163,13 @@
           "from": <%= from("e", ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
+        },
+        {
+          "description": "S_検索バーアクティブ(browser)",
+          "type": "basic",
+          "from": <%= from("s", ["caps_lock"]) %>,
+          "to": <%= to([["l", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     }
