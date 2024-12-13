@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser77",
+  "title": "FrontmostIfBrowser66",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)88",
@@ -333,7 +333,7 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
-          "description": "LeftControl_Rename(browser)",
+          "description": "検証要-LeftControl_Rename(browser)",
           "type": "basic",
           "from": <%= from("keyboard_fn", ["caps_lock"]) %>,
           "to": <%= to([["return_or_enter"]]) %>,
@@ -345,13 +345,6 @@
           "from": <%= from("t", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui"]]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
-        },
-        {
-          "description": "LeftAlt + B_BookmarkManage(browser)",
-          "type": "basic",
-          "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
           "description": "E_Reload(browser)",
@@ -393,13 +386,6 @@
           "type": "basic",
           "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "RightCommand + オウ_単語の複数選択(browser)",
-          "type": "basic",
-          "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["d", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
@@ -447,6 +433,13 @@
           "type": "basic",
           "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftAlt + B_BookmarkManage(browser)",
+          "type": "basic",
+          "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser77",
+  "title": "FrontmostIfBrowser66",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)88",
@@ -1392,7 +1392,7 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
-          "description": "LeftControl_Rename(browser)",
+          "description": "検証要-LeftControl_Rename(browser)",
           "type": "basic",
           "from": {
             "key_code": "keyboard_fn",
@@ -1433,40 +1433,6 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + B_BookmarkManage(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_option",
                 "right_gui"
               ]
             }
@@ -1678,39 +1644,6 @@
           ]
         },
         {
-          "description": "RightCommand + オウ_単語の複数選択(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "LeftAlt + E_NotionWebCliper起動(browser)",
           "type": "basic",
           "from": {
@@ -1889,6 +1822,40 @@
             {
               "key_code": "d",
               "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + B_BookmarkManage(browser)",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "right_option",
                 "right_gui"
               ]
             }
