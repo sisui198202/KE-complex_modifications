@@ -174,18 +174,18 @@ def frontmost_application(type, app_aliases, as_json = true)
     '^com\.apple\.Safari$',
   ]
 
-  browser_bundle_identifiers = [
-    '^org\.mozilla\.firefox$',
-    '^org\.waterfoxproject\.waterfox$',
-    '^com\.google\.Chrome$',
-  ]
-
   chrome_bundle_identifiers = [
     '^com\.google\.Chrome$',
   ]
 
   firefox_bundle_identifiers = [
     "org.mozilla.firefox",
+  ]
+
+  browser_bundle_identifiers = [
+    '^org\.mozilla\.firefox$',
+    '^org\.waterfoxproject\.waterfox$',
+    '^com\.google\.Chrome$',
   ]
 
   vivaldi_bundle_identifiers = [
