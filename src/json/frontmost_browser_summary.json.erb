@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser98",
+  "title": "FrontmostIfBrowser97",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -291,24 +291,10 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
-          "description": "検証要-LeftControl_Rename(browser)",
-          "type": "basic",
-          "from": <%= from("keyboard_fn", ["caps_lock"]) %>,
-          "to": <%= to([["return_or_enter"]]) %>,
-          "conditions": [<%= frontmost_application_if("browser") %>]
-        },
-        {
           "description": "T_単語検索(browser)",
           "type": "basic",
           "from": <%= from("t", ["caps_lock"]) %>,
           "to": <%= to([["f", ["right_gui"]]]) %>,
-          "conditions": [<%= frontmost_application_if("browser") %>]
-        },
-        {
-          "description": "E_Reload(browser)",
-          "type": "basic",
-          "from": <%= from("e", ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
@@ -319,7 +305,7 @@
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
-          "description": "U_Undo(browser)",
+          "description": "検証要-U_Undo(browser)",
           "type": "basic",
           "from": <%= from("u", ["caps_lock"]) %>,
           "to": <%= to([["z", ["left_gui"]]]) %>,
@@ -330,13 +316,6 @@
           "type": "basic",
           "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "RightCommand + H_Reload(browser)",
-          "type": "basic",
-          "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {

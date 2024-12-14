@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser98",
+  "title": "FrontmostIfBrowser97",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -1197,33 +1197,6 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
-          "description": "検証要-LeftControl_Rename(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "keyboard_fn",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "T_単語検索(browser)",
           "type": "basic",
           "from": {
@@ -1239,37 +1212,6 @@
               "key_code": "f",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "E_Reload(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "w",
-              "modifiers": [
-                "right_control",
-                "right_shift"
               ]
             }
           ],
@@ -1315,7 +1257,7 @@
           ]
         },
         {
-          "description": "U_Undo(browser)",
+          "description": "検証要-U_Undo(browser)",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -1366,40 +1308,6 @@
             {
               "key_code": "c",
               "modifiers": "right_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + H_Reload(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "w",
-              "modifiers": [
-                "right_control",
-                "right_shift"
-              ]
             }
           ],
           "conditions": [
