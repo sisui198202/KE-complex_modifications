@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox3",
+    "title": "FrontmostIfFirefox4",
     "rules": [
     {
       "description": "LeftAlt + A_シークレットウィンドウを開く(firefox)",
@@ -7,7 +7,7 @@
         {
           "type": "basic",
           "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["right_shift", "right_gui"]]]) %>,
+          "to": <%= to([["2", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]

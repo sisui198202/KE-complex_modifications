@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFirefox3",
+  "title": "FrontmostIfFirefox4",
   "rules": [
     {
       "description": "LeftAlt + A_シークレットウィンドウを開く(firefox)",
@@ -19,7 +19,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "2",
               "modifiers": [
                 "right_shift",
                 "right_gui"
