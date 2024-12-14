@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFirefox98",
+  "title": "FrontmostIfFirefox97",
   "rules": [
     {
       "description": "E_Reload(Firefox)",
@@ -18,6 +18,43 @@
             {
               "key_code": "r",
               "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "org.mozilla.firefox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftShift + RightCommand + H_ハードキャッシュ(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "right_shift",
                 "right_gui"
               ]
             }
@@ -56,7 +93,12 @@
             }
           ],
           "conditions": [
-
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "org.mozilla.firefox"
+              ]
+            }
           ]
         }
       ]

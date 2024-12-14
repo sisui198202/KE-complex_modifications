@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox98",
+    "title": "FrontmostIfFirefox97",
     "rules": [
     {
       "description": "E_Reload(Firefox)",
@@ -13,13 +13,24 @@
       ]
     },
     {
+      "description": "LeftShift + RightCommand + H_ハードキャッシュ(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["r", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
       "description": "A_新しいタブを開く(Firefox)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("a", ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("Firefox") %> ]
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]
     },
