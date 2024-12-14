@@ -1,6 +1,42 @@
 {
-  "title": "FrontmostIfFirefox",
+  "title": "FrontmostIfFirefox1",
   "rules": [
+    {
+      "description": "RightAlt + A_新規ウインドウ(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "right_control",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "org.mozilla.firefox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "description": "LeftCommand + U_戻る(Firefox)",
       "manipulators": [
