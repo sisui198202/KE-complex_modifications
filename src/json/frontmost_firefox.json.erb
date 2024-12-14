@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox97",
+    "title": "FrontmostIfFirefox55",
     "rules": [
     {
       "description": "E_Reload(Firefox)",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["r", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + B_ブックマークを管理(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["o", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]
