@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox1",
+    "title": "FrontmostIfFirefox2",
     "rules": [
     {
         "description": "RightAlt + A_新規ウインドウ(Firefox)",
@@ -11,6 +11,17 @@
             "conditions": [ <%= frontmost_application_if("firefox") %> ]
           }
         ]
+    },
+    {
+      "description": "A_新しいタブを開く(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("Firefox") %> ]
+        }
+      ]
     },
     {
       "description": "LeftCommand + U_戻る(Firefox)",
