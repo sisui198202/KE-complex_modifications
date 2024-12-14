@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox6",
+    "title": "FrontmostIfFirefox99",
     "rules": [
     {
       "description": "E_Reload(Firefox)",
@@ -7,6 +7,17 @@
         {
           "type": "basic",
           "from": <%= from("e", ["caps_lock"]) %>,
+          "to": <%= to([["r", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + H_Reload(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["r", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
