@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser998",
+  "title": "FrontmostIfBrowser997",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -331,13 +331,6 @@
       "description": "BookMarkManagement(browser)",
       "manipulators": [
         {
-          "description": "X_BookMarkSearch(browser)",
-          "type": "basic",
-          "from": <%= from("x", ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
           "description": "V_Bookmark_Add(browser)",
           "type": "basic",
           "from": <%= from("v", ["caps_lock"]) %>,
@@ -345,24 +338,10 @@
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "RightOption + T_BookMarkSearch(browser)",
-          "type": "basic",
-          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
           "description": "RightCommand + B_Bookmark_Add(browser)",
           "type": "basic",
           "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["d", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "LeftAlt + B_BookmarkManage(browser)",
-          "type": "basic",
-          "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]

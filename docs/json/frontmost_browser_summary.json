@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser998",
+  "title": "FrontmostIfBrowser997",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -1361,34 +1361,6 @@
       "description": "BookMarkManagement(browser)",
       "manipulators": [
         {
-          "description": "X_BookMarkSearch(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "x",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "V_Bookmark_Add(browser)",
           "type": "basic",
           "from": {
@@ -1405,37 +1377,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + T_BookMarkSearch(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
             }
           ],
           "conditions": [
@@ -1467,40 +1408,6 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + B_BookmarkManage(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_option",
                 "right_gui"
               ]
             }
