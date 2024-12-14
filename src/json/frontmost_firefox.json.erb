@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfFirefox2",
+    "title": "FrontmostIfFirefox3",
     "rules": [
+    {
+      "description": "LeftAlt + A_シークレットウィンドウを開く(firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["1", ["right_shift", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
     {
         "description": "RightAlt + A_新規ウインドウ(Firefox)",
         "manipulators": [

@@ -129,13 +129,6 @@
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
-          "description": "LeftAlt + A_シークレットウィンドウを開く(browser)",
-          "type": "basic",
-          "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
           "description": "RightCommand + Period_MaxWindow",
           "type": "basic",
           "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
