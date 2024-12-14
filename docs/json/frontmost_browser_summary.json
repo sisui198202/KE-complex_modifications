@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser999",
+  "title": "FrontmostIfBrowser998",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -1308,41 +1308,6 @@
             {
               "key_code": "c",
               "modifiers": "right_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftShift + RightCommand + H_ハードキャッシュ(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_shift",
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
             }
           ],
           "conditions": [

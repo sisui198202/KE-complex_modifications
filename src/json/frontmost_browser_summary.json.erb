@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser999",
+  "title": "FrontmostIfBrowser998",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -316,13 +316,6 @@
           "type": "basic",
           "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "LeftShift + RightCommand + H_ハードキャッシュ(browser)",
-          "type": "basic",
-          "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
