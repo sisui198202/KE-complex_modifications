@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser97",
+  "title": "FrontmostIfBrowser999",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -1342,39 +1342,6 @@
               "modifiers": [
                 "right_gui",
                 "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + E_NotionWebCliper起動(browser)",
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ],

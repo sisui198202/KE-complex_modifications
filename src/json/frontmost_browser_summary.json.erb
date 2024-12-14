@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser97",
+  "title": "FrontmostIfBrowser999",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -323,13 +323,6 @@
           "type": "basic",
           "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
           "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "LeftAlt + E_NotionWebCliper起動(browser)",
-          "type": "basic",
-          "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
