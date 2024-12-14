@@ -1,8 +1,19 @@
 {
-    "title": "FrontmostIfFirefox4",
+    "title": "FrontmostIfFirefox6",
     "rules": [
     {
-      "description": "LeftAlt + A_シークレットウィンドウを開く(firefox)",
+      "description": "E_Reload(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("e", ["caps_lock"]) %>,
+          "to": <%= to([["r", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt + A_シークレットウィンドウを開く(Firefox)",
       "manipulators": [
         {
           "type": "basic",
