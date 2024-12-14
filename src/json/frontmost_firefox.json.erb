@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox99",
+    "title": "FrontmostIfFirefox98",
     "rules": [
     {
       "description": "E_Reload(Firefox)",
@@ -9,6 +9,17 @@
           "from": <%= from("e", ["caps_lock"]) %>,
           "to": <%= to([["r", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "A_新しいタブを開く(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("Firefox") %> ]
         }
       ]
     },
@@ -44,17 +55,6 @@
             "conditions": [ <%= frontmost_application_if("firefox") %> ]
           }
         ]
-    },
-    {
-      "description": "A_新しいタブを開く(Firefox)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("Firefox") %> ]
-        }
-      ]
     },
     {
       "description": "LeftCommand + U_戻る(Firefox)",
