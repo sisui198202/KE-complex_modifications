@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser",
+  "title": "FrontmostIfBrowser99",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -239,13 +239,6 @@
       "description": "Tab Management Commands (browser)",
       "manipulators": [
         {
-          "description": "RightCommand + quote_閉じたタブを再度開く(browser)",
-          "type": "basic",
-          "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
           "description": "Semicolon_NextTab(browser)",
           "type": "basic",
           "from": <%= from("semicolon", ["caps_lock"]) %>,
@@ -260,39 +253,11 @@
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
-          "description": "A_新しいタブを開く(browser)",
-          "type": "basic",
-          "from": <%= from("a", ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
           "description": "G_TabClose(browser)",
           "type": "basic",
           "from": <%= from("g", ["caps_lock"]) %>,
           "to": <%= to([["w", ["right_gui"]]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
-        },
-        {
-          "description": "C_タブ複製(browser)",
-          "type": "basic",
-          "from": <%= from("c", ["caps_lock"]) %>,
-          "to": <%= to([["f12", ["right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "RightAlt + A_タブを新しいウィンドウに移動(browser)",
-          "type": "basic",
-          "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "LeftAlt + C_CopyTab(browser)",
-          "type": "basic",
-          "from": <%= from("c", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["f12", ["right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
     },
