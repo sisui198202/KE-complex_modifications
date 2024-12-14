@@ -1,6 +1,17 @@
 {
-    "title": "FrontmostIfFirefox55",
+    "title": "FrontmostIfFirefox",
     "rules": [
+    {
+      "description": "A_新しいタブを開く(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("a", ["caps_lock"]) %>,
+          "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
     {
       "description": "E_Reload(Firefox)",
       "manipulators": [
@@ -30,17 +41,6 @@
           "type": "basic",
           "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["o", ["right_shift", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("firefox") %> ]
-        }
-      ]
-    },
-    {
-      "description": "A_新しいタブを開く(Firefox)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]
