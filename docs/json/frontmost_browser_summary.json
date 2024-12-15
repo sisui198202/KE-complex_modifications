@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfBrowser",
+  "title": "FrontmostIfBrowser99",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
       "manipulators": [
         {
-          "description": "J_DownArrow(browser)",
+          "description": "J_DownArrow",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "description": "K_UpArrow(browser)",
+          "description": "K_UpArrow",
           "type": "basic",
           "from": {
             "key_code": "k",
@@ -59,7 +59,7 @@
           ]
         },
         {
-          "description": "L_RightArrow(browser)",
+          "description": "L_RightArrow",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -86,7 +86,7 @@
           ]
         },
         {
-          "description": "H_LeftArrow(browser)",
+          "description": "H_LeftArrow",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -113,7 +113,7 @@
           ]
         },
         {
-          "description": "i_PageDown(browser)",
+          "description": "i_PageDown",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "description": "O(オー)_PageUp(browser)",
+          "description": "O(オー)_PageUp",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -173,7 +173,7 @@
           ]
         },
         {
-          "description": "M_最終行へ(browser)",
+          "description": "M_最終行へ",
           "type": "basic",
           "from": {
             "key_code": "m",
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "description": "N_最初の行へ(browser)",
+          "description": "N_最初の行へ",
           "type": "basic",
           "from": {
             "key_code": "n",
@@ -235,10 +235,10 @@
       ]
     },
     {
-      "description": "Window Control Commands (browser)",
+      "description": "Window Control Commands(browser)",
       "manipulators": [
         {
-          "description": "W_新規ウインドウ(browser)",
+          "description": "W_新規ウインドウ",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -268,7 +268,7 @@
           ]
         },
         {
-          "description": "Period_MaxWindow(browser)",
+          "description": "Period_MaxWindow",
           "type": "basic",
           "from": {
             "key_code": "period",
@@ -299,7 +299,7 @@
           ]
         },
         {
-          "description": "Comma_AppsSelect-Next(browser)",
+          "description": "Comma_AppsSelect-Next",
           "type": "basic",
           "from": {
             "key_code": "comma",
@@ -327,7 +327,7 @@
           ]
         },
         {
-          "description": "Quote_PreviewActiveWindow(browser)",
+          "description": "Quote_PreviewActiveWindow",
           "type": "basic",
           "from": {
             "key_code": "quote",
@@ -354,7 +354,7 @@
           ]
         },
         {
-          "description": "R_miアクテイブ(browser)",
+          "description": "R_miアクテイブ",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -381,7 +381,7 @@
           ]
         },
         {
-          "description": "P_RightHalfWindowMove(browser)",
+          "description": "P_RightHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "p",
@@ -411,7 +411,7 @@
           ]
         },
         {
-          "description": "Q_LeftHalfWindowMove(browser)",
+          "description": "Q_LeftHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -441,7 +441,7 @@
           ]
         },
         {
-          "description": "D_WindowTopHalf(browser)",
+          "description": "D_WindowTopHalf",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -471,7 +471,7 @@
           ]
         },
         {
-          "description": "F_WindowBottomHalf(browser)",
+          "description": "F_WindowBottomHalf",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -963,10 +963,10 @@
       ]
     },
     {
-      "description": "Tab Management Commands (browser)",
+      "description": "Tab Management Commands(browser)",
       "manipulators": [
         {
-          "description": "Semicolon_NextTab(browser)",
+          "description": "Semicolon_NextTab",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -996,7 +996,7 @@
           ]
         },
         {
-          "description": "Z_PreviousTab(browser)",
+          "description": "Z_PreviousTab",
           "type": "basic",
           "from": {
             "key_code": "z",
@@ -1027,7 +1027,7 @@
           ]
         },
         {
-          "description": "G_TabClose(browser)",
+          "description": "G_TabClose",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -1059,10 +1059,10 @@
       ]
     },
     {
-      "description": "Zoom Commands (browser)",
+      "description": "Zoom Commands(browser)",
       "manipulators": [
         {
-          "description": "Slash_拡大(browser)",
+          "description": "Slash_拡大",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -1093,7 +1093,7 @@
           ]
         },
         {
-          "description": "B_縮小(browser)",
+          "description": "B_縮小",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -1124,7 +1124,7 @@
           ]
         },
         {
-          "description": "RightCommand + Slash_拡大(browser)",
+          "description": "RightCommand + Slash_拡大",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -1158,7 +1158,7 @@
           ]
         },
         {
-          "description": "RightOption + B_縮小(browser)",
+          "description": "RightOption + B_縮小",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -1197,7 +1197,7 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
-          "description": "T_単語検索(browser)",
+          "description": "T_単語検索",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -1227,7 +1227,7 @@
           ]
         },
         {
-          "description": "S_検索バーアクティブ(browser)",
+          "description": "S_検索バーアクティブ",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -1257,7 +1257,7 @@
           ]
         },
         {
-          "description": "検証要-U_Undo(browser)",
+          "description": "検証要-U_Undo",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -1287,7 +1287,7 @@
           ]
         },
         {
-          "description": "LeftAlt + U_検索バーアクティヴ-Copy(browser)",
+          "description": "LeftAlt + U_検索バーアクティヴ-Copy",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -1322,7 +1322,7 @@
           ]
         },
         {
-          "description": "RightAlt + H_PageSourchOutput(browser)",
+          "description": "RightAlt + H_PageSourchOutput",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -1361,7 +1361,7 @@
       "description": "BookMarkManagement(browser)",
       "manipulators": [
         {
-          "description": "V_Bookmark_Add(browser)",
+          "description": "V_Bookmark_Add",
           "type": "basic",
           "from": {
             "key_code": "v",
@@ -1391,7 +1391,7 @@
           ]
         },
         {
-          "description": "RightCommand + B_Bookmark_Add(browser)",
+          "description": "RightCommand + B_Bookmark_Add",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -1429,7 +1429,7 @@
       "description": "verification(browser)",
       "manipulators": [
         {
-          "description": "RightAlt + S_検証-Select an Element in the Page to inspect it(browser)",
+          "description": "RightAlt + S_検証-Select an Element in the Page to inspect it",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -1463,7 +1463,7 @@
           ]
         },
         {
-          "description": "LeftCommand + T_ドックの位置変更(browser)",
+          "description": "LeftCommand + T_検証-ドックの位置変更",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -1497,7 +1497,7 @@
           ]
         },
         {
-          "description": "LeftAlt + d_DeveloperTool起動(browser)",
+          "description": "LeftAlt + d_DeveloperTool起動",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -1531,7 +1531,7 @@
           ]
         },
         {
-          "description": "RightAlt + C_ConsoleClear(browser)",
+          "description": "RightAlt + C_検証-ConsoleClear",
           "type": "basic",
           "from": {
             "key_code": "c",
