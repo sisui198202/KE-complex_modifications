@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser99",
+  "title": "FrontmostIfBrowser98",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -237,36 +237,6 @@
     {
       "description": "Window Control Commands(browser)",
       "manipulators": [
-        {
-          "description": "W_新規ウインドウ",
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
         {
           "description": "Period_MaxWindow",
           "type": "basic",

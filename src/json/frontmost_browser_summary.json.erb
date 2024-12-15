@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser99",
+  "title": "FrontmostIfBrowser98",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -65,13 +65,6 @@
     {
       "description": "Window Control Commands(browser)",
       "manipulators": [
-        {
-          "description": "W_新規ウインドウ",
-          "type": "basic",
-          "from": <%= from("w", ["caps_lock"]) %>,
-          "to": <%= to([["a", ["left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
         {
           "description": "Period_MaxWindow",
           "type": "basic",
