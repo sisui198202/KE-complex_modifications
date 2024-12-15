@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfFirefox",
+  "title": "FrontmostIfFirefox98",
   "rules": [
     {
       "description": "A_新しいタブを開く(Firefox)",
@@ -52,6 +52,39 @@
               "key_code": "r",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "org.mozilla.firefox"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "W_新しいウィンドウで開く(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "right_control",
+                "right_alt"
               ]
             }
           ],

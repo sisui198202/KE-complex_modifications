@@ -1,5 +1,5 @@
 {
-    "title": "FrontmostIfFirefox",
+    "title": "FrontmostIfFirefox98",
     "rules": [
     {
       "description": "A_新しいタブを開く(Firefox)",
@@ -19,6 +19,17 @@
           "type": "basic",
           "from": <%= from("e", ["caps_lock"]) %>,
           "to": <%= to([["r", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("firefox") %> ]
+        }
+      ]
+    },
+    {
+      "description": "W_新しいウィンドウで開く(Firefox)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": <%= from("w", ["caps_lock"]) %>,
+          "to": <%= to([["y", ["right_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_if("firefox") %> ]
         }
       ]
