@@ -1,6 +1,72 @@
 {
-    "title": "FrontmostIfChrome99",
+    "title": "FrontmostIfChrome",
     "rules": [
+      {
+        "description": "LeftAlt + C_タブを複製(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("c", ["left_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["f12", ["right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+      {
+        "description": "A_新しいタブを開く(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("a", ["caps_lock"]) %>,
+            "to": <%= to([["n", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+      {
+        "description": "W_新しいウィンドウで開く(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("w", ["caps_lock"]) %>,
+            "to": <%= to([["a", ["left_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+      {
+        "description": "C_タブを複製(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("c", ["caps_lock"]) %>,
+            "to": <%= to([["f12", ["right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+      {
+        "description": "E_Reload(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("e", ["caps_lock"]) %>,
+            "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
+      {
+        "description": "X_BookMarkSearch(Chrome)",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": <%= from("x", ["caps_lock"]) %>,
+            "to": <%= to([["period", "left_option"]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          }
+        ]
+      },
     {
       "description": "RightCommand + quote_閉じたタブを再度開く(Chrome)",
       "manipulators": [
@@ -13,67 +79,12 @@
       ]
     },
   {
-      "description": "X_BookMarkSearch(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("x", ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-  {
       "description": "RightOption + T_BookMarkSearch(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-    {
-      "description": "A_新しいタブを開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("a", ["caps_lock"]) %>,
-          "to": <%= to([["n", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-    {
-      "description": "W_新しいウィンドウで開く(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("w", ["caps_lock"]) %>,
-          "to": <%= to([["a", ["left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-    {
-      "description": "C_タブを複製(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("c", ["caps_lock"]) %>,
-          "to": <%= to([["f12", ["right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-    {
-      "description": "E_Reload(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("e", ["caps_lock"]) %>,
-          "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
@@ -129,17 +140,6 @@
           "type": "basic",
           "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["p", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + C_タブを複製(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("c", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["f12", ["right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]

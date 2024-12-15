@@ -1,16 +1,16 @@
 {
-  "title": "FrontmostIfChrome99",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
-      "description": "RightCommand + quote_閉じたタブを再度開く(Chrome)",
+      "description": "LeftAlt + C_タブを複製(Chrome)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "quote",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -19,74 +19,10 @@
           },
           "to": [
             {
-              "key_code": "t",
+              "key_code": "f12",
               "modifiers": [
-                "right_gui",
                 "right_shift"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "X_BookMarkSearch(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "x",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + T_BookMarkSearch(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
             }
           ],
           "conditions": [
@@ -216,6 +152,105 @@
                 "right_control",
                 "right_shift"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "X_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+              "modifiers": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightCommand + quote_閉じたタブを再度開く(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + T_BookMarkSearch(Chrome)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+              "modifiers": "left_option"
             }
           ],
           "conditions": [
@@ -395,41 +430,6 @@
               "key_code": "p",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftAlt + C_タブを複製(Chrome)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12",
-              "modifiers": [
-                "right_shift"
               ]
             }
           ],
