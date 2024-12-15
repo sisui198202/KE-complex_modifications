@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfChrome98",
+  "title": "FrontmostIfChrome",
   "rules": [
     {
       "description": "J_DownArrow(Chrome)",
@@ -746,7 +746,7 @@
       ]
     },
     {
-      "description": "C_タブ複製(Chrome)",
+      "description": "C_タブを複製(Chrome)",
       "manipulators": [
         {
           "type": "basic",
@@ -1339,7 +1339,7 @@
       ]
     },
     {
-      "description": "LeftAlt + C_CopyTab(Chrome)",
+      "description": "LeftAlt + C_タブを複製(Chrome)",
       "manipulators": [
         {
           "type": "basic",
