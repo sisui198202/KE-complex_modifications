@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary3",
+    "title": "FrontmostIfExcel_summary",
     "rules": [
       {
-        "description": "FrontmostIfExcel_summary3",
+        "description": "FrontmostIfExcel_summary",
         "manipulators": [
           {
             "description": "LeftCommand  + Z_塗りつぶし色",
@@ -179,7 +179,104 @@
             "to": <%= to([["f11", ["right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("excel") %> ]
           },
-
+          {
+            "description": "LeftAlt + N_HeadRowCursol",
+            "type": "basic",
+            "from": <%= from("n", ["left_alt"]) %>,
+            "to": <%= to([["left_arrow", ["fn", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftAlt + M_EndRowCursol",
+            "type": "basic",
+            "from": <%= from("m", ["left_alt"]) %>,
+            "to": <%= to([["right_arrow", ["fn", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftOption + period_ProcedureNextMove",
+            "type": "basic",
+            "from": <%= from("period", ["left_option"]) %>,
+            "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftOption + comma_ProcedurePreviousMove",
+            "type": "basic",
+            "from": <%= from("comma", ["left_option"]) %>,
+            "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftCommand + OpenBracket_モジュール間移動",
+            "type": "basic",
+            "from": <%= from("open_bracket", ["left_control"]) %>,
+            "to": <%= to([["f6", ["left_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftCommand + CloseBracket_unindent",
+            "type": "basic",
+            "from": <%= from("close_bracket", ["left_control"]) %>,
+            "to": <%= to([["tab", ["left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "RightCommand + B_Build",
+            "type": "basic",
+            "from": <%= from("b", ["right_gui"]) %>,
+            "to": <%= to([["f5"]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "RightAlt + C_VBE-Copy",
+            "type": "basic",
+            "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["c", "right_gui"]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "RightAlt + V_VBE-Paste",
+            "type": "basic",
+            "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["v", "right_gui"]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "F8_StepIn",
+            "type": "basic",
+            "from": <%= from("F8") %>,
+            "to": <%= to([["i", ["right_gui", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "F9_StepOver",
+            "type": "basic",
+            "from": <%= from("f9") %>,
+            "to": <%= to([["o", ["right_gui", "left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "F10_StepOut",
+            "type": "basic",
+            "from": <%= from("f10") %>,
+            "to": <%= to([["t", ["right_gui", "left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftCommand + P_BreakPointSet",
+            "type": "basic",
+            "from": <%= from("p", ["left_control"]) %>,
+            "to": <%= to([["t", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "LeftAlt + i_ImmediateWindow",
+            "type": "basic",
+            "from": <%= from("i", ["left_alt"]) %>,
+            "to": <%= to([["g", ["right_gui", "left_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
           {
             "description": "Fn + U_WindowLeftUp",
             "type": "basic",
@@ -359,6 +456,31 @@
         {
           "key_code": "f2"
         }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com\\.microsoft\\.Excel$"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "RightOption + Z_VBE-FromExcelMouse",
+      "type": "basic",
+      "from": <%= from("z", ["right_alt"]) %>,
+      "to": [
+        {
+          "software_function": {
+            "set_mouse_cursor_position": {
+              "x": "20",
+              "y": "60",
+              "screen": 0
+            }
+          }
+        },
+        { "pointing_button": "button1" }
       ],
       "conditions": [
         {
