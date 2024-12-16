@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfFirefox_summary",
+  "title": "FrontmostIfFirefox_summary99",
   "rules": [
     {
-      "description": "FrontmostIfFirefox_summary",
+      "description": "FrontmostIfFirefox_summary99",
       "manipulators": [
         {
-          "description": "A_新しいタブを開く(Firefox)",
+          "description": "A_新しいタブを開く",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -34,7 +34,7 @@
           ]
         },
         {
-          "description": "E_Reload(Firefox)",
+          "description": "E_Reload",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -62,7 +62,7 @@
           ]
         },
         {
-          "description": "W_新しいウィンドウで開く(Firefox)",
+          "description": "W_新しいウィンドウで開く",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "description": "LeftShift + RightCommand + H_ハードキャッシュ(Firefox)",
+          "description": "LeftShift + RightCommand + H_ハードキャッシュ",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "description": "LeftAlt + B_ブックマークを管理(Firefox)",
+          "description": "LeftAlt + B_ブックマークを管理",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -156,7 +156,7 @@
           ]
         },
         {
-          "description": "RightCommand + H_Reload(Firefox)",
+          "description": "RightCommand + H_Reload",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -187,7 +187,7 @@
           ]
         },
         {
-          "description": "LeftAlt + A_シークレットウィンドウを開く(Firefox)",
+          "description": "LeftAlt + A_シークレットウィンドウを開く",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -219,7 +219,7 @@
           ]
         },
         {
-          "description": "RightAlt + A_新規ウインドウ(Firefox)",
+          "description": "RightAlt + A_新規ウインドウ",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -251,7 +251,7 @@
           ]
         },
         {
-          "description": "LeftCommand + U_戻る(Firefox)",
+          "description": "LeftCommand + U_戻る",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -279,7 +279,7 @@
           ]
         },
         {
-          "description": "RightCommand + A_NewTabCreate(Firefox)",
+          "description": "RightCommand + A_NewTabCreate",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -308,7 +308,7 @@
           ]
         },
         {
-          "description": "RightCommand + L_ActiTabToggleOnoff(Firefox)",
+          "description": "RightCommand + L_ActiTabToggleOnoff",
           "type": "basic",
           "from": {
             "key_code": "l",
