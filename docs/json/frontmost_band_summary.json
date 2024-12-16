@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfBand_summary",
+  "title": "FrontmostIfBand_summary98",
   "rules": [
     {
-      "description": "FrontmostIfBand_summary",
+      "description": "FrontmostIfBand_summary98",
       "manipulators": [
         {
-          "description": "J_DownArrow(band)",
+          "description": "J_DownArrow",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "description": "M_最終行へ(band)",
+          "description": "M_最終行へ",
           "type": "basic",
           "from": {
             "key_code": "m",
@@ -58,7 +58,7 @@
           ]
         },
         {
-          "description": "K_UpArrow(band)",
+          "description": "K_UpArrow",
           "type": "basic",
           "from": {
             "key_code": "k",
@@ -83,7 +83,7 @@
           ]
         },
         {
-          "description": "N_最初の行へ(band)",
+          "description": "N_最初の行へ",
           "type": "basic",
           "from": {
             "key_code": "n",
@@ -111,7 +111,7 @@
           ]
         },
         {
-          "description": "T_単語検索(band)",
+          "description": "T_単語検索",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -139,7 +139,7 @@
           ]
         },
         {
-          "description": "O(オー)_PageUp(band)",
+          "description": "O(オー)_PageUp",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -167,7 +167,7 @@
           ]
         },
         {
-          "description": "i_PageDown(band)",
+          "description": "i_PageDown",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -195,7 +195,7 @@
           ]
         },
         {
-          "description": "G_TabClose(band)",
+          "description": "G_TabClose",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "description": "Period_MaxWindow(band)",
+          "description": "Period_MaxWindow",
           "type": "basic",
           "from": {
             "key_code": "period",
@@ -252,7 +252,7 @@
           ]
         },
         {
-          "description": "U_Undo(band)",
+          "description": "U_Undo",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -280,7 +280,7 @@
           ]
         },
         {
-          "description": "R_miアクテイブ(band)",
+          "description": "R_miアクテイブ",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -305,7 +305,7 @@
           ]
         },
         {
-          "description": "P_RightHalfWindowMove(band)",
+          "description": "P_RightHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "p",
@@ -333,7 +333,7 @@
           ]
         },
         {
-          "description": "Q_LeftHalfWindowMove(band)",
+          "description": "Q_LeftHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -361,7 +361,7 @@
           ]
         },
         {
-          "description": "D_WindowTopHalf(band)",
+          "description": "D_WindowTopHalf",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -389,7 +389,7 @@
           ]
         },
         {
-          "description": "F_WindowBottomHalf(band)",
+          "description": "F_WindowBottomHalf",
           "type": "basic",
           "from": {
             "key_code": "f",
