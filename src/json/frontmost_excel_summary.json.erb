@@ -368,6 +368,13 @@
           ]
         }
       ]
+    },
+    {
+      "description": "効かない-RightOption + W_CopyToEnd",
+      "type": "basic",
+      "from": <%= from("w", ["right_option"]) %>,
+      "to": <%= to([["b", ["right_shift", "left_control"]]]) %>,
+      "conditions": [ <%= frontmost_application_if("excel") %> ]
     }
     ]
   }
