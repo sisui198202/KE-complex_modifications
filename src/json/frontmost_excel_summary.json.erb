@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary",
+    "title": "FrontmostIfExcel_summary99",
     "rules": [
       {
-        "description": "FrontmostIfExcel_summary",
+        "description": "FrontmostIfExcel_summary99",
         "manipulators": [
           {
             "description": "LeftCommand  + Z_塗りつぶし色",
@@ -500,17 +500,17 @@
     }
     ]
   },
-    {
-      "description": "ExcelVBE(Excel)",
-      "manipulators": [
-        {
-          "description": "Period_MaxWindow",
-          "type": "basic",
-          "from": <%= from("period", ["caps_lock"]) %>,
-          "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("excel") %> ]
-        }
+  {
+    "description": "ExcelVBE(ExcelVBE)",
+    "manipulators": [
+      {
+        "description": "Period_MaxWindow",
+        "type": "basic",
+        "from": <%= from("period", ["caps_lock"]) %>,
+        "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+        "conditions": [ <%= frontmost_application_if("excel") %> ]
+      }
     ]
-    }
+  }
   ]
 }
