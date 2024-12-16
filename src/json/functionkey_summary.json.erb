@@ -1,22 +1,15 @@
 {
-    "title": "functionkey_summary",
+    "title": "functionkey_summary98",
     "rules": [
       {
-        "description": "functionkey_summary",
+        "description": "functionkey_summary98",
         "manipulators": [
             {
-                "description": "F1_tmp.pyOpen",
+                "description": "F1_tmp.よく使う-md",
                 "type": "basic",
                 "from": <%= from("f1") %>,
-                "to": <%= set_shell_command(["open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'"]) %>,
+                "to": <%= set_shell_command(["open '/Users/user/Desktop/test.md'"]) %>,
                 "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
-            },
-            {
-                "description": "RightShift + F1_MokuziKugiriCreate.exe",
-                "type": "basic",
-                "from": <%= from("f1", ["right_shift"], ["caps_lock"]) %>,
-                "to": <%= set_shell_command(["open '/Users/user/MacWindowShare/MokuziKugiriCreate.exe'"]) %>,
-                "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
             },
             {
                 "description": "F2_Rename",
@@ -119,12 +112,100 @@
                     ]
                 }
             },
-        {
-            "description": "F4_Rule.mdOpen",
-            "type": "basic",
-            "from": <%= from("f4") %>,
-            "to": <%= set_shell_command(["open '/Users/user/Dropbox/手順_ルール_自動化_リサーチ/rule.md'"]) %>
-        },
+            {
+                "description": "Double F4_1度押し:Category内ファイル選択,2度押し:RulesSummary",
+                "type": "basic",
+                "from": {
+                    "key_code": "f4",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open '/Users/user/Dropbox/Rule/RulesSummary.md'"
+                    }
+                ],
+                "conditions": [
+                    {
+                        "type": "variable_if",
+                        "name": "f4 pressed",
+                        "value": 1
+                    },
+                                {
+        "type": "frontmost_application_unless",
+        "bundle_identifiers": [
+                    "^com.vmware.fusion$",
+                    "^com.vmware.horizon$",
+                    "^com.vmware.view$",
+                    "^com.parallels.desktop$",
+                    "^com.parallels.vm$",
+                    "^com.parallels.desktop.console$",
+                    "^org.virtualbox.app.VirtualBoxVM$",
+                    "^com.vmware.proxyApp.",
+                    "^com.parallels.winapp."
+        ]
+        }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "f4",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "set_variable": {
+                            "name": "f4 pressed",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "key_code": "f4"
+                    }
+                ],
+                "conditions": [
+                                {
+        "type": "frontmost_application_unless",
+        "bundle_identifiers": [
+                    "^com.vmware.fusion$",
+                    "^com.vmware.horizon$",
+                    "^com.vmware.view$",
+                    "^com.parallels.desktop$",
+                    "^com.parallels.vm$",
+                    "^com.parallels.desktop.console$",
+                    "^org.virtualbox.app.VirtualBoxVM$",
+                    "^com.vmware.proxyApp.",
+                    "^com.parallels.winapp."
+        ]
+        }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                        {
+                            "set_variable": {
+                                "name": "f4 pressed",
+                                "value": 0
+                            }
+                        }
+                    ],
+                    "to_if_canceled": [
+                        {
+                            "set_variable": {
+                                "name": "f4 pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                }
+            },
             {
                 "description": "Double F5_.zshrc_aliassettingfileOpen(FunctionKey)",
                 "type": "basic",
