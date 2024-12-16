@@ -90,6 +90,7 @@ shotcutkey.json
 double_push_key.json
 
 ---------------------
+
 ## 個別登録から一括登録に書換方法
 
 1. 「description」プロパティ行を切取
@@ -101,6 +102,23 @@ double_push_key.json
 
 ---------------------
 ## 1つ説明で複数の設定を入力するパターン
+
+```
+{
+    "title": "<タイトル>",
+    "rules": [
+      {
+        "description": "<説明>",
+        "manipulators": [
+
+        ]
+      }
+    ]
+}
+```
+
+ex)<br>
+```
 {
   "title": "WindowControl123",
   "rules": [
@@ -123,7 +141,7 @@ double_push_key.json
               }
           ]
 }
-
+```
 ---------------------
 ## 1つ説明で1つの設定を入力するパターン
 
