@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfIntellij",
+  "title": "FrontmostIfIntellij_summary",
   "rules": [
     {
-      "description": "A_FrontmostIfIntellij",
+      "description": "FrontmostIfIntellij_summary",
       "manipulators": [
         {
           "description": "F7_ステップアウト",
