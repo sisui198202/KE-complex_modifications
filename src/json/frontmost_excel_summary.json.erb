@@ -499,6 +499,18 @@
       "conditions": [ <%= frontmost_application_if("excel") %> ]
     }
     ]
-  }
+  },
+    {
+      "description": "ExcelVBE(Excel)",
+      "manipulators": [
+        {
+          "description": "Period_MaxWindow",
+          "type": "basic",
+          "from": <%= from("period", ["caps_lock"]) %>,
+          "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("excel") %> ]
+        }
+    ]
+    }
   ]
 }
