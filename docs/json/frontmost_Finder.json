@@ -1,5 +1,5 @@
 {
-  "title": "tesuto.json.erbでfinderのショットカットキー登録すること(Finder)",
+  "title": "「tesuto.json.erb」でfinderのショットカットキー登録すること(Finder)",
   "rules": [
     {
       "description": "Test-{キー1} + {キー2}_ここから登録(Finder)",
