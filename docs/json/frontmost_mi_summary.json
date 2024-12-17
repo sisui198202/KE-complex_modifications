@@ -1,17 +1,17 @@
 {
-  "title": "FrontmostIfMi_summary989",
+  "title": "FrontmostIfMi_summary",
   "rules": [
     {
-      "description": "FrontmostIfMi_summary989",
+      "description": "FrontmostIfMi_summary",
       "manipulators": [
         {
-          "description": "LeftCommand + Oオウ_現在のタブをウインドウ化",
+          "description": "RightOption + A_現在のタブをウインドウ化",
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -24,6 +24,70 @@
               "modifiers": [
                 "left_shift",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + quote_すべてのウインドウを1つのウインドウに集める",
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^net.mimikaki.mi$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption+ N_NumberList",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "left_control",
+                "left_shift"
               ]
             }
           ],
@@ -509,38 +573,6 @@
             },
             {
               "key_code": "left_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^net.mimikaki.mi$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + quote_NumberList",
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "9",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
             }
           ],
           "conditions": [
