@@ -1,14 +1,14 @@
 {
-    "title": "FrontmostIfMi_summary98",
+    "title": "FrontmostIfMi_summary989",
     "rules": [
       {
-        "description": "FrontmostIfMi_summary98",
+        "description": "FrontmostIfMi_summary989",
         "manipulators": [
           {
             "description": "LeftCommand + Oオウ_現在のタブをウインドウ化",
             "type": "basic",
             "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["1", ["left_shift", "right_gui"]]]) %>,
+            "to": <%= to([["3", ["left_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("mi") %> ]
           },
           {

@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfMi_summary98",
+  "title": "FrontmostIfMi_summary989",
   "rules": [
     {
-      "description": "FrontmostIfMi_summary98",
+      "description": "FrontmostIfMi_summary989",
       "manipulators": [
         {
           "description": "LeftCommand + Oオウ_現在のタブをウインドウ化",
@@ -20,7 +20,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "3",
               "modifiers": [
                 "left_shift",
                 "right_gui"
