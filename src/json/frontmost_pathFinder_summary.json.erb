@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary99",
+    "title": "FrontmostIfPathFinder_summary",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary99",
+        "description": "FrontmostIfPathFinder_summary",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -304,31 +304,6 @@
             "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
-          },
-          {
-            "description": "LeftControl_Rename(pathfinder)",
-            "type": "basic",
-            "from": {
-              "apple_vendor_top_case_key_code":"keyboard_fn",
-            "modifiers": {
-                "optional": [
-                  "caps_lock"
-                ]
-              }
-            },
-            "to": [
-              {
-                "key_code": "return_or_enter"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "frontmost_application_if",
-                "bundle_identifiers": [
-                  "^com\\.cocoatech\\.PathFinder$"
-                ]
-              }
-            ]
           }
         ]
       }
