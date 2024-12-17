@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfMi_summary",
+  "title": "FrontmostIfMi_summary2",
   "rules": [
     {
-      "description": "FrontmostIfMi_summary",
+      "description": "FrontmostIfMi_summary2",
       "manipulators": [
         {
           "description": "RightOption + A_現在のタブをウインドウ化",
@@ -21,38 +21,6 @@
           "to": [
             {
               "key_code": "3",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^net.mimikaki.mi$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + quote_すべてのウインドウを1つのウインドウに集める",
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
               "modifiers": [
                 "left_shift",
                 "right_gui"
