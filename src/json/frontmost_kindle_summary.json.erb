@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfKindle_summary1",
+    "title": "FrontmostIfKindle_summary2",
     "rules": [
       {
-        "description": "FrontmostIfKindle_summary1",
+        "description": "FrontmostIfKindle_summary2",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -257,98 +257,31 @@
             "conditions": [ <%= frontmost_application_if("kindle") %>]
           },
           {
-            "description": "機能しない_LeftCommand + U_NextWindow-NextPage",
+            "description": "C_ChromeOpen",
             "type": "basic",
-            "from": <%= from("u", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["tab", ["right_option"]], ["down_arrow", ["left_alt"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("kindle") %>]
-          },
-{
-          "description": "C_ChromeOpen",
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Google Chrome.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
+            "from": {
+              "key_code": "c",
+              "modifiers": {
+                "mandatory": [
+                  "caps_lock"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'Google Chrome.app'"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "frontmost_application_if",
+                "bundle_identifiers": [
+                  "^com.amazon.Kindle$"
+                ]
+              }
+            ]
         },
-{
-          "description": "使用しない_Semicolon + J_DownArrow-X3",
-          "type": "basic",
-           "from": {
-            "key_code": "semicolon"
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        },
-{
-          "description": "使用しない_LeftCommand + J_DownArrow-X3",
-          "type": "basic",
-           "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            },
-            {
-              "key_code": "down_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        },
-{
+        {
           "description": "Quote_UpArrow-X3",
           "type": "basic",
           "from": {
@@ -379,7 +312,7 @@
             }
           ]
         },
-{
+        {
           "description": "LeftCommand + k_UpArrow-X3",
           "type": "basic",
           "from": {
@@ -413,31 +346,31 @@
             }
           ]
         },
-{
+        {
                 "description": "1(イチ)_RightTitleBarMouseClick",
                 "type": "basic",
                 "from": <%= from("1",["caps_lock"]) %>,
-      "to": [
-         {
-          "software_function": {
-            "set_mouse_cursor_position": {
-              "x": "950",
-              "y": "35",
-              "screen": 0
-            }
-          }
-        },
-        { "pointing_button": "button1" }
-],
-"conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
+                "to": [
+                    {
+                    "software_function": {
+                      "set_mouse_cursor_position": {
+                        "x": "950",
+                        "y": "35",
+                        "screen": 0
+                      }
+                    }
+                    },
+                  { "pointing_button": "button1" }
+                ],
+          "conditions": [
+              {
+                "type": "frontmost_application_if",
+                "bundle_identifiers": [
+                  "^com.amazon.Kindle$"
+                ]
               }
+            ]
+          }
         ]
       }
     ]
