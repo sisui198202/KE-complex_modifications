@@ -1,14 +1,14 @@
 {
-    "title": "FrontmostIfFinder111",
+    "title": "Test-FrontmostIfChrome",
     "rules": [
     {
-      "description": "tesuto.json.erbでfinderのショットカットキー登録すること(Finder)",
+      "description": "Test-{キー1} + {キー2}_ここから登録(Chrome)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["left_option"]) %>,
-          "to": <%= to([["o", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("finder") %> ]
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     }
