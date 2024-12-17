@@ -1,30 +1,26 @@
 {
-  "title": "tesuto.json.erbでfinderのショットカットキー登録すること(Finder)",
+  "title": "FrontmostIfFinder_summary",
   "rules": [
     {
-      "description": "Test-{キー1} + {キー2}_ここから登録(Finder)",
+      "description": "FrontmostIfFinder_summary",
       "manipulators": [
         {
+          "description": "LeftOption + Y_リスト(Finder)",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "y",
             "modifiers": {
               "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
+                "left_option"
               ]
             }
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": "right_gui"
-            },
-            {
-              "key_code": "c",
-              "modifiers": "right_gui"
+              "key_code": "2",
+              "modifiers": [
+                "left_gui"
+              ]
             }
           ],
           "conditions": [

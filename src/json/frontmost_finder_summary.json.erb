@@ -1,0 +1,17 @@
+{
+    "title": "FrontmostIfFinder_summary",
+    "rules": [
+      {
+        "description": "FrontmostIfFinder_summary",
+        "manipulators": [
+          {
+            "description": "LeftOption + Y_リスト(Finder)",
+            "type": "basic",
+            "from": <%= from("y", ["left_option"]) %>,
+            "to": <%= to([["2", ["left_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("finder") %> ]
+          }
+        ]
+      }
+    ]
+}
