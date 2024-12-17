@@ -1,21 +1,14 @@
 {
-    "title": "FrontmostIfMi_summary",
+    "title": "FrontmostIfMi_summary1",
     "rules": [
       {
-        "description": "FrontmostIfMi_summary",
+        "description": "FrontmostIfMi_summary1",
         "manipulators": [
           {
             "description": "RightOption + A_現在のタブをウインドウ化",
             "type": "basic",
             "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["3", ["left_shift", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("mi") %> ]
-          },
-          {
-            "description": "LeftCommand + quote_すべてのウインドウを1つのウインドウに集める",
-            "type": "basic",
-            "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["2", ["left_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("mi") %> ]
           },
           {
