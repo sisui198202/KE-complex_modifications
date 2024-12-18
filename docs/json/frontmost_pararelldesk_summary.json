@@ -2,10 +2,10 @@
   "title": "FrontmostIfVirtual_Pararelldesk_Summary",
   "rules": [
     {
-      "description": "PararellWindowsKeyBindList(VirtualMachine)",
+      "description": "FrontmostIfVirtual_Pararelldesk_Summary(VirtualMachine)",
       "manipulators": [
         {
-          "description": "LeftCommand + N_Dropboxディレクトリへ(VirtualMachine)",
+          "description": "LeftCommand + N_Dropboxディレクトリへ",
           "type": "basic",
           "from": {
             "key_code": "n",
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "description": "LeftCommand + M_GoogleDriveディレクトリへ(VirtualMachine)",
+          "description": "LeftCommand + M_GoogleDriveディレクトリへ",
           "type": "basic",
           "from": {
             "key_code": "m",
@@ -83,7 +83,7 @@
           ]
         },
         {
-          "description": "RightCommand + Space_delete(VirtualMachine)",
+          "description": "RightCommand + Space_delete",
           "type": "basic",
           "from": {
             "key_code": "spacebar",
@@ -122,7 +122,7 @@
           ]
         },
         {
-          "description": "LeftCommand + ゼロ_Vscode2Row(VirtualMachine)",
+          "description": "LeftCommand + ゼロ_Vscode2Row",
           "type": "basic",
           "from": {
             "key_code": "0",
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "description": "LeftCommand + S_Cut(VirtualMachine)",
+          "description": "LeftCommand + S_Cut",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -200,7 +200,7 @@
           ]
         },
         {
-          "description": "RightCommand + Y_カレント行/列削除(VirtualMachine)",
+          "description": "RightCommand + Y_カレント行/列削除",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -236,7 +236,7 @@
           ]
         },
         {
-          "description": "LeftCommand + Q_LeftHalfWindowMove(VirtualMachine)",
+          "description": "LeftCommand + Q_LeftHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "description": "RightCommand + P_RightHalfWindowMove(VirtualMachine)",
+          "description": "RightCommand + P_RightHalfWindowMove",
           "type": "basic",
           "from": {
             "key_code": "p",
@@ -314,7 +314,7 @@
           ]
         },
         {
-          "description": "RightCommand + O(オー)_SameWordExpandSelection(VirtualMachine)",
+          "description": "RightCommand + O(オー)_SameWordExpandSelection",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -353,7 +353,7 @@
           ]
         },
         {
-          "description": "RightCommand + K_CopyCurrentRowCut(VirtualMachine)",
+          "description": "RightCommand + K_CopyCurrentRowCut",
           "type": "basic",
           "from": {
             "key_code": "k",
@@ -392,7 +392,7 @@
           ]
         },
         {
-          "description": "RightCommand + Semicolon_LatestTabToggle(VirtualMachine)",
+          "description": "RightCommand + Semicolon_LatestTabToggle",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -431,7 +431,7 @@
           ]
         },
         {
-          "description": "RightCommand + L_NextTab(VirtualMachine)",
+          "description": "RightCommand + L_NextTab",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -470,7 +470,7 @@
           ]
         },
         {
-          "description": "RightCommand + U_ColumnSelection(VirtualMachine)",
+          "description": "RightCommand + U_ColumnSelection",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -509,7 +509,7 @@
           ]
         },
         {
-          "description": "LeftCommand + D_AllSelect(VirtualMachine)",
+          "description": "LeftCommand + D_AllSelect",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -548,7 +548,7 @@
           ]
         },
         {
-          "description": "RightCommand + T_Search(VirtualMachine)",
+          "description": "RightCommand + T_Search",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -587,7 +587,7 @@
           ]
         },
         {
-          "description": "RightCommand + J_1RowSelect(VirtualMachine)",
+          "description": "RightCommand + J_1RowSelect",
           "type": "basic",
           "from": {
             "key_code": "j",
@@ -626,7 +626,7 @@
           ]
         },
         {
-          "description": "LeftCommand + O(オー)_Column2SplitEditerScreen(VirtualMachine)",
+          "description": "LeftCommand + O(オー)_Column2SplitEditerScreen",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -704,7 +704,7 @@
           ]
         },
         {
-          "description": "LeftOption + slash_ExploerActive(VirtualMachine)",
+          "description": "LeftOption + slash_ExploerActive",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -741,7 +741,7 @@
           ]
         },
         {
-          "description": "RightCommand + /_expansion-SameWordExpandSelection(VirtualMachine)",
+          "description": "RightCommand + /_expansion-SameWordExpandSelection",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -780,7 +780,7 @@
           ]
         },
         {
-          "description": "LeftCommand + T_サイドバー切替-workbench.action.toggleSidebarVisibility[vscode,sublime],カレント行/列追加[excel](VirtualMachine)",
+          "description": "LeftCommand + T_サイドバー切替-workbench.action.toggleSidebarVisibility[vscode,sublime],カレント行/列追加[excel]",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -819,7 +819,7 @@
           ]
         },
         {
-          "description": "LeftCommand + X_iterm2ActiveWindow(VirtualMachine)",
+          "description": "LeftCommand + X_iterm2ActiveWindow",
           "type": "basic",
           "from": {
             "key_code": "x",
@@ -858,7 +858,7 @@
           ]
         },
         {
-          "description": "LeftCommand + U_Undo(VirtualMachine)",
+          "description": "LeftCommand + U_Undo",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -897,7 +897,7 @@
           ]
         },
         {
-          "description": "RightCommand + ._MaxWindow(VirtualMachine)",
+          "description": "RightCommand + ._MaxWindow",
           "type": "basic",
           "from": {
             "key_code": "period",
@@ -934,7 +934,7 @@
           ]
         },
         {
-          "description": "LeftOption + Comma_copyFilePath(VirtualMachine)",
+          "description": "LeftOption + Comma_copyFilePath",
           "type": "basic",
           "from": {
             "key_code": "comma",
@@ -973,7 +973,7 @@
           ]
         },
         {
-          "description": "RightCommand + H_フォルダービューにフォーカスを置く(VirtualMachine)",
+          "description": "RightCommand + H_フォルダービューにフォーカスを置く",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -1012,7 +1012,7 @@
           ]
         },
         {
-          "description": "LeftCommand + W_CurrentCursol-EndRowSelect(VirtualMachine)",
+          "description": "LeftCommand + W_CurrentCursol-EndRowSelect",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -1133,7 +1133,7 @@
           ]
         },
         {
-          "description": "LeftCommand + Comma_AppsSelect-previous(VirtualMachine)",
+          "description": "LeftCommand + Comma_AppsSelect-previous",
           "type": "basic",
           "from": {
             "modifiers": {
@@ -1175,7 +1175,7 @@
           ]
         },
         {
-          "description": "LeftCommand + Period_AppsSelect-next(VirtualMachine)",
+          "description": "LeftCommand + Period_AppsSelect-next",
           "type": "basic",
           "from": {
             "modifiers": {
@@ -1216,7 +1216,7 @@
           ]
         },
         {
-          "description": "RightCommand + A_NewFileCreate(VirtualMachine)",
+          "description": "RightCommand + A_NewFileCreate",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -1255,7 +1255,7 @@
           ]
         },
         {
-          "description": "LeftCommand + Quote_Single Column Editor Layout(VirtualMachine)",
+          "description": "LeftCommand + Quote_Single Column Editor Layout",
           "type": "basic",
           "from": {
             "key_code": "quote",
@@ -1294,7 +1294,7 @@
           ]
         },
         {
-          "description": "RightCommand + i_Neight bour(VirtualMachine)",
+          "description": "RightCommand + i_Neight bour",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -1333,7 +1333,7 @@
           ]
         },
         {
-          "description": "RightCommand + Z_0[ゼロ](VirtualMachine)",
+          "description": "RightCommand + Z_0[ゼロ]",
           "type": "basic",
           "from": {
             "key_code": "z",
@@ -1369,7 +1369,7 @@
           ]
         },
         {
-          "description": "RightCommand + X_1(VirtualMachine)",
+          "description": "RightCommand + X_1",
           "type": "basic",
           "from": {
             "key_code": "x",
@@ -1405,7 +1405,7 @@
           ]
         },
         {
-          "description": "RightCommand + C_2(VirtualMachine)",
+          "description": "RightCommand + C_2",
           "type": "basic",
           "from": {
             "key_code": "c",
@@ -1441,7 +1441,7 @@
           ]
         },
         {
-          "description": "RightCommand + V_3(VirtualMachine)",
+          "description": "RightCommand + V_3",
           "type": "basic",
           "from": {
             "key_code": "v",
@@ -1477,7 +1477,7 @@
           ]
         },
         {
-          "description": "LeftContorl_CellEdit(VirtualMachine)",
+          "description": "LeftContorl_CellEdit",
           "type": "basic",
           "from": {
             "key_code": "fn"
@@ -1505,7 +1505,7 @@
           ]
         },
         {
-          "description": "LeftCommand + RightCommand_plus(VirtualMachine)",
+          "description": "LeftCommand + RightCommand_plus",
           "type": "basic",
           "from": {
             "key_code": "right_gui",
@@ -1544,7 +1544,7 @@
           ]
         },
         {
-          "description": "LeftCommand + RightOption_equal(VirtualMachine)",
+          "description": "LeftCommand + RightOption_equal",
           "type": "basic",
           "from": {
             "key_code": "right_option",
@@ -1580,7 +1580,7 @@
           ]
         },
         {
-          "description": "Leftoption + Rightoption_parsent(VirtualMachine)",
+          "description": "Leftoption + Rightoption_parsent",
           "type": "basic",
           "from": {
             "key_code": "right_alt",
@@ -1619,7 +1619,7 @@
           ]
         },
         {
-          "description": "Rightoption + Leftoption_anbasado(VirtualMachine)",
+          "description": "Rightoption + Leftoption_anbasado",
           "type": "basic",
           "from": {
             "key_code": "left_alt",
@@ -1658,7 +1658,7 @@
           ]
         },
         {
-          "description": "RightCommand + LeftCommand_underbar(VirtualMachine)",
+          "description": "RightCommand + LeftCommand_underbar",
           "type": "basic",
           "from": {
             "key_code": "left_control",
@@ -1698,7 +1698,7 @@
           ]
         },
         {
-          "description": "Leftoption + Rightcommand_hypen(VirtualMachine)",
+          "description": "Leftoption + Rightcommand_hypen",
           "type": "basic",
           "from": {
             "key_code": "right_gui",
@@ -1734,7 +1734,7 @@
           ]
         },
         {
-          "description": "RightCommand + Leftoption_backslash(VirtualMachine)",
+          "description": "RightCommand + Leftoption_backslash",
           "type": "basic",
           "from": {
             "key_code": "left_alt",
