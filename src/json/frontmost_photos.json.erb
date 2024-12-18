@@ -1,16 +1,16 @@
 {
-  "title": "FrontmostIfPhotes97",
-  "rules": [
+    "title": "FrontmostIfPhotes",
+    "rules": [
     {
-      "description": "RightCommand + Space_delete(photos)",
+      "description": "{キー1} + {キー2}_ここから登録(Photes)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("spacebar", ["right_gui"]) %>,
-          "to": <%= to([["delete_or_backspace"]]) %>,
-          "conditions": [ <%= frontmost_application_if("photos") %> ]
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("photes") %> ]
         }
       ]
     }
-  ]
+    ]
 }
