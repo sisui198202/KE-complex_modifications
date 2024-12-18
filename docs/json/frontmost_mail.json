@@ -2,15 +2,15 @@
   "title": "FrontmostIfMail",
   "rules": [
     {
-      "description": "LeftOption + F_フラグを切り替える(mail)",
+      "description": "{キー1} + {キー2}_ここから登録(Mail)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -20,82 +20,11 @@
           "to": [
             {
               "key_code": "l",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
+              "modifiers": "right_gui"
+            },
             {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.apple.mail$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Z_新規メールをすべて受信(mail)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.apple.mail$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "RightOption + S_送信(mail)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "s",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
+              "key_code": "c",
+              "modifiers": "right_gui"
             }
           ],
           "conditions": [
