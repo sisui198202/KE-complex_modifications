@@ -30,7 +30,7 @@
           ]
         },
         {
-          "description": "k_UpArrow",
+          "description": "K_UpArrow",
           "type": "basic",
           "from": {
             "key_code": "k",

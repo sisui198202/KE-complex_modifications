@@ -9,20 +9,20 @@
             "type": "basic",
             "from": <%= from("j",["caps_lock"]) %>,
             "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("line") %> ]
-          },
-          {
-            "description": "M_最終行へ",
-            "type": "basic",
-            "from": <%= from("m",["caps_lock"]) %>,
-            "to": <%= to([["right_arrow", ["fn"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("line") %> ]
+            "conditions": [ <%= frontmost_application_if("readgamen") %> ]
           },
           {
             "description": "K_UpArrow",
             "type": "basic",
             "from": <%= from("k",["caps_lock"]) %>,
             "to": <%= to([["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("readgamen") %> ]
+          },
+          {
+            "description": "M_最終行へ",
+            "type": "basic",
+            "from": <%= from("m",["caps_lock"]) %>,
+            "to": <%= to([["right_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("line") %> ]
           },
           {

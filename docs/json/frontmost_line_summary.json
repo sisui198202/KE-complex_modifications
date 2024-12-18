@@ -24,7 +24,42 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^jp.naver.line.mac$"
+                "^com.campmobile.band$",
+                "^jp.naver.line.mac$",
+                "^com\\.apple\\.Preview$",
+                "^com.amazon.Kindle$",
+                "^tw.ogdesign.eagle$",
+                "^com.hnc.Discord$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "K_UpArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$",
+                "^jp.naver.line.mac$",
+                "^com\\.apple\\.Preview$",
+                "^com.amazon.Kindle$",
+                "^tw.ogdesign.eagle$",
+                "^com.hnc.Discord$"
               ]
             }
           ]
@@ -46,31 +81,6 @@
               "modifiers": [
                 "fn"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^jp.naver.line.mac$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "K_UpArrow",
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
             }
           ],
           "conditions": [

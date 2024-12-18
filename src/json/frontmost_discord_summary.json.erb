@@ -12,10 +12,10 @@
             "conditions": [ <%= frontmost_application_if("discord") %> ]
           },
           {
-              "description": "L_RightArrow",
+            "description": "K_UpArrow",
             "type": "basic",
-            "from": <%= from("l", ["caps_lock"]) %>,
-            "to": <%= to([["right_arrow"]]) %>,
+            "from": <%= from("k",["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("discord") %> ]
           },
           {
@@ -26,17 +26,17 @@
             "conditions": [ <%= frontmost_application_if("discord") %> ]
           },
           {
-            "description": "K_UpArrow",
-            "type": "basic",
-            "from": <%= from("k",["caps_lock"]) %>,
-            "to": <%= to([["up_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("discord") %> ]
-          },
-          {
             "description": "N_最初の行へ",
             "type": "basic",
             "from": <%= from("n",["caps_lock"]) %>,
             "to": <%= to([["left_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("discord") %> ]
+          },
+          {
+              "description": "L_RightArrow",
+            "type": "basic",
+            "from": <%= from("l", ["caps_lock"]) %>,
+            "to": <%= to([["right_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("discord") %> ]
           },
           {

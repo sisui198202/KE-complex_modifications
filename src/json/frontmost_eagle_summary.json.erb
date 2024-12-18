@@ -5,6 +5,20 @@
         "description": "FrontmostIfEagle_summary",
         "manipulators": [
           {
+            "description": "J_DownArrow",
+            "type": "basic",
+            "from": <%= from("j",["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("eagle") %> ]
+          },
+          {
+            "description": "K_UpArrow",
+            "type": "basic",
+            "from": <%= from("k",["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("eagle") %> ]
+          },
+          {
             "description": "N_HeadRowCursol",
             "type": "basic",
             "from": <%= from("n", ["caps_lock"]) %>,
@@ -114,20 +128,6 @@
             "type": "basic",
             "from": <%= from("i",["caps_lock"]) %>,
             "to": <%= to([["hyphen", ["right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("eagle") %> ]
-          },
-          {
-            "description": "J_DownArrow",
-            "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("eagle") %> ]
-          },
-          {
-            "description": "k_UpArrow",
-            "type": "basic",
-            "from": <%= from("k",["caps_lock"]) %>,
-            "to": <%= to([["up_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("eagle") %> ]
           },
           {

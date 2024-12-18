@@ -5,6 +5,20 @@
         "description": "FrontmostIfPreview_summary",
         "manipulators": [
           {
+            "description": "J_DownArrow",
+            "type": "basic",
+            "from": <%= from("j",["caps_lock"]) %>,
+            "to": <%= to([["down_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "K_UpArrow",
+            "type": "basic",
+            "from": <%= from("k",["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
             "description": "h_LeftArrow",
             "type": "basic",
             "from": <%= from("h",["caps_lock"]) %>,
