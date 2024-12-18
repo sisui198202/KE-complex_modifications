@@ -2,45 +2,12 @@
     "title": "FrontmostIfMysqlworkbench",
     "rules": [
     {
-      "description": "LeftCommand + A_RowHeadCursolMove(mysqlworkbench)",
+      "description": "{キー1} + {キー2}_ここから登録(Mysqlworkbench)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("a", ["left_control"]) %>,
-          "to": <%= to([["left_arrow",["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Semicolon_RowEndCursolMove(mysqlworkbench)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("semicolon", ["left_control"]) %>,
-          "to": <%= to([["right_arrow",["fn"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + N_HeadRowCursol(mysqlworkbench)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("n", ["left_control"]) %>,
-          "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + M_EndRowCursol(mysqlworkbench)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("m", ["left_control"]) %>,
-          "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("mysqlworkbench") %> ]
         }
       ]

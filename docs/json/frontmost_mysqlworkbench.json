@@ -2,120 +2,29 @@
   "title": "FrontmostIfMysqlworkbench",
   "rules": [
     {
-      "description": "LeftCommand + A_RowHeadCursolMove(mysqlworkbench)",
+      "description": "{キー1} + {キー2}_ここから登録(Mysqlworkbench)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
+              "key_code": "l",
+              "modifiers": "right_gui"
+            },
             {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.oracle.workbench.MySQLWorkbench$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Semicolon_RowEndCursolMove(mysqlworkbench)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.oracle.workbench.MySQLWorkbench$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + N_HeadRowCursol(mysqlworkbench)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.oracle.workbench.MySQLWorkbench$"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + M_EndRowCursol(mysqlworkbench)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "right_gui"
-              ]
+              "key_code": "c",
+              "modifiers": "right_gui"
             }
           ],
           "conditions": [
