@@ -2,111 +2,12 @@
     "title": "FrontmostIfIterm",
     "rules": [
     {
-      "description": "LeftCommand + O(オー)_SplitVertically(iterm2)",
+      "description": "{キー1} + {キー2}_ここから登録(Iterm)",
       "manipulators": [
         {
           "type": "basic",
-          "from": <%= from("o", ["left_control"]) %>,
-          "to": <%= to([["d", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + O(オー)_Horizontally(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("o", ["left_alt"]) %>,
-          "to": <%= to([["d", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-   {
-      "description": "RightCommand + I_SelectNextPanel(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("i", ["right_gui"]) %>,
-          "to": <%= to([["open_bracket", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-   {
-      "description": "RightCommand + Period_WindowMaxToggleOnOff(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("period", ["right_gui"]) %>,
-          "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-   {
-      "description": "LeftCommand + Quote_FromSplitwindowToSingleWindowToggleOnOff(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("quote", ["left_control"]) %>,
-          "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-  {
-      "description": "LeftOption + C_ClearBuffer(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("c", ["left_alt"]) %>,
-          "to": <%= to([["k", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + U_LineDown(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("u", ["left_alt"]) %>,
-          "to": <%= to([["2", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftOption + I_LineUp(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("i", ["left_alt"]) %>,
-          "to": <%= to([["1", ["right_gui", "left_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + B_PageDown(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
-         "to": <%= to([["3", ["right_gui", "left_shift"]]]) %>,
-         "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-        }
-      ]
-    },
-    {
-      "description": "LeftCommand + Slash_PageUp(iterm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["4", ["right_gui", "left_shift"]]]) %>,
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("iterm2") %> ]
         }
       ]
