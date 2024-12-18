@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfFinder_summary12",
+  "title": "FrontmostIfFinder_summary",
   "rules": [
     {
-      "description": "FrontmostIfFinder_summary12",
+      "description": "FrontmostIfFinder_summary",
       "manipulators": [
         {
           "description": "LeftOption + Y_リスト(Finder)",
