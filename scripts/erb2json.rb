@@ -311,6 +311,14 @@ def frontmost_application(type, app_aliases, as_json = true)
   notion_bundle_identifiers = [
     "^notion.id$",
   ]
+  readgamen_bundle_identifiers = [
+    "^com.campmobile.band$",
+    "^jp.naver.line.mac$",
+    '^com\.apple\.Preview$',
+    "^com.amazon.Kindle$",
+    "^tw.ogdesign.eagle$",
+    "^com.hnc.Discord$"
+  ]
   band_bundle_identifiers = [
     "^com.campmobile.band$",
   ]
@@ -420,6 +428,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(band_bundle_identifiers)
     when "discord"
       bundle_identifiers.concat(discord_bundle_identifiers)
+    when "readgamen"
+      bundle_identifiers.concat(readgamen_bundle_identifiers)
     else
       $stderr << "unknown app_alias: #{app_alias}\n"
     end
