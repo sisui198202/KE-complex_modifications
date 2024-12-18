@@ -5,26 +5,49 @@
       "description": "FrontmostIfReadgamen_summary",
       "manipulators": [
         {
-          "description": "RightOption + A_新しいNotionウィンドウを開く",
+          "description": "J_DownArrow",
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "right_option"
-              ],
-              "optional": [
                 "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "n",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$",
+                "^jp.naver.line.mac$",
+                "^com\\.apple\\.Preview$",
+                "^com.amazon.Kindle$",
+                "^tw.ogdesign.eagle$",
+                "^com.hnc.Discord$"
               ]
+            }
+          ]
+        },
+        {
+          "description": "K_UpArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
             }
           ],
           "conditions": [
