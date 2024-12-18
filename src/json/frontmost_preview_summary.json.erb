@@ -47,6 +47,13 @@
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
+            "description": "Q_LeftHalfWindowMove",
+            "type": "basic",
+            "from": <%= from("q",["caps_lock"]) %>,
+            "to": <%= to([["2", ["right_alt"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
             "description": "U_Undo",
             "type": "basic",
             "from": <%= from("u",["caps_lock"]) %>,
@@ -114,13 +121,6 @@
             "type": "basic",
             "from": <%= from("r",["caps_lock"]) %>,
             "to": <%= set_shell_command(["open -a 'mi'"]) %>,
-            "conditions": [ <%= frontmost_application_if("preview") %> ]
-          },
-          {
-            "description": "Q_LeftHalfWindowMove",
-            "type": "basic",
-            "from": <%= from("q",["caps_lock"]) %>,
-            "to": <%= to([["2", ["right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
