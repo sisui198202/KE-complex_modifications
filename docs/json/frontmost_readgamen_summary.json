@@ -1,65 +1,36 @@
 {
-  "title": "FrontmostIfReadgamen_summary1",
+  "title": "FrontmostIfReadgamen_band-line-preview-kindle-eagle-discord_summary",
   "rules": [
     {
-      "description": "FrontmostIfReadgamen_summary1",
+      "description": "FrontmostIfReadgamen_band-line-preview-kindle-eagle-discord_summary",
       "manipulators": [
         {
-          "description": "J_DownArrow",
+          "description": "<key1> + <key2>_機能名",
           "type": "basic",
           "from": {
-            "key_code": "j",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
                 "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "down_arrow"
+              "key_code": "f12",
+              "modifiers": [
+                "right_shift"
+              ]
             }
           ],
           "conditions": [
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.campmobile.band$",
-                "^jp.naver.line.mac$",
-                "^com\\.apple\\.Preview$",
-                "^com.amazon.Kindle$",
-                "^tw.ogdesign.eagle$",
-                "^com.hnc.Discord$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "K_UpArrow",
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$",
-                "^jp.naver.line.mac$",
-                "^com\\.apple\\.Preview$",
-                "^com.amazon.Kindle$",
-                "^tw.ogdesign.eagle$",
-                "^com.hnc.Discord$"
+                "^com\\.google\\.Chrome$"
               ]
             }
           ]

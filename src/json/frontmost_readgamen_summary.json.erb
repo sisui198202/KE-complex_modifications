@@ -1,22 +1,15 @@
 {
-  "title": "FrontmostIfReadgamen_summary1",
+  "title": "FrontmostIfReadgamen_band-line-preview-kindle-eagle-discord_summary",
   "rules": [
     {
-      "description": "FrontmostIfReadgamen_summary1",
+      "description": "FrontmostIfReadgamen_band-line-preview-kindle-eagle-discord_summary",
       "manipulators": [
         {
-          "description": "J_DownArrow",
+          "description": "<key1> + <key2>_機能名",
           "type": "basic",
-          "from": <%= from("j",["caps_lock"]) %>,
-          "to": <%= to([["down_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("readgamen") %> ]
-        },
-        {
-          "description": "K_UpArrow",
-          "type": "basic",
-          "from": <%= from("k",["caps_lock"]) %>,
-          "to": <%= to([["up_arrow"]]) %>,
-          "conditions": [ <%= frontmost_application_if("readgamen") %> ]
+          "from": <%= from("c", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["f12", ["right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
       ]
     }
