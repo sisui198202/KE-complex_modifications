@@ -1,0 +1,24 @@
+{
+    "title": "FrontmostIfVivaldi_summary",
+    "rules": [
+      {
+        "description": "FrontmostIfVivaldi_summary",
+        "manipulators": [
+          {
+            "description": "X_LeftCommand + U_undo(Vivaldi)",
+            "type": "basic",
+            "from": <%= from("u", ["left_control"]) %>,
+            "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+          },
+          {
+            "description": "RightCommand + H_Reload(Vivaldi)",
+            "type": "basic",
+            "from": <%= from("h", ["right_gui"]) %>,
+            "to": <%= to([["f5"]]) %>,
+            "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+          }
+        ]
+      }
+    ]
+}

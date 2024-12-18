@@ -1,0 +1,64 @@
+{
+  "title": "FrontmostIfVivaldi_summary",
+  "rules": [
+    {
+      "description": "FrontmostIfVivaldi_summary",
+      "manipulators": [
+        {
+          "description": "X_LeftCommand + U_undo(Vivaldi)",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + H_Reload(Vivaldi)",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f5"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

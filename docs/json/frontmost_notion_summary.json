@@ -1,16 +1,17 @@
 {
-  "title": "FrontmostIfVivaldi",
+  "title": "FrontmostIfNotion_summary",
   "rules": [
     {
-      "description": "{キー1} + {キー2}_ここから登録(Vivaldi)",
+      "description": "FrontmostIfNotion_summary",
       "manipulators": [
         {
+          "description": "RightOption + A_新しいNotionウィンドウを開く",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -19,19 +20,18 @@
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": "right_gui"
-            },
-            {
-              "key_code": "c",
-              "modifiers": "right_gui"
+              "key_code": "n",
+              "modifiers": [
+                "left_shift",
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^notion.id$"
               ]
             }
           ]

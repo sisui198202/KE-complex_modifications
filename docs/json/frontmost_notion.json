@@ -1,16 +1,16 @@
 {
-  "title": "FrontmostIfNotion2",
+  "title": "FrontmostIfNotion",
   "rules": [
     {
-      "description": "RightOption + A_新しいNotionウィンドウを開く(notion)",
+      "description": "{キー1} + {キー2}_ここから登録(Notion)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "a",
+            "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -19,11 +19,12 @@
           },
           "to": [
             {
-              "key_code": "n",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
+              "key_code": "l",
+              "modifiers": "right_gui"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
             }
           ],
           "conditions": [
