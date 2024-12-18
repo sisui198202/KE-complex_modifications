@@ -1279,7 +1279,7 @@
       ]
     },
     {
-      "description": "FrontmostIfExcelVBE(ExcelVBE)",
+      "description": "FrontmostIfExcelVBE_summary(ExcelVBE)",
       "manipulators": [
         {
           "description": "LeftAlt + N_HeadRowCursol",
