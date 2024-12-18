@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfDiscord_summary1",
+  "title": "FrontmostIfDiscord_summary",
   "rules": [
     {
-      "description": "FrontmostIfDiscord_summary1",
+      "description": "FrontmostIfDiscord_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
