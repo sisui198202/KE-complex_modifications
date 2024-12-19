@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfPreview_summary",
+    "title": "FrontmostIfPreview_summary1",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary",
+        "description": "FrontmostIfPreview_summary1",
         "manipulators": [
           {
             "description": "J_DownArrow",
             "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
+            "from": <%= from("j") %>,
             "to": <%= to([["down_arrow"]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
