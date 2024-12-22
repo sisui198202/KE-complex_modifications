@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfBrowser98",
+  "title": "FrontmostIfBrowser1",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)",
+      "description": "Basic Navigation Commands (browser)1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -367,7 +367,7 @@
           "description": "RightAlt + C_検証-ConsoleClear",
           "type": "basic",
           "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["l","right_control"]]) %>,
+          "to": <%= to([["j", ["right_alt", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]

@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfBrowser98",
+  "title": "FrontmostIfBrowser1",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)",
+      "description": "Basic Navigation Commands (browser)1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -1516,8 +1516,11 @@
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": "right_control"
+              "key_code": "j",
+              "modifiers": [
+                "right_alt",
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
