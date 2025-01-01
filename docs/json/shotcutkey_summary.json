@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -45,7 +45,7 @@
           ]
         },
         {
-          "description": "LeftShift + F12_CaptureWindow",
+          "description": "LeftShift + F12_CaptureFullscreen",
           "type": "basic",
           "from": {
             "key_code": "f12",

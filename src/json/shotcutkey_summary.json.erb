@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
   {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -12,7 +12,7 @@
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftShift + F12_CaptureWindow",
+          "description": "LeftShift + F12_CaptureFullscreen",
           "type": "basic",
           "from": <%= from("f12", ["left_shift"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["left_shift", "right_gui"]]]) %>,
