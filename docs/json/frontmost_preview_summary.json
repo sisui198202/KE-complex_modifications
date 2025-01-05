@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary",
+  "title": "FrontmostIfPreview_summary1",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary",
+      "description": "FrontmostIfPreview_summary1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -1017,70 +1017,6 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + Slash_拡大",
-          "type": "basic",
-          "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "left_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + B_縮小",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "left_shift",
                 "right_gui"
               ]
             }
