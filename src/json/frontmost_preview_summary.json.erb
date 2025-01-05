@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPreview_summary",
+    "title": "FrontmostIfPreview_summary98",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary",
+        "description": "FrontmostIfPreview_summary98",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -72,13 +72,6 @@
             "type": "basic",
             "from": <%= from("u") %>,
             "to": <%= to([["z", ["right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("preview") %> ]
-          },
-          {
-            "description": "B_ブックマーク追加",
-            "type": "basic",
-            "from": <%= from("b") %>,
-            "to": <%= to([["d", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
@@ -240,13 +233,6 @@
             "type": "basic",
             "from": <%= from("w") %>,
             "to": <%= to([["2", ["right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("preview") %> ]
-          },
-          {
-            "description": "Slash_Previewウィンドウ内切替",
-            "type": "basic",
-            "from": <%= from("slash") %>,
-            "to": <%= to([["comma", ["left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
