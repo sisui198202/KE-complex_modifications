@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary",
+  "title": "FrontmostIfPreview_summary7",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary",
+      "description": "FrontmostIfPreview_summary7",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -247,6 +247,29 @@
           ]
         },
         {
+          "description": "B_ブックマーク追加",
+          "type": "basic",
+          "from": {
+            "key_code": "b"
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "Y_サイドバーを非表示",
           "type": "basic",
           "from": {
@@ -299,10 +322,10 @@
           ]
         },
         {
-          "description": "Slash_Expansion",
+          "description": "オウ_Expansion",
           "type": "basic",
           "from": {
-            "key_code": "slash"
+            "key_code": "o"
           },
           "to": [
             {
@@ -323,10 +346,10 @@
           ]
         },
         {
-          "description": "B_Shrink",
+          "description": "i_Shrink",
           "type": "basic",
           "from": {
-            "key_code": "b"
+            "key_code": "i"
           },
           "to": [
             {
@@ -752,6 +775,29 @@
               "key_code": "2",
               "modifiers": [
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Slash_Previewウィンドウ内切替",
+          "type": "basic",
+          "from": {
+            "key_code": "slash"
+          },
+          "to": [
+            {
+              "key_code": "comma",
+              "modifiers": [
+                "left_control"
               ]
             }
           ],

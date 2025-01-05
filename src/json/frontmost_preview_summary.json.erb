@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPreview_summary",
+    "title": "FrontmostIfPreview_summary7",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary",
+        "description": "FrontmostIfPreview_summary7",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -82,6 +82,13 @@
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
+            "description": "B_ブックマーク追加",
+            "type": "basic",
+            "from": <%= from("b") %>,
+            "to": <%= to([["d", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
             "description": "Y_サイドバーを非表示",
             "type": "basic",
             "from": <%= from("y") %>,
@@ -96,16 +103,16 @@
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
-            "description": "Slash_Expansion",
+            "description": "オウ_Expansion",
             "type": "basic",
-            "from": <%= from("slash") %>,
+            "from": <%= from("o") %>,
             "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
             "conditions": [<%= frontmost_application_if("preview") %>]
           },
           {
-            "description": "B_Shrink",
+            "description": "i_Shrink",
             "type": "basic",
-            "from": <%= from("b") %>,
+            "from": <%= from("i") %>,
             "to": <%= to([["hyphen", ["right_gui"]]]) %>,
             "conditions": [<%= frontmost_application_if("preview") %>]
           },
@@ -233,6 +240,13 @@
             "type": "basic",
             "from": <%= from("w") %>,
             "to": <%= to([["2", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "Slash_Previewウィンドウ内切替",
+            "type": "basic",
+            "from": <%= from("slash") %>,
+            "to": <%= to([["comma", ["left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
