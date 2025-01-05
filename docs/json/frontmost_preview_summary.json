@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary1",
+  "title": "FrontmostIfPreview_summary",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary1",
+      "description": "FrontmostIfPreview_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -1031,7 +1031,7 @@
           ]
         },
         {
-          "description": "RightCommand + Slash_拡大",
+          "description": "RightCommand + Slash_Expansion",
           "type": "basic",
           "from": {
             "key_code": "slash",
@@ -1063,7 +1063,7 @@
           ]
         },
         {
-          "description": "RightOption + B_縮小",
+          "description": "RightOption + B_Shrink",
           "type": "basic",
           "from": {
             "key_code": "b",

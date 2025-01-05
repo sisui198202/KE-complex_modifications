@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPreview_summary1",
+    "title": "FrontmostIfPreview_summary",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary1",
+        "description": "FrontmostIfPreview_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -349,14 +349,14 @@
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
-            "description": "RightCommand + Slash_拡大",
+            "description": "RightCommand + Slash_Expansion",
             "type": "basic",
             "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
             "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
-            "description": "RightOption + B_縮小",
+            "description": "RightOption + B_Shrink",
             "type": "basic",
             "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
