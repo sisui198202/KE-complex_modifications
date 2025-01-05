@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary98",
+  "title": "FrontmostIfPreview_summary97",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary98",
+      "description": "FrontmostIfPreview_summary97",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -1107,10 +1107,10 @@
           ]
         },
         {
-          "description": "LeftOption + P_上書き保存",
+          "description": "LeftOption + オウ_上書き保存",
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "left_option"
