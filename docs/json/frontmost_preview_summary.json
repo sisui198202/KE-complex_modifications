@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary97",
+  "title": "FrontmostIfPreview_summary",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary97",
+      "description": "FrontmostIfPreview_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -302,12 +302,7 @@
           "description": "Slash_Expansion",
           "type": "basic",
           "from": {
-            "key_code": "slash",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "slash"
           },
           "to": [
             {
@@ -331,12 +326,7 @@
           "description": "B_Shrink",
           "type": "basic",
           "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "b"
           },
           "to": [
             {
@@ -405,12 +395,7 @@
           "description": "R_miアクテイブ",
           "type": "basic",
           "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "r"
           },
           "to": [
             {
@@ -668,12 +653,7 @@
           "description": "Period_WindowMax",
           "type": "basic",
           "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "period"
           },
           "to": [
             {
@@ -697,12 +677,7 @@
           "description": "Comma_AppsSelect-Next",
           "type": "basic",
           "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "comma"
           },
           "to": [
             {

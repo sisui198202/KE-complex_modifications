@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPreview_summary97",
+    "title": "FrontmostIfPreview_summary",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary97",
+        "description": "FrontmostIfPreview_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -98,14 +98,14 @@
           {
             "description": "Slash_Expansion",
             "type": "basic",
-            "from": <%= from("slash", ["caps_lock"]) %>,
+            "from": <%= from("slash") %>,
             "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
             "conditions": [<%= frontmost_application_if("preview") %>]
           },
           {
             "description": "B_Shrink",
             "type": "basic",
-            "from": <%= from("b", ["caps_lock"]) %>,
+            "from": <%= from("b") %>,
             "to": <%= to([["hyphen", ["right_gui"]]]) %>,
             "conditions": [<%= frontmost_application_if("preview") %>]
           },
@@ -126,7 +126,7 @@
           {
             "description": "R_miアクテイブ",
             "type": "basic",
-            "from": <%= from("r",["caps_lock"]) %>,
+            "from": <%= from("r") %>,
             "to": <%= set_shell_command(["open -a 'mi'"]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
@@ -203,14 +203,14 @@
           {
             "description": "Period_WindowMax",
             "type": "basic",
-            "from": <%= from("period",["caps_lock"]) %>,
+            "from": <%= from("period") %>,
             "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
             "description": "Comma_AppsSelect-Next",
             "type": "basic",
-            "from": <%= from("comma",["caps_lock"]) %>,
+            "from": <%= from("comma") %>,
             "to": <%= to([["tab", "right_gui"]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
