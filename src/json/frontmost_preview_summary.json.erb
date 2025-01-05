@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPreview_summary9",
+    "title": "FrontmostIfPreview_summary",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary9",
+        "description": "FrontmostIfPreview_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -103,18 +103,18 @@
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
-            "description": "O(オー)_Expansion",
+            "description": "Slash_Expansion",
             "type": "basic",
-            "from": <%= from("o") %>,
+            "from": <%= from("slash", ["caps_lock"]) %>,
             "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("preview") %> ]
+            "conditions": [<%= frontmost_application_if("preview") %>]
           },
           {
-            "description": "i_Shrink",
+            "description": "B_Shrink",
             "type": "basic",
-            "from": <%= from("i") %>,
+            "from": <%= from("b", ["caps_lock"]) %>,
             "to": <%= to([["hyphen", ["right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("preview") %> ]
+            "conditions": [<%= frontmost_application_if("preview") %>]
           },
           {
             "description": "CloseBracket_実際のサイズに合わせる",
@@ -349,17 +349,31 @@
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
-            "description": "LeftOption + O_Expansion",
+            "description": "RightCommand + Slash_拡大",
             "type": "basic",
-            "from": <%= from("o", ["left_option"]) %>,
-            "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
+            "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
-            "description": "LeftOption + i_Shrink",
+            "description": "RightOption + B_縮小",
             "type": "basic",
-            "from": <%= from("i", ["left_option"]) %>,
-            "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
+            "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "RightCommand + Slash_拡大",
+            "type": "basic",
+            "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "RightOption + B_縮小",
+            "type": "basic",
+            "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
