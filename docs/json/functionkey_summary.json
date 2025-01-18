@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary1",
+  "title": "FunctionkeySummary",
   "rules": [
     {
-      "description": "FunctionkeySummary1",
+      "description": "FunctionkeySummary",
       "manipulators": [
         {
           "description": "F1_よく使う-md",
@@ -357,8 +357,8 @@
             {
               "key_code": "quote",
               "modifiers": [
-                "right_gui",
-                "right_shift"
+                "right_option",
+                "right_gui"
               ]
             }
           ],
