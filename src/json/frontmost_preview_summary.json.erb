@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPreview_summary7",
+    "title": "FrontmostIfPreview_summary",
     "rules": [
       {
-        "description": "FrontmostIfPreview_summary7",
+        "description": "FrontmostIfPreview_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -30,6 +30,20 @@
             "type": "basic",
             "from": <%= from("l") %>,
             "to": <%= to([["right_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "/(スラッシュ)_PageUp",
+            "type": "basic",
+            "from": <%= from("slash") %>,
+            "to": <%= to([["up_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "B_PageDown",
+            "type": "basic",
+            "from": <%= from("b") %>,
+            "to": <%= to([["down_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
@@ -319,6 +333,20 @@
               ]
             }
             ]
+          },
+          {
+            "description": "LeftCommand + B_PageDown",
+            "type": "basic",
+            "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["down_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
+          },
+          {
+            "description": "LeftCommand + Slash_PageUp",
+            "type": "basic",
+            "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["up_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("preview") %> ]
           },
           {
             "description": "LeftCommand + OpenBracket[オープン角括弧]_ページ数指定",

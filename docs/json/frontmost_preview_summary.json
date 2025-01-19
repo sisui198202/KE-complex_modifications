@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary7",
+  "title": "FrontmostIfPreview_summary",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary7",
+      "description": "FrontmostIfPreview_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -73,6 +73,52 @@
           "to": [
             {
               "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "/(スラッシュ)_PageUp",
+          "type": "basic",
+          "from": {
+            "key_code": "slash"
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "B_PageDown",
+          "type": "basic",
+          "from": {
+            "key_code": "b"
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
@@ -874,6 +920,68 @@
             },
             {
               "shell_command": "open -a 'Visual Studio Code.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + B_PageDown",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + Slash_PageUp",
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
