@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPreview_summary",
+  "title": "FrontmostIfPreview_summary1",
   "rules": [
     {
-      "description": "FrontmostIfPreview_summary",
+      "description": "FrontmostIfPreview_summary1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -280,29 +280,6 @@
               "modifiers": [
                 "right_gui",
                 "right_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "B_ブックマーク追加",
-          "type": "basic",
-          "from": {
-            "key_code": "b"
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui"
               ]
             }
           ],
@@ -821,29 +798,6 @@
               "key_code": "2",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Slash_Previewウィンドウ内切替",
-          "type": "basic",
-          "from": {
-            "key_code": "slash"
-          },
-          "to": [
-            {
-              "key_code": "comma",
-              "modifiers": [
-                "left_control"
               ]
             }
           ],
