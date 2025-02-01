@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary99",
+  "title": "FrontmostIfExcel_summary98",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary99",
+      "description": "FrontmostIfExcel_summary98",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -28,7 +28,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
+                "^com\\.microsoft\\.Excel$"
               ]
             }
           ]
@@ -57,7 +57,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
+                "^com\\.microsoft\\.Excel$"
               ]
             }
           ]
