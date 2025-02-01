@@ -1,9 +1,67 @@
 {
-  "title": "FrontmostIfExcel_summary",
+  "title": "FrontmostIfExcel_summary99",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary",
+      "description": "FrontmostIfExcel_summary99",
       "manipulators": [
+        {
+          "description": "オウ_選択範囲に合わせて拡大/縮小",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "i_ズームを100%に設定",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
         {
           "description": "LeftCommand  + Z_塗りつぶし色",
           "type": "basic",

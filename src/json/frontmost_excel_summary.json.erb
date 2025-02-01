@@ -1,9 +1,23 @@
 {
-    "title": "FrontmostIfExcel_summary",
+    "title": "FrontmostIfExcel_summary99",
     "rules": [
       {
-        "description": "FrontmostIfExcel_summary",
+        "description": "FrontmostIfExcel_summary99",
         "manipulators": [
+          {
+            "description": "オウ_選択範囲に合わせて拡大/縮小",
+            "type": "basic",
+            "from": <%= from("o", ["caps_lock"]) %>,
+            "to": <%= to([["4", ["right_shift", "right_gui"]]]) %>,
+            "conditions": [<%= frontmost_application_if("preview") %>]
+          },
+          {
+            "description": "i_ズームを100%に設定",
+            "type": "basic",
+            "from": <%= from("i",["caps_lock"]) %>,
+            "to": <%= to([["5", ["right_shift", "right_gui"]]]) %>,
+            "conditions": [<%= frontmost_application_if("preview") %>]
+          },
           {
             "description": "LeftCommand  + Z_塗りつぶし色",
             "type": "basic",
