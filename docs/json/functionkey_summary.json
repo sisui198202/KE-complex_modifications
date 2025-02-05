@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary",
+  "title": "FunctionkeySummary1",
   "rules": [
     {
-      "description": "FunctionkeySummary",
+      "description": "FunctionkeySummary1",
       "manipulators": [
         {
           "description": "F1_よく使う-md",
@@ -73,7 +73,7 @@
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Pararellwindows.xlsx'"
+              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Windows/KeyManageList_windows.xlsx'"
             }
           ],
           "conditions": [
@@ -116,7 +116,7 @@
               }
             },
             {
-              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/KeyManageList_Mac.xlsm'"
+              "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Mac/KeyManageList_Mac.xlsm'"
             }
           ],
           "conditions": [
