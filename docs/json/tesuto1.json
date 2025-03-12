@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary",
+  "title": "FrontmostIfPathFinder_summary1",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary",
+      "description": "FrontmostIfPathFinder_summary1",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -532,13 +532,13 @@
           ]
         },
         {
-          "description": "LeftAlt + E_~/Desktop/",
+          "description": "LeftCommand + 0ゼロ_水平レイアウト",
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "0",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_gui"
               ],
               "optional": [
                 "caps_lock"
@@ -549,7 +549,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_shift",
+                "right_option",
                 "right_gui"
               ]
             }
@@ -564,7 +564,7 @@
           ]
         },
         {
-          "description": "LeftAlt + D_水平レイアウト",
+          "description": "LeftOption + D_~/Desktop/",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -581,7 +581,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_option",
+                "right_shift",
                 "right_gui"
               ]
             }

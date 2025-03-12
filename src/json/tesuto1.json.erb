@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary",
+    "title": "FrontmostIfPathFinder_summary1",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary",
+        "description": "FrontmostIfPathFinder_summary1",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -124,17 +124,17 @@
             "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
-            "description": "LeftAlt + E_~/Desktop/",
+            "description": "LeftCommand + 0ゼロ_水平レイアウト",
             "type": "basic",
-            "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
-            "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>,
+            "from": <%= from("0", ["left_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["d", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
-            "description": "LeftAlt + D_水平レイアウト",
+            "description": "LeftOption + D_~/Desktop/",
             "type": "basic",
             "from": <%= from("d", ["left_alt"], ["caps_lock"]) %>,
-            "to": <%= to([["d", ["right_option", "right_gui"]]]) %>,
+            "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
