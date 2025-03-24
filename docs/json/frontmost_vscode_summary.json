@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary1",
+  "title": "FrontmostIfVscode_summary",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary1",
+      "description": "FrontmostIfVscode_summary",
       "manipulators": [
         {
           "description": "RightOption + K_折りたたみの切り替え",
@@ -146,7 +146,7 @@
           },
           "to": [
             {
-              "key_code": "4",
+              "key_code": "b",
               "modifiers": [
                 "right_shift",
                 "right_gui"

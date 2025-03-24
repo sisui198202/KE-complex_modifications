@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary1",
+        "description": "FrontmostIfVscode_summary",
         "manipulators": [
           {
             "description": "RightOption + K_折りたたみの切り替え",
@@ -36,7 +36,7 @@
             "description": "RightCommand + B_ビルドタスクの実行",
             "type": "basic",
             "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["4", ["right_shift", "right_gui"]]]) %>,
+            "to": <%= to([["b", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
