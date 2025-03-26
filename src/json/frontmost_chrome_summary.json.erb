@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary",
+    "title": "FrontmostIfChrome_summary1",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary",
+        "description": "FrontmostIfChrome_summary1",
         "manipulators": [
           {
             "description": "LeftAlt + C_タブを複製",
@@ -128,6 +128,13 @@
           "type": "basic",
           "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        },
+        {
+          "description": "LeftAlt + F_Title & URL Picker",
+          "type": "basic",
+          "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
+          "to": <%= to([["9",["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         }
         ]

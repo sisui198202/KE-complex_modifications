@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary",
+  "title": "FrontmostIfChrome_summary1",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary",
+      "description": "FrontmostIfChrome_summary1",
       "manipulators": [
         {
           "description": "LeftAlt + C_タブを複製",
@@ -544,6 +544,38 @@
             {
               "key_code": "c",
               "modifiers": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + F_Title & URL Picker",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
             }
           ],
           "conditions": [
