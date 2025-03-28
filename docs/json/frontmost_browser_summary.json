@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser99",
+  "title": "FrontmostIfBrowser98",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -28,7 +28,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -57,7 +58,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -86,7 +88,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -115,7 +118,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -147,7 +151,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -179,7 +184,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -211,7 +217,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -243,7 +250,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -281,7 +289,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -311,7 +320,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -340,7 +350,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -369,7 +380,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -401,7 +413,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -433,7 +446,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -465,7 +479,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -497,7 +512,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -533,7 +549,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -566,7 +583,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -599,7 +617,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -632,7 +651,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -665,7 +685,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -700,7 +721,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -736,7 +758,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -772,7 +795,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -808,7 +832,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -844,7 +869,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -880,7 +906,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -915,7 +942,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -950,7 +978,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -985,7 +1014,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1022,7 +1052,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1055,7 +1086,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1087,7 +1119,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1125,7 +1158,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1158,7 +1192,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1194,7 +1229,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1230,7 +1266,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1267,7 +1304,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1299,7 +1337,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1331,7 +1370,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1368,7 +1408,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1404,7 +1445,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1441,7 +1483,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1476,7 +1519,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1517,7 +1561,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1553,7 +1598,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1589,7 +1635,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
@@ -1625,7 +1672,8 @@
                 "^org\\.waterfoxproject\\.waterfox$",
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
-                "com.vivaldi.Vivaldi"
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
               ]
             }
           ]
