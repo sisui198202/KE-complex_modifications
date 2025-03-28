@@ -187,6 +187,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     '^org\.waterfoxproject\.waterfox$',
     '^com\.google\.Chrome$',
     '^org.chromium.Chromium$',
+    "com.vivaldi.Vivaldi"
   ]
 
   vivaldi_bundle_identifiers = [
