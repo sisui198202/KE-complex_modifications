@@ -5,7 +5,7 @@
         "description": "FrontmostIfVivaldi_summary96",
         "manipulators": [
           {
-            "description": "X_LeftCommand + U_undo(Vivaldi)",
+            "description": "LeftCommand + U_undo(Vivaldi)",
             "type": "basic",
             "from": <%= from("u", ["left_control"]) %>,
             "to": <%= to([["delete_or_backspace"]]) %>,
@@ -33,7 +33,7 @@
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
           {
-            "description": "X:W_新しいウィンドウで開く",
+            "description": "W_新しいウィンドウで開く",
             "type": "basic",
             "from": <%= from("w", ["caps_lock"]) %>,
             "to": <%= to([["a", ["left_option","right_gui"]]]) %>,
@@ -89,13 +89,6 @@
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         },
         {
-          "description": "LeftAlt + E_NotionWebCliper起動",
-          "type": "basic",
-          "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-        },
-        {
           "description": "LeftAlt + N_ノードのスクリーンショットをキャプチャ",
           "type": "basic",
           "from": <%= from("n", ["left_alt"], ["caps_lock"]) %>,
@@ -110,21 +103,21 @@
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         },
         {
-          "description": "LeftAlt + A_シークレットウィンドウを開く",
+          "description": "LeftAlt + A_プライベートウィンドウを開く",
           "type": "basic",
           "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         },
         {
-          "description": "LeftAlt + B_BookmarkManage",
+          "description": "LeftAlt + B_Bookmarkナビゲーショントグル",
           "type": "basic",
           "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         },
         {
-          "description": "LeftAlt + U_検索バーアクティヴ-Copy",
+          "description": "LeftAlt + U_検索バーアクティヴ",
           "type": "basic",
           "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,

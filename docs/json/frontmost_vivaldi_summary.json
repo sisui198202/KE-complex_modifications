@@ -5,7 +5,7 @@
       "description": "FrontmostIfVivaldi_summary96",
       "manipulators": [
         {
-          "description": "X_LeftCommand + U_undo(Vivaldi)",
+          "description": "LeftCommand + U_undo(Vivaldi)",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -117,7 +117,7 @@
           ]
         },
         {
-          "description": "X:W_新しいウィンドウで開く",
+          "description": "W_新しいウィンドウで開く",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -362,37 +362,6 @@
           ]
         },
         {
-          "description": "LeftAlt + E_NotionWebCliper起動",
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
           "description": "LeftAlt + N_ノードのスクリーンショットをキャプチャ",
           "type": "basic",
           "from": {
@@ -457,7 +426,7 @@
           ]
         },
         {
-          "description": "LeftAlt + A_シークレットウィンドウを開く",
+          "description": "LeftAlt + A_プライベートウィンドウを開く",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -489,7 +458,7 @@
           ]
         },
         {
-          "description": "LeftAlt + B_BookmarkManage",
+          "description": "LeftAlt + B_Bookmarkナビゲーショントグル",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -521,7 +490,7 @@
           ]
         },
         {
-          "description": "LeftAlt + U_検索バーアクティヴ-Copy",
+          "description": "LeftAlt + U_検索バーアクティヴ",
           "type": "basic",
           "from": {
             "key_code": "u",

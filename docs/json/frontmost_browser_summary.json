@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser98",
+  "title": "FrontmostIfBrowser",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -1605,7 +1605,7 @@
           ]
         },
         {
-          "description": "LeftAlt + d_DeveloperTool起動",
+          "description": "LeftAlt + d_DeveloperToolトグル",
           "type": "basic",
           "from": {
             "key_code": "d",
