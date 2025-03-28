@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfSarari_summary",
+  "title": "FrontmostIfSarari_summary99",
   "rules": [
     {
-      "description": "FrontmostIfSarari_summary",
+      "description": "FrontmostIfSarari_summary99",
       "manipulators": [
         {
-          "description": "LeftCommand + U_undo(Vivaldi)",
+          "description": "LeftCommand + U_undo(safari)",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -24,13 +24,13 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
         },
         {
-          "description": "RightCommand + H_Reload(Vivaldi)",
+          "description": "RightCommand + H_Reload(safari)",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -52,7 +52,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -83,7 +83,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -111,7 +111,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -140,7 +140,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -168,7 +168,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -196,7 +196,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -228,7 +228,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -261,7 +261,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -293,7 +293,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -325,7 +325,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -356,7 +356,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -388,7 +388,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -420,7 +420,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -452,7 +452,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -484,7 +484,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -517,7 +517,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -549,7 +549,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
