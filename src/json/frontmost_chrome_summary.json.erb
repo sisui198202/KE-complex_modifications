@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary1",
+    "title": "FrontmostIfChrome_summary",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary1",
+        "description": "FrontmostIfChrome_summary",
         "manipulators": [
           {
             "description": "LeftAlt + C_タブを複製",
@@ -100,6 +100,13 @@
           "type": "basic",
           "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        },
+        {
+          "description": "LeftAlt + N_ノードのスクリーンショットをキャプチャ",
+          "type": "basic",
+          "from": <%= from("n", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["7", ["right_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         },
         {
