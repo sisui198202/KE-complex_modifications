@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVivaldi_summary97",
+  "title": "FrontmostIfVivaldi_summary96",
   "rules": [
     {
-      "description": "FrontmostIfVivaldi_summary97",
+      "description": "FrontmostIfVivaldi_summary96",
       "manipulators": [
         {
           "description": "X_LeftCommand + U_undo(Vivaldi)",
@@ -17,11 +17,7 @@
           },
           "to": [
             {
-              "key_code": "8",
-              "modifiers": [
-                "right_alt",
-                "right_gui"
-              ]
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [

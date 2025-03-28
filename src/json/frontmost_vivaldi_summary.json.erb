@@ -1,14 +1,14 @@
 {
-    "title": "FrontmostIfVivaldi_summary97",
+    "title": "FrontmostIfVivaldi_summary96",
     "rules": [
       {
-        "description": "FrontmostIfVivaldi_summary97",
+        "description": "FrontmostIfVivaldi_summary96",
         "manipulators": [
           {
             "description": "X_LeftCommand + U_undo(Vivaldi)",
             "type": "basic",
             "from": <%= from("u", ["left_control"]) %>,
-            "to": <%= to([["8", ["right_alt", "right_gui"]]]) %>,
+            "to": <%= to([["delete_or_backspace"]]) %>,
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
           {
