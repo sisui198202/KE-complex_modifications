@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVivaldi_summary98",
+    "title": "FrontmostIfVivaldi_summary97",
     "rules": [
       {
-        "description": "FrontmostIfVivaldi_summary98",
+        "description": "FrontmostIfVivaldi_summary97",
         "manipulators": [
           {
             "description": "X_LeftCommand + U_undo(Vivaldi)",
@@ -36,7 +36,7 @@
             "description": "X:W_新しいウィンドウで開く",
             "type": "basic",
             "from": <%= from("w", ["caps_lock"]) %>,
-            "to": <%= to([["a", ["left_option"]]]) %>,
+            "to": <%= to([["a", ["left_option","right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
           {
@@ -54,26 +54,12 @@
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
           {
-            "description": "X_BookMarkSearch",
-            "type": "basic",
-            "from": <%= from("x", ["caps_lock"]) %>,
-            "to": <%= to([["period", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-          },
-          {
             "description": "RightCommand + quote_閉じたタブを再度開く",
             "type": "basic",
             "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
+            "to": <%= to([["t", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
-        {
-          "description": "RightOption + T_BookMarkSearch",
-          "type": "basic",
-          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-        },
         {
           "description": "LeftShift + RightCommand + H_ハードキャッシュ",
           "type": "basic",

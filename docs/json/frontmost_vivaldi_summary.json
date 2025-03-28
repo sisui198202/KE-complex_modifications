@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVivaldi_summary98",
+  "title": "FrontmostIfVivaldi_summary97",
   "rules": [
     {
-      "description": "FrontmostIfVivaldi_summary98",
+      "description": "FrontmostIfVivaldi_summary97",
       "manipulators": [
         {
           "description": "X_LeftCommand + U_undo(Vivaldi)",
@@ -135,7 +135,8 @@
             {
               "key_code": "a",
               "modifiers": [
-                "left_option"
+                "left_option",
+                "right_gui"
               ]
             }
           ],
@@ -205,32 +206,6 @@
           ]
         },
         {
-          "description": "X_BookMarkSearch",
-          "type": "basic",
-          "from": {
-            "key_code": "x",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
           "description": "RightCommand + quote_閉じたタブを再度開く",
           "type": "basic",
           "from": {
@@ -248,38 +223,9 @@
             {
               "key_code": "t",
               "modifiers": [
-                "right_gui",
-                "right_shift"
+                "right_shift",
+                "right_gui"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + T_BookMarkSearch",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "period",
-              "modifiers": "left_option"
             }
           ],
           "conditions": [
