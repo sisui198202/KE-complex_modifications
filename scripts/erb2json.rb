@@ -409,6 +409,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(firefox_bundle_identifiers)
     when "vivaldi"
       bundle_identifiers.concat(vivaldi_bundle_identifiers)
+    when "safari"
+      bundle_identifiers.concat(safari_bundle_identifiers)
     when "terminal"
       bundle_identifiers.concat(terminal_bundle_identifiers)
     when "evernote"
