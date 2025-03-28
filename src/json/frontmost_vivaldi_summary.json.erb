@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVivaldi_summary96",
+    "title": "FrontmostIfVivaldi_summary",
     "rules": [
       {
-        "description": "FrontmostIfVivaldi_summary96",
+        "description": "FrontmostIfVivaldi_summary",
         "manipulators": [
           {
             "description": "LeftCommand + U_undo(Vivaldi)",
@@ -124,7 +124,7 @@
           "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
         },
         {
-          "description": "LeftAlt + F_Title & URL Picker",
+          "description": "x:LeftAlt + F_Title & URL Picker",
           "type": "basic",
           "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
           "to": <%= to([["9",["right_shift", "right_gui"]]]) %>,

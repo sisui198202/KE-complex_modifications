@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVivaldi_summary96",
+  "title": "FrontmostIfVivaldi_summary",
   "rules": [
     {
-      "description": "FrontmostIfVivaldi_summary96",
+      "description": "FrontmostIfVivaldi_summary",
       "manipulators": [
         {
           "description": "LeftCommand + U_undo(Vivaldi)",
@@ -523,7 +523,7 @@
           ]
         },
         {
-          "description": "LeftAlt + F_Title & URL Picker",
+          "description": "x:LeftAlt + F_Title & URL Picker",
           "type": "basic",
           "from": {
             "key_code": "f",
