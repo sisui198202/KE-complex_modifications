@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVivaldi_summary99",
+    "title": "FrontmostIfVivaldi_summary98",
     "rules": [
       {
-        "description": "FrontmostIfVivaldi_summary99",
+        "description": "FrontmostIfVivaldi_summary98",
         "manipulators": [
           {
             "description": "X_LeftCommand + U_undo(Vivaldi)",
@@ -33,7 +33,7 @@
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
           {
-            "description": "W_新しいウィンドウで開く",
+            "description": "X:W_新しいウィンドウで開く",
             "type": "basic",
             "from": <%= from("w", ["caps_lock"]) %>,
             "to": <%= to([["a", ["left_option"]]]) %>,
@@ -50,7 +50,7 @@
             "description": "E_Reload",
             "type": "basic",
             "from": <%= from("e", ["caps_lock"]) %>,
-            "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
+            "to": <%= to([["r", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
           },
           {

@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVivaldi_summary99",
+  "title": "FrontmostIfVivaldi_summary98",
   "rules": [
     {
-      "description": "FrontmostIfVivaldi_summary99",
+      "description": "FrontmostIfVivaldi_summary98",
       "manipulators": [
         {
           "description": "X_LeftCommand + U_undo(Vivaldi)",
@@ -121,7 +121,7 @@
           ]
         },
         {
-          "description": "W_新しいウィンドウで開く",
+          "description": "X:W_新しいウィンドウで開く",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -189,10 +189,9 @@
           },
           "to": [
             {
-              "key_code": "w",
+              "key_code": "r",
               "modifiers": [
-                "right_control",
-                "right_shift"
+                "right_gui"
               ]
             }
           ],
