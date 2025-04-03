@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary2",
+  "title": "FrontmostIfVscode_summary",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary2",
+      "description": "FrontmostIfVscode_summary",
       "manipulators": [
         {
           "description": "RightOption + S_定義に移動",
@@ -21,6 +21,38 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + Y_アウトラインビューにフォーカスを置く",
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
               "modifiers": [
                 "left_shift",
                 "right_option"

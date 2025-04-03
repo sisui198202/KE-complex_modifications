@@ -1,14 +1,21 @@
 {
-    "title": "FrontmostIfVscode_summary2",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary2",
+        "description": "FrontmostIfVscode_summary",
         "manipulators": [
           {
             "description": "RightOption + S_定義に移動",
             "type": "basic",
             "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["left_shift", "right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "LeftOption + Y_アウトラインビューにフォーカスを置く",
+            "type": "basic",
+            "from": <%= from("y", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["6", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
