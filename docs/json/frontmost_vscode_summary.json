@@ -1,9 +1,37 @@
 {
-  "title": "FrontmostIfVscode_summary",
+  "title": "FrontmostIfVscode_summary1",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary",
+      "description": "FrontmostIfVscode_summary1",
       "manipulators": [
+        {
+          "description": "RightOption + S_定義に移動",
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f12"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
         {
           "description": "RightOption + K_折りたたみの切り替え",
           "type": "basic",
