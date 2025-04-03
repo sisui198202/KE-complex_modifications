@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary1",
+  "title": "FrontmostIfVscode_summary2",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary1",
+      "description": "FrontmostIfVscode_summary2",
       "manipulators": [
         {
           "description": "RightOption + S_定義に移動",
@@ -20,7 +20,11 @@
           },
           "to": [
             {
-              "key_code": "f12"
+              "key_code": "2",
+              "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
             }
           ],
           "conditions": [

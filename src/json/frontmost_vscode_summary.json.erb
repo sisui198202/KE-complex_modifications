@@ -1,14 +1,14 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary2",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary1",
+        "description": "FrontmostIfVscode_summary2",
         "manipulators": [
           {
             "description": "RightOption + S_定義に移動",
             "type": "basic",
             "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["f12"]]) %>,
+            "to": <%= to([["2", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
