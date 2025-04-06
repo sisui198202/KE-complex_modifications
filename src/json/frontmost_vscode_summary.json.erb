@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfVscode_summary",
+    "title": "FrontmostIfVscode_summary1",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary",
+        "description": "FrontmostIfVscode_summary1",
         "manipulators": [
+          {
+            "description": "RightOption + J_カレント行から最終行まで選択",
+            "type": "basic",
+            "from": <%= from("j", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["down_arrow", ["left_shift", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
           {
             "description": "RightOption + S_定義に移動",
             "type": "basic",
