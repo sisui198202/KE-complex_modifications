@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary",
+    "title": "FrontmostIfPathFinder_summary99",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary",
+        "description": "FrontmostIfPathFinder_summary99",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -177,13 +177,6 @@
             "type": "basic",
             "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["n", ["left_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("pathfinder") %>]
-          },
-          {
-            "description": "RightOption + S_SummaryディレクトリWorkflow",
-            "type": "basic",
-            "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["hyphen", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %>]
           },
           {
