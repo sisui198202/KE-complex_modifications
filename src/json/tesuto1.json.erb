@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary1",
+    "title": "FrontmostIfPathFinder_summary",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary1",
+        "description": "FrontmostIfPathFinder_summary",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -180,10 +180,10 @@
             "conditions": [ <%= frontmost_application_if("pathfinder") %>]
           },
           {
-            "description": "RightOption + S_マイドライブ/Summary",
+            "description": "RightOption + S_SummaryディレクトリWorkflow",
             "type": "basic",
             "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/Summary'"]) %>,
+            "to": <%= to([["hyphen", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %>]
           },
           {
