@@ -1,25 +1,46 @@
 {
-    "title": "FrontmostIfChrome_summary98",
+    "title": "FrontmostIfChrome_summary97",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary98",
+        "description": "FrontmostIfChrome_summary97",
         "manipulators": [
           {
-            "description": "RightOption + L_前のパネル",
+            "description": "LeftAlt + N_検証-ノードのスクリーンショットをキャプチャ",
+            "type": "basic",
+            "from": <%= from("n", ["left_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["7", ["right_shift","right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          },
+          {
+            "description": "LeftOption + openbracket_検証-コマンドパレット",
+            "type": "basic",
+            "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["p", ["right_gui", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          },
+          {
+            "description": "LeftCommand + openbracket_検証-プロジェクト内に存在するファイルを指定して開く",
+            "type": "basic",
+            "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["p", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          },
+          {
+            "description": "RightOption + L_検証-前のパネル",
             "type": "basic",
             "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["open_bracket", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
-            "description": "RightOption + Semicolon_次のパネル",
+            "description": "RightOption + Semicolon_検証-次のパネル",
             "type": "basic",
             "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["close_bracket", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
-            "description": "LeftAlt + W_コンソールを消去",
+            "description": "LeftAlt + W_検証-コンソールを消去",
             "type": "basic",
             "from": <%= from("w", ["left_alt"], ["caps_lock"]) %>,
             "to": <%= to([["1", ["left_control"]]]) %>,
@@ -96,31 +117,10 @@
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         },
         {
-          "description": "LeftOption + openbracket_コマンドパレット",
-          "type": "basic",
-          "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["p", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        },
-        {
-          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
-          "type": "basic",
-          "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["p", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        },
-        {
           "description": "LeftAlt + E_NotionWebCliper起動",
           "type": "basic",
           "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["1", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        },
-        {
-          "description": "LeftAlt + N_ノードのスクリーンショットをキャプチャ",
-          "type": "basic",
-          "from": <%= from("n", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["7", ["right_shift","right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         },
         {

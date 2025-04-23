@@ -1,11 +1,106 @@
 {
-  "title": "FrontmostIfChrome_summary98",
+  "title": "FrontmostIfChrome_summary97",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary98",
+      "description": "FrontmostIfChrome_summary97",
       "manipulators": [
         {
-          "description": "RightOption + L_前のパネル",
+          "description": "LeftAlt + N_検証-ノードのスクリーンショットをキャプチャ",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + openbracket_検証-コマンドパレット",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + openbracket_検証-プロジェクト内に存在するファイルを指定して開く",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + L_検証-前のパネル",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -44,7 +139,7 @@
           ]
         },
         {
-          "description": "RightOption + Semicolon_次のパネル",
+          "description": "RightOption + Semicolon_検証-次のパネル",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -83,7 +178,7 @@
           ]
         },
         {
-          "description": "LeftAlt + W_コンソールを消去",
+          "description": "LeftAlt + W_検証-コンソールを消去",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -410,69 +505,6 @@
           ]
         },
         {
-          "description": "LeftOption + openbracket_コマンドパレット",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "LeftAlt + E_NotionWebCliper起動",
           "type": "basic",
           "from": {
@@ -490,38 +522,6 @@
             {
               "key_code": "1",
               "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + N_ノードのスクリーンショットをキャプチャ",
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                "right_shift",
                 "right_gui"
               ]
             }
