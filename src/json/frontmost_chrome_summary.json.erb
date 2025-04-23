@@ -1,9 +1,23 @@
 {
-    "title": "FrontmostIfChrome_summary1",
+    "title": "FrontmostIfChrome_summary",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary1",
+        "description": "FrontmostIfChrome_summary",
         "manipulators": [
+          {
+            "description": "RightOption + L_NextTab",
+            "type": "basic",
+            "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["close_bracket", ["left_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          },
+          {
+            "description": "RightOption + Semicolon_LatestTabToggle",
+            "type": "basic",
+            "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["open_bracket", ["left_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          },
           {
             "description": "LeftAlt + W_コンソールを消去",
             "type": "basic",
