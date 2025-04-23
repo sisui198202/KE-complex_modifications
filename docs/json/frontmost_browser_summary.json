@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser",
+  "title": "FrontmostIfBrowser1",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -1531,7 +1531,7 @@
       "description": "verification(browser)",
       "manipulators": [
         {
-          "description": "RightAlt + S_検証-Select an Element in the Page to inspect it",
+          "description": "RightAlt + S_Select an Element in the Page to inspect it",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -1547,43 +1547,6 @@
           "to": [
             {
               "key_code": "c",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + T_検証-ドックの位置変更",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
               "modifiers": [
                 "right_gui",
                 "right_shift"
@@ -1679,7 +1642,44 @@
           ]
         },
         {
-          "description": "LeftControl_Rename(browser)",
+          "description": "LeftCommand + T_検証-ドックの位置変更",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftControl_検証-Rename(browser)",
           "type": "basic",
           "from": {
             "apple_vendor_top_case_key_code": "keyboard_fn",

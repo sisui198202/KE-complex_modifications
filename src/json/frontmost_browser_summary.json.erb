@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser",
+  "title": "FrontmostIfBrowser1",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -343,17 +343,10 @@
       "description": "verification(browser)",
       "manipulators": [
         {
-          "description": "RightAlt + S_検証-Select an Element in the Page to inspect it",
+          "description": "RightAlt + S_Select an Element in the Page to inspect it",
           "type": "basic",
           "from": <%= from("s", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["c", ["right_gui", "right_shift"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "LeftCommand + T_検証-ドックの位置変更",
-          "type": "basic",
-          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
@@ -371,7 +364,14 @@
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
-          "description": "LeftControl_Rename(browser)",
+          "description": "LeftCommand + T_検証-ドックの位置変更",
+          "type": "basic",
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("browser") %> ]
+        },
+        {
+          "description": "LeftControl_検証-Rename(browser)",
           "type": "basic",
           "from": {
             "apple_vendor_top_case_key_code":"keyboard_fn",
