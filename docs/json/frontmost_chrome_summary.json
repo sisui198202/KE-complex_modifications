@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary",
+  "title": "FrontmostIfChrome_summary1",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary",
+      "description": "FrontmostIfChrome_summary1",
       "manipulators": [
         {
           "description": "LeftAlt + C_タブを複製",
@@ -285,38 +285,6 @@
           "to": [
             {
               "key_code": "delete_or_backspace",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + T_ドックの位置変更",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
               "modifiers": [
                 "right_gui",
                 "right_shift"
