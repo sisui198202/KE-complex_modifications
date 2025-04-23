@@ -1,9 +1,40 @@
 {
-  "title": "FrontmostIfChrome_summary",
+  "title": "FrontmostIfChrome_summary1",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary",
+      "description": "FrontmostIfChrome_summary1",
       "manipulators": [
+        {
+          "description": "LeftAlt + W_コンソールを消去",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
         {
           "description": "LeftAlt + C_タブを複製",
           "type": "basic",

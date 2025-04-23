@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfChrome_summary",
+    "title": "FrontmostIfChrome_summary1",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary",
+        "description": "FrontmostIfChrome_summary1",
         "manipulators": [
+          {
+            "description": "LeftAlt + W_コンソールを消去",
+            "type": "basic",
+            "from": <%= from("w", ["left_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["1", ["left_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          },
           {
             "description": "LeftAlt + C_タブを複製",
             "type": "basic",
