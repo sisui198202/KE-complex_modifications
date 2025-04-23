@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfChrome_summary97",
+    "title": "FrontmostIfChrome_summary",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary97",
+        "description": "FrontmostIfChrome_summary",
         "manipulators": [
+          {
+            "description": "RightCommand + i_検証-ページにフォーカス",
+            "type": "basic",
+            "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
+            "to": <%= to([["2", ["right_gui","right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          },
           {
             "description": "LeftAlt + N_検証-ノードのスクリーンショットをキャプチャ",
             "type": "basic",
