@@ -1,18 +1,18 @@
 {
-    "title": "FrontmostIfChrome_summary",
+    "title": "FrontmostIfChrome_summary99",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary",
+        "description": "FrontmostIfChrome_summary99",
         "manipulators": [
           {
-            "description": "RightOption + L_NextTab",
+            "description": "RightOption + L_次のパネル",
             "type": "basic",
             "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["close_bracket", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
-            "description": "RightOption + Semicolon_LatestTabToggle",
+            "description": "RightOption + Semicolon_前のパネル",
             "type": "basic",
             "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["open_bracket", ["left_gui"]]]) %>,
