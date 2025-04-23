@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary1",
+    "title": "FrontmostIfChrome_summary",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary1",
+        "description": "FrontmostIfChrome_summary",
         "manipulators": [
           {
             "description": "LeftAlt + C_タブを複製",
@@ -121,13 +121,6 @@
           "type": "basic",
           "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        },
-        {
-          "description": "LeftAlt + U_検索バーアクティヴ-Copy",
-          "type": "basic",
-          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         },
         {
