@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser1",
+  "title": "FrontmostIfBrowser",
   "rules": [
     {
       "description": "Basic Navigation Commands (browser)",
@@ -119,13 +119,6 @@
           "type": "basic",
           "from": <%= from("f", ["caps_lock"]) %>,
           "to": <%= to([["5", ["left_alt"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("browser") %> ]
-        },
-        {
-          "description": "RightCommand + Period_MaxWindow",
-          "type": "basic",
-          "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         },
         {
