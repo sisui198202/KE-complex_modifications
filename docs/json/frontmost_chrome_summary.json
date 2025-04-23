@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfChrome_summary99",
+  "title": "FrontmostIfChrome_summary98",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary99",
+      "description": "FrontmostIfChrome_summary98",
       "manipulators": [
         {
-          "description": "RightOption + L_次のパネル",
+          "description": "RightOption + L_前のパネル",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -20,7 +20,7 @@
           },
           "to": [
             {
-              "key_code": "close_bracket",
+              "key_code": "open_bracket",
               "modifiers": [
                 "left_gui"
               ]
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "description": "RightOption + Semicolon_前のパネル",
+          "description": "RightOption + Semicolon_次のパネル",
           "type": "basic",
           "from": {
             "key_code": "semicolon",
@@ -59,7 +59,7 @@
           },
           "to": [
             {
-              "key_code": "open_bracket",
+              "key_code": "close_bracket",
               "modifiers": [
                 "left_gui"
               ]

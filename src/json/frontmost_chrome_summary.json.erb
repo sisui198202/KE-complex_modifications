@@ -1,21 +1,21 @@
 {
-    "title": "FrontmostIfChrome_summary99",
+    "title": "FrontmostIfChrome_summary98",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary99",
+        "description": "FrontmostIfChrome_summary98",
         "manipulators": [
           {
-            "description": "RightOption + L_次のパネル",
+            "description": "RightOption + L_前のパネル",
             "type": "basic",
             "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["close_bracket", ["left_gui"]]]) %>,
+            "to": <%= to([["open_bracket", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
-            "description": "RightOption + Semicolon_前のパネル",
+            "description": "RightOption + Semicolon_次のパネル",
             "type": "basic",
             "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["open_bracket", ["left_gui"]]]) %>,
+            "to": <%= to([["close_bracket", ["left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
           },
           {
