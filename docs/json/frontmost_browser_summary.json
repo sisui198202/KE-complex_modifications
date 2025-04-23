@@ -1642,7 +1642,7 @@
           ]
         },
         {
-          "description": "RightAlt + C_検証-ConsoleClear",
+          "description": "RightAlt + C_Console表示",
           "type": "basic",
           "from": {
             "key_code": "c",
