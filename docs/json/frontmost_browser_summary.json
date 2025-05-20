@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfBrowser",
+  "title": "FrontmostIfBrowser99",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)",
+      "description": "Basic Navigation Commands (browser)99",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -1142,7 +1142,6 @@
             {
               "key_code": "hyphen",
               "modifiers": [
-                "left_shift",
                 "right_gui"
               ]
             }
@@ -1216,7 +1215,6 @@
             {
               "key_code": "hyphen",
               "modifiers": [
-                "left_shift",
                 "right_gui"
               ]
             }

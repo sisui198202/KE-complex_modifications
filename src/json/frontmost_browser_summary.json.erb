@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfBrowser",
+  "title": "FrontmostIfBrowser99",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)",
+      "description": "Basic Navigation Commands (browser)99",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -254,7 +254,7 @@
           "description": "B_縮小",
           "type": "basic",
           "from": <%= from("b", ["caps_lock"]) %>,
-          "to": <%= to([["hyphen", ["left_shift", "right_gui"]]]) %>,
+          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [<%= frontmost_application_if("browser") %>]
         },
         {
@@ -268,7 +268,7 @@
           "description": "RightOption + B_縮小",
           "type": "basic",
           "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+          "to": <%= to([["hyphen", ["right_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_if("browser") %> ]
         }
       ]
