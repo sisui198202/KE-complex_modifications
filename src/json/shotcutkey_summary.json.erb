@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
   {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
@@ -226,13 +226,6 @@
           "from": <%= from("d", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["7", ["right_alt", "left_shift", "right_gui"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
-          "description": "RightOption + S_SummaryディレクトリWorkflow",
-          "type": "basic",
-          "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["hyphen", ["right_shift", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "RightAlt + V_AlfredSnippetsCall",

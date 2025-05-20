@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary98",
+  "title": "FrontmostIfPathFinder_summary",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary98",
+      "description": "FrontmostIfPathFinder_summary",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -891,6 +891,38 @@
               "modifiers": [
                 "right_gui",
                 "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + S_SummaryディレクトリWorkflow",
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
               ]
             }
           ],
