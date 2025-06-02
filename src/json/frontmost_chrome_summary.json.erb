@@ -26,6 +26,13 @@
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
           },
           {
+            "description": "RightOption + T_検証-GlobalSearch",
+            "type": "basic",
+            "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
+            "to": <%= to([["f", ["right_gui", "right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+          },
+          {
             "description": "LeftCommand + openbracket_検証-プロジェクト内に存在するファイルを指定して開く",
             "type": "basic",
             "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
@@ -107,13 +114,6 @@
           "type": "basic",
           "from": <%= from("t", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["period", "left_option"]]) %>,
-          "conditions": [ <%= frontmost_application_if("chrome") %> ]
-        },
-        {
-          "description": "RightOption + T_GlobalSearch",
-          "type": "basic",
-          "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["f", ["right_gui", "right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         },
         {

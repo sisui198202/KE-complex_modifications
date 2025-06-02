@@ -101,6 +101,38 @@
           ]
         },
         {
+          "description": "RightOption + T_検証-GlobalSearch",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "right_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_gui",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "LeftCommand + openbracket_検証-プロジェクト内に存在するファイルを指定して開く",
           "type": "basic",
           "from": {
@@ -460,38 +492,6 @@
             {
               "key_code": "period",
               "modifiers": "left_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + T_GlobalSearch",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_gui",
-                "right_option"
-              ]
             }
           ],
           "conditions": [
