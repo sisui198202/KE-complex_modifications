@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary",
+    "title": "FrontmostIfChrome_summary99",
     "rules": [
       {
-        "description": "FrontmostIfChrome_summary",
+        "description": "FrontmostIfChrome_summary99",
         "manipulators": [
           {
             "description": "RightCommand + i_検証-ページにフォーカス",
@@ -103,10 +103,17 @@
             "conditions": [ <%= frontmost_application_if("chrome") %> ]
           },
         {
-          "description": "RightOption + T_BookMarkSearch",
+          "description": "LeftOption + T_BookMarkSearch",
+          "type": "basic",
+          "from": <%= from("t", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["period", "left_option"]]) %>,
+          "conditions": [ <%= frontmost_application_if("chrome") %> ]
+        },
+        {
+          "description": "RightOption + T_GlobalSearch",
           "type": "basic",
           "from": <%= from("t", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["period", "left_option"]]) %>,
+          "to": <%= to([["f", ["right_gui", "right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("chrome") %> ]
         },
         {

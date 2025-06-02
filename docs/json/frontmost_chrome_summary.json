@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary",
+  "title": "FrontmostIfChrome_summary99",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary",
+      "description": "FrontmostIfChrome_summary99",
       "manipulators": [
         {
           "description": "RightCommand + i_検証-ページにフォーカス",
@@ -443,7 +443,36 @@
           ]
         },
         {
-          "description": "RightOption + T_BookMarkSearch",
+          "description": "LeftOption + T_BookMarkSearch",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "period",
+              "modifiers": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + T_GlobalSearch",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -458,8 +487,11 @@
           },
           "to": [
             {
-              "key_code": "period",
-              "modifiers": "left_option"
+              "key_code": "f",
+              "modifiers": [
+                "right_gui",
+                "right_option"
+              ]
             }
           ],
           "conditions": [
