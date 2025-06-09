@@ -261,6 +261,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   vscode_bundle_identifers = [
     "^com.microsoft.VSCode$",
   ]
+  cursor_bundle_identifers = [
+    "^com.todesktop.230313mzl4w4u92$",
+  ]
   eclipse_bundle_identifers = [
     "^epp.package.java$",
     "^epp.package.jee$"
@@ -346,6 +349,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(sublime_bundle_identifers)
     when "vscode"
       bundle_identifiers.concat(vscode_bundle_identifers)
+    when "cursor"
+      bundle_identifiers.concat(cursor_bundle_identifers)
     when "eclipse"
       bundle_identifiers.concat(eclipse_bundle_identifers)
     when "intellij"
