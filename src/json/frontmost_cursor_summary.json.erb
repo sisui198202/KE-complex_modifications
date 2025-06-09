@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfCursor_summary",
+    "title": "FrontmostIfCursor_summary1",
     "rules": [
       {
-        "description": "FrontmostIfCursor_summary",
+        "description": "FrontmostIfCursor_summary1",
         "manipulators": [
           {
             "description": "RightOption + J_カレント行から最終行まで選択",
@@ -194,21 +194,21 @@
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "RightAlt + A_VscodeNewWindows",
+            "description": "RightAlt + A_CursorNewWindows",
             "type": "basic",
             "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
             "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "LeftAlt + A_VscodeNewFolderCreate",
+            "description": "LeftAlt + A_CursorNewFolderCreate",
             "type": "basic",
             "from": <%= from("a", ["left_alt"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["right_alt", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "LeftAlt + F_VscodeNewFileCreate",
+            "description": "LeftAlt + F_CursorNewFileCreate",
             "type": "basic",
             "from": <%= from("f", ["left_alt"], ["caps_lock"]) %>,
             "to": <%= to([["1", ["right_alt", "right_gui"]]]) %>,

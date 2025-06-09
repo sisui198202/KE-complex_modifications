@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfCursor_summary",
+  "title": "FrontmostIfCursor_summary1",
   "rules": [
     {
-      "description": "FrontmostIfCursor_summary",
+      "description": "FrontmostIfCursor_summary1",
       "manipulators": [
         {
           "description": "RightOption + J_カレント行から最終行まで選択",
@@ -863,7 +863,7 @@
           ]
         },
         {
-          "description": "RightAlt + A_VscodeNewWindows",
+          "description": "RightAlt + A_CursorNewWindows",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -895,7 +895,7 @@
           ]
         },
         {
-          "description": "LeftAlt + A_VscodeNewFolderCreate",
+          "description": "LeftAlt + A_CursorNewFolderCreate",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -927,7 +927,7 @@
           ]
         },
         {
-          "description": "LeftAlt + F_VscodeNewFileCreate",
+          "description": "LeftAlt + F_CursorNewFileCreate",
           "type": "basic",
           "from": {
             "key_code": "f",
