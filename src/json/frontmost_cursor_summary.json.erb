@@ -1,14 +1,28 @@
 {
-    "title": "FrontmostIfCursor_summary2",
+    "title": "FrontmostIfCursor_summary",
     "rules": [
       {
-        "description": "FrontmostIfCursor_summary2",
+        "description": "FrontmostIfCursor_summary",
         "manipulators": [
           {
             "description": "RightOption + J_カレント行から最終行まで選択",
             "type": "basic",
             "from": <%= from("j", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["down_arrow", ["left_shift", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("cursor") %> ]
+          },
+          {
+            "description": "RightOption + C_chat",
+            "type": "basic",
+            "from": <%= from("c", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["l", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("cursor") %> ]
+          },
+          {
+            "description": "RightOption + G_generate",
+            "type": "basic",
+            "from": <%= from("g", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["k", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
