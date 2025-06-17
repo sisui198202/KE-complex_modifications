@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfObsidian_summary93",
+    "title": "FrontmostIfObsidian_summary92",
     "rules": [
       {
-        "description": "FrontmostIfObsidian_summary93",
+        "description": "FrontmostIfObsidian_summary92",
         "manipulators": [
           {
             "description": "RightOption + E_リーディングビュー",
@@ -23,6 +23,13 @@
             "type": "basic",
             "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["5", ["left_shift", "right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("obsidian") %> ]
+          },
+          {
+            "description": "LeftOption + T_右サイドバーに切り替える",
+            "type": "basic",
+            "from": <%= from("t", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["4", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("obsidian") %> ]
           }
         ]
