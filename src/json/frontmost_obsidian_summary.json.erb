@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfObsidian_summary2",
+    "title": "FrontmostIfObsidian_summary",
     "rules": [
       {
-        "description": "FrontmostIfObsidian_summary2",
+        "description": "FrontmostIfObsidian_summary",
         "manipulators": [
           {
-            "description": "RightOption + R_リーディングビュー",
+            "description": "RightOption + E_リーディングビュー",
             "type": "basic",
-            "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
+            "from": <%= from("e", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["7", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("obsidian") %> ]
           }

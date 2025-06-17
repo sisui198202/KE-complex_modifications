@@ -1,14 +1,14 @@
 {
-  "title": "FrontmostIfObsidian_summary2",
+  "title": "FrontmostIfObsidian_summary",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary2",
+      "description": "FrontmostIfObsidian_summary",
       "manipulators": [
         {
-          "description": "RightOption + R_リーディングビュー",
+          "description": "RightOption + E_リーディングビュー",
           "type": "basic",
           "from": {
-            "key_code": "r",
+            "key_code": "e",
             "modifiers": {
               "mandatory": [
                 "right_option"
