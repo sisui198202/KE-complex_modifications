@@ -1,14 +1,21 @@
 {
-    "title": "FrontmostIfObsidian_summary99",
+    "title": "FrontmostIfObsidian_summary98",
     "rules": [
       {
-        "description": "FrontmostIfObsidian_summary99",
+        "description": "FrontmostIfObsidian_summary98",
         "manipulators": [
           {
             "description": "RightOption + E_リーディングビュー",
             "type": "basic",
             "from": <%= from("e", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["7", ["left_shift", "right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("obsidian") %> ]
+          },
+          {
+            "description": "RightOption + W_ソースモード",
+            "type": "basic",
+            "from": <%= from("w", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["6", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("obsidian") %> ]
           }
         ]
