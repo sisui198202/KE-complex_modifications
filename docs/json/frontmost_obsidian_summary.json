@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfObsidian_summary1",
+  "title": "FrontmostIfObsidian_summary12",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary1",
+      "description": "FrontmostIfObsidian_summary12",
       "manipulators": [
         {
-          "description": "RightOption + E_リーディングビュー",
+          "description": "RightOption + E_編集モード/プレビューモードを切り替える",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "description": "RightOption + W_ソースモード",
+          "description": "RightOption + W_ライブプレビュー/ソースモードを切り替える",
           "type": "basic",
           "from": {
             "key_code": "w",
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "description": "LeftCommand + T_左サイドバーに切り替える",
+          "description": "LeftCommand + T_左サイドバーを開閉",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -101,7 +101,7 @@
           ]
         },
         {
-          "description": "LeftOption + T_右サイドバーに切り替える",
+          "description": "LeftOption + T_右サイドバーを開閉",
           "type": "basic",
           "from": {
             "key_code": "t",
