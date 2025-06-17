@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfObsidian_summary92",
+  "title": "FrontmostIfObsidian_summary91",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary92",
+      "description": "FrontmostIfObsidian_summary91",
       "manipulators": [
         {
           "description": "RightOption + E_リーディングビュー",
@@ -117,6 +117,38 @@
           "to": [
             {
               "key_code": "4",
+              "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + Oオウ_右に分割",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
               "modifiers": [
                 "left_shift",
                 "right_option"
