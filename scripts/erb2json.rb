@@ -355,7 +355,7 @@ def frontmost_application(type, app_aliases, as_json = true)
     when "cursor"
       bundle_identifiers.concat(cursor_bundle_identifers)
     when "obsidian"
-      bundle_identifiers.concat(cursor_bundle_identifers)
+      bundle_identifiers.concat(obsidian_bundle_identifers)
     when "eclipse"
       bundle_identifiers.concat(eclipse_bundle_identifers)
     when "intellij"

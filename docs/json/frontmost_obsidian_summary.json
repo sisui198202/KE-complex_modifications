@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfObsidian_summary",
+  "title": "FrontmostIfObsidian_summary99",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary",
+      "description": "FrontmostIfObsidian_summary99",
       "manipulators": [
         {
           "description": "RightOption + E_リーディングビュー",
@@ -31,7 +31,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.todesktop.230313mzl4w4u92$"
+                "^md.obsidian$"
               ]
             }
           ]
