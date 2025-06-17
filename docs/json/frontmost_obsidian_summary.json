@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfObsidian_summary95",
+  "title": "FrontmostIfObsidian_summary94",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary95",
+      "description": "FrontmostIfObsidian_summary94",
       "manipulators": [
         {
           "description": "RightOption + E_リーディングビュー",
@@ -75,7 +75,7 @@
             "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "left_gui"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"

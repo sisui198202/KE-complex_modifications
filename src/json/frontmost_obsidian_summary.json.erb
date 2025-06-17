@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfObsidian_summary95",
+    "title": "FrontmostIfObsidian_summary94",
     "rules": [
       {
-        "description": "FrontmostIfObsidian_summary95",
+        "description": "FrontmostIfObsidian_summary94",
         "manipulators": [
           {
             "description": "RightOption + E_リーディングビュー",
@@ -21,7 +21,7 @@
           {
             "description": "LeftCommand + T_左サイドバーに切り替える",
             "type": "basic",
-            "from": <%= from("t", ["left_gui"], ["caps_lock"]) %>,
+            "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["5", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("obsidian") %> ]
           }
