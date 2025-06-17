@@ -264,6 +264,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   cursor_bundle_identifers = [
     "^com.todesktop.230313mzl4w4u92$",
   ]
+  obsidian_bundle_identifers = [
+    "^md.obsidian$",
+  ]
   eclipse_bundle_identifers = [
     "^epp.package.java$",
     "^epp.package.jee$"
@@ -350,6 +353,8 @@ def frontmost_application(type, app_aliases, as_json = true)
     when "vscode"
       bundle_identifiers.concat(vscode_bundle_identifers)
     when "cursor"
+      bundle_identifiers.concat(cursor_bundle_identifers)
+    when "obsidian"
       bundle_identifiers.concat(cursor_bundle_identifers)
     when "eclipse"
       bundle_identifiers.concat(eclipse_bundle_identifers)
