@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfObsidian_summary91",
+    "title": "FrontmostIfObsidian_summary90",
     "rules": [
       {
-        "description": "FrontmostIfObsidian_summary91",
+        "description": "FrontmostIfObsidian_summary90",
         "manipulators": [
           {
             "description": "RightOption + E_リーディングビュー",
@@ -35,7 +35,7 @@
           {
             "description": "LeftCommand + Oオウ_右に分割",
             "type": "basic",
-            "from": <%= from("o", ["left_option"], ["caps_lock"]) %>,
+            "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["3", ["left_shift", "right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("obsidian") %> ]
           }
