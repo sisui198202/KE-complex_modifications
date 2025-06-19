@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfObsidian_summary",
+  "title": "FrontmostIfObsidian_summary99",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary",
+      "description": "FrontmostIfObsidian_summary99",
       "manipulators": [
         {
           "description": "LeftCommand + N_HeadRowCursol",
@@ -211,6 +211,38 @@
           "to": [
             {
               "key_code": "3",
+              "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + openbracket_コマンドパレットを開く",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
               "modifiers": [
                 "left_shift",
                 "right_option"
