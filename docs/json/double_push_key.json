@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey987",
+  "title": "DoublePushKey",
   "rules": [
     {
       "description": "Double RightShift_Clipboard History(Double Push)",
@@ -113,7 +113,8 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com.microsoft.VSCode$",
-                "^com.googlecode.iterm2$"
+                "^com.googlecode.iterm2$",
+                "^com.todesktop.230313mzl4w4u92$"
               ]
             },
             {
