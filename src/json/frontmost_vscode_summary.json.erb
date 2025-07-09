@@ -1,15 +1,15 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary1",
+        "description": "FrontmostIfVscode_summary",
         "manipulators": [
           {
             "description": "LeftCommand + S_Cut",
             "type": "basic",
             "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
             "to": <%= to([["x", ["left_option", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
             "description": "RightOption + J_カレント行から最終行まで選択",
