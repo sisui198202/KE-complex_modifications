@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfVscode_summary",
+    "title": "FrontmostIfVscode_summary1",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary",
+        "description": "FrontmostIfVscode_summary1",
         "manipulators": [
+          {
+            "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
+            "type": "basic",
+            "from": <%= from("q", ["right_option"], ["caps_lock"]) %>,
+            "to": <%= to([["hyphen", ["left_option", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
           {
             "description": "LeftCommand + S_Cut",
             "type": "basic",
