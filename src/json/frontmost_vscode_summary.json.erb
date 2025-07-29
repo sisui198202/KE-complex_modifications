@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary99",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary1",
+        "description": "FrontmostIfVscode_summary99",
         "manipulators": [
+          {
+            "description": "LeftCommand + backslash_editor.action.openLink",
+            "type": "basic",
+            "from": <%= from("backslash", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["l", ["left_option", "right_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
           {
             "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
             "type": "basic",

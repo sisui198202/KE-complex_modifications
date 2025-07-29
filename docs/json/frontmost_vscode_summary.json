@@ -1,9 +1,41 @@
 {
-  "title": "FrontmostIfVscode_summary1",
+  "title": "FrontmostIfVscode_summary99",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary1",
+      "description": "FrontmostIfVscode_summary99",
       "manipulators": [
+        {
+          "description": "LeftCommand + backslash_editor.action.openLink",
+          "type": "basic",
+          "from": {
+            "key_code": "backslash",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "left_option",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
         {
           "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
           "type": "basic",
