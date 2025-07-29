@@ -1,16 +1,9 @@
 {
-    "title": "FrontmostIfVscode_summary99",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary99",
+        "description": "FrontmostIfVscode_summary",
         "manipulators": [
-          {
-            "description": "LeftCommand + backslash_editor.action.openLink",
-            "type": "basic",
-            "from": <%= from("backslash", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["l", ["left_option", "right_shift"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("vscode") %> ]
-          },
           {
             "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
             "type": "basic",
@@ -564,6 +557,30 @@
       "from": {
             "key_code": "spacebar",
             "modifiers": { "mandatory": [ "left_shift" ] }
+      },
+      "to": [
+        {
+          "pointing_button": "button1",
+          "modifiers": [
+            "left_gui"
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+              "^com.microsoft.VSCode$"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftCommand + backslash_followlink",
+      "type": "basic",
+      "from": {
+            "key_code": "backslash",
+            "modifiers": { "mandatory": [ "left_control" ] }
       },
       "to": [
         {
