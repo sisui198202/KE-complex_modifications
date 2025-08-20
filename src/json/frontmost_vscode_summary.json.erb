@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary",
+    "title": "FrontmostIfVscode_summary99",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary",
+        "description": "FrontmostIfVscode_summary99",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -59,6 +59,69 @@
             "from": <%= from("n",["caps_lock"]) %>,
             "to": <%= to([["left_arrow", ["fn"]]]) %>,
             "conditions": [ <%= frontmost_application_if("browser") %> ]
+          },
+          {
+            "description": "Slash_Zenmode",
+            "type": "basic",
+            "from": <%= from("slash", ["caps_lock"]) %>,
+            "to": <%= to([["u", ["right_control", "right_alt"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "X_エディター内のシンボルへ移動",
+            "type": "basic",
+            "from": <%= from("x", ["caps_lock"]) %>,
+            "to": <%= to([["o", ["left_shift", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "S_定義に移動",
+            "type": "basic",
+            "from": <%= from("s", ["caps_lock"]) %>,
+            "to": <%= to([["2", ["left_shift", "right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "Y_アウトラインビューにフォーカスを置く",
+            "type": "basic",
+            "from": <%= from("y", ["caps_lock"]) %>,
+            "to": <%= to([["6", ["left_shift", "right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "A_CurrentRowHeadCursol",
+            "type": "basic",
+            "from": <%= from("a", ["caps_lock"]) %>,
+            "to": <%= to([["left_arrow", ["left_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "semicolon_CurrentRowCursolEnd_vscode上で、直接 Ctrl + ;で設定済み",
+            "type": "basic",
+            "from": <%= from("semicolon", ["caps_lock"]) %>,
+            "to": <%= to([["semicolon", ["left_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "closebracket_editor.action.jumpToBracket",
+            "type": "basic",
+            "from": <%= from("close_bracket", ["caps_lock"]) %>,
+            "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "B_BookmarkSet",
+            "type": "basic",
+            "from": <%= from("b", ["caps_lock"]) %>,
+            "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "V_NextBookmark",
+            "type": "basic",
+            "from": <%= from("v", ["caps_lock"]) %>,
+            "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
             "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
