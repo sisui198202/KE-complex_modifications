@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary22",
+    "title": "FrontmostIfVscode_summary77",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary22",
+        "description": "FrontmostIfVscode_summary77",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -184,6 +184,20 @@
             "type": "basic",
             "from": <%= from("w", ["caps_lock"]) %>,
             "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "Comma_LatestTabToggle",
+            "type": "basic",
+            "from": <%= from("comma", ["caps_lock"]) %>,
+            "to": <%= to([["tab", ["left_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "Period_NextTab",
+            "type": "basic",
+            "from": <%= from("period", ["caps_lock"]) %>,
+            "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {

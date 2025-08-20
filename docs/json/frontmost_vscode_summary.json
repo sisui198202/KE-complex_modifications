@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary22",
+  "title": "FrontmostIfVscode_summary77",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary22",
+      "description": "FrontmostIfVscode_summary77",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -728,6 +728,63 @@
               "modifiers": [
                 "right_control",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Comma_LatestTabToggle",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Period_NextTab",
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": [
+                "left_control",
+                "left_shift"
               ]
             }
           ],
