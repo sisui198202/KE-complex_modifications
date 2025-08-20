@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary96",
+  "title": "FrontmostIfVscode_summary95",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary96",
+      "description": "FrontmostIfVscode_summary95",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -556,6 +556,70 @@
               "key_code": "d",
               "modifiers": [
                 "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "-(ハイフン)_3行のエディターレイアウト",
+          "type": "basic",
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "=(イコール)_3列のエディターレイアウト",
+          "type": "basic",
+          "from": {
+            "key_code": "equal_sign",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
               ]
             }
           ],

@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary96",
+    "title": "FrontmostIfVscode_summary95",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary96",
+        "description": "FrontmostIfVscode_summary95",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -142,6 +142,20 @@
             "type": "basic",
             "from": <%= from("c", ["caps_lock"]) %>,
             "to": <%= to([["d", ["right_option"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "-(ハイフン)_3行のエディターレイアウト",
+            "type": "basic",
+            "from": <%= from("hyphen", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["3", ["right_shift", "right_gui",]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "=(イコール)_3列のエディターレイアウト",
+            "type": "basic",
+            "from": <%= from("equal_sign", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["4", ["right_shift", "right_gui",]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
