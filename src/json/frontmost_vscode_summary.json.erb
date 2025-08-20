@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary99",
+    "title": "FrontmostIfVscode_summary98",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary99",
+        "description": "FrontmostIfVscode_summary98",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -47,18 +47,18 @@
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
-            "description": "M_最終行へ",
+            "description": "N_HeadRowCursol",
             "type": "basic",
-            "from": <%= from("m",["caps_lock"]) %>,
-            "to": <%= to([["right_arrow", ["fn"]]]) %>,
+            "from": <%= from("n", ["caps_lock"]) %>,
+            "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
-            "description": "N_最初の行へ",
+            "description": "M_EndRowCursol",
             "type": "basic",
-            "from": <%= from("n",["caps_lock"]) %>,
-            "to": <%= to([["left_arrow", ["fn"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("browser") %> ]
+            "from": <%= from("m", ["caps_lock"]) %>,
+            "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
             "description": "Slash_Zenmode",
