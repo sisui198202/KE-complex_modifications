@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfCursor_summary99",
+  "title": "FrontmostIfCursor_summary987",
   "rules": [
     {
-      "description": "FrontmostIfCursor_summary99",
+      "description": "FrontmostIfCursor_summary987",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -844,6 +844,62 @@
               "modifiers": [
                 "left_gui",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.todesktop.230313mzl4w4u92$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "C_chat",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.todesktop.230313mzl4w4u92$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Z_generate",
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],

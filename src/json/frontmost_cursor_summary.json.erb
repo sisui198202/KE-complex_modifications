@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfCursor_summary99",
+    "title": "FrontmostIfCursor_summary987",
     "rules": [
       {
-        "description": "FrontmostIfCursor_summary99",
+        "description": "FrontmostIfCursor_summary987",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -212,6 +212,20 @@
             "type": "basic",
             "from": <%= from("0", ["caps_lock"]) %>,
             "to": <%= to([["9", ["left_gui", "left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("cursor") %> ]
+          },
+          {
+            "description": "C_chat",
+            "type": "basic",
+            "from": <%= from("c", ["caps_lock"]) %>,
+            "to": <%= to([["l", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("cursor") %> ]
+          },
+          {
+            "description": "Z_generate",
+            "type": "basic",
+            "from": <%= from("z", ["caps_lock"]) %>,
+            "to": <%= to([["k", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
