@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary2",
+    "title": "FrontmostIfVscode_summary22",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary2",
+        "description": "FrontmostIfVscode_summary22",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -173,9 +173,16 @@
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
-            "description": "G_フォルダービューにフォーカスを置く",
+            "description": "G_FileTabClose",
             "type": "basic",
             "from": <%= from("g", ["caps_lock"]) %>,
+            "to": <%= to([["w", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "W_フォルダービューにフォーカスを置く",
+            "type": "basic",
+            "from": <%= from("w", ["caps_lock"]) %>,
             "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },

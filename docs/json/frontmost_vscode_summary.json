@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary2",
+  "title": "FrontmostIfVscode_summary22",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary2",
+      "description": "FrontmostIfVscode_summary22",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -684,10 +684,38 @@
           ]
         },
         {
-          "description": "G_フォルダービューにフォーカスを置く",
+          "description": "G_FileTabClose",
           "type": "basic",
           "from": {
             "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "W_フォルダービューにフォーカスを置く",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
