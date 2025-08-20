@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary95",
+  "title": "FrontmostIfVscode_summary94",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary95",
+      "description": "FrontmostIfVscode_summary94",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -575,9 +575,6 @@
             "key_code": "hyphen",
             "modifiers": {
               "mandatory": [
-                "left_control"
-              ],
-              "optional": [
                 "caps_lock"
               ]
             }
@@ -607,9 +604,6 @@
             "key_code": "equal_sign",
             "modifiers": {
               "mandatory": [
-                "left_control"
-              ],
-              "optional": [
                 "caps_lock"
               ]
             }
