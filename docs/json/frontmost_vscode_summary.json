@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary94",
+  "title": "FrontmostIfVscode_summary93",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary94",
+      "description": "FrontmostIfVscode_summary93",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -614,6 +614,35 @@
               "modifiers": [
                 "right_shift",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "d_FocusNeighboringGroup",
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
               ]
             }
           ],
