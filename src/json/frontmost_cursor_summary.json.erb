@@ -110,20 +110,6 @@
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "B_BookmarkSet",
-            "type": "basic",
-            "from": <%= from("b", ["caps_lock"]) %>,
-            "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("cursor") %> ]
-          },
-          {
-            "description": "V_NextBookmark",
-            "type": "basic",
-            "from": <%= from("v", ["caps_lock"]) %>,
-            "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("cursor") %> ]
-          },
-          {
             "description": "T_ToggleSidebarOnOff",
             "type": "basic",
             "from": <%= from("t", ["caps_lock"]) %>,
@@ -135,13 +121,6 @@
             "type": "basic",
             "from": <%= from("r", ["caps_lock"]) %>,
             "to": <%= to([["2", ["right_option", "right_gui", "left_shift"]], ["d", ["right_alt"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("cursor") %> ]
-          },
-          {
-            "description": "C_Column2SplitEditerScreen",
-            "type": "basic",
-            "from": <%= from("c", ["caps_lock"]) %>,
-            "to": <%= to([["d", ["right_option"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {

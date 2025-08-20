@@ -418,64 +418,6 @@
           ]
         },
         {
-          "description": "B_BookmarkSet",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "k",
-              "modifiers": [
-                "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.todesktop.230313mzl4w4u92$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "V_NextBookmark",
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": [
-                "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.todesktop.230313mzl4w4u92$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "T_ToggleSidebarOnOff",
           "type": "basic",
           "from": {
@@ -528,34 +470,6 @@
               "key_code": "d",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.todesktop.230313mzl4w4u92$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "C_Column2SplitEditerScreen",
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_option"
               ]
             }
           ],

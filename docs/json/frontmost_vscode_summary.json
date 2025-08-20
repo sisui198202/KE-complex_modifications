@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary44",
+  "title": "FrontmostIfVscode_summary",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary44",
+      "description": "FrontmostIfVscode_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -528,34 +528,6 @@
               "key_code": "d",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "C_Column2SplitEditerScreen",
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_option"
               ]
             }
           ],
