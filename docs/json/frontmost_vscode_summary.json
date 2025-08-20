@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary77",
+  "title": "FrontmostIfVscode_summary66",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary77",
+      "description": "FrontmostIfVscode_summary66",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -627,7 +627,7 @@
           ]
         },
         {
-          "description": "D_FocusNeighboringGroup",
+          "description": "D_workbench.action.moveEditorToNextGroup",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -785,6 +785,35 @@
               "modifiers": [
                 "left_control",
                 "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "E_FocusNeighboringGroup",
+          "type": "basic",
+          "from": {
+            "key_code": "E",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
               ]
             }
           ],

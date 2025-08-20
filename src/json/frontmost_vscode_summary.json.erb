@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary77",
+    "title": "FrontmostIfVscode_summary66",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary77",
+        "description": "FrontmostIfVscode_summary66",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -159,7 +159,7 @@
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
-            "description": "D_FocusNeighboringGroup",
+            "description": "D_workbench.action.moveEditorToNextGroup",
             "type": "basic",
             "from": <%= from("d", ["caps_lock"]) %>,
             "to": <%= to([["d", ["right_alt"]]]) %>,
@@ -198,6 +198,13 @@
             "type": "basic",
             "from": <%= from("period", ["caps_lock"]) %>,
             "to": <%= to([["tab", ["left_control", "left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "E_FocusNeighboringGroup",
+            "type": "basic",
+            "from": <%= from("E", ["caps_lock"]) %>,
+            "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
