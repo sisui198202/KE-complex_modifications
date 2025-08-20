@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary1",
+        "description": "FrontmostIfVscode_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -10,6 +10,55 @@
             "from": <%= from("j", ["caps_lock"]) %>,
             "to": <%= to([["down_arrow"]]) %>,
             "conditions": [<%= frontmost_application_if("vscode") %>]
+          },
+          {
+            "description": "K_UpArrow",
+            "type": "basic",
+            "from": <%= from("k",["caps_lock"]) %>,
+            "to": <%= to([["up_arrow"]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "L_RightArrow",
+            "type": "basic",
+            "from": <%= from("l", ["caps_lock"]) %>,
+            "to": <%= to([["right_arrow"]]) %>,
+            "conditions": [<%= frontmost_application_if("vscode") %>]
+          },
+          {
+            "description": "H_LeftArrow",
+            "type": "basic",
+            "from": <%= from("h", ["caps_lock"]) %>,
+            "to": <%= to([["left_arrow"]]) %>,
+            "conditions": [<%= frontmost_application_if("vscode") %>]
+          },
+          {
+            "description": "i_PageDown",
+            "type": "basic",
+            "from": <%= from("i", ["caps_lock"]) %>,
+            "to": <%= to([["down_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "O(オー)_PageUp",
+            "type": "basic",
+            "from": <%= from("o", ["caps_lock"]) %>,
+            "to": <%= to([["up_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "M_最終行へ",
+            "type": "basic",
+            "from": <%= from("m",["caps_lock"]) %>,
+            "to": <%= to([["right_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "N_最初の行へ",
+            "type": "basic",
+            "from": <%= from("n",["caps_lock"]) %>,
+            "to": <%= to([["left_arrow", ["fn"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("browser") %> ]
           },
           {
             "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
