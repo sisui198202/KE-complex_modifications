@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfCursor_summary987",
+    "title": "FrontmostIfCursor_summary",
     "rules": [
       {
-        "description": "FrontmostIfCursor_summary987",
+        "description": "FrontmostIfCursor_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -107,6 +107,20 @@
             "type": "basic",
             "from": <%= from("close_bracket", ["caps_lock"]) %>,
             "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("cursor") %> ]
+          },
+          {
+            "description": "B_BookmarkSet",
+            "type": "basic",
+            "from": <%= from("b", ["caps_lock"]) %>,
+            "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("cursor") %> ]
+          },
+          {
+            "description": "V_NextBookmark",
+            "type": "basic",
+            "from": <%= from("v", ["caps_lock"]) %>,
+            "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
@@ -222,7 +236,7 @@
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "Z_generate",
+            "description": "Z_Generate",
             "type": "basic",
             "from": <%= from("z", ["caps_lock"]) %>,
             "to": <%= to([["k", ["right_gui"]]]) %>,

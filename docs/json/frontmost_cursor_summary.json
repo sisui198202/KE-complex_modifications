@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfCursor_summary987",
+  "title": "FrontmostIfCursor_summary",
   "rules": [
     {
-      "description": "FrontmostIfCursor_summary987",
+      "description": "FrontmostIfCursor_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -402,6 +402,64 @@
           "to": [
             {
               "key_code": "m",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.todesktop.230313mzl4w4u92$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "B_BookmarkSet",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.todesktop.230313mzl4w4u92$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "V_NextBookmark",
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
               "modifiers": [
                 "right_option",
                 "right_gui"
@@ -885,7 +943,7 @@
           ]
         },
         {
-          "description": "Z_generate",
+          "description": "Z_Generate",
           "type": "basic",
           "from": {
             "key_code": "z",
