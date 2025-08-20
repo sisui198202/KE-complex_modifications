@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary66",
+    "title": "FrontmostIfVscode_summary55",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary66",
+        "description": "FrontmostIfVscode_summary55",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -203,7 +203,7 @@
           {
             "description": "E_FocusNeighboringGroup",
             "type": "basic",
-            "from": <%= from("E", ["caps_lock"]) %>,
+            "from": <%= from("e", ["caps_lock"]) %>,
             "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
