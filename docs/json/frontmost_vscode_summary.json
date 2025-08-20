@@ -5,6 +5,31 @@
       "description": "FrontmostIfVscode_summary",
       "manipulators": [
         {
+          "description": "J_DownArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
           "type": "basic",
           "from": {
