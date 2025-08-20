@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary98",
+  "title": "FrontmostIfVscode_summary97",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary98",
+      "description": "FrontmostIfVscode_summary97",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -463,6 +463,107 @@
               "modifiers": [
                 "right_option",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "T_ToggleSidebarOnOff",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "right_control",
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "R_Row2SplitEditerScreen",
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option",
+                "right_gui",
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "C_Column2SplitEditerScreen",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_gui",
+                "right_alt"
               ]
             }
           ],
