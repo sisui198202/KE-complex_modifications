@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary",
+  "title": "FrontmostIfVscode_summary99",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary",
+      "description": "FrontmostIfVscode_summary99",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -770,7 +770,7 @@
           ]
         },
         {
-          "description": "E_FocusNeighboringGroup",
+          "description": "E_セカンダリサイドバー切替",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -782,10 +782,10 @@
           },
           "to": [
             {
-              "key_code": "i",
+              "key_code": "b",
               "modifiers": [
-                "right_gui",
-                "right_alt"
+                "right_option",
+                "right_gui"
               ]
             }
           ],
@@ -799,7 +799,7 @@
           ]
         },
         {
-          "description": "U_セカンダリサイドバー切替",
+          "description": "U_FocusNeighboringGroup",
           "type": "basic",
           "from": {
             "key_code": "u",
@@ -811,10 +811,10 @@
           },
           "to": [
             {
-              "key_code": "b",
+              "key_code": "i",
               "modifiers": [
-                "right_option",
-                "right_gui"
+                "right_gui",
+                "right_alt"
               ]
             }
           ],
