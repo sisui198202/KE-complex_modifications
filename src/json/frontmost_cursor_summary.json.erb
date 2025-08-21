@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfCursor_summary",
+    "title": "FrontmostIfCursor_summary99",
     "rules": [
       {
-        "description": "FrontmostIfCursor_summary",
+        "description": "FrontmostIfCursor_summary99",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -194,17 +194,17 @@
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "E_FocusNeighboringGroup",
+            "description": "E_セカンダリサイドバー切替",
             "type": "basic",
             "from": <%= from("e", ["caps_lock"]) %>,
-            "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
+            "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
-            "description": "U_セカンダリサイドバー切替",
+            "description": "U_FocusNeighboringGroup",
             "type": "basic",
             "from": <%= from("u", ["caps_lock"]) %>,
-            "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
+            "to": <%= to([["i", ["right_gui", "right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("cursor") %> ]
           },
           {
