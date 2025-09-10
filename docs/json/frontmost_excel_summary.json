@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary97",
+  "title": "FrontmostIfExcel_summary",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary97",
+      "description": "FrontmostIfExcel_summary",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -50,6 +50,34 @@
               "modifiers": [
                 "right_shift",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption  + E_非表示",
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_control"
               ]
             }
           ],
