@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary",
+    "title": "FrontmostIfExcel_summary2",
     "rules": [
       {
-        "description": "FrontmostIfExcel_summary",
+        "description": "FrontmostIfExcel_summary2",
         "manipulators": [
           {
             "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -23,6 +23,13 @@
             "type": "basic",
             "from": <%= from("e", ["left_option"]) %>,
             "to": <%= to([["0", ["left_control"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("excel") %> ]
+          },
+          {
+            "description": "RightOption  + E_再表示",
+            "type": "basic",
+            "from": <%= from("e", ["right_option"]) %>,
+            "to": <%= to([["0", ["left_shift", "left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("excel") %> ]
           },
           {
@@ -110,9 +117,9 @@
             "conditions": [ <%= frontmost_application_if("excel") %> ]
           },
           {
-            "description": "RightOption + E_列幅変更",
+            "description": "LeftOption + C_列幅変更",
             "type": "basic",
-            "from": <%= from("e", ["right_option"]) %>,
+            "from": <%= from("c", ["left_option"]) %>,
             "to": <%= to([["3", ["right_option", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("excel") %> ]
           },

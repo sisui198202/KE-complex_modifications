@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary",
+  "title": "FrontmostIfExcel_summary2",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary",
+      "description": "FrontmostIfExcel_summary2",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -77,6 +77,35 @@
             {
               "key_code": "0",
               "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption  + E_再表示",
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_shift",
                 "left_control"
               ]
             }
@@ -432,13 +461,13 @@
           ]
         },
         {
-          "description": "RightOption + E_列幅変更",
+          "description": "LeftOption + C_列幅変更",
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_option"
               ]
             }
           },
