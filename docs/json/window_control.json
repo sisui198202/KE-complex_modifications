@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary1",
+  "title": "WindowControlSummary2",
   "rules": [
     {
-      "description": "WindowsControlSummary1",
+      "description": "WindowsControlSummary2",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -475,7 +475,7 @@
           ]
         },
         {
-          "description": "RightOption + G_FirefoxActiveWindow",
+          "description": "RightOption + G_SafariActiveWindow",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -490,7 +490,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Firefox.app'"
+              "shell_command": "open -a 'Safari.app'"
             }
           ],
           "conditions": [
