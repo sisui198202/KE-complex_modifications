@@ -1,9 +1,16 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
   {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
+        {
+          "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
+          "type": "basic",
+          "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
+          "to": <%= to([["0", ["left_control", "right_alt"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
         {
           "description": "RightOption + R_Record Screen/Stop Recording",
           "type": "basic",
