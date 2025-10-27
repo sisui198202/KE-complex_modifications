@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1",
+  "title": "ShotCutKeySummary2",
   "rules": [
     {
-      "description": "ShotCutKeySummary1",
+      "description": "ShotCutKeySummary2",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
