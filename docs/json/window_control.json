@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary2",
+  "title": "WindowControlSummary",
   "rules": [
     {
-      "description": "WindowsControlSummary2",
+      "description": "WindowsControlSummary",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -783,42 +783,6 @@
           ]
         },
         {
-          "description": "RightOption + E_ActiveParellDeskWindowsExploer",
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
           "description": "RightOption + I_ActiveMacWindowShare/img/pdf",
           "type": "basic",
           "from": {
@@ -835,46 +799,6 @@
           "to": [
             {
               "shell_command": "open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/pdf'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + Q_ActiveParellDeskWindowsExploerDesktop",
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'"
-            },
-            {
-              "key_code": "c",
-              "modifiers": "left_control"
             }
           ],
           "conditions": [
