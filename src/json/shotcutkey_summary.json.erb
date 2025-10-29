@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
   {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary99",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -237,9 +237,9 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftAlt + U_UniversalActions",
+          "description": "RightAlt + W_UniversalActions",
           "type": "basic",
-          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+          "from": <%= from("w", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["semicolon", ["left_control", "right_alt"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
@@ -264,46 +264,6 @@
           "to": <%= to([["f1", ["left_gui","right_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
-        {
-          "description": "RightOption + W_コレクションを前面/背面に移動",
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "6",
-              "modifiers": [
-                "right_gui",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.vmware.fusion$",
-                "^com.vmware.horizon$",
-                "^com.vmware.view$",
-                "^com.parallels.desktop$",
-                "^com.parallels.vm$",
-                "^com.parallels.desktop.console$",
-                "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.vmware.proxyApp.",
-                "^com.parallels.winapp."
-              ]
-            }
-          ]
-            },
         {
           "description": "RightOption + Z_コレクションの表示/非表示",
           "type": "basic",

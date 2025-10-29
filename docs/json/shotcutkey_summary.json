@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary99",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary99",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -1266,13 +1266,13 @@
           ]
         },
         {
-          "description": "LeftAlt + U_UniversalActions",
+          "description": "RightAlt + W_UniversalActions",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "right_alt"
               ],
               "optional": [
                 "caps_lock"
@@ -1429,46 +1429,6 @@
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
                 "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + W_コレクションを前面/背面に移動",
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "6",
-              "modifiers": [
-                "right_gui",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.vmware.fusion$",
-                "^com.vmware.horizon$",
-                "^com.vmware.view$",
-                "^com.parallels.desktop$",
-                "^com.parallels.vm$",
-                "^com.parallels.desktop.console$",
-                "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.vmware.proxyApp.",
-                "^com.parallels.winapp."
               ]
             }
           ]
