@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary2",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
-      "description": "ShotCutKeySummary2",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -74,18 +74,6 @@
           "type": "basic",
           "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
           "to": <%= to([["tab", "right_gui"]]) %>
-        },
-        {
-          "description": "RightAlt + Y_QuickEvernote",
-          "type": "basic",
-          "from": <%= from("y", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["n", ["left_control", "right_gui"]]]) %>
-        },
-        {
-          "description": "RightAlt + U_UwscDirectorySearch",
-          "type": "basic",
-          "from": <%= from("u", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["left_control", "right_alt"]]]) %>
         },
         {
           "description": "RightCommand + A_NewFileCreate",
@@ -238,7 +226,7 @@
           "description": "RightAlt + V_AlfredSnippetsCall",
           "type": "basic",
           "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["3", ["left_control", "right_alt"]]]) %>,
+          "to": <%= to([["quote", ["left_control", "right_alt"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
@@ -247,6 +235,13 @@
           "from": <%= from("f", ["right_alt"], ["caps_lock"]) %>,
           "to": <%= to([["5", ["left_control", "right_alt"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
+        {
+          "description": "LeftAlt + U_UniversalActions",
+          "type": "basic",
+          "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["semicolon", ["left_control", "right_alt"]]]) %>,
+         "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + semicolon_CurrentRowCursolEnd1",

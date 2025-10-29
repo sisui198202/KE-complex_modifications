@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary2",
+  "title": "ShotCutKeySummary",
   "rules": [
     {
-      "description": "ShotCutKeySummary2",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -339,54 +339,6 @@
             {
               "key_code": "tab",
               "modifiers": "right_gui"
-            }
-          ]
-        },
-        {
-          "description": "RightAlt + Y_QuickEvernote",
-          "type": "basic",
-          "from": {
-            "key_code": "y",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "left_control",
-                "right_gui"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightAlt + U_UwscDirectorySearch",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_control",
-                "right_alt"
-              ]
             }
           ]
         },
@@ -1249,7 +1201,7 @@
           },
           "to": [
             {
-              "key_code": "3",
+              "key_code": "quote",
               "modifiers": [
                 "left_control",
                 "right_alt"
@@ -1290,6 +1242,46 @@
           "to": [
             {
               "key_code": "5",
+              "modifiers": [
+                "left_control",
+                "right_alt"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + U_UniversalActions",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "semicolon",
               "modifiers": [
                 "left_control",
                 "right_alt"
