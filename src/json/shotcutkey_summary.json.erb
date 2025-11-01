@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary99",
+  "title": "ShotCutKeySummary",
   "rules": [
   {
-      "description": "ShotCutKeySummary99",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -240,7 +240,7 @@
           "description": "RightAlt + W_UniversalActions",
           "type": "basic",
           "from": <%= from("w", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["semicolon", ["left_control", "right_alt"]]]) %>,
+          "to": <%= to([["backslash", ["left_alt", "right_gui"]]]) %>,
          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
