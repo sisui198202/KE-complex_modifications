@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -1373,46 +1373,6 @@
               "key_code": "c",
               "modifiers": [
                 "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + Q_Paste Stackを有効にする",
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f1",
-              "modifiers": [
-                "left_gui",
-                "right_option"
               ]
             }
           ],
