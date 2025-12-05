@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary2",
+  "title": "WindowControlSummary1",
   "rules": [
     {
-      "description": "WindowsControlSummary2",
+      "description": "WindowsControlSummary1",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -574,7 +574,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app'"
+              "key_code": "2",
+              "modifiers": [
+                "left_shift",
+                "left_gui"
+              ]
             }
           ],
           "conditions": [
@@ -610,7 +614,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'iTerm.app'"
+              "key_code": "9",
+              "modifiers": [
+                "left_shift",
+                "left_gui"
+              ]
             }
           ],
           "conditions": [
