@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary1",
+  "title": "FrontmostIfPathFinder_summary2",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary1",
+      "description": "FrontmostIfPathFinder_summary2",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -456,7 +456,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app' '/Users/user/Work'"
+              "key_code": "7",
+              "modifiers": [
+                "left_shift",
+                "left_gui"
+              ]
             }
           ],
           "conditions": [

@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary1",
+    "title": "FrontmostIfPathFinder_summary2",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary1",
+        "description": "FrontmostIfPathFinder_summary2",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -106,7 +106,7 @@
             "description": "LeftOption + W_/Users/user/Work",
             "type": "basic",
             "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Work'"]) %>,
+            "to": <%= to([["7", ["left_shift", "left_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_unless("pathfinder") %>]
           },
           {
