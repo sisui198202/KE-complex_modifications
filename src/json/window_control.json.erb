@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary2",
+  "title": "WindowControlSummary3",
   "rules": [
     {
-      "description": "WindowsControlSummary2",
+      "description": "WindowsControlSummary3",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -127,7 +127,7 @@
           "description": "LeftOption + K_VscodeActiveWindow",
           "type": "basic",
           "from": <%= from("k", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Visual Studio Code.app'"]) %>,
+          "to": <%= to([["5", ["left_shift", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
