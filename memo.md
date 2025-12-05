@@ -378,3 +378,10 @@ add_group("Frontmost_Band", "frontmost_band_setting", [
 ![新ウィンドウのインストールファイル登録_新ウィンドウルールファイル]("/Users/user/Desktop/Summary/Karabiner/KE-complex_modifications/img/新ウィンドウのインストールファイル登録_新ウィンドウルールファイル.png")
 
 ---------------------
+## pathfinderで指定ディレクトリ開く場合2パターン
+
+1. alfredのworkflowでopenfileオブジェクトでHotkey呼び出しの方が早く指定ディレクトリが開く
+
+2. karavinerでコマンドで指定ディレクトリを開くのは遅くて使い物にならない
+
+---
