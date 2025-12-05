@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary2",
+    "title": "FrontmostIfPathFinder_summary4",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary2",
+        "description": "FrontmostIfPathFinder_summary4",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -107,7 +107,7 @@
             "type": "basic",
             "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["7", ["left_shift", "left_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_unless("pathfinder") %>]
+            "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
             "description": "使用しない_LeftOption + O(オー)_FileOpen",

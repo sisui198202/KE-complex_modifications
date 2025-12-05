@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary2",
+  "title": "FrontmostIfPathFinder_summary4",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary2",
+      "description": "FrontmostIfPathFinder_summary4",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -465,7 +465,7 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
+              "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
               ]
