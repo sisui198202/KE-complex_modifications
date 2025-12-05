@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary",
+  "title": "WindowControlSummary1",
   "rules": [
     {
-      "description": "WindowsControlSummary",
+      "description": "WindowsControlSummary1",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -179,10 +179,10 @@
           "to": <%= set_shell_command(["open -a 'Kindle.app'"]) %>
         },
         {
-          "description": "RightOption + I_ActiveMacWindowShare/img/pdf",
+          "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",
           "type": "basic",
           "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/MacWindowShare/img/pdf'"]) %>,
+          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Desktop/tmp_screenshot'"]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         }
       ]
