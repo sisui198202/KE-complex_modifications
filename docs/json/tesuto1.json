@@ -823,7 +823,7 @@
           },
           "to": [
             {
-              "key_code": "9",
+              "key_code": "semicolon",
               "modifiers": [
                 "right_shift",
                 "right_gui"

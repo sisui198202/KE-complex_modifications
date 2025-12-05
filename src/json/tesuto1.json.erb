@@ -190,7 +190,7 @@
             "description": "RightOption + L_ダウンロードディレクトリへ",
             "type": "basic",
             "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["9", ["right_shift", "right_gui"]]]) %>,
+            "to": <%= to([["semicolon", ["right_shift", "right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %>]
           },
           {
