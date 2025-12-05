@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary1",
+  "title": "WindowControlSummary99",
   "rules": [
     {
-      "description": "WindowsControlSummary1",
+      "description": "WindowsControlSummary99",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -694,43 +694,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Preview.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
+              "key_code": "equal_sign",
+              "modifiers": [
+                "left_shift",
+                "left_gui"
               ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + L_AppleMusicActiveWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Music.app'"
             }
           ],
           "conditions": [
@@ -822,7 +790,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Path Finder.app' '/Users/user/Desktop/tmp_screenshot'"
+              "key_code": "quote",
+              "modifiers": [
+                "left_shift",
+                "left_gui"
+              ]
             }
           ],
           "conditions": [

@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary1",
+  "title": "WindowControlSummary99",
   "rules": [
     {
-      "description": "WindowsControlSummary1",
+      "description": "WindowsControlSummary99",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -155,15 +155,8 @@
           "description": "LeftOption + Quote_PreviewActiveWindow",
           "type": "basic",
           "from": <%= from("quote", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Preview.app'"]) %>,
+          "to": <%= to([["equal_sign", ["left_shift", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
-          "description": "RightOption + L_AppleMusicActiveWindow",
-          "type": "basic",
-          "from": <%= from("l", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Music.app'"]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
           "description": "LeftOption + slash_FinderActiveWindow",
@@ -182,7 +175,7 @@
           "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",
           "type": "basic",
           "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Desktop/tmp_screenshot'"]) %>,
+          "to": <%= to([["quote", ["left_shift", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         }
       ]
