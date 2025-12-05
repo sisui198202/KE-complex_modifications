@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary3",
+  "title": "WindowControlSummary2",
   "rules": [
     {
-      "description": "WindowsControlSummary3",
+      "description": "WindowsControlSummary2",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -113,7 +113,7 @@
           "description": "LeftOption + J_ChromeActiveWindow",
           "type": "basic",
           "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
+          "to": <%= to([["4", ["left_shift", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
@@ -148,7 +148,7 @@
           "description": "LeftOption + H_ExcelActiveWindow",
           "type": "basic",
           "from": <%= from("h", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Microsoft Excel.app'"]) %>,
+          "to": <%= to([["3", ["left_shift", "left_gui"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
