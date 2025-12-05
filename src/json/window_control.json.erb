@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary1",
+  "title": "WindowControlSummary2",
   "rules": [
     {
-      "description": "WindowsControlSummary1",
+      "description": "WindowsControlSummary2",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -107,7 +107,7 @@
           "description": "Leftcommand + R_miActiveWindow",
           "type": "basic",
           "from": <%= from("r", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'mi'"]) %>
+          "to": <%= to([["6", ["left_shift", "left_gui"]]]) %>
         },
         {
           "description": "LeftOption + J_ChromeActiveWindow",
