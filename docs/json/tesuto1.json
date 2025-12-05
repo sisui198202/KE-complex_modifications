@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary",
+  "title": "FrontmostIfPathFinder_summary1",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary",
+      "description": "FrontmostIfPathFinder_summary1",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -434,6 +434,34 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + W_/Users/user/Work",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Path Finder.app' '/Users/user/Work'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.cocoatech\\.PathFinder$"
               ]
