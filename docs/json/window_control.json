@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary96",
+  "title": "WindowControlSummary95",
   "rules": [
     {
-      "description": "WindowsControlSummary96",
+      "description": "WindowsControlSummary95",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -696,8 +696,8 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                "left_shift",
-                "left_gui"
+                "right_gui",
+                "right_shift"
               ]
             }
           ]
