@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary97",
+  "title": "WindowControlSummary96",
   "rules": [
     {
-      "description": "WindowsControlSummary97",
+      "description": "WindowsControlSummary96",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -155,8 +155,7 @@
           "description": "LeftOption + Quote_PreviewActiveWindow",
           "type": "basic",
           "from": <%= from("quote", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["equal_sign", ["left_shift", "left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+          "to": <%= to([["equal_sign", ["left_shift", "left_gui"]]]) %>
         },
         {
           "description": "LeftOption + slash_FinderActiveWindow",

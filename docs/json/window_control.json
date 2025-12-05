@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary97",
+  "title": "WindowControlSummary96",
   "rules": [
     {
-      "description": "WindowsControlSummary97",
+      "description": "WindowsControlSummary96",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -698,22 +698,6 @@
               "modifiers": [
                 "left_shift",
                 "left_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]
