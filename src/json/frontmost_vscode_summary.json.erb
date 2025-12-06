@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary2",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary1",
+        "description": "FrontmostIfVscode_summary2",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -267,7 +267,7 @@
             "description": "LeftOption + Y_アウトラインビューにフォーカスを置く",
             "type": "basic",
             "from": <%= from("y", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["6", ["left_shift", "right_option"]]]) %>,
+            "to": <%= to([["quote", ["left_shift", "left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
