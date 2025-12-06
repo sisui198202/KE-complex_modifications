@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary4",
+  "title": "FrontmostIfVscode_summary44",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary4",
+      "description": "FrontmostIfVscode_summary44",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -930,10 +930,10 @@
           },
           "to": [
             {
-              "key_code": "hyphen",
+              "key_code": "semicolon",
               "modifiers": [
                 "left_control",
-                "right_shift"
+                "left_shift"
               ]
             }
           ],
