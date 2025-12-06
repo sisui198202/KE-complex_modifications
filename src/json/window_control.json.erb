@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary91",
+  "title": "WindowControlSummary90",
   "rules": [
     {
-      "description": "WindowsControlSummary91",
+      "description": "WindowsControlSummary90",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -155,7 +155,7 @@
           "description": "LeftOption + L_KindleActiveWindow",
           "type": "basic",
           "from": <%= from("l", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Kindle.app'"]) %>
+          "to": <%= to([["hyphen", ["left_shift", "left_option"]]]) %>
         },
         {
           "description": "LeftOption + slash_FinderActiveWindow",
