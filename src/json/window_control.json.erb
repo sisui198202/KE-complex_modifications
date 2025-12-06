@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary95",
+  "title": "WindowControlSummary94",
   "rules": [
     {
-      "description": "WindowsControlSummary95",
+      "description": "WindowsControlSummary94",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -107,13 +107,13 @@
           "description": "Leftcommand + R_miActiveWindow",
           "type": "basic",
           "from": <%= from("r", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["6", ["left_shift", "left_gui"]]]) %>
+          "to": <%= to([["6", ["left_shift", "left_option"]]]) %>
         },
         {
           "description": "LeftOption + J_ChromeActiveWindow",
           "type": "basic",
           "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["4", ["left_shift", "left_gui"]]]) %>,
+          "to": <%= to([["4", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
@@ -127,35 +127,35 @@
           "description": "LeftOption + K_VscodeActiveWindow",
           "type": "basic",
           "from": <%= from("k", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["5", ["left_shift", "left_gui"]]]) %>,
+          "to": <%= to([["5", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftOption + Semicolon_PathfinderActiveWindow",
           "type": "basic",
           "from": <%= from("semicolon", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["2", ["left_shift", "left_gui"]]]) %>,
+          "to": <%= to([["2", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftCommand + X_iterm2ActiveWindow",
           "type": "basic",
           "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["9", ["left_shift", "left_gui"]]]) %>,
+          "to": <%= to([["7", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftOption + H_ExcelActiveWindow",
           "type": "basic",
           "from": <%= from("h", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["3", ["left_shift", "left_gui"]]]) %>,
+          "to": <%= to([["3", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
           "description": "LeftOption + Quote_PreviewActiveWindow",
           "type": "basic",
           "from": <%= from("quote", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["equal_sign", ["right_gui", "right_shift"]]]) %>
+          "to": <%= to([["equal_sign", ["left_shift","left_option"]]]) %>
         },
         {
           "description": "LeftOption + slash_FinderActiveWindow",
@@ -174,7 +174,7 @@
           "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",
           "type": "basic",
           "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["quote", ["left_shift", "left_gui"]]]) %>,
+          "to": <%= to([["quote", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         }
       ]

@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary95",
+  "title": "WindowControlSummary94",
   "rules": [
     {
-      "description": "WindowsControlSummary95",
+      "description": "WindowsControlSummary94",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -437,7 +437,7 @@
               "key_code": "6",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ]
@@ -461,7 +461,7 @@
               "key_code": "4",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ],
@@ -537,7 +537,7 @@
               "key_code": "5",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ],
@@ -577,7 +577,7 @@
               "key_code": "2",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ],
@@ -614,10 +614,10 @@
           },
           "to": [
             {
-              "key_code": "9",
+              "key_code": "7",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ],
@@ -657,7 +657,7 @@
               "key_code": "3",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ],
@@ -696,8 +696,8 @@
             {
               "key_code": "equal_sign",
               "modifiers": [
-                "right_gui",
-                "right_shift"
+                "left_shift",
+                "left_option"
               ]
             }
           ]
@@ -777,7 +777,7 @@
               "key_code": "quote",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_option"
               ]
             }
           ],
