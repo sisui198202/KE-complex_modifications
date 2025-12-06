@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary3",
+  "title": "FrontmostIfVscode_summary4",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary3",
+      "description": "FrontmostIfVscode_summary4",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -932,7 +932,7 @@
             {
               "key_code": "hyphen",
               "modifiers": [
-                "left_option",
+                "left_control",
                 "right_shift"
               ]
             }

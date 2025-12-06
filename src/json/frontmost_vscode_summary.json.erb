@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary3",
+    "title": "FrontmostIfVscode_summary4",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary3",
+        "description": "FrontmostIfVscode_summary4",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -232,7 +232,7 @@
             "description": "RightOption + Q_Claude Code:Insert At-Mentioned",
             "type": "basic",
             "from": <%= from("q", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["hyphen", ["left_option", "right_shift"]]]) %>,
+            "to": <%= to([["hyphen", ["left_control", "right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
