@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary93",
+  "title": "WindowControlSummary92",
   "rules": [
     {
-      "description": "WindowsControlSummary93",
+      "description": "WindowsControlSummary92",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -120,7 +120,7 @@
           "description": "RightOption + G_SafariActiveWindow",
           "type": "basic",
           "from": <%= from("g", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["1", ["left_shift", "left_option"]]]) %>,
+          "to": <%= to([["0", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {

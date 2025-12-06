@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary93",
+  "title": "WindowControlSummary92",
   "rules": [
     {
-      "description": "WindowsControlSummary93",
+      "description": "WindowsControlSummary92",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -498,7 +498,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "0",
               "modifiers": [
                 "left_shift",
                 "left_option"
