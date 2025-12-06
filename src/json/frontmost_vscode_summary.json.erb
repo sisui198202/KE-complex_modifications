@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary97",
+    "title": "FrontmostIfVscode_summary96",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary97",
+        "description": "FrontmostIfVscode_summary96",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -78,7 +78,7 @@
             "description": "S_定義に移動",
             "type": "basic",
             "from": <%= from("s", ["caps_lock"]) %>,
-            "to": <%= to([["2", ["left_shift", "right_option"]]]) %>,
+            "to": <%= to([["4", ["left_shift", "left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
@@ -260,7 +260,7 @@
             "description": "RightOption + S_定義に移動",
             "type": "basic",
             "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-            "to": <%= to([["4", ["left_shift", "ledt_control"]]]) %>,
+            "to": <%= to([["4", ["left_shift", "left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {

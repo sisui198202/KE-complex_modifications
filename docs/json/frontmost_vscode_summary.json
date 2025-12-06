@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary97",
+  "title": "FrontmostIfVscode_summary96",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary97",
+      "description": "FrontmostIfVscode_summary96",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -287,10 +287,10 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "4",
               "modifiers": [
                 "left_shift",
-                "right_option"
+                "left_control"
               ]
             }
           ],
@@ -1061,7 +1061,7 @@
               "key_code": "4",
               "modifiers": [
                 "left_shift",
-                "ledt_control"
+                "left_control"
               ]
             }
           ],
