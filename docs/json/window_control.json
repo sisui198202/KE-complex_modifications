@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary94",
+  "title": "WindowControlSummary93",
   "rules": [
     {
-      "description": "WindowsControlSummary94",
+      "description": "WindowsControlSummary93",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -498,7 +498,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Safari.app'"
+              "key_code": "1",
+              "modifiers": [
+                "left_shift",
+                "left_option"
+              ]
             }
           ],
           "conditions": [

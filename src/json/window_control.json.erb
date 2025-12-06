@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary94",
+  "title": "WindowControlSummary93",
   "rules": [
     {
-      "description": "WindowsControlSummary94",
+      "description": "WindowsControlSummary93",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -120,7 +120,7 @@
           "description": "RightOption + G_SafariActiveWindow",
           "type": "basic",
           "from": <%= from("g", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Safari.app'"]) %>,
+          "to": <%= to([["1", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
