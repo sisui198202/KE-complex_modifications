@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary96",
+    "title": "FrontmostIfVscode_summary95",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary96",
+        "description": "FrontmostIfVscode_summary95",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -610,14 +610,14 @@
             "description": "LeftCommand + P_選択範囲拡張",
             "type": "basic",
             "from": <%= from("p", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["3", ["right_shift", "right_alt"]]]) %>,
+            "to": <%= to([["7", ["right_shift", "left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
             "description": "RightCommand + Q_選択範囲縮小",
             "type": "basic",
             "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["4", ["right_shift", "right_alt"]]]) %>,
+            "to": <%= to([["equal_sign", ["right_shift", "left_control"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {

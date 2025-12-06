@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary92",
+  "title": "WindowControlSummary91",
   "rules": [
     {
-      "description": "WindowsControlSummary92",
+      "description": "WindowsControlSummary91",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -152,23 +152,23 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftOption + Quote_PreviewActiveWindow",
+          "description": "LeftOption + L_KindleActiveWindow",
           "type": "basic",
-          "from": <%= from("quote", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["equal_sign", ["left_shift","left_option"]]]) %>
+          "from": <%= from("l", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= set_shell_command(["open -a 'Kindle.app'"]) %>
         },
         {
           "description": "LeftOption + slash_FinderActiveWindow",
           "type": "basic",
           "from": <%= from("slash", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'finder.app'"]) %>,
+          "to": <%= to([["grave_accent_and_tilde", ["left_shift","left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
         },
         {
-          "description": "LeftOption + L_KindleActiveWindow",
+          "description": "LeftOption + Quote_PreviewActiveWindow",
           "type": "basic",
-          "from": <%= from("l", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Kindle.app'"]) %>
+          "from": <%= from("quote", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["equal_sign", ["left_shift","left_option"]]]) %>
         },
         {
           "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",

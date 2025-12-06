@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary92",
+  "title": "WindowControlSummary91",
   "rules": [
     {
-      "description": "WindowsControlSummary92",
+      "description": "WindowsControlSummary91",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -683,10 +683,10 @@
           ]
         },
         {
-          "description": "LeftOption + Quote_PreviewActiveWindow",
+          "description": "LeftOption + L_KindleActiveWindow",
           "type": "basic",
           "from": {
-            "key_code": "quote",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "left_alt"
@@ -698,11 +698,7 @@
           },
           "to": [
             {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
+              "shell_command": "open -a 'Kindle.app'"
             }
           ]
         },
@@ -722,7 +718,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'finder.app'"
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": [
+                "left_shift",
+                "left_option"
+              ]
             }
           ],
           "conditions": [
@@ -743,10 +743,10 @@
           ]
         },
         {
-          "description": "LeftOption + L_KindleActiveWindow",
+          "description": "LeftOption + Quote_PreviewActiveWindow",
           "type": "basic",
           "from": {
-            "key_code": "l",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": [
                 "left_alt"
@@ -758,7 +758,11 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Kindle.app'"
+              "key_code": "equal_sign",
+              "modifiers": [
+                "left_shift",
+                "left_option"
+              ]
             }
           ]
         },
