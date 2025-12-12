@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary6",
+  "title": "WindowControlSummary7",
   "rules": [
     {
-      "description": "WindowsControlSummary6",
+      "description": "WindowsControlSummary7",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -755,6 +755,30 @@
           ]
         },
         {
+          "description": "RightOption + L_ダウンロードディレクトリへ",
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_shift",
+                "left_option"
+              ]
+            }
+          ]
+        },
+        {
           "description": "LeftOption + D_~/Desktop/",
           "type": "basic",
           "from": {
@@ -815,30 +839,6 @@
           "to": [
             {
               "shell_command": "open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"
-            }
-          ]
-        },
-        {
-          "description": "RightOption + L_ダウンロードディレクトリへ",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "semicolon",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
             }
           ]
         },
