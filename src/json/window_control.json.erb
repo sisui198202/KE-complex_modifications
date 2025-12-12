@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary5",
+  "title": "WindowControlSummary6",
   "rules": [
     {
-      "description": "WindowsControlSummary5",
+      "description": "WindowsControlSummary6",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -191,8 +191,7 @@
           "description": "RightOption + L_ダウンロードディレクトリへ",
           "type": "basic",
           "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["semicolon",["left_shift", "left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+          "to": <%= to([["semicolon",["left_shift", "left_option"]]]) %>
         },
         {
           "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",
