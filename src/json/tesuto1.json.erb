@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary",
+    "title": "FrontmostIfPathFinder_summary1",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary",
+        "description": "FrontmostIfPathFinder_summary1",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -283,6 +283,13 @@
             "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
             "to": <%= to([["2", ["right_alt"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+          },
+          {
+          "description": "RightOption + L_ダウンロードディレクトリへ",
+          "type": "basic",
+          "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
+          "to": <%= to([["open_bracket",["left_shift", "left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
             "description": "LeftControl_Rename(pathfinder)",

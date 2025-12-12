@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary7",
+  "title": "WindowControlSummary",
   "rules": [
     {
-      "description": "WindowsControlSummary7",
+      "description": "WindowsControlSummary",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -750,30 +750,6 @@
               "modifiers": [
                 "left_shift",
                 "left_gui"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + L_ダウンロードディレクトリへ",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_shift",
-                "left_option"
               ]
             }
           ]
