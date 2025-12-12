@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary3",
+  "title": "WindowControlSummary4",
   "rules": [
     {
-      "description": "WindowsControlSummary3",
+      "description": "WindowsControlSummary4",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -836,8 +836,8 @@
             {
               "key_code": "semicolon",
               "modifiers": [
-                "right_shift",
-                "right_gui"
+                "left_shift",
+                "left_option"
               ]
             }
           ],

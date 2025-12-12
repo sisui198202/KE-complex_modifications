@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary3",
+  "title": "WindowControlSummary4",
   "rules": [
     {
-      "description": "WindowsControlSummary3",
+      "description": "WindowsControlSummary4",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -191,7 +191,7 @@
           "description": "RightOption + L_ダウンロードディレクトリへ",
           "type": "basic",
           "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["semicolon", ["right_shift", "right_gui"]]]) %>,
+          "to": <%= to([["semicolon",["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %>]
         },
         {
