@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary1",
+  "title": "WindowControlSummary2",
   "rules": [
     {
-      "description": "WindowsControlSummary1",
+      "description": "WindowsControlSummary2",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -752,14 +752,6 @@
                 "left_gui"
               ]
             }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
           ]
         },
         {
@@ -784,14 +776,6 @@
                 "right_gui"
               ]
             }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
           ]
         },
         {
@@ -812,14 +796,6 @@
             {
               "shell_command": "open -a 'Path Finder.app' '/Users/user/Dropbox'"
             }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
           ]
         },
         {
@@ -839,14 +815,6 @@
           "to": [
             {
               "shell_command": "open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
             }
           ]
         },
@@ -902,22 +870,6 @@
               "modifiers": [
                 "left_shift",
                 "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
               ]
             }
           ]

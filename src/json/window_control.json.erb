@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary1",
+  "title": "WindowControlSummary2",
   "rules": [
     {
-      "description": "WindowsControlSummary1",
+      "description": "WindowsControlSummary2",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -167,29 +167,25 @@
           "description": "LeftOption + W_/Users/user/Work",
           "type": "basic",
           "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= to([["7", ["left_shift", "left_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+          "to": <%= to([["7", ["left_shift", "left_gui"]]]) %>
         },
         {
           "description": "LeftOption + D_~/Desktop/",
           "type": "basic",
           "from": <%= from("d", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+          "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>
         },
         {
           "description": "LeftOption + N_Active_~/Dropbox/",
           "type": "basic",
           "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Dropbox'"]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Dropbox'"]) %>
         },
         {
           "description": "LeftOption + M_Active_~/Googleドライブ/",
           "type": "basic",
           "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
-          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"]) %>,
-          "conditions": [ <%= frontmost_application_if("pathfinder") %>]
+          "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"]) %>
         },
         {
           "description": "RightOption + L_ダウンロードディレクトリへ",
@@ -202,8 +198,7 @@
           "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",
           "type": "basic",
           "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
-          "to": <%= to([["quote", ["left_shift", "left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+          "to": <%= to([["quote", ["left_shift", "left_option"]]]) %>
         },
         {
           "description": "LeftOption + slash_FinderActiveWindow",
