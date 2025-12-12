@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary2",
+  "title": "WindowControlSummary3",
   "rules": [
     {
-      "description": "WindowsControlSummary2",
+      "description": "WindowsControlSummary3",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
