@@ -1,7 +1,17 @@
 {
-  "title": "ShotCutKey",
+  "title": "ShotCutKey99",
   "rules": [
-  {
+    {
+    "description": "RightOption + L_ダウンロードディレクトリへ99",
+    "manipulators": [
+      {
+      "type": "basic",
+      "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
+      "to": <%= to([["open_bracket",["left_shift", "left_option"]]]) %>
+      }
+    ]
+    },
+    {
       "description": "使用しない_LeftCommand + Period_AppsSelect-next",
       "manipulators": [
         {

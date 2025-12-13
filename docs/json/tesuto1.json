@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary96",
+  "title": "FrontmostIfPathFinder_summary95",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary96",
+      "description": "FrontmostIfPathFinder_summary95",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -1204,38 +1204,6 @@
               "key_code": "2",
               "modifiers": [
                 "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightOption + L_ダウンロードディレクトリへ",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_shift",
-                "left_option"
               ]
             }
           ],

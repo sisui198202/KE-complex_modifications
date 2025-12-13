@@ -385,3 +385,12 @@ add_group("Frontmost_Band", "frontmost_band_setting", [
 2. karavinerでコマンドで指定ディレクトリを開くのは遅くて使い物にならない
 
 ---
+## 「~/Desktop/」と 「workbench.action.moveEditorToNextGroup」競合設定
+
+![~:Desktop:とworkbench_action_moveEditorToNextGroup競合設定](./images/~:Desktop:とworkbench_action_moveEditorToNextGroup競合設定.png)
+
+1. vscode:LeftOption + D_workbench.action.moveEditorToNextGroup
+2. pathfinder:設定なし
+3. global:LeftOption + D_~/Desktop/
+
+---
