@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary1",
+    "title": "FrontmostIfPathFinder_summary",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary1",
+        "description": "FrontmostIfPathFinder_summary",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -100,13 +100,6 @@
             "type": "basic",
             "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
             "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
-          },
-          {
-            "description": "使用しない_LeftOption + O(オー)_FileOpen",
-            "type": "basic",
-            "from": <%= from("o", ["left_option"], ["caps_lock"]) %>,
-            "to": <%= to([["o", ["right_gui"]]]) %>,
             "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
@@ -290,6 +283,13 @@
           "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["open_bracket",["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+          },
+          {
+            "description": "使用しない_LeftOption + O(オー)_FileOpen",
+            "type": "basic",
+            "from": <%= from("o", ["left_option"], ["caps_lock"]) %>,
+            "to": <%= to([["o", ["right_gui"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
             "description": "LeftControl_Rename(pathfinder)",

@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary1",
+  "title": "FrontmostIfPathFinder_summary",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary1",
+      "description": "FrontmostIfPathFinder_summary",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -426,37 +426,6 @@
           "to": [
             {
               "key_code": "up_arrow",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.cocoatech\\.PathFinder$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "使用しない_LeftOption + O(オー)_FileOpen",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "o",
               "modifiers": [
                 "right_gui"
               ]
@@ -1267,6 +1236,37 @@
               "modifiers": [
                 "left_shift",
                 "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "使用しない_LeftOption + O(オー)_FileOpen",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "right_gui"
               ]
             }
           ],
