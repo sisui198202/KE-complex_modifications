@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary98",
+  "title": "WindowControlSummary97",
   "rules": [
     {
-      "description": "WindowsControlSummary98",
+      "description": "WindowsControlSummary97",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -814,6 +814,30 @@
               "modifiers": [
                 "left_shift",
                 "left_option"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + D_~/Desktop/",
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
               ]
             }
           ]

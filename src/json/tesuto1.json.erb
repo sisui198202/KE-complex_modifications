@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary97",
+    "title": "FrontmostIfPathFinder_summary96",
     "rules": [
       {
-        "description": "FrontmostIfPathFinder_summary97",
+        "description": "FrontmostIfPathFinder_summary96",
         "manipulators": [
           {
             "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -283,13 +283,6 @@
           "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
           "to": <%= to([["open_bracket",["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
-          },
-          {
-            "description": "LeftOption + D_~/Desktop/",
-            "type": "basic",
-            "from": <%= from("d", ["left_alt"], ["caps_lock"]) %>,
-            "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>,
-            "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
           },
           {
             "description": "使用しない_LeftOption + O(オー)_FileOpen",
