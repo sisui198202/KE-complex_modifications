@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKey99",
+  "title": "ShotCutKey98",
   "rules": [
     {
-    "description": "RightOption + L_ダウンロードディレクトリへ99",
+    "description": "RightOption + L_ダウンロードディレクトリへ98",
     "manipulators": [
       {
       "type": "basic",
@@ -10,38 +10,6 @@
       "to": <%= to([["open_bracket",["left_shift", "left_option"]]]) %>
       }
     ]
-    },
-    {
-      "description": "使用しない_LeftCommand + Period_AppsSelect-next",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("period", ["left_control"], ["caps_lock"]) %>,
-          "to": <%= to([["tab", "right_gui"]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        }
-      ]
-    },
-    {
-      "description": "RightCommand + J_1RowSelection_LeftArrow",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
-          "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"]]) %>
-        }
-      ]
-    },
-    {
-      "description": "使用しない_RightAlt + X_AppWindowSelect",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": <%= from("x", ["right_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["grave_accent_and_tilde", ["right_gui"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-        }
-      ]
     }
   ]
 }
