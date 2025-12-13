@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary44",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
       {
-        "description": "FrontmostIfVscode_summary44",
+        "description": "FrontmostIfVscode_summary",
         "manipulators": [
           {
             "description": "J_DownArrow",
@@ -233,6 +233,13 @@
             "type": "basic",
             "from": <%= from("q", ["right_option"], ["caps_lock"]) %>,
             "to": <%= to([["semicolon", ["left_control", "left_shift"]]]) %>,
+            "conditions": [ <%= frontmost_application_if("vscode") %> ]
+          },
+          {
+            "description": "LeftOption + D_workbench.action.moveEditorToNextGroup",
+            "type": "basic",
+            "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
+            "to": <%= to([["quote", ["left_gui", "right_shift"]]]) %>,
             "conditions": [ <%= frontmost_application_if("vscode") %> ]
           },
           {
