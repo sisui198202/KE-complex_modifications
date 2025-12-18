@@ -1,13 +1,15 @@
 SHELL := /bin/sh
 
-.PHONY: all rebuild update-dist preview-server update-json index
+.PHONY: all rebuild update-dist preview-server update-json index assets-images
 
 # 生成物
 DOCS_JSON := $(wildcard docs/json/*.json)
 EXTRA_HTML := $(wildcard src/extra_descriptions/*.html)
+IMG_SRC := $(wildcard images/*)
+IMG_DST_DIR := docs/assets/img
 
 # デフォルトターゲット: JSON と index.html を更新
-all: update-json index
+all: update-json assets-images index
 
 # JSON を生成 (src/json/*.erb -> docs/json/*.json)
 update-json:
@@ -21,6 +23,12 @@ docs/index.html: src/index.html.erb $(DOCS_JSON) $(EXTRA_HTML) scripts/erb2html.
 	@mkdir -p docs
 	@ruby scripts/erb2html.rb < src/index.html.erb > docs/index.html
 	@echo "updated: $@"
+
+# 画像をサイトに同期（docs/assets/img 配下）
+assets-images:
+	@mkdir -p $(IMG_DST_DIR)
+	@([ -d images ] && cp -f images/* $(IMG_DST_DIR)/ 2>/dev/null || true)
+	@echo "synced images to $(IMG_DST_DIR)"
 
 # 強制再生成: 生成物を消して作り直し
 rebuild:
