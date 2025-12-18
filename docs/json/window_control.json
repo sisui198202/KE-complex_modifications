@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary987",
+  "title": "WindowControlSummary777",
   "rules": [
     {
-      "description": "WindowsControlSummary987",
+      "description": "WindowsControlSummary",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -952,6 +952,27 @@
                 "^com\\.vmware\\.proxyApp\\.",
                 "^com\\.parallels\\.winapp\\."
               ]
+            }
+          ]
+        },
+        {
+          "description": "Test99-LeftControl + U_WindowLeftUp",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": "right_alt"
             }
           ]
         }

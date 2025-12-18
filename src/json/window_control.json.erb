@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary987",
+  "title": "WindowControlSummary777",
   "rules": [
     {
-      "description": "WindowsControlSummary987",
+      "description": "WindowsControlSummary",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -217,6 +217,12 @@
           "from": <%= from("slash", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["grave_accent_and_tilde", ["left_shift","left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+        },
+        {
+          "description": "Test99-LeftControl + U_WindowLeftUp",
+          "type": "basic",
+          "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
+          "to": <%= to([["6", "right_alt"]]) %>
         }
       ]
     }
