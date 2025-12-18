@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary",
+  "title": "FrontmostIfPathFinder_summary11",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary",
+      "description": "FrontmostIfPathFinder_summary11-a",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
