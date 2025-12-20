@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary222",
+  "title": "WindowControlSummary345",
   "rules": [
     {
-      "description": "WindowsControlSummary222-1",
+      "description": "WindowsControlSummary345-1",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -499,46 +499,6 @@
           ]
         },
         {
-          "description": "LeftOption + H_ExcelActiveWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
           "description": "LeftOption + J_ChromeActiveWindow",
           "type": "basic",
           "from": {
@@ -952,27 +912,6 @@
                 "^com\\.vmware\\.proxyApp\\.",
                 "^com\\.parallels\\.winapp\\."
               ]
-            }
-          ]
-        },
-        {
-          "description": "Test99-LeftControl + U_WindowLeftUp",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "fn"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "6",
-              "modifiers": "right_alt"
             }
           ]
         }

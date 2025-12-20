@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary222",
+  "title": "WindowControlSummary345",
   "rules": [
     {
-      "description": "WindowsControlSummary222-1",
+      "description": "WindowsControlSummary345-1",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -118,13 +118,6 @@
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {
-          "description": "LeftOption + H_ExcelActiveWindow",
-          "type": "basic",
-          "from": <%= from("h", ["left_alt"], ["caps_lock"]) %>,
-          "to": <%= to([["3", ["left_shift", "left_option"]]]) %>,
-          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-        },
-        {
           "description": "LeftOption + J_ChromeActiveWindow",
           "type": "basic",
           "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
@@ -217,12 +210,6 @@
           "from": <%= from("slash", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["grave_accent_and_tilde", ["left_shift","left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
-        },
-        {
-          "description": "Test99-LeftControl + U_WindowLeftUp",
-          "type": "basic",
-          "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
-          "to": <%= to([["6", "right_alt"]]) %>
         }
       ]
     }
