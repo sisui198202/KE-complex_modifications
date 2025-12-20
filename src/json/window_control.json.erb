@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary345",
+  "title": "WindowControlSummary6",
   "rules": [
     {
-      "description": "WindowsControlSummary345-1",
+      "description": "WindowsControlSummary6-1",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -122,6 +122,13 @@
           "type": "basic",
           "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
           "to": <%= to([["4", ["left_shift", "left_option"]]]) %>,
+          "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+        },
+        {
+          "description": "LeftOption + H_ExcelActiveWindow",
+          "type": "basic",
+          "from": <%= from("h", ["left_alt"], ["caps_lock"]) %>,
+          "to": <%= to([["3", ["left_shift", "left_option"]]]) %>,
           "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
         },
         {

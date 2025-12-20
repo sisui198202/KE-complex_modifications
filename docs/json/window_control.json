@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary345",
+  "title": "WindowControlSummary6",
   "rules": [
     {
-      "description": "WindowsControlSummary345-1",
+      "description": "WindowsControlSummary6-1",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -515,6 +515,46 @@
           "to": [
             {
               "key_code": "4",
+              "modifiers": [
+                "left_shift",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + H_ExcelActiveWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
               "modifiers": [
                 "left_shift",
                 "left_option"
