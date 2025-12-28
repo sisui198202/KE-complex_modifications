@@ -1,9 +1,40 @@
 {
-  "title": "FrontmostIfNotion_summary1",
+  "title": "FrontmostIfNotion_summary2",
   "rules": [
     {
-      "description": "FrontmostIfNotion_summary1",
+      "description": "FrontmostIfNotion_summary2",
       "manipulators": [
+        {
+          "description": "LeftCommand + T_サイドバー表示-非表示",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "backslash",
+              "modifiers": [
+                "left_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^notion.id$"
+              ]
+            }
+          ]
+        },
         {
           "description": "RightOption + A_新しいNotionウィンドウを開く",
           "type": "basic",

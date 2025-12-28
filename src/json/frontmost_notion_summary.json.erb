@@ -1,9 +1,16 @@
 {
-  "title": "FrontmostIfNotion_summary1",
+  "title": "FrontmostIfNotion_summary2",
   "rules": [
     {
-      "description": "FrontmostIfNotion_summary1",
+      "description": "FrontmostIfNotion_summary2",
       "manipulators": [
+        {
+          "description": "LeftCommand + T_サイドバー表示-非表示",
+          "type": "basic",
+          "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+          "to": <%= to([["backslash", ["left_gui"]]]) %>,
+          "conditions": [ <%= frontmost_application_if("notion") %> ]
+        },
         {
           "description": "RightOption + A_新しいNotionウィンドウを開く",
           "type": "basic",
