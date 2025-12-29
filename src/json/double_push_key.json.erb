@@ -1,6 +1,6 @@
 {
-  "title": "DoublePushKey",
-  "rules": [
+    "title": "DoublePushKey",
+    "rules": [
         {
             "description": "Double RightShift_Clipboard History(Double Push)",
             "manipulators": [
@@ -16,13 +16,13 @@
                     },
                     "to": [
                         {
-                          "key_code": "9",
-                          "modifiers": [
-                            "right_option",
-                            "right_gui"
-                          ]
+                            "key_code": "9",
+                            "modifiers": [
+                                "right_option",
+                                "right_gui"
+                            ]
                         }
-                      ],
+                    ],
                     "conditions": [
                         {
                             "type": "variable_if",
@@ -30,18 +30,18 @@
                             "value": 1
                         },
                         {
-                        "type": "frontmost_application_unless",
-                        "bundle_identifiers": [
-                            "^com\\.vmware\\.fusion$",
-                            "^com\\.vmware\\.horizon$",
-                            "^com\\.vmware\\.view$",
-                            "^com\\.parallels\\.desktop$",
-                            "^com\\.parallels\\.vm$",
-                            "^com\\.parallels\\.desktop\\.console$",
-                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                            "^com\\.vmware\\.proxyApp\\.",
-                            "^com\\.parallels\\.winapp\\."
-                        ]
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.vmware\\.fusion$",
+                                "^com\\.vmware\\.horizon$",
+                                "^com\\.vmware\\.view$",
+                                "^com\\.parallels\\.desktop$",
+                                "^com\\.parallels\\.vm$",
+                                "^com\\.parallels\\.desktop\\.console$",
+                                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                                "^com\\.vmware\\.proxyApp\\.",
+                                "^com\\.parallels\\.winapp\\."
+                            ]
                         }
                     ]
                 },
@@ -104,17 +104,17 @@
                         {
                             "key_code": "c",
                             "modifiers": [
-                              "left_control"
+                                "left_control"
                             ]
-                          }
+                        }
                     ],
                     "conditions": [
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                              "^com.microsoft.VSCode$",
-                              "^com\.googlecode\.iterm2$",
-                              "^com.todesktop.230313mzl4w4u92$"
+                                "^com.microsoft.VSCode$",
+                                "^com\.googlecode\.iterm2$",
+                                "^com.todesktop.230313mzl4w4u92$"
                             ]
                         },
                         {

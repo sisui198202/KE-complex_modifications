@@ -229,37 +229,37 @@
                 }
             ]
         },
-  {
-      "description": "LeftCommand + quote_HideFrontmostAppWindow",
-      "manipulators": [
         {
-          "type": "basic",
-          "from": <%= from("quote", ["left_control"]) %>,
-          "to": <%= to([["quote",["left_control"]]]) %>
-        }
-      ]
-    },
-{
-  "description": "None",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": <%= from("l", ["left_alt"]) %>,
-      "to": <%= set_shell_command(["open -a 'Firefox.app'"]) %>
-    }
-  ]
-},
-    {
-      "description": "LeftOption + J_ChromeActiveWindow2(WindowControl)",
-      "manipulators": [
-    {
-      "type": "basic",
-      "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
-      "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
-      "conditions": [ <%= frontmost_application_unless("pararell") %> ]
-    }
-    ]
-    },
+            "description": "LeftCommand + quote_HideFrontmostAppWindow",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("quote", ["left_control"]) %>,
+                    "to": <%= to([["quote",["left_control"]]]) %>
+                }
+            ]
+        },
+        {
+            "description": "None",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("l", ["left_alt"]) %>,
+                    "to": <%= set_shell_command(["open -a 'Firefox.app'"]) %>
+                }
+            ]
+        },
+        {
+            "description": "LeftOption + J_ChromeActiveWindow2(WindowControl)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
+                    "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
+                    "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+                }
+            ]
+        },
         {
             "description": "CursolMoveUpLeftRightDown(MouseControl)",
             "manipulators": [
@@ -337,79 +337,79 @@
                 }
             ]
         },
-              {
-                "description": "一括設定(TESUTO)",
-                "manipulators": [
-                  {
+        {
+            "description": "一括設定(TESUTO)",
+            "manipulators": [
+                {
                     "description": "Fn + U_WindowLeftUp",
                     "type": "basic",
                     "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
                     "to": <%= to([["6", "right_alt"]]) %>
-                  },
-                  {
+                },
+                {
                     "description": "Fn + H_LeftWindowMove",
                     "type": "basic",
                     "from": <%= from("h", ["fn"], ["caps_lock"]) %>,
                     "to": <%= to([["2", ["right_alt"]]]) %>
-                  }
-              ]
-              },
-                    {
-        "description": "個別設定_LeftCommand + W_CurrentCursol-EndRowSelect(TESUTO)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-            "to": <%= to([["equal_sign", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("pararell") %>]
-          }
-        ]
-      },
-      {
-        "description": "うまくいかない-個別設定_RightCommand + B_f13(TESUTO)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["f13"]]) %>,
-            "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
-          }
-        ]
-      },
-      {
-        "description": "個別設定_RightCommand + ._MaxWindows(TESUTO)",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-            "to": <%= to([["1", "left_option"]]) %>,
-            "conditions": [ <%= frontmost_application_if("pararell") %>]
-          }
-        ]
-      },
-      {
-        "description": "test1",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j") %>,
-            "to": <%= to([["j"]]) %>
-          }
-        ]
-      },
-      {
-        "description": "test2",
-        "manipulators": [
-          {
-            "type": "basic",
-            "from": <%= from("j",["caps_lock"]) %>,
-            "to": <%= to([["down_arrow"]]) %>,
-            "conditions": [ <%= frontmost_application_if("chrome") %> ]
+                }
+            ]
+        },
+        {
+            "description": "個別設定_LeftCommand + W_CurrentCursol-EndRowSelect(TESUTO)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["equal_sign", "left_option"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("pararell") %>]
+                }
+            ]
+        },
+        {
+            "description": "うまくいかない-個別設定_RightCommand + B_f13(TESUTO)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
+                    "to": <%= to([["f13"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("virtual_machine") %>]
+                }
+            ]
+        },
+        {
+            "description": "個別設定_RightCommand + ._MaxWindows(TESUTO)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+                    "to": <%= to([["1", "left_option"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("pararell") %>]
+                }
+            ]
+        },
+        {
+            "description": "test1",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("j") %>,
+                    "to": <%= to([["j"]]) %>
+                }
+            ]
+        },
+        {
+            "description": "test2",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("j",["caps_lock"]) %>,
+                    "to": <%= to([["down_arrow"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("chrome") %> ]
 
-          }
-        ]
-      },
-              {
+                }
+            ]
+        },
+        {
             "description": "Space + K_MouseCursolUp移動(Chrome)",
             "manipulators": [
                 {
@@ -463,12 +463,12 @@
                             "value": 1
                         },
                         {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome$"
+                            ]
                         }
-                              ]
+                    ]
                 }
             ]
         },
@@ -526,10 +526,10 @@
                             "value": 1
                         },
                         {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome$"
+                            ]
                         }
                     ]
                 }
@@ -589,10 +589,10 @@
                             "value": 1
                         },
                         {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome$"
+                            ]
                         }
                     ]
                 }
@@ -652,16 +652,16 @@
                             "value": 1
                         },
                         {
-                        "type": "frontmost_application_if",
-                        "bundle_identifiers": [
-                          "^com\\.google\\.Chrome$"
-                        ]
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome$"
+                            ]
                         }
                     ]
                 }
             ]
         },
-              {
+        {
             "description": "Space + i_MouseCursolUp(Chrome)",
             "manipulators": [
                 {
@@ -681,155 +681,155 @@
                             }
                         }
                     ],
-      "conditions": [
-        {
-          "type": "input_source_if",
-          "input_sources": [
-            { "language": "en" }
-          ]
-        },
-        {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
-              ]
-            }
-      ]
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                { "language": "en" }
+                            ]
+                        },
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome$"
+                            ]
+                        }
+                    ]
                 }
             ]
         },
         {
             "description": "RAlt + Z_VisualBasic-Excel(MouseControl)",
             "manipulators": [
-              {
-                "type": "basic",
-                "from": <%= from("z", ["right_alt"]) %>,
-      "to": [
-        {
-          "software_function": {
-            "set_mouse_cursor_position": {
-              "x": "850",
-              "y": "30",
-              "screen": 0
-            }
-          }
-        },
-        { "pointing_button": "button1" }
-]
-              }
+                {
+                    "type": "basic",
+                    "from": <%= from("z", ["right_alt"]) %>,
+                    "to": [
+                        {
+                            "software_function": {
+                                "set_mouse_cursor_position": {
+                                    "x": "850",
+                                    "y": "30",
+                                    "screen": 0
+                                }
+                            }
+                        },
+                        { "pointing_button": "button1" }
+                    ]
+                }
             ]
-          },
-{
-  "description": "日本語モード:Openbracket_OpenClosebracket(Vscode)",
-"manipulators": [
-        {
-          "type": "basic",
-           "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-      "to": [
-            {
-              "key_code": "open_bracket"
-            },
-            {
-              "key_code": "close_bracket"
-            },
-            {
-              "key_code": "left_arrow"
-            }
-      ],
-      "conditions": [
-        {
-          "type": "input_source_if",
-          "input_sources": [
-            { "language": "ja" }
-          ]
         },
         {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-      ]
-    }
-  ]
-},
-    {
-      "description": "使用しない-Double RightShift_Pipeline(Vitualbox)",
-      "manipulators": [
-          {
-              "type": "basic",
-              "from": {
-                  "key_code": "right_shift",
-                  "modifiers": {
-                      "optional": [
-                          "any"
-                      ]
-                  }
-              },
-              "to": [
-                  {
-                      "key_code": "backslash",
-                      "modifiers": [
-                          "left_shift"
-                      ]
-                  }
-              ],
-              "conditions": [
-                  {
-                      "type": "variable_if",
-                      "name": "right_shift pressed",
-                      "value": 1
-                  }
-              ]
-          },
-          {
-              "type": "basic",
-              "from": {
-                  "key_code": "right_shift",
-                  "modifiers": {
-                      "optional": [
-                          "any"
-                      ]
-                  }
-              },
-              "to": [
-                  {
-                      "set_variable": {
-                          "name": "right_shift pressed",
-                          "value": 1
-                      }
-                  },
-                  {
-                      "key_code": "right_shift"
-                  }
-              ],
-              "to_delayed_action": {
-                  "to_if_invoked": [
-                      {
-                          "set_variable": {
-                              "name": "right_shift pressed",
-                              "value": 0
-                          }
-                      }
-                  ],
-                  "to_if_canceled": [
-                      {
-                          "set_variable": {
-                              "name": "right_shift pressed",
-                              "value": 0
-                          }
-                      }
-                  ]
-              }
-          }
-      ]
-  }
+            "description": "日本語モード:Openbracket_OpenClosebracket(Vscode)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket"
+                        },
+                        {
+                            "key_code": "close_bracket"
+                        },
+                        {
+                            "key_code": "left_arrow"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                { "language": "ja" }
+                            ]
+                        },
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.microsoft.VSCode$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "使用しない-Double RightShift_Pipeline(Vitualbox)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_shift",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "backslash",
+                            "modifiers": [
+                                "left_shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "right_shift pressed",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_shift",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "right_shift pressed",
+                                "value": 1
+                            }
+                        },
+                        {
+                            "key_code": "right_shift"
+                        }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [
+                            {
+                                "set_variable": {
+                                    "name": "right_shift pressed",
+                                    "value": 0
+                                }
+                            }
+                        ],
+                        "to_if_canceled": [
+                            {
+                                "set_variable": {
+                                    "name": "right_shift pressed",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     ]
 }
