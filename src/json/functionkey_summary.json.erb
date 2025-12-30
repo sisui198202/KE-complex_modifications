@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary3",
+    "title": "FunctionkeySummary3_99",
     "rules": [
         {
-            "description": "FunctionkeySummary3",
+            "description": "FunctionkeySummary3_99",
             "manipulators": [
                 {
                     "description": "F1_よく使う-md",
@@ -19,37 +19,89 @@
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
-                    "description": "Double F3_.KeyManageListOpen",
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f3"
+                "description": "Double F3_.KeyManageListOpen",
+                "type": "basic",
+                "from": {
+                    "key_code": "f3"
+                },
+                "to": [
+                    {
+                    "key_code": "0",
+                    "modifiers": ["control", "shift"]
+                    }
+                ],
+                "conditions": [
+                    {
+                    "type": "variable_if",
+                    "name": "f3 pressed",
+                    "value": 1
                     },
-                    "to": [
-                        {
-                            "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Windows/KeyManageList_windows.xlsx'"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "f3 pressed",
-                            "value": 1
-                        },
-                        {
-                            "type": "frontmost_application_unless",
-                            "bundle_identifiers": [
-                                "^com.vmware.fusion$",
-                                "^com.vmware.horizon$",
-                                "^com.vmware.view$",
-                                "^com.parallels.desktop$",
-                                "^com.parallels.vm$",
-                                "^com.parallels.desktop.console$",
-                                "^org.virtualbox.app.VirtualBoxVM$",
-                                "^com.vmware.proxyApp.",
-                                "^com.parallels.winapp."
-                            ]
-                        }
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
                     ]
+                    }
+                ]
+                },
+                {
+                "type": "basic",
+                "from": {
+                    "key_code": "f3"
+                },
+                "to": [
+                    {
+                    "set_variable": {
+                        "name": "f3 pressed",
+                        "value": 1
+                    }
+                    },
+                    {
+                    "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Mac/KeyManageList_Mac.xlsm'"
+                    }
+                ],
+                "conditions": [
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
+                    ]
+                    }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                    {
+                        "set_variable": {
+                        "name": "f3 pressed",
+                        "value": 0
+                        }
+                    }
+                    ],
+                    "to_if_canceled": [
+                    {
+                        "set_variable": {
+                        "name": "f3 pressed",
+                        "value": 0
+                        }
+                    }
+                    ]
+                }
                 },
                 {
                     "type": "basic",
