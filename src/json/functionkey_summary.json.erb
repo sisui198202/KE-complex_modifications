@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary3_101",
+    "title": "FunctionkeySummary3_12",
     "rules": [
         {
-            "description": "FunctionkeySummary3_101",
+            "description": "FunctionkeySummary3_12",
             "manipulators": [
                 {
                     "description": "F1_よく使う-md",
@@ -19,23 +19,15 @@
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
-                    "description": "Double F3_.KeyManageListOpen",
+                    "description": "Double F3 -> Ctrl+Shift+0",
                     "type": "basic",
-                    "from": {
-                        "key_code": "f3"
-                    },
+                    "from": { "key_code": "f3" },
                     "to": [
-                        {
-                        "key_code": "0",
-                        "modifiers": ["control", "shift"]
-                        }
+                        { "set_variable": { "name": "f3_pressed", "value": 0 } },
+                        { "key_code": "0", "modifiers": ["control", "shift"] }
                     ],
                     "conditions": [
-                        {
-                        "type": "variable_if",
-                        "name": "f3 pressed",
-                        "value": 1
-                        },
+                        { "type": "variable_if", "name": "f3_pressed", "value": 1 },
                         {
                         "type": "frontmost_application_unless",
                         "bundle_identifiers": [
@@ -53,27 +45,26 @@
                     ]
                 },
                 {
+                    "description": "Single F3 -> Open Excel (delayed, canceled by double-press)",
                     "type": "basic",
-                    "from": {
-                        "key_code": "f3"
-                    },
+                    "from": { "key_code": "f3" },
                     "to": [
-                        {
-                        "set_variable": {
-                            "name": "f3 pressed",
-                            "value": 1
-                        }
-                        },
-                        {
-                        "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Mac/KeyManageList_Mac.xlsm'"
-                        }
+                        { "set_variable": { "name": "f3_pressed", "value": 1 } }
                     ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [
+                        { "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Mac/KeyManageList_Mac.xlsm'" },
+                        { "set_variable": { "name": "f3_pressed", "value": 0 } }
+                        ],
+                        "to_if_canceled": [
+                        { "set_variable": { "name": "f3_pressed", "value": 0 } }
+                        ]
+                    },
+                    "parameters": {
+                        "basic.to_delayed_action_delay_milliseconds": 300
+                    },
                     "conditions": [
-                        {
-                        "type": "variable_if",
-                        "name": "f3 pressed",
-                        "value": 0
-                        },
+                        { "type": "variable_if", "name": "f3_pressed", "value": 0 },
                         {
                         "type": "frontmost_application_unless",
                         "bundle_identifiers": [
@@ -88,25 +79,7 @@
                             "^com.parallels.winapp."
                         ]
                         }
-                    ],
-                    "to_delayed_action": {
-                        "to_if_invoked": [
-                        {
-                            "set_variable": {
-                            "name": "f3 pressed",
-                            "value": 0
-                            }
-                        }
-                        ],
-                        "to_if_canceled": [
-                        {
-                            "set_variable": {
-                            "name": "f3 pressed",
-                            "value": 0
-                            }
-                        }
-                        ]
-                    }
+                    ]
                 },
                 {
                     "description": "Double F4_1度押し:Category内ファイル選択,2度押し:RulesSummary",
