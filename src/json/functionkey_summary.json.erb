@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary3_12",
+    "title": "FunctionkeySummary33",
     "rules": [
         {
-            "description": "FunctionkeySummary3_12",
+            "description": "FunctionkeySummary33",
             "manipulators": [
                 {
                     "description": "F1_よく使う-md",
@@ -84,14 +84,7 @@
                 {
                     "description": "Double F4_1度押し:Category内ファイル選択,2度押し:RulesSummary",
                     "type": "basic",
-                    "from": {
-                        "key_code": "f4",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
+                    "from": {"key_code": "f4"},
                     "to": [
                         {
                             "shell_command": "open '/Users/user/Dropbox/Rule/Mac/RulesSummary.md'"
@@ -121,14 +114,7 @@
                 },
                 {
                     "type": "basic",
-                    "from": {
-                        "key_code": "f4",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
+                    "from": {"key_code": "f4"},
                     "to": [
                         {
                             "set_variable": {
@@ -141,6 +127,11 @@
                         }
                     ],
                     "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "f4 pressed",
+                            "value": 0
+                        },
                         {
                             "type": "frontmost_application_unless",
                             "bundle_identifiers": [
@@ -179,12 +170,7 @@
                     "description": "Double F5_.zshrc_aliassettingfileOpen(FunctionKey)",
                     "type": "basic",
                     "from": {
-                        "key_code": "f5",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
+                        "key_code": "f5"
                     },
                     "to": [
                         {
@@ -236,6 +222,11 @@
                     ],
                     "conditions": [
                         {
+                            "type": "variable_if",
+                            "name": "f5 pressed",
+                            "value": 0
+                        },
+                        {
                             "type": "frontmost_application_unless",
                             "bundle_identifiers": [
                                 "^com.vmware.fusion$",
@@ -273,12 +264,7 @@
                     "description": "Double F11_GeneralPassword_serverPassword_fileOpen",
                     "type": "basic",
                     "from": {
-                        "key_code": "f11",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
+                        "key_code": "f11"
                     },
                     "to": [
                         {
@@ -310,13 +296,7 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "f11",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
+                        "key_code": "f11"},
                     "to": [
                         {
                             "set_variable": {
@@ -329,6 +309,11 @@
                         }
                     ],
                     "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "f11 pressed",
+                            "value": 0
+                        },
                         {
                             "type": "frontmost_application_unless",
                             "bundle_identifiers": [
