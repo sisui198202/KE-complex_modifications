@@ -1,8 +1,8 @@
 {
-    "title": "ShotCutKeySummary",
+    "title": "ShotCutKeySummary1",
     "rules": [
         {
-            "description": "ShotCutKeySummary",
+            "description": "ShotCutKeySummary1",
             "manipulators": [
                 {
                     "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -30,13 +30,6 @@
                     "type": "basic",
                     "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
                     "to": <%= to([["8", ["right_option", "right_shift"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
-                {
-                    "description": "RightCommand + tilde_tilde x 3",
-                    "type": "basic",
-                    "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["8", ["right_control", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
