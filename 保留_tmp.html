@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>保留.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/user/MarkdownPDF/github-markdown.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="parelldeskvscode%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96">ParellDesk_Vscodeアクティブ</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightOption + S_ActiveParellDeskWindowsVscode(WindowControl)&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;s&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/Visual Studio Code.app/Contents/MacOS/WinAppHelper'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]
+    },
+</code></pre>
+<hr>
+<h2 id="gvivaldiactivewindow">G_VivaldiActiveWindow</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;RightOption + G_VivaldiActiveWindow(WindowControl)&quot;,
+  &quot;type&quot;: &quot;basic&quot;,
+  &quot;from&quot;: &lt;%= from(&quot;g&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+  &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Vivaldi.app'&quot;]) %&gt;,
+  &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]
+},
+</code></pre>
+<hr>
+<h2 id="doublepushdoublerightshift%E3%81%A7macwindowshare-%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E9%96%8B%E3%81%8F">double_push_DoubleRightShiftで「/MacWindowShare」 ディレクトリを開く</h2>
+<p>{<br>
+&quot;description&quot;: &quot;Double RightShift_/MacWindowShare/(Double Push)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;right_shift&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;any&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;shell_command&quot;: &quot;open -a 'Path Finder.app' '/Users/user/MacWindowShare/'&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;variable_if&quot;,<br>
+&quot;name&quot;: &quot;right_shift pressed&quot;,<br>
+&quot;value&quot;: 1<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_unless&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.vmware\.fusion$&quot;,<br>
+&quot;^com\.vmware\.horizon$&quot;,<br>
+&quot;^com\.vmware\.view$&quot;,<br>
+&quot;^com\.parallels\.desktop$&quot;,<br>
+&quot;^com\.parallels\.vm$&quot;,<br>
+&quot;^com\.parallels\.desktop\.console$&quot;,<br>
+&quot;^org\.virtualbox\.app\.VirtualBoxVM$&quot;,<br>
+&quot;^com\.vmware\.proxyApp\.&quot;,<br>
+&quot;^com\.parallels\.winapp\.&quot;<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;right_shift&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;any&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;set_variable&quot;: {<br>
+&quot;name&quot;: &quot;right_shift pressed&quot;,<br>
+&quot;value&quot;: 1<br>
+}<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;right_shift&quot;<br>
+}<br>
+],<br>
+&quot;to_delayed_action&quot;: {<br>
+&quot;to_if_invoked&quot;: [<br>
+{<br>
+&quot;set_variable&quot;: {<br>
+&quot;name&quot;: &quot;right_shift pressed&quot;,<br>
+&quot;value&quot;: 0<br>
+}<br>
+}<br>
+],<br>
+&quot;to_if_canceled&quot;: [<br>
+{<br>
+&quot;set_variable&quot;: {<br>
+&quot;name&quot;: &quot;right_shift pressed&quot;,<br>
+&quot;value&quot;: 0<br>
+}<br>
+}<br>
+]<br>
+}<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="oraclenumberlearnparts">Oracle_NumberLearnParts</h2>
+<p>{<br>
+&quot;description&quot;: &quot;RightAlt + 1_Oracle_NumberLearnParts&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;1&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;1&quot;, [&quot;left_alt&quot;, &quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},</p>
+<hr>
+<h2 id="vscodecolumn2splitediterscreen">vscode_Column2SplitEditerScreen</h2>
+<p>{<br>
+&quot;description&quot;: &quot;LeftCommand + 0(ゼロ)_Column2SplitEditerScreen(vscode)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;0&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;o&quot;, [&quot;left_control&quot;, &quot;left_shift&quot;]], [&quot;i&quot;, [&quot;right_gui&quot;, &quot;right_alt&quot;]], [&quot;n&quot;, [&quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;vscode&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="activeparelldesksublimewindowcontrol">ActiveParellDeskSublime(WindowControl)</h2>
+<p>{<br>
+&quot;description&quot;: &quot;RightOption + W_ActiveParellDeskSublime(WindowControl)&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;w&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= set_shell_command([&quot;open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/Sublime Text 3.app/Contents/MacOS/WinAppHelper'&quot;]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+}</p>
+<hr>
+<h2 id="%22double-leftshifttildevitualbox%22">&quot;Double LeftShift_tilde(Vitualbox)&quot;</h2>
+<p>{<br>
+&quot;description&quot;: &quot;Double LeftShift_tilde(Vitualbox)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;left_shift&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;any&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;grave_accent_and_tilde&quot;,<br>
+&quot;modifiers&quot;: [<br>
+&quot;left_shift&quot;<br>
+]<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;variable_if&quot;,<br>
+&quot;name&quot;: &quot;left_shift pressed&quot;,<br>
+&quot;value&quot;: 1<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;left_shift&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;any&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;set_variable&quot;: {<br>
+&quot;name&quot;: &quot;left_shift pressed&quot;,<br>
+&quot;value&quot;: 1<br>
+}<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;left_shift&quot;<br>
+}<br>
+],<br>
+&quot;to_delayed_action&quot;: {<br>
+&quot;to_if_invoked&quot;: [<br>
+{<br>
+&quot;set_variable&quot;: {<br>
+&quot;name&quot;: &quot;left_shift pressed&quot;,<br>
+&quot;value&quot;: 0<br>
+}<br>
+}<br>
+],<br>
+&quot;to_if_canceled&quot;: [<br>
+{<br>
+&quot;set_variable&quot;: {<br>
+&quot;name&quot;: &quot;left_shift pressed&quot;,<br>
+&quot;value&quot;: 0<br>
+}<br>
+}<br>
+]<br>
+}<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="constscrolldownconstscrollup%E4%BF%9D%E7%95%99">ConstScrollDown,ConstScrollUp(保留)</h2>
+<p>{<br>
+&quot;description&quot;: &quot;RightAlt + J_ConstScrollDown&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;e&quot;, [&quot;left_control&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightAlt + K_ConstScrollUp&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;k&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;y&quot;, [&quot;left_control&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},</p>
+<hr>
+<h2 id="replacekeyjsonerb">replacekey.json.erb</h2>
+<p>{<br>
+&quot;description&quot;: &quot;LeftCommand + H/J/K/L_Arrows(Replacekey)&quot;,<br>
+&quot;manipulators&quot;:<br>
+&lt;%= each_key(<br>
+source_keys_list: [&quot;h&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;],<br>
+from_mandatory_modifiers: [&quot;left_control&quot;],<br>
+from_optional_modifiers: [&quot;any&quot;],<br>
+dest_keys_list: [&quot;left_arrow&quot;, &quot;down_arrow&quot;, &quot;up_arrow&quot;, &quot;right_arrow&quot;],<br>
+as_json: true,<br>
+) %&gt;<br>
+},</p>
+<hr>
+<h2 id="replacekeyjsonerb">replacekey.json.erb</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_簡易版(Replacekey)&quot;,
+  &quot;manipulators&quot;:
+  &lt;%= each_key(
+        source_keys_list: [&quot;z&quot;, &quot;x&quot;, &quot;c&quot;, &quot;v&quot;, &quot;s&quot;, &quot;d&quot;, &quot;f&quot;, &quot;w&quot;, &quot;e&quot;, &quot;r&quot;],
+        from_mandatory_modifiers: [&quot;right_gui&quot;],
+        from_optional_modifiers: [&quot;caps_lock&quot;],
+        dest_keys_list: [[&quot;japanese_eisuu&quot;, &quot;0&quot;], [&quot;japanese_eisuu&quot;, &quot;1&quot;], [&quot;japanese_eisuu&quot;, &quot;2&quot;], [&quot;japanese_eisuu&quot;, &quot;3&quot;], [&quot;japanese_eisuu&quot;, &quot;4&quot;], [&quot;japanese_eisuu&quot;, &quot;5&quot;], [&quot;japanese_eisuu&quot;, &quot;6&quot;], [&quot;japanese_eisuu&quot;, &quot;7&quot;], [&quot;japanese_eisuu&quot;, &quot;8&quot;], [&quot;japanese_eisuu&quot;, &quot;9&quot;]],
+        as_json: true,
+      ) %&gt;
+},
+    {
+  &quot;description&quot;: &quot;RightCommand + Z,X,C,V,S,D,F,W,E,R_Number0~9_詳細版(Replacekey)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;z&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;0&quot;
+        }
+      ],
+                &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_unless&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.parallels.desktop.console$&quot;,
+            &quot;^com.parallels.winapp.b06b57f82d7f519cdfa3013b29968f3d.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.7d56d4002964a683f165ae699d4ad1ba.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.d51a768a01445deddc409dc4b3c07517.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.c1d81af5835844b4e9d936910ded8fdc.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.2d457b859f61df5cdc0ae605436482d3.b9dc48efd5094ca8a69c0e98f2ecf717.fs$&quot;,
+            &quot;^com.parallels.winapp.bf733d8a933c1601697f364223fc7ecb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.f900d466e8ca2c668fa8844e6e5205f3.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.ee162c85923f5664be0dcc14062cc904.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;,
+            &quot;^com.parallels.winapp.5f30debe0c2949158e0cff8dc0684bbb.b9dc48efd5094ca8a69c0e98f2ecf717$&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;x&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;1&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;c&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;2&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;v&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;3&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;s&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;4&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;d&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;5&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;f&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;6&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;w&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;7&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;e&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;8&quot;
+        }
+      ]
+    },
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;r&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_gui&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;japanese_eisuu&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;9&quot;
+        }
+      ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="capslocker%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABchrome%E4%B8%8A%E3%81%A7capslock%E3%82%AA%E3%83%B3%E6%99%82%E3%81%ABj%E3%82%AD%E3%83%BC%E3%82%92%E6%8A%BC%E3%81%99%E3%81%94%E3%81%A8%E3%81%ABcapslocker%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AE%E5%AF%BE%E7%AD%96%E6%A4%9C%E8%A8%8E">CapsLocker、起動時にChrome上でCapsLockオン時に「j」キーを押すごとに、CapsLockerのアイコンが表示されることの対策検討</h2>
+<p>結果:うまくいかなかった。<br>
+Capslockオン時に、「j」キーで、CapsLockerのアイコンが表示されてしまう。</p>
+<pre class="hljs"><code><div>    {
+      &quot;description&quot;: &quot;J_DownArrow_改良1_1(Chrome)&quot;,
+      &quot;manipulators&quot;: [
+        {
+          &quot;type&quot;: &quot;basic&quot;,
+          &quot;from&quot;: {
+            &quot;key_code&quot;: &quot;j&quot;
+          },
+          &quot;to&quot;: [
+            {
+              &quot;key_code&quot;: &quot;down_arrow&quot;
+            }
+          ],
+          &quot;conditions&quot;: [
+            {
+              &quot;type&quot;: &quot;frontmost_application_if&quot;,
+              &quot;bundle_identifiers&quot;: [
+                &quot;^com\\.google\\.Chrome$&quot;
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      &quot;description&quot;: &quot;J_DownArrow改良1_2(Chrome)&quot;,
+      &quot;manipulators&quot;: [
+        {
+          &quot;type&quot;: &quot;basic&quot;,
+          &quot;from&quot;: {
+            &quot;key_code&quot;: &quot;j&quot;,
+            &quot;modifiers&quot;: {
+              &quot;mandatory&quot;: [
+                &quot;caps_lock&quot;
+              ]
+            }
+          },
+          &quot;to&quot;: [
+            {
+              &quot;key_code&quot;: &quot;j&quot;
+            }
+          ],
+          &quot;conditions&quot;: [
+            {
+              &quot;type&quot;: &quot;frontmost_application_if&quot;,
+              &quot;bundle_identifiers&quot;: [
+                &quot;^com\\.google\\.Chrome$&quot;
+              ]
+            }
+          ]
+        }
+      ]
+    },
+</div></code></pre>
+<hr>
+<h2 id="frontmostchromejsonerbl%E3%82%AD%E3%83%BCrightarrow%E8%A8%AD%E5%AE%9A">「frontmost_chrome.json.erb_L」キー、RightArrow設定、</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;L_RightArrow(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;l&quot;, [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;right_arrow&quot;]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+    }
+  ]
+},
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;適用しない_Delete_NoteDelete(Evernote)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;delete_or_backspace&quot;) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;delete_or_backspace&quot;, [&quot;right_gui&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;evernote&quot;) %&gt; ]
+    }
+  ]
+}
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<h2 id="%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84leftalt--f11vbaeditorexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22f11%22-%22leftalt%22-%22to%22--to%22f11%22-%22leftalt%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84marukakoopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%229%22-%22leftshift%22-%22to%22--to%229%22-%22leftshift%22-%220%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84namikakoopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22openbracket%22-%22leftshift%22-%22to%22--to%22openbracket%22-%22leftshift%22-%22closebracket%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84kakukakoopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22openbracket%22-%22to%22--to%22openbracket%22-%22closebracket%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84dainariopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22comma%22-%22leftshift%22-%22to%22--to%22comma%22-%22leftshift%22-%22period%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84doublequoteopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22quote%22-%22leftshift%22-%22to%22--to%22quote%22-%22leftshift%22-%22quote%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84singlequoteopencloseinputexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22quote%22-%22to%22--to%22quote%22-%22quote%22-%22conditions%22---frontmostapplicationif%22excel%22--%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84leftaltcopyexcel%22%22manipulators%22-%22type%22-%22basic%22%22from%22-%22keycode%22-%22leftalt%22%22modifiers%22-%22optional%22-%22capslock%22%22to%22-%22keycode%22-%22leftalt%22%22toifalone%22-%22keycode%22-%22leftalt%22%22modifiers%22-%22leftgui%22%22conditions%22-%22type%22-%22frontmostapplicationif%22%22bundleidentifiers%22-%22commicrosoftexcel%22%22description%22-%22%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84rightcommand--jselect1rowexcelvbe%E3%81%A7%E3%81%AE%E3%81%BF%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%83%BD%22%22manipulators%22-%22type%22-%22basic%22%22from%22--from%22j%22-%22rightgui%22-%22to%22--to%22leftarrow%22-%22fn%22-%22downarrow%22-%22leftshift%22-%22conditions%22---frontmostapplicationif%22excel%22">{<br>
+&quot;description&quot;: &quot;使用しない_LeftAlt + F11_VBAeditor(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f11&quot;, [&quot;left_alt&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;f11&quot;, [&quot;left_alt&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Marukako_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;9&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;9&quot;, [&quot;left_shift&quot;]], [&quot;0&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Namikako_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;open_bracket&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;open_bracket&quot;, [&quot;left_shift&quot;]], [&quot;close_bracket&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Kakukako_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;open_bracket&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;open_bracket&quot;], [&quot;close_bracket&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Dainari_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;comma&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;comma&quot;, [&quot;left_shift&quot;]], [&quot;period&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_DoubleQuote_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;quote&quot;, [&quot;left_shift&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;quote&quot;, [&quot;left_shift&quot;]], [&quot;quote&quot;, [&quot;left_shift&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_SingleQuote_OpenCloseInput(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;quote&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;quote&quot;], [&quot;quote&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しないLeftAlt_Copy(Excel)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;left_alt&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_alt&quot;<br>
+}<br>
+],<br>
+&quot;to_if_alone&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_alt&quot;,<br>
+&quot;modifiers&quot;: &quot;left_gui&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.microsoft\.Excel$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_RightCommand + J_Select1Row(Excel)VBEでのみ使用可能&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_gui&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;left_arrow&quot;, [&quot;fn&quot;]], [&quot;down_arrow&quot;, &quot;left_shift&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;excel&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}</h2>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<p>{<br>
+&quot;description&quot;: &quot;使用しないEnter_OpenFile(pathfinder)&quot;,<br>
+&quot;_comment&quot;: &quot;ファイル名変更でエンターで確定できない為&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;return_or_enter&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;o&quot;, [&quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pathfinder&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_delete_FileDelete(pathfinder)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;delete_or_backspace&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;delete_or_backspace&quot;, [&quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;pathfinder&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="%E4%BB%8A%E3%81%AF%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84">今は使わない</h2>
+<p>{<br>
+&quot;description&quot;: &quot;F3_KeyManageList.xlsxOpen(FunctionKey)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f3&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= set_shell_command([&quot;open '/Users/user/Dropbox/KeyCustomization/KeyManageList.xlsm'&quot;]) %&gt;<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="%E4%BB%8A%E3%81%AF%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84">今は使わない</h2>
+<pre><code>{
+    &quot;description&quot;: &quot;今は使わない_Double F1_tmp.py(Single)_tmp.md[Double](FunctionKey)&quot;,
+    &quot;_comment&quot;: &quot;ダブル押しコードでの、「frontmost_application_unless(pararell)」の書き方が分からないので、Single押しでの処理を使うことにする。&quot;,
+    &quot;manipulators&quot;: [
+        {
+            &quot;type&quot;: &quot;basic&quot;,
+            &quot;from&quot;: {
+                &quot;key_code&quot;: &quot;f1&quot;,
+                &quot;modifiers&quot;: {
+                    &quot;optional&quot;: [
+                        &quot;any&quot;
+                    ]
+                }
+            },
+            &quot;to&quot;: [
+                {
+                    &quot;shell_command&quot;: &quot;open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.md'&quot;
+                }
+            ],
+            &quot;conditions&quot;: [
+                {
+                    &quot;type&quot;: &quot;variable_if&quot;,
+                    &quot;name&quot;: &quot;f1 pressed&quot;,
+                    &quot;value&quot;: 1
+                }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;basic&quot;,
+            &quot;from&quot;: {
+                &quot;key_code&quot;: &quot;f1&quot;,
+                &quot;modifiers&quot;: {
+                    &quot;optional&quot;: [
+                        &quot;any&quot;
+                    ]
+                }
+            },
+            &quot;to&quot;: [
+                {
+                    &quot;set_variable&quot;: {
+                        &quot;name&quot;: &quot;f1 pressed&quot;,
+                        &quot;value&quot;: 1
+                    }
+                },
+                {
+                    &quot;shell_command&quot;: &quot;open '/Users/user/Desktop/iCollections/Folder2/Verification/tmp.py'&quot;
+                }
+            ],
+            &quot;to_delayed_action&quot;: {
+                &quot;to_if_invoked&quot;: [
+                    {
+                        &quot;set_variable&quot;: {
+                            &quot;name&quot;: &quot;f1 pressed&quot;,
+                            &quot;value&quot;: 0
+                        }
+                    }
+                ],
+                &quot;to_if_canceled&quot;: [
+                    {
+                        &quot;set_variable&quot;: {
+                            &quot;name&quot;: &quot;f1 pressed&quot;,
+                            &quot;value&quot;: 0
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+},
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<p>{<br>
+&quot;description&quot;: &quot;使用しない(予測変換で2度押しが必要になるため)_Spacebar(mi)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;spacebar&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;japanese_eisuu&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;spacebar&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^net.mimikaki.mi$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_Dainari_OpenCloseInput(mi)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;comma&quot;, [&quot;left_shift&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;japanese_eisuu&quot;], [&quot;comma&quot;, [&quot;left_shift&quot;]], [&quot;period&quot;, [&quot;left_shift&quot;]], [&quot;left_arrow&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;mi&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;RightCommand + J_1RowSelection_LeftArrow(mi)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;right_gui&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;a&quot;, [&quot;left_control&quot;]], [&quot;down_arrow&quot;, &quot;left_shift&quot;], [&quot;left_arrow&quot;, &quot;left_shift&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;mi&quot;) %&gt; ]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84">使用しない</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;使用しない_LeftCommand + J_DownArrow-X3(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+       &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;j&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;down_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;down_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;down_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com\\.google\\.Chrome$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  &quot;description&quot;: &quot;使用しない_LeftCommand + k_UpArrow-X3(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;k&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;up_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;up_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;up_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com\\.google\\.Chrome$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  &quot;description&quot;: &quot;使用しない_LeftCommand + h_LeftArrow-X3(Chrome)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;h&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+          &quot;^com\\.google\\.Chrome$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+</code></pre>
+<p>{<br>
+&quot;description&quot;: &quot;使用しない_LeftCommand + L_RigthArrow-X3(Chrome)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;l&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;mandatory&quot;: [<br>
+&quot;left_control&quot;<br>
+],<br>
+&quot;optional&quot;: [<br>
+&quot;any&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+},<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:j_DownArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;j&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;down_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:k_UpArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;k&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;up_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:h_LeftArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;h&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;left_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;使用しない_英語モード:L_LeftArrow(Chrome)&quot;,<br>
+&quot;_comment&quot;: &quot;Chrome上で、検索窓に日本語入力ができなくなる欠点有り&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;key_code&quot;: &quot;l&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;right_arrow&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;input_source_if&quot;,<br>
+&quot;input_sources&quot;: [<br>
+{ &quot;language&quot;: &quot;en&quot; }<br>
+]<br>
+},<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+}</p>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84leftcommand--kuparrowx3chrome">使用しない_LeftCommand + K_UpArrow_X3(Chrome)</h2>
+<pre><code>  {
+    &quot;description&quot;: &quot;使用しない-LeftCommand + K_UpArrow_X3(Chrome)&quot;,
+    &quot;manipulators&quot;: [
+      {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;from&quot;: &lt;%= from(&quot;k&quot;,[&quot;left_control&quot;],[&quot;caps_lock&quot;]) %&gt;,
+        &quot;to&quot;: &lt;%= to([[&quot;up_arrow&quot;],[&quot;up_arrow&quot;],[&quot;up_arrow&quot;]]) %&gt;,
+        &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+      }
+    ]
+  },
+</code></pre>
+<hr>
+<h2 id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%AA%E3%81%84-leftcommand--hleftarrow-x3kindle">使用しない-LeftCommand + h_LeftArrow-X3(kindle)</h2>
+<pre><code>{
+  &quot;description&quot;: &quot;LeftCommand + h_LeftArrow-X3(kindle)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;h&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;left_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.amazon.Kindle$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  &quot;description&quot;: &quot;LeftCommand + L_RigthArrow-X3(kindle)&quot;,
+  &quot;manipulators&quot;: [
+    {
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;l&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;left_control&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;any&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;right_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;right_arrow&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;right_arrow&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_if&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.amazon.Kindle$&quot;
+          ]
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<hr>
+<h2 id="spacebar--j-%E3%81%A7downarrow3%E5%9B%9E">spacebar + j でDownArrow3回</h2>
+<pre><code>  {
+    &quot;description&quot;: &quot;使用できない-LeftCommand + J_DownArrow_X3(Chrome)&quot;,
+    &quot;manipulators&quot;: [
+      {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;from&quot;: &lt;%= from(&quot;j&quot;,[&quot;spacebar&quot;],[&quot;caps_lock&quot;]) %&gt;,
+        &quot;to&quot;: &lt;%= to([[&quot;down_arrow&quot;],[&quot;down_arrow&quot;],[&quot;down_arrow&quot;]]) %&gt;,
+        &quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]
+      }
+    ]
+  },
+</code></pre>
+<hr>
+<h2 id="vscode-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%92%E9%96%89%E3%81%98%E3%82%8B">vscode ワークスペースを閉じる</h2>
+<p>{<br>
+&quot;description&quot;: &quot;RightOption + G_ワークスペースを閉じる(vscode)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;g&quot;, [&quot;right_option&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;8&quot;, [&quot;left_option&quot;, &quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;vscode&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="browserleftcontrolrename">browser_LeftControl_Rename</h2>
+<p>{<br>
+&quot;description&quot;: &quot;検証要-LeftControl_Rename(browser)&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;keyboard_fn&quot;, [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;return_or_enter&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [&lt;%= frontmost_application_if(&quot;browser&quot;) %&gt;]<br>
+},</p>
+<hr>
+<h2 id="renamechrome">Rename(Chrome)</h2>
+<p>{<br>
+&quot;description&quot;: &quot;LeftControl_Rename(Chrome)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: {<br>
+&quot;apple_vendor_top_case_key_code&quot;:&quot;keyboard_fn&quot;,<br>
+&quot;modifiers&quot;: {<br>
+&quot;optional&quot;: [<br>
+&quot;caps_lock&quot;<br>
+]<br>
+}<br>
+},<br>
+&quot;to&quot;: [<br>
+{<br>
+&quot;key_code&quot;: &quot;return_or_enter&quot;<br>
+}<br>
+],<br>
+&quot;conditions&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;frontmost_application_if&quot;,<br>
+&quot;bundle_identifiers&quot;: [<br>
+&quot;^com\.google\.Chrome$&quot;<br>
+]<br>
+}<br>
+]<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="%E5%8D%98%E8%AA%9E%E3%81%AE%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9Echrome">単語の複数選択(Chrome)</h2>
+<p>{<br>
+&quot;description&quot;: &quot;RightCommand + オウ_単語の複数選択(Chrome)&quot;,<br>
+&quot;manipulators&quot;: [<br>
+{<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;o&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;d&quot;, [&quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;chrome&quot;) %&gt; ]<br>
+}<br>
+]<br>
+},</p>
+<hr>
+<h2 id="rightshift--f1%E3%81%A7-mokuzikugiricreateexe-%E8%B5%B7%E5%8B%95">「RightShift + F1」で MokuziKugiriCreate.exe 起動</h2>
+<p>{<br>
+&quot;description&quot;: &quot;RightShift + F1_MokuziKugiriCreate.exe&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f1&quot;, [&quot;right_shift&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= set_shell_command([&quot;open '/Users/user/MacWindowShare/MokuziKugiriCreate.exe'&quot;]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},</p>
+<hr>
+<h2 id="mi-leftoption--e%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97%E3%83%9C%E3%83%BC%E3%83%89%E5%86%85%E5%AE%B9evernote%E6%96%B0%E8%A6%8F%E3%83%8E%E3%83%BC%E3%83%88%E8%B2%BC%E4%BB%98">mi-LeftOption + E_クリップボード内容evernote新規ノート貼付</h2>
+<p>{<br>
+&quot;description&quot;: &quot;LeftOption + E_クリップボード内容evernote新規ノート貼付&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;e&quot;, [&quot;left_option&quot;], [&quot;caps_lock&quot;]) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;v&quot;, [&quot;left_control&quot;, &quot;right_gui&quot;]]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_if(&quot;mi&quot;) %&gt; ]<br>
+},</p>
+<hr>
+<h2 id="windowcontroljsonrightoption--qactiveparelldeskwindowsexploerdesktop">window_control.json_RightOption + Q_ActiveParellDeskWindowsExploerDesktop</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightOption + Q_ActiveParellDeskWindowsExploerDesktop&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;q&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_alt&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+             {
+              &quot;shell_command&quot;: &quot;open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'&quot;
+        },
+        {
+          &quot;key_code&quot;: &quot;c&quot;,
+          &quot;modifiers&quot;: &quot;left_control&quot;
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_unless&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com\\.vmware\\.fusion$&quot;,
+            &quot;^com\\.vmware\\.horizon$&quot;,
+            &quot;^com\\.vmware\\.view$&quot;,
+            &quot;^com\\.parallels\\.desktop$&quot;,
+            &quot;^com\\.parallels\\.vm$&quot;,
+            &quot;^com\\.parallels\\.desktop\\.console$&quot;,
+            &quot;^org\\.virtualbox\\.app\\.VirtualBoxVM$&quot;,
+            &quot;^com\\.vmware\\.proxyApp\\.&quot;,
+            &quot;^com\\.parallels\\.winapp\\.&quot;
+          ]
+        }
+      ]
+    }
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonrightoption--eactiveparelldeskwindowsexploer">window_control.json_RightOption + E_ActiveParellDeskWindowsExploer</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightOption + E_ActiveParellDeskWindowsExploer&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;e&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a '/Users/user/Applications (Parallels)/{b9dc48ef-d509-4ca8-a69c-0e98f2ecf717} Applications.localized/エクスプローラー.app/Contents/MacOS/WinAppHelper'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]
+    },
+</code></pre>
+<hr>
+<h2 id="shotcutkeysummaryjsonrightcommand--qalfredsqlpluscommandlist">shotcutkey_summary.json_RightCommand + Q_AlfredSQLPLUSCOMMAND_List</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightCommand + Q_AlfredSQLPLUSCOMMAND_List&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;q&quot;, [&quot;right_gui&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;0&quot;, [&quot;left_control&quot;, &quot;right_alt&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="shotcutkeysummaryjsonrightoption--w%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%89%8D%E9%9D%A2%E8%83%8C%E9%9D%A2%E3%81%AB%E7%A7%BB%E5%8B%95">shotcutkey_summary.json_RightOption + W_コレクションを前面/背面に移動</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightOption + W_コレクションを前面/背面に移動&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: {
+        &quot;key_code&quot;: &quot;w&quot;,
+        &quot;modifiers&quot;: {
+          &quot;mandatory&quot;: [
+            &quot;right_option&quot;
+          ],
+          &quot;optional&quot;: [
+            &quot;caps_lock&quot;
+          ]
+        }
+      },
+      &quot;to&quot;: [
+        {
+          &quot;key_code&quot;: &quot;6&quot;,
+          &quot;modifiers&quot;: [
+            &quot;right_gui&quot;,
+            &quot;right_option&quot;
+          ]
+        }
+      ],
+      &quot;conditions&quot;: [
+        {
+          &quot;type&quot;: &quot;frontmost_application_unless&quot;,
+          &quot;bundle_identifiers&quot;: [
+            &quot;^com.vmware.fusion$&quot;,
+            &quot;^com.vmware.horizon$&quot;,
+            &quot;^com.vmware.view$&quot;,
+            &quot;^com.parallels.desktop$&quot;,
+            &quot;^com.parallels.vm$&quot;,
+            &quot;^com.parallels.desktop.console$&quot;,
+            &quot;^org.virtualbox.app.VirtualBoxVM$&quot;,
+            &quot;^com.vmware.proxyApp.&quot;,
+            &quot;^com.parallels.winapp.&quot;
+          ]
+        }
+      ]
+        },
+</code></pre>
+<hr>
+<h2 id="shotcutkeysummaryjsonleftoption--qpaste-stack%E3%82%92%E6%9C%89%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B">shotcutkey_summary.json_LeftOption + Q_Paste Stackを有効にする</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + Q_Paste Stackを有効にする&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;q&quot;, [&quot;left_option&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= to([[&quot;f1&quot;, [&quot;left_gui&quot;,&quot;right_option&quot;]]]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbmiactivewindow">window_control.json.erb:miActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;Leftcommand + R_miActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;r&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'mi'&quot;]) %&gt;
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbkvscodeactivewindow">window_control.json.erb:K_VscodeActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + K_VscodeActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;k&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Visual Studio Code.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbchromeactivewindow">window_control.json.erb:ChromeActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + J_ChromeActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;j&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Google Chrome.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbexcelactivewindow">window_control.json.erb:ExcelActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + H_ExcelActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;h&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Microsoft Excel.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbpathfinderactivewindow">window_control.json.erb:PathfinderActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + Semicolon_PathfinderActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;semicolon&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Path Finder.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbiterm2activewindow">window_control.json.erb:iterm2ActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftCommand + X_iterm2ActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;x&quot;, [&quot;left_control&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'iTerm.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbapplemusicactivewindow">window_control.json.erb:AppleMusicActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightOption + L_AppleMusicActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;l&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Music.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbsafariactivewindow">window_control.json.erb:SafariActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;RightOption + G_SafariActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;g&quot;, [&quot;right_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Safari.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbfinderactivewindow">window_control.json.erb:FinderActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + slash_FinderActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;slash&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'finder.app'&quot;]) %&gt;,
+      &quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]
+    },
+</code></pre>
+<hr>
+<h2 id="windowcontroljsonerbkindleactivewindow">window_control.json.erb:KindleActiveWindow</h2>
+<pre><code>    {
+      &quot;description&quot;: &quot;LeftOption + L_KindleActiveWindow&quot;,
+      &quot;type&quot;: &quot;basic&quot;,
+      &quot;from&quot;: &lt;%= from(&quot;l&quot;, [&quot;left_alt&quot;], [&quot;caps_lock&quot;]) %&gt;,
+      &quot;to&quot;: &lt;%= set_shell_command([&quot;open -a 'Kindle.app'&quot;]) %&gt;
+    },
+</code></pre>
+<hr>
+<h2 id="functionkeysummaryjsonerbf1%E3%82%88%E3%81%8F%E4%BD%BF%E3%81%86-mdf2rename">functionkey_summary.json.erb:F1_よく使う-md,F2_Rename</h2>
+<p>{<br>
+&quot;description&quot;: &quot;F1_よく使う-md&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f1&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= set_shell_command([&quot;open '/Users/user/Desktop/test.md'&quot;]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt;]<br>
+},<br>
+{<br>
+&quot;description&quot;: &quot;F2_Rename&quot;,<br>
+&quot;type&quot;: &quot;basic&quot;,<br>
+&quot;from&quot;: &lt;%= from(&quot;f2&quot;) %&gt;,<br>
+&quot;to&quot;: &lt;%= to([[&quot;return_or_enter&quot;]]) %&gt;,<br>
+&quot;conditions&quot;: [ &lt;%= frontmost_application_unless(&quot;virtual_machine&quot;) %&gt; ]<br>
+},</p>
+<hr>
+
+</body>
+</html>

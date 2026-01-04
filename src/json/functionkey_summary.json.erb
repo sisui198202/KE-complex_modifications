@@ -1,23 +1,9 @@
 {
-    "title": "FunctionkeySummary33",
+    "title": "FunctionkeySummary",
     "rules": [
         {
-            "description": "FunctionkeySummary33",
+            "description": "FunctionkeySummary",
             "manipulators": [
-                {
-                    "description": "F1_よく使う-md",
-                    "type": "basic",
-                    "from": <%= from("f1") %>,
-                    "to": <%= set_shell_command(["open '/Users/user/Desktop/test.md'"]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
-                },
-                {
-                    "description": "F2_Rename",
-                    "type": "basic",
-                    "from": <%= from("f2") %>,
-                    "to": <%= to([["return_or_enter"]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
                 {
                     "description": "Double F3 -> Ctrl+Shift+0",
                     "type": "basic",

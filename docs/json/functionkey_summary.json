@@ -1,65 +1,9 @@
 {
-  "title": "FunctionkeySummary33",
+  "title": "FunctionkeySummary",
   "rules": [
     {
-      "description": "FunctionkeySummary33",
+      "description": "FunctionkeySummary",
       "manipulators": [
-        {
-          "description": "F1_よく使う-md",
-          "type": "basic",
-          "from": {
-            "key_code": "f1"
-          },
-          "to": [
-            {
-              "shell_command": "open '/Users/user/Desktop/test.md'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "F2_Rename",
-          "type": "basic",
-          "from": {
-            "key_code": "f2"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
         {
           "description": "Double F3 -> Ctrl+Shift+0",
           "type": "basic",
