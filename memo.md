@@ -1,3 +1,12 @@
+## リポジトリ名とユーザー名
+
+[リポジトリ名]
+KE-complex_modifications
+
+[ユーザー名]
+sisui198202
+
+---
 ## ルールがまとめて設定されているファイル
 
 /Users/user/.config/karabiner/karabiner.json

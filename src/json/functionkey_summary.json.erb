@@ -1,16 +1,16 @@
 {
-    "title": "FunctionkeySummary1",
+    "title": "FunctionkeySummary2",
     "rules": [
         {
-            "description": "FunctionkeySummary1",
+            "description": "FunctionkeySummary2",
             "manipulators": [
                 {
-                "description": "Double F1 -> Cmd+Opt+2",
+                "description": "Double F1 -> Cmd+Opt+shift+2",
                 "type": "basic",
                 "from": { "key_code": "f1" },
                 "to": [
                     { "set_variable": { "name": "f1_pressed", "value": 0 } },
-                    { "key_code": "2", "modifiers": ["command", "option"] }
+                    { "key_code": "2", "modifiers": ["command", "option","shift"] }
                 ],
                 "conditions": [
                     { "type": "variable_if", "name": "f1_pressed", "value": 1 },
@@ -31,7 +31,7 @@
                 ]
                 },
                 {
-                "description": "Single F1 -> Cmd+Opt+1 (delayed, canceled by double-press)",
+                "description": "Single F1 -> Cmd+Opt+shift+1 (delayed, canceled by double-press)",
                 "type": "basic",
                 "from": { "key_code": "f1" },
                 "to": [
@@ -39,7 +39,7 @@
                 ],
                 "to_delayed_action": {
                     "to_if_invoked": [
-                    { "key_code": "1", "modifiers": ["command", "option"] },
+                    { "key_code": "1", "modifiers": ["command", "option","shift"] },
                     { "set_variable": { "name": "f1_pressed", "value": 0 } }
                     ],
                     "to_if_canceled": [
@@ -68,12 +68,12 @@
                 ]
                 },
                 {
-                    "description": "Double F3 -> Ctrl+Shift+0",
+                    "description": "Double F3 -> Cmd+Opt+shift+0",
                     "type": "basic",
                     "from": { "key_code": "f3" },
                     "to": [
                         { "set_variable": { "name": "f3_pressed", "value": 0 } },
-                        { "key_code": "0", "modifiers": ["control", "shift"] }
+                        { "key_code": "0", "modifiers": ["command", "option", "shift"] }
                     ],
                     "conditions": [
                         { "type": "variable_if", "name": "f3_pressed", "value": 1 },
@@ -102,7 +102,7 @@
                     ],
                     "to_delayed_action": {
                         "to_if_invoked": [
-                        { "shell_command": "open '/Users/user/Dropbox/KeyCustomization/Mac/KeyManageList_Mac.xlsm'" },
+                        { "key_code": "3", "modifiers": ["command", "option","shift"] },
                         { "set_variable": { "name": "f3_pressed", "value": 0 } }
                         ],
                         "to_if_canceled": [
