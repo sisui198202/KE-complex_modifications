@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary6",
+  "title": "WindowControlSummary7",
   "rules": [
     {
-      "description": "WindowsControlSummary6-1",
+      "description": "WindowsControlSummary7",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -882,10 +882,9 @@
           },
           "to": [
             {
-              "key_code": "7",
+              "key_code": "8",
               "modifiers": [
                 "right_option",
-                "left_shift",
                 "right_gui"
               ]
             }
