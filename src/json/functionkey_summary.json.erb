@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary7",
+    "title": "FunctionkeySummary555",
     "rules": [
         {
-            "description": "FunctionkeySummary7",
+            "description": "FunctionkeySummary555",
             "manipulators": [
                 {
                 "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -51,6 +51,69 @@
                 },
                 "conditions": [
                     { "type": "variable_if", "name": "f1_pressed", "value": 0 },
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
+                    ]
+                    }
+                ]
+                },
+                {
+                "description": "Double F2 -> Cmd+Opt+shift+7",
+                "type": "basic",
+                "from": { "key_code": "f2" },
+                "to": [
+                    { "set_variable": { "name": "f2_pressed", "value": 0 } },
+                    { "key_code": "7", "modifiers": ["command", "option","shift"] }
+                ],
+                "conditions": [
+                    { "type": "variable_if", "name": "f2_pressed", "value": 1 },
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
+                    ]
+                    }
+                ]
+                },
+                {
+                "description": "Single F2 -> Cmd+Opt+shift+6 (delayed, canceled by double-press)",
+                "type": "basic",
+                "from": { "key_code": "f2" },
+                "to": [
+                    { "set_variable": { "name": "f2_pressed", "value": 1 } }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                    { "key_code": "6", "modifiers": ["command", "option","shift"] },
+                    { "set_variable": { "name": "f2_pressed", "value": 0 } }
+                    ],
+                    "to_if_canceled": [
+                    { "set_variable": { "name": "f2_pressed", "value": 0 } }
+                    ]
+                },
+                "parameters": {
+                    "basic.to_delayed_action_delay_milliseconds": 300
+                },
+                "conditions": [
+                    { "type": "variable_if", "name": "f2_pressed", "value": 0 },
                     {
                     "type": "frontmost_application_unless",
                     "bundle_identifiers": [
