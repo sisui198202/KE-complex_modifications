@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary6",
+  "title": "FunctionkeySummary7",
   "rules": [
     {
-      "description": "FunctionkeySummary6",
+      "description": "FunctionkeySummary7",
       "manipulators": [
         {
           "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -114,7 +114,7 @@
           ]
         },
         {
-          "description": "Double F3 -> Cmd+Opt+shift+0",
+          "description": "Double F3 -> 整理_Cmd+Opt+shift+0",
           "type": "basic",
           "from": {
             "key_code": "f3"
@@ -158,7 +158,7 @@
           ]
         },
         {
-          "description": "Single F3 -> Open Excel (delayed, canceled by double-press)",
+          "description": "Single F3 -> 整理_Open Excel (delayed, canceled by double-press)",
           "type": "basic",
           "from": {
             "key_code": "f3"
@@ -223,20 +223,31 @@
           ]
         },
         {
-          "description": "Double F4_1度押し:Category内ファイル選択,2度押し:RulesSummary",
+          "description": "Double F4 -> Cmd+Opt+shift+0",
           "type": "basic",
           "from": {
             "key_code": "f4"
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/Rule/Mac/RulesSummary.md'"
+              "set_variable": {
+                "name": "f4_pressed",
+                "value": 0
+              }
+            },
+            {
+              "key_code": "4",
+              "modifiers": [
+                "command",
+                "option",
+                "shift"
+              ]
             }
           ],
           "conditions": [
             {
               "type": "variable_if",
-              "name": "f4 pressed",
+              "name": "f4_pressed",
               "value": 1
             },
             {
@@ -256,6 +267,7 @@
           ]
         },
         {
+          "description": "Single F4 -> Open Excel (delayed, canceled by double-press)",
           "type": "basic",
           "from": {
             "key_code": "f4"
@@ -263,18 +275,44 @@
           "to": [
             {
               "set_variable": {
-                "name": "f4 pressed",
+                "name": "f4_pressed",
                 "value": 1
               }
-            },
-            {
-              "key_code": "f4"
             }
           ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "command",
+                  "option",
+                  "shift"
+                ]
+              },
+              {
+                "set_variable": {
+                  "name": "f4_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "f4_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 300
+          },
           "conditions": [
             {
               "type": "variable_if",
-              "name": "f4 pressed",
+              "name": "f4_pressed",
               "value": 0
             },
             {
@@ -291,25 +329,7 @@
                 "^com.parallels.winapp."
               ]
             }
-          ],
-          "to_delayed_action": {
-            "to_if_invoked": [
-              {
-                "set_variable": {
-                  "name": "f4 pressed",
-                  "value": 0
-                }
-              }
-            ],
-            "to_if_canceled": [
-              {
-                "set_variable": {
-                  "name": "f4 pressed",
-                  "value": 0
-                }
-              }
-            ]
-          }
+          ]
         },
         {
           "description": "Double F5_.zshrc_aliassettingfileOpen(FunctionKey)",
