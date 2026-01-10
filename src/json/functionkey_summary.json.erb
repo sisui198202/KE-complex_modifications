@@ -320,98 +320,67 @@
                 ]
                 },
                 {
-                    "description": "Double F6_.zshrc_aliassettingfileOpen(FunctionKey)",
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": [
-                        {
-                            "shell_command": "open '/Users/user/.zshrc'"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "f6 pressed",
-                            "value": 1
-                        },
-                        {
-                            "type": "frontmost_application_unless",
-                            "bundle_identifiers": [
-                                "^com.vmware.fusion$",
-                                "^com.vmware.horizon$",
-                                "^com.vmware.view$",
-                                "^com.parallels.desktop$",
-                                "^com.parallels.vm$",
-                                "^com.parallels.desktop.console$",
-                                "^org.virtualbox.app.VirtualBoxVM$",
-                                "^com.vmware.proxyApp.",
-                                "^com.parallels.winapp."
-                            ]
-                        }
+                "description": "Double F6 -> Cmd+Opt+control+6",
+                "type": "basic",
+                "from": { "key_code": "f6" },
+                "to": [
+                    { "set_variable": { "name": "f6_pressed", "value": 0 } },
+                    { "key_code": "6", "modifiers": ["command", "option", "control"] }
+                ],
+                "conditions": [
+                    { "type": "variable_if", "name": "f6_pressed", "value": 1 },
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
                     ]
+                    }
+                ]
                 },
                 {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "f6",
-                        "modifiers": {
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "f6 pressed",
-                                "value": 1
-                            }
-                        },
-                        {
-                            "shell_command": "open '/Users/user/.zsh/alias_setting.zsh'"
-                        }
+                "description": "Single F6 -> Cmd+Opt+control+5 (delayed, canceled by double-press)",
+                "type": "basic",
+                "from": { "key_code": "f6" },
+                "to": [
+                    { "set_variable": { "name": "f6_pressed", "value": 1 } }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                    { "key_code": "5", "modifiers": ["command", "option", "control"] },
+                    { "set_variable": { "name": "f6_pressed", "value": 0 } }
                     ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "f6 pressed",
-                            "value": 0
-                        },
-                        {
-                            "type": "frontmost_application_unless",
-                            "bundle_identifiers": [
-                                "^com.vmware.fusion$",
-                                "^com.vmware.horizon$",
-                                "^com.vmware.view$",
-                                "^com.parallels.desktop$",
-                                "^com.parallels.vm$",
-                                "^com.parallels.desktop.console$",
-                                "^org.virtualbox.app.VirtualBoxVM$",
-                                "^com.vmware.proxyApp.",
-                                "^com.parallels.winapp."
-                            ]
-                        }
-                    ],
-                    "to_delayed_action": {
-                        "to_if_invoked": [
-                            {
-                                "set_variable": {
-                                    "name": "f6 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ],
-                        "to_if_canceled": [
-                            {
-                                "set_variable": {
-                                    "name": "f6 pressed",
-                                    "value": 0
-                                }
-                            }
-                        ]
+                    "to_if_canceled": [
+                    { "set_variable": { "name": "f6_pressed", "value": 0 } }
+                    ]
+                },
+                "parameters": {
+                    "basic.to_delayed_action_delay_milliseconds": 300
+                },
+                "conditions": [
+                    { "type": "variable_if", "name": "f6_pressed", "value": 0 },
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
+                    ]
                     }
+                ]
                 },
                 {
                 "description": "Double F7 -> Cmd+Opt+shift+9",
