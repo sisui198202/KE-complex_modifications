@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary4",
+  "title": "FunctionkeySummary5",
   "rules": [
     {
-      "description": "FunctionkeySummary4",
+      "description": "FunctionkeySummary5",
       "manipulators": [
         {
           "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "description": "Double F3 -> 整理_Cmd+Opt+shift+0",
+          "description": "Double F3 -> 整理_Cmd+Opt+Control+2",
           "type": "basic",
           "from": {
             "key_code": "f3"
@@ -236,11 +236,11 @@
               }
             },
             {
-              "key_code": "4",
+              "key_code": "3",
               "modifiers": [
                 "command",
                 "option",
-                "shift"
+                "control"
               ]
             }
           ],
@@ -267,7 +267,7 @@
           ]
         },
         {
-          "description": "Single F3 -> 整理_Open Excel (delayed, canceled by double-press)",
+          "description": "Single F3 -> 整理_ (delayed, canceled by double-press)",
           "type": "basic",
           "from": {
             "key_code": "f3"
@@ -283,11 +283,11 @@
           "to_delayed_action": {
             "to_if_invoked": [
               {
-                "key_code": "3",
+                "key_code": "2",
                 "modifiers": [
                   "command",
                   "option",
-                  "shift"
+                  "control"
                 ]
               },
               {
