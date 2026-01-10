@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary6666",
+  "title": "FunctionkeySummary7",
   "rules": [
     {
-      "description": "FunctionkeySummary6666",
+      "description": "FunctionkeySummary7",
       "manipulators": [
         {
           "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -1095,20 +1095,31 @@
           ]
         },
         {
-          "description": "Double F11_GeneralPassword_serverPassword_fileOpen",
+          "description": "Double F11 -> Cmd+Opt+control+backslash",
           "type": "basic",
           "from": {
             "key_code": "f11"
           },
           "to": [
             {
-              "shell_command": "open '/Users/user/Dropbox/Password/server_ftp_password.ini'"
+              "set_variable": {
+                "name": "f11_pressed",
+                "value": 0
+              }
+            },
+            {
+              "key_code": "backslash",
+              "modifiers": [
+                "command",
+                "option",
+                "control"
+              ]
             }
           ],
           "conditions": [
             {
               "type": "variable_if",
-              "name": "f11 pressed",
+              "name": "f11_pressed",
               "value": 1
             },
             {
@@ -1128,6 +1139,7 @@
           ]
         },
         {
+          "description": "Single F11 -> Cmd+Opt+control+equal_sign (delayed, canceled by double-press)",
           "type": "basic",
           "from": {
             "key_code": "f11"
@@ -1135,18 +1147,44 @@
           "to": [
             {
               "set_variable": {
-                "name": "f11 pressed",
+                "name": "f11_pressed",
                 "value": 1
               }
-            },
-            {
-              "shell_command": "open '/Users/user/Dropbox/Password/PasswordList.INI'"
             }
           ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "equal_sign",
+                "modifiers": [
+                  "command",
+                  "option",
+                  "control"
+                ]
+              },
+              {
+                "set_variable": {
+                  "name": "f11_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "f11_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 300
+          },
           "conditions": [
             {
               "type": "variable_if",
-              "name": "f11 pressed",
+              "name": "f11_pressed",
               "value": 0
             },
             {
@@ -1163,25 +1201,7 @@
                 "^com.parallels.winapp."
               ]
             }
-          ],
-          "to_delayed_action": {
-            "to_if_invoked": [
-              {
-                "set_variable": {
-                  "name": "f11 pressed",
-                  "value": 0
-                }
-              }
-            ],
-            "to_if_canceled": [
-              {
-                "set_variable": {
-                  "name": "f11 pressed",
-                  "value": 0
-                }
-              }
-            ]
-          }
+          ]
         }
       ]
     }
