@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary555",
+    "title": "FunctionkeySummary5555",
     "rules": [
         {
-            "description": "FunctionkeySummary555",
+            "description": "FunctionkeySummary5555",
             "manipulators": [
                 {
                 "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -131,12 +131,12 @@
                 ]
                 },
                 {
-                    "description": "Double F3 -> 整理_Cmd+Opt+Control+2",
+                    "description": "Double F3 -> 整理_Cmd+Opt+Control+4",
                     "type": "basic",
                     "from": { "key_code": "f3" },
                     "to": [
                         { "set_variable": { "name": "f3_pressed", "value": 0 } },
-                        { "key_code": "3", "modifiers": ["command", "option", "control"] }
+                        { "key_code": "4", "modifiers": ["command", "option", "control"] }
                     ],
                     "conditions": [
                         { "type": "variable_if", "name": "f3_pressed", "value": 1 },
@@ -157,7 +157,7 @@
                     ]
                 },
                 {
-                    "description": "Single F3 -> 整理_ (delayed, canceled by double-press)",
+                    "description": "Single F3 -> 整理_Cmd+Opt+Control+3 (delayed, canceled by double-press)",
                     "type": "basic",
                     "from": { "key_code": "f3" },
                     "to": [
@@ -165,7 +165,7 @@
                     ],
                     "to_delayed_action": {
                         "to_if_invoked": [
-                        { "key_code": "2", "modifiers": ["command", "option","control"] },
+                        { "key_code": "3", "modifiers": ["command", "option","control"] },
                         { "set_variable": { "name": "f3_pressed", "value": 0 } }
                         ],
                         "to_if_canceled": [
