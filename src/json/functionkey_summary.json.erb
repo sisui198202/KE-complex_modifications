@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary55",
+    "title": "FunctionkeySummary555",
     "rules": [
         {
-            "description": "FunctionkeySummary55",
+            "description": "FunctionkeySummary555",
             "manipulators": [
                 {
                 "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -257,10 +257,73 @@
                     ]
                 },
                 {
-                    "description": "Double F5_.zshrc_aliassettingfileOpen(FunctionKey)",
+                "description": "Double F5 -> Cmd+Opt+control+2",
+                "type": "basic",
+                "from": { "key_code": "f5" },
+                "to": [
+                    { "set_variable": { "name": "f5_pressed", "value": 0 } },
+                    { "key_code": "2", "modifiers": ["command", "option", "control"] }
+                ],
+                "conditions": [
+                    { "type": "variable_if", "name": "f5_pressed", "value": 1 },
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
+                    ]
+                    }
+                ]
+                },
+                {
+                "description": "Single F5 -> Cmd+Opt+control+1 (delayed, canceled by double-press)",
+                "type": "basic",
+                "from": { "key_code": "f5" },
+                "to": [
+                    { "set_variable": { "name": "f5_pressed", "value": 1 } }
+                ],
+                "to_delayed_action": {
+                    "to_if_invoked": [
+                    { "key_code": "1", "modifiers": ["command", "option", "control"] },
+                    { "set_variable": { "name": "f5_pressed", "value": 0 } }
+                    ],
+                    "to_if_canceled": [
+                    { "set_variable": { "name": "f5_pressed", "value": 0 } }
+                    ]
+                },
+                "parameters": {
+                    "basic.to_delayed_action_delay_milliseconds": 300
+                },
+                "conditions": [
+                    { "type": "variable_if", "name": "f5_pressed", "value": 0 },
+                    {
+                    "type": "frontmost_application_unless",
+                    "bundle_identifiers": [
+                        "^com.vmware.fusion$",
+                        "^com.vmware.horizon$",
+                        "^com.vmware.view$",
+                        "^com.parallels.desktop$",
+                        "^com.parallels.vm$",
+                        "^com.parallels.desktop.console$",
+                        "^org.virtualbox.app.VirtualBoxVM$",
+                        "^com.vmware.proxyApp.",
+                        "^com.parallels.winapp."
+                    ]
+                    }
+                ]
+                },
+                {
+                    "description": "Double F6_.zshrc_aliassettingfileOpen(FunctionKey)",
                     "type": "basic",
                     "from": {
-                        "key_code": "f5"
+                        "key_code": "f6"
                     },
                     "to": [
                         {
@@ -270,7 +333,7 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "f5 pressed",
+                            "name": "f6 pressed",
                             "value": 1
                         },
                         {
@@ -292,7 +355,7 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "f5",
+                        "key_code": "f6",
                         "modifiers": {
                             "optional": [
                                 "any"
@@ -302,7 +365,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "f5 pressed",
+                                "name": "f6 pressed",
                                 "value": 1
                             }
                         },
@@ -313,7 +376,7 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "f5 pressed",
+                            "name": "f6 pressed",
                             "value": 0
                         },
                         {
@@ -335,7 +398,7 @@
                         "to_if_invoked": [
                             {
                                 "set_variable": {
-                                    "name": "f5 pressed",
+                                    "name": "f6 pressed",
                                     "value": 0
                                 }
                             }
@@ -343,7 +406,7 @@
                         "to_if_canceled": [
                             {
                                 "set_variable": {
-                                    "name": "f5 pressed",
+                                    "name": "f6 pressed",
                                     "value": 0
                                 }
                             }
