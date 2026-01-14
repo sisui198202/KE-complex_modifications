@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary88",
+    "title": "FunctionkeySummary99",
     "rules": [
         {
-            "description": "FunctionkeySummary88",
+            "description": "FunctionkeySummary99",
             "manipulators": [
                 {
                 "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -257,75 +257,12 @@
                     ]
                 },
                 {
-                "description": "Double F5 -> Cmd+Opt+control+2",
-                "type": "basic",
-                "from": { "key_code": "f5" },
-                "to": [
-                    { "set_variable": { "name": "f5_pressed", "value": 0 } },
-                    { "key_code": "2", "modifiers": ["command", "option", "control"] }
-                ],
-                "conditions": [
-                    { "type": "variable_if", "name": "f5_pressed", "value": 1 },
-                    {
-                    "type": "frontmost_application_unless",
-                    "bundle_identifiers": [
-                        "^com.vmware.fusion$",
-                        "^com.vmware.horizon$",
-                        "^com.vmware.view$",
-                        "^com.parallels.desktop$",
-                        "^com.parallels.vm$",
-                        "^com.parallels.desktop.console$",
-                        "^org.virtualbox.app.VirtualBoxVM$",
-                        "^com.vmware.proxyApp.",
-                        "^com.parallels.winapp."
-                    ]
-                    }
-                ]
-                },
-                {
-                "description": "Single F5 -> Cmd+Opt+control+1 (delayed, canceled by double-press)",
-                "type": "basic",
-                "from": { "key_code": "f5" },
-                "to": [
-                    { "set_variable": { "name": "f5_pressed", "value": 1 } }
-                ],
-                "to_delayed_action": {
-                    "to_if_invoked": [
-                    { "key_code": "1", "modifiers": ["command", "option", "control"] },
-                    { "set_variable": { "name": "f5_pressed", "value": 0 } }
-                    ],
-                    "to_if_canceled": [
-                    { "set_variable": { "name": "f5_pressed", "value": 0 } }
-                    ]
-                },
-                "parameters": {
-                    "basic.to_delayed_action_delay_milliseconds": 300
-                },
-                "conditions": [
-                    { "type": "variable_if", "name": "f5_pressed", "value": 0 },
-                    {
-                    "type": "frontmost_application_unless",
-                    "bundle_identifiers": [
-                        "^com.vmware.fusion$",
-                        "^com.vmware.horizon$",
-                        "^com.vmware.view$",
-                        "^com.parallels.desktop$",
-                        "^com.parallels.vm$",
-                        "^com.parallels.desktop.console$",
-                        "^org.virtualbox.app.VirtualBoxVM$",
-                        "^com.vmware.proxyApp.",
-                        "^com.parallels.winapp."
-                    ]
-                    }
-                ]
-                },
-                {
-                "description": "Double F6 -> Cmd+Opt+control+6",
+                "description": "Double F6 -> Cmd+Opt+control+2",
                 "type": "basic",
                 "from": { "key_code": "f6" },
                 "to": [
                     { "set_variable": { "name": "f6_pressed", "value": 0 } },
-                    { "key_code": "6", "modifiers": ["command", "option", "control"] }
+                    { "key_code": "2", "modifiers": ["command", "option", "control"] }
                 ],
                 "conditions": [
                     { "type": "variable_if", "name": "f6_pressed", "value": 1 },
@@ -346,7 +283,7 @@
                 ]
                 },
                 {
-                "description": "Single F6 -> Cmd+Opt+control+5 (delayed, canceled by double-press)",
+                "description": "Single F6 -> Cmd+Opt+control+1 (delayed, canceled by double-press)",
                 "type": "basic",
                 "from": { "key_code": "f6" },
                 "to": [
@@ -354,7 +291,7 @@
                 ],
                 "to_delayed_action": {
                     "to_if_invoked": [
-                    { "key_code": "5", "modifiers": ["command", "option", "control"] },
+                    { "key_code": "1", "modifiers": ["command", "option", "control"] },
                     { "set_variable": { "name": "f6_pressed", "value": 0 } }
                     ],
                     "to_if_canceled": [
@@ -383,12 +320,12 @@
                 ]
                 },
                 {
-                "description": "Double F7 -> Cmd+Opt+shift+9",
+                "description": "Double F7 -> Cmd+Opt+control+6",
                 "type": "basic",
                 "from": { "key_code": "f7" },
                 "to": [
                     { "set_variable": { "name": "f7_pressed", "value": 0 } },
-                    { "key_code": "9", "modifiers": ["command", "option", "shift"] }
+                    { "key_code": "6", "modifiers": ["command", "option", "control"] }
                 ],
                 "conditions": [
                     { "type": "variable_if", "name": "f7_pressed", "value": 1 },
@@ -409,7 +346,7 @@
                 ]
                 },
                 {
-                "description": "Single F7 -> Cmd+Opt+shift+8 (delayed, canceled by double-press)",
+                "description": "Single F7 -> Cmd+Opt+control+5 (delayed, canceled by double-press)",
                 "type": "basic",
                 "from": { "key_code": "f7" },
                 "to": [
@@ -417,7 +354,7 @@
                 ],
                 "to_delayed_action": {
                     "to_if_invoked": [
-                    { "key_code": "8", "modifiers": ["command", "option", "shift"] },
+                    { "key_code": "5", "modifiers": ["command", "option", "control"] },
                     { "set_variable": { "name": "f7_pressed", "value": 0 } }
                     ],
                     "to_if_canceled": [
@@ -446,12 +383,12 @@
                 ]
                 },
                 {
-                "description": "Double F8 -> Cmd+Opt+control+0",
+                "description": "Double F8 -> Cmd+Opt+shift+9",
                 "type": "basic",
                 "from": { "key_code": "f8" },
                 "to": [
                     { "set_variable": { "name": "f8_pressed", "value": 0 } },
-                    { "key_code": "0", "modifiers": ["command", "option", "control"] }
+                    { "key_code": "9", "modifiers": ["command", "option", "shift"] }
                 ],
                 "conditions": [
                     { "type": "variable_if", "name": "f8_pressed", "value": 1 },
@@ -472,7 +409,7 @@
                 ]
                 },
                 {
-                "description": "Single F8 -> Cmd+Opt+shift+5 (delayed, canceled by double-press)",
+                "description": "Single F8 -> Cmd+Opt+shift+8 (delayed, canceled by double-press)",
                 "type": "basic",
                 "from": { "key_code": "f8" },
                 "to": [
@@ -480,7 +417,7 @@
                 ],
                 "to_delayed_action": {
                     "to_if_invoked": [
-                    { "key_code": "5", "modifiers": ["command", "option", "shift"] },
+                    { "key_code": "8", "modifiers": ["command", "option", "shift"] },
                     { "set_variable": { "name": "f8_pressed", "value": 0 } }
                     ],
                     "to_if_canceled": [
@@ -509,12 +446,12 @@
                 ]
                 },
                 {
-                "description": "Double F9 -> Cmd+Opt+control+8",
+                "description": "Double F9 -> Cmd+Opt+control+0",
                 "type": "basic",
                 "from": { "key_code": "f9" },
                 "to": [
                     { "set_variable": { "name": "f9_pressed", "value": 0 } },
-                    { "key_code": "8", "modifiers": ["command", "option", "control"] }
+                    { "key_code": "0", "modifiers": ["command", "option", "control"] }
                 ],
                 "conditions": [
                     { "type": "variable_if", "name": "f9_pressed", "value": 1 },
@@ -535,7 +472,7 @@
                 ]
                 },
                 {
-                "description": "Single F9 -> Cmd+Opt+control+7 (delayed, canceled by double-press)",
+                "description": "Single F9 -> Cmd+Opt+shift+5 (delayed, canceled by double-press)",
                 "type": "basic",
                 "from": { "key_code": "f9" },
                 "to": [
@@ -543,7 +480,7 @@
                 ],
                 "to_delayed_action": {
                     "to_if_invoked": [
-                    { "key_code": "7", "modifiers": ["command", "option", "control"] },
+                    { "key_code": "5", "modifiers": ["command", "option", "shift"] },
                     { "set_variable": { "name": "f9_pressed", "value": 0 } }
                     ],
                     "to_if_canceled": [
