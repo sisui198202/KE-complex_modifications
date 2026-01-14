@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary7",
+  "title": "WindowControlSummary",
   "rules": [
     {
-      "description": "WindowsControlSummary7",
+      "description": "WindowsControlSummary",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -891,13 +891,13 @@
           ]
         },
         {
-          "description": "LeftOption + W_~/Work",
+          "description": "RightOption + W_~/Work",
           "type": "basic",
           "from": {
             "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "left_option"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"

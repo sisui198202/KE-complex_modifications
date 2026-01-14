@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary100",
+  "title": "ShotCutKeySummary",
   "rules": [
     {
-      "description": "ShotCutKeySummary100",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -1185,13 +1185,13 @@
           ]
         },
         {
-          "description": "RightAlt + W_UniversalActions",
+          "description": "LeftOption + W_UniversalActions",
           "type": "basic",
           "from": {
             "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "left_alt"
               ],
               "optional": [
                 "caps_lock"

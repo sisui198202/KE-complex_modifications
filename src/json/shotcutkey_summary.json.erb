@@ -1,8 +1,8 @@
 {
-    "title": "ShotCutKeySummary100",
+    "title": "ShotCutKeySummary",
     "rules": [
         {
-            "description": "ShotCutKeySummary100",
+            "description": "ShotCutKeySummary",
             "manipulators": [
                 {
                     "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -223,9 +223,9 @@
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
-                    "description": "RightAlt + W_UniversalActions",
+                    "description": "LeftOption + W_UniversalActions",
                     "type": "basic",
-                    "from": <%= from("w", ["right_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("w", ["left_alt"], ["caps_lock"]) %>,
                     "to": <%= to([["backslash", ["left_alt", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
