@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary99",
+    "title": "FunctionkeySummary9",
     "rules": [
         {
-            "description": "FunctionkeySummary99",
+            "description": "FunctionkeySummary9",
             "manipulators": [
                 {
                 "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -240,6 +240,132 @@
                     },
                     "conditions": [
                         { "type": "variable_if", "name": "f4_pressed", "value": 0 },
+                        {
+                        "type": "frontmost_application_unless",
+                        "bundle_identifiers": [
+                            "^com.vmware.fusion$",
+                            "^com.vmware.horizon$",
+                            "^com.vmware.view$",
+                            "^com.parallels.desktop$",
+                            "^com.parallels.vm$",
+                            "^com.parallels.desktop.console$",
+                            "^org.virtualbox.app.VirtualBoxVM$",
+                            "^com.vmware.proxyApp.",
+                            "^com.parallels.winapp."
+                        ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Double F4 -> Cmd+Opt+shift+0",
+                    "type": "basic",
+                    "from": { "key_code": "f4" },
+                    "to": [
+                        { "set_variable": { "name": "f4_pressed", "value": 0 } },
+                        { "key_code": "4", "modifiers": ["command", "option", "shift"] }
+                    ],
+                    "conditions": [
+                        { "type": "variable_if", "name": "f4_pressed", "value": 1 },
+                        {
+                        "type": "frontmost_application_unless",
+                        "bundle_identifiers": [
+                            "^com.vmware.fusion$",
+                            "^com.vmware.horizon$",
+                            "^com.vmware.view$",
+                            "^com.parallels.desktop$",
+                            "^com.parallels.vm$",
+                            "^com.parallels.desktop.console$",
+                            "^org.virtualbox.app.VirtualBoxVM$",
+                            "^com.vmware.proxyApp.",
+                            "^com.parallels.winapp."
+                        ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Single F4 -> Open Excel (delayed, canceled by double-press)",
+                    "type": "basic",
+                    "from": { "key_code": "f4" },
+                    "to": [
+                        { "set_variable": { "name": "f4_pressed", "value": 1 } }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [
+                        { "key_code": "3", "modifiers": ["command", "option","shift"] },
+                        { "set_variable": { "name": "f4_pressed", "value": 0 } }
+                        ],
+                        "to_if_canceled": [
+                        { "set_variable": { "name": "f4_pressed", "value": 0 } }
+                        ]
+                    },
+                    "parameters": {
+                        "basic.to_delayed_action_delay_milliseconds": 300
+                    },
+                    "conditions": [
+                        { "type": "variable_if", "name": "f4_pressed", "value": 0 },
+                        {
+                        "type": "frontmost_application_unless",
+                        "bundle_identifiers": [
+                            "^com.vmware.fusion$",
+                            "^com.vmware.horizon$",
+                            "^com.vmware.view$",
+                            "^com.parallels.desktop$",
+                            "^com.parallels.vm$",
+                            "^com.parallels.desktop.console$",
+                            "^org.virtualbox.app.VirtualBoxVM$",
+                            "^com.vmware.proxyApp.",
+                            "^com.parallels.winapp."
+                        ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Double F5 -> Cmd+Opt+control+0",
+                    "type": "basic",
+                    "from": { "key_code": "f5" },
+                    "to": [
+                        { "set_variable": { "name": "f5_pressed", "value": 0 } },
+                        { "key_code": "8", "modifiers": ["command", "option", "control"] }
+                    ],
+                    "conditions": [
+                        { "type": "variable_if", "name": "f5_pressed", "value": 1 },
+                        {
+                        "type": "frontmost_application_unless",
+                        "bundle_identifiers": [
+                            "^com.vmware.fusion$",
+                            "^com.vmware.horizon$",
+                            "^com.vmware.view$",
+                            "^com.parallels.desktop$",
+                            "^com.parallels.vm$",
+                            "^com.parallels.desktop.console$",
+                            "^org.virtualbox.app.VirtualBoxVM$",
+                            "^com.vmware.proxyApp.",
+                            "^com.parallels.winapp."
+                        ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Single F5 -> Open Excel (delayed, canceled by double-press)",
+                    "type": "basic",
+                    "from": { "key_code": "f5" },
+                    "to": [
+                        { "set_variable": { "name": "f5_pressed", "value": 1 } }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [
+                        { "key_code": "7", "modifiers": ["command", "option","control"] },
+                        { "set_variable": { "name": "f5_pressed", "value": 0 } }
+                        ],
+                        "to_if_canceled": [
+                        { "set_variable": { "name": "f5_pressed", "value": 0 } }
+                        ]
+                    },
+                    "parameters": {
+                        "basic.to_delayed_action_delay_milliseconds": 300
+                    },
+                    "conditions": [
+                        { "type": "variable_if", "name": "f5_pressed", "value": 0 },
                         {
                         "type": "frontmost_application_unless",
                         "bundle_identifiers": [
