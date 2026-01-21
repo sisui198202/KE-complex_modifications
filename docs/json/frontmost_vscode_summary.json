@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary3",
+  "title": "FrontmostIfVscode_summary",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary3",
+      "description": "FrontmostIfVscode_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -3283,34 +3283,6 @@
             "modifiers": {
               "mandatory": [
                 "left_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button1",
-              "modifiers": [
-                "left_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + backslash_followlink",
-          "type": "basic",
-          "from": {
-            "key_code": "backslash",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
               ]
             }
           },
