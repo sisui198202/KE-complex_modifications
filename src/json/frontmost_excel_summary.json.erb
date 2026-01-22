@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary2",
+    "title": "FrontmostIfExcel_summary3",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary2",
+            "description": "FrontmostIfExcel_summary3",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -177,6 +177,13 @@
                     "type": "basic",
                     "from": <%= from("j", ["right_option"]) %>,
                     "to": <%= to([["right_arrow", ["left_shift", "left_control"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("excel") %> ]
+                },
+                {
+                    "description": "RightOption + t_選択範囲に合わせる",
+                    "type": "basic",
+                    "from": <%= from("t", ["right_option"]) %>,
+                    "to": <%= to([["0", ["left_shift", "left_control","left_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
