@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary",
+  "title": "FrontmostIfVscode_summary1",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary",
+      "description": "FrontmostIfVscode_summary1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -2173,9 +2173,8 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "slash",
               "modifiers": [
-                "right_option",
                 "right_gui",
                 "left_shift"
               ]

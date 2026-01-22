@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary",
+    "title": "FrontmostIfVscode_summary1",
     "rules": [
         {
-            "description": "FrontmostIfVscode_summary",
+            "description": "FrontmostIfVscode_summary1",
             "manipulators": [
                 {
                     "description": "J_DownArrow",
@@ -505,7 +505,7 @@
                     "description": "LeftCommand + O(オー)_Row2SplitEditerScreen",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option", "right_gui", "left_shift"]], ["d", ["right_alt"]]]) %>,
+                    "to": <%= to([["slash", ["right_gui", "left_shift"]], ["d", ["right_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
