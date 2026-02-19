@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary2",
+    "title": "FrontmostIfVscode_summary",
     "rules": [
         {
-            "description": "FrontmostIfVscode_summary2",
+            "description": "FrontmostIfVscode_summary",
             "manipulators": [
                 {
                     "description": "J_DownArrow",
@@ -306,10 +306,10 @@
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
-                    "description": "RightCommand + B_ビルドタスクの実行",
+                    "description": "RightCommand + B_タスクの実行",
                     "type": "basic",
                     "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["b", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["1", ["right_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {

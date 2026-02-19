@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary2",
+  "title": "FrontmostIfVscode_summary",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary2",
+      "description": "FrontmostIfVscode_summary",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -1265,7 +1265,7 @@
           ]
         },
         {
-          "description": "RightCommand + B_ビルドタスクの実行",
+          "description": "RightCommand + B_タスクの実行",
           "type": "basic",
           "from": {
             "key_code": "b",
@@ -1280,10 +1280,10 @@
           },
           "to": [
             {
-              "key_code": "b",
+              "key_code": "1",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "left_control"
               ]
             }
           ],
