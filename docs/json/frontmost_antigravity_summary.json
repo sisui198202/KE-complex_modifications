@@ -1,9 +1,41 @@
 {
-  "title": "FrontmostIfAntigravity_summary",
+  "title": "FrontmostIfAntigravity_summary1",
   "rules": [
     {
-      "description": "FrontmostIfAntigravity_summary",
+      "description": "FrontmostIfAntigravity_summary1",
       "manipulators": [
+        {
+          "description": "RightCommand + H_フォルダービューにフォーカスを置く",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_control",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.google.antigravity$"
+              ]
+            }
+          ]
+        },
         {
           "description": "LeftAlt + Comma_copyFilePath_sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
           "type": "basic",

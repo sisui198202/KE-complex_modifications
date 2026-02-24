@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfAntigravity_summary",
+    "title": "FrontmostIfAntigravity_summary1",
     "rules": [
         {
-            "description": "FrontmostIfAntigravity_summary",
+            "description": "FrontmostIfAntigravity_summary1",
             "manipulators": [
+                {
+                    "description": "RightCommand + H_フォルダービューにフォーカスを置く",
+                    "type": "basic",
+                    "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
+                    "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
                 {
                     "description": "LeftAlt + Comma_copyFilePath_sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
                     "type": "basic",
