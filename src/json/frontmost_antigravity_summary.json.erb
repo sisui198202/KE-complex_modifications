@@ -1,0 +1,231 @@
+{
+    "title": "FrontmostIfAntigravity_summary",
+    "rules": [
+        {
+            "description": "FrontmostIfAntigravity_summary",
+            "manipulators": [
+                {
+                    "description": "LeftAlt + Comma_copyFilePath_sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
+                    "type": "basic",
+                    "from": <%= from("comma", ["left_alt"], ["caps_lock"]) %>,
+                    "to": <%= to([["f9", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "RightAlt + e_相対パスコピー_sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
+                    "type": "basic",
+                    "from": <%= from("e", ["right_alt"], ["caps_lock"]) %>,
+                    "to": <%= to([["c", ["right_option","right_shift", "right_gui"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "LeftCommand + OpenBracket_Workbench.action.quickopen",
+                    "type": "basic",
+                    "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["f7", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "LeftCommand + T_ToggleSidebarOnOff",
+                    "type": "basic",
+                    "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_control", "left_shift"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "RightOption + Y_アクティビティバ切替",
+                    "type": "basic",
+                    "from": <%= from("y", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_shift", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "LeftOption + T_セカンダリサイドバー切替",
+                    "type": "basic",
+                    "from": <%= from("t", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + U_WindowLeftUp",
+                    "type": "basic",
+                    "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["6", "right_alt"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + J_WindowLeftDown",
+                    "type": "basic",
+                    "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["8", "right_alt"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + I_WindowRightUp",
+                    "type": "basic",
+                    "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["7", "right_alt"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + K_WindowRightDown",
+                    "type": "basic",
+                    "from": <%= from("k", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["9", "right_alt"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + G_WindowLeftOneThird",
+                    "type": "basic",
+                    "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["d", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + Quote_WindowRightOneThird",
+                    "type": "basic",
+                    "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["g", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + Y_WindowLeftTwo-thirds",
+                    "type": "basic",
+                    "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["e", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + O_WindowRightTwo-thirds",
+                    "type": "basic",
+                    "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + Comma_WindowCenter",
+                    "type": "basic",
+                    "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["c", ["right_control", "right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "RightCommand + Period_MaxWindow",
+                    "type": "basic",
+                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + N_WindowUP",
+                    "type": "basic",
+                    "from": <%= from("n", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["4", ["left_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + M_WindowDown",
+                    "type": "basic",
+                    "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["5", ["left_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + L_RightHalfWindowMove",
+                    "type": "basic",
+                    "from": <%= from("l", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "Fn + H_LeftWindowMove",
+                    "type": "basic",
+                    "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("antigravity") %> ]
+                },
+                {
+                    "description": "日本語モード:Openbracket_OpenClosebracket",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket"
+                        },
+                        {
+                            "key_code": "close_bracket"
+                        },
+                        {
+                            "key_code": "left_arrow"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                { "language": "ja" }
+                            ]
+                        },
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.microsoft.VSCode$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description": "LeftControl_Rename",
+                    "type": "basic",
+                    "from": {
+                        "apple_vendor_top_case_key_code":"keyboard_fn"
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.microsoft.VSCode$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description": "LeftShift + spacebar_エディターでファイルを開く",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": { "mandatory": [ "left_shift" ] }
+                    },
+                    "to": [
+                        {
+                            "pointing_button": "button1",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.microsoft.VSCode$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
