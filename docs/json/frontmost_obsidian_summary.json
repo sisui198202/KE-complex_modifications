@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfObsidian_summary98",
+  "title": "FrontmostIfObsidian_summary97",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary98",
+      "description": "FrontmostIfObsidian_summary97",
       "manipulators": [
         {
           "description": "LeftCommand + N_HeadRowCursol",
@@ -118,7 +118,8 @@
               "key_code": "6",
               "modifiers": [
                 "left_shift",
-                "right_option"
+                "right_option",
+                "left_control"
               ]
             }
           ],
