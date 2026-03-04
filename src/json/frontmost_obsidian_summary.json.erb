@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfObsidian_summary99",
+    "title": "FrontmostIfObsidian_summary98",
     "rules": [
         {
-            "description": "FrontmostIfObsidian_summary99",
+            "description": "FrontmostIfObsidian_summary98",
             "manipulators": [
                 {
                     "description": "LeftCommand + N_HeadRowCursol",
@@ -22,7 +22,7 @@
                     "description": "RightOption + E_編集モード/プレビューモードを切り替える",
                     "type": "basic",
                     "from": <%= from("e", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["left_shift", "right_option"]]]) %>,
+                    "to": <%= to([["7", ["left_shift", "right_option","left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("obsidian") %> ]
                 },
                 {
