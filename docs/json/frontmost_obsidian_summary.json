@@ -1,11 +1,11 @@
 {
-  "title": "FrontmostIfObsidian_summary95",
+  "title": "FrontmostIfObsidian_summary94",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary95",
+      "description": "FrontmostIfObsidian_summary94",
       "manipulators": [
         {
-          "description": "LeftCommand + B_Execute Code:Run all Code Blocks in Current File",
+          "description": "RightCommand + B_Execute Code:Run all Code Blocks in Current File",
           "type": "basic",
           "from": {
             "key_code": "b",
