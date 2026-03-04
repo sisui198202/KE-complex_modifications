@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfObsidian_summary96",
+  "title": "FrontmostIfObsidian_summary95",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary96",
+      "description": "FrontmostIfObsidian_summary95",
       "manipulators": [
         {
           "description": "LeftCommand + B_Execute Code:Run all Code Blocks in Current File",
@@ -11,7 +11,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "right_gui"
               ],
               "optional": [
                 "caps_lock"

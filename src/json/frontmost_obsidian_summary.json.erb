@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfObsidian_summary96",
+    "title": "FrontmostIfObsidian_summary95",
     "rules": [
         {
-            "description": "FrontmostIfObsidian_summary96",
+            "description": "FrontmostIfObsidian_summary95",
             "manipulators": [
                 {
                     "description": "LeftCommand + B_Execute Code:Run all Code Blocks in Current File",
                     "type": "basic",
-                    "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+                    "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
                     "to": <%= to([["1", ["left_shift", "right_option","left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("obsidian") %> ]
                 },
