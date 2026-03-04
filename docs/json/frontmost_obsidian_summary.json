@@ -1,9 +1,42 @@
 {
-  "title": "FrontmostIfObsidian_summary97",
+  "title": "FrontmostIfObsidian_summary96",
   "rules": [
     {
-      "description": "FrontmostIfObsidian_summary97",
+      "description": "FrontmostIfObsidian_summary96",
       "manipulators": [
+        {
+          "description": "LeftCommand + B_Execute Code:Run all Code Blocks in Current File",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_shift",
+                "right_option",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
         {
           "description": "LeftCommand + N_HeadRowCursol",
           "type": "basic",
