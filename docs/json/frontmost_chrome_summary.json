@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary99",
+  "title": "FrontmostIfChrome_summary98",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary99",
+      "description": "FrontmostIfChrome_summary98",
       "manipulators": [
         {
           "description": "RightCommand + i_検証-ページにフォーカス",
@@ -569,7 +569,7 @@
           ]
         },
         {
-          "description": "LeftAlt + E_NotionWebCliper起動",
+          "description": "LeftAlt + E_Obsidian Web Clipper-クイッククリップ",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -584,9 +584,10 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "o",
               "modifiers": [
-                "right_gui"
+                "right_option",
+                "right_shift"
               ]
             }
           ],

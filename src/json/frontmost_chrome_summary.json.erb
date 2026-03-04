@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary99",
+    "title": "FrontmostIfChrome_summary98",
     "rules": [
         {
-            "description": "FrontmostIfChrome_summary99",
+            "description": "FrontmostIfChrome_summary98",
             "manipulators": [
                 {
                     "description": "RightCommand + i_検証-ページにフォーカス",
@@ -131,10 +131,10 @@
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
-                    "description": "LeftAlt + E_NotionWebCliper起動",
+                    "description": "LeftAlt + E_Obsidian Web Clipper-クイッククリップ",
                     "type": "basic",
                     "from": <%= from("e", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["right_gui"]]]) %>,
+                    "to": <%= to([["o", ["right_option", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
