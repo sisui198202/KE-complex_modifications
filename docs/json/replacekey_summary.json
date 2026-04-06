@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary1",
+  "title": "ReplaceSummary2",
   "rules": [
     {
-      "description": "ReplaceSummary1",
+      "description": "ReplaceSummary2",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -249,9 +249,6 @@
             }
           ],
           "to_if_alone": [
-            {
-              "key_code": "japanese_eisuu"
-            },
             {
               "key_code": "c",
               "modifiers": "right_gui"
