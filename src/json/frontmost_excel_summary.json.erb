@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary99",
+    "title": "FrontmostIfExcel_summary",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary99",
+            "description": "FrontmostIfExcel_summary",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -311,68 +311,6 @@
                     "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
                     "to": <%= to([["2", ["right_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
-                },
-                {
-                    "description": "LeftAlt_Copy",
-                    "type": "basic",
-                    "from": {
-                        "key_code": "left_alt",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_alt"
-                        }
-                    ],
-                    "to_if_alone": [
-                        {
-                            "key_code": "c",
-                            "modifiers": "left_gui"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                              "^com\\.microsoft\\.Excel$"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "description": "RightAlt_Paste",
-                    "type": "basic",
-                    "from": {
-                        "key_code": "right_alt",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_alt"
-                        }
-                    ],
-                    "to_if_alone": [
-                        {
-                            "key_code": "v",
-                            "modifiers": "left_gui"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.microsoft\\.Excel$"
-                            ]
-                        }
-                    ]
                 },
                 {
                     "description": "Leftoption+Openbracket_クイックアクセスツールバーの画像挿入クリック",
