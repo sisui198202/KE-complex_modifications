@@ -1,8 +1,8 @@
 {
-  "title": "Replacekey66",
+  "title": "Replacekey9999",
   "rules": [
     {
-      "description": "LeftAlt_Copy(Replacekey)",
+      "description": "LeftAlt_Copy(Replacekey)1",
       "manipulators": [
         {
           "type": "basic",
@@ -42,6 +42,97 @@
                 "^com.vmware.proxyApp.",
                 "^com.parallels.winapp."
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy(Replacekey)2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "c",
+              "modifiers": ["right_gui"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy(Replacekey)3",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["right_gui"]
+            }
+          ],
+           "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy(Replacekey)4",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["right_gui"]
             }
           ]
         }
