@@ -1,9 +1,16 @@
 {
-    "title": "FrontmostIfExcel_summary7",
+    "title": "FrontmostIfExcel_summary89",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary7",
+            "description": "FrontmostIfExcel_summary89",
             "manipulators": [
+                {
+                    "description": "LeftOption + O(オー)_Save",
+                    "type": "basic",
+                    "from": <%= from("o", ["left_alt"], ["caps_lock"]) %>,
+                    "to": <%= to([["s", ["right_gui"]]]) %>,
+                    "conditions": [<%= frontmost_application_if("excel") %>]
+                },
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
                     "type": "basic",

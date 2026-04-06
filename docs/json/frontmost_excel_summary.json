@@ -1,9 +1,40 @@
 {
-  "title": "FrontmostIfExcel_summary7",
+  "title": "FrontmostIfExcel_summary89",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary7",
+      "description": "FrontmostIfExcel_summary89",
       "manipulators": [
+        {
+          "description": "LeftOption + O(オー)_Save",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        },
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
           "type": "basic",
