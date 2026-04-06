@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary6",
+    "title": "FrontmostIfExcel_summary7",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary6",
+            "description": "FrontmostIfExcel_summary7",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -313,6 +313,32 @@
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
+                    "description": "LeftAlt_Copy",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_alt",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "c",
+                            "modifiers": "right_gui"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                              "^com\\.microsoft\\.Excel$"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "description": "RightAlt_Paste",
                     "type": "basic",
                     "from": {
@@ -324,11 +350,6 @@
                         }
                     },
                     "to": [
-                        {
-                            "key_code": "right_alt"
-                        }
-                    ],
-                    "to_if_alone": [
                         {
                             "key_code": "v",
                             "modifiers": "left_gui"
