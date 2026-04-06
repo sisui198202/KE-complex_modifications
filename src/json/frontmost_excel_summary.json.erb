@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary",
+    "title": "FrontmostIfExcel_summary1",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary",
+            "description": "FrontmostIfExcel_summary1",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -189,14 +189,14 @@
                 {
                     "description": "RightCommand + L_PreviousTab",
                     "type": "basic",
-                    "from": <%= from("l", ["right_gui"]) %>,
+                    "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
                     "to": <%= to([["left_arrow", ["left_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightCommand + semicolon_NextTab",
                     "type": "basic",
-                    "from": <%= from("semicolon", ["right_gui"]) %>,
+                    "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
                     "to": <%= to([["right_arrow", ["left_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
