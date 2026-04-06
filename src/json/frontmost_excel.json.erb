@@ -1,8 +1,38 @@
 {
-    "title": "FrontmostIfExcel99",
+    "title": "FrontmostIfExcel98",
     "rules": [
     {
-      "description": "LeftAlt_Copy_2回押す必要有(Excel)",
+      "description": "LeftAlt_Copy_2回押す必要有-test(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": ["right_gui"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy_2回押す必要有-publicで設定済(Excel)",
       "manipulators": [
         {
           "type": "basic",
@@ -35,7 +65,7 @@
       ]
     },
     {
-      "description": "LeftAlt_Copy_1回でOK(Excel)",
+      "description": "LeftAlt_Copy_1回OKだが他のショットカットキー使用不可になるため却下(Excel)",
       "manipulators": [
         {
           "type": "basic",
