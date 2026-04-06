@@ -1,28 +1,47 @@
 {
-    "title": "Replacekey1",
+    "title": "Replacekey98",
     "rules": [
-        {
-            "description": "利用しないTilde_X3_2(Replacekey)",
-            "_comment": "tildeを3回入力し、3回入力したtildeをクリップボードに入れる",
-            "manipulators": [
                 {
+                    "description": "LeftAlt_Copy(Replacekey)",
                     "type": "basic",
-                    "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["a", ["left_control"]], ["down_arrow", "left_shift"], ["left_arrow", "left_shift"], ["c", "left_gui"]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("pararell") %> ]
+                    "from": {
+                        "key_code": "left_alt",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_alt"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        },
+                        {
+                            "key_code": "c",
+                            "modifiers": "right_gui"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com.vmware.fusion$",
+                                "^com.vmware.horizon$",
+                                "^com.vmware.view$",
+                                "^com.parallels.desktop$",
+                                "^com.parallels.vm$",
+                                "^com.parallels.desktop.console$",
+                                "^org.virtualbox.app.VirtualBoxVM$",
+                                "^com.vmware.proxyApp.",
+                                "^com.parallels.winapp."
+                            ]
+                        }
+                    ]
                 }
-            ]
-        },
-        {
-            "description": "使用しない_Tilde_X3(Replacekey)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": <%= from("grave_accent_and_tilde", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["japanese_eisuu"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"], ["grave_accent_and_tilde"]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("centos_ubuntu") %> ]
-                }
-            ]
-        }
     ]
 }
