@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary",
+  "title": "ReplaceSummary1",
   "rules": [
     {
-      "description": "ReplaceSummary",
+      "description": "ReplaceSummary1",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -241,12 +241,7 @@
           "description": "LeftAlt_Copy(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "left_alt"
           },
           "to": [
             {
