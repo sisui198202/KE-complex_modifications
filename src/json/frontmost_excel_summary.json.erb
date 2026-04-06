@@ -1,13 +1,13 @@
 {
-    "title": "FrontmostIfExcel_summary89",
+    "title": "FrontmostIfExcel_summary88",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary89",
+            "description": "FrontmostIfExcel_summary88",
             "manipulators": [
                 {
                     "description": "LeftOption + O(オー)_Save",
                     "type": "basic",
-                    "from": <%= from("o", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("o", ["left_alt"]) %>,
                     "to": <%= to([["s", ["right_gui"]]]) %>,
                     "conditions": [<%= frontmost_application_if("excel") %>]
                 },
