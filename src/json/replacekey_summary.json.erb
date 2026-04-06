@@ -1,8 +1,8 @@
 {
-    "title": "ReplaceSummary2",
+    "title": "ReplaceSummary99",
     "rules": [
         {
-            "description": "ReplaceSummary2",
+            "description": "ReplaceSummary99",
             "manipulators": [
                 {
                     "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -60,7 +60,12 @@
                     "description": "LeftAlt_Copy(Replacekey)",
                     "type": "basic",
                     "from": {
-                        "key_code": "left_alt"
+                        "key_code": "left_alt",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
                     },
                     "to": [
                         {
@@ -68,6 +73,9 @@
                         }
                     ],
                     "to_if_alone": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        },
                         {
                             "key_code": "c",
                             "modifiers": "right_gui"
