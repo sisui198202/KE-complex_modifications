@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary1",
+  "title": "FrontmostIfExcel_summary2",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary1",
+      "description": "FrontmostIfExcel_summary2",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -70,6 +70,9 @@
             "modifiers": {
               "mandatory": [
                 "left_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -98,6 +101,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -127,6 +133,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -156,6 +165,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -185,6 +197,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -213,6 +228,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -241,6 +259,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -270,6 +291,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -299,6 +323,9 @@
             "modifiers": {
               "mandatory": [
                 "left_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -328,6 +355,9 @@
             "modifiers": {
               "mandatory": [
                 "left_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -356,6 +386,9 @@
             "modifiers": {
               "mandatory": [
                 "left_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -385,6 +418,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -414,6 +450,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -439,6 +478,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -468,6 +510,9 @@
             "modifiers": {
               "mandatory": [
                 "left_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -497,6 +542,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -526,6 +574,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -587,6 +638,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -615,6 +669,9 @@
             "modifiers": {
               "mandatory": [
                 "right_gui"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -643,6 +700,9 @@
             "modifiers": {
               "mandatory": [
                 "left_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -671,6 +731,9 @@
             "modifiers": {
               "mandatory": [
                 "left_control"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -700,6 +763,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -729,6 +795,9 @@
             "modifiers": {
               "mandatory": [
                 "right_option"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },
@@ -821,6 +890,9 @@
             "modifiers": {
               "mandatory": [
                 "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
               ]
             }
           },

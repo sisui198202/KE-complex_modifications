@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary1",
+    "title": "FrontmostIfExcel_summary2",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary1",
+            "description": "FrontmostIfExcel_summary2",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -21,119 +21,119 @@
                 {
                     "description": "LeftOption  + E_非表示",
                     "type": "basic",
-                    "from": <%= from("e", ["left_option"]) %>,
+                    "from": <%= from("e", ["left_option"],["caps_lock"]) %>,
                     "to": <%= to([["0", ["left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption  + E_再表示",
                     "type": "basic",
-                    "from": <%= from("e", ["right_option"]) %>,
+                    "from": <%= from("e", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["0", ["left_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand  + Z_塗りつぶし色",
                     "type": "basic",
-                    "from": <%= from("z", ["left_control"]) %>,
+                    "from": <%= from("z", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["2", ["left_shift", "left_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightCommand  + i_セルの書式設定",
                     "type": "basic",
-                    "from": <%= from("i", ["right_gui"]) %>,
+                    "from": <%= from("i", ["right_gui"],["caps_lock"]) %>,
                     "to": <%= to([["3", ["left_shift", "left_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand + A_最初の列へカーソル",
                     "type": "basic",
-                    "from": <%= from("a", ["left_control"]) %>,
+                    "from": <%= from("a", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["left_arrow", ["fn"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand + ;(セミコロン)_最終列へカーソル",
                     "type": "basic",
-                    "from": <%= from("semicolon", ["left_control"]) %>,
+                    "from": <%= from("semicolon", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["right_arrow", ["fn"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand + N_HeadRowCursol",
                     "type": "basic",
-                    "from": <%= from("n", ["left_control"]) %>,
+                    "from": <%= from("n", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["left_arrow", ["fn", "right_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand + M_EndRowCursol",
                     "type": "basic",
-                    "from": <%= from("m", ["left_control"]) %>,
+                    "from": <%= from("m", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["right_arrow", ["fn", "right_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftOption + U_最終行カーソル移動-Ctrl + ↓",
                     "type": "basic",
-                    "from": <%= from("u", ["left_option"]) %>,
+                    "from": <%= from("u", ["left_option"],["caps_lock"]) %>,
                     "to": <%= to([["down_arrow", ["left_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftOption + A_新規シート挿入",
                     "type": "basic",
-                    "from": <%= from("a", ["left_option"]) %>,
+                    "from": <%= from("a", ["left_option"],["caps_lock"]) %>,
                     "to": <%= to([["f11", ["right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftOption + F_連続データ作成",
                     "type": "basic",
-                    "from": <%= from("f", ["left_option"]) %>,
+                    "from": <%= from("f", ["left_option"],["caps_lock"]) %>,
                     "to": <%= to([["0", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption + Q_すべてのウィンドウを並び替え",
                     "type": "basic",
-                    "from": <%= from("q", ["right_option"]) %>,
+                    "from": <%= from("q", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption + K_繰り返し",
                     "type": "basic",
-                    "from": <%= from("k", ["right_option"]) %>,
+                    "from": <%= from("k", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["f4"]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption + R_行の高さ変更",
                     "type": "basic",
-                    "from": <%= from("r", ["right_option"]) %>,
+                    "from": <%= from("r", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftOption + C_列幅変更",
                     "type": "basic",
-                    "from": <%= from("c", ["left_option"]) %>,
+                    "from": <%= from("c", ["left_option"],["caps_lock"]) %>,
                     "to": <%= to([["3", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption + A_カレントウィンドウを複製",
                     "type": "basic",
-                    "from": <%= from("a", ["right_option"]) %>,
+                    "from": <%= from("a", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand + Y_シート削除",
                     "type": "basic",
-                    "from": <%= from("y", ["left_control"]) %>,
+                    "from": <%= from("y", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["7", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
@@ -147,42 +147,42 @@
                 {
                     "description": "RightCommand + U_カレント列選択",
                     "type": "basic",
-                    "from": <%= from("u", ["right_gui"]) %>,
+                    "from": <%= from("u", ["right_gui"],["caps_lock"]) %>,
                     "to": <%= to([["spacebar", ["left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightCommand + J_カレント行選択",
                     "type": "basic",
-                    "from": <%= from("j", ["right_gui"]) %>,
+                    "from": <%= from("j", ["right_gui"],["caps_lock"]) %>,
                     "to": <%= to([["spacebar", ["left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftOption + D_カレント行列削除",
                     "type": "basic",
-                    "from": <%= from("d", ["left_option"]) %>,
+                    "from": <%= from("d", ["left_option"],["caps_lock"]) %>,
                     "to": <%= to([["hyphen", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "LeftCommand + T_カレント行/列追加",
                     "type": "basic",
-                    "from": <%= from("t", ["left_control"]) %>,
+                    "from": <%= from("t", ["left_control"],["caps_lock"]) %>,
                     "to": <%= to([["equal_sign", ["right_gui", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption + J_カレント列から最終列まで選択",
                     "type": "basic",
-                    "from": <%= from("j", ["right_option"]) %>,
+                    "from": <%= from("j", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["right_arrow", ["left_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
                 {
                     "description": "RightOption + t_選択範囲に合わせる",
                     "type": "basic",
-                    "from": <%= from("t", ["right_option"]) %>,
+                    "from": <%= from("t", ["right_option"],["caps_lock"]) %>,
                     "to": <%= to([["0", ["left_shift", "left_control","left_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
@@ -203,7 +203,7 @@
                 {
                     "description": "LeftShift + RightOption_形式を選択して貼り付け",
                     "type": "basic",
-                    "from": <%= from("right_option", ["left_shift"]) %>,
+                    "from": <%= from("right_option", ["left_shift"],["caps_lock"]) %>,
                     "to": <%= to([["v", ["left_option", "right_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
                 },
