@@ -1,30 +1,55 @@
 {
-  "title": "FrontmostIfExcel",
+  "title": "FrontmostIfExcel99",
   "rules": [
     {
-      "description": "{キー1} + {キー2}_ここから登録(Excel)",
+      "description": "LeftAlt_Copy_2回押す必要有(Excel)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "left_alt"
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": "right_gui"
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
             },
             {
               "key_code": "c",
-              "modifiers": "right_gui"
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy_1回でOK(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_gui"
+              ]
             }
           ],
           "conditions": [

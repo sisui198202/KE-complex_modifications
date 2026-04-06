@@ -1,16 +1,63 @@
 {
-    "title": "FrontmostIfExcel",
+    "title": "FrontmostIfExcel99",
     "rules": [
+    {
+      "description": "LeftAlt_Copy_2回押す必要有(Excel)",
+      "manipulators": [
         {
-            "description": "{キー1} + {キー2}_ここから登録(Excel)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("excel") %> ]
-                }
-            ]
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_eisuu"
+            },
+            {
+              "key_code": "c",
+              "modifiers": ["right_gui"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
         }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy_1回でOK(Excel)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["left_gui"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
     ]
 }
