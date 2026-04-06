@@ -1,5 +1,5 @@
 {
-  "title": "Replacekey9999",
+  "title": "Replacekey8",
   "rules": [
     {
       "description": "LeftAlt_Copy(Replacekey)1",
@@ -133,6 +133,36 @@
             {
               "key_code": "c",
               "modifiers": ["right_gui"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "LeftAlt_Copy(Replacekey)3-1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["right_gui"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
             }
           ]
         }
