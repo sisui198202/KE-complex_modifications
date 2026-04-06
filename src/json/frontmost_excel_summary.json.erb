@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary88",
+    "title": "FrontmostIfExcel_summary555",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary88",
+            "description": "FrontmostIfExcel_summary555",
             "manipulators": [
                 {
                     "description": "LeftOption + O(オー)_Save",
@@ -437,40 +437,6 @@
                     "from": <%= from("w", ["right_option"]) %>,
                     "to": <%= to([["b", ["right_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("excel") %> ]
-                },
-                {
-                    "description": "LeftAlt_Copy(Replacekey)",
-                    "type": "basic",
-                    "from": {
-                        "key_code": "left_alt",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_alt"
-                        }
-                    ],
-                    "to_if_alone": [
-                        {
-                            "key_code": "japanese_eisuu"
-                        },
-                        {
-                            "key_code": "c",
-                            "modifiers": "right_gui"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                              "^com\\.microsoft\\.Excel$"
-                            ]
-                        }
-                    ]
                 }
             ]
         },

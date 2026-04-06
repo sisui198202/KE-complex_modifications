@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary88",
+  "title": "FrontmostIfExcel_summary555",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary88",
+      "description": "FrontmostIfExcel_summary555",
       "manipulators": [
         {
           "description": "LeftOption + O(オー)_Save",
@@ -1459,40 +1459,6 @@
                 "right_shift",
                 "left_control"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.Excel$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt_Copy(Replacekey)",
-          "type": "basic",
-          "from": {
-            "key_code": "left_alt",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_alt"
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "c",
-              "modifiers": "right_gui"
             }
           ],
           "conditions": [
