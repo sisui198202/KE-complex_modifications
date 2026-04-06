@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary6666",
+  "title": "FrontmostIfExcel_summary9",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary6666",
+      "description": "FrontmostIfExcel_summary9",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -1312,13 +1312,12 @@
           },
           "to": [
             {
-              "key_code": "c",
-              "modifiers": "right_gui"
+              "key_code": "LeftAlt"
             }
           ],
           "to_if_alone": [
             {
-              "key_code": "v",
+              "key_code": "c",
               "modifiers": "left_gui"
             }
           ],
