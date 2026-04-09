@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary33",
+    "title": "FrontmostIfExcel_summary4",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary33",
+            "description": "FrontmostIfExcel_summary4",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -373,7 +373,7 @@
                     ]
                 },
                 {
-                    "description": "LeftAlt_Copy_1回押しOK_lazy-true(Excel)",
+                    "description": "LeftAlt_Copy_1回押しOK_lazy-true",
                     "type": "basic",
                     "from": {
                         "key_code": "left_alt"
@@ -396,6 +396,38 @@
                         "bundle_identifiers": [
                             "^com\\.microsoft\\.Excel$"
                         ]
+                        }
+                    ]
+                },
+                {
+                    "description": "RightOption_Paste_lazy-true",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_alt",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_alt",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "v",
+                            "modifiers": "left_gui"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.microsoft\\.Excel$"
+                            ]
                         }
                     ]
                 },
