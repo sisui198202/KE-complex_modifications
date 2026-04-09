@@ -1,8 +1,8 @@
-## ExcelのleftOptionやrightOptionキー単独押しアクセシビリティキーが表示されるようになった改善方法(2026/04/06)
+## ExcelのleftOptionやrightOptionキー単独押しアクセシビリティキーが表示されるようになった改善方法(2026/04/09)
 
 ### 結論
 
-to_if_alone" を削除すれば良い
+"lazy": true
 
 ```
                 {
@@ -41,33 +41,34 @@ to_if_alone" を削除すれば良い
                 },
 ```
 
-↓
+↓ ## Excelのleftalt単独押しで、コピーできない_解決策:"lazy": true
 
 ```
                 {
-                    "description": "LeftAlt_Copy(Replacekey)",
+                    "description": "LeftAlt_Copy_1回押しOK_lazy-true(Excel)",
                     "type": "basic",
                     "from": {
-                        "key_code": "left_alt",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
+                        "key_code": "left_alt"
                     },
                     "to": [
                         {
-                            "key_code": "c",
-                            "modifiers": "right_gui"
+                        "key_code": "left_alt",
+                        "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                        "key_code": "c",
+                        "modifiers": ["right_gui"]
                         }
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                              "^com\\.microsoft\\.Excel$"
-                            ]
+                        "type": "frontmost_application_if",
+                        "bundle_identifiers": [
+                            "^com\\.microsoft\\.Excel$"
+                        ]
                         }
                     ]
-                },
+                }
 ```

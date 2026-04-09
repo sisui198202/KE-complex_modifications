@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary2",
+  "title": "FrontmostIfExcel_summary33",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary2",
+      "description": "FrontmostIfExcel_summary33",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -1428,6 +1428,35 @@
           "to": [
             {
               "key_code": "f2"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt_Copy_1回押しOK_lazy-true(Excel)",
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_alt",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_gui"
+              ]
             }
           ],
           "conditions": [

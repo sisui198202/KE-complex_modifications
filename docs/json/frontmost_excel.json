@@ -2,7 +2,7 @@
   "title": "FrontmostIfExcel1",
   "rules": [
     {
-      "description": "LeftAlt_Copy_2回押す必要有-使用優先順位低い(Excel)",
+      "description": "LeftAlt_Copy_1回押しOK_lazy-true(Excel)",
       "manipulators": [
         {
           "type": "basic",
