@@ -1,5 +1,5 @@
 {
-    "title": "DoublePushKey2",
+    "title": "DoublePushKey3",
     "rules": [
         {
             "description": "Double-RightShift_Clipboard History",
@@ -164,6 +164,84 @@
                     }
                 }
             ]
+        },
+    {
+    "description": "Double-RightControl_send_ctrl_c",
+    "manipulators": [
+        {
+        "type": "basic",
+        "from": {
+            "key_code": "right_control",
+            "modifiers": {
+            "optional": [
+                "any"
+            ]
+            }
+        },
+        "to": [
+            {
+            "key_code": "c",
+            "modifiers": [
+                "left_control"
+            ]
+            }
+        ],
+        "conditions": [
+            {
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [
+                "^com.microsoft.VSCode$",
+                "^com.googlecode.iterm2$"
+            ]
+            },
+            {
+            "type": "variable_if",
+            "name": "right_control_pressed",
+            "value": 1
+            }
+        ]
+        },
+        {
+        "type": "basic",
+        "from": {
+            "key_code": "right_control",
+            "modifiers": {
+            "optional": [
+                "any"
+            ]
+            }
+        },
+        "to": [
+            {
+            "set_variable": {
+                "name": "right_control_pressed",
+                "value": 1
+            }
+            },
+            {
+            "apple_vendor_top_case_key_code": "keyboard_fn"
+            }
+        ],
+        "to_delayed_action": {
+            "to_if_invoked": [
+            {
+                "set_variable": {
+                "name": "right_control_pressed",
+                "value": 0
+                }
+            }
+            ],
+            "to_if_canceled": [
+            {
+                "set_variable": {
+                "name": "right_control_pressed",
+                "value": 0
+                }
+            }
+            ]
         }
+        }
+    ]
+    }
     ]
 }
