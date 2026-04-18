@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey1",
+  "title": "DoublePushKey2",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -112,7 +112,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
+                "^com.microsoft.VSCode$",
+                "^com.googlecode.iterm2$"
               ]
             },
             {
