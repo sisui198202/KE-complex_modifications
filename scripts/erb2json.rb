@@ -189,7 +189,8 @@ def frontmost_application(type, app_aliases, as_json = true)
     '^com\.google\.Chrome$',
     '^org.chromium.Chromium$',
     "^com.vivaldi.Vivaldi$",
-    "^com.apple.Safari$"
+    "^com.apple.Safari$",
+    '^com.google.chrome.for.testing$'
   ]
 
   vivaldi_bundle_identifiers = [

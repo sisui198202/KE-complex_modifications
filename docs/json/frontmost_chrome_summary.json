@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary",
+  "title": "FrontmostIfChrome_summary11",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary",
+      "description": "FrontmostIfChrome_summary11",
       "manipulators": [
         {
           "description": "RightCommand + i_検証-ページにフォーカス",

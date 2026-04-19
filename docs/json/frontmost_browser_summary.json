@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfBrowser99",
+  "title": "FrontmostIfBrowser11",
   "rules": [
     {
-      "description": "Basic Navigation Commands (browser)99",
+      "description": "Basic Navigation Commands11 (browser)",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -29,7 +29,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -59,7 +60,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -89,7 +91,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -119,7 +122,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -152,7 +156,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -185,7 +190,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -218,7 +224,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -251,7 +258,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -290,7 +298,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -321,7 +330,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -351,7 +361,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -381,7 +392,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -414,7 +426,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -447,7 +460,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -480,7 +494,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -513,7 +528,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -547,7 +563,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -581,7 +598,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -615,7 +633,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -649,7 +668,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -685,7 +705,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -722,7 +743,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -759,7 +781,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -796,7 +819,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -833,7 +857,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -870,7 +895,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -906,7 +932,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -942,7 +969,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -978,7 +1006,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1016,7 +1045,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1050,7 +1080,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1083,7 +1114,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1122,7 +1154,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1155,7 +1188,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1192,7 +1226,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1228,7 +1263,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1266,7 +1302,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1299,7 +1336,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1332,7 +1370,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1370,7 +1409,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1407,7 +1447,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1445,7 +1486,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1481,7 +1523,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1489,7 +1532,7 @@
       ]
     },
     {
-      "description": "verification(browser)",
+      "description": "verification11(browser)",
       "manipulators": [
         {
           "description": "RightAlt + S_Select an Element in the Page to inspect it",
@@ -1523,7 +1566,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1560,7 +1604,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1597,7 +1642,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -1634,7 +1680,8 @@
                 "^com\\.google\\.Chrome$",
                 "^org.chromium.Chromium$",
                 "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$"
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
