@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfIterm_summary3",
+  "title": "FrontmostIfIterm_summary4",
   "rules": [
     {
-      "description": "FrontmostIfIterm_summary3",
+      "description": "FrontmostIfIterm_summary4",
       "manipulators": [
         {
           "description": "LeftCommand + O(オー)_SplitVertically",
@@ -312,9 +312,10 @@
           },
           "to": [
             {
-              "key_code": "n",
+              "key_code": "5",
               "modifiers": [
-                "right_gui"
+                "left_control",
+                "left_shift"
               ]
             }
           ],

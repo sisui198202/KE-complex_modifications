@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfIterm_summary3",
+    "title": "FrontmostIfIterm_summary4",
     "rules": [
         {
-            "description": "FrontmostIfIterm_summary3",
+            "description": "FrontmostIfIterm_summary4",
             "manipulators": [
                 {
                     "description": "LeftCommand + O(オー)_SplitVertically",
@@ -78,7 +78,7 @@
                     "description": "RightOption + A_NewWindows",
                     "type": "basic",
                     "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_gui"]]]) %>,
+                    "to": <%= to([["5", ["left_control", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 }
             ]
