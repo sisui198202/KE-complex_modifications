@@ -1,41 +1,34 @@
 {
-    "title": "FrontmostIfIterm99",
-    "rules": [
+  "title": "FrontmostIfIterm98",
+  "rules": [
+    {
+      "description": "Right Option + A -> Command + N in iTerm2",
+      "manipulators": [
         {
-            "description": "{キー1} + {キー2}_ここから登録(Iterm)",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-                },
-{
-  "description": "Right Option + A -> Command + N in iTerm2",
-  "type": "basic",
-  "from": {
-    "key_code": "a",
-    "modifiers": {
-      "mandatory": ["right_option"],
-      "optional": ["any"]
-    }
-  },
-  "to": [
-    {
-      "key_code": "n",
-      "modifiers": ["command"]
-    }
-  ],
-  "conditions": [
-    {
-      "type": "frontmost_application_if",
-      "bundle_identifiers": [
-        "^com\\.googlecode\\.iterm2$"
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": ["right_option"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": ["command"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$"
+              ]
+            }
+          ]
+        }
       ]
     }
   ]
-}
-            ]
-        }
-    ]
 }
