@@ -176,6 +176,7 @@ def frontmost_application(type, app_aliases, as_json = true)
 
   chrome_bundle_identifiers = [
     '^com\.google\.Chrome$',
+    '^com.google.chrome.for.testing$'
   ]
 
   firefox_bundle_identifiers = [
