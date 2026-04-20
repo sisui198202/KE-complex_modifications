@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey5",
+  "title": "DoublePushKey99",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -19,14 +19,14 @@
               "key_code": "9",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
           "conditions": [
             {
               "type": "variable_if",
-              "name": "right_shift pressed",
+              "name": "right_shift_pressed",
               "value": 1
             },
             {
@@ -58,7 +58,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "right_shift pressed",
+                "name": "right_shift_pressed",
                 "value": 1
               }
             },
@@ -70,7 +70,7 @@
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "right_shift pressed",
+                  "name": "right_shift_pressed",
                   "value": 0
                 }
               }
@@ -78,7 +78,7 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "right_shift pressed",
+                  "name": "right_shift_pressed",
                   "value": 0
                 }
               }
@@ -104,7 +104,7 @@
             {
               "pointing_button": "button1",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -118,7 +118,7 @@
             },
             {
               "type": "variable_if",
-              "name": "left_shift pressed",
+              "name": "left_shift_pressed",
               "value": 1
             }
           ]
@@ -136,7 +136,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "left_shift pressed",
+                "name": "left_shift_pressed",
                 "value": 1
               }
             },
@@ -148,7 +148,7 @@
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "left_shift pressed",
+                  "name": "left_shift_pressed",
                   "value": 0
                 }
               }
@@ -156,7 +156,7 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "left_shift pressed",
+                  "name": "left_shift_pressed",
                   "value": 0
                 }
               }
@@ -244,100 +244,95 @@
       ]
     },
     {
-      "title": "Space Double Press Copy",
-      "rules": [
+      "description": "Space Double Press Copy",
+      "manipulators": [
         {
-          "description": "Space single press keeps normal space, double press sends Command+C in VSCode and iTerm2",
-          "manipulators": [
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
             {
-              "type": "basic",
-              "from": {
-                "key_code": "spacebar",
-                "modifiers": {
-                  "optional": [
-                    "any"
-                  ]
-                }
-              },
-              "conditions": [
-                {
-                  "type": "frontmost_application_if",
-                  "bundle_identifiers": [
-                    "^com\\.microsoft\\.VSCode$",
-                    "^com\\.googlecode\\.iterm2$"
-                  ]
-                },
-                {
-                  "type": "variable_if",
-                  "name": "spacebar_pressed",
-                  "value": 1
-                }
-              ],
-              "to": [
-                {
-                  "key_code": "c",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                {
-                  "set_variable": {
-                    "name": "spacebar_pressed",
-                    "value": 0
-                  }
-                }
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.VSCode$",
+                "^com\\.googlecode\\.iterm2$"
               ]
             },
             {
-              "type": "basic",
-              "from": {
-                "key_code": "spacebar",
-                "modifiers": {
-                  "optional": [
-                    "any"
-                  ]
-                }
-              },
-              "conditions": [
-                {
-                  "type": "frontmost_application_if",
-                  "bundle_identifiers": [
-                    "^com\\.microsoft\\.VSCode$",
-                    "^com\\.googlecode\\.iterm2$"
-                  ]
-                }
-              ],
-              "to": [
-                {
-                  "set_variable": {
-                    "name": "spacebar_pressed",
-                    "value": 1
-                  }
-                },
-                {
-                  "key_code": "spacebar"
-                }
-              ],
-              "to_delayed_action": {
-                "to_if_invoked": [
-                  {
-                    "set_variable": {
-                      "name": "spacebar_pressed",
-                      "value": 0
-                    }
-                  }
-                ],
-                "to_if_canceled": [
-                  {
-                    "set_variable": {
-                      "name": "spacebar_pressed",
-                      "value": 0
-                    }
-                  }
-                ]
+              "type": "variable_if",
+              "name": "spacebar_pressed",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_command"
+              ]
+            },
+            {
+              "set_variable": {
+                "name": "spacebar_pressed",
+                "value": 0
               }
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.VSCode$",
+                "^com\\.googlecode\\.iterm2$"
+              ]
+            }
+          ],
+          "to": [
+            {
+              "set_variable": {
+                "name": "spacebar_pressed",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "spacebar"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "spacebar_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "spacebar_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          }
         }
       ]
     }
