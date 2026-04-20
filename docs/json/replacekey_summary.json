@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary99",
+  "title": "ReplaceSummary",
   "rules": [
     {
-      "description": "ReplaceSummary99",
+      "description": "ReplaceSummary",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -431,35 +431,104 @@
           "type": "basic"
         },
         {
-          "description": "RightCommand日本語モード(Replacekey)",
-          "from": {
-            "key_code": "right_command",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
+          "description": "RightCommand single=Japanese Kana, double=Command+C, combo=RightCommand",
+          "manipulators": [
+            {
+              "type": "basic",
+              "from": {
+                "key_code": "right_command",
+                "modifiers": {
+                  "optional": [
+                    "caps_lock"
+                  ]
+                }
+              },
+              "conditions": [
+                {
+                  "type": "frontmost_application_unless",
+                  "bundle_identifiers": [
+                    "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
+                  ]
+                },
+                {
+                  "type": "variable_if",
+                  "name": "right_command_pressed",
+                  "value": 1
+                }
+              ],
+              "to": [
+                {
+                  "key_code": "c",
+                  "modifiers": [
+                    "left_command"
+                  ]
+                },
+                {
+                  "set_variable": {
+                    "name": "right_command_pressed",
+                    "value": 0
+                  }
+                }
               ]
-            }
-          },
-          "to": [
+            },
             {
-              "key_code": "right_command",
-              "lazy": true
+              "type": "basic",
+              "from": {
+                "key_code": "right_command",
+                "modifiers": {
+                  "optional": [
+                    "caps_lock"
+                  ]
+                }
+              },
+              "conditions": [
+                {
+                  "type": "frontmost_application_unless",
+                  "bundle_identifiers": [
+                    "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
+                  ]
+                }
+              ],
+              "to": [
+                {
+                  "set_variable": {
+                    "name": "right_command_pressed",
+                    "value": 1
+                  }
+                },
+                {
+                  "key_code": "right_command",
+                  "lazy": true
+                }
+              ],
+              "to_if_alone": [
+                {
+                  "key_code": "japanese_kana"
+                }
+              ],
+              "to_delayed_action": {
+                "to_if_invoked": [
+                  {
+                    "set_variable": {
+                      "name": "right_command_pressed",
+                      "value": 0
+                    }
+                  }
+                ],
+                "to_if_canceled": [
+                  {
+                    "set_variable": {
+                      "name": "right_command_pressed",
+                      "value": 0
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 250
+              }
             }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^org.virtualbox.app.VirtualBoxVM$"
-              ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "japanese_kana"
-            }
-          ],
-          "type": "basic"
+          ]
         },
         {
           "description": "LeftCommand + RightCommand_plus(Replacekey)",
