@@ -1,8 +1,8 @@
 {
-    "title": "ReplaceSummary",
+    "title": "ReplaceSummary1",
     "rules": [
         {
-            "description": "ReplaceSummary",
+            "description": "ReplaceSummary1",
             "manipulators": [
                 {
                     "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -196,12 +196,6 @@
                     },
                     "conditions": [
                         {
-                        "type": "frontmost_application_unless",
-                        "bundle_identifiers": [
-                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
-                        ]
-                        },
-                        {
                         "type": "variable_if",
                         "name": "right_command_pressed",
                         "value": 1
@@ -228,14 +222,6 @@
                         "optional": ["caps_lock"]
                         }
                     },
-                    "conditions": [
-                        {
-                        "type": "frontmost_application_unless",
-                        "bundle_identifiers": [
-                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
-                        ]
-                        }
-                    ],
                     "to": [
                         {
                         "set_variable": {
