@@ -1,5 +1,5 @@
 {
-    "title": "DoublePushKey4",
+    "title": "DoublePushKey5",
     "rules": [
         {
             "description": "Double-RightShift_Clipboard History",
@@ -240,6 +240,98 @@
             }
             ]
         }
+        }
+    ]
+    },
+    {
+    "title": "Space Double Press Copy",
+    "rules": [
+        {
+        "description": "Space single press keeps normal space, double press sends Command+C in VSCode and iTerm2",
+        "manipulators": [
+            {
+            "type": "basic",
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": {
+                "optional": ["any"]
+                }
+            },
+            "conditions": [
+                {
+                "type": "frontmost_application_if",
+                "bundle_identifiers": [
+                    "^com\\.microsoft\\.VSCode$",
+                    "^com\\.googlecode\\.iterm2$"
+                ]
+                },
+                {
+                "type": "variable_if",
+                "name": "spacebar_pressed",
+                "value": 1
+                }
+            ],
+            "to": [
+                {
+                "key_code": "c",
+                "modifiers": ["left_command"]
+                },
+                {
+                "set_variable": {
+                    "name": "spacebar_pressed",
+                    "value": 0
+                }
+                }
+            ]
+            },
+            {
+            "type": "basic",
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": {
+                "optional": ["any"]
+                }
+            },
+            "conditions": [
+                {
+                "type": "frontmost_application_if",
+                "bundle_identifiers": [
+                    "^com\\.microsoft\\.VSCode$",
+                    "^com\\.googlecode\\.iterm2$"
+                ]
+                }
+            ],
+            "to": [
+                {
+                "set_variable": {
+                    "name": "spacebar_pressed",
+                    "value": 1
+                }
+                },
+                {
+                "key_code": "spacebar"
+                }
+            ],
+            "to_delayed_action": {
+                "to_if_invoked": [
+                {
+                    "set_variable": {
+                    "name": "spacebar_pressed",
+                    "value": 0
+                    }
+                }
+                ],
+                "to_if_canceled": [
+                {
+                    "set_variable": {
+                    "name": "spacebar_pressed",
+                    "value": 0
+                    }
+                }
+                ]
+            }
+            }
+        ]
         }
     ]
     }

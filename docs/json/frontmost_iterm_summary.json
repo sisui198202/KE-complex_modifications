@@ -297,7 +297,7 @@
           ]
         },
         {
-          "description": "RightOption + A_NewWindows",
+          "description": "RightOption + A_NewWindows_iterm設定済",
           "type": "basic",
           "from": {
             "key_code": "a",
