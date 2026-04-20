@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary1",
+  "title": "ReplaceSummary1-1",
   "rules": [
     {
-      "description": "ReplaceSummary1",
+      "description": "ReplaceSummary1-1",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
