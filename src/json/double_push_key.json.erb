@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey99",
+  "title": "DoublePushKey98",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -244,97 +244,98 @@
       ]
     },
     {
-      "description": "Space Double Press Copy",
-      "manipulators": [
+    "description": "RightCommand single=Japanese Kana, double=Command+C, combo=RightCommand",
+    "manipulators": [
         {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
+        "type": "basic",
+        "from": {
+            "key_code": "right_command",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+            "optional": ["caps_lock"]
             }
-          },
-          "conditions": [
+        },
+        "conditions": [
             {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.VSCode$",
-                "^com\\.googlecode\\.iterm2$"
-              ]
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
+            ]
             },
             {
-              "type": "variable_if",
-              "name": "spacebar_pressed",
-              "value": 1
+            "type": "variable_if",
+            "name": "right_command_pressed",
+            "value": 1
             }
-          ],
-          "to": [
+        ],
+        "to": [
             {
-              "key_code": "c",
-              "modifiers": [
-                "left_command"
-              ]
+            "key_code": "c",
+            "modifiers": ["left_command"]
             },
             {
-              "set_variable": {
-                "name": "spacebar_pressed",
+            "set_variable": {
+                "name": "right_command_pressed",
                 "value": 0
-              }
             }
-          ]
+            }
+        ]
         },
         {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
+        "type": "basic",
+        "from": {
+            "key_code": "right_command",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+            "optional": ["caps_lock"]
             }
-          },
-          "conditions": [
+        },
+        "conditions": [
             {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.microsoft\\.VSCode$",
-                "^com\\.googlecode\\.iterm2$"
-              ]
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
+            ]
             }
-          ],
-          "to": [
+        ],
+        "to": [
             {
-              "set_variable": {
-                "name": "spacebar_pressed",
+            "set_variable": {
+                "name": "right_command_pressed",
                 "value": 1
-              }
+            }
             },
             {
-              "key_code": "spacebar"
+            "key_code": "right_command",
+            "lazy": true
             }
-          ],
-          "to_delayed_action": {
+        ],
+        "to_if_alone": [
+            {
+            "key_code": "japanese_kana"
+            }
+        ],
+        "to_delayed_action": {
             "to_if_invoked": [
-              {
+            {
                 "set_variable": {
-                  "name": "spacebar_pressed",
-                  "value": 0
+                "name": "right_command_pressed",
+                "value": 0
                 }
-              }
+            }
             ],
             "to_if_canceled": [
-              {
+            {
                 "set_variable": {
-                  "name": "spacebar_pressed",
-                  "value": 0
+                "name": "right_command_pressed",
+                "value": 0
                 }
-              }
+            }
             ]
-          }
+        },
+        "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 250
         }
-      ]
+        }
+    ]
     }
   ]
 }

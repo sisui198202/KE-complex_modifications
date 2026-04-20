@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey99",
+  "title": "DoublePushKey98",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -244,29 +244,28 @@
       ]
     },
     {
-      "description": "Space Double Press Copy",
+      "description": "RightCommand single=Japanese Kana, double=Command+C, combo=RightCommand",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "spacebar",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com\\.microsoft\\.VSCode$",
-                "^com\\.googlecode\\.iterm2$"
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
               ]
             },
             {
               "type": "variable_if",
-              "name": "spacebar_pressed",
+              "name": "right_command_pressed",
               "value": 1
             }
           ],
@@ -279,7 +278,7 @@
             },
             {
               "set_variable": {
-                "name": "spacebar_pressed",
+                "name": "right_command_pressed",
                 "value": 0
               }
             }
@@ -288,38 +287,43 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "spacebar",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^com\\.microsoft\\.VSCode$",
-                "^com\\.googlecode\\.iterm2$"
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$"
               ]
             }
           ],
           "to": [
             {
               "set_variable": {
-                "name": "spacebar_pressed",
+                "name": "right_command_pressed",
                 "value": 1
               }
             },
             {
-              "key_code": "spacebar"
+              "key_code": "right_command",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "japanese_kana"
             }
           ],
           "to_delayed_action": {
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "spacebar_pressed",
+                  "name": "right_command_pressed",
                   "value": 0
                 }
               }
@@ -327,11 +331,14 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "spacebar_pressed",
+                  "name": "right_command_pressed",
                   "value": 0
                 }
               }
             ]
+          },
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 250
           }
         }
       ]
