@@ -1,8 +1,8 @@
 {
-    "title": "ReplaceSummary1-2",
+    "title": "ReplaceSummary2",
     "rules": [
         {
-            "description": "ReplaceSummary1-2",
+            "description": "ReplaceSummary2",
             "manipulators": [
                 {
                     "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -12,16 +12,16 @@
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
-                    "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
-                    "type": "basic",
-                    "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["f12"]]) %>
-                },
-                {
                     "description": "Leftoption + Space_Enter(Replacekey)",
                     "type": "basic",
                     "from": <%= from("spacebar", ["left_alt"], ["any"]) %>,
                     "to": <%= to([["return_or_enter"]]) %>
+                },
+                {
+                    "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
+                    "type": "basic",
+                    "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["semicolon", ["left_gui", "left_control","left_option"]]]) %>
                 },
                 {
                     "description": "LeftCommand + Rightoption_equal(Replacekey)",

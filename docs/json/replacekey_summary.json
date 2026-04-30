@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary1-2",
+  "title": "ReplaceSummary2",
   "rules": [
     {
-      "description": "ReplaceSummary1-2",
+      "description": "ReplaceSummary2",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -44,26 +44,6 @@
           ]
         },
         {
-          "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12"
-            }
-          ]
-        },
-        {
           "description": "Leftoption + Space_Enter(Replacekey)",
           "type": "basic",
           "from": {
@@ -80,6 +60,31 @@
           "to": [
             {
               "key_code": "return_or_enter"
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "semicolon",
+              "modifiers": [
+                "left_gui",
+                "left_control",
+                "left_option"
+              ]
             }
           ]
         },
