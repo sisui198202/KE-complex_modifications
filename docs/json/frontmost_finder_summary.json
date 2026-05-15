@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfFinder_summary",
+  "title": "FrontmostIfFinder_summary1",
   "rules": [
     {
-      "description": "FrontmostIfFinder_summary",
+      "description": "FrontmostIfFinder_summary1",
       "manipulators": [
         {
           "description": "LeftOption + Y_リスト(Finder)",
@@ -551,26 +551,6 @@
           "to": [
             {
               "shell_command": "touch '/Users/user/Desktop/iCollections/TmpFile/z.txt'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.finder$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftControl_Rename",
-          "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
             }
           ],
           "conditions": [
