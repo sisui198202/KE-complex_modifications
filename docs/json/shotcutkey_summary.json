@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1",
+  "title": "ShotCutKeySummary11",
   "rules": [
     {
-      "description": "ShotCutKeySummary1",
+      "description": "ShotCutKeySummary11",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -1309,18 +1309,6 @@
                 "^com\\.vmware\\.proxyApp\\.",
                 "^com\\.parallels\\.winapp\\."
               ]
-            }
-          ]
-        },
-        {
-          "description": "LeftControl_Rename",
-          "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
             }
           ]
         },
