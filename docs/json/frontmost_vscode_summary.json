@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary2",
+  "title": "FrontmostIfVscode_summary1",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary2",
+      "description": "FrontmostIfVscode_summary1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -3278,26 +3278,6 @@
                 }
               ]
             },
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftControl_Rename",
-          "type": "basic",
-          "from": {
-            "apple_vendor_top_case_key_code": "keyboard_fn"
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "conditions": [
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [

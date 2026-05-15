@@ -1,8 +1,8 @@
 {
-    "title": "ShotCutKeySummary",
+    "title": "ShotCutKeySummary1",
     "rules": [
         {
-            "description": "ShotCutKeySummary",
+            "description": "ShotCutKeySummary1",
             "manipulators": [
                 {
                     "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -242,6 +242,18 @@
                     "from": <%= from("j", ["right_gui"], ["caps_lock"]) %>,
                     "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+                },
+                {
+                    "description": "LeftControl_Rename",
+                    "type": "basic",
+                    "from": {
+                        "apple_vendor_top_case_key_code":"keyboard_fn"
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ]
                 },
                 {
                     "description": "RightOption + Y_コレクションの表示/非表示",
