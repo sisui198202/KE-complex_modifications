@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey99",
+  "title": "DoublePushKey98",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -318,6 +318,94 @@
               {
                 "set_variable": {
                   "name": "right_command_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 250
+          }
+        }
+      ]
+    },
+    {
+      "description": "Fn single=Fn, double=Ctrl+Option+Shift+9, combo=Fn",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "fn_pressed",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "left_control",
+                "left_option",
+                "left_shift"
+              ]
+            },
+            {
+              "set_variable": {
+                "name": "fn_pressed",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "fn_pressed",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "fn",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "fn_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "fn_pressed",
                   "value": 0
                 }
               }
