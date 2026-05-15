@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey98",
+  "title": "DoublePushKey97",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -165,86 +165,86 @@
         }
       ]
     },
+{
+  "description": "fn_single=fn, double=Ctrl+C (VSCode/iTerm2)",
+  "manipulators": [
     {
-      "description": "Double-fn_send_ctrl-c",
-      "manipulators": [
+      "type": "basic",
+      "from": {
+        "key_code": "right_control",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
         {
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.googlecode.iterm2$"
-              ]
-            },
-            {
-              "type": "variable_if",
-              "name": "right_control_pressed",
-              "value": 1
-            }
+          "key_code": "c",
+          "modifiers": ["left_control"]
+        },
+        {
+          "set_variable": {
+            "name": "right_control_pressed",
+            "value": 0
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com.microsoft.VSCode$",
+            "^com.googlecode.iterm2$"
           ]
         },
         {
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "right_control_pressed",
-                "value": 1
-              }
-            },
-            {
-              "apple_vendor_top_case_key_code": "keyboard_fn"
-            }
-          ],
-          "to_delayed_action": {
-            "to_if_invoked": [
-              {
-                "set_variable": {
-                  "name": "right_control_pressed",
-                  "value": 0
-                }
-              }
-            ],
-            "to_if_canceled": [
-              {
-                "set_variable": {
-                  "name": "right_control_pressed",
-                  "value": 0
-                }
-              }
-            ]
-          }
+          "type": "variable_if",
+          "name": "right_control_pressed",
+          "value": 1
         }
       ]
     },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "right_control",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "set_variable": {
+            "name": "right_control_pressed",
+            "value": 1
+          }
+        },
+        {
+          "key_code": "right_control"
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "right_control_pressed",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "right_control_pressed",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+},
 {
-  "description": "RightCommand single=Japanese Kana, double=Command+C, combo=RightCommand",
+  "description": "RightCommand_single=Japanese Kana, double=Command+C, combo=RightCommand",
   "manipulators": [
     {
       "type": "basic",
