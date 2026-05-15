@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey99",
+  "title": "DoublePushKey992",
   "rules": [
     {
       "description": "Double-RightShift_Clipboard History",
@@ -344,7 +344,7 @@
             "key_code": "fn",
             "modifiers": {
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
