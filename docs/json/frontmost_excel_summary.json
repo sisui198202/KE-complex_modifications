@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary1234567",
+  "title": "FrontmostIfExcel_summary",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary1234567",
+      "description": "FrontmostIfExcel_summary",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -1444,100 +1444,27 @@
           ]
         },
         {
-          "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(excel)",
-          "manipulators": [
-            {
-              "type": "basic",
-              "from": {
-                "key_code": "fn",
-                "modifiers": {
-                  "optional": [
-                    "caps_lock"
-                  ]
-                }
-              },
-              "conditions": [
-                {
-                  "type": "variable_if",
-                  "name": "left_control_pressed",
-                  "value": 1
-                },
-                {
-                  "type": "frontmost_application_if",
-                  "bundle_identifiers": [
-                    "^com\\.microsoft\\.Excel$"
-                  ]
-                }
-              ],
-              "to": [
-                {
-                  "key_code": "9",
-                  "modifiers": [
-                    "left_control",
-                    "left_option",
-                    "left_shift"
-                  ]
-                },
-                {
-                  "set_variable": {
-                    "name": "left_control_pressed",
-                    "value": 0
-                  }
-                }
+          "description": "LeftContorl_CellEdit_Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
               ]
-            },
+            }
+          },
+          "to": [
             {
-              "type": "basic",
-              "from": {
-                "key_code": "fn",
-                "modifiers": {
-                  "optional": [
-                    "any"
-                  ]
-                }
-              },
-              "conditions": [
-                {
-                  "type": "variable_unless",
-                  "name": "left_control_pressed",
-                  "value": 1
-                },
-                {
-                  "type": "frontmost_application_if",
-                  "bundle_identifiers": [
-                    "^com\\.microsoft\\.Excel$"
-                  ]
-                }
-              ],
-              "to": [
-                {
-                  "key_code": "fn",
-                  "lazy": true
-                }
-              ],
-              "to_if_alone": [
-                {
-                  "key_code": "f2"
-                },
-                {
-                  "set_variable": {
-                    "name": "left_control_pressed",
-                    "value": 1
-                  }
-                }
-              ],
-              "to_after_key_up": [
-                {
-                  "set_variable": {
-                    "name": "left_control_pressed",
-                    "value": 0
-                  },
-                  "delay_milliseconds": 250
-                }
-              ],
-              "parameters": {
-                "basic.to_if_alone_timeout_milliseconds": 250
-              }
+              "key_code": "f2"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
             }
           ]
         },
