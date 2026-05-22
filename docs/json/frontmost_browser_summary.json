@@ -1,5 +1,5 @@
 {
-  "title": "FrontmostIfBrowser997",
+  "title": "FrontmostIfBrowser96",
   "rules": [
     {
       "description": "Basic Navigation Commands11 (browser)",
@@ -1689,12 +1689,12 @@
       ]
     },
     {
-      "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(browser)",
+      "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(browser)_1",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control",
+            "key_code": "fn",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -1736,7 +1736,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control",
+            "key_code": "fn",
             "modifiers": {
               "optional": [
                 "any"
