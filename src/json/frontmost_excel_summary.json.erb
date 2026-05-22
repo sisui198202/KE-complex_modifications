@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary11",
+    "title": "FrontmostIfExcel_summary111",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary11",
+            "description": "FrontmostIfExcel_summary111",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -406,6 +406,96 @@
                         }
                     ]
                 },
+{
+      "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(excel)",
+      "type": "basic",
+      "from": {
+        "key_code": "fn",
+        "modifiers": {
+          "optional": ["caps_lock"]
+        }
+      },
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "left_control_pressed",
+          "value": 1
+        },
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com\\.microsoft\\.Excel$"
+          ]
+        }
+      ],
+      "to": [
+        {
+          "key_code": "9",
+          "modifiers": ["left_control", "left_option", "left_shift"]
+        },
+        {
+          "set_variable": {
+            "name": "left_control_pressed",
+            "value": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "fn",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com\\.microsoft\\.Excel$"
+          ]
+        }
+      ],
+      "to": [
+        {
+          "set_variable": {
+            "name": "left_control_pressed",
+            "value": 1
+          }
+        },
+        {
+          "key_code": "fn",
+          "lazy": true
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "f2"
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "left_control_pressed",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "left_control_pressed",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "parameters": {
+        "basic.to_if_alone_timeout_milliseconds": 250
+      }
+    },
                 {
                     "description": "効かない-RightOption + W_CopyToEnd",
                     "type": "basic",
@@ -540,97 +630,7 @@
                             ]
                         }
                     ]
-                },
-{
-      "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(excel)",
-      "type": "basic",
-      "from": {
-        "key_code": "fn",
-        "modifiers": {
-          "optional": ["caps_lock"]
-        }
-      },
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "left_control_pressed",
-          "value": 1
-        },
-        {
-          "type": "frontmost_application_if",
-          "bundle_identifiers": [
-            "^com\\.microsoft\\.Excel$"
-          ]
-        }
-      ],
-      "to": [
-        {
-          "key_code": "9",
-          "modifiers": ["left_control", "left_option", "left_shift"]
-        },
-        {
-          "set_variable": {
-            "name": "left_control_pressed",
-            "value": 0
-          }
-        }
-      ]
-    },
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "fn",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "conditions": [
-        {
-          "type": "frontmost_application_if",
-          "bundle_identifiers": [
-            "^com\\.microsoft\\.Excel$"
-          ]
-        }
-      ],
-      "to": [
-        {
-          "set_variable": {
-            "name": "left_control_pressed",
-            "value": 1
-          }
-        },
-        {
-          "key_code": "fn",
-          "lazy": true
-        }
-      ],
-      "to_if_alone": [
-        {
-          "key_code": "f2"
-        }
-      ],
-      "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "left_control_pressed",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "left_control_pressed",
-              "value": 0
-            }
-          }
-        ]
-      },
-      "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 250
-      }
-    }
+                }
             ]
         }
     ]
