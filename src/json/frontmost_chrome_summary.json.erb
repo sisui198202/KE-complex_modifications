@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary11",
+    "title": "FrontmostIfChrome_summary",
     "rules": [
         {
-            "description": "FrontmostIfChrome_summary11",
+            "description": "FrontmostIfChrome_summary",
             "manipulators": [
                 {
                     "description": "RightCommand + i_検証-ページにフォーカス",
@@ -156,13 +156,6 @@
                     "type": "basic",
                     "from": <%= from("b", ["left_alt"], ["caps_lock"]) %>,
                     "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("chrome") %> ]
-                },
-                {
-                    "description": "LeftAlt + F_Title & URL Picker",
-                    "type": "basic",
-                    "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["9",["right_shift", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 }
             ]

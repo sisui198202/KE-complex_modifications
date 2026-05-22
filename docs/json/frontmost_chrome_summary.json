@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary11",
+  "title": "FrontmostIfChrome_summary",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary11",
+      "description": "FrontmostIfChrome_summary",
       "manipulators": [
         {
           "description": "RightCommand + i_検証-ページにフォーカス",
@@ -702,39 +702,6 @@
               "key_code": "b",
               "modifiers": [
                 "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.google\\.Chrome$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + F_Title & URL Picker",
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "9",
-              "modifiers": [
-                "right_shift",
                 "right_gui"
               ]
             }
