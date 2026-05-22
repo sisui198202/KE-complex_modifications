@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfExcel_summary123456",
+    "title": "FrontmostIfExcel_summary1234567",
     "rules": [
         {
-            "description": "FrontmostIfExcel_summary123456",
+            "description": "FrontmostIfExcel_summary1234567",
             "manipulators": [
                 {
                     "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -421,6 +421,11 @@
       },
       "conditions": [
         {
+          "type": "variable_unless",
+          "name": "left_control_pressed",
+          "value": 1
+        },
+        {
           "type": "frontmost_application_if",
           "bundle_identifiers": [
             "^com\\.microsoft\\.Excel$"
@@ -429,12 +434,6 @@
       ],
       "to": [
         {
-          "set_variable": {
-            "name": "left_control_pressed",
-            "value": 1
-          }
-        },
-        {
           "key_code": "fn",
           "lazy": true
         }
@@ -442,57 +441,29 @@
       "to_if_alone": [
         {
           "key_code": "f2"
+        },
+        {
+          "set_variable": {
+            "name": "left_control_pressed",
+            "value": 1
+          }
         }
       ],
-      "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "left_control_pressed",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "left_control_pressed",
-              "value": 0
-            }
-          }
-        ]
-      },
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "left_control_pressed",
+            "value": 0
+          },
+          "delay_milliseconds": 250
+        }
+      ],
       "parameters": {
         "basic.to_if_alone_timeout_milliseconds": 250
       }
     }
   ]
 },
-                {
-                    "description": "LeftContorl_CellEdit_Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
-                    "type": "basic",
-                    "from": {
-                        "key_code": "fn",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "f2"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "frontmost_application_if",
-                            "bundle_identifiers": [
-                                "^com\\.microsoft\\.Excel$"
-                            ]
-                        }
-                    ]
-                },
                 {
                     "description": "RightOption_Paste_lazy-true",
                     "type": "basic",
