@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary12345",
+  "title": "FrontmostIfExcel_summary123456",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary12345",
+      "description": "FrontmostIfExcel_summary123456",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -1444,7 +1444,7 @@
           ]
         },
         {
-          "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(pathfinder)",
+          "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(excel)",
           "manipulators": [
             {
               "type": "basic",
@@ -1542,6 +1542,31 @@
               "parameters": {
                 "basic.to_if_alone_timeout_milliseconds": 250
               }
+            }
+          ]
+        },
+        {
+          "description": "LeftContorl_CellEdit_Spacebarだと、半角スペース入力が効かなくなる、LeftControlが良い",
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Excel$"
+              ]
             }
           ]
         },
