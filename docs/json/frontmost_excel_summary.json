@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfExcel_summary1234",
+  "title": "FrontmostIfExcel_summary12345",
   "rules": [
     {
-      "description": "FrontmostIfExcel_summary1234",
+      "description": "FrontmostIfExcel_summary12345",
       "manipulators": [
         {
           "description": "オウ_選択範囲に合わせて拡大/縮小",
@@ -1444,7 +1444,7 @@
           ]
         },
         {
-          "description": "LeftControl_single=return_or_enter, double=Ctrl+Option+Shift+9, combo=Fn(pathfinder)",
+          "description": "LeftControl_single=f2, double=Ctrl+Option+Shift+9, combo=Fn(pathfinder)",
           "manipulators": [
             {
               "type": "basic",
@@ -1518,7 +1518,7 @@
               ],
               "to_if_alone": [
                 {
-                  "key_code": "return_or_enter"
+                  "key_code": "f2"
                 }
               ],
               "to_delayed_action": {
