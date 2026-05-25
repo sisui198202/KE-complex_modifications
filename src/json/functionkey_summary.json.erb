@@ -1,8 +1,8 @@
 {
-    "title": "FunctionkeySummary123",
+    "title": "FunctionkeySummary129",
     "rules": [
         {
-            "description": "FunctionkeySummary123",
+            "description": "FunctionkeySummary129",
             "manipulators": [
                 {
                 "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -760,45 +760,44 @@
                     }
                 ]
                 },
-        {
-        "description": "Double F12 -> CaptureWindow-Cmd+Opt+Control+quote",
-        "type": "basic",
-        "from": { "key_code": "f12" },
-        "to": [
-            { "set_variable": { "name": "f12_pressed", "value": 0 } },
-            { "key_code": "quote", "modifiers": ["command", "option", "control"] }
-        ],
-        "conditions": [
-            { "type": "variable_if", "name": "f12_pressed", "value": 1 }
-        ]
-        },
-        {
-        "description": "Single/Combo F12 -> CaptureArea or F12",
-        "type": "basic",
-        "from": { "key_code": "f12" },
-        "to": [
-            { "set_variable": { "name": "f12_pressed", "value": 1 } },
-            { "key_code": "f12", "lazy": true }
-        ],
-        "to_delayed_action": {
-            "to_if_invoked": [
-            {
-                "key_code": "semicolon",
-                "modifiers": ["left_command", "left_control", "left_option"]
-            },
-            { "set_variable": { "name": "f12_pressed", "value": 0 } }
-            ],
-            "to_if_canceled": [
-            { "set_variable": { "name": "f12_pressed", "value": 0 } }
-            ]
-        },
-        "parameters": {
-            "basic.to_delayed_action_delay_milliseconds": 300
-        },
-        "conditions": [
-            { "type": "variable_if", "name": "f12_pressed", "value": 0 }
-        ]
-        }
+{
+  "description": "Double F12 -> CaptureWindow-Cmd+Opt+Control+quote",
+  "type": "basic",
+  "from": { "key_code": "f12" },
+  "to": [
+    { "set_variable": { "name": "f12_pressed", "value": 0 } },
+    { "key_code": "quote", "modifiers": ["command", "option", "control"] }
+  ],
+  "conditions": [
+    { "type": "variable_if", "name": "f12_pressed", "value": 1 }
+  ]
+},
+{
+  "description": "Single F12 -> CaptureArea-Cmd+Ctrl+Opt+semicolon",
+  "type": "basic",
+  "from": { "key_code": "f12" },
+  "to": [
+    { "set_variable": { "name": "f12_pressed", "value": 1 } }
+  ],
+  "to_delayed_action": {
+    "to_if_invoked": [
+      {
+        "key_code": "semicolon",
+        "modifiers": ["left_command", "left_control", "left_option"]
+      },
+      { "set_variable": { "name": "f12_pressed", "value": 0 } }
+    ],
+    "to_if_canceled": [
+      { "set_variable": { "name": "f12_pressed", "value": 0 } }
+    ]
+  },
+  "parameters": {
+    "basic.to_delayed_action_delay_milliseconds": 150
+  },
+  "conditions": [
+    { "type": "variable_if", "name": "f12_pressed", "value": 0 }
+  ]
+}
             ]
         }
     ]
