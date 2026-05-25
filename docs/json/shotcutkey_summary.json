@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary12",
+  "title": "ShotCutKeySummary123",
   "rules": [
     {
-      "description": "ShotCutKeySummary12",
+      "description": "ShotCutKeySummary123",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -99,7 +99,7 @@
             {
               "key_code": "semicolon",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "left_control",
                 "left_option"
               ]
