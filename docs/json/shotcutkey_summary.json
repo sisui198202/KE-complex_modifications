@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary123",
+  "title": "ShotCutKeySummary1234",
   "rules": [
     {
-      "description": "ShotCutKeySummary123",
+      "description": "ShotCutKeySummary1234",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -88,12 +88,7 @@
           "description": "f12_スクショ(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "f12",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "f12"
           },
           "to": [
             {
