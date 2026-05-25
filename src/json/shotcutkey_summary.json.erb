@@ -1,8 +1,8 @@
 {
-    "title": "ShotCutKeySummary11",
+    "title": "ShotCutKeySummary",
     "rules": [
         {
-            "description": "ShotCutKeySummary11",
+            "description": "ShotCutKeySummary",
             "manipulators": [
                 {
                     "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -17,6 +17,18 @@
                     "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["9", ["right_option", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+                },
+                {
+                    "description": "f12_スクショ(Replacekey)",
+                    "type": "basic",
+                    "from": <%= from("f12", ["caps_lock"]) %>,
+                    "to": <%= to([["semicolon", ["left_gui", "left_control","left_option"]]]) %>
+                },
+                {
+                    "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
+                    "type": "basic",
+                    "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["semicolon", ["left_gui", "left_control","left_option"]]]) %>
                 },
                 {
                     "description": "LeftShift + F12_CaptureFullscreen",
