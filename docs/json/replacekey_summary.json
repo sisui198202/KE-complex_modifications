@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary3",
+  "title": "ReplaceSummary5",
   "rules": [
     {
-      "description": "ReplaceSummary3",
+      "description": "ReplaceSummary5",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -92,12 +92,7 @@
           "description": "f12_スクショ(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "f12",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
+            "key_code": "f12"
           },
           "to": [
             {
