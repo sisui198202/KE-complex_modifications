@@ -1,8 +1,8 @@
 {
-  "title": "ReplaceSummary2",
+  "title": "ReplaceSummary3",
   "rules": [
     {
-      "description": "ReplaceSummary2",
+      "description": "ReplaceSummary3",
       "manipulators": [
         {
           "description": "LeftCommand + space_BackSpace(Replacekey)",
@@ -73,6 +73,28 @@
                 "left_control"
               ],
               "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "semicolon",
+              "modifiers": [
+                "left_gui",
+                "left_control",
+                "left_option"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "f12_スクショ(Replacekey)",
+          "type": "basic",
+          "from": {
+            "key_code": "f12",
+            "modifiers": {
+              "mandatory": [
                 "caps_lock"
               ]
             }
