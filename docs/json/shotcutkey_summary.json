@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1234",
+  "title": "ShotCutKeySummary",
   "rules": [
     {
-      "description": "ShotCutKeySummary1234",
+      "description": "ShotCutKeySummary",
       "manipulators": [
         {
           "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
@@ -80,23 +80,6 @@
                 "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                 "^com\\.vmware\\.proxyApp\\.",
                 "^com\\.parallels\\.winapp\\."
-              ]
-            }
-          ]
-        },
-        {
-          "description": "f12_スクショ(Replacekey)",
-          "type": "basic",
-          "from": {
-            "key_code": "f12"
-          },
-          "to": [
-            {
-              "key_code": "semicolon",
-              "modifiers": [
-                "left_command",
-                "left_control",
-                "left_option"
               ]
             }
           ]
