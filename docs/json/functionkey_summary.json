@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary12",
+  "title": "FunctionkeySummary123",
   "rules": [
     {
-      "description": "FunctionkeySummary12",
+      "description": "FunctionkeySummary123",
       "manipulators": [
         {
           "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -1313,7 +1313,7 @@
           ]
         },
         {
-          "description": "Double F12 -> CaptureWindow-Cmd+Opt+control+quote",
+          "description": "Double F12 -> CaptureWindow-Cmd+Opt+Control+quote",
           "type": "basic",
           "from": {
             "key_code": "f12"
@@ -1339,25 +1339,11 @@
               "type": "variable_if",
               "name": "f12_pressed",
               "value": 1
-            },
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.vmware.fusion$",
-                "^com.vmware.horizon$",
-                "^com.vmware.view$",
-                "^com.parallels.desktop$",
-                "^com.parallels.vm$",
-                "^com.parallels.desktop.console$",
-                "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.vmware.proxyApp.",
-                "^com.parallels.winapp."
-              ]
             }
           ]
         },
         {
-          "description": "Single F12 -> CaptureArea-Cmd+Opt+control+semicolon (delayed, canceled by double-press)",
+          "description": "Single/Combo F12 -> CaptureArea or F12",
           "type": "basic",
           "from": {
             "key_code": "f12"
@@ -1368,6 +1354,10 @@
                 "name": "f12_pressed",
                 "value": 1
               }
+            },
+            {
+              "key_code": "f12",
+              "lazy": true
             }
           ],
           "to_delayed_action": {
@@ -1375,9 +1365,9 @@
               {
                 "key_code": "semicolon",
                 "modifiers": [
-                  "command",
-                  "option",
-                  "control"
+                  "left_command",
+                  "left_control",
+                  "left_option"
                 ]
               },
               {
@@ -1404,20 +1394,6 @@
               "type": "variable_if",
               "name": "f12_pressed",
               "value": 0
-            },
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com.vmware.fusion$",
-                "^com.vmware.horizon$",
-                "^com.vmware.view$",
-                "^com.parallels.desktop$",
-                "^com.parallels.vm$",
-                "^com.parallels.desktop.console$",
-                "^org.virtualbox.app.VirtualBoxVM$",
-                "^com.vmware.proxyApp.",
-                "^com.parallels.winapp."
-              ]
             }
           ]
         }
