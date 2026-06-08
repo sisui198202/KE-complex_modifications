@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary",
+  "title": "FrontmostIfChrome_summary1",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary",
+      "description": "FrontmostIfChrome_summary1",
       "manipulators": [
         {
           "description": "RightCommand + i_検証-ページにフォーカス",
@@ -296,6 +296,39 @@
             {
               "key_code": "f12",
               "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + i_閲覧履歴データを削除",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": [
+                "right_gui",
                 "right_shift"
               ]
             }
