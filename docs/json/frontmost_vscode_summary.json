@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVscode_summary1",
+  "title": "FrontmostIfVscode_summary3",
   "rules": [
     {
-      "description": "FrontmostIfVscode_summary1",
+      "description": "FrontmostIfVscode_summary3",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -3035,9 +3035,6 @@
             "modifiers": {
               "mandatory": [
                 "right_control"
-              ],
-              "optional": [
-                "caps_lock"
               ]
             }
           },

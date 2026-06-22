@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVscode_summary1",
+    "title": "FrontmostIfVscode_summary3",
     "rules": [
         {
-            "description": "FrontmostIfVscode_summary1",
+            "description": "FrontmostIfVscode_summary3",
             "manipulators": [
                 {
                     "description": "J_DownArrow",
@@ -693,7 +693,7 @@
                 {
                     "description": "Fn + O_WindowRightTwo-thirds",
                     "type": "basic",
-                    "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
+                    "from": <%= from("o", ["right_control"]) %>,
                     "to": <%= to([["t", ["right_control", "right_alt"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
