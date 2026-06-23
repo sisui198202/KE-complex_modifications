@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary2",
+  "title": "WindowControlSummary3",
   "rules": [
     {
-      "description": "WindowsControlSummary2",
+      "description": "WindowsControlSummary3",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -511,7 +511,7 @@
           },
           "to": [
             {
-              "shell_command": "open -na 'Google Chrome' --args --profile-directory='Profile 2'"
+              "shell_command": "open -a 'Google Chrome' --args --profile-directory='Profile 2'"
             }
           ],
           "conditions": [
