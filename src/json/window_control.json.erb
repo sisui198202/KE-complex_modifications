@@ -1,8 +1,8 @@
 {
-    "title": "WindowControlSummary4",
+    "title": "WindowControlSummary5",
     "rules": [
         {
-            "description": "WindowsControlSummary4",
+            "description": "WindowsControlSummary5",
             "manipulators": [
                 {
                     "description": "LeftControl + U_WindowLeftUp",
@@ -123,7 +123,7 @@
                     "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
                     "to": [
                             {
-                                "shell_command": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --profile-directory='Profile 2'"
+                                "shell_command": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --profile-directory='Profile 2' 'chrome://newtab/'"
                             }
                     ],
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
