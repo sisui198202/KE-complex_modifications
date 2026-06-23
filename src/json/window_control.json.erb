@@ -1,8 +1,8 @@
 {
-    "title": "WindowControlSummary1",
+    "title": "WindowControlSummary2",
     "rules": [
         {
-            "description": "WindowsControlSummary1",
+            "description": "WindowsControlSummary2",
             "manipulators": [
                 {
                     "description": "LeftControl + U_WindowLeftUp",
@@ -121,7 +121,11 @@
                     "description": "LeftOption + J_ChromeActiveWindow",
                     "type": "basic",
                     "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_shift", "left_option"]]]) %>,
+                    "to": [
+                            {
+                                "shell_command": "open -na 'Google Chrome' --args --profile-directory='Profile 2'"
+                            }
+                    ],
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
