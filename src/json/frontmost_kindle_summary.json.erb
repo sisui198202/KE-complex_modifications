@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfKindle_summary",
+    "title": "FrontmostIfKindle_summary1",
     "rules": [
         {
-            "description": "FrontmostIfKindle_summary",
+            "description": "FrontmostIfKindle_summary1",
             "manipulators": [
                 {
                     "description": "J_DownArrow",
@@ -248,13 +248,6 @@
                     "from": <%= from("b", ["right_gui"]) %>,
                     "to": <%= to([["d", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
-                },
-                {
-                    "description": "A_AppleMusicActiveWindow",
-                    "type": "basic",
-                    "from": <%= from("a",["caps_lock"]) %>,
-                    "to": <%= set_shell_command(["open -a 'Music.app'"]) %>,
-                    "conditions": [ <%= frontmost_application_if("kindle") %>]
                 },
                 {
                     "description": "C_ChromeOpen",

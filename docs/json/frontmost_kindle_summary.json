@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfKindle_summary",
+  "title": "FrontmostIfKindle_summary1",
   "rules": [
     {
-      "description": "FrontmostIfKindle_summary",
+      "description": "FrontmostIfKindle_summary1",
       "manipulators": [
         {
           "description": "J_DownArrow",
@@ -968,31 +968,6 @@
               "modifiers": [
                 "right_gui"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.amazon.Kindle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "A_AppleMusicActiveWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Music.app'"
             }
           ],
           "conditions": [
