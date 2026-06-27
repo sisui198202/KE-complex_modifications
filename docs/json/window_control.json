@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary6",
+  "title": "WindowControlSummary",
   "rules": [
     {
-      "description": "WindowsControlSummary6",
+      "description": "WindowsControlSummary",
       "manipulators": [
         {
           "description": "LeftControl + U_WindowLeftUp",
@@ -496,7 +496,7 @@
           ]
         },
         {
-          "description": "LeftOption + J_ChromeActiveWindow",
+          "description": "LeftOption + J_VivaldiActiveWindow",
           "type": "basic",
           "from": {
             "key_code": "j",
