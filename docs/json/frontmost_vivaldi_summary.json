@@ -1,93 +1,9 @@
 {
-  "title": "FrontmostIfVivaldi_summary",
+  "title": "FrontmostIfVivaldi_summary99",
   "rules": [
     {
-      "description": "FrontmostIfVivaldi_summary",
+      "description": "FrontmostIfVivaldi_summary99",
       "manipulators": [
-        {
-          "description": "LeftCommand + U_undo(Vivaldi)",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + H_Reload(Vivaldi)",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "r",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + C_タブを複製",
-          "type": "basic",
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f12",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
         {
           "description": "A_新しいタブを開く",
           "type": "basic",
@@ -103,35 +19,6 @@
             {
               "key_code": "n",
               "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "W_新しいウィンドウで開く",
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "a",
-              "modifiers": [
-                "left_option",
                 "right_gui"
               ]
             }
@@ -202,6 +89,151 @@
           ]
         },
         {
+          "description": "W_新しいウィンドウで開く",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + T_ドックの位置変更",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + U_undo(Vivaldi)",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + H_Reload(Vivaldi)",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
           "description": "RightCommand + quote_閉じたタブを再度開く",
           "type": "basic",
           "from": {
@@ -221,6 +253,230 @@
               "modifiers": [
                 "right_shift",
                 "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + A_プライベートウィンドウを開く",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + B_Bookmarkナビゲーショントグル",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "right_option",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + C_タブを複製",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_alt"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f12",
+              "modifiers": [
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + N_ノードのスクリーンショットをキャプチャ",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "right_shift",
+                "right_gui"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + U_検索バーアクティヴ",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": "right_gui"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "right_gui"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + openbracket_コマンドパレット",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_gui",
+                "right_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + A_タブを新しいウィンドウに移動",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_control",
+                "right_option"
               ]
             }
           ],
@@ -267,263 +523,7 @@
           ]
         },
         {
-          "description": "LeftCommand + T_ドックの位置変更",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + openbracket_コマンドパレット",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_gui",
-                "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + N_ノードのスクリーンショットをキャプチャ",
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                "right_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightAlt + A_タブを新しいウィンドウに移動",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_control",
-                "right_alt"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + A_プライベートウィンドウを開く",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_shift",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + B_Bookmarkナビゲーショントグル",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
-              "modifiers": [
-                "right_option",
-                "right_gui"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + U_検索バーアクティヴ",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_alt"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": "right_gui"
-            },
-            {
-              "key_code": "c",
-              "modifiers": "right_gui"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "x:LeftAlt + F_Title & URL Picker",
+          "description": "x:LeftOption + F_Title & URL Picker",
           "type": "basic",
           "from": {
             "key_code": "f",
