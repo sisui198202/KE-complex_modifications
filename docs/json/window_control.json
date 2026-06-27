@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary2",
+  "title": "WindowControlSummary98",
   "rules": [
     {
-      "description": "WindowsControlSummary2",
+      "description": "WindowsControlSummary98",
       "manipulators": [
         {
           "description": "RightCommand + P_RightHalfWindowMove",
