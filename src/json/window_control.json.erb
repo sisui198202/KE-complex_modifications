@@ -1,8 +1,8 @@
 {
-    "title": "WindowControlSummary",
+    "title": "WindowControlSummary1",
     "rules": [
         {
-            "description": "WindowsControlSummary",
+            "description": "WindowsControlSummary1",
             "manipulators": [
                 {
                     "description": "LeftControl + U_WindowLeftUp",
@@ -59,13 +59,6 @@
                     "to": <%= to([["c", ["right_control", "right_alt"]]]) %>
                 },
                 {
-                    "description": "RightCommand + Period_MaxWindow",
-                    "type": "basic",
-                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
-                {
                     "description": "LeftControl + N_WindowUP",
                     "type": "basic",
                     "from": <%= from("n", ["fn"], ["caps_lock"]) %>,
@@ -76,20 +69,6 @@
                     "type": "basic",
                     "from": <%= from("m", ["fn"], ["caps_lock"]) %>,
                     "to": <%= to([["5", ["left_alt"]]]) %>
-                },
-                {
-                    "description": "RightCommand + P_RightHalfWindowMove",
-                    "type": "basic",
-                    "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_alt"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
-                {
-                    "description": "LeftCommand + Q_LeftHalfWindowMove",
-                    "type": "basic",
-                    "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "LeftControl + L_RightHalfWindowMove",
@@ -104,10 +83,37 @@
                     "to": <%= to([["2", ["right_alt"]]]) %>
                 },
                 {
-                    "description": "RightOption + G_SafariActiveWindow",
+                    "description": "Leftcommand + R_miActiveWindow",
                     "type": "basic",
-                    "from": <%= from("g", ["right_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["0", ["left_shift", "left_option"]]]) %>,
+                    "from": <%= from("r", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["6", ["left_shift", "left_option"]]]) %>
+                },
+                {
+                    "description": "LeftCommand + X_iterm2ActiveWindow",
+                    "type": "basic",
+                    "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["7", ["left_shift", "left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+                },
+                {
+                    "description": "LeftCommand + Q_LeftHalfWindowMove",
+                    "type": "basic",
+                    "from": <%= from("q", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+                },
+                {
+                    "description": "RightCommand + P_RightHalfWindowMove",
+                    "type": "basic",
+                    "from": <%= from("p", ["right_gui"], ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["right_alt"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+                },
+                {
+                    "description": "RightCommand + Period_MaxWindow",
+                    "type": "basic",
+                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -139,19 +145,6 @@
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
-                    "description": "Leftcommand + R_miActiveWindow",
-                    "type": "basic",
-                    "from": <%= from("r", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", ["left_shift", "left_option"]]]) %>
-                },
-                {
-                    "description": "LeftCommand + X_iterm2ActiveWindow",
-                    "type": "basic",
-                    "from": <%= from("x", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["left_shift", "left_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
-                {
                     "description": "LeftOption + L_KindleActiveWindow",
                     "type": "basic",
                     "from": <%= from("l", ["left_alt"], ["caps_lock"]) %>,
@@ -176,6 +169,26 @@
                     "to": <%= set_shell_command(["open -a 'Path Finder.app' '/Users/user/Library/CloudStorage/GoogleDrive-aruke570209@gmail.com/マイドライブ/'"]) %>
                 },
                 {
+                    "description": "LeftOption + D_~/Desktop/",
+                    "type": "basic",
+                    "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>
+                },
+                {
+                    "description": "LeftOption + slash_FinderActiveWindow",
+                    "type": "basic",
+                    "from": <%= from("slash", ["left_alt"], ["caps_lock"]) %>,
+                    "to": <%= to([["grave_accent_and_tilde", ["left_shift","left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
+                },
+                {
+                    "description": "RightOption + G_SafariActiveWindow",
+                    "type": "basic",
+                    "from": <%= from("g", ["right_alt"], ["caps_lock"]) %>,
+                    "to": <%= to([["0", ["left_shift", "left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
+                },
+                {
                     "description": "RightOption + I_/Users/user/Desktop/tmp_screenshot",
                     "type": "basic",
                     "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
@@ -186,12 +199,6 @@
                     "type": "basic",
                     "from": <%= from("z", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["backslash", ["left_shift", "left_option"]]]) %>
-                },
-                {
-                    "description": "LeftOption + D_~/Desktop/",
-                    "type": "basic",
-                    "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_shift", "right_gui"]]]) %>
                 },
                 {
                     "description": "RightOption + S_「~/Documents/Summary」PathFinderで開く or 「~/Documents/Summary」Finderで開く",
@@ -210,13 +217,6 @@
                     "type": "basic",
                     "from": <%= from("w", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["close_bracket", ["left_shift", "left_option"]]]) %>
-                },
-                {
-                    "description": "LeftOption + slash_FinderActiveWindow",
-                    "type": "basic",
-                    "from": <%= from("slash", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["grave_accent_and_tilde", ["left_shift","left_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %>]
                 }
             ]
         }
