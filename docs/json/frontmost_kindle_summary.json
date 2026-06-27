@@ -287,7 +287,7 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -427,7 +427,7 @@
             {
               "key_code": "5",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -455,7 +455,7 @@
             {
               "key_code": "4",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -543,7 +543,7 @@
               "key_code": "backslash",
               "modifiers": [
                 "left_control",
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -596,7 +596,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -756,7 +756,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -785,7 +785,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ]
             }
           },
@@ -814,7 +814,7 @@
             "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -851,7 +851,7 @@
               "key_code": "9",
               "modifiers": [
                 "left_control",
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -871,7 +871,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ]
             }
           },
@@ -880,7 +880,7 @@
               "key_code": "4",
               "modifiers": [
                 "left_control",
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -938,7 +938,7 @@
               "key_code": "backslash",
               "modifiers": [
                 "left_control",
-                "left_alt"
+                "left_option"
               ]
             }
           ],

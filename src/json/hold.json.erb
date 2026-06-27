@@ -244,7 +244,7 @@
             "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("l", ["left_alt"]) %>,
+                    "from": <%= from("l", ["left_option"]) %>,
                     "to": <%= set_shell_command(["open -a 'Firefox.app'"]) %>
                 }
             ]
@@ -254,7 +254,7 @@
             "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("j", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("j", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= set_shell_command(["open -a 'Google Chrome.app'"]) %>,
                     "conditions": [ <%= frontmost_application_unless("pararell") %> ]
                 }
@@ -344,13 +344,13 @@
                     "description": "Fn + U_WindowLeftUp",
                     "type": "basic",
                     "from": <%= from("u", ["fn"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", "right_alt"]]) %>
+                    "to": <%= to([["6", "right_option"]]) %>
                 },
                 {
                     "description": "Fn + H_LeftWindowMove",
                     "type": "basic",
                     "from": <%= from("h", ["fn"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>
+                    "to": <%= to([["2", ["right_option"]]]) %>
                 }
             ]
         },
@@ -703,7 +703,7 @@
             "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("z", ["right_alt"]) %>,
+                    "from": <%= from("z", ["right_option"]) %>,
                     "to": [
                         {
                             "software_function": {

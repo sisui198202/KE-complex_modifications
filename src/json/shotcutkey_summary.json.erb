@@ -8,7 +8,7 @@
                     "description": "RightCommand + Q_Chrome_Tab_Get-SiteName-URL",
                     "type": "basic",
                     "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["0", ["left_control", "right_alt"]]]) %>,
+                    "to": <%= to([["0", ["left_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -134,7 +134,7 @@
                     "description": "LeftCommand + C_DesktopExist",
                     "type": "basic",
                     "from": <%= from("c", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["q", ["right_alt"]]]) %>,
+                    "to": <%= to([["q", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -147,7 +147,7 @@
                 {
                     "description": "LeftOption + O(オー)_Save",
                     "type": "basic",
-                    "from": <%= from("o", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("o", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= to([["s", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
@@ -182,28 +182,28 @@
                 {
                     "description": "LeftOption + S_AlfredHotkey",
                     "type": "basic",
-                    "from": <%= from("s", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["spacebar", ["right_alt"]]]) %>,
+                    "from": <%= from("s", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["spacebar", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "RightAlt + C_Clipboardlist",
                     "type": "basic",
-                    "from": <%= from("c", ["right_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["quote", ["right_control", "right_alt"]]]) %>,
+                    "from": <%= from("c", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["quote", ["right_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "LeftAlt + P_英語 → 日本語[DeepL + Alfred]",
                     "type": "basic",
-                    "from": <%= from("p", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("p", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= to([["8", ["left_shift","right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "RightAlt + P_日本語 → 英語[DeepL + Alfred]",
                     "type": "basic",
-                    "from": <%= from("p", ["right_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("p", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["0", ["left_shift","right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
@@ -217,22 +217,22 @@
                 {
                     "description": "RightAlt + V_AlfredSnippetsCall",
                     "type": "basic",
-                    "from": <%= from("v", ["right_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["quote", ["left_control", "right_alt"]]]) %>,
+                    "from": <%= from("v", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["quote", ["left_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "RightAlt + F_AlfredArticleitemCall",
                     "type": "basic",
-                    "from": <%= from("f", ["right_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_control", "right_alt"]]]) %>,
+                    "from": <%= from("f", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["5", ["left_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "LeftOption + W_UniversalActions",
                     "type": "basic",
-                    "from": <%= from("w", ["left_alt"], ["caps_lock"]) %>,
-                    "to": <%= to([["backslash", ["left_alt", "right_gui"]]]) %>,
+                    "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["backslash", ["left_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {

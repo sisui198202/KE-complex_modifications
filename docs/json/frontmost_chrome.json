@@ -10,7 +10,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -31,7 +31,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com\\.google\\.Chrome$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]

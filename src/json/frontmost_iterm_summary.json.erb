@@ -14,7 +14,7 @@
                 {
                     "description": "LeftOption + O(オー)_Horizontally",
                     "type": "basic",
-                    "from": <%= from("o", ["left_alt"]) %>,
+                    "from": <%= from("o", ["left_option"]) %>,
                     "to": <%= to([["d", ["right_gui", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
@@ -42,21 +42,21 @@
                 {
                     "description": "LeftOption + C_ClearBuffer",
                     "type": "basic",
-                    "from": <%= from("c", ["left_alt"]) %>,
+                    "from": <%= from("c", ["left_option"]) %>,
                     "to": <%= to([["k", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
                     "description": "LeftOption + U_LineDown",
                     "type": "basic",
-                    "from": <%= from("u", ["left_alt"]) %>,
+                    "from": <%= from("u", ["left_option"]) %>,
                     "to": <%= to([["2", ["right_gui", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
                     "description": "LeftOption + I_LineUp",
                     "type": "basic",
-                    "from": <%= from("i", ["left_alt"]) %>,
+                    "from": <%= from("i", ["left_option"]) %>,
                     "to": <%= to([["1", ["right_gui", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
@@ -77,7 +77,7 @@
                 {
                     "description": "RightOption + A_NewWindows_iterm設定済",
                     "type": "basic",
-                    "from": <%= from("a", ["right_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["5", ["left_control", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 }

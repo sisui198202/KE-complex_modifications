@@ -120,21 +120,21 @@
                     "description": "P_RightHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("p", ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_alt"]]]) %>,
+                    "to": <%= to([["3", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {
                     "description": "Q_LeftHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("q", ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {
                     "description": "D_WindowTopHalf",
                     "type": "basic",
                     "from": <%= from("d", ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_alt"]]]) %>,
+                    "to": <%= to([["4", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 }
             ]

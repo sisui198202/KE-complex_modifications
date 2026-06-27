@@ -78,7 +78,7 @@
                     "description": "P_RightHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("p",["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_alt"]]]) %>,
+                    "to": <%= to([["3", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -113,14 +113,14 @@
                     "description": "F_WindowBottomHalf",
                     "type": "basic",
                     "from": <%= from("f",["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_alt"]]]) %>,
+                    "to": <%= to([["5", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "D_WindowTopHalf",
                     "type": "basic",
                     "from": <%= from("d",["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_alt"]]]) %>,
+                    "to": <%= to([["4", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -141,7 +141,7 @@
                     "description": "i_Shrink",
                     "type": "basic",
                     "from": <%= from("i",["caps_lock"]) %>,
-                    "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+                    "to": <%= to([["backslash", ["left_control", "left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -155,7 +155,7 @@
                     "description": "Q_LeftHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("q",["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -196,21 +196,21 @@
                 {
                     "description": "LeftAlt + A_FullScreenOn",
                     "type": "basic",
-                    "from": <%= from("a", ["left_alt"]) %>,
+                    "from": <%= from("a", ["left_option"]) %>,
                     "to": <%= to([["7", ["right_shift", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "RightAlt + A_FullScreenOff",
                     "type": "basic",
-                    "from": <%= from("a", ["right_alt"]) %>,
+                    "from": <%= from("a", ["right_option"]) %>,
                     "to": <%= to([["f", ["right_gui", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "LeftAlt + OpenBracket_ページ数指定",
                     "type": "basic",
-                    "from": <%= from("open_bracket", ["left_alt"]) %>,
+                    "from": <%= from("open_bracket", ["left_option"]) %>,
                     "to": <%= to([["g", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
@@ -218,14 +218,14 @@
                     "description": "LeftCommand + Z_Home",
                     "type": "basic",
                     "from": <%= from("z", ["left_control"]) %>,
-                    "to": <%= to([["9", ["left_control", "left_alt"]]]) %>,
+                    "to": <%= to([["9", ["left_control", "left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "RightAlt + Z_一部起動しない目次",
                     "type": "basic",
-                    "from": <%= from("z", ["right_alt"]) %>,
-                    "to": <%= to([["4", ["left_control", "left_alt"]]]) %>,
+                    "from": <%= from("z", ["right_option"]) %>,
+                    "to": <%= to([["4", ["left_control", "left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -239,7 +239,7 @@
                     "description": "LeftCommand + i_Shrink",
                     "type": "basic",
                     "from": <%= from("i", ["left_control"]) %>,
-                    "to": <%= to([["backslash", ["left_control", "left_alt"]]]) %>,
+                    "to": <%= to([["backslash", ["left_control", "left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {

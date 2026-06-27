@@ -6,7 +6,7 @@
             "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("u", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
                     "conditions": [ <%= frontmost_application_if("notion") %> ]
                 }

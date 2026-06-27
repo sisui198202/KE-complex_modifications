@@ -57,28 +57,28 @@
                     "description": "M_WindowBottomHalf",
                     "type": "basic",
                     "from": <%= from("m") %>,
-                    "to": <%= to([["5", ["left_alt"]]]) %>,
+                    "to": <%= to([["5", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "N_WindowTopHalf",
                     "type": "basic",
                     "from": <%= from("n") %>,
-                    "to": <%= to([["4", ["left_alt"]]]) %>,
+                    "to": <%= to([["4", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "P_RightHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("p") %>,
-                    "to": <%= to([["3", ["right_alt"]]]) %>,
+                    "to": <%= to([["3", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "Q_LeftHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("q") %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
@@ -365,8 +365,8 @@
                 {
                     "description": "LeftAlt + R_RowNumberSelectMove",
                     "type": "basic",
-                    "from": <%= from("r", ["left_alt"]) %>,
-                    "to": <%= to([["8", ["left_control", "left_alt"]]]) %>,
+                    "from": <%= from("r", ["left_option"]) %>,
+                    "to": <%= to([["8", ["left_control", "left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {

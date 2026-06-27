@@ -336,7 +336,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"

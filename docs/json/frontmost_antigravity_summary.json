@@ -105,7 +105,7 @@
             "key_code": "comma",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -117,7 +117,7 @@
               "key_code": "f9",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -137,7 +137,7 @@
             "key_code": "e",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -182,7 +182,7 @@
               "key_code": "f7",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -246,7 +246,7 @@
               "key_code": "t",
               "modifiers": [
                 "right_shift",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -308,7 +308,7 @@
           "to": [
             {
               "key_code": "6",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -337,7 +337,7 @@
           "to": [
             {
               "key_code": "8",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -366,7 +366,7 @@
           "to": [
             {
               "key_code": "7",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -395,7 +395,7 @@
           "to": [
             {
               "key_code": "9",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -426,7 +426,7 @@
               "key_code": "d",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -458,7 +458,7 @@
               "key_code": "g",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -490,7 +490,7 @@
               "key_code": "e",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -522,7 +522,7 @@
               "key_code": "t",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -554,7 +554,7 @@
               "key_code": "c",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -617,7 +617,7 @@
             {
               "key_code": "4",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -648,7 +648,7 @@
             {
               "key_code": "5",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -679,7 +679,7 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -710,7 +710,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],

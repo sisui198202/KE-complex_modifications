@@ -42,7 +42,7 @@
                 {
                     "description": "LeftAlt + R_Replace",
                     "type": "basic",
-                    "from": <%= from("r", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("r", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= to([["f", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
@@ -63,7 +63,7 @@
                 {
                     "description": "LeftAlt + M_マーク設定",
                     "type": "basic",
-                    "from": <%= from("m", ["left_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= to([["q", ["left_control", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
@@ -84,7 +84,7 @@
                 {
                     "description": "RightAlt + M_マークと選択範囲とスワップ",
                     "type": "basic",
-                    "from": <%= from("m", ["right_alt"], ["caps_lock"]) %>,
+                    "from": <%= from("m", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["w", ["left_control", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },

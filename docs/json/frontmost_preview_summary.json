@@ -163,7 +163,7 @@
             {
               "key_code": "5",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -186,7 +186,7 @@
             {
               "key_code": "4",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -209,7 +209,7 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -232,7 +232,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1076,7 +1076,7 @@
             "key_code": "r",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -1085,7 +1085,7 @@
               "key_code": "8",
               "modifiers": [
                 "left_control",
-                "left_alt"
+                "left_option"
               ]
             }
           ],

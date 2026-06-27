@@ -67,7 +67,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -304,7 +304,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -316,7 +316,7 @@
               "key_code": "hyphen",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -336,7 +336,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -368,7 +368,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -400,7 +400,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"

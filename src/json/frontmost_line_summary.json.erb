@@ -63,7 +63,7 @@
                 {
                     "description": "RightOption + T_BookMarkSearch",
                     "type": "basic",
-                    "from": <%= from("t", ["right_alt"]) %>,
+                    "from": <%= from("t", ["right_option"]) %>,
                     "to": <%= to([["period", "left_option"]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
@@ -197,28 +197,28 @@
                     "description": "P_RightHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("p", ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_alt"]]]) %>,
+                    "to": <%= to([["3", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "Q_LeftHalfWindowMove",
                     "type": "basic",
                     "from": <%= from("q", ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_alt"]]]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "D_WindowTopHalf",
                     "type": "basic",
                     "from": <%= from("d", ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_alt"]]]) %>,
+                    "to": <%= to([["4", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "F_WindowBottomHalf",
                     "type": "basic",
                     "from": <%= from("f", ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_alt"]]]) %>,
+                    "to": <%= to([["5", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -231,42 +231,42 @@
                 {
                     "description": "LeftAlt + C_CopyTab",
                     "type": "basic",
-                    "from": <%= from("c", ["left_alt"]) %>,
+                    "from": <%= from("c", ["left_option"]) %>,
                     "to": <%= to([["f12", ["right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "LeftAlt + d_DeveloperTool",
                     "type": "basic",
-                    "from": <%= from("d", ["left_alt"]) %>,
-                    "to": <%= to([["i", ["right_alt", "right_gui"]]]) %>,
+                    "from": <%= from("d", ["left_option"]) %>,
+                    "to": <%= to([["i", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "RightAlt + H_PageSourchOutput",
                     "type": "basic",
-                    "from": <%= from("h", ["right_alt"]) %>,
-                    "to": <%= to([["u", ["right_alt", "right_gui"]]]) %>,
+                    "from": <%= from("h", ["right_option"]) %>,
+                    "to": <%= to([["u", ["right_option", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "RightAlt + A_タブを新しいウィンドウに移動",
                     "type": "basic",
-                    "from": <%= from("a", ["right_alt"]) %>,
-                    "to": <%= to([["hyphen", ["right_control", "right_alt"]]]) %>,
+                    "from": <%= from("a", ["right_option"]) %>,
+                    "to": <%= to([["hyphen", ["right_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "LeftAlt + A_シークレットウィンドウを開く",
                     "type": "basic",
-                    "from": <%= from("a", ["left_alt"]) %>,
+                    "from": <%= from("a", ["left_option"]) %>,
                     "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "LeftAlt + U_検索バーアクティヴ",
                     "type": "basic",
-                    "from": <%= from("u", ["left_alt"]) %>,
+                    "from": <%= from("u", ["left_option"]) %>,
                     "to": <%= to([["l", ["right_gui"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 }

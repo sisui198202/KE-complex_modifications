@@ -515,7 +515,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -579,7 +579,7 @@
           "to": [
             {
               "key_code": "6",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -608,7 +608,7 @@
           "to": [
             {
               "key_code": "8",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -637,7 +637,7 @@
           "to": [
             {
               "key_code": "7",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -666,7 +666,7 @@
           "to": [
             {
               "key_code": "9",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -697,7 +697,7 @@
               "key_code": "d",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -729,7 +729,7 @@
               "key_code": "g",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -761,7 +761,7 @@
               "key_code": "e",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -793,7 +793,7 @@
               "key_code": "t",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -825,7 +825,7 @@
               "key_code": "c",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],

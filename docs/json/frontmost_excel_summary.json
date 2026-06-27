@@ -605,7 +605,7 @@
             "key_code": "r",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -807,7 +807,7 @@
               "modifiers": [
                 "left_shift",
                 "left_control",
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -838,7 +838,7 @@
             {
               "key_code": "left_arrow",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -869,7 +869,7 @@
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -921,7 +921,7 @@
             "key_code": "x",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -932,7 +932,7 @@
             {
               "key_code": "f11",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -962,7 +962,7 @@
           "to": [
             {
               "key_code": "6",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -991,7 +991,7 @@
           "to": [
             {
               "key_code": "8",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -1020,7 +1020,7 @@
           "to": [
             {
               "key_code": "7",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -1049,7 +1049,7 @@
           "to": [
             {
               "key_code": "9",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ],
           "conditions": [
@@ -1080,7 +1080,7 @@
               "key_code": "d",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1112,7 +1112,7 @@
               "key_code": "g",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1144,7 +1144,7 @@
               "key_code": "e",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1176,7 +1176,7 @@
               "key_code": "t",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1208,7 +1208,7 @@
               "key_code": "c",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1271,7 +1271,7 @@
             {
               "key_code": "4",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -1302,7 +1302,7 @@
             {
               "key_code": "5",
               "modifiers": [
-                "left_alt"
+                "left_option"
               ]
             }
           ],
@@ -1333,7 +1333,7 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1364,7 +1364,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1418,11 +1418,11 @@
           "description": "LeftAlt_Copy_1回押しOK_lazy-true",
           "type": "basic",
           "from": {
-            "key_code": "left_alt"
+            "key_code": "left_option"
           },
           "to": [
             {
-              "key_code": "left_alt",
+              "key_code": "left_option",
               "lazy": true
             }
           ],
@@ -1447,7 +1447,7 @@
           "description": "RightOption_Paste_lazy-true",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -1456,7 +1456,7 @@
           },
           "to": [
             {
-              "key_code": "right_alt",
+              "key_code": "right_option",
               "lazy": true
             }
           ],
@@ -1614,7 +1614,7 @@
             "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -1643,7 +1643,7 @@
             "key_code": "m",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -1809,7 +1809,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1838,7 +1838,7 @@
             "key_code": "v",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1967,7 +1967,7 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -1996,7 +1996,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ]
             }
           },

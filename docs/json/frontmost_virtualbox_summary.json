@@ -288,10 +288,10 @@
           "description": "Leftoption + Rightoption_parsent",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -317,10 +317,10 @@
           "description": "Rightoption + Leftoption_anbasado",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "any"
@@ -432,7 +432,7 @@
           "description": "LeftCommand + Rightoption_equal",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -460,7 +460,7 @@
           "description": "RightCommand + Leftoption_backslash",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "mandatory": [
                 "right_gui"
@@ -555,7 +555,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -709,7 +709,7 @@
           "description": "RightOption_Paste(Vitualbox)",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -718,7 +718,7 @@
           },
           "to": [
             {
-              "key_code": "right_alt"
+              "key_code": "right_option"
             }
           ],
           "to_if_alone": [
@@ -743,7 +743,7 @@
           "description": "LeftAlt_Copy(Vitualbox)",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -752,7 +752,7 @@
           },
           "to": [
             {
-              "key_code": "left_alt"
+              "key_code": "left_option"
             }
           ],
           "to_if_alone": [
