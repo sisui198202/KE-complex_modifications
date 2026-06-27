@@ -50,28 +50,28 @@
                     "description": "U_幅にフィット197%",
                     "type": "basic",
                     "from": <%= from("u",["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "W_画面にフィット121%",
                     "type": "basic",
                     "from": <%= from("w",["caps_lock"]) %>,
-                    "to": <%= to([["0", ["right_gui"]]]) %>,
+                    "to": <%= to([["0", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "LeftOption + O(オー)_画面にフィット121%",
                     "type": "basic",
                     "from": <%= from("o", ["left_option"]) %>,
-                    "to": <%= to([["0", ["right_gui"]]]) %>,
+                    "to": <%= to([["0", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "LeftOption + U_幅にフィット197%",
                     "type": "basic",
                     "from": <%= from("u", ["left_option"]) %>,
-                    "to": <%= to([["2", ["right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -85,28 +85,28 @@
                     "description": "Y_実際のサイズ100%",
                     "type": "basic",
                     "from": <%= from("y",["caps_lock"]) %>,
-                    "to": <%= to([["1", ["right_gui"]]]) %>,
+                    "to": <%= to([["1", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "LeftOption + Y_実際のサイズ100%",
                     "type": "basic",
                     "from": <%= from("y", ["left_option"]) %>,
-                    "to": <%= to([["1", ["right_gui"]]]) %>,
+                    "to": <%= to([["1", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "B_ブックマーク追加",
                     "type": "basic",
                     "from": <%= from("b",["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "T_ブックマークリスト表示",
                     "type": "basic",
                     "from": <%= from("t",["caps_lock"]) %>,
-                    "to": <%= to([["b", ["right_gui"]]]) %>,
+                    "to": <%= to([["b", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -134,7 +134,7 @@
                     "description": "O(オー)_Expansion",
                     "type": "basic",
                     "from": <%= from("o",["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["fn", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -169,49 +169,49 @@
                     "description": "OpenBracket[オープン角括弧]_ページ数指定",
                     "type": "basic",
                     "from": <%= from("open_bracket",["caps_lock"]) %>,
-                    "to": <%= to([["g", ["right_gui"]]]) %>,
+                    "to": <%= to([["g", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "G_FileTabClose",
                     "type": "basic",
                     "from": <%= from("g",["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_gui"]]]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "Period_WindowMax",
                     "type": "basic",
                     "from": <%= from("period",["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "Comma_AppsSelect-Next",
                     "type": "basic",
                     "from": <%= from("comma",["caps_lock"]) %>,
-                    "to": <%= to([["tab", "right_gui"]]) %>,
+                    "to": <%= to([["tab", "right_command"]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "LeftAlt + A_FullScreenOn",
                     "type": "basic",
                     "from": <%= from("a", ["left_option"]) %>,
-                    "to": <%= to([["7", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["7", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "RightAlt + A_FullScreenOff",
                     "type": "basic",
                     "from": <%= from("a", ["right_option"]) %>,
-                    "to": <%= to([["f", ["right_gui", "left_control"]]]) %>,
+                    "to": <%= to([["f", ["right_command", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
                     "description": "LeftAlt + OpenBracket_ページ数指定",
                     "type": "basic",
                     "from": <%= from("open_bracket", ["left_option"]) %>,
-                    "to": <%= to([["g", ["right_gui"]]]) %>,
+                    "to": <%= to([["g", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -232,7 +232,7 @@
                     "description": "LeftCommand + O(オー)_Expansion",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"]) %>,
-                    "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["fn", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {
@@ -245,8 +245,8 @@
                 {
                     "description": "RightCommand + B_ブックマーク追加",
                     "type": "basic",
-                    "from": <%= from("b", ["right_gui"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "from": <%= from("b", ["right_command"]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("kindle") %> ]
                 },
                 {

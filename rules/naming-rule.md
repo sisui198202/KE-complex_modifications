@@ -101,12 +101,50 @@ JSON内部の修飾キー名は macOS の公式名称に統一する。
 |-----------|----------|
 | `left_alt` | `left_option` |
 | `right_alt` | `right_option` |
+| `left_gui` | `left_command` |
+| `right_gui` | `right_command` |
 
 理由：
 
 - macOS では Option キーが公式名称
 - Karabiner-Elements は両方認識するが、`option` で統一する
 - Windows 由来の `alt` は使用しない
+- `gui` は Karabiner-Elements の内部表記、`command` が macOS 公式名称
+
+---
+
+## manipulators 並び順ルール
+
+JSON内部の manipulators 配列は、以下の順序で並べる。
+
+### 並び順
+
+```
+1. 単独キー（アルファベット順）
+   {a}, {b}, {c}, ...
+
+2. Left Command + {アルファベット}（アルファベット順）
+   left_command + a, left_command + b, ...
+
+3. Right Command + {アルファベット}（アルファベット順）
+   right_command + a, right_command + b, ...
+
+4. Left Option + {アルファベット}（アルファベット順）
+   left_option + a, left_option + b, ...
+
+5. Right Option + {アルファベット}（アルファベット順）
+   right_option + a, right_option + b, ...
+
+6. Left Control + {アルファベット}（アルファベット順）
+   left_control + a, left_control + b, ...
+```
+
+### 原則
+
+- 修飾キーなし → 修飾キーありの順
+- 同一修飾キー内はアルファベット順
+- Left → Right の順
+- Command → Option → Control の順
 
 ---
 

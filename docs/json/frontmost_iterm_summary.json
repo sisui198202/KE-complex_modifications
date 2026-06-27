@@ -19,7 +19,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -47,7 +47,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }
@@ -68,7 +68,7 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },
@@ -76,7 +76,7 @@
             {
               "key_code": "open_bracket",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -96,7 +96,7 @@
             "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },
@@ -104,7 +104,7 @@
             {
               "key_code": "return_or_enter",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -132,7 +132,7 @@
             {
               "key_code": "return_or_enter",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }
@@ -161,7 +161,7 @@
             {
               "key_code": "k",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -189,7 +189,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }
@@ -218,7 +218,7 @@
             {
               "key_code": "1",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }
@@ -250,7 +250,7 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }
@@ -282,7 +282,7 @@
             {
               "key_code": "4",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }

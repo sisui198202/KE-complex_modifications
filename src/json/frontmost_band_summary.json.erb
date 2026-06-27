@@ -50,28 +50,28 @@
                     "description": "T_単語検索",
                     "type": "basic",
                     "from": <%= from("t", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
                     "description": "G_TabClose",
                     "type": "basic",
                     "from": <%= from("g", ["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_gui"]]]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
                     "description": "Period_MaxWindow",
                     "type": "basic",
                     "from": <%= from("period", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
                     "description": "U_Undo",
                     "type": "basic",
                     "from": <%= from("u", ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_gui"]]]) %>,
+                    "to": <%= to([["z", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
@@ -175,8 +175,8 @@
                 {
                     "description": "RightCommand + Period_MaxWindow",
                     "type": "basic",
-                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "from": <%= from("period", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {

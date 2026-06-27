@@ -7,70 +7,70 @@
                 {
                     "description": "RightCommand + Z_0",
                     "type": "basic",
-                    "from": <%= from("z", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("z", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["0"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + X_1",
                     "type": "basic",
-                    "from": <%= from("x", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("x", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["1"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + C_2",
                     "type": "basic",
-                    "from": <%= from("c", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("c", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["2"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + V_3",
                     "type": "basic",
-                    "from": <%= from("v", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("v", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["3"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + S_4",
                     "type": "basic",
-                    "from": <%= from("s", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("s", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["4"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + D_5",
                     "type": "basic",
-                    "from": <%= from("d", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("d", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["5"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + F_6",
                     "type": "basic",
-                    "from": <%= from("f", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("f", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["6"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + W_7",
                     "type": "basic",
-                    "from": <%= from("w", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("w", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["7"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + E_8",
                     "type": "basic",
-                    "from": <%= from("e", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("e", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["8"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + R_9",
                     "type": "basic",
-                    "from": <%= from("r", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("r", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["9"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
@@ -91,14 +91,14 @@
                 {
                     "description": "LeftCommand + RightCommand_plus",
                     "type": "basic",
-                    "from": <%= from("right_gui", ["left_control"], ["caps_lock"]) %>,
+                    "from": <%= from("right_command", ["left_control"], ["caps_lock"]) %>,
                     "to": <%= to([["equal_sign", "right_shift"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + LeftCommand_underbar",
                     "type": "basic",
-                    "from": <%= from("left_control", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("left_control", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["hyphen", "right_shift"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
@@ -119,7 +119,7 @@
                 {
                     "description": "RightCommand + Leftoption_backslash",
                     "type": "basic",
-                    "from": <%= from("left_option", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("left_option", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["backslash"]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
@@ -133,7 +133,7 @@
                 {
                     "description": "RightCommand + T_Search",
                     "type": "basic",
-                    "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("t", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["f", ["left_control", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
@@ -147,14 +147,14 @@
                 {
                     "description": "RightCommand + A_NewFileCreate",
                     "type": "basic",
-                    "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("a", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["t", ["left_control", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },
                 {
                     "description": "RightCommand + G_FileTabClose",
                     "type": "basic",
-                    "from": <%= from("g", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("g", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["w", ["left_control", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("centos_ubuntu") %> ]
                 },

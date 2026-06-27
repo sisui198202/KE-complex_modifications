@@ -36,7 +36,7 @@
                     "description": "S_検索バーアクティブ",
                     "type": "basic",
                     "from": <%= from("s", ["caps_lock"]) %>,
-                    "to": <%= to([["l", ["right_gui"]]]) %>,
+                    "to": <%= to([["l", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -71,21 +71,21 @@
                     "description": "O(オー)_拡大",
                     "type": "basic",
                     "from": <%= from("o", ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "i_縮小",
                     "type": "basic",
                     "from": <%= from("i", ["caps_lock"]) %>,
-                    "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["hyphen", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "T_単語検索",
                     "type": "basic",
                     "from": <%= from("t", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -106,28 +106,28 @@
                     "description": "G_TabClose",
                     "type": "basic",
                     "from": <%= from("g", ["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_gui"]]]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "V_Bookmark_Add",
                     "type": "basic",
                     "from": <%= from("v", ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "RightCommand + B_Bookmark_Add",
                     "type": "basic",
-                    "from": <%= from("b", ["right_gui"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "from": <%= from("b", ["right_command"]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "A_新しいタブを開く",
                     "type": "basic",
                     "from": <%= from("a", ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -162,7 +162,7 @@
                     "description": "Period_MaxWindow",
                     "type": "basic",
                     "from": <%= from("period", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -183,7 +183,7 @@
                     "description": "U_Undo",
                     "type": "basic",
                     "from": <%= from("u", ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_gui"]]]) %>,
+                    "to": <%= to([["z", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -224,7 +224,7 @@
                 {
                     "description": "RightCommand + H_Reload",
                     "type": "basic",
-                    "from": <%= from("h", ["right_gui"]) %>,
+                    "from": <%= from("h", ["right_command"]) %>,
                     "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
@@ -239,14 +239,14 @@
                     "description": "LeftAlt + d_DeveloperTool",
                     "type": "basic",
                     "from": <%= from("d", ["left_option"]) %>,
-                    "to": <%= to([["i", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["i", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "RightAlt + H_PageSourchOutput",
                     "type": "basic",
                     "from": <%= from("h", ["right_option"]) %>,
-                    "to": <%= to([["u", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["u", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -260,14 +260,14 @@
                     "description": "LeftAlt + A_シークレットウィンドウを開く",
                     "type": "basic",
                     "from": <%= from("a", ["left_option"]) %>,
-                    "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "LeftAlt + U_検索バーアクティヴ",
                     "type": "basic",
                     "from": <%= from("u", ["left_option"]) %>,
-                    "to": <%= to([["l", ["right_gui"]]]) %>,
+                    "to": <%= to([["l", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 }
             ]

@@ -175,7 +175,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -203,7 +203,7 @@
             {
               "key_code": "0",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -231,7 +231,7 @@
             {
               "key_code": "0",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -259,7 +259,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -315,7 +315,7 @@
             {
               "key_code": "1",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -343,7 +343,7 @@
             {
               "key_code": "1",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -371,7 +371,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -399,7 +399,7 @@
             {
               "key_code": "b",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -514,7 +514,7 @@
               "key_code": "equal_sign",
               "modifiers": [
                 "fn",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -653,7 +653,7 @@
             {
               "key_code": "g",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -681,7 +681,7 @@
             {
               "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -710,7 +710,7 @@
               "key_code": "f",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -737,7 +737,7 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             }
           ],
           "conditions": [
@@ -765,7 +765,7 @@
               "key_code": "7",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -793,7 +793,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_control"
               ]
             }
@@ -822,7 +822,7 @@
             {
               "key_code": "g",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -909,7 +909,7 @@
               "key_code": "equal_sign",
               "modifiers": [
                 "fn",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -958,7 +958,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },
@@ -966,7 +966,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],

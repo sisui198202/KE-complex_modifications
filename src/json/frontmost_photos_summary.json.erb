@@ -7,7 +7,7 @@
                 {
                     "description": "RightCommand + Space_delete(photos)",
                     "type": "basic",
-                    "from": <%= from("spacebar", ["right_gui"]) %>,
+                    "from": <%= from("spacebar", ["right_command"]) %>,
                     "to": <%= to([["delete_or_backspace"]]) %>,
                     "conditions": [ <%= frontmost_application_if("photos") %> ]
                 }

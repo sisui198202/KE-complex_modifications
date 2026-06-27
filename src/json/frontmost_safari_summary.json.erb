@@ -8,14 +8,14 @@
                     "description": "LeftCommand + U_undo(safari)",
                     "type": "basic",
                     "from": <%= from("u", ["left_control"]) %>,
-                    "to": <%= to([["open_bracket", ["right_gui"]]]) %>,
+                    "to": <%= to([["open_bracket", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "RightCommand + H_Reload(safari)",
                     "type": "basic",
-                    "from": <%= from("h", ["right_gui"]) %>,
-                    "to": <%= to([["r", ["right_gui"]]]) %>,
+                    "from": <%= from("h", ["right_command"]) %>,
+                    "to": <%= to([["r", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
@@ -29,21 +29,21 @@
                     "description": "A_新しいタブを開く",
                     "type": "basic",
                     "from": <%= from("a", ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["right_gui"]]]) %>,
+                    "to": <%= to([["t", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "RightCommand + A_新しいタブを開く",
                     "type": "basic",
-                    "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["right_gui"]]]) %>,
+                    "from": <%= from("a", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "W_新しいウィンドウで開く",
                     "type": "basic",
                     "from": <%= from("w", ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
@@ -57,21 +57,21 @@
                     "description": "E_Reload",
                     "type": "basic",
                     "from": <%= from("e", ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["right_gui"]]]) %>,
+                    "to": <%= to([["r", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "LeftCommand + T_ドックの位置変更",
                     "type": "basic",
                     "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["d", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
                     "type": "basic",
                     "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_gui"]]]) %>,
+                    "to": <%= to([["p", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
@@ -85,21 +85,21 @@
                     "description": "LeftAlt + A_プライベートウィンドウを開く",
                     "type": "basic",
                     "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "LeftAlt + B_Bookmarkリストトグル",
                     "type": "basic",
                     "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["b", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 },
                 {
                     "description": "LeftAlt + U_検索バーアクティヴ",
                     "type": "basic",
                     "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
+                    "to": <%= to([["l","right_command"], ["c", "right_command"]]) %>,
                     "conditions": [ <%= frontmost_application_if("safari") %> ]
                 }
             ]

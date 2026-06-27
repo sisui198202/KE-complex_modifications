@@ -19,7 +19,7 @@
             {
               "key_code": "open_bracket",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -39,7 +39,7 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },
@@ -47,7 +47,7 @@
             {
               "key_code": "r",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -106,7 +106,7 @@
             {
               "key_code": "t",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -126,7 +126,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -137,7 +137,7 @@
             {
               "key_code": "t",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -165,7 +165,7 @@
             {
               "key_code": "n",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -221,7 +221,7 @@
             {
               "key_code": "r",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -252,7 +252,7 @@
             {
               "key_code": "d",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_shift"
               ]
             }
@@ -284,7 +284,7 @@
             {
               "key_code": "p",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -348,7 +348,7 @@
               "key_code": "n",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -380,7 +380,7 @@
               "key_code": "b",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -410,11 +410,11 @@
           "to": [
             {
               "key_code": "l",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             },
             {
               "key_code": "c",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             }
           ],
           "conditions": [

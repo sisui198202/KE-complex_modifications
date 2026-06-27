@@ -8,7 +8,7 @@
                     "description": "RightOption + A_現在のタブをウインドウ化",
                     "type": "basic",
                     "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["left_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["3", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -21,15 +21,15 @@
                 {
                     "description": "RightCommand + J_1RowSelection",
                     "type": "basic",
-                    "from": <%= from("j", ["right_gui"]) %>,
-                    "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]]]) %>,
+                    "from": <%= from("j", ["right_command"]) %>,
+                    "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
                     "description": "RightCommand + K_CopyCurrentRowCut",
                     "type": "basic",
-                    "from": <%= from("k", ["right_gui"]) %>,
-                    "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_gui"]], ["delete_or_backspace"]]) %>,
+                    "from": <%= from("k", ["right_command"]) %>,
+                    "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_command"]], ["delete_or_backspace"]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -43,21 +43,21 @@
                     "description": "LeftAlt + R_Replace",
                     "type": "basic",
                     "from": <%= from("r", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
                     "description": "RightCommand + L_NextTab",
                     "type": "basic",
-                    "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["open_bracket", ["left_shift", "right_gui"]]]) %>,
+                    "from": <%= from("l", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["open_bracket", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
                     "description": "RightCommand + Semicolon_LatestTabToggle",
                     "type": "basic",
-                    "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["close_bracket", ["left_shift", "right_gui"]]]) %>,
+                    "from": <%= from("semicolon", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["close_bracket", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -92,14 +92,14 @@
                     "description": "LeftCommand + N_HeadRowCursol",
                     "type": "basic",
                     "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["up_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
                     "description": "LeftCommand + M_EndRowCursol",
                     "type": "basic",
                     "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["down_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {

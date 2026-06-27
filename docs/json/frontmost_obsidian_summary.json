@@ -11,7 +11,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -55,7 +55,7 @@
             {
               "key_code": "up_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -86,7 +86,7 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],

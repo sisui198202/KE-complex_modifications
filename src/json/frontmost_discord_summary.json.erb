@@ -57,21 +57,21 @@
                     "description": "Slash_拡大",
                     "type": "basic",
                     "from": <%= from("slash", ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {
                     "description": "B_縮小",
                     "type": "basic",
                     "from": <%= from("b", ["caps_lock"]) %>,
-                    "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["hyphen", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {
                     "description": "T_単語検索",
                     "type": "basic",
                     "from": <%= from("t", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {
@@ -85,7 +85,7 @@
                     "description": "Period_MaxWindow",
                     "type": "basic",
                     "from": <%= from("period", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {
@@ -106,7 +106,7 @@
                     "description": "U_Undo",
                     "type": "basic",
                     "from": <%= from("u", ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_gui"]]]) %>,
+                    "to": <%= to([["z", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("discord") %> ]
                 },
                 {

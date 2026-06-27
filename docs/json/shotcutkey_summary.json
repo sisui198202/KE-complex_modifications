@@ -11,7 +11,7 @@
             "key_code": "q",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -23,7 +23,7 @@
               "key_code": "0",
               "modifiers": [
                 "left_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -102,7 +102,7 @@
             {
               "key_code": "semicolon",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "left_control",
                 "left_option"
               ]
@@ -128,7 +128,7 @@
               "key_code": "1",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -196,7 +196,7 @@
             "key_code": "g",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -207,7 +207,7 @@
             {
               "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ]
@@ -231,7 +231,7 @@
               "key_code": "s",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ]
@@ -323,7 +323,7 @@
           "to": [
             {
               "key_code": "tab",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             }
           ]
         },
@@ -334,7 +334,7 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -345,7 +345,7 @@
             {
               "key_code": "n",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -384,7 +384,7 @@
             {
               "key_code": "q",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -541,7 +541,7 @@
             {
               "key_code": "z",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -581,7 +581,7 @@
               "key_code": "z",
               "modifiers": [
                 "left_shift",
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -609,7 +609,7 @@
             "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -620,7 +620,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -659,7 +659,7 @@
             {
               "key_code": "q",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -698,7 +698,7 @@
             {
               "key_code": "a",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -726,7 +726,7 @@
             "key_code": "o",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -737,7 +737,7 @@
             {
               "key_code": "s",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -776,7 +776,7 @@
             {
               "key_code": "x",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -804,7 +804,7 @@
             "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -843,7 +843,7 @@
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -883,7 +883,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -904,7 +904,7 @@
             {
               "key_code": "c",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             },
             {
@@ -935,7 +935,7 @@
             "key_code": "s",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -946,7 +946,7 @@
             {
               "key_code": "spacebar",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -974,7 +974,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -986,7 +986,7 @@
               "key_code": "quote",
               "modifiers": [
                 "right_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1014,7 +1014,7 @@
             "key_code": "p",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1026,7 +1026,7 @@
               "key_code": "8",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1054,7 +1054,7 @@
             "key_code": "p",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1066,7 +1066,7 @@
               "key_code": "0",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1136,7 +1136,7 @@
             "key_code": "v",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1148,7 +1148,7 @@
               "key_code": "quote",
               "modifiers": [
                 "left_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1176,7 +1176,7 @@
             "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1188,7 +1188,7 @@
               "key_code": "5",
               "modifiers": [
                 "left_control",
-                "right_alt"
+                "right_option"
               ]
             }
           ],
@@ -1216,7 +1216,7 @@
             "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1227,8 +1227,8 @@
             {
               "key_code": "backslash",
               "modifiers": [
-                "left_alt",
-                "right_gui"
+                "left_option",
+                "right_command"
               ]
             }
           ],
@@ -1295,7 +1295,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -1316,7 +1316,7 @@
             {
               "key_code": "c",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1355,7 +1355,7 @@
             {
               "key_code": "5",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }

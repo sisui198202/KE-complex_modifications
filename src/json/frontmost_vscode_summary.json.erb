@@ -50,14 +50,14 @@
                     "description": "N_HeadRowCursol",
                     "type": "basic",
                     "from": <%= from("n", ["caps_lock"]) %>,
-                    "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["up_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "M_EndRowCursol",
                     "type": "basic",
                     "from": <%= from("m", ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["down_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -71,7 +71,7 @@
                     "description": "X_エディター内のシンボルへ移動",
                     "type": "basic",
                     "from": <%= from("x", ["caps_lock"]) %>,
-                    "to": <%= to([["o", ["left_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["o", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -92,7 +92,7 @@
                     "description": "A_CurrentRowHeadCursol",
                     "type": "basic",
                     "from": <%= from("a", ["caps_lock"]) %>,
-                    "to": <%= to([["left_arrow", ["left_gui"]]]) %>,
+                    "to": <%= to([["left_arrow", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -106,21 +106,21 @@
                     "description": "closebracket_editor.action.jumpToBracket",
                     "type": "basic",
                     "from": <%= from("close_bracket", ["caps_lock"]) %>,
-                    "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["m", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "B_BookmarkSet",
                     "type": "basic",
                     "from": <%= from("b", ["caps_lock"]) %>,
-                    "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["k", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "V_NextBookmark",
                     "type": "basic",
                     "from": <%= from("v", ["caps_lock"]) %>,
-                    "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["l", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -134,21 +134,21 @@
                     "description": "R_Row2SplitEditerScreen",
                     "type": "basic",
                     "from": <%= from("r", ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option", "right_gui", "left_shift"]], ["d", ["right_option"]]]) %>,
+                    "to": <%= to([["2", ["right_option", "right_command", "left_shift"]], ["d", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "-(ハイフン)_3行のエディターレイアウト",
                     "type": "basic",
                     "from": <%= from("hyphen", ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_shift", "right_gui",]]]) %>,
+                    "to": <%= to([["3", ["right_shift", "right_command",]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "=(イコール)_3列のエディターレイアウト",
                     "type": "basic",
                     "from": <%= from("equal_sign", ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["right_shift", "right_gui",]]]) %>,
+                    "to": <%= to([["4", ["right_shift", "right_command",]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -169,14 +169,14 @@
                     "description": "G_FileTabClose",
                     "type": "basic",
                     "from": <%= from("g", ["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_gui"]]]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "W_フォルダービューにフォーカスを置く",
                     "type": "basic",
                     "from": <%= from("w", ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["p", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -197,14 +197,14 @@
                     "description": "E_セカンダリサイドバー切替",
                     "type": "basic",
                     "from": <%= from("e", ["caps_lock"]) %>,
-                    "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["b", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "U_FocusNeighboringGroup",
                     "type": "basic",
                     "from": <%= from("u", ["caps_lock"]) %>,
-                    "to": <%= to([["i", ["right_gui", "right_option"]]]) %>,
+                    "to": <%= to([["i", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -225,7 +225,7 @@
                     "description": "0ゼロ_エディターレイアウト2x2",
                     "type": "basic",
                     "from": <%= from("0", ["caps_lock"]) %>,
-                    "to": <%= to([["9", ["left_gui", "left_shift"]]]) %>,
+                    "to": <%= to([["9", ["left_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -239,7 +239,7 @@
                     "description": "LeftOption + D_workbench.action.moveEditorToNextGroup",
                     "type": "basic",
                     "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["quote", ["left_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["quote", ["left_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -253,21 +253,21 @@
                     "description": "LeftCommand + S_Cut",
                     "type": "basic",
                     "from": <%= from("s", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["x", ["left_option", "right_gui"]]]) %>,
+                    "to": <%= to([["x", ["left_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightOption + J_カレント行から最終行まで選択",
                     "type": "basic",
                     "from": <%= from("j", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["left_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["down_arrow", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightOption + X_エディター内のシンボルへ移動",
                     "type": "basic",
                     "from": <%= from("x", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["o", ["left_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["o", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -295,7 +295,7 @@
                     "description": "LeftCommand + A_CurrentRowHeadCursol",
                     "type": "basic",
                     "from": <%= from("a", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["left_arrow", ["left_gui"]]]) %>,
+                    "to": <%= to([["left_arrow", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -308,14 +308,14 @@
                 {
                     "description": "RightCommand + quote_閉じたエディターを再度開く",
                     "type": "basic",
-                    "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
+                    "from": <%= from("quote", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightCommand + B_タスクの実行",
                     "type": "basic",
-                    "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("b", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["1", ["right_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
@@ -323,7 +323,7 @@
                     "description": "RightOption + L_OpenwithLiveServer",
                     "type": "basic",
                     "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["4", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -337,42 +337,42 @@
                     "description": "LeftOption + W_再起動",
                     "type": "basic",
                     "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f5", ["right_shift", "right_gui" ]]]) %>,
+                    "to": <%= to([["f5", ["right_shift", "right_command" ]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftOption + M_BookmarkSet",
                     "type": "basic",
                     "from": <%= from("m", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["k", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["k", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightOption + M_NextBookmark",
                     "type": "basic",
                     "from": <%= from("m", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["l", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["l", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftOption + N_editor.action.jumpToBracket",
                     "type": "basic",
                     "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["m", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["m", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + N_HeadRowCursol",
                     "type": "basic",
                     "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["up_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + M_EndRowCursol",
                     "type": "basic",
                     "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["down_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -385,15 +385,15 @@
                 {
                     "description": "RightCommand + Slash_SelectAllSameWord",
                     "type": "basic",
-                    "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_gui","right_option"]]]) %>,
+                    "from": <%= from("slash", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightAlt + B_DebugStart ",
                     "type": "basic",
                     "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f5", ["right_gui"]]]) %>,
+                    "to": <%= to([["f5", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -406,7 +406,7 @@
                 {
                     "description": "RightCommand + Comma_Terminal Panel Max Toggle ",
                     "type": "basic",
-                    "from": <%= from("comma", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("comma", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["o", ["left_control", "left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
@@ -435,42 +435,42 @@
                     "description": "RightAlt + e_相対パスコピー_sidebarのコピーしたいファイル上で上記のショットカットキーを押す、本文の側でショットカットキーを押してコピーできない",
                     "type": "basic",
                     "from": <%= from("e", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["c", ["right_option","right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["c", ["right_option","right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightAlt + H_FolderInSearch",
                     "type": "basic",
                     "from": <%= from("h", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["f", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightAlt + T_workbench.action.closePanel",
                     "type": "basic",
                     "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["right_gui", "right_option"]]]) %>,
+                    "to": <%= to([["7", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightAlt + A_VscodeNewWindows",
                     "type": "basic",
                     "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftAlt + A_VscodeNewFolderCreate",
                     "type": "basic",
                     "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftAlt + F_VscodeNewFileCreate",
                     "type": "basic",
                     "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["1", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -484,7 +484,7 @@
                     "description": "RightAlt + semicolon_SplitTerminal",
                     "type": "basic",
                     "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f4", ["left_option", "right_gui"]]]) %>,
+                    "to": <%= to([["f4", ["left_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -512,84 +512,84 @@
                     "description": "LeftCommand + O(オー)_Row2SplitEditerScreen",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["slash", ["right_gui", "left_shift"]], ["quote", ["left_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["slash", ["right_command", "left_shift"]], ["quote", ["left_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + 0(ゼロ)_Column2SplitEditerScreen",
                     "type": "basic",
                     "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_gui", "right_option"]]]) %>,
+                    "to": <%= to([["o", ["left_control", "left_shift"]], ["i", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + 9_右上2行のエディターレイアウト",
                     "type": "basic",
                     "from": <%= from("9", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", ["left_gui", "left_shift"]], ["d", ["left_option"]]]) %>,
+                    "to": <%= to([["6", ["left_command", "left_shift"]], ["d", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftOption + C_Change Live Server workspace",
                     "type": "basic",
                     "from": <%= from("c", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["left_gui", "left_shift"]]]) %>,
+                    "to": <%= to([["7", ["left_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftOption + Z_エディターレイアウト2x2",
                     "type": "basic",
                     "from": <%= from("z", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["9", ["left_gui", "left_shift"]]]) %>,
+                    "to": <%= to([["9", ["left_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + -(ハイフン)_3行のエディターレイアウト",
                     "type": "basic",
                     "from": <%= from("hyphen", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_shift", "right_gui",]]]) %>,
+                    "to": <%= to([["3", ["right_shift", "right_command",]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + =(イコール)_3列のエディターレイアウト",
                     "type": "basic",
                     "from": <%= from("equal_sign", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["right_shift", "right_gui",]]]) %>,
+                    "to": <%= to([["4", ["right_shift", "right_command",]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftOption + E_前のエディターグループにフォーカス",
                     "type": "basic",
                     "from": <%= from("e", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["right_shift", "right_gui",]]]) %>,
+                    "to": <%= to([["5", ["right_shift", "right_command",]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "LeftCommand + Z_Insert Line Below",
                     "type": "basic",
                     "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["return_or_enter", ["right_gui"]]]) %>,
+                    "to": <%= to([["return_or_enter", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightAlt + Z_Insert Line Above",
                     "type": "basic",
                     "from": <%= from("z", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["return_or_enter", ["right_gui", "left_shift"]]]) %>,
+                    "to": <%= to([["return_or_enter", ["right_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightCommand + O_SameWordExpandSelection",
                     "type": "basic",
-                    "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["0", ["right_gui", "right_option"]]]) %>,
+                    "from": <%= from("o", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["0", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
                     "description": "RightCommand + I_FocusNeighboringGroup",
                     "type": "basic",
-                    "from": <%= from("i", ["right_gui"], ["any"]) %>,
-                    "to": <%= to([["i", ["right_gui", "right_option"]]]) %>,
+                    "from": <%= from("i", ["right_command"], ["any"]) %>,
+                    "to": <%= to([["i", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -602,8 +602,8 @@
                 {
                     "description": "RightCommand + H_フォルダービューにフォーカスを置く",
                     "type": "basic",
-                    "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_control", "right_gui"]]]) %>,
+                    "from": <%= from("h", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["p", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -617,7 +617,7 @@
                     "description": "LeftOption + T_セカンダリサイドバー切替",
                     "type": "basic",
                     "from": <%= from("t", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["b", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -630,7 +630,7 @@
                 {
                     "description": "RightCommand + Q_選択範囲縮小",
                     "type": "basic",
-                    "from": <%= from("q", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("q", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["equal_sign", ["right_shift", "left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
@@ -638,7 +638,7 @@
                     "description": "RightOption + R_エディターを右のグループに分割",
                     "type": "basic",
                     "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_shift","right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -707,8 +707,8 @@
                 {
                     "description": "RightCommand + Period_MaxWindow",
                     "type": "basic",
-                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "from": <%= from("period", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vscode") %> ]
                 },
                 {
@@ -787,7 +787,7 @@
                         {
                             "pointing_button": "button1",
                             "modifiers": [
-                                "left_gui"
+                                "left_command"
                             ]
                         }
                     ],

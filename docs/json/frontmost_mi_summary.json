@@ -23,7 +23,7 @@
               "key_code": "3",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -75,7 +75,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },
@@ -93,7 +93,7 @@
             {
               "key_code": "c",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -113,7 +113,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },
@@ -131,7 +131,7 @@
             {
               "key_code": "c",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             },
             {
@@ -199,7 +199,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -219,7 +219,7 @@
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -231,7 +231,7 @@
               "key_code": "open_bracket",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -251,7 +251,7 @@
             "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -263,7 +263,7 @@
               "key_code": "close_bracket",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -422,7 +422,7 @@
             {
               "key_code": "up_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -453,7 +453,7 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],

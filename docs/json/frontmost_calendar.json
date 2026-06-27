@@ -1,0 +1,42 @@
+{
+  "title": "FrontmostIfCalendar",
+  "rules": [
+    {
+      "description": "{キー1} + {キー2}_ここから登録(calendar)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": "right_command"
+            },
+            {
+              "key_code": "c",
+              "modifiers": "right_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.apple.iCal$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

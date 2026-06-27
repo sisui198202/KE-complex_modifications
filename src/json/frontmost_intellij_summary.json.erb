@@ -8,41 +8,41 @@
                     "description": "F7_ステップアウト",
                     "type": "basic",
                     "from": <%= from("f7", ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_gui","right_option"]]]) %>,
+                    "to": <%= to([["2", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "F9_ステップイン",
                     "type": "basic",
                     "from": <%= from("f9", ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_gui","right_option"]]]) %>,
+                    "to": <%= to([["3", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "F8_ステップオーバー",
                     "type": "basic",
                     "from": <%= from("f8", ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["right_gui","right_option"]]]) %>,
+                    "to": <%= to([["4", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + Openbracket_行ブレークポイントの切り替え",
                     "type": "basic",
-                    "from": <%= from("open_bracket", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["right_gui","right_option"]]]) %>,
+                    "from": <%= from("open_bracket", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["1", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + A_新規Javaクラス",
                     "type": "basic",
-                    "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("a", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["hyphen", ["left_control","left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + T_検索",
                     "type": "basic",
-                    "from": <%= from("t", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("t", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["1", ["left_control","left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
@@ -63,14 +63,14 @@
                 {
                     "description": "RightCommand + L_前のタブを選択",
                     "type": "basic",
-                    "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("l", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["8", ["left_control","left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + H_プロジェクトアクティブ",
                     "type": "basic",
-                    "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("h", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["9", ["left_control","left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
@@ -126,7 +126,7 @@
                 {
                     "description": "RightCommand + quote_インタフェース抽出",
                     "type": "basic",
-                    "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("quote", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["3", ["left_control","left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
@@ -182,8 +182,8 @@
                 {
                     "description": "RightCommand + comma_ツールウィンドウ最大化",
                     "type": "basic",
-                    "from": <%= from("comma", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["quote", ["right_shift","right_gui"]]]) %>,
+                    "from": <%= from("comma", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["quote", ["right_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
@@ -197,42 +197,42 @@
                     "description": "LeftOption + comma_参照をコピー",
                     "type": "basic",
                     "from": <%= from("comma", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["c", ["right_shift","right_gui"]]]) %>,
+                    "to": <%= to([["c", ["right_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftCommand + W_選択状態でキャレットを行末に移動",
                     "type": "basic",
                     "from": <%= from("w", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["right_arrow", ["right_shift","right_gui"]]]) %>,
+                    "to": <%= to([["right_arrow", ["right_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + O[オウ]_次の出現箇所の選択を追加",
                     "type": "basic",
-                    "from": <%= from("o", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("o", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["g", ["left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + 0[ゼロ]_出現箇所の選択解除",
                     "type": "basic",
-                    "from": <%= from("0", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("0", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["g", ["left_control","left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + slash_すべての出現箇所の選択を追加",
                     "type": "basic",
-                    "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["g", ["left_control","left_gui"]]]) %>,
+                    "from": <%= from("slash", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["g", ["left_control","left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + E_囲む",
                     "type": "basic",
                     "from": <%= from("e", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_option","left_gui"]]]) %>,
+                    "to": <%= to([["z", ["left_option","left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
@@ -246,7 +246,7 @@
                     "description": "RightOption + T_サイドバー構造表示",
                     "type": "basic",
                     "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["right_gui"]]]) %>,
+                    "to": <%= to([["7", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
@@ -260,84 +260,84 @@
                     "description": "LeftOption + W_いい感じに修正-インポートするクラス表示",
                     "type": "basic",
                     "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["right_gui"]]]) %>,
+                    "to": <%= to([["1", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + Q_ステートメント補完",
                     "type": "basic",
                     "from": <%= from("q", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["return_or_enter", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["return_or_enter", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + closeBracket_なんでも実行",
                     "type": "basic",
                     "from": <%= from("close_bracket", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["0", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["0", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + openBracket_どこでも検索",
                     "type": "basic",
                     "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["9", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["9", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + F_新規ファイル作成",
                     "type": "basic",
                     "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["7", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftCommand + オウ_分割して下に移動",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["1", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + D_分割して右に移動",
                     "type": "basic",
                     "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["5", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftCommand + ゼロ_右に分割",
                     "type": "basic",
                     "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["2", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + ゼロ_下に分割",
                     "type": "basic",
                     "from": <%= from("0", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["3", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "RightCommand + i_次の分割へ移動",
                     "type": "basic",
-                    "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", ["left_shift","right_gui"]]]) %>,
+                    "from": <%= from("i", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["6", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftCommand + quote_分割を解除",
                     "type": "basic",
                     "from": <%= from("quote", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["4", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + R_置換",
                     "type": "basic",
                     "from": <%= from("r", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
@@ -357,7 +357,7 @@
                 {
                     "description": "RightCommand + K_カレント行削除",
                     "type": "basic",
-                    "from": <%= from("k", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("k", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["2", ["left_option","right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
@@ -372,14 +372,14 @@
                     "description": "RightOption + K_式のクイック評価",
                     "type": "basic",
                     "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f8", ["left_option","right_gui"]]]) %>,
+                    "to": <%= to([["f8", ["left_option","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {
                     "description": "LeftOption + X_問題",
                     "type": "basic",
                     "from": <%= from("x", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", ["left_gui"]]]) %>,
+                    "to": <%= to([["6", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
 
@@ -449,8 +449,8 @@
                 {
                     "description": "RightCommand + Period_MaxWindow",
                     "type": "basic",
-                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "from": <%= from("period", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("intellij") %> ]
                 },
                 {

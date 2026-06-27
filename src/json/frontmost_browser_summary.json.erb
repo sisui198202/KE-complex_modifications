@@ -69,14 +69,14 @@
                     "description": "Period_MaxWindow",
                     "type": "basic",
                     "from": <%= from("period", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "Comma_AppsSelect-Next",
                     "type": "basic",
                     "from": <%= from("comma", ["caps_lock"]) %>,
-                    "to": <%= to([["tab", "right_gui"]]) %>,
+                    "to": <%= to([["tab", "right_command"]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
@@ -235,7 +235,7 @@
                     "description": "G_TabClose",
                     "type": "basic",
                     "from": <%= from("g", ["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_gui"]]]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 }
             ]
@@ -247,28 +247,28 @@
                     "description": "Slash_拡大",
                     "type": "basic",
                     "from": <%= from("slash", ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift", "right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
                     "description": "B_縮小",
                     "type": "basic",
                     "from": <%= from("b", ["caps_lock"]) %>,
-                    "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+                    "to": <%= to([["hyphen", ["right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
                     "description": "RightCommand + Slash_拡大",
                     "type": "basic",
-                    "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+                    "from": <%= from("slash", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "RightOption + B_縮小",
                     "type": "basic",
                     "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+                    "to": <%= to([["hyphen", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]
@@ -280,35 +280,35 @@
                     "description": "T_単語検索",
                     "type": "basic",
                     "from": <%= from("t", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
                     "description": "S_検索バーアクティブ",
                     "type": "basic",
                     "from": <%= from("s", ["caps_lock"]) %>,
-                    "to": <%= to([["l", ["right_gui"]]]) %>,
+                    "to": <%= to([["l", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "検証要-U_Undo",
                     "type": "basic",
                     "from": <%= from("u", ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_gui"]]]) %>,
+                    "to": <%= to([["z", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "LeftAlt + U_検索バーアクティヴ-Copy",
                     "type": "basic",
                     "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["l","right_gui"], ["c", "right_gui"]]) %>,
+                    "to": <%= to([["l","right_command"], ["c", "right_command"]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "RightAlt + H_PageSourchOutput",
                     "type": "basic",
                     "from": <%= from("h", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["u", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["u", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]
@@ -320,14 +320,14 @@
                     "description": "V_Bookmark_Add",
                     "type": "basic",
                     "from": <%= from("v", ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
                     "description": "RightCommand + B_Bookmark_Add",
                     "type": "basic",
-                    "from": <%= from("b", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "from": <%= from("b", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]
@@ -339,28 +339,28 @@
                     "description": "RightAlt + S_Select an Element in the Page to inspect it",
                     "type": "basic",
                     "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["c", ["right_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["c", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "LeftAlt + d_DeveloperToolトグル",
                     "type": "basic",
                     "from": <%= from("d", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["i", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["i", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "RightAlt + C_Console表示",
                     "type": "basic",
                     "from": <%= from("c", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["j", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["j", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "LeftCommand + T_検証-ドックの位置変更",
                     "type": "basic",
                     "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["d", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]

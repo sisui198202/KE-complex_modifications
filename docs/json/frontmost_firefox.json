@@ -20,11 +20,11 @@
           "to": [
             {
               "key_code": "l",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             },
             {
               "key_code": "c",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             }
           ],
           "conditions": [

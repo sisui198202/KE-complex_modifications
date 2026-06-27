@@ -11,7 +11,7 @@
             "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ]
             }
           },

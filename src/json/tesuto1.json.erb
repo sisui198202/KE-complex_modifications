@@ -15,35 +15,35 @@
                     "description": "LeftAlt + U_PathSelection",
                     "type": "basic",
                     "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["l", ["left_option", "left_gui"]]]) %>,
+                    "to": <%= to([["l", ["left_option", "left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "LeftAlt + O(オー)_一括名称変更",
                     "type": "basic",
                     "from": <%= from("o", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["left_gui", "left_shift"]]]) %>,
+                    "to": <%= to([["r", ["left_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "RightCommand + Space_FileDelete",
                     "type": "basic",
-                    "from": <%= from("spacebar", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["delete_or_backspace", ["right_gui"]]]) %>,
+                    "from": <%= from("spacebar", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["delete_or_backspace", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "RightOption + E_エイリアスを作る",
                     "type": "basic",
                     "from": <%= from("e", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["l", ["right_gui"]]]) %>,
+                    "to": <%= to([["l", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "LeftCommand + Z_オリジナルを表示",
                     "type": "basic",
                     "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["right_gui"]]]) %>,
+                    "to": <%= to([["r", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
@@ -56,22 +56,22 @@
                 {
                     "description": "RightCommand + H_フォルダーへ移動",
                     "type": "basic",
-                    "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["g", ["left_shift", "right_gui"]]]) %>,
+                    "from": <%= from("h", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["g", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "LeftAlt + F_NewFileCreate",
                     "type": "basic",
                     "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "LeftAlt + A_FolderCreate",
                     "type": "basic",
                     "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
@@ -92,14 +92,14 @@
                     "description": "LeftOption + SpaceBar_FileOpen",
                     "type": "basic",
                     "from": <%= from("spacebar", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["o", ["right_gui"]]]) %>,
+                    "to": <%= to([["o", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
                     "description": "LeftOption + I_親ディレクトリへ",
                     "type": "basic",
                     "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["up_arrow", ["right_gui"]]]) %>,
+                    "to": <%= to([["up_arrow", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
@@ -120,7 +120,7 @@
                     "description": "LeftCommand + 0ゼロ_水平レイアウト",
                     "type": "basic",
                     "from": <%= from("0", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["d", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
@@ -140,36 +140,36 @@
                 {
                     "description": "RightCommand + A_新規タブ",
                     "type": "basic",
-                    "from": <%= from("a", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["left_gui"]]]) %>,
+                    "from": <%= from("a", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %>]
                 },
                 {
                     "description": "RightOption + A_新規ブラウザ",
                     "type": "basic",
                     "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["left_gui"]]]) %>,
+                    "to": <%= to([["n", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %>]
                 },
                 {
                     "description": "RightCommand + L_前のタブを選択",
                     "type": "basic",
-                    "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["open_bracket", ["right_gui","right_shift"]]]) %>,
+                    "from": <%= from("l", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["open_bracket", ["right_command","right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %>]
                 },
                 {
                     "description": "RightCommand + Semicolon_次のタブを選択",
                     "type": "basic",
-                    "from": <%= from("semicolon", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["close_bracket", ["right_gui","right_shift"]]]) %>,
+                    "from": <%= from("semicolon", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["close_bracket", ["right_command","right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %>]
                 },
                 {
                     "description": "RightOption + T_タブセット",
                     "type": "basic",
                     "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_gui","left_control"]]]) %>,
+                    "to": <%= to([["p", ["right_command","left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %>]
                 },
                 {
@@ -238,8 +238,8 @@
                 {
                     "description": "RightCommand + Period_MaxWindow",
                     "type": "basic",
-                    "from": <%= from("period", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "from": <%= from("period", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
@@ -274,7 +274,7 @@
                     "description": "使用しない_LeftOption + O(オー)_FileOpen",
                     "type": "basic",
                     "from": <%= from("o", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["o", ["right_gui"]]]) %>,
+                    "to": <%= to([["o", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
 {

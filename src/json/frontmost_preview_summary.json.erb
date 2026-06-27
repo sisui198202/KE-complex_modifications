@@ -43,14 +43,14 @@
                     "description": "B_ブックマーク追加",
                     "type": "basic",
                     "from": <%= from("b") %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "Z_保存",
                     "type": "basic",
                     "from": <%= from("z") %>,
-                    "to": <%= to([["s", ["right_gui"]]]) %>,
+                    "to": <%= to([["s", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
@@ -85,56 +85,56 @@
                     "description": "U_Undo",
                     "type": "basic",
                     "from": <%= from("u") %>,
-                    "to": <%= to([["z", ["right_gui"]]]) %>,
+                    "to": <%= to([["z", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "T_ブックマークリスト表示",
                     "type": "basic",
                     "from": <%= from("t") %>,
-                    "to": <%= to([["2", ["right_gui","right_control"]]]) %>,
+                    "to": <%= to([["2", ["right_command","right_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "Y_サイドバーを非表示",
                     "type": "basic",
                     "from": <%= from("y") %>,
-                    "to": <%= to([["1", ["right_gui","right_control"]]]) %>,
+                    "to": <%= to([["1", ["right_command","right_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "D_SummaryDirectory",
                     "type": "basic",
                     "from": <%= from("d") %>,
-                    "to": <%= to([["7", ["left_shift", "right_option","right_gui"]],["right_arrow"]]) %>,
+                    "to": <%= to([["7", ["left_shift", "right_option","right_command"]],["right_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "オウ_Expansion",
                     "type": "basic",
                     "from": <%= from("o") %>,
-                    "to": <%= to([["equal_sign", ["fn", "right_gui"]]]) %>,
+                    "to": <%= to([["equal_sign", ["fn", "right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("preview") %>]
                 },
                 {
                     "description": "i_Shrink",
                     "type": "basic",
                     "from": <%= from("i") %>,
-                    "to": <%= to([["hyphen", ["right_gui"]]]) %>,
+                    "to": <%= to([["hyphen", ["right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("preview") %>]
                 },
                 {
                     "description": "CloseBracket_実際のサイズに合わせる",
                     "type": "basic",
                     "from": <%= from("close_bracket") %>,
-                    "to": <%= to([["9", ["right_gui"]]]) %>,
+                    "to": <%= to([["9", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "Equalsign_ウィンドウに合わせる",
                     "type": "basic",
                     "from": <%= from("equal_sign") %>,
-                    "to": <%= to([["0", ["right_gui"]]]) %>,
+                    "to": <%= to([["0", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
@@ -155,32 +155,32 @@
                     "description": "Quote_注釈",
                     "type": "basic",
                     "from": <%= from("quote") %>,
-                    "to": <%= to([["i", ["right_gui"]]]) %>,
+                    "to": <%= to([["i", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "OpenBracket[オープン角括弧]_ページ数指定",
                     "type": "basic",
                     "from": <%= from("open_bracket") %>,
-                    "to": <%= to([["7", ["right_gui","right_option"]]]) %>,
+                    "to": <%= to([["7", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "G_WindowClose",
                     "type": "basic",
                     "from": <%= from("g") %>,
-                    "to": <%= to([["w", ["right_gui"]]]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "V_テキスト",
                     "type": "basic",
                     "from": <%= from("v") %>,
-                    "to": <%= to([["t", ["right_gui","right_control"]]]) %>,
+                    "to": <%= to([["t", ["right_command","right_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
-                    "description": "F_メモ_[n, [right_gui,right_control],[caps_lock]]は適用不可_検証済",
+                    "description": "F_メモ_[n, [right_command,right_control],[caps_lock]]は適用不可_検証済",
                     "type": "basic",
                     "from": <%= from("f") %>,
                     "to": <%= to([["9", ["right_option","right_control"]]]) %>,
@@ -190,21 +190,21 @@
                     "description": "S_サムネイル",
                     "type": "basic",
                     "from": <%= from("s") %>,
-                    "to": <%= to([["2", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "X_ハイライトとメモ",
                     "type": "basic",
                     "from": <%= from("x") %>,
-                    "to": <%= to([["4", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["4", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "Oオー_マークアップツールバーを非表示",
                     "type": "basic",
                     "from": <%= from("0") %>,
-                    "to": <%= to([["a", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["a", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
@@ -218,35 +218,35 @@
                     "description": "Period_WindowMax",
                     "type": "basic",
                     "from": <%= from("period") %>,
-                    "to": <%= to([["f", ["right_control", "right_gui"]]]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "Comma_AppsSelect-Next",
                     "type": "basic",
                     "from": <%= from("comma") %>,
-                    "to": <%= to([["tab", "right_gui"]]) %>,
+                    "to": <%= to([["tab", "right_command"]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "A_現在ウィンドウ複製",
                     "type": "basic",
                     "from": <%= from("a") %>,
-                    "to": <%= to([["s", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["s", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %>]
                 },
                 {
                     "description": "E_2ページ",
                     "type": "basic",
                     "from": <%= from("e") %>,
-                    "to": <%= to([["3", ["right_gui"]]]) %>,
+                    "to": <%= to([["3", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "W_単一ページ",
                     "type": "basic",
                     "from": <%= from("w") %>,
-                    "to": <%= to([["2", ["right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
@@ -324,42 +324,42 @@
                     "description": "LeftCommand + OpenBracket[オープン角括弧]_ページ数指定",
                     "type": "basic",
                     "from": <%= from("open_bracket",["left_control"],["caps_lock"]) %>,
-                    "to": <%= to([["7", ["right_gui","right_option"]]]) %>,
+                    "to": <%= to([["7", ["right_command","right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "LeftCommand + O_2ページ",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"]) %>,
-                    "to": <%= to([["3", ["right_gui"]]]) %>,
+                    "to": <%= to([["3", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "RightCommand + L_サイズを調整",
                     "type": "basic",
-                    "from": <%= from("l", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["0", ["right_gui", "right_option"]]]) %>,
+                    "from": <%= from("l", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["0", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "LeftCommand + W_単一ページ",
                     "type": "basic",
                     "from": <%= from("w", ["left_control"]) %>,
-                    "to": <%= to([["2", ["right_gui"]]]) %>,
+                    "to": <%= to([["2", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "RightCommand + Slash_Expansion",
                     "type": "basic",
-                    "from": <%= from("slash", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift","right_gui"]]]) %>,
+                    "from": <%= from("slash", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "RightOption + B_Shrink",
                     "type": "basic",
                     "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["hyphen", ["left_shift","right_gui"]]]) %>,
+                    "to": <%= to([["hyphen", ["left_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
@@ -373,27 +373,27 @@
                     "description": "LeftOption + T_サイドバーを非表示",
                     "type": "basic",
                     "from": <%= from("t", ["left_option"]) %>,
-                    "to": <%= to([["1", ["left_control", "right_gui"]]]) %>,
+                    "to": <%= to([["1", ["left_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "LeftOption + オウ_上書き保存",
                     "type": "basic",
                     "from": <%= from("o", ["left_option"]) %>,
-                    "to": <%= to([["s", ["left_gui"]]]) %>,
+                    "to": <%= to([["s", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "RightCommand + B_BookMark",
                     "type": "basic",
-                    "from": <%= from("b", ["right_gui"]) %>,
-                    "to": <%= to([["d", ["right_gui"]]]) %>,
+                    "from": <%= from("b", ["right_command"]) %>,
+                    "to": <%= to([["d", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 },
                 {
                     "description": "RightCommand + Space_delete",
                     "type": "basic",
-                    "from": <%= from("spacebar", ["right_gui"], ["any"]) %>,
+                    "from": <%= from("spacebar", ["right_command"], ["any"]) %>,
                     "to": <%= to([["delete_or_backspace"]]) %>,
                     "conditions": [ <%= frontmost_application_if("preview") %> ]
                 }

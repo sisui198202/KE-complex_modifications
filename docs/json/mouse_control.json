@@ -49,7 +49,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ]
             }
           },
@@ -99,7 +99,7 @@
             {
               "pointing_button": "button1",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ]

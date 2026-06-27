@@ -22,7 +22,7 @@
             {
               "key_code": "backslash",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -54,7 +54,7 @@
               "key_code": "n",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -85,7 +85,7 @@
             {
               "key_code": "open_bracket",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],

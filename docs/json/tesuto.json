@@ -10,7 +10,7 @@
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -20,11 +20,11 @@
           "to": [
             {
               "key_code": "l",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             },
             {
               "key_code": "c",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             }
           ],
           "conditions": [

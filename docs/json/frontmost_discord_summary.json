@@ -207,7 +207,7 @@
               "key_code": "equal_sign",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -236,7 +236,7 @@
               "key_code": "hyphen",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -264,7 +264,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -318,7 +318,7 @@
               "key_code": "f",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -400,7 +400,7 @@
             {
               "key_code": "z",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],

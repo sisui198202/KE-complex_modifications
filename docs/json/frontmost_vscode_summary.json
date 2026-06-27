@@ -175,7 +175,7 @@
             {
               "key_code": "up_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -203,7 +203,7 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -261,7 +261,7 @@
               "key_code": "o",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -347,7 +347,7 @@
             {
               "key_code": "left_arrow",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -404,7 +404,7 @@
               "key_code": "m",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -433,7 +433,7 @@
               "key_code": "k",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -462,7 +462,7 @@
               "key_code": "l",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -520,7 +520,7 @@
               "key_code": "2",
               "modifiers": [
                 "right_option",
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             },
@@ -556,7 +556,7 @@
               "key_code": "3",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -585,7 +585,7 @@
               "key_code": "4",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -670,7 +670,7 @@
             {
               "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -699,7 +699,7 @@
               "key_code": "p",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -785,7 +785,7 @@
               "key_code": "b",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -813,7 +813,7 @@
             {
               "key_code": "i",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }
@@ -900,7 +900,7 @@
             {
               "key_code": "9",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "left_shift"
               ]
             }
@@ -964,7 +964,7 @@
             {
               "key_code": "quote",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "right_shift"
               ]
             }
@@ -1028,7 +1028,7 @@
               "key_code": "x",
               "modifiers": [
                 "left_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1060,7 +1060,7 @@
               "key_code": "down_arrow",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1092,7 +1092,7 @@
               "key_code": "o",
               "modifiers": [
                 "left_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1219,7 +1219,7 @@
             {
               "key_code": "left_arrow",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -1270,7 +1270,7 @@
             "key_code": "quote",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -1281,7 +1281,7 @@
             {
               "key_code": "t",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_shift"
               ]
             }
@@ -1302,7 +1302,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -1346,7 +1346,7 @@
               "key_code": "4",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1410,7 +1410,7 @@
               "key_code": "f5",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1442,7 +1442,7 @@
               "key_code": "k",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1474,7 +1474,7 @@
               "key_code": "l",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1506,7 +1506,7 @@
               "key_code": "m",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1537,7 +1537,7 @@
             {
               "key_code": "up_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1568,7 +1568,7 @@
             {
               "key_code": "down_arrow",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1619,7 +1619,7 @@
             "key_code": "slash",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -1630,7 +1630,7 @@
             {
               "key_code": "3",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }
@@ -1662,7 +1662,7 @@
             {
               "key_code": "f5",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1714,7 +1714,7 @@
             "key_code": "comma",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -1855,7 +1855,7 @@
               "modifiers": [
                 "right_option",
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1886,7 +1886,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_shift"
               ]
             }
@@ -1918,7 +1918,7 @@
             {
               "key_code": "7",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }
@@ -1951,7 +1951,7 @@
               "key_code": "n",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -1983,7 +1983,7 @@
               "key_code": "2",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2015,7 +2015,7 @@
               "key_code": "1",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2079,7 +2079,7 @@
               "key_code": "f4",
               "modifiers": [
                 "left_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2206,14 +2206,14 @@
             {
               "key_code": "slash",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             },
             {
               "key_code": "quote",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "right_shift"
               ]
             }
@@ -2252,7 +2252,7 @@
             {
               "key_code": "i",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }
@@ -2284,7 +2284,7 @@
             {
               "key_code": "6",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "left_shift"
               ]
             },
@@ -2322,7 +2322,7 @@
             {
               "key_code": "7",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "left_shift"
               ]
             }
@@ -2354,7 +2354,7 @@
             {
               "key_code": "9",
               "modifiers": [
-                "left_gui",
+                "left_command",
                 "left_shift"
               ]
             }
@@ -2387,7 +2387,7 @@
               "key_code": "3",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2419,7 +2419,7 @@
               "key_code": "4",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2451,7 +2451,7 @@
               "key_code": "5",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2482,7 +2482,7 @@
             {
               "key_code": "return_or_enter",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2513,7 +2513,7 @@
             {
               "key_code": "return_or_enter",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "left_shift"
               ]
             }
@@ -2534,7 +2534,7 @@
             "key_code": "o",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -2545,7 +2545,7 @@
             {
               "key_code": "0",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }
@@ -2566,7 +2566,7 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "any"
@@ -2577,7 +2577,7 @@
             {
               "key_code": "i",
               "modifiers": [
-                "right_gui",
+                "right_command",
                 "right_option"
               ]
             }
@@ -2630,7 +2630,7 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -2642,7 +2642,7 @@
               "key_code": "p",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2706,7 +2706,7 @@
               "key_code": "b",
               "modifiers": [
                 "right_option",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -2758,7 +2758,7 @@
             "key_code": "q",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -2802,7 +2802,7 @@
               "key_code": "2",
               "modifiers": [
                 "right_shift",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -3095,7 +3095,7 @@
             "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -3107,7 +3107,7 @@
               "key_code": "f",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -3298,7 +3298,7 @@
             {
               "pointing_button": "button1",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],

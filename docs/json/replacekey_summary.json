@@ -50,7 +50,7 @@
             "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "any"
@@ -67,7 +67,7 @@
           "description": "LeftCommand + Rightoption_equal(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -109,7 +109,7 @@
             "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "any"
@@ -142,10 +142,10 @@
           "description": "RightCommand + Leftoption_backslash(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -221,7 +221,7 @@
           "description": "LeftAlt_Copy(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -230,7 +230,7 @@
           },
           "to": [
             {
-              "key_code": "left_alt"
+              "key_code": "left_option"
             }
           ],
           "to_if_alone": [
@@ -239,7 +239,7 @@
             },
             {
               "key_code": "c",
-              "modifiers": "right_gui"
+              "modifiers": "right_command"
             }
           ],
           "conditions": [
@@ -263,7 +263,7 @@
           "description": "RightOption_Paste(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "optional": [
                 "caps_lock"
@@ -272,13 +272,13 @@
           },
           "to": [
             {
-              "key_code": "right_alt"
+              "key_code": "right_option"
             }
           ],
           "to_if_alone": [
             {
               "key_code": "v",
-              "modifiers": "left_gui"
+              "modifiers": "left_command"
             }
           ],
           "conditions": [
@@ -303,10 +303,10 @@
           "description": "Leftoption + Rightoption_parsent(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "right_alt",
+            "key_code": "right_option",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -343,10 +343,10 @@
           "description": "Rightoption + Leftoption_anbasado(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "left_alt",
+            "key_code": "left_option",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ],
               "optional": [
                 "any"
@@ -445,7 +445,7 @@
           "description": "LeftCommand + RightCommand_plus(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "right_gui",
+            "key_code": "right_command",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -488,7 +488,7 @@
             "key_code": "left_control",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -525,10 +525,10 @@
           "description": "Leftoption + Rightcommand_hypen(Replacekey)",
           "type": "basic",
           "from": {
-            "key_code": "right_gui",
+            "key_code": "right_command",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -564,7 +564,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -603,7 +603,7 @@
             "key_code": "x",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -642,7 +642,7 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -681,7 +681,7 @@
             "key_code": "v",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -720,7 +720,7 @@
             "key_code": "s",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -743,7 +743,7 @@
             "key_code": "d",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -766,7 +766,7 @@
             "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -789,7 +789,7 @@
             "key_code": "w",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -812,7 +812,7 @@
             "key_code": "e",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -835,7 +835,7 @@
             "key_code": "r",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"

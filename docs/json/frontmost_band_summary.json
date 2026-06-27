@@ -181,7 +181,7 @@
             {
               "key_code": "f",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -209,7 +209,7 @@
             {
               "key_code": "w",
               "modifiers": [
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -238,7 +238,7 @@
               "key_code": "f",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],
@@ -266,7 +266,7 @@
             {
               "key_code": "z",
               "modifiers": [
-                "left_gui"
+                "left_command"
               ]
             }
           ],
@@ -699,7 +699,7 @@
             "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -711,7 +711,7 @@
               "key_code": "f",
               "modifiers": [
                 "right_control",
-                "right_gui"
+                "right_command"
               ]
             }
           ],

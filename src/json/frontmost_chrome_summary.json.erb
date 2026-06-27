@@ -7,50 +7,50 @@
                 {
                     "description": "RightCommand + i_検証-ページにフォーカス",
                     "type": "basic",
-                    "from": <%= from("i", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_gui","right_shift"]]]) %>,
+                    "from": <%= from("i", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_command","right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "LeftAlt + N_検証-ノードのスクリーンショットをキャプチャ",
                     "type": "basic",
                     "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", ["right_shift","right_gui"]]]) %>,
+                    "to": <%= to([["7", ["right_shift","right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "LeftOption + openbracket_検証-コマンドパレット",
                     "type": "basic",
                     "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["p", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "RightOption + T_検証-GlobalSearch",
                     "type": "basic",
                     "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_gui", "right_option"]]]) %>,
+                    "to": <%= to([["f", ["right_command", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "LeftCommand + openbracket_検証-プロジェクト内に存在するファイルを指定して開く",
                     "type": "basic",
                     "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_gui"]]]) %>,
+                    "to": <%= to([["p", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "RightOption + L_検証-前のパネル",
                     "type": "basic",
                     "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["open_bracket", ["left_gui"]]]) %>,
+                    "to": <%= to([["open_bracket", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
                     "description": "RightOption + Semicolon_検証-次のパネル",
                     "type": "basic",
                     "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["close_bracket", ["left_gui"]]]) %>,
+                    "to": <%= to([["close_bracket", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -71,14 +71,14 @@
                     "description": "LeftAlt + i_閲覧履歴データを削除",
                     "type": "basic",
                     "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
+                    "to": <%= to([["delete_or_backspace", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "A_新しいタブを開く",
                     "type": "basic",
                     "from": <%= from("a", ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
@@ -112,8 +112,8 @@
                 {
                     "description": "RightCommand + quote_閉じたタブを再度開く",
                     "type": "basic",
-                    "from": <%= from("quote", ["right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["right_gui", "right_shift"]]]) %>,
+                    "from": <%= from("quote", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
@@ -126,15 +126,15 @@
                 {
                     "description": "RightCommand + H_Reload",
                     "type": "basic",
-                    "from": <%= from("h", ["right_gui"], ["caps_lock"]) %>,
+                    "from": <%= from("h", ["right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "LeftShift + RightCommand + H_ハードキャッシュ",
                     "type": "basic",
-                    "from": <%= from("h", ["left_shift", "right_gui"], ["caps_lock"]) %>,
-                    "to": <%= to([["delete_or_backspace", ["right_gui", "right_shift"]]]) %>,
+                    "from": <%= from("h", ["left_shift", "right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["delete_or_backspace", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
@@ -155,14 +155,14 @@
                     "description": "LeftAlt + A_シークレットウィンドウを開く",
                     "type": "basic",
                     "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["n", ["right_shift", "right_gui"]]]) %>,
+                    "to": <%= to([["n", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
                     "description": "LeftAlt + B_BookmarkManage",
                     "type": "basic",
                     "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["b", ["right_option", "right_gui"]]]) %>,
+                    "to": <%= to([["b", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 }
             ]

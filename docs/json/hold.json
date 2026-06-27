@@ -262,7 +262,7 @@
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ]
             }
           },
@@ -283,7 +283,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
-                "left_alt"
+                "left_option"
               ],
               "optional": [
                 "caps_lock"
@@ -414,7 +414,7 @@
           "to": [
             {
               "key_code": "6",
-              "modifiers": "right_alt"
+              "modifiers": "right_option"
             }
           ]
         },
@@ -436,7 +436,7 @@
             {
               "key_code": "2",
               "modifiers": [
-                "right_alt"
+                "right_option"
               ]
             }
           ]
@@ -496,7 +496,7 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -536,7 +536,7 @@
             "key_code": "period",
             "modifiers": {
               "mandatory": [
-                "right_gui"
+                "right_command"
               ],
               "optional": [
                 "caps_lock"
@@ -609,7 +609,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.google\\.Chrome$"
+                "^com\\.google\\.Chrome$",
+                "^com.google.chrome.for.testing$"
               ]
             }
           ]
@@ -916,7 +917,7 @@
             "key_code": "z",
             "modifiers": {
               "mandatory": [
-                "right_alt"
+                "right_option"
               ]
             }
           },
