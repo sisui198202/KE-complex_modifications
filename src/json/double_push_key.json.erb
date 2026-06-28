@@ -1,6 +1,322 @@
 {
   "title": "DoublePushKey3",
   "rules": [
+{
+  "description": "LeftControl_single=return_or_enter, double=Ctrl+Option+Shift+9(alfred_Self_Service_物販管理ファイル検索), combo=Fn",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "fn",
+        "modifiers": {
+          "optional": ["caps_lock"]
+        }
+      },
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "fn_pressed",
+          "value": 1
+        }
+      ],
+      "to": [
+        {
+          "key_code": "9",
+          "modifiers": ["left_control", "left_option", "left_shift"]
+        },
+        {
+          "set_variable": {
+            "name": "fn_pressed",
+            "value": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "fn",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "set_variable": {
+            "name": "fn_pressed",
+            "value": 1
+          }
+        },
+        {
+          "key_code": "fn",
+          "lazy": true
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "return_or_enter"
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "fn_pressed",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "fn_pressed",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "parameters": {
+        "basic.to_if_alone_timeout_milliseconds": 250
+      }
+    }
+  ]
+},
+    {
+      "description": "Double-LeftShift_followlink",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$",
+                "^com.googlecode.iterm2$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "left_shift_pressed",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "left_shift_pressed",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "left_shift_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "left_shift_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+{
+  "description": "RightCommand_single=Japanese Kana, double=Command+C(片手コピ利用), combo=RightCommand",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "optional": ["caps_lock"]
+        }
+      },
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "right_command_pressed",
+          "value": 1
+        }
+      ],
+      "to": [
+        {
+          "key_code": "c",
+          "modifiers": ["left_command"]
+        },
+        {
+          "set_variable": {
+            "name": "right_command_pressed",
+            "value": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "optional": ["caps_lock"]
+        }
+      },
+      "to": [
+        {
+          "set_variable": {
+            "name": "right_command_pressed",
+            "value": 1
+          }
+        },
+        {
+          "key_code": "right_command",
+          "lazy": true
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "japanese_kana"
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "right_command_pressed",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "right_command_pressed",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "parameters": {
+        "basic.to_if_alone_timeout_milliseconds": 250
+      }
+    }
+  ]
+},
+{
+  "description": "fn_single=fn, double=Ctrl+C (VSCode/iTerm2)",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "right_control",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "c",
+          "modifiers": ["left_control"]
+        },
+        {
+          "set_variable": {
+            "name": "right_control_pressed",
+            "value": 0
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^com.microsoft.VSCode$",
+            "^com.googlecode.iterm2$"
+          ]
+        },
+        {
+          "type": "variable_if",
+          "name": "right_control_pressed",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "right_control",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "set_variable": {
+            "name": "right_control_pressed",
+            "value": 1
+          }
+        },
+        {
+          "key_code": "right_control"
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "right_control_pressed",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "right_control_pressed",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+},
     {
       "description": "Double-RightShift_Clipboard History",
       "manipulators": [
@@ -86,322 +402,6 @@
           }
         }
       ]
-    },
-    {
-      "description": "Double-LeftShift_followlink",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_shift",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "pointing_button": "button1",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.googlecode.iterm2$"
-              ]
-            },
-            {
-              "type": "variable_if",
-              "name": "left_shift_pressed",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_shift",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "left_shift_pressed",
-                "value": 1
-              }
-            },
-            {
-              "key_code": "left_shift"
-            }
-          ],
-          "to_delayed_action": {
-            "to_if_invoked": [
-              {
-                "set_variable": {
-                  "name": "left_shift_pressed",
-                  "value": 0
-                }
-              }
-            ],
-            "to_if_canceled": [
-              {
-                "set_variable": {
-                  "name": "left_shift_pressed",
-                  "value": 0
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-{
-  "description": "fn_single=fn, double=Ctrl+C (VSCode/iTerm2)",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "right_control",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "c",
-          "modifiers": ["left_control"]
-        },
-        {
-          "set_variable": {
-            "name": "right_control_pressed",
-            "value": 0
-          }
-        }
-      ],
-      "conditions": [
-        {
-          "type": "frontmost_application_if",
-          "bundle_identifiers": [
-            "^com.microsoft.VSCode$",
-            "^com.googlecode.iterm2$"
-          ]
-        },
-        {
-          "type": "variable_if",
-          "name": "right_control_pressed",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "right_control",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "right_control_pressed",
-            "value": 1
-          }
-        },
-        {
-          "key_code": "right_control"
-        }
-      ],
-      "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "right_control_pressed",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "right_control_pressed",
-              "value": 0
-            }
-          }
-        ]
-      }
     }
-  ]
-},
-{
-  "description": "RightCommand_single=Japanese Kana, double=Command+C(片手コピ利用), combo=RightCommand",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "right_command",
-        "modifiers": {
-          "optional": ["caps_lock"]
-        }
-      },
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "right_command_pressed",
-          "value": 1
-        }
-      ],
-      "to": [
-        {
-          "key_code": "c",
-          "modifiers": ["left_command"]
-        },
-        {
-          "set_variable": {
-            "name": "right_command_pressed",
-            "value": 0
-          }
-        }
-      ]
-    },
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "right_command",
-        "modifiers": {
-          "optional": ["caps_lock"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "right_command_pressed",
-            "value": 1
-          }
-        },
-        {
-          "key_code": "right_command",
-          "lazy": true
-        }
-      ],
-      "to_if_alone": [
-        {
-          "key_code": "japanese_kana"
-        }
-      ],
-      "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "right_command_pressed",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "right_command_pressed",
-              "value": 0
-            }
-          }
-        ]
-      },
-      "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 250
-      }
-    }
-  ]
-},
-{
-  "description": "LeftControl_single=return_or_enter, double=Ctrl+Option+Shift+9(alfred_Self_Service_物販管理ファイル検索), combo=Fn",
-  "manipulators": [
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "fn",
-        "modifiers": {
-          "optional": ["caps_lock"]
-        }
-      },
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "fn_pressed",
-          "value": 1
-        }
-      ],
-      "to": [
-        {
-          "key_code": "9",
-          "modifiers": ["left_control", "left_option", "left_shift"]
-        },
-        {
-          "set_variable": {
-            "name": "fn_pressed",
-            "value": 0
-          }
-        }
-      ]
-    },
-    {
-      "type": "basic",
-      "from": {
-        "key_code": "fn",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "fn_pressed",
-            "value": 1
-          }
-        },
-        {
-          "key_code": "fn",
-          "lazy": true
-        }
-      ],
-      "to_if_alone": [
-        {
-          "key_code": "return_or_enter"
-        }
-      ],
-      "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "fn_pressed",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "fn_pressed",
-              "value": 0
-            }
-          }
-        ]
-      },
-      "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 250
-      }
-    }
-  ]
-}
   ]
 }

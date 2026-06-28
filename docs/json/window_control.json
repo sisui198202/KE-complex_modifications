@@ -1,8 +1,8 @@
 {
-  "title": "WindowControlSummary98",
+  "title": "WindowControlSummary9",
   "rules": [
     {
-      "description": "WindowsControlSummary98",
+      "description": "WindowsControlSummary9",
       "manipulators": [
         {
           "description": "RightCommand + P_RightHalfWindowMove",
@@ -420,7 +420,7 @@
           ]
         },
         {
-          "description": "RightOption + G_SafariActiveWindow",
+          "description": "RightOption + G_ChromeActiveWindow",
           "type": "basic",
           "from": {
             "key_code": "g",

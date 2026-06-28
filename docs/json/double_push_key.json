@@ -2,53 +2,46 @@
   "title": "DoublePushKey3",
   "rules": [
     {
-      "description": "Double-RightShift_Clipboard History",
+      "description": "LeftControl_single=return_or_enter, double=Ctrl+Option+Shift+9(alfred_Self_Service_物販管理ファイル検索), combo=Fn",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_shift",
+            "key_code": "fn",
             "modifiers": {
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "fn_pressed",
+              "value": 1
+            }
+          ],
           "to": [
             {
               "key_code": "9",
               "modifiers": [
-                "right_option",
-                "right_command"
+                "left_control",
+                "left_option",
+                "left_shift"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "right_shift_pressed",
-              "value": 1
             },
             {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.vmware\\.fusion$",
-                "^com\\.vmware\\.horizon$",
-                "^com\\.vmware\\.view$",
-                "^com\\.parallels\\.desktop$",
-                "^com\\.parallels\\.vm$",
-                "^com\\.parallels\\.desktop\\.console$",
-                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                "^com\\.vmware\\.proxyApp\\.",
-                "^com\\.parallels\\.winapp\\."
-              ]
+              "set_variable": {
+                "name": "fn_pressed",
+                "value": 0
+              }
             }
           ]
         },
         {
           "type": "basic",
           "from": {
-            "key_code": "right_shift",
+            "key_code": "fn",
             "modifiers": {
               "optional": [
                 "any"
@@ -58,19 +51,25 @@
           "to": [
             {
               "set_variable": {
-                "name": "right_shift_pressed",
+                "name": "fn_pressed",
                 "value": 1
               }
             },
             {
-              "key_code": "right_shift"
+              "key_code": "fn",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "return_or_enter"
             }
           ],
           "to_delayed_action": {
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "right_shift_pressed",
+                  "name": "fn_pressed",
                   "value": 0
                 }
               }
@@ -78,11 +77,14 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "right_shift_pressed",
+                  "name": "fn_pressed",
                   "value": 0
                 }
               }
             ]
+          },
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 250
           }
         }
       ]
@@ -157,90 +159,6 @@
               {
                 "set_variable": {
                   "name": "left_shift_pressed",
-                  "value": 0
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "description": "fn_single=fn, double=Ctrl+C (VSCode/iTerm2)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "left_control"
-              ]
-            },
-            {
-              "set_variable": {
-                "name": "right_control_pressed",
-                "value": 0
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.microsoft.VSCode$",
-                "^com.googlecode.iterm2$"
-              ]
-            },
-            {
-              "type": "variable_if",
-              "name": "right_control_pressed",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "right_control_pressed",
-                "value": 1
-              }
-            },
-            {
-              "key_code": "right_control"
-            }
-          ],
-          "to_delayed_action": {
-            "to_if_invoked": [
-              {
-                "set_variable": {
-                  "name": "right_control_pressed",
-                  "value": 0
-                }
-              }
-            ],
-            "to_if_canceled": [
-              {
-                "set_variable": {
-                  "name": "right_control_pressed",
                   "value": 0
                 }
               }
@@ -336,46 +254,51 @@
       ]
     },
     {
-      "description": "LeftControl_single=return_or_enter, double=Ctrl+Option+Shift+9(alfred_Self_Service_物販管理ファイル検索), combo=Fn",
+      "description": "fn_single=fn, double=Ctrl+C (VSCode/iTerm2)",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "fn",
+            "key_code": "right_control",
             "modifiers": {
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "fn_pressed",
-              "value": 1
-            }
-          ],
           "to": [
             {
-              "key_code": "9",
+              "key_code": "c",
               "modifiers": [
-                "left_control",
-                "left_option",
-                "left_shift"
+                "left_control"
               ]
             },
             {
               "set_variable": {
-                "name": "fn_pressed",
+                "name": "right_control_pressed",
                 "value": 0
               }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.microsoft.VSCode$",
+                "^com.googlecode.iterm2$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "right_control_pressed",
+              "value": 1
             }
           ]
         },
         {
           "type": "basic",
           "from": {
-            "key_code": "fn",
+            "key_code": "right_control",
             "modifiers": {
               "optional": [
                 "any"
@@ -385,25 +308,19 @@
           "to": [
             {
               "set_variable": {
-                "name": "fn_pressed",
+                "name": "right_control_pressed",
                 "value": 1
               }
             },
             {
-              "key_code": "fn",
-              "lazy": true
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "return_or_enter"
+              "key_code": "right_control"
             }
           ],
           "to_delayed_action": {
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "fn_pressed",
+                  "name": "right_control_pressed",
                   "value": 0
                 }
               }
@@ -411,14 +328,97 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "fn_pressed",
+                  "name": "right_control_pressed",
                   "value": 0
                 }
               }
             ]
+          }
+        }
+      ]
+    },
+    {
+      "description": "Double-RightShift_Clipboard History",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
-          "parameters": {
-            "basic.to_if_alone_timeout_milliseconds": 250
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_option",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "right_shift_pressed",
+              "value": 1
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "right_shift_pressed",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "right_shift"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "right_shift_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "right_shift_pressed",
+                  "value": 0
+                }
+              }
+            ]
           }
         }
       ]
