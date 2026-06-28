@@ -13,76 +13,81 @@
 
 - [x] replacekey_summary.json.erb (1020行)
 - [x] functionkey_summary.json.erb (772行) ※重複F4削除、順序OK
-- [ ] double_push_key.json.erb (407行)
+- [x] double_push_key.json.erb (407行) ※順序OK
 
 ---
 
 ## Phase 2: 中型ファイル
 
-- [ ] shotcutkey.json.erb
-- [ ] shotcutkey_summary.json.erb
-- [ ] hold.json.erb
-- [ ] mouse_control.json.erb
-- [ ] functionkey.json.erb
-- [ ] replacekey.json.erb
+- [x] shotcutkey.json.erb ※ERBインクルードのみ
+- [x] shotcutkey_summary.json.erb ※並び替え完了
+- [x] hold.json.erb ※機能グループ化、現状維持
+- [x] mouse_control.json.erb ※順序OK
+- [x] functionkey.json.erb ※ERBインクルードのみ
+- [x] replacekey.json.erb ※全てleft_option、順序OK
 
 ---
 
 ## Phase 3: 小型ファイル（frontmost_*.json.erb）
 
-- [ ] frontmost_antigravity_summary.json.erb
-- [ ] frontmost_band.json.erb
-- [ ] frontmost_band_summary.json.erb
-- [ ] frontmost_browser_summary.json.erb
-- [ ] frontmost_calendar.json.erb
-- [ ] frontmost_calendar_summary.json.erb
-- [ ] frontmost_chrome.json.erb
-- [ ] frontmost_chrome_summary.json.erb
-- [ ] frontmost_cursor_summary.json.erb
-- [ ] frontmost_discord.json.erb
-- [ ] frontmost_discord_summary.json.erb
-- [ ] frontmost_eagle.json.erb
-- [ ] frontmost_eagle_summary.json.erb
-- [ ] frontmost_excel.json.erb
-- [ ] frontmost_excel_summary.json.erb
-- [ ] frontmost_finder.json.erb
-- [ ] frontmost_finder_summary.json.erb
-- [ ] frontmost_firefox.json.erb
-- [ ] frontmost_firefox_summary.json.erb
-- [ ] frontmost_intellij.json.erb
-- [ ] frontmost_intellij_summary.json.erb
-- [ ] frontmost_iterm.json.erb
-- [ ] frontmost_iterm_summary.json.erb
-- [ ] frontmost_kindle.json.erb
-- [ ] frontmost_kindle_summary.json.erb
-- [ ] frontmost_line.json.erb
-- [ ] frontmost_line_summary.json.erb
-- [ ] frontmost_mail.json.erb
-- [ ] frontmost_mail_summary.json.erb
-- [ ] frontmost_mi.json.erb
-- [ ] frontmost_mi_summary.json.erb
-- [ ] frontmost_notion.json.erb
-- [ ] frontmost_notion_summary.json.erb
-- [ ] frontmost_obsidian_summary.json.erb
-- [ ] frontmost_pathfinder.json.erb
-- [ ] frontmost_pathfinder_summary.json.erb
-- [ ] frontmost_photos.json.erb
-- [ ] frontmost_photos_summary.json.erb
-- [ ] frontmost_preview.json.erb
-- [ ] frontmost_preview_summary.json.erb
-- [ ] frontmost_safari_summary.json.erb
-- [ ] frontmost_virtualbox.json.erb
-- [ ] frontmost_virtualbox_summary.json.erb
-- [ ] frontmost_vivaldi.json.erb
-- [ ] frontmost_vivaldi_summary.json.erb
-- [ ] frontmost_vscode.json.erb
-- [ ] frontmost_vscode_summary.json.erb
+### 非summaryファイル（テンプレートのみ、15行）- スキップ
+
+- [x] frontmost_band.json.erb ※ERBインクルードのみ
+- [x] frontmost_calendar.json.erb ※ERBインクルードのみ
+- [x] frontmost_chrome.json.erb ※ERBインクルードのみ
+- [x] frontmost_discord.json.erb ※ERBインクルードのみ
+- [x] frontmost_eagle.json.erb ※ERBインクルードのみ
+- [x] frontmost_excel.json.erb ※ERBインクルードのみ
+- [x] frontmost_finder.json.erb ※ERBインクルードのみ
+- [x] frontmost_firefox.json.erb ※ERBインクルードのみ
+- [x] frontmost_intellij.json.erb ※ERBインクルードのみ
+- [x] frontmost_iterm.json.erb ※ERBインクルードのみ
+- [x] frontmost_kindle.json.erb ※ERBインクルードのみ
+- [x] frontmost_line.json.erb ※ERBインクルードのみ
+- [x] frontmost_mail.json.erb ※ERBインクルードのみ
+- [x] frontmost_mi.json.erb ※ERBインクルードのみ
+- [x] frontmost_notion.json.erb ※ERBインクルードのみ
+- [x] frontmost_pathfinder.json.erb ※ERBインクルードのみ
+- [x] frontmost_photos.json.erb ※ERBインクルードのみ
+- [x] frontmost_preview.json.erb ※ERBインクルードのみ
+- [x] frontmost_virtualbox.json.erb ※ERBインクルードのみ
+- [x] frontmost_vivaldi.json.erb ※ERBインクルードのみ
+- [x] frontmost_vscode.json.erb ※ERBインクルードのみ
+
+### summaryファイル - 確認済み/修正済み
+
+- [x] frontmost_antigravity_summary.json.erb ※順序OK
+- [x] frontmost_band_summary.json.erb ※順序OK
+- [x] frontmost_browser_summary.json.erb ※順序OK
+- [x] frontmost_calendar_summary.json.erb ※順序OK
+- [x] frontmost_chrome_summary.json.erb ※順序OK
+- [x] frontmost_cursor_summary.json.erb ※順序OK
+- [x] frontmost_discord_summary.json.erb ※順序OK
+- [x] frontmost_eagle_summary.json.erb ※順序OK
+- [x] frontmost_excel_summary.json.erb ※順序OK
+- [x] frontmost_finder_summary.json.erb ※並び替え完了
+- [x] frontmost_firefox_summary.json.erb ※並び替え完了
+- [x] frontmost_intellij_summary.json.erb ※並び替え完了
+- [x] frontmost_iterm_summary.json.erb ※順序OK
+- [x] frontmost_kindle_summary.json.erb ※順序OK
+- [x] frontmost_line_summary.json.erb ※順序OK
+- [x] frontmost_mail_summary.json.erb ※順序OK
+- [x] frontmost_mi_summary.json.erb ※順序OK
+- [x] frontmost_notion_summary.json.erb ※順序OK
+- [x] frontmost_obsidian_summary.json.erb ※順序OK
+- [x] frontmost_pathfinder_summary.json.erb ※順序OK
+- [x] frontmost_photos_summary.json.erb ※順序OK
+- [x] frontmost_preview_summary.json.erb ※left_option並び替え完了
+- [x] frontmost_safari_summary.json.erb ※順序OK
+- [x] frontmost_virtualbox_summary.json.erb ※left_control並び替え完了
+- [x] frontmost_vivaldi_summary.json.erb ※順序OK
+- [x] frontmost_vscode_summary.json.erb ※right_command,left_option並び替え完了
 
 ---
 
 ## Phase 4: 検証・完了
 
-- [ ] make ビルド確認
+- [x] make ビルド確認
 - [ ] コミット
 - [ ] push
 

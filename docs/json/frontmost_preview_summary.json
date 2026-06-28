@@ -5,6 +5,384 @@
       "description": "FrontmostIfPreview_summary99",
       "manipulators": [
         {
+          "description": "0ゼロ_マークアップツールバーを非表示",
+          "type": "basic",
+          "from": {
+            "key_code": "0"
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "right_shift",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "1(イチ)_RightTitleBarMouseClick(preview)",
+          "type": "basic",
+          "from": {
+            "key_code": "1"
+          },
+          "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                  "x": "950",
+                  "y": "35",
+                  "screen": 0
+                }
+              }
+            },
+            {
+              "pointing_button": "button1"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "A_現在ウィンドウ複製",
+          "type": "basic",
+          "from": {
+            "key_code": "a"
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "right_shift",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "B_ブックマーク追加",
+          "type": "basic",
+          "from": {
+            "key_code": "b"
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "BackSlash_PreviewRight-VscodeLeft(preview)",
+          "type": "basic",
+          "from": {
+            "key_code": "backslash"
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
+            },
+            {
+              "shell_command": "open -a 'Visual Studio Code.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "C_ChromeOpen(preview)",
+          "type": "basic",
+          "from": {
+            "key_code": "c"
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Google Chrome.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "CloseBracket_実際のサイズに合わせる",
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket"
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Comma_AppsSelect-Next",
+          "type": "basic",
+          "from": {
+            "key_code": "comma"
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": "right_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "D_SummaryDirectory",
+          "type": "basic",
+          "from": {
+            "key_code": "d"
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": [
+                "left_shift",
+                "right_option",
+                "right_command"
+              ]
+            },
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "E_2ページ",
+          "type": "basic",
+          "from": {
+            "key_code": "e"
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Equalsign_ウィンドウに合わせる",
+          "type": "basic",
+          "from": {
+            "key_code": "equal_sign"
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "F_メモ_[n, [right_command,right_control],[caps_lock]]は適用不可_検証済",
+          "type": "basic",
+          "from": {
+            "key_code": "f"
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_option",
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "G_WindowClose",
+          "type": "basic",
+          "from": {
+            "key_code": "g"
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "h_LeftArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "h"
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Hyphen_拡大鏡切替",
+          "type": "basic",
+          "from": {
+            "key_code": "hyphen"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "i_Shrink",
+          "type": "basic",
+          "from": {
+            "key_code": "i"
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "J_DownArrow",
           "type": "basic",
           "from": {
@@ -45,26 +423,6 @@
           ]
         },
         {
-          "description": "h_LeftArrow",
-          "type": "basic",
-          "from": {
-            "key_code": "h"
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "L_RigthArrow",
           "type": "basic",
           "from": {
@@ -73,75 +431,6 @@
           "to": [
             {
               "key_code": "right_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Slash_Previewウィンドウ内切替",
-          "type": "basic",
-          "from": {
-            "key_code": "slash"
-          },
-          "to": [
-            {
-              "key_code": "comma",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "B_ブックマーク追加",
-          "type": "basic",
-          "from": {
-            "key_code": "b"
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Z_保存",
-          "type": "basic",
-          "from": {
-            "key_code": "z"
-          },
-          "to": [
-            {
-              "key_code": "s",
-              "modifiers": [
-                "right_command"
-              ]
             }
           ],
           "conditions": [
@@ -200,151 +489,6 @@
           ]
         },
         {
-          "description": "P_RightHalfWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "p"
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Q_LeftHalfWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "q"
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "U_Undo",
-          "type": "basic",
-          "from": {
-            "key_code": "u"
-          },
-          "to": [
-            {
-              "key_code": "z",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "T_ブックマークリスト表示",
-          "type": "basic",
-          "from": {
-            "key_code": "t"
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_command",
-                "right_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Y_サイドバーを非表示",
-          "type": "basic",
-          "from": {
-            "key_code": "y"
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_command",
-                "right_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "D_SummaryDirectory",
-          "type": "basic",
-          "from": {
-            "key_code": "d"
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": [
-                "left_shift",
-                "right_option",
-                "right_command"
-              ]
-            },
-            {
-              "key_code": "right_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "オウ_Expansion",
           "type": "basic",
           "from": {
@@ -355,142 +499,6 @@
               "key_code": "equal_sign",
               "modifiers": [
                 "fn",
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "i_Shrink",
-          "type": "basic",
-          "from": {
-            "key_code": "i"
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "CloseBracket_実際のサイズに合わせる",
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket"
-          },
-          "to": [
-            {
-              "key_code": "9",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Equalsign_ウィンドウに合わせる",
-          "type": "basic",
-          "from": {
-            "key_code": "equal_sign"
-          },
-          "to": [
-            {
-              "key_code": "0",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "R_miアクテイブ",
-          "type": "basic",
-          "from": {
-            "key_code": "r"
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'mi'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Semicolon_星マーク新",
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon"
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "left_control",
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Quote_注釈",
-          "type": "basic",
-          "from": {
-            "key_code": "quote"
-          },
-          "to": [
-            {
-              "key_code": "i",
-              "modifiers": [
                 "right_command"
               ]
             }
@@ -529,14 +537,222 @@
           ]
         },
         {
-          "description": "G_WindowClose",
+          "description": "P_RightHalfWindowMove",
           "type": "basic",
           "from": {
-            "key_code": "g"
+            "key_code": "p"
           },
           "to": [
             {
-              "key_code": "w",
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Period_WindowMax",
+          "type": "basic",
+          "from": {
+            "key_code": "period"
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Q_LeftHalfWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "q"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Quote_注釈",
+          "type": "basic",
+          "from": {
+            "key_code": "quote"
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "R_miアクテイブ",
+          "type": "basic",
+          "from": {
+            "key_code": "r"
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'mi'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "S_サムネイル",
+          "type": "basic",
+          "from": {
+            "key_code": "s"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Semicolon_星マーク新",
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon"
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_control",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Slash_Previewウィンドウ内切替",
+          "type": "basic",
+          "from": {
+            "key_code": "slash"
+          },
+          "to": [
+            {
+              "key_code": "comma",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "T_ブックマークリスト表示",
+          "type": "basic",
+          "from": {
+            "key_code": "t"
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_command",
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "U_Undo",
+          "type": "basic",
+          "from": {
+            "key_code": "u"
+          },
+          "to": [
+            {
+              "key_code": "z",
               "modifiers": [
                 "right_command"
               ]
@@ -576,40 +792,15 @@
           ]
         },
         {
-          "description": "F_メモ_[n, [right_command,right_control],[caps_lock]]は適用不可_検証済",
+          "description": "W_単一ページ",
           "type": "basic",
           "from": {
-            "key_code": "f"
-          },
-          "to": [
-            {
-              "key_code": "9",
-              "modifiers": [
-                "right_option",
-                "right_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "S_サムネイル",
-          "type": "basic",
-          "from": {
-            "key_code": "s"
+            "key_code": "w"
           },
           "to": [
             {
               "key_code": "2",
               "modifiers": [
-                "right_option",
                 "right_command"
               ]
             }
@@ -648,17 +839,17 @@
           ]
         },
         {
-          "description": "Oオー_マークアップツールバーを非表示",
+          "description": "Y_サイドバーを非表示",
           "type": "basic",
           "from": {
-            "key_code": "0"
+            "key_code": "y"
           },
           "to": [
             {
-              "key_code": "a",
+              "key_code": "1",
               "modifiers": [
-                "right_shift",
-                "right_command"
+                "right_command",
+                "right_control"
               ]
             }
           ],
@@ -672,85 +863,15 @@
           ]
         },
         {
-          "description": "Hyphen_拡大鏡切替",
+          "description": "Z_保存",
           "type": "basic",
           "from": {
-            "key_code": "hyphen"
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_option",
-                "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Period_WindowMax",
-          "type": "basic",
-          "from": {
-            "key_code": "period"
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_control",
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Comma_AppsSelect-Next",
-          "type": "basic",
-          "from": {
-            "key_code": "comma"
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": "right_command"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "A_現在ウィンドウ複製",
-          "type": "basic",
-          "from": {
-            "key_code": "a"
+            "key_code": "z"
           },
           "to": [
             {
               "key_code": "s",
               "modifiers": [
-                "right_shift",
                 "right_command"
               ]
             }
@@ -765,10 +886,15 @@
           ]
         },
         {
-          "description": "E_2ページ",
+          "description": "LeftCommand + O_2ページ",
           "type": "basic",
           "from": {
-            "key_code": "e"
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
           },
           "to": [
             {
@@ -776,104 +902,6 @@
               "modifiers": [
                 "right_command"
               ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "W_単一ページ",
-          "type": "basic",
-          "from": {
-            "key_code": "w"
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "1(イチ)_RightTitleBarMouseClick(preview)",
-          "type": "basic",
-          "from": {
-            "key_code": "1"
-          },
-          "to": [
-            {
-              "software_function": {
-                "set_mouse_cursor_position": {
-                  "x": "950",
-                  "y": "35",
-                  "screen": 0
-                }
-              }
-            },
-            {
-              "pointing_button": "button1"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "C_ChromeOpen(preview)",
-          "type": "basic",
-          "from": {
-            "key_code": "c"
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Google Chrome.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "BackSlash_PreviewRight-VscodeLeft(preview)",
-          "type": "basic",
-          "from": {
-            "key_code": "backslash"
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_option"
-              ]
-            },
-            {
-              "shell_command": "open -a 'Visual Studio Code.app'"
             }
           ],
           "conditions": [
@@ -918,10 +946,10 @@
           ]
         },
         {
-          "description": "LeftCommand + O_2ページ",
+          "description": "LeftCommand + W_単一ページ",
           "type": "basic",
           "from": {
-            "key_code": "o",
+            "key_code": "w",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -930,7 +958,35 @@
           },
           "to": [
             {
-              "key_code": "3",
+              "key_code": "2",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + B_BookMark",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
               "modifiers": [
                 "right_command"
               ]
@@ -978,34 +1034,6 @@
           ]
         },
         {
-          "description": "LeftCommand + W_単一ページ",
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "RightCommand + Slash_Expansion",
           "type": "basic",
           "from": {
@@ -1038,25 +1066,49 @@
           ]
         },
         {
-          "description": "RightOption + B_Shrink",
+          "description": "RightCommand + Space_delete",
           "type": "basic",
           "from": {
-            "key_code": "b",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "right_command"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
           "to": [
             {
-              "key_code": "hyphen",
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.Preview$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + オウ_上書き保存",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s",
               "modifiers": [
-                "left_shift",
-                "right_command"
+                "left_command"
               ]
             }
           ],
@@ -1128,78 +1180,26 @@
           ]
         },
         {
-          "description": "LeftOption + オウ_上書き保存",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "s",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + B_BookMark",
+          "description": "RightOption + B_Shrink",
           "type": "basic",
           "from": {
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "right_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.apple\\.Preview$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + Space_delete",
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "right_command"
+                "right_option"
               ],
               "optional": [
-                "any"
+                "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "delete_or_backspace"
+              "key_code": "hyphen",
+              "modifiers": [
+                "left_shift",
+                "right_command"
+              ]
             }
           ],
           "conditions": [
