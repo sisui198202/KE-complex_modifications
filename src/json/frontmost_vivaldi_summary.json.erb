@@ -33,6 +33,13 @@
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 },
                 {
+                    "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
+                    "type": "basic",
+                    "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["p", ["right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+                },
+                {
                     "description": "LeftCommand + T_ドックの位置変更",
                     "type": "basic",
                     "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
@@ -44,13 +51,6 @@
                     "type": "basic",
                     "from": <%= from("u", ["left_control"]) %>,
                     "to": <%= to([["delete_or_backspace"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-                },
-                {
-                    "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
-                    "type": "basic",
-                    "from": <%= from("open_bracket", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["p", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 },
                 {
@@ -89,6 +89,13 @@
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 },
                 {
+                    "description": "x:LeftOption + F_Title & URL Picker",
+                    "type": "basic",
+                    "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["9",["right_shift", "right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+                },
+                {
                     "description": "LeftOption + N_ノードのスクリーンショットをキャプチャ",
                     "type": "basic",
                     "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
@@ -96,17 +103,17 @@
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 },
                 {
-                    "description": "LeftOption + U_検索バーアクティヴ",
-                    "type": "basic",
-                    "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["l","right_command"], ["c", "right_command"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-                },
-                {
                     "description": "LeftOption + openbracket_コマンドパレット",
                     "type": "basic",
                     "from": <%= from("open_bracket", ["left_option"], ["caps_lock"]) %>,
                     "to": <%= to([["p", ["right_command", "right_shift"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
+                },
+                {
+                    "description": "LeftOption + U_検索バーアクティヴ",
+                    "type": "basic",
+                    "from": <%= from("u", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["l","right_command"], ["c", "right_command"]]) %>,
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 },
                 {
@@ -121,13 +128,6 @@
                     "type": "basic",
                     "from": <%= from("h", ["left_shift", "right_command"], ["caps_lock"]) %>,
                     "to": <%= to([["delete_or_backspace", ["right_command", "right_shift"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-                },
-                {
-                    "description": "x:LeftOption + F_Title & URL Picker",
-                    "type": "basic",
-                    "from": <%= from("f", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["9",["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 }
             ]

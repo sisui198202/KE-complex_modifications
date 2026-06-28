@@ -43,3 +43,29 @@ Then open `Karabiner-Elements Preferences > Complex Modifications > Rules > Add 
 2. Make a link `karabiner://karabiner/assets/complex_modifications/import?url=<JSON_URL>`.
 3. Open the link from web browser.
 
+----------
+
+# プロジェクト構造
+
+## ディレクトリ構成
+
+```
+docs/
+├── archive/        # 保留中のコード断片
+├── debug/          # デバッグ・トラブルシュート記録
+├── reference/      # 開発参照情報・設定チェックリスト
+├── json/           # 生成された JSON ファイル
+└── ...
+
+scripts/            # ビルド・変換スクリプト
+src/                # ソースファイル（erb テンプレート）
+```
+
+## 主要ドキュメント
+
+| ファイル | 内容 |
+|---------|------|
+| `DEVELOPMENT.md` | ビルド手順・運用メモ |
+| `docs/reference/development-notes.md` | 開発参照情報 |
+| `docs/debug/` | デバッグ記録 |
+

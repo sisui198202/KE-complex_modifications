@@ -5,6 +5,13 @@
             "description": "FrontmostIfIterm_summary4",
             "manipulators": [
                 {
+                    "description": "LeftCommand + B_PageDown",
+                    "type": "basic",
+                    "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["right_command", "left_shift"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+                },
+                {
                     "description": "LeftCommand + O(オー)_SplitVertically",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"]) %>,
@@ -12,10 +19,17 @@
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
-                    "description": "LeftOption + O(オー)_Horizontally",
+                    "description": "LeftCommand + Quote_FromSplitwindowToSingleWindowToggleOnOff",
                     "type": "basic",
-                    "from": <%= from("o", ["left_option"]) %>,
-                    "to": <%= to([["d", ["right_command", "left_shift"]]]) %>,
+                    "from": <%= from("quote", ["left_control"]) %>,
+                    "to": <%= to([["return_or_enter", ["right_command", "left_shift"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("iterm2") %> ]
+                },
+                {
+                    "description": "LeftCommand + Slash_PageUp",
+                    "type": "basic",
+                    "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["4", ["right_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
@@ -33,24 +47,10 @@
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
-                    "description": "LeftCommand + Quote_FromSplitwindowToSingleWindowToggleOnOff",
-                    "type": "basic",
-                    "from": <%= from("quote", ["left_control"]) %>,
-                    "to": <%= to([["return_or_enter", ["right_command", "left_shift"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-                },
-                {
                     "description": "LeftOption + C_ClearBuffer",
                     "type": "basic",
                     "from": <%= from("c", ["left_option"]) %>,
                     "to": <%= to([["k", ["right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("iterm2") %> ]
-                },
-                {
-                    "description": "LeftOption + U_LineDown",
-                    "type": "basic",
-                    "from": <%= from("u", ["left_option"]) %>,
-                    "to": <%= to([["2", ["right_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
@@ -61,17 +61,17 @@
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
-                    "description": "LeftCommand + B_PageDown",
+                    "description": "LeftOption + O(オー)_Horizontally",
                     "type": "basic",
-                    "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_command", "left_shift"]]]) %>,
+                    "from": <%= from("o", ["left_option"]) %>,
+                    "to": <%= to([["d", ["right_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {
-                    "description": "LeftCommand + Slash_PageUp",
+                    "description": "LeftOption + U_LineDown",
                     "type": "basic",
-                    "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["right_command", "left_shift"]]]) %>,
+                    "from": <%= from("u", ["left_option"]) %>,
+                    "to": <%= to([["2", ["right_command", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("iterm2") %> ]
                 },
                 {

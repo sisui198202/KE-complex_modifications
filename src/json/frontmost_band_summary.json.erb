@@ -5,6 +5,34 @@
             "description": "FrontmostIfBand_summary99",
             "manipulators": [
                 {
+                    "description": "D_WindowTopHalf",
+                    "type": "basic",
+                    "from": <%= from("d", ["caps_lock"]) %>,
+                    "to": <%= to([["4", ["left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "F_WindowBottomHalf",
+                    "type": "basic",
+                    "from": <%= from("f", ["caps_lock"]) %>,
+                    "to": <%= to([["5", ["left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "G_TabClose",
+                    "type": "basic",
+                    "from": <%= from("g", ["caps_lock"]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "i_PageDown",
+                    "type": "basic",
+                    "from": <%= from("i", ["caps_lock"]) %>,
+                    "to": <%= to([["down_arrow", ["fn"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
                     "description": "J_DownArrow",
                     "type": "basic",
                     "from": <%= from("j",["caps_lock"]) %>,
@@ -40,24 +68,10 @@
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "i_PageDown",
+                    "description": "P_RightHalfWindowMove",
                     "type": "basic",
-                    "from": <%= from("i", ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["fn"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "T_単語検索",
-                    "type": "basic",
-                    "from": <%= from("t", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "G_TabClose",
-                    "type": "basic",
-                    "from": <%= from("g", ["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_command"]]]) %>,
+                    "from": <%= from("p", ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
@@ -68,10 +82,10 @@
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "U_Undo",
+                    "description": "Q_LeftHalfWindowMove",
                     "type": "basic",
-                    "from": <%= from("u", ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_command"]]]) %>,
+                    "from": <%= from("q", ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
@@ -82,94 +96,17 @@
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "P_RightHalfWindowMove",
+                    "description": "T_単語検索",
                     "type": "basic",
-                    "from": <%= from("p", ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_option"]]]) %>,
+                    "from": <%= from("t", ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "Q_LeftHalfWindowMove",
+                    "description": "U_Undo",
                     "type": "basic",
-                    "from": <%= from("q", ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "D_WindowTopHalf",
-                    "type": "basic",
-                    "from": <%= from("d", ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "F_WindowBottomHalf",
-                    "type": "basic",
-                    "from": <%= from("f", ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + U_WindowLeftUp",
-                    "type": "basic",
-                    "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", "right_option"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + J_WindowLeftDown",
-                    "type": "basic",
-                    "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["8", "right_option"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + I_WindowRightUp",
-                    "type": "basic",
-                    "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["7", "right_option"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + K_WindowRightDown",
-                    "type": "basic",
-                    "from": <%= from("k", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["9", "right_option"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + G_WindowLeftOneThird",
-                    "type": "basic",
-                    "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + Quote_WindowRightOneThird",
-                    "type": "basic",
-                    "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["g", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + Y_WindowLeftTwo-thirds",
-                    "type": "basic",
-                    "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["e", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + O_WindowRightTwo-thirds",
-                    "type": "basic",
-                    "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("band") %> ]
-                },
-                {
-                    "description": "Fn + Comma_WindowCenter",
-                    "type": "basic",
-                    "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["c", ["right_control", "right_option"]]]) %>,
+                    "from": <%= from("u", ["caps_lock"]) %>,
+                    "to": <%= to([["z", ["left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
@@ -180,17 +117,45 @@
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "Fn + N_WindowUP",
+                    "description": "Fn + Comma_WindowCenter",
                     "type": "basic",
-                    "from": <%= from("n", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["4", ["left_option"]]]) %>,
+                    "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["c", ["right_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "Fn + M_WindowDown",
+                    "description": "Fn + G_WindowLeftOneThird",
                     "type": "basic",
-                    "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_option"]]]) %>,
+                    "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["d", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + H_LeftWindowMove",
+                    "type": "basic",
+                    "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + I_WindowRightUp",
+                    "type": "basic",
+                    "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["7", "right_option"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + J_WindowLeftDown",
+                    "type": "basic",
+                    "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["8", "right_option"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + K_WindowRightDown",
+                    "type": "basic",
+                    "from": <%= from("k", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["9", "right_option"]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
@@ -201,10 +166,45 @@
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 },
                 {
-                    "description": "Fn + H_LeftWindowMove",
+                    "description": "Fn + M_WindowDown",
                     "type": "basic",
-                    "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option"]]]) %>,
+                    "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["5", ["left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + N_WindowUP",
+                    "type": "basic",
+                    "from": <%= from("n", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["4", ["left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + O_WindowRightTwo-thirds",
+                    "type": "basic",
+                    "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + Quote_WindowRightOneThird",
+                    "type": "basic",
+                    "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["g", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + U_WindowLeftUp",
+                    "type": "basic",
+                    "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["6", "right_option"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("band") %> ]
+                },
+                {
+                    "description": "Fn + Y_WindowLeftTwo-thirds",
+                    "type": "basic",
+                    "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["e", ["right_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("band") %> ]
                 }
             ]

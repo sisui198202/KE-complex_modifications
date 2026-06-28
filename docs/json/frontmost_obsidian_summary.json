@@ -5,13 +5,13 @@
       "description": "FrontmostIfObsidian_summary94",
       "manipulators": [
         {
-          "description": "RightCommand + B_Execute Code:Run all Code Blocks in Current File",
+          "description": "LeftCommand + M_EndRowCursol",
           "type": "basic",
           "from": {
-            "key_code": "b",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
-                "right_command"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
@@ -20,11 +20,9 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "down_arrow",
               "modifiers": [
-                "left_shift",
-                "right_option",
-                "left_control"
+                "right_command"
               ]
             }
           ],
@@ -69,10 +67,10 @@
           ]
         },
         {
-          "description": "LeftCommand + M_EndRowCursol",
+          "description": "LeftCommand + Oオウ_右に分割",
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -84,9 +82,139 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "3",
               "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + T_左サイドバーを開閉",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + B_Execute Code:Run all Code Blocks in Current File",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
                 "right_command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "left_shift",
+                "right_option",
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + openbracket_コマンドパレットを開く",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "left_shift",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^md.obsidian$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + T_右サイドバーを開閉",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_shift",
+                "right_option"
               ]
             }
           ],
@@ -153,134 +281,6 @@
                 "left_shift",
                 "right_option",
                 "left_control"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^md.obsidian$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + T_左サイドバーを開閉",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "left_shift",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^md.obsidian$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + T_右サイドバーを開閉",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_shift",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^md.obsidian$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + Oオウ_右に分割",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_shift",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^md.obsidian$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + openbracket_コマンドパレットを開く",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "left_shift",
-                "right_option"
               ]
             }
           ],

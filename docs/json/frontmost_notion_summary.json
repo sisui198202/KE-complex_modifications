@@ -5,6 +5,37 @@
       "description": "FrontmostIfNotion_summary2",
       "manipulators": [
         {
+          "description": "LeftCommand + enter_戻る",
+          "type": "basic",
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^notion.id$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "LeftCommand + T_サイドバー表示-非表示",
           "type": "basic",
           "from": {
@@ -55,37 +86,6 @@
               "modifiers": [
                 "left_shift",
                 "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^notion.id$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + enter_戻る",
-          "type": "basic",
-          "from": {
-            "key_code": "return_or_enter",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_command"
               ]
             }
           ],

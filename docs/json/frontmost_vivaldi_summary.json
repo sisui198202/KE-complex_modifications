@@ -118,6 +118,37 @@
           ]
         },
         {
+          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
           "description": "LeftCommand + T_ドックの位置変更",
           "type": "basic",
           "from": {
@@ -163,37 +194,6 @@
           "to": [
             {
               "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + openbracket_プロジェクト内に存在するファイルを指定して開く",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_command"
-              ]
             }
           ],
           "conditions": [
@@ -361,6 +361,38 @@
           ]
         },
         {
+          "description": "x:LeftOption + F_Title & URL Picker",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "right_shift",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
           "description": "LeftOption + N_ノードのスクリーンショットをキャプチャ",
           "type": "basic",
           "from": {
@@ -380,6 +412,38 @@
               "modifiers": [
                 "right_shift",
                 "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.vivaldi.Vivaldi"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + openbracket_コマンドパレット",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "right_command",
+                "right_shift"
               ]
             }
           ],
@@ -414,38 +478,6 @@
             {
               "key_code": "c",
               "modifiers": "right_command"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + openbracket_コマンドパレット",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "right_command",
-                "right_shift"
-              ]
             }
           ],
           "conditions": [
@@ -510,38 +542,6 @@
               "modifiers": [
                 "right_command",
                 "right_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "x:LeftOption + F_Title & URL Picker",
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "9",
-              "modifiers": [
-                "right_shift",
-                "right_command"
               ]
             }
           ],

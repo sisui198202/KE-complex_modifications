@@ -26,41 +26,6 @@
                     "conditions": [ <%= frontmost_application_if("firefox") %> ]
                 },
                 {
-                    "description": "LeftShift + RightCommand + H_ハードキャッシュ",
-                    "type": "basic",
-                    "from": <%= from("h", ["left_shift", "right_command"], ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["right_shift", "right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
-                },
-                {
-                    "description": "LeftAlt + B_ブックマークを管理",
-                    "type": "basic",
-                    "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["o", ["right_shift", "right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
-                },
-                {
-                    "description": "RightCommand + H_Reload",
-                    "type": "basic",
-                    "from": <%= from("h", ["right_command"], ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
-                },
-                {
-                    "description": "LeftAlt + A_シークレットウィンドウを開く",
-                    "type": "basic",
-                    "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_shift", "right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
-                },
-                {
-                    "description": "RightAlt + A_新規ウインドウ",
-                    "type": "basic",
-                    "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["y", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
-                },
-                {
                     "description": "LeftCommand + U_戻る",
                     "type": "basic",
                     "from": <%= from("u", ["left_control"]) %>,
@@ -75,10 +40,45 @@
                     "conditions": [ <%= frontmost_application_if("firefox") %> ]
                 },
                 {
+                    "description": "RightCommand + H_Reload",
+                    "type": "basic",
+                    "from": <%= from("h", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["r", ["right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
+                },
+                {
                     "description": "RightCommand + L_ActiTabToggleOnoff",
                     "type": "basic",
                     "from": <%= from("l", ["right_command"]) %>,
                     "to": <%= to([["left_arrow",["right_command","right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
+                },
+                {
+                    "description": "LeftAlt + A_シークレットウィンドウを開く",
+                    "type": "basic",
+                    "from": <%= from("a", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_shift", "right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
+                },
+                {
+                    "description": "LeftAlt + B_ブックマークを管理",
+                    "type": "basic",
+                    "from": <%= from("b", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["o", ["right_shift", "right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
+                },
+                {
+                    "description": "RightAlt + A_新規ウインドウ",
+                    "type": "basic",
+                    "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["y", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
+                },
+                {
+                    "description": "LeftShift + RightCommand + H_ハードキャッシュ",
+                    "type": "basic",
+                    "from": <%= from("h", ["left_shift", "right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["r", ["right_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("firefox") %> ]
                 }
             ]

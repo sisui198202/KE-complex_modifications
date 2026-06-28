@@ -5,6 +5,118 @@
       "description": "FrontmostIfBand_summary99",
       "manipulators": [
         {
+          "description": "D_WindowTopHalf",
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "F_WindowBottomHalf",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "G_TabClose",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "i_PageDown",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "J_DownArrow",
           "type": "basic",
           "from": {
@@ -139,10 +251,10 @@
           ]
         },
         {
-          "description": "i_PageDown",
+          "description": "P_RightHalfWindowMove",
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -151,65 +263,9 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "3",
               "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "T_単語検索",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "G_TabClose",
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "w",
-              "modifiers": [
-                "right_command"
+                "right_option"
               ]
             }
           ],
@@ -252,10 +308,10 @@
           ]
         },
         {
-          "description": "U_Undo",
+          "description": "Q_LeftHalfWindowMove",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "q",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -264,9 +320,9 @@
           },
           "to": [
             {
-              "key_code": "z",
+              "key_code": "2",
               "modifiers": [
-                "left_command"
+                "right_option"
               ]
             }
           ],
@@ -305,10 +361,10 @@
           ]
         },
         {
-          "description": "P_RightHalfWindowMove",
+          "description": "T_単語検索",
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -317,8 +373,100 @@
           },
           "to": [
             {
-              "key_code": "3",
+              "key_code": "f",
               "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "U_Undo",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + Period_MaxWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + Comma_WindowCenter",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_control",
                 "right_option"
               ]
             }
@@ -333,12 +481,47 @@
           ]
         },
         {
-          "description": "Q_LeftHalfWindowMove",
+          "description": "Fn + G_WindowLeftOneThird",
           "type": "basic",
           "from": {
-            "key_code": "q",
+            "key_code": "g",
             "modifiers": {
               "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + H_LeftWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
                 "caps_lock"
               ]
             }
@@ -361,66 +544,10 @@
           ]
         },
         {
-          "description": "D_WindowTopHalf",
+          "description": "Fn + I_WindowRightUp",
           "type": "basic",
           "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "F_WindowBottomHalf",
-          "type": "basic",
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + U_WindowLeftUp",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "right_control"
@@ -432,7 +559,7 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "7",
               "modifiers": "right_option"
             }
           ],
@@ -475,35 +602,6 @@
           ]
         },
         {
-          "description": "Fn + I_WindowRightUp",
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": "right_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "Fn + K_WindowRightDown",
           "type": "basic",
           "from": {
@@ -533,10 +631,10 @@
           ]
         },
         {
-          "description": "Fn + G_WindowLeftOneThird",
+          "description": "Fn + L_RightHalfWindowMove",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "right_control"
@@ -548,7 +646,100 @@
           },
           "to": [
             {
-              "key_code": "d",
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + M_WindowDown",
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + N_WindowUP",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + O_WindowRightTwo-thirds",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
               "modifiers": [
                 "right_control",
                 "right_option"
@@ -597,6 +788,35 @@
           ]
         },
         {
+          "description": "Fn + U_WindowLeftUp",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": "right_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.campmobile.band$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "Fn + Y_WindowLeftTwo-thirds",
           "type": "basic",
           "from": {
@@ -615,226 +835,6 @@
               "key_code": "e",
               "modifiers": [
                 "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + O_WindowRightTwo-thirds",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + Comma_WindowCenter",
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + Period_MaxWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_control",
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + N_WindowUP",
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + M_WindowDown",
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + L_RightHalfWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com.campmobile.band$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + H_LeftWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
                 "right_option"
               ]
             }

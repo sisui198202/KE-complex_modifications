@@ -5,6 +5,20 @@
             "description": "Basic Navigation Commands11 (browser)",
             "manipulators": [
                 {
+                    "description": "H_LeftArrow",
+                    "type": "basic",
+                    "from": <%= from("h", ["caps_lock"]) %>,
+                    "to": <%= to([["left_arrow"]]) %>,
+                    "conditions": [<%= frontmost_application_if("browser") %>]
+                },
+                {
+                    "description": "i_PageDown",
+                    "type": "basic",
+                    "from": <%= from("i", ["caps_lock"]) %>,
+                    "to": <%= to([["down_arrow", ["fn"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
                     "description": "J_DownArrow",
                     "type": "basic",
                     "from": <%= from("j", ["caps_lock"]) %>,
@@ -26,27 +40,6 @@
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
-                    "description": "H_LeftArrow",
-                    "type": "basic",
-                    "from": <%= from("h", ["caps_lock"]) %>,
-                    "to": <%= to([["left_arrow"]]) %>,
-                    "conditions": [<%= frontmost_application_if("browser") %>]
-                },
-                {
-                    "description": "i_PageDown",
-                    "type": "basic",
-                    "from": <%= from("i", ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["fn"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "O(オー)_PageUp",
-                    "type": "basic",
-                    "from": <%= from("o", ["caps_lock"]) %>,
-                    "to": <%= to([["up_arrow", ["fn"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
                     "description": "M_最終行へ",
                     "type": "basic",
                     "from": <%= from("m",["caps_lock"]) %>,
@@ -59,6 +52,13 @@
                     "from": <%= from("n",["caps_lock"]) %>,
                     "to": <%= to([["left_arrow", ["fn"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "O(オー)_PageUp",
+                    "type": "basic",
+                    "from": <%= from("o", ["caps_lock"]) %>,
+                    "to": <%= to([["up_arrow", ["fn"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]
         },
@@ -66,45 +66,10 @@
             "description": "Window Control Commands(browser)",
             "manipulators": [
                 {
-                    "description": "Period_MaxWindow",
-                    "type": "basic",
-                    "from": <%= from("period", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
                     "description": "Comma_AppsSelect-Next",
                     "type": "basic",
                     "from": <%= from("comma", ["caps_lock"]) %>,
                     "to": <%= to([["tab", "right_command"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "Quote_PreviewActiveWindow",
-                    "type": "basic",
-                    "from": <%= from("quote", ["caps_lock"]) %>,
-                    "to": <%= set_shell_command(["open -a 'Preview.app'"]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "R_miアクテイブ",
-                    "type": "basic",
-                    "from": <%= from("r", ["caps_lock"]) %>,
-                    "to": <%= set_shell_command(["open -a 'mi'"]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "P_RightHalfWindowMove",
-                    "type": "basic",
-                    "from": <%= from("p", ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "Q_LeftHalfWindowMove",
-                    "type": "basic",
-                    "from": <%= from("q", ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
@@ -122,18 +87,60 @@
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
-                    "description": "Fn + J_WindowLeftDown",
+                    "description": "P_RightHalfWindowMove",
                     "type": "basic",
-                    "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["8", "right_option"]]) %>,
+                    "from": <%= from("p", ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
-                    "description": "Fn + U_WindowLeftUp",
+                    "description": "Period_MaxWindow",
                     "type": "basic",
-                    "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["6", "right_option"]]) %>,
-                    "conditions": [<%= frontmost_application_if("browser") %>]
+                    "from": <%= from("period", ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_control", "right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "Q_LeftHalfWindowMove",
+                    "type": "basic",
+                    "from": <%= from("q", ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "Quote_PreviewActiveWindow",
+                    "type": "basic",
+                    "from": <%= from("quote", ["caps_lock"]) %>,
+                    "to": <%= set_shell_command(["open -a 'Preview.app'"]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "R_miアクテイブ",
+                    "type": "basic",
+                    "from": <%= from("r", ["caps_lock"]) %>,
+                    "to": <%= set_shell_command(["open -a 'mi'"]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "Fn + Comma_WindowCenter",
+                    "type": "basic",
+                    "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["c", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "Fn + G_WindowLeftOneThird",
+                    "type": "basic",
+                    "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["d", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "Fn + H_LeftWindowMove",
+                    "type": "basic",
+                    "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["2", ["right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "Fn + I_WindowRightUp",
@@ -141,6 +148,13 @@
                     "from": <%= from("i", ["right_control"], ["caps_lock"]) %>,
                     "to": <%= to([["7", "right_option"]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
+                },
+                {
+                    "description": "Fn + J_WindowLeftDown",
+                    "type": "basic",
+                    "from": <%= from("j", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["8", "right_option"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
                     "description": "Fn + K_WindowRightDown",
@@ -157,38 +171,10 @@
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
-                    "description": "Fn + G_WindowLeftOneThird",
+                    "description": "Fn + M_WindowDown",
                     "type": "basic",
-                    "from": <%= from("g", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "Fn + Quote_WindowRightOneThird",
-                    "type": "basic",
-                    "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["g", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "Fn + Y_WindowLeftTwo-thirds",
-                    "type": "basic",
-                    "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["e", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "Fn + O_WindowRightTwo-thirds",
-                    "type": "basic",
-                    "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["t", ["right_control", "right_option"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("browser") %> ]
-                },
-                {
-                    "description": "Fn + Comma_WindowCenter",
-                    "type": "basic",
-                    "from": <%= from("comma", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["c", ["right_control", "right_option"]]]) %>,
+                    "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["5", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
@@ -199,17 +185,31 @@
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
-                    "description": "Fn + M_WindowDown",
+                    "description": "Fn + O_WindowRightTwo-thirds",
                     "type": "basic",
-                    "from": <%= from("m", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["5", ["left_option"]]]) %>,
+                    "from": <%= from("o", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["t", ["right_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
-                    "description": "Fn + H_LeftWindowMove",
+                    "description": "Fn + Quote_WindowRightOneThird",
                     "type": "basic",
-                    "from": <%= from("h", ["right_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["2", ["right_option"]]]) %>,
+                    "from": <%= from("quote", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["g", ["right_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "Fn + U_WindowLeftUp",
+                    "type": "basic",
+                    "from": <%= from("u", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["6", "right_option"]]) %>,
+                    "conditions": [<%= frontmost_application_if("browser") %>]
+                },
+                {
+                    "description": "Fn + Y_WindowLeftTwo-thirds",
+                    "type": "basic",
+                    "from": <%= from("y", ["right_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["e", ["right_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]
@@ -217,6 +217,13 @@
         {
             "description": "Tab Management Commands(browser)",
             "manipulators": [
+                {
+                    "description": "G_TabClose",
+                    "type": "basic",
+                    "from": <%= from("g", ["caps_lock"]) %>,
+                    "to": <%= to([["w", ["right_command"]]]) %>,
+                    "conditions": [<%= frontmost_application_if("browser") %>]
+                },
                 {
                     "description": "Semicolon_NextTab",
                     "type": "basic",
@@ -230,13 +237,6 @@
                     "from": <%= from("z", ["caps_lock"]) %>,
                     "to": <%= to([["tab", ["left_shift", "left_control"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
-                },
-                {
-                    "description": "G_TabClose",
-                    "type": "basic",
-                    "from": <%= from("g", ["caps_lock"]) %>,
-                    "to": <%= to([["w", ["right_command"]]]) %>,
-                    "conditions": [<%= frontmost_application_if("browser") %>]
                 }
             ]
         },
@@ -244,17 +244,17 @@
             "description": "Zoom Commands(browser)",
             "manipulators": [
                 {
-                    "description": "Slash_拡大",
-                    "type": "basic",
-                    "from": <%= from("slash", ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift", "right_command"]]]) %>,
-                    "conditions": [<%= frontmost_application_if("browser") %>]
-                },
-                {
                     "description": "B_縮小",
                     "type": "basic",
                     "from": <%= from("b", ["caps_lock"]) %>,
                     "to": <%= to([["hyphen", ["right_command"]]]) %>,
+                    "conditions": [<%= frontmost_application_if("browser") %>]
+                },
+                {
+                    "description": "Slash_拡大",
+                    "type": "basic",
+                    "from": <%= from("slash", ["caps_lock"]) %>,
+                    "to": <%= to([["equal_sign", ["left_shift", "right_command"]]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
@@ -277,18 +277,18 @@
             "description": "Custom browser Commands(browser)",
             "manipulators": [
                 {
-                    "description": "T_単語検索",
-                    "type": "basic",
-                    "from": <%= from("t", ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_command"]]]) %>,
-                    "conditions": [<%= frontmost_application_if("browser") %>]
-                },
-                {
                     "description": "S_検索バーアクティブ",
                     "type": "basic",
                     "from": <%= from("s", ["caps_lock"]) %>,
                     "to": <%= to([["l", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "T_単語検索",
+                    "type": "basic",
+                    "from": <%= from("t", ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
+                    "conditions": [<%= frontmost_application_if("browser") %>]
                 },
                 {
                     "description": "検証要-U_Undo",
@@ -336,10 +336,10 @@
             "description": "verification11(browser)",
             "manipulators": [
                 {
-                    "description": "RightAlt + S_Select an Element in the Page to inspect it",
+                    "description": "LeftCommand + T_検証-ドックの位置変更",
                     "type": "basic",
-                    "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["c", ["right_command", "right_shift"]]]) %>,
+                    "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["d", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
@@ -357,10 +357,10 @@
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 },
                 {
-                    "description": "LeftCommand + T_検証-ドックの位置変更",
+                    "description": "RightAlt + S_Select an Element in the Page to inspect it",
                     "type": "basic",
-                    "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["d", ["right_command", "right_shift"]]]) %>,
+                    "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["c", ["right_command", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]

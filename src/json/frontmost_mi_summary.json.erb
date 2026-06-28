@@ -5,17 +5,38 @@
             "description": "FrontmostIfMi_summary",
             "manipulators": [
                 {
-                    "description": "RightOption + A_現在のタブをウインドウ化",
+                    "description": "LeftCommand + B_PageDown",
                     "type": "basic",
-                    "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["3", ["left_shift", "right_command"]]]) %>,
+                    "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["b", ["left_control", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
-                    "description": "LeftOption+ N_NumberList",
+                    "description": "LeftCommand + M_EndRowCursol",
                     "type": "basic",
-                    "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["9", ["left_control", "left_shift"]]]) %>,
+                    "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["down_arrow", ["right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("mi") %> ]
+                },
+                {
+                    "description": "LeftCommand + N_HeadRowCursol",
+                    "type": "basic",
+                    "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["up_arrow", ["right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("mi") %> ]
+                },
+                {
+                    "description": "LeftCommand + /(スラッシュ)_PageUp",
+                    "type": "basic",
+                    "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["r", ["left_control", "right_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("mi") %> ]
+                },
+                {
+                    "description": "LeftCommand + Z_RowCursolNewline",
+                    "type": "basic",
+                    "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["e", ["left_control"]], ["return_or_enter"]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -30,20 +51,6 @@
                     "type": "basic",
                     "from": <%= from("k", ["right_command"]) %>,
                     "to": <%= to([["a", ["left_control"]], ["down_arrow", "left_shift"], ["c", ["right_command"]], ["delete_or_backspace"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("mi") %> ]
-                },
-                {
-                    "description": "LeftCommand + Z_RowCursolNewline",
-                    "type": "basic",
-                    "from": <%= from("z", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["e", ["left_control"]], ["return_or_enter"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("mi") %> ]
-                },
-                {
-                    "description": "LeftAlt + R_Replace",
-                    "type": "basic",
-                    "from": <%= from("r", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -68,17 +75,17 @@
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
-                    "description": "LeftCommand + B_PageDown",
+                    "description": "LeftOption+ N_NumberList",
                     "type": "basic",
-                    "from": <%= from("b", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["b", ["left_control", "right_option"]]]) %>,
+                    "from": <%= from("n", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["9", ["left_control", "left_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
-                    "description": "LeftCommand + /(スラッシュ)_PageUp",
+                    "description": "LeftAlt + R_Replace",
                     "type": "basic",
-                    "from": <%= from("slash", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["left_control", "right_option"]]]) %>,
+                    "from": <%= from("r", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["f", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -89,17 +96,10 @@
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
-                    "description": "LeftCommand + N_HeadRowCursol",
+                    "description": "RightOption + A_現在のタブをウインドウ化",
                     "type": "basic",
-                    "from": <%= from("n", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["up_arrow", ["right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("mi") %> ]
-                },
-                {
-                    "description": "LeftCommand + M_EndRowCursol",
-                    "type": "basic",
-                    "from": <%= from("m", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["down_arrow", ["right_command"]]]) %>,
+                    "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["3", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -107,6 +107,13 @@
                     "type": "basic",
                     "from": <%= from("9", ["left_shift"], ["caps_lock"]) %>,
                     "to": <%= to([["japanese_eisuu"], ["9", ["left_shift"]], ["0", ["left_shift"]], ["left_arrow"]]) %>,
+                    "conditions": [ <%= frontmost_application_if("mi") %> ]
+                },
+                {
+                    "description": "LeftShift + Comma_Dainari-Syonari",
+                    "type": "basic",
+                    "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
+                    "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {
@@ -121,13 +128,6 @@
                     "type": "basic",
                     "from": <%= from("quote", ["left_shift"], ["caps_lock"]) %>,
                     "to": <%= to([["japanese_eisuu"], ["quote", ["left_shift"]], ["quote", ["left_shift"]], ["left_arrow"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("mi") %> ]
-                },
-                {
-                    "description": "LeftShift + Comma_Dainari-Syonari",
-                    "type": "basic",
-                    "from": <%= from("comma", ["left_shift"], ["caps_lock"]) %>,
-                    "to": <%= to([["japanese_eisuu"], ["comma", ["left_shift"]], ["period", ["left_shift"]], ["left_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_if("mi") %> ]
                 },
                 {

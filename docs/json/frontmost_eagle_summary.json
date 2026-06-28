@@ -5,6 +5,141 @@
       "description": "FrontmostIfEagle_summary",
       "manipulators": [
         {
+          "description": ",[カンマ]_パスをコピー",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_command",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "CloseBracket_未分類",
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "G_Escape",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "h_LeftArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "i_Shrink",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "J_DownArrow",
           "type": "basic",
           "from": {
@@ -55,10 +190,10 @@
           ]
         },
         {
-          "description": "N_HeadRowCursol",
+          "description": "L_RigthArrow",
           "type": "basic",
           "from": {
-            "key_code": "n",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -67,10 +202,7 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "fn"
-              ]
+              "key_code": "right_arrow"
             }
           ],
           "conditions": [
@@ -111,10 +243,10 @@
           ]
         },
         {
-          "description": "G_Escape",
+          "description": "N_HeadRowCursol",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "n",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -123,7 +255,10 @@
           },
           "to": [
             {
-              "key_code": "escape"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
             }
           ],
           "conditions": [
@@ -136,22 +271,78 @@
           ]
         },
         {
-          "description": "LeftCommand + G_Escape",
+          "description": "O[オー]_Expansion",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
-                "left_control"
-              ],
-              "optional": [
                 "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "escape"
+              "key_code": "equal_sign",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "openbracket_すべて",
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "P_フォルダーを切り替える",
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "right_command"
+              ]
             }
           ],
           "conditions": [
@@ -220,373 +411,6 @@
           ]
         },
         {
-          "description": "LeftCommand + Semicolon_画像タグを追加",
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + openbracket_すべて",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "openbracket_すべて",
-          "type": "basic",
-          "from": {
-            "key_code": "open_bracket",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + ,[カンマ]_パスをコピー",
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_command",
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": ",[カンマ]_パスをコピー",
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_command",
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + O_Expansion",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + i_Shrink",
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftOption + .[ピリオド]_pathFinderから開く",
-          "type": "basic",
-          "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "O[オー]_Expansion",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "i_Shrink",
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "h_LeftArrow",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "L_RigthArrow",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + T_サイドバー切替",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1",
-              "modifiers": [
-                "right_command",
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "T_サイドバー切替",
           "type": "basic",
           "from": {
@@ -604,6 +428,122 @@
                 "right_command",
                 "left_option"
               ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "U_Undo",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Z_詳細情報切替",
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_command",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + CloseBracket_未分類",
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + G_Escape",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
             }
           ],
           "conditions": [
@@ -648,53 +588,20 @@
           ]
         },
         {
-          "description": "Z_詳細情報切替",
+          "description": "LeftCommand + openbracket_すべて",
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
-                "caps_lock"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "1",
               "modifiers": [
-                "right_command",
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftAlt + A_新しいフォルダー",
-          "type": "basic",
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "n",
-              "modifiers": [
-                "right_shift",
                 "right_command"
               ]
             }
@@ -740,38 +647,10 @@
           ]
         },
         {
-          "description": "P_フォルダーを切り替える",
+          "description": "LeftCommand + Semicolon_画像タグを追加",
           "type": "basic",
           "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "j",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + CloseBracket_未分類",
-          "type": "basic",
-          "from": {
-            "key_code": "close_bracket",
+            "key_code": "semicolon",
             "modifiers": {
               "mandatory": [
                 "left_control"
@@ -783,7 +662,160 @@
           },
           "to": [
             {
-              "key_code": "2",
+              "key_code": "t",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftCommand + T_サイドバー切替",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": [
+                "right_command",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightCommand + Period_MaxWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "right_command"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftAlt + A_新しいフォルダー",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "right_shift",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + ,[カンマ]_パスをコピー",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "right_command",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "LeftOption + i_Shrink",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
               "modifiers": [
                 "right_command"
               ]
@@ -799,47 +831,19 @@
           ]
         },
         {
-          "description": "CloseBracket_未分類",
+          "description": "LeftOption + O_Expansion",
           "type": "basic",
           "from": {
-            "key_code": "close_bracket",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
-                "caps_lock"
+                "left_option"
               ]
             }
           },
           "to": [
             {
-              "key_code": "2",
-              "modifiers": [
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "U_Undo",
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "z",
+              "key_code": "equal_sign",
               "modifiers": [
                 "right_command"
               ]
@@ -886,10 +890,38 @@
           ]
         },
         {
-          "description": "Fn + U_WindowLeftUp",
+          "description": "LeftOption + .[ピリオド]_pathFinderから開く",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + Comma_WindowCenter",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
             "modifiers": {
               "mandatory": [
                 "right_control"
@@ -901,7 +933,102 @@
           },
           "to": [
             {
-              "key_code": "6",
+              "key_code": "c",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + G_WindowLeftOneThird",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + H_LeftWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + I_WindowRightUp",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
               "modifiers": "right_option"
             }
           ],
@@ -944,35 +1071,6 @@
           ]
         },
         {
-          "description": "Fn + I_WindowRightUp",
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "7",
-              "modifiers": "right_option"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "Fn + K_WindowRightDown",
           "type": "basic",
           "from": {
@@ -1002,10 +1100,10 @@
           ]
         },
         {
-          "description": "Fn + G_WindowLeftOneThird",
+          "description": "Fn + L_RightHalfWindowMove",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "l",
             "modifiers": {
               "mandatory": [
                 "right_control"
@@ -1017,7 +1115,100 @@
           },
           "to": [
             {
-              "key_code": "d",
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + M_WindowDown",
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + N_WindowUP",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + O_WindowRightTwo-thirds",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
               "modifiers": [
                 "right_control",
                 "right_option"
@@ -1066,6 +1257,35 @@
           ]
         },
         {
+          "description": "Fn + U_WindowLeftUp",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": "right_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^tw.ogdesign.eagle$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "Fn + Y_WindowLeftTwo-thirds",
           "type": "basic",
           "from": {
@@ -1084,226 +1304,6 @@
               "key_code": "e",
               "modifiers": [
                 "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + O_WindowRightTwo-thirds",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + Comma_WindowCenter",
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "RightCommand + Period_MaxWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "period",
-            "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "right_control",
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + N_WindowUP",
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + M_WindowDown",
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + L_RightHalfWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^tw.ogdesign.eagle$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + H_LeftWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
                 "right_option"
               ]
             }

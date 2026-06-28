@@ -5,6 +5,71 @@
       "description": "Basic Navigation Commands11 (browser)",
       "manipulators": [
         {
+          "description": "H_LeftArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "i_PageDown",
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "J_DownArrow",
           "type": "basic",
           "from": {
@@ -98,105 +163,6 @@
           ]
         },
         {
-          "description": "H_LeftArrow",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "i_PageDown",
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "O(オー)_PageUp",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
           "description": "M_最終行へ",
           "type": "basic",
           "from": {
@@ -263,17 +229,12 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "Window Control Commands(browser)",
-      "manipulators": [
+        },
         {
-          "description": "Period_MaxWindow",
+          "description": "O(オー)_PageUp",
           "type": "basic",
           "from": {
-            "key_code": "period",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -282,10 +243,9 @@
           },
           "to": [
             {
-              "key_code": "f",
+              "key_code": "up_arrow",
               "modifiers": [
-                "right_control",
-                "right_command"
+                "fn"
               ]
             }
           ],
@@ -303,7 +263,12 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "description": "Window Control Commands(browser)",
+      "manipulators": [
         {
           "description": "Comma_AppsSelect-Next",
           "type": "basic",
@@ -319,136 +284,6 @@
             {
               "key_code": "tab",
               "modifiers": "right_command"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Quote_PreviewActiveWindow",
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Preview.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "R_miアクテイブ",
-          "type": "basic",
-          "from": {
-            "key_code": "r",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'mi'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "P_RightHalfWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "3",
-              "modifiers": [
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Q_LeftHalfWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "q",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_option"
-              ]
             }
           ],
           "conditions": [
@@ -535,23 +370,22 @@
           ]
         },
         {
-          "description": "Fn + J_WindowLeftDown",
+          "description": "P_RightHalfWindowMove",
           "type": "basic",
           "from": {
-            "key_code": "j",
+            "key_code": "p",
             "modifiers": {
               "mandatory": [
-                "right_control"
-              ],
-              "optional": [
                 "caps_lock"
               ]
             }
           },
           "to": [
             {
-              "key_code": "8",
-              "modifiers": "right_option"
+              "key_code": "3",
+              "modifiers": [
+                "right_option"
+              ]
             }
           ],
           "conditions": [
@@ -570,10 +404,141 @@
           ]
         },
         {
-          "description": "Fn + U_WindowLeftUp",
+          "description": "Period_MaxWindow",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "right_control",
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Q_LeftHalfWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Quote_PreviewActiveWindow",
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Preview.app'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "R_miアクテイブ",
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'mi'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + Comma_WindowCenter",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
             "modifiers": {
               "mandatory": [
                 "right_control"
@@ -585,8 +550,86 @@
           },
           "to": [
             {
-              "key_code": "6",
-              "modifiers": "right_option"
+              "key_code": "c",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + G_WindowLeftOneThird",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + H_LeftWindowMove",
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": [
+                "right_option"
+              ]
             }
           ],
           "conditions": [
@@ -621,6 +664,41 @@
           "to": [
             {
               "key_code": "7",
+              "modifiers": "right_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + J_WindowLeftDown",
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
               "modifiers": "right_option"
             }
           ],
@@ -712,10 +790,10 @@
           ]
         },
         {
-          "description": "Fn + G_WindowLeftOneThird",
+          "description": "Fn + M_WindowDown",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
                 "right_control"
@@ -727,7 +805,81 @@
           },
           "to": [
             {
-              "key_code": "d",
+              "key_code": "5",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + N_WindowUP",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Fn + O_WindowRightTwo-thirds",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
               "modifiers": [
                 "right_control",
                 "right_option"
@@ -788,6 +940,41 @@
           ]
         },
         {
+          "description": "Fn + U_WindowLeftUp",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": "right_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
           "description": "Fn + Y_WindowLeftTwo-thirds",
           "type": "basic",
           "from": {
@@ -824,199 +1011,46 @@
               ]
             }
           ]
-        },
-        {
-          "description": "Fn + O_WindowRightTwo-thirds",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "t",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + Comma_WindowCenter",
-          "type": "basic",
-          "from": {
-            "key_code": "comma",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + N_WindowUP",
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "4",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + M_WindowDown",
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "5",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "Fn + H_LeftWindowMove",
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "2",
-              "modifiers": [
-                "right_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
         }
       ]
     },
     {
       "description": "Tab Management Commands(browser)",
       "manipulators": [
+        {
+          "description": "G_TabClose",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
         {
           "description": "Semicolon_NextTab",
           "type": "basic",
@@ -1085,12 +1119,17 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "description": "Zoom Commands(browser)",
+      "manipulators": [
         {
-          "description": "G_TabClose",
+          "description": "B_縮小",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "b",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -1099,7 +1138,7 @@
           },
           "to": [
             {
-              "key_code": "w",
+              "key_code": "hyphen",
               "modifiers": [
                 "right_command"
               ]
@@ -1119,12 +1158,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "Zoom Commands(browser)",
-      "manipulators": [
+        },
         {
           "description": "Slash_拡大",
           "type": "basic",
@@ -1141,40 +1175,6 @@
               "key_code": "equal_sign",
               "modifiers": [
                 "left_shift",
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.mozilla\\.firefox$",
-                "^org\\.waterfoxproject\\.waterfox$",
-                "^com\\.google\\.Chrome$",
-                "^org.chromium.Chromium$",
-                "^com.vivaldi.Vivaldi$",
-                "^com.apple.Safari$",
-                "^com.google.chrome.for.testing$"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "B_縮小",
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
                 "right_command"
               ]
             }
@@ -1275,10 +1275,10 @@
       "description": "Custom browser Commands(browser)",
       "manipulators": [
         {
-          "description": "T_単語検索",
+          "description": "S_検索バーアクティブ",
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "s",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -1287,7 +1287,7 @@
           },
           "to": [
             {
-              "key_code": "f",
+              "key_code": "l",
               "modifiers": [
                 "right_command"
               ]
@@ -1309,10 +1309,10 @@
           ]
         },
         {
-          "description": "S_検索バーアクティブ",
+          "description": "T_単語検索",
           "type": "basic",
           "from": {
-            "key_code": "s",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
                 "caps_lock"
@@ -1321,7 +1321,7 @@
           },
           "to": [
             {
-              "key_code": "l",
+              "key_code": "f",
               "modifiers": [
                 "right_command"
               ]
@@ -1535,13 +1535,13 @@
       "description": "verification11(browser)",
       "manipulators": [
         {
-          "description": "RightAlt + S_Select an Element in the Page to inspect it",
+          "description": "LeftCommand + T_検証-ドックの位置変更",
           "type": "basic",
           "from": {
-            "key_code": "s",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
-                "right_option"
+                "left_control"
               ],
               "optional": [
                 "caps_lock"
@@ -1550,7 +1550,7 @@
           },
           "to": [
             {
-              "key_code": "c",
+              "key_code": "d",
               "modifiers": [
                 "right_command",
                 "right_shift"
@@ -1649,13 +1649,13 @@
           ]
         },
         {
-          "description": "LeftCommand + T_検証-ドックの位置変更",
+          "description": "RightAlt + S_Select an Element in the Page to inspect it",
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "s",
             "modifiers": {
               "mandatory": [
-                "left_control"
+                "right_option"
               ],
               "optional": [
                 "caps_lock"
@@ -1664,7 +1664,7 @@
           },
           "to": [
             {
-              "key_code": "d",
+              "key_code": "c",
               "modifiers": [
                 "right_command",
                 "right_shift"
