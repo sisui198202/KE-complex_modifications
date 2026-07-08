@@ -1,5 +1,5 @@
 {
-  "title": "DoublePushKey4",
+  "title": "DoublePushKey5",
   "rules": [
 {
   "description": "LeftControl_single=return_or_enter, double=Ctrl+Option+Shift+9(alfred_Self_Service_物販管理ファイル検索), combo=Fn",
@@ -160,7 +160,7 @@
       ]
     },
 {
-  "description": "LeftCommand_single=英数キー切替, double=, combo=LeftCommand",
+  "description": "LeftCommand_single=英数キー切替, double=URL リスト検索, combo=LeftCommand",
   "manipulators": [
     {
       "type": "basic",
@@ -180,7 +180,7 @@
       "to": [
         {
           "key_code": "2",
-          "modifiers": ["left_shift","left_command"]
+          "modifiers": ["left_shift", "left_command"]
         },
         {
           "set_variable": {
@@ -234,7 +234,8 @@
         ]
       },
       "parameters": {
-        "basic.to_if_alone_timeout_milliseconds": 250
+        "basic.to_if_alone_timeout_milliseconds": 250,
+        "basic.to_delayed_action_delay_milliseconds": 250
       }
     }
   ]
