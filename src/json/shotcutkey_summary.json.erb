@@ -1,8 +1,8 @@
 {
-    "title": "ShotCutKeySummary1",
+    "title": "ShotCutKeySummary2",
     "rules": [
         {
-            "description": "ShotCutKeySummary1",
+            "description": "ShotCutKeySummary2",
             "manipulators": [
                 {
                     "description": "RightCommand + A_NewFileCreate",
@@ -286,7 +286,7 @@
                     "description": "LeftShift + F12_CaptureWindow",
                     "type": "basic",
                     "from": <%= from("f12", ["left_shift"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["left_option", "left_control", "right_command"]]]) %>,
+                    "to": <%= to([["quote", ["left_option", "left_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 }
             ]

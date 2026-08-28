@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary1",
+  "title": "ShotCutKeySummary2",
   "rules": [
     {
-      "description": "ShotCutKeySummary1",
+      "description": "ShotCutKeySummary2",
       "manipulators": [
         {
           "description": "RightCommand + A_NewFileCreate",
@@ -1353,7 +1353,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "quote",
               "modifiers": [
                 "left_option",
                 "left_control",
