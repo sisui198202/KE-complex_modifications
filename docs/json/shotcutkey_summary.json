@@ -1,8 +1,8 @@
 {
-  "title": "ShotCutKeySummary",
+  "title": "ShotCutKeySummary1",
   "rules": [
     {
-      "description": "ShotCutKeySummary",
+      "description": "ShotCutKeySummary1",
       "manipulators": [
         {
           "description": "RightCommand + A_NewFileCreate",
@@ -1338,7 +1338,7 @@
           ]
         },
         {
-          "description": "LeftShift + F12_CaptureFullscreen",
+          "description": "LeftShift + F12_CaptureWindow",
           "type": "basic",
           "from": {
             "key_code": "f12",
@@ -1355,7 +1355,8 @@
             {
               "key_code": "1",
               "modifiers": [
-                "left_shift",
+                "left_option",
+                "left_control",
                 "right_command"
               ]
             }

@@ -1,8 +1,8 @@
 {
-    "title": "ShotCutKeySummary",
+    "title": "ShotCutKeySummary1",
     "rules": [
         {
-            "description": "ShotCutKeySummary",
+            "description": "ShotCutKeySummary1",
             "manipulators": [
                 {
                     "description": "RightCommand + A_NewFileCreate",
@@ -70,7 +70,7 @@
                     "description": "LeftAlt + P_英語 → 日本語[DeepL + Alfred]",
                     "type": "basic",
                     "from": <%= from("p", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["8", ["left_shift","right_command"]]]) %>,
+                    "to": <%= to([["8", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -111,7 +111,7 @@
                     "description": "RightAlt + P_日本語 → 英語[DeepL + Alfred]",
                     "type": "basic",
                     "from": <%= from("p", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["0", ["left_shift","right_command"]]]) %>,
+                    "to": <%= to([["0", ["left_shift", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -212,7 +212,7 @@
                     "description": "LeftCommand + O(オ-)_スクショ(Replacekey)",
                     "type": "basic",
                     "from": <%= from("o", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["semicolon", ["left_command", "left_control","left_option"]]]) %>
+                    "to": <%= to([["semicolon", ["left_command", "left_control", "left_option"]]]) %>
                 },
                 {
                     "description": "LeftCommand + P_Yoinkを手動で表示",
@@ -272,7 +272,7 @@
                     "description": "LeftCommand + Y_やり直し",
                     "type": "basic",
                     "from": <%= from("y", ["left_control"], ["caps_lock"]) %>,
-                    "to": <%= to([["z", ["left_shift" ,"left_command"]]]) %>,
+                    "to": <%= to([["z", ["left_shift", "left_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
@@ -283,10 +283,10 @@
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 },
                 {
-                    "description": "LeftShift + F12_CaptureFullscreen",
+                    "description": "LeftShift + F12_CaptureWindow",
                     "type": "basic",
                     "from": <%= from("f12", ["left_shift"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["left_shift", "right_command"]]]) %>,
+                    "to": <%= to([["1", ["left_option", "left_control", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
                 }
             ]
