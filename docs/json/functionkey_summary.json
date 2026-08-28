@@ -1,8 +1,8 @@
 {
-  "title": "FunctionkeySummary99",
+  "title": "FunctionkeySummary98",
   "rules": [
     {
-      "description": "FunctionkeySummary99",
+      "description": "FunctionkeySummary98",
       "manipulators": [
         {
           "description": "Double F1 -> Cmd+Opt+shift+2",
@@ -1204,18 +1204,109 @@
           ]
         },
         {
-          "description": "f12_スクショ",
+          "description": "Double F12 -> Shift+Cmd+1",
           "type": "basic",
           "from": {
             "key_code": "f12"
           },
           "to": [
             {
-              "key_code": "semicolon",
+              "set_variable": {
+                "name": "f12_pressed",
+                "value": 0
+              }
+            },
+            {
+              "key_code": "1",
               "modifiers": [
-                "left_command",
-                "left_control",
-                "left_option"
+                "left_shift",
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "f12_pressed",
+              "value": 1
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Single F12 -> Cmd+Ctrl+Opt+Semicolon (delayed, canceled by double-press)",
+          "type": "basic",
+          "from": {
+            "key_code": "f12"
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "f12_pressed",
+                "value": 1
+              }
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "semicolon",
+                "modifiers": [
+                  "left_command",
+                  "left_control",
+                  "left_option"
+                ]
+              },
+              {
+                "set_variable": {
+                  "name": "f12_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "f12_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 300
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "f12_pressed",
+              "value": 0
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.vmware.fusion$",
+                "^com.vmware.horizon$",
+                "^com.vmware.view$",
+                "^com.parallels.desktop$",
+                "^com.parallels.vm$",
+                "^com.parallels.desktop.console$",
+                "^org.virtualbox.app.VirtualBoxVM$",
+                "^com.vmware.proxyApp.",
+                "^com.parallels.winapp."
               ]
             }
           ]
