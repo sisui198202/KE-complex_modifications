@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfPathFinder_summary1",
+  "title": "FrontmostIfPathFinder_summary2",
   "rules": [
     {
-      "description": "FrontmostIfPathFinder_summary1",
+      "description": "FrontmostIfPathFinder_summary2",
       "manipulators": [
         {
           "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -460,6 +460,39 @@
               "modifiers": [
                 "right_shift",
                 "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + X_OpenFromClipboard-CleanShotX",
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "right_shift",
+                "right_gui",
+                "right_option"
               ]
             }
           ],

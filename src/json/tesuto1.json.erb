@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfPathFinder_summary1",
+    "title": "FrontmostIfPathFinder_summary2",
     "rules": [
         {
-            "description": "FrontmostIfPathFinder_summary1",
+            "description": "FrontmostIfPathFinder_summary2",
             "manipulators": [
                 {
                     "description": "LeftCommand + Quote_右の枠へ移動-左の枠へ移動",
@@ -107,6 +107,13 @@
                     "type": "basic",
                     "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["f1", ["right_shift", "left_control"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
+                },
+                {
+                    "description": "RightOption + X_OpenFromClipboard-CleanShotX",
+                    "type": "basic",
+                    "from": <%= from("x", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["open_bracket", ["right_shift", "right_gui", "right_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("pathfinder") %> ]
                 },
                 {
