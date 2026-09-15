@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfLine_summary",
+    "title": "FrontmostIfLine_summary1",
     "rules": [
         {
-            "description": "FrontmostIfLine_summary",
+            "description": "FrontmostIfLine_summary1",
             "manipulators": [
                 {
                     "description": "A_新しいタブを開く",
@@ -68,10 +68,10 @@
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
-                    "description": "i_縮小",
+                    "description": "i_PageDown",
                     "type": "basic",
                     "from": <%= from("i", ["caps_lock"]) %>,
-                    "to": <%= to([["hyphen", ["left_shift","right_command"]]]) %>,
+                    "to": <%= to([["down_arrow", ["fn"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
@@ -79,14 +79,14 @@
                     "type": "basic",
                     "from": <%= from("j",["caps_lock"]) %>,
                     "to": <%= to([["down_arrow"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("readgamen") %> ]
+                    "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "K_UpArrow",
                     "type": "basic",
                     "from": <%= from("k",["caps_lock"]) %>,
                     "to": <%= to([["up_arrow"]]) %>,
-                    "conditions": [ <%= frontmost_application_if("readgamen") %> ]
+                    "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
                     "description": "L_PreviousTab",
@@ -110,10 +110,10 @@
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
-                    "description": "O(オー)_拡大",
+                    "description": "O(オー)_PageUp",
                     "type": "basic",
                     "from": <%= from("o", ["caps_lock"]) %>,
-                    "to": <%= to([["equal_sign", ["left_shift","right_command"]]]) %>,
+                    "to": <%= to([["up_arrow", ["fn"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("line") %> ]
                 },
                 {
