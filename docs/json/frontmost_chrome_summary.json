@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary3",
+  "title": "FrontmostIfChrome_summary5",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary3",
+      "description": "FrontmostIfChrome_summary5",
       "manipulators": [
         {
           "description": "A_新しいタブを開く",
@@ -63,10 +63,10 @@
           ]
         },
         {
-          "description": "E_Reload",
+          "description": "H_Reload",
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "h",
             "modifiers": {
               "mandatory": [
                 "caps_lock"

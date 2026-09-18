@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary3",
+    "title": "FrontmostIfChrome_summary5",
     "rules": [
         {
-            "description": "FrontmostIfChrome_summary3",
+            "description": "FrontmostIfChrome_summary5",
             "manipulators": [
                 {
                     "description": "A_新しいタブを開く",
@@ -19,9 +19,9 @@
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
-                    "description": "E_Reload",
+                    "description": "H_Reload",
                     "type": "basic",
-                    "from": <%= from("e", ["caps_lock"]) %>,
+                    "from": <%= from("h", ["caps_lock"]) %>,
                     "to": <%= to([["w", ["right_control", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },

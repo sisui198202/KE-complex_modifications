@@ -1,13 +1,20 @@
 {
-    "title": "FrontmostIfBrowser96",
+    "title": "FrontmostIfBrowser1",
     "rules": [
         {
-            "description": "Basic Navigation Commands11 (browser)",
+            "description": "Basic Navigation Commands11 (browser)1",
             "manipulators": [
                 {
-                    "description": "H_LeftArrow",
+                    "description": "H_Reload",
                     "type": "basic",
                     "from": <%= from("h", ["caps_lock"]) %>,
+                    "to": <%= to([["r", ["right_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "E_LeftArrow",
+                    "type": "basic",
+                    "from": <%= from("e", ["caps_lock"]) %>,
                     "to": <%= to([["left_arrow"]]) %>,
                     "conditions": [<%= frontmost_application_if("browser") %>]
                 },

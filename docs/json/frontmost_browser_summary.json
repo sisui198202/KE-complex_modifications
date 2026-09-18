@@ -1,14 +1,48 @@
 {
-  "title": "FrontmostIfBrowser96",
+  "title": "FrontmostIfBrowser1",
   "rules": [
     {
-      "description": "Basic Navigation Commands11 (browser)",
+      "description": "Basic Navigation Commands11 (browser)1",
       "manipulators": [
         {
-          "description": "H_LeftArrow",
+          "description": "H_Reload",
           "type": "basic",
           "from": {
             "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "E_LeftArrow",
+          "type": "basic",
+          "from": {
+            "key_code": "e",
             "modifiers": {
               "mandatory": [
                 "caps_lock"

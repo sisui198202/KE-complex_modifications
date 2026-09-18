@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfVivaldi_summary991",
+    "title": "FrontmostIfVivaldi_summary",
     "rules": [
         {
-            "description": "FrontmostIfVivaldi_summary991",
+            "description": "FrontmostIfVivaldi_summary",
             "manipulators": [
                 {
                     "description": "A_新しいタブを開く",
@@ -16,13 +16,6 @@
                     "type": "basic",
                     "from": <%= from("c", ["caps_lock"]) %>,
                     "to": <%= to([["f12", ["right_shift"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
-                },
-                {
-                    "description": "E_Reload",
-                    "type": "basic",
-                    "from": <%= from("e", ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("vivaldi") %> ]
                 },
                 {
