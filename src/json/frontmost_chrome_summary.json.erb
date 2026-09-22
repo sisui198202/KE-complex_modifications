@@ -1,8 +1,8 @@
 {
-    "title": "FrontmostIfChrome_summary5",
+    "title": "FrontmostIfChrome_summary",
     "rules": [
         {
-            "description": "FrontmostIfChrome_summary5",
+            "description": "FrontmostIfChrome_summary",
             "manipulators": [
                 {
                     "description": "A_新しいタブを開く",
@@ -127,7 +127,7 @@
                     "description": "LeftAlt + W_検証-コンソールを消去",
                     "type": "basic",
                     "from": <%= from("w", ["left_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["1", ["left_control"]]]) %>,
+                    "to": <%= to([["6", ["left_gui", "right_shift"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {

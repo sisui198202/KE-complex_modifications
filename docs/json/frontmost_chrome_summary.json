@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfChrome_summary5",
+  "title": "FrontmostIfChrome_summary",
   "rules": [
     {
-      "description": "FrontmostIfChrome_summary5",
+      "description": "FrontmostIfChrome_summary",
       "manipulators": [
         {
           "description": "A_新しいタブを開く",
@@ -555,9 +555,10 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "6",
               "modifiers": [
-                "left_control"
+                "left_gui",
+                "right_shift"
               ]
             }
           ],
