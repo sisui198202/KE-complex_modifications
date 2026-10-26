@@ -1486,6 +1486,80 @@
               ]
             }
           ]
+        },
+        {
+          "description": "RightOption + L_検証-前のパネル",
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "RightOption + Semicolon_検証-次のパネル",
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.mozilla\\.firefox$",
+                "^org\\.waterfoxproject\\.waterfox$",
+                "^com\\.google\\.Chrome$",
+                "^org.chromium.Chromium$",
+                "^com.vivaldi.Vivaldi$",
+                "^com.apple.Safari$",
+                "^com.google.chrome.for.testing$"
+              ]
+            }
+          ]
         }
       ]
     },

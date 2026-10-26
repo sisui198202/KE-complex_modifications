@@ -138,20 +138,6 @@
                     "conditions": [ <%= frontmost_application_if("chrome") %> ]
                 },
                 {
-                    "description": "RightOption + L_検証-前のパネル",
-                    "type": "basic",
-                    "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["open_bracket", ["left_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
-                {
-                    "description": "RightOption + Semicolon_検証-次のパネル",
-                    "type": "basic",
-                    "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
-                    "to": <%= to([["close_bracket", ["left_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_unless("virtual_machine") %> ]
-                },
-                {
                     "description": "RightOption + T_検証-GlobalSearch",
                     "type": "basic",
                     "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,

@@ -317,6 +317,20 @@
                     "from": <%= from("h", ["right_option"], ["caps_lock"]) %>,
                     "to": <%= to([["u", ["right_option", "right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "RightOption + L_検証-前のパネル",
+                    "type": "basic",
+                    "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["open_bracket", ["left_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
+                },
+                {
+                    "description": "RightOption + Semicolon_検証-次のパネル",
+                    "type": "basic",
+                    "from": <%= from("semicolon", ["right_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["close_bracket", ["left_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("browser") %> ]
                 }
             ]
         },
