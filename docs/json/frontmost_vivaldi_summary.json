@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfVivaldi_summary",
+  "title": "FrontmostIfVivaldi_summary1",
   "rules": [
     {
-      "description": "FrontmostIfVivaldi_summary",
+      "description": "FrontmostIfVivaldi_summary1",
       "manipulators": [
         {
           "description": "A_新しいタブを開く",
@@ -108,38 +108,6 @@
               "key_code": "p",
               "modifiers": [
                 "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.vivaldi.Vivaldi"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "LeftCommand + T_ドックの位置変更",
-          "type": "basic",
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d",
-              "modifiers": [
-                "right_command",
-                "right_shift"
               ]
             }
           ],

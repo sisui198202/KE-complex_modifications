@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfFirefox_summary",
+  "title": "FrontmostIfFirefox_summary1",
   "rules": [
     {
-      "description": "FrontmostIfFirefox_summary",
+      "description": "FrontmostIfFirefox_summary1",
       "manipulators": [
         {
           "description": "A_新しいタブを開く",
@@ -20,34 +20,6 @@
               "key_code": "n",
               "modifiers": [
                 "right_option",
-                "right_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "org.mozilla.firefox"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "E_Reload",
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "r",
-              "modifiers": [
                 "right_command"
               ]
             }

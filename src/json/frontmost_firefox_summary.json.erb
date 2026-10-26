@@ -1,21 +1,14 @@
 {
-    "title": "FrontmostIfFirefox_summary",
+    "title": "FrontmostIfFirefox_summary1",
     "rules": [
         {
-            "description": "FrontmostIfFirefox_summary",
+            "description": "FrontmostIfFirefox_summary1",
             "manipulators": [
                 {
                     "description": "A_新しいタブを開く",
                     "type": "basic",
                     "from": <%= from("a", ["caps_lock"]) %>,
                     "to": <%= to([["n", ["right_option", "right_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("firefox") %> ]
-                },
-                {
-                    "description": "E_Reload",
-                    "type": "basic",
-                    "from": <%= from("e", ["caps_lock"]) %>,
-                    "to": <%= to([["r", ["right_command"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("firefox") %> ]
                 },
                 {
