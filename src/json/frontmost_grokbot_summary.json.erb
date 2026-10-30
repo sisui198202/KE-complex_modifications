@@ -1,0 +1,17 @@
+{
+    "title": "FrontmostIfGrokBot_summary",
+    "rules": [
+        {
+            "description": "FrontmostIfGrokBot_summary",
+            "manipulators": [
+                {
+                    "description": "LeftCommand + ,(カンマ)_SwitchBot(Control+Tab)",
+                    "type": "basic",
+                    "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["tab", ["left_control"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("grokbot") %> ]
+                }
+            ]
+        }
+    ]
+}

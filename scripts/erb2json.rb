@@ -285,6 +285,9 @@ def frontmost_application(type, app_aliases, as_json = true)
   mi_bundle_identifers = [
     "^net.mimikaki.mi$",
   ]
+  grokbot_bundle_identifers = [
+    "^com\\.anysphere\\.sand$",
+  ]
   mysqlworkbench_bundle_identifers = [
     "^com.oracle.workbench.MySQLWorkbench$",
   ]
@@ -371,6 +374,8 @@ def frontmost_application(type, app_aliases, as_json = true)
       bundle_identifiers.concat(vscode_sublime_bundle_identifers)
     when "mi"
       bundle_identifiers.concat(mi_bundle_identifers)
+    when "grokbot"
+      bundle_identifiers.concat(grokbot_bundle_identifers)
     when "mysqlworkbench"
       bundle_identifiers.concat(mysqlworkbench_bundle_identifers)
     when "preview"
