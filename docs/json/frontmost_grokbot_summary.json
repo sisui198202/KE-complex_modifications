@@ -1,8 +1,8 @@
 {
-  "title": "FrontmostIfGrokBot_summary",
+  "title": "FrontmostIfGrokBot_summary2",
   "rules": [
     {
-      "description": "FrontmostIfGrokBot_summary",
+      "description": "FrontmostIfGrokBot_summary2",
       "manipulators": [
         {
           "description": "LeftCommand + ,(カンマ)_SwitchBot(Control+Tab)",
