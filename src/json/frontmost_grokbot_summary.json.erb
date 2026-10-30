@@ -10,6 +10,27 @@
                     "from": <%= from("comma", ["left_control"], ["caps_lock"]) %>,
                     "to": <%= to([["tab", ["left_control"]]]) %>,
                     "conditions": [ <%= frontmost_application_if("grokbot") %> ]
+                },
+                {
+                    "description": "LeftCommand + T_SidebarCompact(Cmd+B)",
+                    "type": "basic",
+                    "from": <%= from("t", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([["b", ["left_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("grokbot") %> ]
+                },
+                {
+                    "description": "LeftOption + I_FocusChat(Cmd+I)",
+                    "type": "basic",
+                    "from": <%= from("i", ["left_option"], ["caps_lock"]) %>,
+                    "to": <%= to([["i", ["left_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("grokbot") %> ]
+                },
+                {
+                    "description": "RightCommand + I_Details(Shift+Cmd+I)",
+                    "type": "basic",
+                    "from": <%= from("i", ["right_command"], ["caps_lock"]) %>,
+                    "to": <%= to([["i", ["left_shift", "left_command"]]]) %>,
+                    "conditions": [ <%= frontmost_application_if("grokbot") %> ]
                 }
             ]
         }
